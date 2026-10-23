@@ -10,7 +10,7 @@ It must run from any static host (GitHub Pages, Vercel, a claude.ai Artifact) an
 | Component | Agents | Owns |
 |---|---|---|
 | **1. Platform & UX** | P1–P6 | `index.html`, `css/base.css`, `css/layout.css`, `css/components/*.css`, `js/app.js`, `js/router.js`, `js/store.js`, `js/util/*`, `js/views/*`, `js/components/*`, `js/search/*`, `data/glossary.json`, `assets/*` |
-| **2. Animation engine** | A1–A8 | `js/anim/**` (except `catalogue.js`), `css/components/player.css`, `tools/anim-preview.html` |
+| **2. Animation engine** | A1–A9 | `js/anim/**` (except `catalogue.js`), `css/components/player.css`, `tools/anim-preview.html` |
 | **3. Lower-limb content** | LL1–LL10 | `content/injuries/{hip-groin,thigh,knee,lower-leg,ankle,foot}/<their ids>.js` |
 | **4. Upper-limb content** | UL1–UL8 | `content/injuries/{shoulder,arm,elbow,wrist-hand}/<their ids>.js` |
 | **5. Spine, trunk, head & general content** | SP1–SP6 | `content/injuries/{cervical,thoracic,lumbar,pelvis,chest-abdomen,head-face,general}/<their ids>.js` |
@@ -121,13 +121,14 @@ REGION_LABELS, BODY_AREA_LABELS, TISSUE_LABELS, EVIDENCE_LABELS  // display name
 | Agent | Files |
 |---|---|
 | A1 Player & integration | `js/anim/index.js`, `player.js`, `camera.js`, `timeline.js`, `css/components/player.css`, `tools/anim-preview.html` |
-| A2 Figure rig & MOI | `js/anim/rig.js`, `poses.js`, `props.js`, `moi.js` |
+| A2 Figure rig & MOI | `js/anim/rig.js`, `poses.js`, `props.js`, `moi.js`, `tools/rig-preview.html`, `tools/render-rig.mjs` |
 | A3 Scenes: knee, thigh, hip | `js/anim/scenes/{knee-anterior,knee-sagittal,patellofemoral-axial,thigh-posterior,thigh-anterior,hip-anterior,hip-lateral,hip-posterior}.js` |
 | A4 Scenes: leg, ankle, foot | `js/anim/scenes/{lower-leg-posterior,lower-leg-anterior,ankle-lateral,ankle-anterior,ankle-medial,foot-dorsal,foot-sagittal}.js` |
 | A5 Scenes: upper limb | `js/anim/scenes/{shoulder-anterior,shoulder-girdle,elbow-lateral,elbow-medial,wrist-hand,finger-lateral,thumb}.js` |
 | A6 Scenes: spine, trunk, head | `js/anim/scenes/{lumbar-sagittal,lumbar-axial,cervical-sagittal,neck-plexus,thorax-ribs,pelvis-anterior,head-brain,inner-ear,tmj}.js` |
-| A7 Micro & cellular | `js/anim/micro/**` |
-| A8 Close-up renderer | `js/anim/closeup.js`, `js/anim/closeup-fx.js`, `js/anim/scenes/{long-bone,muscle-tendon-unit,peripheral-nerve}.js` |
+| A7 Micro framework + tissues I | `js/anim/micro/index.js`, `micro/{ligament,tendon,tendon-continuum,muscle,bone-fracture,bone-stress,cartilage,meniscus,fascia}.js`, `tools/micro-preview.html`, `tools/render-micro.mjs` |
+| A9 Micro tissues II | `js/anim/micro/{nerve,disc,bursa,capsule,brain,physis,compartment,vestibular}.js` |
+| A8 Close-up renderer | `js/anim/closeup.js`, `js/anim/closeup-fx.js`, `js/anim/scenes/{long-bone,muscle-tendon-unit,peripheral-nerve}.js`, `tools/closeup-preview.html`, `tools/render-closeup.mjs` |
 
 ## Engineering rules (all code)
 - Vanilla ES2022 modules, no build step, no external runtime libraries, no CDN scripts. Fonts come from Google Fonts only (linked in `index.html`).

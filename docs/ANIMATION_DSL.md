@@ -183,7 +183,7 @@ js/anim/
   closeup-fx.js       A8    — shared effect primitives (tear, fracture lines, glow, bleed, arrows, labels)
   scenes/<id>.js      A3–A6, A8 — one declarative file per SCENES id
   micro/index.js      A7    — renderMicro(svgGroup, tissue, stageState)
-  micro/<tissue>.js   A7    — one module per MICRO_TISSUES id
+  micro/<tissue>.js   A7, A9 — one module per MICRO_TISSUES id
 ```
 
 ### Public API (consumed by the injury page)
@@ -227,7 +227,7 @@ Declarative data + optional custom drawing. The close-up renderer (A8) draws eve
 ```js
 export default {
   id: "knee-anterior",
-  viewBox: [0, 0, 600, 600],
+  viewBox: [0, 0, 800, 450],      // REQUIRED: every scene uses the 16:9 stage coordinate space (800 × 450)
   // how anatomical directions map to screen unit vectors (y down); "out"/"in" = toward/away from viewer
   directions: { medial: [1, 0], lateral: [-1, 0], superior: [0, -1], inferior: [0, 1], proximal: [0, -1], distal: [0, 1], anterior: "out", posterior: "in" },
   backdrop: [ { d: "M ... Z", fill: "skin", opacity: 0.35 } ],  // decorative silhouette: fill ∈ skin|soft|fat|fluid|none
@@ -253,6 +253,7 @@ export default {
 ```
 Rules for scene authors:
 1. Implement **every** structure and anchor listed for your scene in `catalogue.js`, using exactly those ids and types. Decorative extras are allowed but must not be targetable ids.
+0. `viewBox` is always `[0, 0, 800, 450]`. Keep the anatomy inside roughly x 140–660 so labels have room on both sides.
 2. Anatomically faithful proportions and relationships (attachments in the right place, correct layering). Reference a standard atlas view; label the view orientation in the file header comment.
 3. Bands must run attachment-to-attachment so `tear at: 0.5` really is mid-substance and `avulse end: "to"` pulls off the distal attachment.
 4. Check your scene visually: `node tools/render-scene.mjs <scene-id>` writes PNGs to `tools/output/` (static preview, all structures labelled) — open them with the Read tool and iterate until it looks like a clean atlas illustration.

@@ -5,7 +5,7 @@
 //   node scripts/build.mjs --only acl-rupture,mcl-sprain   limit to these ids (implies quiet for others)
 //   node scripts/build.mjs --strict   warnings count as errors
 // Files with errors are EXCLUDED from data/ so the site keeps working while content is in progress.
-import { readFileSync, writeFileSync, readdirSync, statSync, mkdirSync, rmSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, statSync, mkdirSync, rmSync, existsSync, renameSync } from "node:fs";
 import { join, relative, dirname, basename } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { validateInjury, bodyAreaOf } from "./lib/validate.mjs";
@@ -52,8 +52,9 @@ if (!ONLY) {
 }
 
 if (!CHECK && !ONLY) {
-  const outDir = join(ROOT, "data/injuries");
-  if (existsSync(outDir)) rmSync(outDir, { recursive: true });
+  // write to a temp dir then swap, so concurrent builds/page loads never see a half-written folder
+  const finalDir = join(ROOT, "data/injuries");
+  const outDir = join(ROOT, `data/.injuries-tmp-${process.pid}`);
   mkdirSync(outDir, { recursive: true });
   const index = [];
   for (const { inj } of ok) {
@@ -75,6 +76,8 @@ if (!CHECK && !ONLY) {
       scene: inj.animation?.phases?.find((p) => p.type === "closeup")?.scene || null
     });
   }
+  if (existsSync(finalDir)) rmSync(finalDir, { recursive: true, force: true });
+  renameSync(outDir, finalDir);
   index.sort((a, b) => a.name.localeCompare(b.name));
   writeFileSync(join(ROOT, "data/index.json"), JSON.stringify(index));
   const regions = {};
