@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Scene preview</title>
+<link rel="stylesheet" href="../css/tokens.css">
+<style>
+  body { margin: 0; background: var(--stage-bg); color: var(--stage-ink); font: 13px/1.3 system-ui, sans-serif; }
+  #wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  svg { width: 100%; height: auto; display: block; background: var(--stage-bg); }
+  h1 { font-size: 14px; margin: 8px 12px; font-weight: 600; }
+  #err { color: #ff8a80; white-space: pre-wrap; margin: 8px 12px; }
+</style></head>
+<body>
+<h1 id="title"></h1><div id="err"></div>
+<div id="wrap"><svg id="plain"></svg><svg id="labelled"></svg></div>
+<script type="module">
+// STATIC preview for scene authors (no actions). If js/anim/closeup.js exists and exports renderStatic, it is used instead.
+const params = new URLSearchParams(location.search);
+const id = params.get("scene");
+const NS = "http://www.w3.org/2000/svg";
+const el = (n, a = {}, p) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (p) p.append(e); return e; };
+const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const FILL = { bone: "--anat-bone", ligament: "--anat-ligament", tendon: "--anat-tendon", muscle: "--anat-muscle", cartilage: "--anat-cartilage", nerve: "--anat-nerve",
+  vessel: "--anat-artery", bursa: "--anat-fluid", disc: "--anat-annulus", capsule: "--anat-capsule", fatpad: "--anat-fat", fascia: "--anat-fascia", space: "--anat-fluid",
+  physis: "--anat-physis", brain: "--anat-brain", particles: "--anat-bone" };
+const EDGE = { bone: "--anat-bone-edge", ligament: "--anat-ligament-edge", tendon: "--anat-tendon-edge", muscle: "--anat-muscle-edge", nerve: "--anat-nerve-edge" };
+function bandPath(s) {
+  if (s.points) return "M" + s.points.map((p) => p.join(",")).join(" L");
+  if (s.path) return s.path;
+  const [x1, y1] = s.from, [x2, y2] = s.to, b = s.bend || 0;
+  const mx = (x1 + x2) / 2, my = (y1 + y2) / 2, dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy) || 1;
+  return `M${x1},${y1} Q${mx - (dy / L) * b},${my + (dx / L) * b} ${x2},${y2}`;
+}
+function centroid(s, node) { try { const b = node.getBBox(); return [b.x + b.width / 2, b.y + b.height / 2]; } catch { return [0, 0]; } }
+function draw(svg, scene, labels) {
+  const [x, y, w, h] = scene.viewBox; svg.setAttribute("viewBox", `${x} ${y} ${w} ${h}`);
+  (scene.backdrop || []).forEach((b) => el("path", { d: b.d, fill: css(b.fill === "skin" ? "--anat-skin" : b.fill === "fat" ? "--anat-fat" : b.fill === "fluid" ? "--anat-fluid" : "--stage-bg-2"), opacity: b.opacity ?? 0.4 }, svg));
+  const entries = Object.entries(scene.structures).sort((a, b) => (a[1].z || 0) - (b[1].z || 0));
+  const nodes = [];
+  for (const [sid, s] of entries) {
+    const fill = css(FILL[s.type] || "--anat-bone"), edge = css(EDGE[s.type] || "--stage-ink-2");
+    let n;
+    const op = s.ghost ? 0.35 : s.type === "space" ? 0.25 : 0.95;
+    if (s.d) n = el("path", { d: s.d, fill, stroke: edge, "stroke-width": 1.5, opacity: op }, svg);
+    else if (s.from || s.points || s.path) n = el("path", { d: bandPath(s), fill: "none", stroke: fill, "stroke-width": s.width || 6, "stroke-linecap": "round", opacity: op }, svg);
+    else if (s.cx !== undefined) {
+      n = el("ellipse", { cx: s.cx, cy: s.cy, rx: s.rx || s.r, ry: s.ry || s.r, fill, stroke: edge, opacity: op, transform: s.rotate ? `rotate(${s.rotate} ${s.cx} ${s.cy})` : "" }, svg);
+      if (s.type === "disc" && s.nucleus) el("ellipse", { cx: s.cx + (s.nucleus.dx || 0), cy: s.cy + (s.nucleus.dy || 0), rx: s.nucleus.rx, ry: s.nucleus.ry, fill: css("--anat-nucleus") }, svg);
+    }
+    if (n) nodes.push([sid, s, n]);
+  }
+  if (!labels) return;
+  for (const [sid, s, n] of nodes) {
+    const [cx, cy] = s.label || centroid(s, n);
+    el("circle", { cx, cy, r: 2.5, fill: "#fff" }, svg);
+    const t = el("text", { x: cx + 4, y: cy - 3, fill: "#fff", "font-size": Math.max(9, w / 60), stroke: "#000", "stroke-width": 0.6, "paint-order": "stroke" }, svg); t.textContent = sid;
+  }
+  for (const [aid, [ax, ay]] of Object.entries(scene.anchors || {})) {
+    el("path", { d: `M${ax - 5},${ay} L${ax + 5},${ay} M${ax},${ay - 5} L${ax},${ay + 5}`, stroke: css("--fx-force"), "stroke-width": 1.5 }, svg);
+    const t = el("text", { x: ax + 6, y: ay + 10, fill: css("--fx-force"), "font-size": Math.max(8, w / 75), stroke: "#000", "stroke-width": 0.5, "paint-order": "stroke" }, svg); t.textContent = aid;
+  }
+}
+try {
+  const scene = (await import(`../js/anim/scenes/${id}.js?t=${Date.now()}`)).default;
+  const cat = (await import("../js/anim/catalogue.js")).SCENES[id];
+  document.getElementById("title").textContent = `${id} — ${cat?.title || "(not in catalogue)"}`;
+  const missing = [];
+  if (cat) {
+    for (const k of Object.keys(cat.structures)) if (!scene.structures[k]) missing.push("structure " + k);
+    for (const k of Object.keys(cat.anchors)) if (!scene.anchors?.[k]) missing.push("anchor " + k);
+    for (const [k, v] of Object.entries(cat.structures)) if (scene.structures[k] && scene.structures[k].type !== v[0]) missing.push(`type of ${k} should be ${v[0]}`);
+  }
+  if (missing.length) document.getElementById("err").textContent = "MISSING / WRONG: " + missing.join(", ");
+  let used = false;
+  try { const cu = await import("../js/anim/closeup.js"); if (cu.renderStatic) { cu.renderStatic(document.getElementById("plain"), scene); used = true; } } catch {}
+  if (!used) draw(document.getElementById("plain"), scene, false);
+  draw(document.getElementById("labelled"), scene, true);
+  window.__missing = missing;
+} catch (e) { document.getElementById("err").textContent = String(e.stack || e); window.__missing = ["LOAD ERROR " + e.message]; }
+window.__ready = true;
+</script>
+</body></html>

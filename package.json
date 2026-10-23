@@ -1,0 +1,14 @@
+{
+  "name": "physio-explained",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Injury mechanisms, pathophysiology and evidence-based physiotherapy management, with animated mechanism-of-injury explainers.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/build.mjs --check",
+    "serve": "npx --yes serve -l 4173 .",
+    "test": "node tests/run-all.mjs"
+  },
+  "license": "UNLICENSED"
+}

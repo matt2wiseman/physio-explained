@@ -1,0 +1,1016 @@
+[
+ {
+  "id": "acl-rupture",
+  "name": "Anterior cruciate ligament (ACL) rupture",
+  "region": "knee",
+  "agent": "QC"
+ },
+ {
+  "id": "fai-syndrome",
+  "name": "Femoroacetabular impingement (FAI) syndrome",
+  "region": "hip-groin",
+  "agent": "LL1"
+ },
+ {
+  "id": "hip-labral-tear",
+  "name": "Acetabular labral tear",
+  "region": "hip-groin",
+  "agent": "LL1"
+ },
+ {
+  "id": "femoral-neck-stress-fracture",
+  "name": "Femoral neck stress fracture",
+  "region": "hip-groin",
+  "agent": "LL1"
+ },
+ {
+  "id": "hip-fracture",
+  "name": "Hip (proximal femoral) fracture in older adults",
+  "region": "hip-groin",
+  "agent": "LL1"
+ },
+ {
+  "id": "traumatic-hip-dislocation",
+  "name": "Traumatic hip dislocation",
+  "region": "hip-groin",
+  "agent": "LL1"
+ },
+ {
+  "id": "scfe",
+  "name": "Slipped capital femoral epiphysis (SCFE)",
+  "region": "hip-groin",
+  "agent": "LL1"
+ },
+ {
+  "id": "snapping-hip-syndrome",
+  "name": "Snapping hip syndrome (coxa saltans)",
+  "region": "hip-groin",
+  "agent": "LL1"
+ },
+ {
+  "id": "adductor-longus-strain",
+  "name": "Acute adductor longus strain",
+  "region": "hip-groin",
+  "agent": "LL2"
+ },
+ {
+  "id": "adductor-related-groin-pain",
+  "name": "Adductor-related groin pain (longstanding)",
+  "region": "hip-groin",
+  "agent": "LL2"
+ },
+ {
+  "id": "inguinal-related-groin-pain",
+  "name": "Inguinal-related groin pain (\"sports hernia\")",
+  "region": "hip-groin",
+  "agent": "LL2"
+ },
+ {
+  "id": "pubic-related-groin-pain",
+  "name": "Pubic-related groin pain (osteitis pubis)",
+  "region": "hip-groin",
+  "agent": "LL2"
+ },
+ {
+  "id": "iliopsoas-related-groin-pain",
+  "name": "Iliopsoas strain and iliopsoas-related groin pain",
+  "region": "hip-groin",
+  "agent": "LL2"
+ },
+ {
+  "id": "gluteal-tendinopathy",
+  "name": "Gluteal tendinopathy (greater trochanteric pain syndrome)",
+  "region": "hip-groin",
+  "agent": "LL2"
+ },
+ {
+  "id": "hip-pointer",
+  "name": "Iliac crest contusion (hip pointer)",
+  "region": "hip-groin",
+  "agent": "LL2"
+ },
+ {
+  "id": "hamstring-strain",
+  "name": "Acute hamstring strain",
+  "region": "thigh",
+  "agent": "LL3"
+ },
+ {
+  "id": "proximal-hamstring-avulsion",
+  "name": "Proximal hamstring tendon avulsion",
+  "region": "thigh",
+  "agent": "LL3"
+ },
+ {
+  "id": "proximal-hamstring-tendinopathy",
+  "name": "Proximal hamstring tendinopathy",
+  "region": "thigh",
+  "agent": "LL3"
+ },
+ {
+  "id": "quadriceps-strain",
+  "name": "Quadriceps (rectus femoris) strain",
+  "region": "thigh",
+  "agent": "LL3"
+ },
+ {
+  "id": "quadriceps-contusion",
+  "name": "Quadriceps contusion and myositis ossificans",
+  "region": "thigh",
+  "agent": "LL3"
+ },
+ {
+  "id": "pelvic-apophyseal-avulsion",
+  "name": "Pelvic apophyseal avulsion fracture (adolescent)",
+  "region": "hip-groin",
+  "agent": "LL3"
+ },
+ {
+  "id": "deep-gluteal-syndrome",
+  "name": "Deep gluteal syndrome (piriformis syndrome)",
+  "region": "hip-groin",
+  "agent": "LL3"
+ },
+ {
+  "id": "pcl-injury",
+  "name": "Posterior cruciate ligament (PCL) injury",
+  "region": "knee",
+  "agent": "LL4"
+ },
+ {
+  "id": "mcl-sprain",
+  "name": "Medial collateral ligament (MCL) sprain",
+  "region": "knee",
+  "agent": "LL4"
+ },
+ {
+  "id": "posterolateral-corner-injury",
+  "name": "Posterolateral corner (LCL/PLC) injury",
+  "region": "knee",
+  "agent": "LL4"
+ },
+ {
+  "id": "knee-dislocation",
+  "name": "Knee dislocation (multiligament knee injury)",
+  "region": "knee",
+  "agent": "LL4"
+ },
+ {
+  "id": "tibial-plateau-fracture",
+  "name": "Tibial plateau fracture",
+  "region": "knee",
+  "agent": "LL4"
+ },
+ {
+  "id": "patella-fracture",
+  "name": "Patella fracture",
+  "region": "knee",
+  "agent": "LL4"
+ },
+ {
+  "id": "meniscal-tear",
+  "name": "Traumatic meniscal tear",
+  "region": "knee",
+  "agent": "LL5"
+ },
+ {
+  "id": "degenerative-meniscal-tear",
+  "name": "Degenerative meniscal tear",
+  "region": "knee",
+  "agent": "LL5"
+ },
+ {
+  "id": "articular-cartilage-defect-knee",
+  "name": "Articular cartilage (chondral/osteochondral) defect of the knee",
+  "region": "knee",
+  "agent": "LL5"
+ },
+ {
+  "id": "osteochondritis-dissecans-knee",
+  "name": "Osteochondritis dissecans (OCD) of the knee",
+  "region": "knee",
+  "agent": "LL5"
+ },
+ {
+  "id": "hoffa-fat-pad-impingement",
+  "name": "Infrapatellar (Hoffa's) fat pad impingement",
+  "region": "knee",
+  "agent": "LL5"
+ },
+ {
+  "id": "prepatellar-bursitis",
+  "name": "Prepatellar bursitis",
+  "region": "knee",
+  "agent": "LL5"
+ },
+ {
+  "id": "pes-anserine-pain",
+  "name": "Pes anserine tendinopathy / bursitis",
+  "region": "knee",
+  "agent": "LL5"
+ },
+ {
+  "id": "patellofemoral-pain",
+  "name": "Patellofemoral pain",
+  "region": "knee",
+  "agent": "LL6"
+ },
+ {
+  "id": "patellar-dislocation",
+  "name": "Lateral patellar dislocation",
+  "region": "knee",
+  "agent": "LL6"
+ },
+ {
+  "id": "patellar-tendinopathy",
+  "name": "Patellar tendinopathy (jumper's knee)",
+  "region": "knee",
+  "agent": "LL6"
+ },
+ {
+  "id": "quadriceps-tendon-rupture",
+  "name": "Quadriceps tendon rupture",
+  "region": "knee",
+  "agent": "LL6"
+ },
+ {
+  "id": "patellar-tendon-rupture",
+  "name": "Patellar tendon rupture",
+  "region": "knee",
+  "agent": "LL6"
+ },
+ {
+  "id": "itb-syndrome",
+  "name": "Iliotibial band syndrome",
+  "region": "knee",
+  "agent": "LL6"
+ },
+ {
+  "id": "osgood-schlatter",
+  "name": "Osgood–Schlatter disease",
+  "region": "knee",
+  "agent": "LL6"
+ },
+ {
+  "id": "sinding-larsen-johansson",
+  "name": "Sinding-Larsen–Johansson syndrome",
+  "region": "knee",
+  "agent": "LL6"
+ },
+ {
+  "id": "achilles-rupture",
+  "name": "Achilles tendon rupture",
+  "region": "lower-leg",
+  "agent": "LL7"
+ },
+ {
+  "id": "midportion-achilles-tendinopathy",
+  "name": "Mid-portion Achilles tendinopathy",
+  "region": "lower-leg",
+  "agent": "LL7"
+ },
+ {
+  "id": "insertional-achilles-tendinopathy",
+  "name": "Insertional Achilles tendinopathy",
+  "region": "lower-leg",
+  "agent": "LL7"
+ },
+ {
+  "id": "calf-strain",
+  "name": "Medial gastrocnemius strain (\"tennis leg\")",
+  "region": "lower-leg",
+  "agent": "LL7"
+ },
+ {
+  "id": "soleus-strain",
+  "name": "Soleus strain",
+  "region": "lower-leg",
+  "agent": "LL7"
+ },
+ {
+  "id": "calcaneal-apophysitis",
+  "name": "Calcaneal apophysitis (Sever's disease)",
+  "region": "foot",
+  "agent": "LL7"
+ },
+ {
+  "id": "plantar-heel-pain",
+  "name": "Plantar heel pain (plantar fasciopathy)",
+  "region": "foot",
+  "agent": "LL7"
+ },
+ {
+  "id": "tarsal-tunnel-syndrome",
+  "name": "Tarsal tunnel syndrome",
+  "region": "ankle",
+  "agent": "LL7"
+ },
+ {
+  "id": "medial-tibial-stress-syndrome",
+  "name": "Medial tibial stress syndrome (shin splints)",
+  "region": "lower-leg",
+  "agent": "LL8"
+ },
+ {
+  "id": "tibial-stress-fracture",
+  "name": "Tibial stress fracture",
+  "region": "lower-leg",
+  "agent": "LL8"
+ },
+ {
+  "id": "chronic-exertional-compartment-syndrome",
+  "name": "Chronic exertional compartment syndrome",
+  "region": "lower-leg",
+  "agent": "LL8"
+ },
+ {
+  "id": "acute-compartment-syndrome",
+  "name": "Acute compartment syndrome",
+  "region": "lower-leg",
+  "agent": "LL8"
+ },
+ {
+  "id": "tibia-fibula-shaft-fracture",
+  "name": "Tibial and fibular shaft fracture",
+  "region": "lower-leg",
+  "agent": "LL8"
+ },
+ {
+  "id": "common-peroneal-nerve-injury",
+  "name": "Common peroneal (fibular) nerve injury",
+  "region": "lower-leg",
+  "agent": "LL8"
+ },
+ {
+  "id": "metatarsal-stress-fracture",
+  "name": "Metatarsal stress fracture",
+  "region": "foot",
+  "agent": "LL8"
+ },
+ {
+  "id": "navicular-stress-fracture",
+  "name": "Navicular stress fracture",
+  "region": "foot",
+  "agent": "LL8"
+ },
+ {
+  "id": "lateral-ankle-sprain",
+  "name": "Lateral ankle sprain",
+  "region": "ankle",
+  "agent": "LL9"
+ },
+ {
+  "id": "high-ankle-sprain",
+  "name": "High ankle (syndesmosis) sprain",
+  "region": "ankle",
+  "agent": "LL9"
+ },
+ {
+  "id": "medial-ankle-sprain",
+  "name": "Medial ankle (deltoid ligament) sprain",
+  "region": "ankle",
+  "agent": "LL9"
+ },
+ {
+  "id": "chronic-ankle-instability",
+  "name": "Chronic ankle instability",
+  "region": "ankle",
+  "agent": "LL9"
+ },
+ {
+  "id": "ankle-fracture",
+  "name": "Ankle (malleolar) fracture",
+  "region": "ankle",
+  "agent": "LL9"
+ },
+ {
+  "id": "osteochondral-lesion-talus",
+  "name": "Osteochondral lesion of the talus",
+  "region": "ankle",
+  "agent": "LL9"
+ },
+ {
+  "id": "anterior-ankle-impingement",
+  "name": "Anterior ankle impingement",
+  "region": "ankle",
+  "agent": "LL9"
+ },
+ {
+  "id": "posterior-ankle-impingement",
+  "name": "Posterior ankle impingement",
+  "region": "ankle",
+  "agent": "LL9"
+ },
+ {
+  "id": "fifth-metatarsal-fracture",
+  "name": "Fifth metatarsal fracture (avulsion & Jones)",
+  "region": "foot",
+  "agent": "LL10"
+ },
+ {
+  "id": "lisfranc-injury",
+  "name": "Lisfranc (tarsometatarsal) injury",
+  "region": "foot",
+  "agent": "LL10"
+ },
+ {
+  "id": "turf-toe",
+  "name": "Turf toe (1st MTP plantar plate injury)",
+  "region": "foot",
+  "agent": "LL10"
+ },
+ {
+  "id": "mortons-neuroma",
+  "name": "Morton's neuroma",
+  "region": "foot",
+  "agent": "LL10"
+ },
+ {
+  "id": "sesamoid-injury",
+  "name": "Hallux sesamoid injury (sesamoiditis & fracture)",
+  "region": "foot",
+  "agent": "LL10"
+ },
+ {
+  "id": "peroneal-tendinopathy",
+  "name": "Peroneal tendinopathy",
+  "region": "ankle",
+  "agent": "LL10"
+ },
+ {
+  "id": "peroneal-tendon-subluxation",
+  "name": "Peroneal tendon subluxation/dislocation",
+  "region": "ankle",
+  "agent": "LL10"
+ },
+ {
+  "id": "posterior-tibial-tendon-dysfunction",
+  "name": "Tibialis posterior tendon dysfunction",
+  "region": "ankle",
+  "agent": "LL10"
+ },
+ {
+  "id": "anterior-shoulder-dislocation",
+  "name": "Anterior shoulder dislocation (with Bankart/Hill–Sachs)",
+  "region": "shoulder",
+  "agent": "UL1"
+ },
+ {
+  "id": "posterior-shoulder-instability",
+  "name": "Posterior shoulder dislocation and instability",
+  "region": "shoulder",
+  "agent": "UL1"
+ },
+ {
+  "id": "multidirectional-instability",
+  "name": "Multidirectional shoulder instability",
+  "region": "shoulder",
+  "agent": "UL1"
+ },
+ {
+  "id": "slap-lesion",
+  "name": "SLAP lesion (superior labral tear)",
+  "region": "shoulder",
+  "agent": "UL1"
+ },
+ {
+  "id": "internal-impingement",
+  "name": "Internal impingement in the overhead athlete",
+  "region": "shoulder",
+  "agent": "UL1"
+ },
+ {
+  "id": "little-league-shoulder",
+  "name": "Little League shoulder (proximal humeral epiphysiolysis)",
+  "region": "shoulder",
+  "agent": "UL1"
+ },
+ {
+  "id": "rotator-cuff-related-shoulder-pain",
+  "name": "Rotator cuff related shoulder pain (subacromial pain)",
+  "region": "shoulder",
+  "agent": "UL2"
+ },
+ {
+  "id": "traumatic-rotator-cuff-tear",
+  "name": "Traumatic rotator cuff tear",
+  "region": "shoulder",
+  "agent": "UL2"
+ },
+ {
+  "id": "degenerative-rotator-cuff-tear",
+  "name": "Degenerative (atraumatic) rotator cuff tear",
+  "region": "shoulder",
+  "agent": "UL2"
+ },
+ {
+  "id": "calcific-tendinopathy",
+  "name": "Calcific tendinopathy of the rotator cuff",
+  "region": "shoulder",
+  "agent": "UL2"
+ },
+ {
+  "id": "frozen-shoulder",
+  "name": "Frozen shoulder (adhesive capsulitis)",
+  "region": "shoulder",
+  "agent": "UL2"
+ },
+ {
+  "id": "long-head-biceps-tendinopathy",
+  "name": "Long head of biceps tendinopathy",
+  "region": "shoulder",
+  "agent": "UL2"
+ },
+ {
+  "id": "proximal-biceps-rupture",
+  "name": "Proximal (long head) biceps rupture",
+  "region": "shoulder",
+  "agent": "UL2"
+ },
+ {
+  "id": "ac-joint-injury",
+  "name": "Acromioclavicular (AC) joint injury",
+  "region": "shoulder",
+  "agent": "UL3"
+ },
+ {
+  "id": "clavicle-fracture",
+  "name": "Clavicle fracture",
+  "region": "shoulder",
+  "agent": "UL3"
+ },
+ {
+  "id": "sc-joint-injury",
+  "name": "Sternoclavicular joint injury",
+  "region": "shoulder",
+  "agent": "UL3"
+ },
+ {
+  "id": "pectoralis-major-rupture",
+  "name": "Pectoralis major rupture",
+  "region": "shoulder",
+  "agent": "UL3"
+ },
+ {
+  "id": "proximal-humerus-fracture",
+  "name": "Proximal humerus fracture",
+  "region": "shoulder",
+  "agent": "UL3"
+ },
+ {
+  "id": "humeral-shaft-fracture",
+  "name": "Humeral shaft fracture (with radial nerve palsy)",
+  "region": "arm",
+  "agent": "UL3"
+ },
+ {
+  "id": "long-thoracic-nerve-palsy",
+  "name": "Long thoracic nerve palsy (scapular winging)",
+  "region": "shoulder",
+  "agent": "UL3"
+ },
+ {
+  "id": "lateral-elbow-tendinopathy",
+  "name": "Lateral elbow tendinopathy (tennis elbow)",
+  "region": "elbow",
+  "agent": "UL4"
+ },
+ {
+  "id": "medial-elbow-tendinopathy",
+  "name": "Medial elbow tendinopathy (golfer's elbow)",
+  "region": "elbow",
+  "agent": "UL4"
+ },
+ {
+  "id": "distal-biceps-rupture",
+  "name": "Distal biceps tendon rupture",
+  "region": "elbow",
+  "agent": "UL4"
+ },
+ {
+  "id": "triceps-tendon-rupture",
+  "name": "Triceps tendon rupture",
+  "region": "elbow",
+  "agent": "UL4"
+ },
+ {
+  "id": "cubital-tunnel-syndrome",
+  "name": "Cubital tunnel syndrome",
+  "region": "elbow",
+  "agent": "UL4"
+ },
+ {
+  "id": "olecranon-bursitis",
+  "name": "Olecranon bursitis",
+  "region": "elbow",
+  "agent": "UL4"
+ },
+ {
+  "id": "radial-tunnel-syndrome",
+  "name": "Radial tunnel syndrome / PIN compression",
+  "region": "elbow",
+  "agent": "UL4"
+ },
+ {
+  "id": "elbow-ucl-injury",
+  "name": "Elbow ulnar collateral ligament injury (thrower's elbow)",
+  "region": "elbow",
+  "agent": "UL5"
+ },
+ {
+  "id": "elbow-dislocation",
+  "name": "Elbow dislocation",
+  "region": "elbow",
+  "agent": "UL5"
+ },
+ {
+  "id": "radial-head-fracture",
+  "name": "Radial head fracture",
+  "region": "elbow",
+  "agent": "UL5"
+ },
+ {
+  "id": "little-league-elbow",
+  "name": "Little League elbow (medial epicondyle apophysitis)",
+  "region": "elbow",
+  "agent": "UL5"
+ },
+ {
+  "id": "capitellar-ocd",
+  "name": "Osteochondritis dissecans of the capitellum",
+  "region": "elbow",
+  "agent": "UL5"
+ },
+ {
+  "id": "supracondylar-fracture",
+  "name": "Paediatric supracondylar humerus fracture",
+  "region": "elbow",
+  "agent": "UL5"
+ },
+ {
+  "id": "pulled-elbow",
+  "name": "Pulled elbow (radial head subluxation)",
+  "region": "elbow",
+  "agent": "UL5"
+ },
+ {
+  "id": "scaphoid-fracture",
+  "name": "Scaphoid fracture",
+  "region": "wrist-hand",
+  "agent": "UL6"
+ },
+ {
+  "id": "distal-radius-fracture",
+  "name": "Distal radius fracture",
+  "region": "wrist-hand",
+  "agent": "UL6"
+ },
+ {
+  "id": "tfcc-injury",
+  "name": "Triangular fibrocartilage complex (TFCC) injury",
+  "region": "wrist-hand",
+  "agent": "UL6"
+ },
+ {
+  "id": "scapholunate-ligament-injury",
+  "name": "Scapholunate ligament injury",
+  "region": "wrist-hand",
+  "agent": "UL6"
+ },
+ {
+  "id": "hook-of-hamate-fracture",
+  "name": "Hook of hamate fracture",
+  "region": "wrist-hand",
+  "agent": "UL6"
+ },
+ {
+  "id": "ecu-tendinopathy",
+  "name": "ECU tendinopathy and subluxation",
+  "region": "wrist-hand",
+  "agent": "UL6"
+ },
+ {
+  "id": "intersection-syndrome",
+  "name": "Intersection syndrome",
+  "region": "wrist-hand",
+  "agent": "UL6"
+ },
+ {
+  "id": "carpal-tunnel-syndrome",
+  "name": "Carpal tunnel syndrome",
+  "region": "wrist-hand",
+  "agent": "UL7"
+ },
+ {
+  "id": "de-quervain-tenosynovitis",
+  "name": "De Quervain's tenosynovitis",
+  "region": "wrist-hand",
+  "agent": "UL7"
+ },
+ {
+  "id": "trigger-finger",
+  "name": "Trigger finger (stenosing tenosynovitis)",
+  "region": "wrist-hand",
+  "agent": "UL7"
+ },
+ {
+  "id": "ulnar-tunnel-syndrome",
+  "name": "Ulnar tunnel (Guyon's canal) syndrome",
+  "region": "wrist-hand",
+  "agent": "UL7"
+ },
+ {
+  "id": "skiers-thumb",
+  "name": "Skier's / gamekeeper's thumb (thumb UCL injury)",
+  "region": "wrist-hand",
+  "agent": "UL7"
+ },
+ {
+  "id": "bennett-fracture",
+  "name": "Bennett's fracture",
+  "region": "wrist-hand",
+  "agent": "UL7"
+ },
+ {
+  "id": "mallet-finger",
+  "name": "Mallet finger",
+  "region": "wrist-hand",
+  "agent": "UL8"
+ },
+ {
+  "id": "boutonniere-deformity",
+  "name": "Boutonnière deformity (central slip injury)",
+  "region": "wrist-hand",
+  "agent": "UL8"
+ },
+ {
+  "id": "jersey-finger",
+  "name": "Jersey finger (FDP avulsion)",
+  "region": "wrist-hand",
+  "agent": "UL8"
+ },
+ {
+  "id": "pip-volar-plate-injury",
+  "name": "PIP joint volar plate injury and dislocation",
+  "region": "wrist-hand",
+  "agent": "UL8"
+ },
+ {
+  "id": "boxers-fracture",
+  "name": "Boxer's fracture (5th metacarpal neck)",
+  "region": "wrist-hand",
+  "agent": "UL8"
+ },
+ {
+  "id": "a2-pulley-rupture",
+  "name": "Finger flexor pulley (A2) rupture",
+  "region": "wrist-hand",
+  "agent": "UL8"
+ },
+ {
+  "id": "whiplash-associated-disorder",
+  "name": "Whiplash-associated disorder",
+  "region": "cervical",
+  "agent": "SP1"
+ },
+ {
+  "id": "cervical-radiculopathy",
+  "name": "Cervical radiculopathy",
+  "region": "cervical",
+  "agent": "SP1"
+ },
+ {
+  "id": "acute-wry-neck",
+  "name": "Acute wry neck (acute torticollis)",
+  "region": "cervical",
+  "agent": "SP1"
+ },
+ {
+  "id": "cervical-spine-fracture",
+  "name": "Cervical spine fracture",
+  "region": "cervical",
+  "agent": "SP1"
+ },
+ {
+  "id": "cervicogenic-headache",
+  "name": "Cervicogenic headache",
+  "region": "cervical",
+  "agent": "SP1"
+ },
+ {
+  "id": "degenerative-cervical-myelopathy",
+  "name": "Degenerative cervical myelopathy",
+  "region": "cervical",
+  "agent": "SP1"
+ },
+ {
+  "id": "cervical-arterial-dysfunction",
+  "name": "Cervical arterial dysfunction (dissection)",
+  "region": "cervical",
+  "agent": "SP1"
+ },
+ {
+  "id": "stinger-burner",
+  "name": "Stinger / burner (brachial plexus traction injury)",
+  "region": "cervical",
+  "agent": "SP2"
+ },
+ {
+  "id": "thoracic-outlet-syndrome",
+  "name": "Thoracic outlet syndrome",
+  "region": "cervical",
+  "agent": "SP2"
+ },
+ {
+  "id": "thoracic-costovertebral-sprain",
+  "name": "Thoracic facet / costovertebral joint sprain",
+  "region": "thoracic",
+  "agent": "SP2"
+ },
+ {
+  "id": "osteoporotic-vertebral-fracture",
+  "name": "Osteoporotic vertebral compression fracture",
+  "region": "thoracic",
+  "agent": "SP2"
+ },
+ {
+  "id": "rib-fracture",
+  "name": "Rib fracture",
+  "region": "chest-abdomen",
+  "agent": "SP2"
+ },
+ {
+  "id": "rib-stress-fracture",
+  "name": "Rib stress fracture (rowers)",
+  "region": "chest-abdomen",
+  "agent": "SP2"
+ },
+ {
+  "id": "costochondritis",
+  "name": "Costochondritis",
+  "region": "chest-abdomen",
+  "agent": "SP2"
+ },
+ {
+  "id": "lumbar-disc-herniation",
+  "name": "Lumbar disc herniation with radiculopathy",
+  "region": "lumbar",
+  "agent": "SP3"
+ },
+ {
+  "id": "acute-low-back-pain",
+  "name": "Acute non-specific low back pain (muscle/ligament strain)",
+  "region": "lumbar",
+  "agent": "SP3"
+ },
+ {
+  "id": "spondylolysis",
+  "name": "Spondylolysis (pars stress fracture)",
+  "region": "lumbar",
+  "agent": "SP3"
+ },
+ {
+  "id": "spondylolisthesis",
+  "name": "Spondylolisthesis",
+  "region": "lumbar",
+  "agent": "SP3"
+ },
+ {
+  "id": "cauda-equina-syndrome",
+  "name": "Cauda equina syndrome",
+  "region": "lumbar",
+  "agent": "SP3"
+ },
+ {
+  "id": "lumbar-facet-joint-pain",
+  "name": "Lumbar facet joint pain",
+  "region": "lumbar",
+  "agent": "SP3"
+ },
+ {
+  "id": "lumbar-spinal-stenosis",
+  "name": "Lumbar spinal stenosis (neurogenic claudication)",
+  "region": "lumbar",
+  "agent": "SP3"
+ },
+ {
+  "id": "sacroiliac-joint-pain",
+  "name": "Sacroiliac joint pain",
+  "region": "pelvis",
+  "agent": "SP4"
+ },
+ {
+  "id": "pregnancy-pelvic-girdle-pain",
+  "name": "Pregnancy-related pelvic girdle pain",
+  "region": "pelvis",
+  "agent": "SP4"
+ },
+ {
+  "id": "coccydynia",
+  "name": "Coccydynia",
+  "region": "pelvis",
+  "agent": "SP4"
+ },
+ {
+  "id": "pubic-ramus-stress-fracture",
+  "name": "Pubic ramus stress fracture",
+  "region": "pelvis",
+  "agent": "SP4"
+ },
+ {
+  "id": "sacral-stress-fracture",
+  "name": "Sacral stress fracture",
+  "region": "pelvis",
+  "agent": "SP4"
+ },
+ {
+  "id": "side-strain",
+  "name": "Side strain (internal oblique injury)",
+  "region": "chest-abdomen",
+  "agent": "SP4"
+ },
+ {
+  "id": "rectus-abdominis-strain",
+  "name": "Rectus abdominis strain",
+  "region": "chest-abdomen",
+  "agent": "SP4"
+ },
+ {
+  "id": "intercostal-muscle-strain",
+  "name": "Intercostal muscle strain",
+  "region": "chest-abdomen",
+  "agent": "SP4"
+ },
+ {
+  "id": "concussion",
+  "name": "Sport-related concussion",
+  "region": "head-face",
+  "agent": "SP5"
+ },
+ {
+  "id": "persisting-post-concussion-symptoms",
+  "name": "Persisting post-concussion symptoms",
+  "region": "head-face",
+  "agent": "SP5"
+ },
+ {
+  "id": "bppv",
+  "name": "Benign paroxysmal positional vertigo (post-traumatic)",
+  "region": "head-face",
+  "agent": "SP5"
+ },
+ {
+  "id": "tmj-disc-displacement",
+  "name": "Temporomandibular joint disc displacement",
+  "region": "head-face",
+  "agent": "SP5"
+ },
+ {
+  "id": "cervicogenic-dizziness",
+  "name": "Cervicogenic dizziness",
+  "region": "head-face",
+  "agent": "SP5"
+ },
+ {
+  "id": "bone-stress-injury",
+  "name": "Bone stress injury and RED-S",
+  "region": "general",
+  "agent": "SP6"
+ },
+ {
+  "id": "physeal-fracture",
+  "name": "Physeal (growth plate) fracture — Salter–Harris",
+  "region": "general",
+  "agent": "SP6"
+ },
+ {
+  "id": "complex-regional-pain-syndrome",
+  "name": "Complex regional pain syndrome",
+  "region": "general",
+  "agent": "SP6"
+ },
+ {
+  "id": "exertional-rhabdomyolysis",
+  "name": "Exertional rhabdomyolysis",
+  "region": "general",
+  "agent": "SP6"
+ },
+ {
+  "id": "delayed-onset-muscle-soreness",
+  "name": "Delayed-onset muscle soreness (DOMS)",
+  "region": "general",
+  "agent": "SP6"
+ },
+ {
+  "id": "meralgia-paraesthetica",
+  "name": "Meralgia paraesthetica (LFCN entrapment)",
+  "region": "pelvis",
+  "agent": "SP6"
+ },
+ {
+  "id": "peripheral-nerve-injury",
+  "name": "Peripheral nerve injury (Seddon/Sunderland)",
+  "region": "general",
+  "agent": "SP6"
+ }
+]

@@ -1,0 +1,214 @@
+/* Physio Explained — design tokens.
+   Layout concept: a clinical atlas. Calm cool-paper reading surfaces, deep ink text,
+   a teal "clinical" accent for interaction, and a muscle-red "tissue" colour reserved
+   for anatomy and injury marks. Animations sit on a fixed dark lightbox (like a
+   radiology viewer) in BOTH themes, so anatomical colours stay identical everywhere.
+   OWNER: head of QC. Teams may ADD tokens (append at the bottom of the right block) but
+   must not rename or delete existing ones. Never hard-code colours in components. */
+
+:root {
+  /* Surfaces & ink (light) */
+  --paper: #f3f5f1;
+  --surface: #ffffff;
+  --surface-2: #e9ede6;
+  --surface-3: #dde3dc;
+  --ink: #16202a;
+  --ink-2: #46525e;
+  --ink-3: #6b7782;
+  --line: #d3d9d1;
+  --line-strong: #b7c0b6;
+
+  /* Brand */
+  --accent: #0e5f6f;          /* links, primary buttons, focus */
+  --accent-ink: #ffffff;      /* text on accent */
+  --accent-soft: #d6ebee;     /* chips, selected rows */
+  --tissue: #b23a33;          /* anatomy / injury marks, sparingly */
+  --tissue-soft: #f6dedb;
+
+  /* Semantic */
+  --danger: #b42318;  --danger-soft: #fde5e2;
+  --warn:   #a15c07;  --warn-soft:   #fcefd9;
+  --ok:     #2d6a3a;  --ok-soft:     #dcefdf;
+  --info:   #2b5f9e;  --info-soft:   #dde8f6;
+
+  /* Evidence badges */
+  --ev-strong: #2d6a3a;
+  --ev-moderate: #4f7d2a;
+  --ev-limited: #a15c07;
+  --ev-very-limited: #9a4d1f;
+  --ev-conflicting: #6b4c9a;
+  --ev-expert: #5b6670;
+  --ev-against: #b42318;
+
+  /* Healing phases (timeline chart) */
+  --phase-inflammatory: #c2410c;
+  --phase-proliferative: #b07d09;
+  --phase-remodelling: #2563a6;
+  --phase-other: #6b7782;
+
+  /* Type */
+  --font-display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Public Sans", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Type scale (1.2 minor third, 16px base) */
+  --fs-xs: 0.75rem;    /* 12 */
+  --fs-sm: 0.875rem;   /* 14 */
+  --fs-base: 1rem;     /* 16 */
+  --fs-md: 1.125rem;   /* 18 */
+  --fs-lg: 1.375rem;   /* 22 */
+  --fs-xl: 1.75rem;    /* 28 */
+  --fs-2xl: 2.25rem;   /* 36 */
+  --fs-3xl: clamp(2.25rem, 4.5vw + 1rem, 3.5rem);
+  --lh-tight: 1.15;
+  --lh-body: 1.6;
+  --measure: 68ch;
+
+  /* Space (4px grid) */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px;
+  --sp-6: 32px; --sp-7: 48px; --sp-8: 64px; --sp-9: 96px;
+
+  /* Shape & depth */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 14px;
+  --shadow-1: 0 1px 2px rgba(22, 32, 42, .08);
+  --shadow-2: 0 6px 24px rgba(22, 32, 42, .10);
+  --focus-ring: 0 0 0 3px color-mix(in srgb, var(--accent) 45%, transparent);
+
+  /* Layout */
+  --header-h: 64px;
+  --content-max: 1200px;
+  --reading-max: 760px;
+
+  /* Motion */
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --dur-fast: 120ms;
+  --dur: 220ms;
+
+  /* ---- Animation stage (fixed lightbox; NOT theme dependent) ---- */
+  --stage-bg: #0b1316;
+  --stage-bg-2: #13202a;
+  --stage-grid: #1b2a31;
+  --stage-ink: #dfe8ea;
+  --stage-ink-2: #93a6ad;
+  --stage-accent: #5cc8d6;
+  --stage-caption-bg: rgba(6, 12, 14, .78);
+
+  /* Figure (MOI phase) */
+  --fig-skin: #c9d6da;
+  --fig-skin-far: #8a9ca3;
+  --fig-kit: #3e8fa0;
+  --fig-kit-far: #2a6270;
+  --fig-opponent: #c7793f;
+  --fig-opponent-far: #8a522a;
+  --fig-ground: #2a3a40;
+
+  /* Anatomy (close-up & micro phases) */
+  --anat-bone: #e8dfca;
+  --anat-bone-edge: #a99c7d;
+  --anat-marrow: #c9a77a;
+  --anat-cartilage: #b9d7e6;
+  --anat-ligament: #d6e0e6;
+  --anat-ligament-edge: #8fa3ad;
+  --anat-tendon: #ece4d3;
+  --anat-tendon-edge: #a59a84;
+  --anat-muscle: #b4473d;
+  --anat-muscle-light: #d26b5f;
+  --anat-muscle-edge: #7d2a24;
+  --anat-nerve: #f0c64a;
+  --anat-nerve-edge: #a8861f;
+  --anat-artery: #d8473e;
+  --anat-vein: #4f72b8;
+  --anat-fat: #efd68a;
+  --anat-fluid: #8cc4da;
+  --anat-capsule: #9fb6c2;
+  --anat-fascia: #c8d3cf;
+  --anat-annulus: #d8cbb0;
+  --anat-nucleus: #a6c8de;
+  --anat-brain: #d9a6a0;
+  --anat-brain-deep: #b9817c;
+  --anat-physis: #6f8790;
+  --anat-skin: #34474e;
+
+  /* Injury/healing effects */
+  --fx-highlight: #5cc8d6;
+  --fx-injury: #ff5a4e;
+  --fx-inflame: #ff7a45;
+  --fx-bleed: #8e1b1b;
+  --fx-oedema: rgba(140, 196, 218, .35);
+  --fx-force: #ffd166;
+  --fx-heal: #7fd1b9;
+  --fx-pain: #ff4f8b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e1417;
+    --surface: #151d21;
+    --surface-2: #1c262b;
+    --surface-3: #243137;
+    --ink: #e4eae7;
+    --ink-2: #a8b4b8;
+    --ink-3: #82909a;
+    --line: #2a363c;
+    --line-strong: #3a4a51;
+    --accent: #5ec2d1;
+    --accent-ink: #062126;
+    --accent-soft: #163a41;
+    --tissue: #e57b72;
+    --tissue-soft: #3a1f1d;
+    --danger: #f2877b;  --danger-soft: #3d1a17;
+    --warn:   #e8b45c;  --warn-soft:   #3a2a12;
+    --ok:     #7fc68f;  --ok-soft:     #17301d;
+    --info:   #8db7ec;  --info-soft:   #18283d;
+    --ev-strong: #7fc68f;
+    --ev-moderate: #a9cf6f;
+    --ev-limited: #e8b45c;
+    --ev-very-limited: #e39a63;
+    --ev-conflicting: #b9a0e6;
+    --ev-expert: #a8b4b8;
+    --ev-against: #f2877b;
+    --phase-inflammatory: #f08a55;
+    --phase-proliferative: #e3be52;
+    --phase-remodelling: #78a9e6;
+    --phase-other: #a8b4b8;
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, .4);
+    --shadow-2: 0 8px 28px rgba(0, 0, 0, .45);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e1417;
+  --surface: #151d21;
+  --surface-2: #1c262b;
+  --surface-3: #243137;
+  --ink: #e4eae7;
+  --ink-2: #a8b4b8;
+  --ink-3: #82909a;
+  --line: #2a363c;
+  --line-strong: #3a4a51;
+  --accent: #5ec2d1;
+  --accent-ink: #062126;
+  --accent-soft: #163a41;
+  --tissue: #e57b72;
+  --tissue-soft: #3a1f1d;
+  --danger: #f2877b;  --danger-soft: #3d1a17;
+  --warn:   #e8b45c;  --warn-soft:   #3a2a12;
+  --ok:     #7fc68f;  --ok-soft:     #17301d;
+  --info:   #8db7ec;  --info-soft:   #18283d;
+  --ev-strong: #7fc68f;
+  --ev-moderate: #a9cf6f;
+  --ev-limited: #e8b45c;
+  --ev-very-limited: #e39a63;
+  --ev-conflicting: #b9a0e6;
+  --ev-expert: #a8b4b8;
+  --ev-against: #f2877b;
+  --phase-inflammatory: #f08a55;
+  --phase-proliferative: #e3be52;
+  --phase-remodelling: #78a9e6;
+  --phase-other: #a8b4b8;
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, .4);
+  --shadow-2: 0 8px 28px rgba(0, 0, 0, .45);
+  color-scheme: dark;
+}
