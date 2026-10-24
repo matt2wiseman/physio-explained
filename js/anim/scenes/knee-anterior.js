@@ -15,7 +15,8 @@
  *   mcl  femoral origin (medial epicondyle) → tibial insertion (≈ 6 cm below joint line)
  *   lcl  femoral origin (lateral epicondyle) → fibular head
  *   itBand  proximal (lateral thigh) → Gerdy's tubercle;  pesAnserine  proximal → insertion
- *   popliteusTendon  musculotendinous junction (behind tibia) → femoral insertion (popliteal groove)
+ *   popliteusTendon  femoral origin (popliteal groove, lateral condyle) → musculotendinous junction behind the tibia
+ *     (avulse end:"from" = femoral avulsion)
  * Cartilage axes: menisci anterior body → posterior body (along the peripheral rim);
  *   femoral/tibial cartilage lateral → medial.
  */
@@ -137,7 +138,7 @@ export default {
       d: femoralCartilage,
       axis: [[296, 180], [510, 180]]   // lateral (LFC) → medial (MFC); MFC lateral aspect (OCD site) ≈ 0.62
     },
-    popliteusTendon: { type: "tendon", z: 6, from: [320, 252], to: [298, 168], width: 8, bend: 6 },
+    popliteusTendon: { type: "tendon", z: 6, from: [298, 168], to: [320, 252], width: 8, bend: -6 },
     tibia: { type: "bone", z: 7, d: spline(TIBIA), label: [404, 392] },
     proximalTibialPhysis: {
       type: "physis", z: 8, label: [470, 300],

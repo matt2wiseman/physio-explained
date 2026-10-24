@@ -1,1 +1,89 @@
-/* owner: P1 */
+/* Physio Explained — page layout. OWNER: P1.
+   <main id="main" class="site-main view view--<route>"> already provides the page width (var(--content-max)) and the
+   side gutters, so views can render straight into it. Classes:
+
+   .container            max-width var(--content-max) + gutters (header/footer; neutralised when nested inside main)
+   .container--reading   narrower measure (var(--reading-max))      .container--wide   up to 1440px
+   main.main--bleed      (add to <main> from a view) removes main's max-width/gutters for edge-to-edge layouts
+   .full-bleed           a section whose BACKGROUND runs edge to edge while its content stays aligned (no overflow)
+   .stack (+ --xs --sm --lg --xl, or --stack-gap)   vertical rhythm via gap
+   .cluster (+ --sm --lg, or --cluster-gap)         wrapping inline row, centred vertically
+   .grid  .grid--2  .grid--3  .grid--4              responsive columns (collapse on small screens)
+   .grid--auto (min track via --grid-min, default 260px)
+   .split                 main column + sidebar (sidebar right ≥ 960px; --split-side, default 300px)
+   .split--left           sidebar first        .sticky   sticks below the header
+   .section               vertical spacing between page sections     .scroll-x   horizontal scroll box
+   .hide-mobile / .hide-desktop (breakpoint 760px)
+*/
+
+:root {
+  --gutter: 16px;
+  --sticky-top: calc(var(--header-h) + env(safe-area-inset-top, 0px));
+}
+@media (min-width: 640px) { :root { --gutter: 24px; } }
+@media (min-width: 1024px) { :root { --gutter: 32px; } }
+
+.container,
+.site-main {
+  width: 100%;
+  max-width: calc(var(--content-max) + 2 * var(--gutter));
+  margin-inline: auto;
+  padding-left: max(var(--gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--gutter), env(safe-area-inset-right, 0px));
+}
+.site-main {
+  flex: 1 0 auto;
+  padding-block: var(--sp-6) var(--sp-8);
+  min-width: 0;
+}
+.site-main.main--bleed { max-width: none; padding: 0; }
+.site-main .container { padding-inline: 0; }
+.container--reading { max-width: calc(var(--reading-max) + 2 * var(--gutter)); }
+.site-main .container--reading { max-width: var(--reading-max); }
+.container--wide { max-width: calc(1440px + 2 * var(--gutter)); }
+
+.full-bleed {
+  --bleed-bg: var(--surface);
+  background: var(--bleed-bg);
+  box-shadow: 0 0 0 100vmax var(--bleed-bg);
+  clip-path: inset(0 -100vmax);
+}
+
+/* ---------- stack & cluster ---------- */
+.stack { display: flex; flex-direction: column; gap: var(--stack-gap, var(--sp-4)); }
+.stack > * { margin: 0; }
+.stack--xs { --stack-gap: var(--sp-1); }
+.stack--sm { --stack-gap: var(--sp-2); }
+.stack--lg { --stack-gap: var(--sp-6); }
+.stack--xl { --stack-gap: var(--sp-8); }
+
+.cluster { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cluster-gap, var(--sp-3)); }
+.cluster--sm { --cluster-gap: var(--sp-2); }
+.cluster--lg { --cluster-gap: var(--sp-5); }
+.cluster--between { justify-content: space-between; }
+
+/* ---------- grids ---------- */
+.grid { display: grid; gap: var(--grid-gap, var(--sp-5)); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 640px) {
+  .grid--2, .grid--3, .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 960px) {
+  .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+.grid--auto { grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--grid-min, 260px)), 1fr)); }
+
+/* ---------- content + sidebar ---------- */
+.split { display: grid; gap: var(--split-gap, var(--sp-6)); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 960px) {
+  .split { grid-template-columns: minmax(0, 1fr) var(--split-side, 300px); }
+  .split--left { grid-template-columns: var(--split-side, 260px) minmax(0, 1fr); }
+}
+.sticky { position: sticky; top: calc(var(--sticky-top) + var(--sp-4)); }
+
+.section { margin-block: var(--sp-7); }
+.section:first-child { margin-top: 0; }
+.scroll-x { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+
+@media (max-width: 759.98px) { .hide-mobile { display: none !important; } }
+@media (min-width: 760px) { .hide-desktop { display: none !important; } }

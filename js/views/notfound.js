@@ -46,7 +46,7 @@ export function render(main, params = [], ctx = {}) {
     reason === "error"
       ? h("button", { type: "button", class: "btn btn--primary", on: { click: () => router?.reload?.() } }, icon("restart"), "Try again")
       : h("a", { class: "btn btn--primary", href: "#library" }, icon("list"), "Browse the library"),
-    h("a", { class: "btn", href: "#home" }, "Go to the home page"));
+    name !== "home" ? h("a", { class: "btn", href: "#home" }, "Go to the home page") : null);
 
   const details = reason === "error" && ctx.error
     ? h("details", { class: "empty-state__details" },

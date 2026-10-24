@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Physio Explained</title>
+  <meta name="description" content="Evidence-based injury education for physiotherapists: mechanisms of injury, pathophysiology, assessment, management and staged rehabilitation, with animated explainers.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1417" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    /* apply the saved theme before first paint (no flash); storage may be blocked in sandboxed frames */
+    (function () { try { var p = JSON.parse(localStorage.getItem("pe:prefs") || "{}"); var t = p && p.theme; if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/components/home.css">
+  <link rel="stylesheet" href="css/components/healing.css">
+  <link rel="stylesheet" href="css/components/about.css">
+  <link rel="stylesheet" href="css/components/library.css">
+  <link rel="stylesheet" href="css/components/card.css">
+  <link rel="stylesheet" href="css/components/injury.css">
+  <link rel="stylesheet" href="css/components/search.css">
+  <link rel="stylesheet" href="css/components/glossary.css">
+  <link rel="stylesheet" href="css/components/bodymap.css">
+  <link rel="stylesheet" href="css/components/compare.css">
+  <link rel="stylesheet" href="css/components/widgets.css">
+  <link rel="stylesheet" href="css/components/player.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header" data-menu="closed">
+    <div class="site-header__inner container">
+      <a class="brand" href="#home" aria-label="Physio Explained — home">
+        <svg class="brand__mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" focusable="false">
+          <rect class="brand__tile" x="0" y="0" width="32" height="32" rx="7"/>
+          <path class="brand__bone" d="M10.5 3h11v7.75a5.5 5.5 0 0 1-11 0z"/>
+          <path class="brand__bone" d="M8.5 19.5h15v2.4l-3.4 2.9V29h-8.2v-4.2l-3.4-2.9z"/>
+          <path class="brand__lig" d="M19.4 12.2l-6.6 9.3"/>
+        </svg>
+        <span class="brand__word"><span class="brand__a">Physio</span> <span class="brand__b">Explained</span></span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="site-nav__list" role="list">
+          <li><a href="#library" data-nav="library"><span class="site-nav__label">Library</span><span class="site-nav__desc">Every injury by region and tissue</span></a></li>
+          <li><a href="#bodymap" data-nav="bodymap"><span class="site-nav__label">Body map</span><span class="site-nav__desc">Point at the body to find injuries</span></a></li>
+          <li><a href="#healing" data-nav="healing"><span class="site-nav__label">Healing science</span><span class="site-nav__desc">How each tissue heals, and how long it takes</span></a></li>
+          <li><a href="#glossary" data-nav="glossary"><span class="site-nav__label">Glossary</span><span class="site-nav__desc">Clinical terms and abbreviations</span></a></li>
+          <li><a href="#saved" data-nav="saved"><span class="site-nav__label">Saved</span><span class="site-nav__desc">Your favourites and recently viewed</span></a></li>
+          <li><a href="#about" data-nav="about"><span class="site-nav__label">About</span><span class="site-nav__desc">Methods, evidence levels and disclaimer</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="site-search" id="site-search">
+        <a class="search-fallback" href="#search" data-nav="search"><span class="search-fallback__icon" data-icon="search"></span><span>Search injuries, tests, structures…</span></a>
+      </div>
+
+      <div class="site-tools">
+        <a class="icon-btn site-tools__search" href="#search" aria-label="Search"><span data-icon="search"></span></a>
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Colour theme: system">
+          <span class="theme-toggle__icon" data-icon="monitor"></span>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span data-icon="menu"></span><span class="visually-hidden">Menu</span>
+        </button>
+      </div>
+    </div>
+    <div class="route-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main" class="site-main" tabindex="-1">
+    <noscript><p>Physio Explained needs JavaScript to show its injury library and animations.</p></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner container">
+      <div class="site-footer__brand">
+        <p class="site-footer__name">Physio Explained</p>
+        <p class="site-footer__tag">Mechanisms, pathophysiology, assessment and evidence-based rehabilitation — an injury atlas for physiotherapists.</p>
+      </div>
+      <div class="site-footer__notice" role="note" aria-label="Disclaimer">
+        <p class="eyebrow">Educational use only</p>
+        <p>This site is for the education of physiotherapists and students. It is not a substitute for individual clinical assessment, diagnosis or medical advice.</p>
+        <p>Content generated with AI assistance from peer-reviewed sources, verified against PubMed — review before clinical use. <a href="#about">How the content is made</a>.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer">
+        <ul role="list">
+          <li><a href="#library">Library</a></li>
+          <li><a href="#bodymap">Body map</a></li>
+          <li><a href="#healing">Healing science</a></li>
+          <li><a href="#glossary">Glossary</a></li>
+          <li><a href="#saved">Saved</a></li>
+          <li><a href="#about">About &amp; methods</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="site-footer__base container">
+      <p class="mono site-footer__stats" id="footer-stats"></p>
+      <p class="mono">Evidence-based · Australian clinical English</p>
+    </div>
+  </footer>
+</body>
+</html>

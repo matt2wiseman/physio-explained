@@ -50,7 +50,7 @@ export function parse(hash = location.hash) {
   return { name, params: tokens, raw };
 }
 
-export const current = () => (S.route ? { name: S.route.name, params: [...S.route.params] } : { ...parse(), raw: undefined });
+export const current = () => { const r = S.route || parse(); return { name: r.name, params: [...r.params] }; };
 export const href = (name, ...params) => "#" + [name, ...params.filter((p) => p != null && p !== "")].join(".");
 export function onChange(fn) { listeners.add(fn); return () => listeners.delete(fn); }
 

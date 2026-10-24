@@ -73,6 +73,7 @@ export function evidenceBadge(evidence, recommendation, opts = {}) {
   const root = span("ev-badge");
   if (ev) root.classList.add(`ev-badge--${evidence}`);
   if (rec) root.classList.add(`ev-badge--rec-${recommendation}`);
+  if (rec && !evidence) root.classList.add("ev-badge--rec-only");
 
   const parts = [];
   if (rec) {

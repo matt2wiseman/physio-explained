@@ -18,6 +18,8 @@ import { clamp, lerp, ease, smoothstep, locate } from "./timeline.js";
 export const STAGE_W = 800, STAGE_H = 450;
 /** Area the MOI actors are framed into: clear of the chapter chip (top-left) and of overlay captions (bottom). */
 export const SAFE = { x: 48, y: 40, w: 704, h: 306 };
+/** Safe area when captions are docked below the stage (narrow players): only the chip needs room. */
+export const SAFE_DOCKED = { x: 40, y: 44, w: 720, h: 374 };
 export const ZOOM_FACTOR = 6;
 export const ZOOM_FADE_START = 0.6;     // cross-fade over the last 40 % of the zoom phase
 export const DISSOLVE = 0.45;           // s of playback: soft dissolve between other phases (cut under reduced motion)
@@ -133,24 +135,24 @@ export const DEFAULT_MOI_BOX = { x: -100, y: -190, w: 200, h: 200 };
 
 /**
  * Build a stable MOI camera from sampled frames.
- * @param samples [{ t, bbox, targets }] (camera space)   @param duration authored phase seconds
+ * @param samples [{ t, bbox, targets }] (camera space)   @param duration authored phase seconds   @param area stage rect to frame into
  * @returns {{ mode:"static"|"track"|"fallback", at(t)→camera, union, finalTargets }}
  */
-export function createMoiCamera(samples, duration) {
+export function createMoiCamera(samples, duration, area = SAFE) {
   const ok = (samples || []).filter((s) => s && normBox(s.bbox)).sort((a, b) => a.t - b.t);
   const finalTargets = [...(samples || [])].reverse().find((s) => s?.targets && Object.keys(s.targets).length)?.targets || {};
   if (!ok.length) {
-    const cam = fitBox(DEFAULT_MOI_BOX);
+    const cam = fitBox(DEFAULT_MOI_BOX, area);
     return { mode: "fallback", at: () => cam, union: DEFAULT_MOI_BOX, finalTargets };
   }
   const union = unionBox(ok.map((s) => s.bbox));
   const maxW = Math.max(...ok.map((s) => s.bbox.w)), maxH = Math.max(...ok.map((s) => s.bbox.h));
   if (union.w <= 1.8 * maxW + 60) {
-    const cam = fitBox(union);
+    const cam = fitBox(union, area);
     return { mode: "static", at: () => cam, union, finalTargets };
   }
   // tracking: fixed scale from the largest single frame (+ travel allowance), pan x along a smoothed path
-  const scale = fitBox({ x: 0, y: union.y, w: maxW * 1.6 + 40, h: union.h }).s;
+  const scale = fitBox({ x: 0, y: union.y, w: maxW * 1.6 + 40, h: union.h }, area).s;
   const xs = ok.map((s) => s.bbox.x + s.bbox.w / 2);
   const sm = xs.map((_, i) => (xs[Math.max(0, i - 1)] + 2 * xs[i] + xs[Math.min(xs.length - 1, i + 1)]) / 4);
   const ts = ok.map((s) => s.t);
@@ -164,7 +166,7 @@ export function createMoiCamera(samples, duration) {
     const p0 = sm[Math.max(0, i - 1)], p1 = sm[i], p2 = sm[Math.min(sm.length - 1, i + 1)], p3 = sm[Math.min(sm.length - 1, i + 2)];
     const u2 = u * u, u3 = u2 * u;
     const x = 0.5 * (2 * p1 + (-p0 + p2) * u + (2 * p0 - 5 * p1 + 4 * p2 - p3) * u2 + (-p0 + 3 * p1 - 3 * p2 + p3) * u3);
-    return { s: scale, cx: x, cy, ox: SAFE.x + SAFE.w / 2, oy: SAFE.y + SAFE.h / 2 };
+    return { s: scale, cx: x, cy, ox: area.x + area.w / 2, oy: area.y + area.h / 2 };
   };
   return { mode: "track", at, union, finalTargets, duration };
 }

@@ -11,7 +11,7 @@
  * storyboards and screenshots all go through the same Stage.renderAt(T).
  */
 import { buildTimeline, locate, captionAt, rateAt, posterTime, formatTime, captionTimes, evenTimes, keyTimes, clamp } from "./timeline.js";
-import { STAGE_W, STAGE_H, IDENTITY, camTransform, viewBoxCamera, zoomCamera, scaleAboutCentre, unproject,
+import { STAGE_W, STAGE_H, IDENTITY, SAFE, SAFE_DOCKED, camTransform, viewBoxCamera, zoomCamera, scaleAboutCentre, unproject,
   normalizeMoiResult, createMoiCamera, planFrame } from "./camera.js";
 
 const NS = "http://www.w3.org/2000/svg";
@@ -161,7 +161,7 @@ function drawPlaceholder(g, entry) {
     const t = s("text", { x: 400, y, "text-anchor": "middle", style: `font:${weight} ${size}px var(--font-body);fill:var(--${color})` }, card);
     t.textContent = str;
   };
-  txt(232, UNAVAILABLE[entry.type] || "This view is unavailable", 19, 600, "stage-ink");
+  txt(232, UNAVAILABLE[entry.type] || (entry.type === "none" ? "Animation unavailable" : "This view is unavailable"), 19, 600, "stage-ink");
   const detail = [entry.label, entry.phase?.scene || entry.phase?.tissue].filter(Boolean).join(" · ");
   txt(256, detail, 13.5, 400, "stage-ink-2");
   txt(276, "The captions continue the explanation.", 12.5, 400, "stage-ink-2");
@@ -177,6 +177,8 @@ class Stage {
     this.warn = warn;
     this.rm = reducedMotion;
     this.shared = shared || { moiCams: new Map() };
+    this.shared.moiSamples ||= new Map();
+    this.docked = false;          // captions docked below the stage → frame the MOI into a taller safe area
     this.renderers = null;
     this.onRedraw = null;
     this.slots = new Map();
@@ -191,6 +193,7 @@ class Stage {
     this.ctx = { reducedMotion: this.rm, width: STAGE_W, height: STAGE_H, defs: getSharedDefs(), warn: (m) => this.warn(m) };
   }
   setRenderers(r) { this.renderers = r || {}; this.invalidate(); }
+  setDocked(on) { if (this.docked !== !!on) { this.docked = !!on; this.invalidate(); } }
   setReducedMotion(rm) { this.rm = !!rm; this.ctx = { ...this.ctx, reducedMotion: this.rm }; this.invalidate(); }
   invalidate() { for (const slot of this.slots.values()) slot.lastT = NaN; }
   warnOnce(key, msg) { if (!this.warned.has(key)) { this.warned.add(key); this.warn(msg); } }
@@ -238,11 +241,12 @@ class Stage {
 
   /** Stable MOI framing for a phase: sample the renderer across the phase once, union the bboxes. */
   moiCamera(entry) {
-    const cams = this.shared.moiCams;
-    if (cams.has(entry.index)) return cams.get(entry.index);
+    const cams = this.shared.moiCams, key = `${entry.index}|${this.docked ? "docked" : "overlay"}`;
+    if (cams.has(key)) return cams.get(key);
     const fn = this.renderers?.moi;
-    const samples = [];
-    if (typeof fn === "function") {
+    let samples = this.shared.moiSamples.get(entry.index);
+    if (!samples && typeof fn === "function") {
+      samples = [];
       const scratch = s("g", { visibility: "hidden", "aria-hidden": "true" }, this.phasesLayer);
       const N = 10;
       for (let i = 0; i <= N; i++) {
@@ -251,10 +255,11 @@ class Stage {
         try { samples.push({ t, ...normalizeMoiResult(fn(g, entry.phase, t, this.ctx), g) }); } catch { /* reported by draw() */ }
       }
       scratch.remove();
+      this.shared.moiSamples.set(entry.index, samples);
     }
-    const cam = createMoiCamera(samples, entry.authoredDuration);
+    const cam = createMoiCamera(samples || [], entry.authoredDuration, this.docked ? SAFE_DOCKED : SAFE);
     if (cam.mode === "fallback" && typeof fn === "function") this.warnOnce(`bbox${entry.index}`, `renderMoiFrame returned no usable bbox in phase ${entry.index + 1} — using default framing`);
-    cams.set(entry.index, cam);
+    cams.set(key, cam);
     return cam;
   }
 
@@ -354,7 +359,9 @@ class Player {
     ui.stage = h("div", { class: "pe-player__stage" }, this.stage.svg, ui.chip, ui.slowmo, ui.poster);
     ui.caption = h("p", { class: "pe-player__caption" }, ui.captionText = h("span"));
     ui.captions = h("div", { class: "pe-player__captions", "aria-live": "polite", "aria-atomic": "true", "data-empty": "" }, ui.caption);
+    ui.capHint = h("p", { class: "pe-player__cap-hint", "aria-hidden": "true", text: `${formatTime(tl.duration)} · ${tl.phases.length} ${tl.phases.length === 1 ? "chapter" : "chapters"} · captions appear here` });
     ui.viewport = h("div", { class: "pe-player__viewport" }, ui.stage, ui.captions);
+    ui.captions.append(ui.capHint);
     // ---- scrubber with proportional chapter segments
     const n = tl.phases.length;
     ui.segs = []; ui.chapters = [];
@@ -394,6 +401,11 @@ class Player {
     ui.steps = h("div", { class: "pe-player__steps", hidden: true }, h("div", { class: "pe-player__steps-head" },
       h("p", { class: "pe-player__steps-title" }, h("strong", { text: "Step by step" }), h("span", { text: ` · ${title}` })), ui.stepsBack), ui.stepsBody);
     this.root.append(ui.viewport, ui.steps, ui.bar);
+    if (!tl.phases.length) {          // nothing to play: calm message instead of a dead transport
+      this.root.dataset.empty = "";
+      ui.poster.hidden = true; ui.bar.hidden = true; ui.captions.hidden = true;
+      drawPlaceholder(s("g", {}, this.stage.phasesLayer), { type: "none", label: "No animation steps were provided", phase: {} });
+    }
     this.container.append(this.root);
     this.updateSpeedUI();
   }
@@ -425,7 +437,14 @@ class Player {
       }, { threshold: [0, 0.5] });
       this.io.observe(this.root);
     }
-    if (typeof ResizeObserver === "function") { this.ro = new ResizeObserver(() => this.fitChapterLabels()); this.ro.observe(ui.chapterRow); }
+    if (typeof ResizeObserver === "function") {
+      this.ro = new ResizeObserver(() => {
+        this.fitChapterLabels();
+        const docked = this.root.clientWidth <= 560;     // matches the @container breakpoint in player.css
+        if (docked !== this.stage.docked) { this.stage.setDocked(docked); this.render(); }
+      });
+      this.ro.observe(ui.chapterRow); this.ro.observe(this.root);
+    }
     try {
       const mq = matchMedia("(prefers-reduced-motion: reduce)");
       const f = () => { if (this.opts.reducedMotion == null) this.setReducedMotion(mq.matches); };
@@ -501,7 +520,8 @@ class Player {
   fitChapterLabels() {
     for (const c of this.ui.chapters) {
       c.classList.remove("is-compact");
-      if (c.scrollWidth > c.clientWidth + 1) c.classList.add("is-compact");
+      const txt = c.lastElementChild;
+      if (txt && txt.scrollWidth > txt.clientWidth + 1) c.classList.add("is-compact");
     }
   }
 
@@ -598,6 +618,7 @@ class Player {
     this.ui.cc.setAttribute("aria-pressed", String(this.captionsOn));
     this.ui.captions.setAttribute("aria-live", on ? "polite" : "off");
   }
+  setDocked(on) { if (this.docked !== !!on) { this.docked = !!on; this.invalidate(); } }
   setReducedMotion(rm) {
     this.rm = !!rm;
     if (rm) this.root.dataset.rm = ""; else delete this.root.dataset.rm;
@@ -770,7 +791,9 @@ export function renderStoryboard(container, spec, opts = {}) {
     const items = mode === "times" ? opts.times.map((T) => ({ T: clamp(+T || 0, 0, tl.duration) }))
       : mode === "captions" ? captionTimes(tl)
       : (mode === "even" ? evenTimes(tl, n) : keyTimes(tl, n)).map((T) => ({ T }));
-    if (!items.length && tl.duration) items.push({ T: posterTime(tl) });
+    if (!tl.phases.length) items.length = 0;
+    else if (!items.length) items.push({ T: posterTime(tl) });
+    if (!items.length) list.append(h("li", { class: "pe-storyboard__empty", text: "No animation steps are available." }));
     const shared = opts._shared || { moiCams: new Map() };
     const ready = (async () => {
       const renderers = await loadRenderers(tl, opts.renderers, warn);

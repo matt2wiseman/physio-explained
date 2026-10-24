@@ -8,6 +8,6 @@ import { makeAcuteCollagen } from "./ligament.js";
 
 export default makeAcuteCollagen({
   id: "tendon", tint: "anat-tendon", fibre: "anat-tendon", edge: "anat-tendon-edge", cellKind: "tenocyte",
-  cellLabel: "Tenocytes in rows", fibreLabel: "Type I collagen fascicles\n(tightly packed, crimped)", fibreWidth: 8, cellsPerRow: 6,
-  wavelength: 36, amplitude: 3.8, crimpRegister: true, scale: "≈ 50 µm"
+  cellLabel: "Tenocytes in rows", fibreLabel: "Type I collagen fascicles\n(tightly packed, crimped)", fibreWidth: 11, cellsPerRow: 6,
+  wavelength: 40, amplitude: 2.6, crimpRegister: true, scale: "≈ 50 µm"
 });

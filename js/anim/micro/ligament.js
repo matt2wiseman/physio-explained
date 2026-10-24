@@ -85,8 +85,8 @@ function curveInset(g, u, injured) {
 export function makeAcuteCollagen(cfg) {
   const C = {
     id: "ligament", tint: "anat-ligament", fibre: "anat-ligament", edge: "anat-ligament-edge", cellKind: "fibroblast",
-    cellLabel: "Fibroblast", fibreLabel: "Type I collagen bundles\n(crimped, aligned)", fibreWidth: 7, cellsPerRow: 5,
-    wavelength: 30, amplitude: 4.5, crimpRegister: false, scale: "≈ 50 µm", ...cfg
+    cellLabel: "Fibroblast", fibreLabel: "Type I collagen bundles\n(crimped, aligned)", fibreWidth: 10, cellsPerRow: 5,
+    wavelength: 34, amplitude: 3, crimpRegister: false, scale: "≈ 50 µm", ...cfg
   };
   const geo = geometry(C.id === "tendon" ? 2 : 1, C);
   const fibreCol = () => col(C.fibre), edgeCol = () => mix(C.edge, "stage-bg", 0.3);
@@ -123,7 +123,7 @@ export function makeAcuteCollagen(cfg) {
     if (k <= 0.01) return;
     const R = rng(77);
     const rx = 30 + 52 * k, ry = 50 + 110 * k;
-    el("path", { d: blobPath(R, CX, geo.VY, rx, { ry, n: 12, irregular: 0.18 }), fill: dilute ? mix("anat-fluid", "fx-bleed", 0.35, 0.3) : col("fx-bleed", 0.5) }, g);
+    el("path", { d: blobPath(R, CX, geo.VY, rx, { ry, n: 12, irregular: 0.18 }), fill: dilute ? mix("anat-fluid", "fx-bleed", 0.35, 0.3) : col("fx-bleed", 0.38) }, g);
   }
   function rbcs(g, k, { dilute = false, keep = 1 } = {}) {
     const n = Math.round(geo.rbcs.length * k * keep);
@@ -169,9 +169,10 @@ export function makeAcuteCollagen(cfg) {
   }
   function loadArrows(g, k, { label: lab = "Load", size = 1 } = {}) {
     if (k <= 0.01) return;
-    const L = (28 + 24 * size) * k;
-    arrow(g, 92, 66, 92 - L, 66, { width: 4.5, head: 13, label: lab, labelPos: "start", opacity: clamp(k * 1.5) });
-    arrow(g, 708, 66, 708 + L, 66, { width: 4.5, head: 13, opacity: clamp(k * 1.5) });
+    const L = (30 + 26 * size) * k, o = clamp(k * 1.5);
+    arrow(g, 340, 70, 340 - L, 70, { width: 4.5, head: 13, opacity: o });
+    arrow(g, 460, 70, 460 + L, 70, { width: 4.5, head: 13, opacity: o });
+    label(g, 400, 75, lab, { anchor: "middle", size: 13, color: col("fx-force"), opacity: o });
   }
   const gapGlow = (g, k) => { if (k > 0.01) el("ellipse", { cx: CX, cy: geo.VY, rx: 90, ry: 175, fill: radial(g, "lig-gapglow", [[0, col("fx-injury", 0.28)], [1, col("fx-injury", 0)]]), opacity: k }, g); };
 
@@ -183,7 +184,7 @@ export function makeAcuteCollagen(cfg) {
         vessel(g, { flow: p * 0.4 });
         fibres(g, { crimp: 1 - 0.06 * wave(p, 1), phaseShift: 0 });
         cells(g, {});
-        label(g, 612, 412, C.fibreLabel, { to: [600, geo.rows[9] + 3], anchor: "start" });
+        label(g, 632, 412, C.fibreLabel, { to: [600, geo.rows[9] + 3], anchor: "end" });
         const c = geo.cells.find((q) => q.x > 200 && q.x < 330 && q.y > geo.rows[7]) || geo.cells[20];
         label(g, 200, 412, C.cellLabel, { to: [c.x, c.y], anchor: "middle" });
         label(g, 400, 76, "Capillary (sparse blood supply)", { to: [470, geo.VY - 5], anchor: "middle", size: 13, opacity: 0.9 });
@@ -196,7 +197,7 @@ export function makeAcuteCollagen(cfg) {
         cells(g, { stretch: st });
         loadArrows(g, 0.3 + 0.7 * k, { label: "Tensile load" });
         curveInset(g, lerp(0.02, 0.5, k), false);
-        label(g, 610, 412, k < 0.5 ? "Crimp flattens (toe region)" : "Fibres straight — elastic\n(linear) region", { to: [600, geo.rows[9]], anchor: "start" });
+        label(g, 632, 412, k < 0.5 ? "Crimp flattens (toe region)" : "Fibres straight — elastic\n(linear) region", { to: [600, geo.rows[9]], anchor: "end" });
         break;
       }
       case "overload": {
@@ -208,7 +209,7 @@ export function makeAcuteCollagen(cfg) {
         loadArrows(g, 1, { label: "Excess load", size: 1.3 });
         curveInset(g, lerp(0.6, 0.8, k), true);
         const fb = geo.fibres.filter((q) => q.over && q.i >= 6)[0] || geo.fibres[8];
-        label(g, 640, 412, "Fibrils slide & fail", { to: [fb.ox, fb.y], anchor: "middle" });
+        label(g, 632, 412, "Fibrils slide & fail", { to: [fb.ox, fb.y], anchor: "end" });
         label(g, 300, 412, "Intact fibres take more load", { anchor: "middle", size: 13, color: col("stage-ink-2") });
         break;
       }
@@ -220,8 +221,8 @@ export function makeAcuteCollagen(cfg) {
         cells(g, { avoidGap: 30 + 40 * k });
         loadArrows(g, 1 - k, { label: "Load", size: 1.3 });
         curveInset(g, lerp(0.82, 1, k), true);
-        label(g, 560, 412, "Complete rupture: fibre ends\nrecoil into frayed 'mop ends'", { to: [geo.fibres[8].bx + geo.fibres[8].recR * k + 10, geo.fibres[8].y], anchor: "start" });
-        label(g, 300, 76, "Torn capillary", { to: [CX - 10 - 40 * k, geo.VY], anchor: "middle", opacity: fade(0.2, 0.6, p) });
+        label(g, 632, 412, "Complete rupture: fibre ends\nrecoil into frayed 'mop ends'", { to: [geo.fibres[8].bx + geo.fibres[8].recR * k + 10, geo.fibres[8].y], anchor: "end" });
+        label(g, 190, 76, "Torn capillary", { to: [CX - 10 - 40 * k, geo.VY], anchor: "middle", opacity: fade(0.2, 0.6, p) });
         break;
       }
       case "haemorrhage": {
@@ -232,9 +233,9 @@ export function makeAcuteCollagen(cfg) {
         rbcs(g, 0.15 + 0.85 * ease(p), { dilute: ia, keep: ia ? 0.55 : 1 });
         clot(g, fade(0.25, 1, p), { dilute: ia });
         label(g, 170, 76, "Torn capillary bleeds", { to: [CX - 50, geo.VY], anchor: "middle" });
-        if (ia) label(g, 560, 412, "Synovial fluid dilutes the clot —\nno stable scaffold forms", { to: [CX + 40, geo.rows[9]], anchor: "start" });
+        if (ia) label(g, 632, 412, "Synovial fluid dilutes the clot —\nno stable scaffold forms", { to: [CX + 40, geo.rows[9]], anchor: "end" });
         else {
-          label(g, 590, 412, "Platelets + fibrin form a clot", { to: [geo.platelets[3].x, geo.platelets[3].y], anchor: "start", opacity: fade(0.3, 0.6, p) });
+          label(g, 632, 412, "Platelets + fibrin form a clot", { to: [geo.platelets[3].x, geo.platelets[3].y], anchor: "end", opacity: fade(0.3, 0.6, p) });
           label(g, 200, 412, "Red blood cells", { to: [geo.rbcs[5].x, geo.rbcs[5].y], anchor: "middle" });
         }
         break;
@@ -242,7 +243,7 @@ export function makeAcuteCollagen(cfg) {
       case "inflammation": {
         vessel(g, { torn: vTear(1), flow: 0.3, leaky: 0.5 });
         haematoma(g, ia ? 1.1 : 1, { dilute: ia });
-        el("ellipse", { cx: CX, cy: geo.VY, rx: 150, ry: 190, fill: col("fx-oedema"), opacity: 0.6 }, g);
+        el("ellipse", { cx: CX, cy: geo.VY, rx: 190, ry: 210, fill: radial(g, "lig-oedema", [[0, col("fx-oedema")], [0.6, col("fx-oedema", 0.6)], [1, col("fx-oedema", 0)]]) }, g);
         fibres(g, { crimp: 0, broken: ruptureEnds(1, 1, 0.8) });
         cells(g, { avoidGap: 70 });
         rbcs(g, 1, { dilute: ia, keep: lerp(ia ? 0.5 : 0.9, 0.25, p) });
@@ -259,8 +260,8 @@ export function makeAcuteCollagen(cfg) {
         const mk = fade(0.3, 0.7, p);
         geo.macros.forEach((c, i) => drawCell(g, "macrophage", c.x, c.y + (i % 2 ? 1 : -1) * 6 * p, 15, { seed: c.seed, opacity: mk, phase: p * 0.6, engulf: 0.4 + 0.6 * p }));
         label(g, 180, 412, "Neutrophils arrive first", { to: [geo.neutros[2].x, geo.neutros[2].y], anchor: "middle", opacity: nk });
-        label(g, 600, 412, "Macrophages clear debris\n& release growth factors", { to: [geo.macros[1].x, geo.macros[1].y], anchor: "start", opacity: mk });
-        label(g, 640, 76, "Oedema", { anchor: "middle", size: 13, color: col("anat-fluid") });
+        label(g, 632, 412, "Macrophages clear debris\n& release growth factors", { to: [geo.macros[1].x, geo.macros[1].y], anchor: "end", opacity: mk });
+        label(g, 610, 76, "Oedema (leaky vessels)", { anchor: "middle", size: 13, color: col("anat-fluid") });
         break;
       }
       case "proliferation": {
@@ -272,21 +273,21 @@ export function makeAcuteCollagen(cfg) {
           synovialCap(g, fade(0, 0.6, p));
           cells(g, { avoidGap: 70 });
           geo.fibros.slice(0, 10).forEach((c, i) => { const side = i % 2 ? 1 : -1; drawCell(g, "fibroblast", CX + side * (78 + (c.k * 30)), c.y, 7, { angle: c.a * 0.3, seed: c.seed, opacity: fade(0.1, 0.5, p) }); });
-          label(g, 560, 412, "Synovial layer caps each stump —\nno bridging tissue forms", { to: [geo.fibres[8].bx + geo.fibres[8].recR + 14, geo.fibres[8].y], anchor: "start" });
+          label(g, 632, 412, "Synovial layer caps each stump —\nno bridging tissue forms", { to: [geo.fibres[8].bx + geo.fibres[8].recR + 14, geo.fibres[8].y], anchor: "end" });
           label(g, 400, 76, "Gap stays filled with synovial fluid", { anchor: "middle", size: 13, color: col("anat-fluid") });
           break;
         }
         vessel(g, { torn: vTear(1 - 0.3 * k), flow: 0.3 + p * 0.3 });
-        haematoma(g, 0.9 - 0.6 * k);
-        geo.vesselSprouts.forEach((s, i) => capillary(g, s.pts.map((q, j) => (j === 0 ? q : [lerp(s.pts[0][0], q[0], fade(i * 0.15, 0.7 + i * 0.1, p)), lerp(s.pts[0][1], q[1], fade(i * 0.15, 0.7 + i * 0.1, p))])), { width: 8, seed: 40 + i, rbcs: 2, flow: p }));
+        haematoma(g, 0.85 * (1 - k));
+        geo.vesselSprouts.forEach((s, i) => capillary(g, s.pts.map((q, j) => (j === 0 ? q : [lerp(s.pts[0][0], q[0], fade(i * 0.15, 0.7 + i * 0.1, p)), lerp(s.pts[0][1], q[1], fade(i * 0.15, 0.7 + i * 0.1, p))])), { width: 7, seed: 40 + i, rbcs: 2, flow: p }));
         fibres(g, { crimp: 0, broken: ruptureEnds(1, lerp(1, 0.5, k), 0.7) });
-        scarFibres(g, { n: Math.round(6 + 18 * k), len: 0.5 + 0.5 * k });
+        scarFibres(g, { n: Math.round(10 + 16 * k), len: 0.55 + 0.45 * k });
         cells(g, { avoidGap: 70 });
         geo.macros.slice(0, 3).forEach((c) => drawCell(g, "macrophage", c.x, c.y, 13, { seed: c.seed, opacity: 1 - fade(0, 0.5, p) }));
         geo.fibros.slice(0, Math.round(5 + 9 * k)).forEach((c) => drawCell(g, "fibroblast", c.x, c.y, 7.5, { angle: c.a, seed: c.seed, phase: p }));
         label(g, 180, 412, "Fibroblasts multiply", { to: [geo.fibros[1].x, geo.fibros[1].y], anchor: "middle" });
-        label(g, 590, 412, "Disorganised type III collagen", { to: [geo.scar[4].x, geo.scar[4].y], anchor: "start", opacity: fade(0.1, 0.4, p) });
-        label(g, 600, 76, "New capillaries sprout", { to: [CX - 6, geo.VY - 92 * fade(0, 0.7, p)], anchor: "middle", opacity: fade(0.2, 0.5, p) });
+        label(g, 632, 412, "Disorganised type III collagen", { to: [geo.scar[4].x, geo.scar[4].y], anchor: "end", opacity: fade(0.1, 0.4, p) });
+        label(g, 560, 76, "New capillaries sprout", { to: [CX - 6, geo.VY - 92 * fade(0, 0.7, p)], anchor: "middle", opacity: fade(0.2, 0.5, p) });
         break;
       }
       case "remodelling": {
@@ -301,7 +302,7 @@ export function makeAcuteCollagen(cfg) {
             el("path", { d: smoothPath(pts), stroke: mix("anat-capsule", "stage-ink", 0.3, 0.75), "stroke-width": 10, fill: "none", "stroke-linecap": "round" }, g);
           }
           cells(g, { avoidGap: 90 });
-          label(g, 560, 412, "Stumps retract and round off —\nno functional bridge", { to: [geo.fibres[9].bx + geo.fibres[9].recR + 30 * k + 16, geo.fibres[9].y], anchor: "start" });
+          label(g, 632, 412, "Stumps retract and round off —\nno functional bridge", { to: [geo.fibres[9].bx + geo.fibres[9].recR + 30 * k + 16, geo.fibres[9].y], anchor: "end" });
           label(g, 210, 412, "Stability must come from\nmuscle or a graft", { anchor: "middle", size: 13, color: col("stage-ink-2") });
           break;
         }
@@ -316,7 +317,7 @@ export function makeAcuteCollagen(cfg) {
           drawCell(g, "fibroblast", c.x, lerp(c.y, row.y + 12, k), 7, { angle: lerp(c.a, 0, k), seed: c.seed });
         });
         loadArrows(g, 0.5 + 0.5 * wave(p, 2), { label: "Graded loading" });
-        label(g, 600, 412, "Type III → type I collagen,\nrealigning along the line of load", { to: [CX + 20, geo.fibres[8].y], anchor: "start" });
+        label(g, 632, 412, "Type III → type I collagen,\nrealigning along the line of load", { to: [CX + 20, geo.fibres[8].y], anchor: "end" });
         label(g, 200, 412, "Scar stays weaker than native\nfor months", { anchor: "middle", size: 13, color: col("stage-ink-2"), opacity: fade(0.3, 0.7, p) });
         break;
       }

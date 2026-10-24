@@ -50,7 +50,7 @@ const LABELS = {
     labrum: "Labrum", "joint-capsule": "Joint capsule", nerve: "Nerve", bursa: "Bursa", disc: "Disc", fascia: "Fascia",
     "fat-pad": "Fat pad", physis: "Physis", vascular: "Vascular", brain: "Brain", vestibular: "Vestibular", multiple: "Multiple tissues"
   },
-  onset: { acute: "Acute onset", gradual: "Gradual onset", "acute-or-gradual": "Acute or gradual onset" },
+  onset: { acute: "Acute", gradual: "Gradual", "acute-or-gradual": "Acute or gradual" },
   mechanism: {
     contact: "Contact", "non-contact": "Non-contact", overuse: "Overuse", fall: "Fall", collision: "Collision",
     degenerative: "Degenerative", insidious: "Insidious", traction: "Traction", compression: "Compression"
@@ -81,6 +81,7 @@ const ICONS = {
 
 let S = null;                     // per-render state (null when destroyed)
 const nameCache = new Map();      // id → display name, for title()
+const missing = new Set();        // ids that failed to load (title → "Injury not found")
 
 /* ------------------------------------------------------------------ tiny DOM helpers (self-contained) */
 
@@ -248,8 +249,9 @@ function makeText(ctx, dom, injury) {
         a.setAttribute("href", refHref(rid));
         a.dataset.ref = rid;
         a.classList.add("cite__a");
-        a.removeAttribute("title");
-        if (!a.getAttribute("aria-label")) a.setAttribute("aria-label", `Reference ${num.get(rid)}`);
+        a.removeAttribute("title");            // replaced by the accessible tooltip (aria-describedby)
+        a.textContent = String(num.get(rid));  // number = position in the reference list
+        a.setAttribute("aria-label", `Reference ${num.get(rid)}`);
       }
     }
     return frag;
@@ -358,7 +360,8 @@ function splitStat(s) {
 /* ------------------------------------------------------------------ header */
 
 function buildHeader(inj, T, store, dom, cleanup) {
-  const regionLabel = label("region", inj.region, { region: dom?.REGION_LABELS });
+  const maps = { region: dom?.REGION_LABELS, tissue: dom?.TISSUE_LABELS, onset: dom?.ONSET_LABELS, mechanism: dom?.MECHANISM_LABELS };
+  const regionLabel = label("region", inj.region, maps);
   const crumbs = el("nav", { class: "inj-crumbs", "aria-label": "Breadcrumb" },
     el("ol", null,
       el("li", null, el("a", { href: "#library" }, "Library")),
@@ -378,13 +381,12 @@ function buildHeader(inj, T, store, dom, cleanup) {
   const chip = (text, cls, href, title) => (href
     ? el("a", { class: `inj-chip ${cls}`, href, title }, text)
     : el("span", { class: `inj-chip ${cls}` }, text));
-  const tissueMaps = { tissue: dom?.TISSUE_LABELS };
   const sports = arr(inj.sports);
   const tags = el("div", { class: "inj-tags" },
     group("Region", inj.region ? [chip(regionLabel, "inj-chip--region", `#library.${inj.region}`, `Browse ${regionLabel} injuries`)] : []),
-    group("Tissue", arr(inj.tissues).map((t, i) => chip(label("tissue", t, tissueMaps), `inj-chip--tissue${i === 0 ? " is-primary" : ""}`, `#healing.${t}`, `How ${label("tissue", t, tissueMaps).toLowerCase()} heals`))),
-    group("Onset", inj.onset ? [chip(label("onset", inj.onset), "inj-chip--plain")] : []),
-    group("Mechanism", arr(inj.mechanismType).map((m) => chip(label("mechanism", m), "inj-chip--plain"))),
+    group("Tissue", arr(inj.tissues).map((t, i) => chip(label("tissue", t, maps), `inj-chip--tissue${i === 0 ? " is-primary" : ""}`, `#healing.${t}`, `How ${label("tissue", t, maps).toLowerCase()} heals`))),
+    group("Onset", inj.onset ? [chip(label("onset", inj.onset, maps), "inj-chip--plain")] : []),
+    group("Mechanism", arr(inj.mechanismType).map((m) => chip(label("mechanism", m, maps), "inj-chip--plain"))),
     group("Sports", sports.map((s) => chip(cap(s), "inj-chip--quiet")), "inj-tags__group--sports"));
 
   const urg = URGENCY[inj.urgency];
@@ -965,7 +967,7 @@ function scrollToId(targetId, { smooth = false, focus = false } = {}) {
   return true;
 }
 
-function setupNav(article, inj, token) {
+function setupNav(article, inj, token, router) {
   const toc = token.toc;
   const links = [...toc.querySelectorAll(".inj-toc__link")];
   const secs = links.map((a) => document.getElementById(a.dataset.sec)).filter(Boolean);
@@ -1016,6 +1018,8 @@ function setupNav(article, inj, token) {
     e.preventDefault();
     hideTip(token);
     scrollToId(target, { smooth: true, focus: true });
+    // Keep the URL shareable without re-rendering or stacking history entries.
+    if (router && typeof router.navigate === "function") { try { router.navigate(href, { replace: true, silent: true }); return; } catch {} }
     try { history.replaceState(history.state, "", href); } catch {}
   };
   article.addEventListener("click", onClick);
@@ -1158,7 +1162,7 @@ function errorView(id, index, err) {
 export const title = (params = []) => {
   const id = str(params[0]).toLowerCase();
   if (!id) return "Injury";
-  return nameCache.get(id) || humanise(id);
+  return nameCache.get(id) || (missing.has(id) ? "Injury not found" : humanise(id));
 };
 
 export async function render(main, params = [], ctx = {}) {
@@ -1172,6 +1176,7 @@ export async function render(main, params = [], ctx = {}) {
   main.setAttribute("aria-busy", "true");
 
   if (!/^[a-z0-9][a-z0-9-]*$/.test(id)) {
+    if (id) missing.add(id);
     main.replaceChildren(errorView(id, null));
     main.removeAttribute("aria-busy");
     return;
@@ -1191,11 +1196,12 @@ export async function render(main, params = [], ctx = {}) {
   main.removeAttribute("aria-busy");
 
   if (!injury || injury.__error || typeof injury !== "object" || !injury.id) {
+    missing.add(id);
     main.replaceChildren(errorView(id, index, injury?.__error));
-    try { document.title = `Injury not found · Physio Explained`; } catch {}
     return;
   }
-  nameCache.set(id, injury.shortName || injury.name);
+  nameCache.set(id, injury.name || injury.shortName);
+  missing.delete(id);
   try { store?.recent?.push?.(id); } catch {}
 
   const dom = domMod || {};
@@ -1271,7 +1277,7 @@ export async function render(main, params = [], ctx = {}) {
   token.toc = buildToc(inj, present);
   const contentCol = el("div", { class: "inj-content" }, sections, buildFooter(inj));
   const article = el("article", { class: "inj", "data-injury": inj.id, "data-urgency": inj.urgency || "routine", "data-region": inj.region || "" },
-    buildHeader(inj, T, store, dom.REGION_LABELS ? dom : null, token.cleanup),
+    buildHeader(inj, T, store, dom, token.cleanup),
     hero.el,
     el("div", { class: "inj-body" }, token.toc, contentCol));
 
@@ -1287,11 +1293,11 @@ export async function render(main, params = [], ctx = {}) {
     refSec.append(summary, list);
   }
 
-  setupNav(article, inj, token);
+  setupNav(article, inj, token, ctx?.router);
   setupCiteTips(article, T, token);
 
-  if (section) {
-    // Wait a frame so layout is settled; the router may also scroll — ours wins because it runs last.
+  if (section && !ctx?.router) {
+    // The shared router scrolls to the section itself (using scroll-margin-top); only do it when running standalone.
     requestAnimationFrame(() => requestAnimationFrame(() => { if (S === token) scrollToId(section, { focus: false }); }));
   }
 

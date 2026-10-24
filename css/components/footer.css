@@ -1,1 +1,65 @@
-/* owner: see docs/ARCHITECTURE.md */
+/* Site footer: brand line, educational-use disclaimer, links, build stamp. OWNER: P1. */
+
+.site-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--line-strong);
+  background: var(--surface-2);
+  color: var(--ink-2);
+  font-size: var(--fs-sm);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.site-footer__inner {
+  display: grid;
+  gap: var(--sp-6);
+  padding-block: var(--sp-7) var(--sp-6);
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 760px) {
+  .site-footer__inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); }
+  .site-footer__nav { grid-column: 1; grid-row: 2; }
+  .site-footer__notice { grid-column: 2; grid-row: 1 / span 2; }
+}
+@media (min-width: 1024px) {
+  .site-footer__inner { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 0.7fr); }
+  .site-footer__nav { grid-column: 3; grid-row: 1; }
+  .site-footer__notice { grid-column: 2; grid-row: 1; }
+}
+.site-footer__name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-stretch: 86%;
+  font-size: var(--fs-lg);
+  line-height: 1.1;
+  color: var(--ink);
+}
+.site-footer__tag { margin-top: var(--sp-2); max-width: 40ch; }
+.site-footer__notice {
+  padding-left: var(--sp-4);
+  border-left: 3px solid var(--warn);
+}
+.site-footer__notice .eyebrow { color: var(--warn); margin-bottom: var(--sp-2); }
+.site-footer__notice p + p { margin-top: var(--sp-2); }
+.site-footer__notice p:not(.eyebrow) { max-width: 62ch; }
+.site-footer__nav ul { display: grid; gap: var(--sp-2); margin: 0; padding: 0; list-style: none; }
+@media (max-width: 759.98px) { .site-footer__nav ul { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.site-footer a { color: var(--ink); text-decoration-color: var(--line-strong); }
+.site-footer a:hover { color: var(--accent); text-decoration-color: currentColor; }
+.site-footer__base {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--sp-2) var(--sp-5);
+  position: relative;
+  padding-block: var(--sp-4) var(--sp-5);
+  color: var(--ink-3);
+  font-size: var(--fs-xs);
+}
+.site-footer__base::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: max(var(--gutter), env(safe-area-inset-left, 0px));
+  right: max(var(--gutter), env(safe-area-inset-right, 0px));
+  border-top: 1px solid var(--line);
+}
+.site-footer__stats:empty { display: none; }

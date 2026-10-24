@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animation preview</title>
+<!-- OWNER: A1. Standalone harness for the animation player (driven by tools/render-anim.mjs).
+  ?id=<injury>            load data/injuries/<id>.json and mount the interactive player
+  &t=<seconds>            render that GLOBAL time, paused (no poster)
+  &sheet=<n>              storyboard / contact sheet of n evenly spaced frames
+  &steps=1                storyboard of one frame per caption (what "View as steps" shows)
+  &mock=1                 use the inline mock renderers below instead of moi.js / closeup.js / micro
+  &mock=moi,closeup       mock only some phase types (real modules for the others)
+  &rm=1                   force reduced motion     &w=<px> max player width     &compare=1 two players side by side
+  &autoplay=1             autoplay (ignored under reduced motion)
+  Sets window.__ready = true when drawn, window.__animErrors = [...] (console warnings, errors, load failures). -->
+<link rel="stylesheet" href="../css/tokens.css">
+<link rel="stylesheet" href="../css/components/player.css">
+<style>
+  body { margin: 0; padding: 16px; background: var(--paper); color: var(--ink); font: 14px/1.45 var(--font-body); }
+  h1 { font: 700 16px/1.2 var(--font-display); margin: 0 0 10px; }
+  #info { font: 12px/1.4 var(--font-mono); color: var(--ink-2); margin: 10px 0 0; white-space: pre-wrap; }
+  #err { color: var(--danger); font: 12px/1.4 var(--font-mono); white-space: pre-wrap; margin: 8px 0 0; }
+  #mount { max-width: var(--w, 1200px); }
+  #mount.compare { max-width: none; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  #mount.sheet { max-width: none; }
+  .sheet .pe-storyboard { grid-template-columns: repeat(var(--cols, 4), minmax(0, 1fr)); }
+</style></head>
+<body>
+<h1 id="title">Animation preview</h1>
+<div id="mount"></div>
+<div id="err"></div>
+<p id="info"></p>
+<script type="module">
+const q = new URLSearchParams(location.search);
+const errors = (window.__animErrors = []);
+window.__ready = false;
+const origWarn = console.warn.bind(console), origError = console.error.bind(console);
+console.warn = (...a) => { errors.push(a.map(String).join(" ")); origWarn(...a); };
+console.error = (...a) => { errors.push("console.error: " + a.map(String).join(" ")); origError(...a); };
+addEventListener("error", (e) => errors.push(`error: ${e.message} (${e.filename}:${e.lineno})`));
+addEventListener("unhandledrejection", (e) => errors.push(`unhandled rejection: ${e.reason?.message || e.reason}`));
+const $ = (id) => document.getElementById(id);
+const done = () => requestAnimationFrame(() => requestAnimationFrame(() => { $("err").textContent = errors.join("\n"); window.__ready = true; }));
+
+/* ------------------------------------------------------------- mocks */
+// Simple, deterministic stand-ins that honour the frame contract (docs/ANIMATION_DSL.md §2).
+const NS = "http://www.w3.org/2000/svg";
+const el = (n, a = {}, p) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (p) p.append(e); return e; };
+const lerp = (a, b, u) => a + (b - a) * u, cl = (x) => Math.max(0, Math.min(1, x));
+function keyed(kfs, t, get, dflt) {               // linear interpolation of a keyframe field
+  const k = kfs.filter((f) => get(f) != null);
+  if (!k.length) return dflt;
+  if (t <= k[0].t) return get(k[0]);
+  for (let i = 1; i < k.length; i++) if (t <= k[i].t) return lerp(get(k[i - 1]), get(k[i]), (t - k[i - 1].t) / (k[i].t - k[i - 1].t || 1));
+  return get(k[k.length - 1]);
+}
+const mocks = {
+  moi(g, phase, t) {
+    g.replaceChildren();
+    const kfs = phase.keyframes || [];
+    const x = keyed(kfs, t, (f) => f.root?.x, 0);
+    const valgus = kfs.filter((f) => f.t <= t && /valgus/.test(f.pose || "")).length ? 1 : 0;
+    const crouch = cl((t - (phase.duration || 5) * 0.7) / ((phase.duration || 5) * 0.3));
+    const w = el("g", { transform: "scale(1,-1)" }, g);          // world: y up, ground y = 0
+    el("rect", { x: -1500, y: -40, width: 3000, height: 40, style: "fill:var(--fig-ground)" }, w);
+    const hip = 95 - crouch * 40, knee = 50 - crouch * 25, head = 170 - crouch * 60;
+    const kx = x - 10 + valgus * 9;
+    const limb = (pts, far) => el("polyline", { points: pts.map((p) => p.join(",")).join(" "), style: `fill:none;stroke:var(${far ? "--fig-skin-far" : "--fig-skin"});stroke-width:13;stroke-linecap:round;stroke-linejoin:round` }, w);
+    limb([[x + 10, hip], [x + 12, knee], [x + 12, 6]], true);
+    limb([[x - 10, hip], [kx, knee], [x - 14, 6]], false);
+    el("path", { d: `M${x - 18} ${hip} L${x + 18} ${hip} L${x + 16} ${head - 30} L${x - 16} ${head - 30} Z`, style: "fill:var(--fig-kit)" }, w);
+    limb([[x - 20, head - 34], [x - 30, head - 70], [x - 26, head - 100]], false);
+    limb([[x + 20, head - 34], [x + 30, head - 70], [x + 28, head - 98]], true);
+    el("circle", { cx: x, cy: head - 8, r: 13, style: "fill:var(--fig-skin)" }, w);
+    for (const hl of phase.highlights || []) if (t >= hl.t[0] && t <= hl.t[1]) el("circle", { cx: kx, cy: knee, r: 16 + 4 * Math.sin(t * 6), style: "fill:none;stroke:var(--fx-highlight);stroke-width:3" }, w);
+    for (const f of phase.forces || []) if (t >= f.t[0] && t <= f.t[1]) el("path", { d: `M${kx + 60} ${knee} L${kx + 22} ${knee}`, style: "stroke:var(--fx-force);stroke-width:5" }, w);
+    for (const im of phase.impacts || []) { const d = t - im.t; if (d >= 0 && d < 0.3) el("circle", { cx: kx, cy: knee, r: 10 + d * 120, style: `fill:none;stroke:var(--fx-injury);stroke-width:4;opacity:${1 - d / 0.3}` }, w); }
+    const T = (px, py) => [px, -py];   // world → g space (y down)
+    const targets = { head: T(x, head - 8), neck: T(x, head - 26), chest: T(x, head - 50), pelvis: T(x, hip), hipR: T(x - 10, hip), hipL: T(x + 10, hip),
+      kneeR: T(kx, knee), kneeL: T(x + 12, knee), shinR: T(lerp(kx, x - 14, 0.5), knee / 2), ankleR: T(x - 14, 8), footR: T(x - 14, 2), footL: T(x + 12, 2), handL: T(x + 28, head - 98), handR: T(x - 26, head - 100) };
+    return { bbox: { x: x - 44, y: -(head + 6), w: 88, h: head + 6 }, targets };
+  },
+  closeup(g, phase, t) {
+    g.replaceChildren();
+    const A = phase.actions || [];
+    el("rect", { x: 300, y: 40, width: 200, height: 160, rx: 60, style: "fill:var(--anat-bone);stroke:var(--anat-bone-edge);stroke-width:2" }, g);
+    el("rect", { x: 290, y: 245, width: 220, height: 170, rx: 30, style: "fill:var(--anat-bone);stroke:var(--anat-bone-edge);stroke-width:2" }, g);
+    const torn = A.some((a) => a.do === "tear" && a.target === "acl" && a.t <= t);
+    const hl = A.some((a) => a.do === "highlight" && a.t <= t);
+    el("path", { d: torn ? "M360 150 L385 205 M412 222 L440 262" : "M360 150 L440 262", style: `stroke:var(${torn ? "--fx-injury" : "--anat-ligament"});stroke-width:16;stroke-linecap:round` }, g);
+    if (hl) el("path", { d: "M360 150 L440 262", style: "stroke:var(--fx-highlight);stroke-width:26;stroke-linecap:round;opacity:.25" }, g);
+    const tx = el("text", { x: 520, y: 200, style: "font:600 15px var(--font-body);fill:var(--stage-ink)" }, g);
+    tx.textContent = `[mock] ${phase.scene} · t=${t.toFixed(1)}`;
+    let zoom = 1;                                        // tween the in-scene camera like A8 would
+    for (const a of A) if (a.do === "camera" && a.t <= t) zoom = lerp(zoom, a.zoom || 1, cl((t - a.t) / (a.dur || 0.6)));
+    const w = 800 / zoom, h = 450 / zoom;
+    return { viewBox: [400 - w / 2, 225 - h / 2, w, h], anchors: {} };
+  },
+  micro(g, phase, t) {
+    g.replaceChildren();
+    const st = (phase.stages || []).filter((s) => s.t <= t).pop()?.stage || "healthy";
+    for (let i = 0; i < 14; i++) {
+      const y = 80 + i * 22, broken = /failure|haemorrhage|inflammation/.test(st) && i % 3 === 0;
+      el("path", { d: broken ? `M120 ${y} L380 ${y + 4} M430 ${y + 6} L680 ${y}` : `M120 ${y} Q400 ${y + 8 * Math.sin(i + t)} 680 ${y}`, style: "fill:none;stroke:var(--anat-ligament);stroke-width:7;stroke-linecap:round;opacity:.8" }, g);
+    }
+    const tx = el("text", { x: 24, y: 36, style: "font:600 15px var(--font-body);fill:var(--stage-ink)" }, g);
+    tx.textContent = `[mock] ${phase.tissue}: ${st}`;
+    return { viewBox: [0, 0, 800, 450] };
+  }
+};
+
+/* -------------------------------------------------------------- main */
+try {
+  const id = q.get("id");
+  if (!id) throw new Error("missing ?id=<injury-id>");
+  const res = await fetch(`../data/injuries/${encodeURIComponent(id)}.json`);
+  if (!res.ok) throw new Error(`data/injuries/${id}.json → HTTP ${res.status} (run npm run build?)`);
+  const injury = await res.json();
+  const spec = injury.animation;
+  if (!spec) throw new Error(`${id} has no animation block`);
+  const { mountAnimation, renderStoryboard, buildTimeline, locate, captionAtTime } = await import("../js/anim/index.js");
+  // mock=1 → all mocks; mock=moi,closeup → mock only those (real modules for the rest)
+  const mockList = !q.has("mock") ? [] : q.get("mock") === "1" || q.get("mock") === "" ? Object.keys(mocks) : q.get("mock").split(",");
+  const renderers = Object.fromEntries(mockList.filter((k) => mocks[k]).map((k) => [k, mocks[k]]));
+  $("title").textContent = `${id} — ${spec.title || ""}${mockList.length ? `  [mock: ${mockList.join(", ")}]` : ""}`;
+  const common = { renderers, reducedMotion: q.has("rm") ? true : undefined };
+  const mount = $("mount");
+  if (q.get("w")) mount.style.setProperty("--w", `${+q.get("w")}px`);
+  const tl = buildTimeline(spec);
+  if (q.has("sheet") || q.has("steps")) {
+    mount.classList.add("sheet");
+    const n = +q.get("sheet") || 12;
+    mount.style.setProperty("--cols", q.get("cols") || (q.has("steps") ? 3 : n <= 6 ? 3 : 4));
+    const board = renderStoryboard(mount, spec, { ...common, frames: n, mode: q.has("steps") ? "captions" : "even" });
+    await board.ready;
+    $("info").textContent = `${q.has("steps") ? "steps" : `sheet of ${n}`} · duration ${tl.duration.toFixed(2)} s · ${tl.phases.map((p) => `${p.label} ${p.playDuration.toFixed(2)}s`).join(" | ")}`;
+  } else {
+    if (q.has("compare")) mount.classList.add("compare");
+    const t = q.has("t") ? +q.get("t") : undefined;
+    const players = [];
+    for (let i = 0; i < (q.has("compare") ? 2 : 1); i++) {
+      const box = document.createElement("div"); mount.append(box);
+      players.push(mountAnimation(box, spec, { ...common, startAt: Number.isFinite(t) ? t : undefined, autoplay: q.has("autoplay") }));
+    }
+    window.__players = players;
+    await Promise.all(players.map((p) => p.ready));
+    if (Number.isFinite(t)) {
+      const loc = locate(tl, t), cap = captionAtTime(tl, t);
+      $("info").textContent = `T=${t}s / ${tl.duration.toFixed(2)}s · phase ${loc.index + 1} "${loc.entry.label}" (${loc.entry.type}) · authored t=${loc.t.toFixed(3)}s\ncaption: ${cap ? cap.text : "—"}`;
+    }
+  }
+} catch (e) {
+  errors.push(String(e?.message || e));
+}
+done();
+</script>
+</body></html>
