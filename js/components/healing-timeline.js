@@ -196,7 +196,11 @@ function drawChart(W, model, ctx) {
   const maxLabW = Math.min(narrow ? 112 : 150, plotW * 0.4);
   const items = milestones.map((m) => {
     const x = X(m.day);
-    const lines = wrap(m.label, maxLabW, FS_S + 0.5, {}, 3);
+    // Wrap the label inside the space to the right of its marker where possible (so it never has to slide left over a
+    // neighbour's leader line); only when there is almost no room does the label shift left instead.
+    const avail = W - 6 - (x + 5);
+    const lw = Math.max(58, Math.min(maxLabW, avail));
+    const lines = wrap(m.label, lw, FS_S + 0.5, {}, 4);
     const time = fmtDay(m.day) === "0" ? "Day 0" : fmtDay(m.day);
     const w = Math.max(...lines.map((t) => measure(t, FS_S + 0.5)), measure(time, FS_S, { mono: true }));
     let s = x + 5;
@@ -204,9 +208,8 @@ function drawChart(W, model, ctx) {
     return { m, x, lines, time, w, s, e: s + w, row: 0, isRts: /return|rts/i.test(m.label) };
   });
   const lineH = 14.5;
-  const maxLines = items.reduce((a, it) => Math.max(a, it.lines.length), 1);
-  const rowH = (maxLines + 1) * lineH + 8;
-  // Right-to-left placement: a label that spans a later marker's leader line must sit deeper than that marker.
+  // Right-to-left placement. Rule: a label that spans another marker's leader line must sit deeper than that marker,
+  // and two labels in the same row must not overlap.
   const placed = [];
   for (let i = items.length - 1; i >= 0; i--) {
     const it = items[i];
@@ -217,7 +220,10 @@ function drawChart(W, model, ctx) {
     it.row = r; placed.push(it);
   }
   const rows = items.reduce((a, it) => Math.max(a, it.row + 1), 0);
-  const msBottom = trackY + 8 + rows * rowH;
+  const rowLines = Array.from({ length: rows }, (_, r) => items.filter((it) => it.row === r).reduce((a, it) => Math.max(a, it.lines.length), 1));
+  const rowTop = []; let acc = trackY + 8;
+  for (let r = 0; r < rows; r++) { rowTop[r] = acc; acc += (rowLines[r] + 1) * lineH + 8; }
+  const msBottom = rows ? acc : trackY + 8;
   const H = Math.ceil(Math.max(msBottom, trackY + 10) + 4);
 
   // ---------------- build svg
@@ -278,7 +284,7 @@ function drawChart(W, model, ctx) {
     const g = h("g", { class: "hl__ms" });
     g.append(h("line", { class: "hl__track", x1: padL, x2: padL + plotW, y1: trackY, y2: trackY }));
     for (const it of items) {
-      const top = trackY + 8 + it.row * rowH;
+      const top = rowTop[it.row];
       const mg = h("g", { class: `hl__m${it.isRts ? " hl__m--rts" : ""}` });
       mg.append(h("svg:title", null, `${it.m.label} — ${it.time} (day ${Math.round(it.m.day)})${it.m.note ? `. ${plain(it.m.note)}` : ""}`));
       mg.append(h("line", { class: "hl__ref", x1: it.x, x2: it.x, y1: axisY + 3, y2: trackY }));

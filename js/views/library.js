@@ -523,7 +523,9 @@ function paintResults(list, keepScroll) {
     ui.jump.hidden = true;
     return;
   }
-  const groups = groupList(list);
+  let groups = groupList(list);
+  // headings and a jump bar only help when there is something to scan
+  if (groups.length < 2 || (S.sort === "az" && list.length < 12)) groups = [{ key: "all", label: "", items: list }];
   const frag = document.createDocumentFragment();
   if (list_) frag.append(listHead());
   groups.forEach((g, gi) => {

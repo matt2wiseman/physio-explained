@@ -259,6 +259,9 @@ Rules for scene authors:
 3. Bands must run attachment-to-attachment so `tear at: 0.5` really is mid-substance and `avulse end: "to"` pulls off the distal attachment.
 4. Check your scene visually: `node tools/render-scene.mjs <scene-id>` writes PNGs to `tools/output/` (static preview, all structures labelled) — open them with the Read tool and iterate until it looks like a clean atlas illustration.
 
+
+**Advanced/optional fields** supported by the renderer (`kind` for vessels artery|vein, `visible`/`hidden`, `epiphysis` linking a physis to its bone, `fillRule`, per-action `hold`, `accelerate` direction semantics, cartilage tear orientation, longer default `dur` for slow processes such as bleed/stress/herniate) are documented in the header comment of `js/anim/closeup.js` — that header is authoritative.
+
 ## 5. Micro module format (`js/anim/micro/<tissue>.js`)
 ```js
 export default {

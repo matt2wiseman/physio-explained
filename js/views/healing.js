@@ -166,7 +166,7 @@ const TISSUES = [
         ["sarcomere-disruption", "Sarcomeres tear and the membrane leaks; calcium floods in."],
         ["haematoma", "Bleeding from torn vessels forms a haematoma within the injured fibres."],
         ["inflammation", "Neutrophils, then macrophages, invade and clear debris.", "Days 0–5"],
-        ["satellite-activation", "Satellite cells wake, divide and migrate to the injury."],
+        ["satellite-activation", "Satellite cells wake, divide and migrate to the injury.", "Overlaps inflammation"],
         ["regeneration", "Satellite cells fuse into new myotubes that mature into fibres.", "Days 5–21"],
         ["scar", "Fibroblasts deposit collagen as regenerated fibres align and the scar matures.", "Week 3 onward"]
       ]

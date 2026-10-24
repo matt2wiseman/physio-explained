@@ -170,6 +170,8 @@
 .xp__criteria.is-complete .xp__next { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .cluster--sm { --cluster-gap: var(--sp-2); }
 
+@media (max-width: 520px) { .xp__fig { aspect-ratio: 16 / 10; } }
+
 @media print {
   .xp__rail { display: none; }
   .xp__panel[hidden] { display: block !important; }
