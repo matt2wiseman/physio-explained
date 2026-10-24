@@ -19,7 +19,7 @@
 <body>
 <h1 id="title"></h1><div id="warn"></div><div id="grid"></div>
 <script type="module">
-import { renderCloseupFrame, loadScene, closeupDefaults } from "../js/anim/closeup.js";
+import { renderCloseupFrame, loadScene, closeupDefaults, registerScene } from "../js/anim/closeup.js";
 import { SCENES, FRACTURE_PATTERNS, CARTILAGE_TEARS, HERNIATION_GRADES, SALTER_HARRIS } from "../js/anim/catalogue.js";
 const Q = new URLSearchParams(location.search), NS = "http://www.w3.org/2000/svg";
 const warnings = (window.__closeupWarnings = []);
@@ -145,6 +145,26 @@ function demoSegments(sceneId, scene, onlyTypes) {
   return segs;
 }
 
+/* Synthetic scene (?scene=_synthetic) exercising types no scene file may exist for yet: disc, brain, particles, bursa, fat pad, capsule. */
+const ell = (cx, cy, rx, ry, n = 24) => "M" + Array.from({ length: n }, (_, i) => { const a = (i / n) * 2 * Math.PI; return `${(cx + rx * Math.cos(a)).toFixed(1)},${(cy + ry * Math.sin(a)).toFixed(1)}`; }).join("L") + "Z";
+registerScene({
+  id: "_synthetic", viewBox: [0, 0, 800, 450],
+  directions: { anterior: [1, 0], posterior: [-1, 0], superior: [0, -1], inferior: [0, 1], left: [0, 1], right: [0, -1] },
+  structures: {
+    vertebraAbove: { type: "bone", z: 1, d: "M150,70 L290,64 L296,150 L150,156 Z" },
+    disc: { type: "disc", z: 2, cx: 222, cy: 175, rx: 76, ry: 17, nucleus: { rx: 32, ry: 9, dx: -6 } },
+    vertebraBelow: { type: "bone", z: 1, d: "M150,194 L296,200 L290,286 L150,280 Z" },
+    skull: { type: "bone", z: 1, d: ell(560, 150, 150, 112) + "", ghost: true },
+    brain: { type: "brain", z: 2, d: ell(560, 150, 136, 98) },
+    cerebellum: { type: "brain", z: 3, d: ell(470, 222, 44, 24) },
+    bursa: { type: "bursa", z: 2, cx: 220, cy: 360, rx: 42, ry: 9 },
+    fatPad: { type: "fatpad", z: 2, d: ell(340, 380, 46, 26) },
+    capsule: { type: "capsule", z: 2, d: ell(500, 370, 70, 46) },
+    canal: { type: "space", z: 1, visible: true, d: ell(680, 365, 60, 40) + " " + ell(680, 365, 48, 28), fillRule: "evenodd" },
+    otoconia: { type: "particles", z: 4, cx: 640, cy: 380, r: 6, count: 9 }
+  },
+  anchors: { coupSite: [700, 150], ampulla: [722, 340], centreOfMass: [560, 150] }
+});
 try {
   if (Q.get("id")) {
     const inj = await (await fetch(`../data/injuries/${Q.get("id")}.json`)).json();
