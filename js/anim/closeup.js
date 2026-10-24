@@ -1143,9 +1143,9 @@ function drawMuscle(g, sp, st, rc) {
       F.cloud(fx, fr.p[0], fr.p[1], fr.half * 1.2, fr.half * 0.9, "fx-oedema", 0.9 * q, rotA);
       const n = f.a.grade === 1 ? 7 : 16;
       for (let k = 0; k < n; k++) { const o = add(add(fr.p, mul(fr.u, (R() - 0.5) * fr.half * (f.a.grade === 1 ? 0.6 : 1.1))), mul(fr.n, (R() - 0.5) * fr.half * 1.5)); el("circle", { cx: o[0], cy: o[1], r: (0.8 + R() * 1.2) * q, fill: C("fx-bleed"), opacity: 0.9 }, fx); }
-      if (f.a.grade === 2) F.pool(fx, fr.p[0], fr.p[1], fr.half * 0.45 * q + 2, R, 0.75 * q, fr.half * 0.75 * q + 2, rotA);
+      if (f.a.grade === 2) F.pool(fx, fr.p[0], fr.p[1], fr.half * 0.6 * q + 3, R, 0.75 * q, fr.half * 0.35 * q + 2, rotA);
     } else if (f.kind === "haematoma") {
-      F.pool(fx, fr.p[0], fr.p[1], Math.max(6, sp.len * 0.12) * (0.4 + 0.6 * q), R, 0.88 * q, fr.half * 0.75 * (0.4 + 0.6 * q), rotA);
+      { const rx = Math.max(6, sp.len * 0.11) * (0.4 + 0.6 * q); F.pool(fx, fr.p[0], fr.p[1], rx, R, 0.88 * q, Math.min(fr.half * 0.6, rx * 0.55), rotA); }
     } else if (f.kind === "ossify") {
       const r = Math.max(5, fr.half * 0.55);
       if (q < 0.6) for (let k = 0; k < 12; k++) { const o = add(fr.p, [(R() - 0.5) * r * 2, (R() - 0.5) * r * 1.6]); el("circle", { cx: o[0], cy: o[1], r: 0.9 + R(), fill: C("anat-bone"), opacity: q * 1.4 }, fx); }
