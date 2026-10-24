@@ -129,8 +129,10 @@ a.inj-chip:hover { border-color: var(--accent); color: var(--accent); }
 .inj-anim__stage[data-state="loading"] { aspect-ratio: 16 / 9; background: var(--stage-bg); }
 /* reserve the 16:9 stage plus the player's control bar, so mounting causes no layout shift */
 @supports (min-height: 1cqi) {
-  .inj-anim__stage[data-state="loading"] { aspect-ratio: auto; min-height: calc(56.25cqi + var(--inj-player-bar, 96px)); }
+  .inj-anim__stage[data-state="loading"] { aspect-ratio: auto; min-height: calc(56.25cqi + var(--inj-player-bar, 99px)); }
 }
+/* A1's player moves captions under the stage when narrow (its own container query at 560px) */
+@container (max-width: 560px) { .inj-anim__stage[data-state="loading"] { --inj-player-bar: 178px; } }
 .inj-anim__stage[data-state="ready"] { overflow: visible; }
 .inj-anim__loading { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: var(--sp-3); color: var(--stage-ink-2); font-size: var(--fs-sm); }
 .inj-anim__spinner { width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--stage-grid); border-top-color: var(--stage-accent); animation: inj-spin 900ms linear infinite; }
@@ -607,6 +609,7 @@ a.inj-chip:hover { border-color: var(--accent); color: var(--accent); }
   .inj-facts { border: 1px solid var(--line-strong); border-top: 2px solid var(--ink); break-inside: avoid; }
   .inj-facts__list { grid-template-columns: 1fr 1fr; column-gap: 18pt; }
   .inj-title { font-size: 24pt; max-width: none; }
+  .inj-summary, .inj-prose--lead > p:first-child { font-size: 11.5pt; }
   .inj-sec { padding-block: 12pt 6pt; break-inside: auto; }
   .inj-sec__head, .inj-h3, .inj-h4, .patho__label { break-after: avoid; }
   .inj-tx__item, .inj-test, .ref-list__item, .patho__layer, .inj-stage, .inj-table tr, .inj-ddx__item, .inj-dl__row, .inj-pearls li, .inj-redflags { break-inside: avoid; }

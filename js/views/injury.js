@@ -1056,6 +1056,11 @@ function setupCiteTips(article, T, token) {
     token.tipFor = a;
   };
   const hide = () => hideTip(token);
+  // Keyboard focus scrolls the page: keep the tooltip with its focused link; hover tooltips just close.
+  const onScroll = () => {
+    if (tip.hidden) return;
+    if (token.tipFor && token.tipFor === document.activeElement) show(token.tipFor); else hide();
+  };
   const over = (e) => {
     const a = e.target.closest && e.target.closest("a.cite__a[data-ref]");
     if (!a) return;
@@ -1075,11 +1080,11 @@ function setupCiteTips(article, T, token) {
   article.addEventListener("focusin", over);
   article.addEventListener("focusout", out);
   document.addEventListener("keydown", key);
-  window.addEventListener("scroll", hide, { passive: true });
+  window.addEventListener("scroll", onScroll, { passive: true });
   token.cleanup.push(() => {
     clearTimeout(showTimer);
     document.removeEventListener("keydown", key);
-    window.removeEventListener("scroll", hide);
+    window.removeEventListener("scroll", onScroll);
   });
 }
 function hideTip(token) {
@@ -1296,9 +1301,20 @@ export async function render(main, params = [], ctx = {}) {
   setupNav(article, inj, token, ctx?.router);
   setupCiteTips(article, T, token);
 
-  if (section && !ctx?.router) {
-    // The shared router scrolls to the section itself (using scroll-margin-top); only do it when running standalone.
-    requestAnimationFrame(() => requestAnimationFrame(() => { if (S === token) scrollToId(section, { focus: false }); }));
+  if (section) {
+    // The router scrolls to the section (scroll-margin-top). Web fonts arriving later re-wrap a very long page and
+    // push the target down, so re-align once fonts are ready — unless the reader has already started scrolling.
+    let moved = false;
+    const stop = () => { moved = true; };
+    const evs = ["wheel", "touchstart", "keydown", "pointerdown"];
+    evs.forEach((ev) => window.addEventListener(ev, stop, { passive: true, once: true }));
+    token.cleanup.push(() => evs.forEach((ev) => window.removeEventListener(ev, stop)));
+    const realign = () => requestAnimationFrame(() => requestAnimationFrame(() => {
+      if (S === token && !moved) scrollToId(section, { focus: false });
+    }));
+    realign();
+    try { document.fonts?.ready?.then(realign); } catch {}
+    setTimeout(realign, 900);
   }
 
   mountHero(inj, hero.stage, hero.fig, token);

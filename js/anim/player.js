@@ -123,7 +123,7 @@ const withTimeout = (p, ms) => Promise.race([p, new Promise((r) => setTimeout(r,
 async function loadRenderers(tl, overrides = {}, warn) {
   const types = new Set(tl.phases.map((p) => p.type));
   if (types.has("zoom")) types.add("moi");
-  const out = {};
+  const out = { __preload: {} };
   await Promise.all([...types].map(async (type) => {
     if (typeof overrides?.[type] === "function") { out[type] = overrides[type]; return; }
     const m = MODULES[type];
@@ -133,15 +133,16 @@ async function loadRenderers(tl, overrides = {}, warn) {
     const fn = mod[m.fn] || mod.default?.[m.fn] || (typeof mod.default === "function" ? mod.default : null);
     if (typeof fn !== "function") { warn(`${m.path} does not export ${m.fn}()`); return; }
     out[type] = fn;
-    // optional warm-up hooks so the first visible frame is complete
+    // optional warm-up hooks so the first visible frame is complete (A7: preloadMicro, A8: preloadCloseup)
+    const preFn = type === "micro" ? (ph) => mod.preloadMicro?.(ph.tissue)
+      : type === "closeup" ? (ph) => (mod.preloadCloseup ? mod.preloadCloseup(ph) : mod.preloadScene?.(ph.scene))
+      : (ph) => mod.preload?.(ph);
+    out.__preload[type] = preFn;
     const pre = [];
     for (const e of tl.phases) {
       if (e.type !== type) continue;
-      try {
-        if (type === "micro" && mod.preloadMicro && e.phase.tissue) pre.push(mod.preloadMicro(e.phase.tissue));
-        if (type === "closeup" && mod.preloadScene && e.phase.scene) pre.push(mod.preloadScene(e.phase.scene));
-        if (typeof mod.preload === "function") pre.push(mod.preload(e.phase));
-      } catch (err) { warn(`${m.path} preload failed: ${err.message}`); }
+      try { const r = preFn(e.phase); if (r && typeof r.then === "function") pre.push(r); }
+      catch (err) { warn(`${m.path} preload failed: ${err.message}`); }
     }
     if (pre.length) await withTimeout(Promise.allSettled(pre), 5000);
   }));
@@ -190,7 +191,12 @@ class Stage {
     this.phasesLayer = s("g", { class: "pe-layer-phases" }, this.svg);
     const ov = s("g", { class: "pe-layer-overlay", "pointer-events": "none" }, this.svg);
     s("rect", { width: STAGE_W, height: STAGE_H, fill: "url(#player-vignette)" }, ov);
-    this.ctx = { reducedMotion: this.rm, width: STAGE_W, height: STAGE_H, defs: getSharedDefs(), warn: (m) => this.warn(m) };
+    this.ctx = { reducedMotion: this.rm, width: STAGE_W, height: STAGE_H, defs: getSharedDefs(), warn: (m) => this.warn(m), requestRender: () => this.requestRender() };
+  }
+  /** Renderers call ctx.requestRender() when async assets land; coalesced and deferred to a task (never a microtask loop). */
+  requestRender() {
+    if (this.rrTimer || this.dead) return;
+    this.rrTimer = setTimeout(() => { this.rrTimer = 0; if (this.dead) return; this.invalidate(); this.onRedraw?.(); }, 16);
   }
   setRenderers(r) { this.renderers = r || {}; this.invalidate(); }
   setDocked(on) { if (this.docked !== !!on) { this.docked = !!on; this.invalidate(); } }
@@ -206,7 +212,7 @@ class Stage {
     const g = s("g", {}, wrap);
     const after = [...this.slots.entries()].filter(([i]) => i > index).sort((a, b) => a[0] - b[0])[0];
     this.phasesLayer.insertBefore(wrap, after ? after[1].wrap : null);
-    slot = { wrap, g, lastT: NaN, result: null, placeholder: false, hidden: false, op: 1, waiting: false };
+    slot = { wrap, g, lastT: NaN, result: null, placeholder: false, hidden: false, op: 1, waiting: false, retries: 0 };
     this.slots.set(index, slot);
     return slot;
   }
@@ -226,10 +232,19 @@ class Stage {
         const raw = fn(slot.g, entry.phase, t, this.ctx);
         if (raw && typeof raw.then === "function") { this.warnOnce(`async${entry.index}`, `${entry.type} renderer returned a Promise — frames must render synchronously`); res = {}; }
         else res = entry.type === "moi" ? normalizeMoiResult(raw, slot.g) : raw || {};
-        if (raw && raw.ready === false && raw.whenReady && typeof raw.whenReady.then === "function" && !slot.waiting) {
-          slot.waiting = true;          // e.g. micro tissue module still loading → redraw when it lands
-          raw.whenReady.then(() => { slot.waiting = false; slot.lastT = NaN; this.onRedraw?.(); }, () => { slot.waiting = false; });
-        }
+        if (raw && raw.ready === false) {
+          // a scene / tissue module may still be loading → redraw once it lands (bounded: a permanently
+          // missing scene also reports ready:false, and must not cause an endless redraw loop)
+          if (!slot.waiting && slot.retries < 3) {
+            let when = raw.whenReady;
+            if (!(when && typeof when.then === "function")) { try { when = this.renderers.__preload?.[entry.type]?.(entry.phase); } catch { when = null; } }
+            if (when && typeof when.then === "function") {
+              slot.waiting = true; slot.retries++;
+              const again = () => { slot.waiting = false; slot.lastT = NaN; this.requestRender(); };
+              when.then(again, again);
+            }
+          }
+        } else slot.retries = 0;
       } catch (err) {
         this.warnOnce(`err${entry.index}:${err?.message}`, `${entry.type} renderer failed in phase ${entry.index + 1} ("${entry.label}") at t=${t.toFixed(2)}s: ${err?.message || err}`);
         this.fresh(slot); drawPlaceholder(slot.g, entry); slot.placeholder = true; res = null;
@@ -300,7 +315,7 @@ class Stage {
     for (const [i, slot] of this.slots) if (!seen.has(i) && !slot.hidden) { slot.wrap.setAttribute("display", "none"); slot.hidden = true; }
     return plan.loc;
   }
-  destroy() { this.svg.remove(); this.slots.clear(); this.onRedraw = null; }
+  destroy() { this.dead = true; clearTimeout(this.rrTimer); this.svg.remove(); this.slots.clear(); this.onRedraw = null; }
 }
 
 /* =============================================================== Player */

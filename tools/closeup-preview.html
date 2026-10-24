@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Close-up preview</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/tokens.css">
+<style>
+  /* OWNER: A8. Close-up renderer QA page.
+     ?id=<injury>[&phase=<index>][&t=<s> | &sheet=<n>]     frames of an injury's closeup phase (data/injuries/<id>.json)
+     ?scene=<id>[&t=<s>]                                     static scene (renderStatic)
+     ?scene=<id>&demo=1[&types=bone,ligament][&cols=4]       built-in demo: one cell per action, for every structure type in the scene
+     &mirror=1  flips the scene.  window.__ready / window.__closeupWarnings are set for tools/render-closeup.mjs */
+  body { margin: 0; background: var(--stage-bg); color: var(--stage-ink); font: 13px/1.35 var(--font-body); }
+  h1 { font-size: 14px; margin: 8px 12px; font-weight: 600; }
+  #warn { color: var(--fx-injury); white-space: pre-wrap; margin: 4px 12px; font: 12px/1.35 var(--font-mono); }
+  #grid { display: grid; gap: 6px; padding: 6px; }
+  figure { margin: 0; background: var(--stage-bg); border: 1px solid var(--stage-grid); }
+  figcaption { padding: 3px 6px; color: var(--stage-ink-2); font-size: 12px; }
+  svg { display: block; width: 100%; height: auto; background: var(--stage-bg); }
+</style></head>
+<body>
+<h1 id="title"></h1><div id="warn"></div><div id="grid"></div>
+<script type="module">
+import { renderCloseupFrame, loadScene, closeupDefaults } from "../js/anim/closeup.js";
+import { SCENES, FRACTURE_PATTERNS, CARTILAGE_TEARS, HERNIATION_GRADES, SALTER_HARRIS } from "../js/anim/catalogue.js";
+const Q = new URLSearchParams(location.search), NS = "http://www.w3.org/2000/svg";
+const warnings = (window.__closeupWarnings = []);
+const ow = console.warn.bind(console); console.warn = (...a) => { warnings.push(a.join(" ")); ow(...a); };
+const grid = document.getElementById("grid"), title = document.getElementById("title");
+const svgDefs = document.createElementNS(NS, "svg"); svgDefs.setAttribute("width", 0); svgDefs.setAttribute("height", 0); svgDefs.style.position = "absolute";
+const defs = document.createElementNS(NS, "defs"); svgDefs.append(defs); document.body.append(svgDefs);
+const ctx = { reducedMotion: false, width: 800, height: 450, defs, warn: (m) => warnings.push(m) };
+function cell(phase, t, caption, big) {
+  const fig = document.createElement("figure"), svg = document.createElementNS(NS, "svg"), g = document.createElementNS(NS, "g");
+  svg.append(g); fig.append(svg);
+  const cap = document.createElement("figcaption"); cap.textContent = caption; fig.append(cap); grid.append(fig);
+  const res = renderCloseupFrame(g, phase, t, ctx);
+  svg.setAttribute("viewBox", res.viewBox.join(" ")); svg.setAttribute("preserveAspectRatio", "xMidYMid slice");
+  if (big) svg.style.aspectRatio = "16 / 9";
+  return res;
+}
+const cols = (n) => (grid.style.gridTemplateColumns = `repeat(${n}, 1fr)`);
+const mirror = Q.get("mirror") === "1";
+
+/* ---------------- demo action lists ---------------- */
+function demoSegments(sceneId, scene, onlyTypes) {
+  const cat = SCENES[sceneId] || { structures: {}, anchors: {} };
+  const ids = Object.keys(scene.structures).filter((k) => !cat.structures || Object.keys(cat.structures).length === 0 || cat.structures[k]);
+  const byType = {};
+  for (const id of ids) { const s = scene.structures[id]; if (!s || s.ghost) continue; (byType[s.type] = byType[s.type] || []).push(id); }
+  const anchors = Object.keys(scene.anchors || {});
+  const near = (id) => {
+    const s = scene.structures[id]; let c = s.label;
+    if (!c && Number.isFinite(s.cx)) c = [s.cx, s.cy];
+    if (!c && s.from) c = [(s.from[0] + s.to[0]) / 2, (s.from[1] + s.to[1]) / 2];
+    if (!c && s.points) c = s.points[Math.floor(s.points.length / 2)];
+    if (!c) c = [400, 225];
+    let best = anchors[0], bd = Infinity;
+    for (const a of anchors) { const p = scene.anchors[a], d = Math.hypot(p[0] - c[0], p[1] - c[1]); if (d < bd) { bd = d; best = a; } }
+    return best;
+  };
+  const segs = [], S = (title, actions, t) => segs.push({ title, actions, t: t ?? Math.max(...actions.map((a) => a.t + (a.dur ?? closeupDefaults[a.do] ?? 0.6))) + 0.25 });
+  const want = (ty) => byType[ty] && (!onlyTypes || onlyTypes.includes(ty));
+  const any = ids.find((i) => scene.structures[i].type === "bone") || ids[0];
+  if (!onlyTypes || onlyTypes.includes("generic")) {
+    const T = any;
+    S(`highlight + label (${T})`, [{ t: 0, do: "highlight", target: T }, { t: 0.1, do: "label", target: T, text: "Highlighted structure" }]);
+    S(`pulse (${T})`, [{ t: 0, do: "pulse", target: T }], 0.9);
+    S(`fade to 0.3 (${T})`, [{ t: 0, do: "fade", target: T, to: 0.3 }]);
+    S(`hide (${T})`, [{ t: 0, do: "hide", target: T }]);
+    S(`swell 0.8 (${T})`, [{ t: 0, do: "swell", target: T, amount: 0.8 }]);
+    S(`inflame 0.8 (${T})`, [{ t: 0, do: "inflame", target: T, amount: 0.8 }]);
+    S(`move dir medial 0.3 (${T})`, [{ t: 0, do: "move", target: T, dir: "medial", amount: 0.3 }]);
+    S(`move to anchor ${anchors[0]} (${T})`, [{ t: 0, do: "move", target: T, to: anchors[0] }]);
+    S(`rotate 12° (${T})`, [{ t: 0, do: "rotate", target: T, deg: 12 }]);
+    S(`move + reset (${T})`, [{ t: 0, do: "move", target: T, dir: "lateral", amount: 0.4 }, { t: 0.7, do: "reset", target: T, dur: 0.6 }], 1.0);
+    S("5 labels (oldest fades)", ids.slice(0, 5).map((id, i) => ({ t: i * 0.3, do: "label", target: id, text: `${scene.structures[id].type} label ${i + 1}` })), 2.2);
+  }
+  if (!onlyTypes || onlyTypes.includes("scene")) {
+    const a0 = anchors[0], a1 = anchors[Math.min(1, anchors.length - 1)];
+    S("arrow (in-plane) + arrow ⊙ + ⊗", [{ t: 0, do: "arrow", at: a0, dir: "medial", label: "Valgus force" }, { t: 0, do: "arrow", at: a1, dir: "anterior", label: "Anterior translation" }, { t: 0, do: "arrow", at: anchors[2] || a0, dir: "posterior", size: "s" }]);
+    S("impact (mid-flash)", [{ t: 0, do: "impact", at: a0 }], 0.25);
+    S("pain marker", [{ t: 0, do: "pain", at: a1, label: "Pain here" }], 0.9);
+    S(`camera zoom 2 → ${a0}`, [{ t: 0, do: "camera", at: a0, zoom: 2, dur: 0.6 }, { t: 0.1, do: "highlight", target: any }]);
+  }
+  if (want("bone")) {
+    const B = byType.bone[0], A = near(B);
+    for (const p of FRACTURE_PATTERNS) S(`fracture ${p}${["transverse", "oblique", "comminuted", "avulsion", "physeal", "spiral"].includes(p) ? " displaced" : ""} (${B} @${A})`, [{ t: 0, do: "fracture", target: B, pattern: p, at: A, displaced: ["transverse", "oblique", "comminuted", "avulsion", "physeal", "spiral"].includes(p), dur: 0.8 }]);
+    S(`bruise (${B} @${A})`, [{ t: 0, do: "bruise", target: B, at: A }]);
+    S(`stress early (${B})`, [{ t: 0, do: "stress", target: B, at: A }], 0.6);
+    S(`stress late (${B})`, [{ t: 0, do: "stress", target: B, at: A }], 1.7);
+  }
+  for (const ty of ["ligament", "tendon"]) if (want(ty)) {
+    const T = byType[ty][0];
+    S(`stretch 0.4 (${T})`, [{ t: 0, do: "stretch", target: T, amount: 0.4 }]);
+    for (const gr of [1, 2, 3]) S(`tear grade ${gr} (${T})`, [{ t: 0, do: "tear", target: T, grade: gr, at: 0.5 }], 1.0);
+    S(`stretch → tear 3 (${T})`, [{ t: 0, do: "stretch", target: T, amount: 0.35, dur: 0.8 }, { t: 0.9, do: "tear", target: T, grade: 3, at: 0.5 }], 1.7);
+    S(`avulse to (${T})`, [{ t: 0, do: "avulse", target: T, end: "to" }]);
+    S(`avulse from (${T})`, [{ t: 0, do: "avulse", target: T, end: "from" }]);
+    S(`degenerate (${T})`, [{ t: 0, do: "degenerate", target: T }]);
+    S(`thicken 0.6 (${T})`, [{ t: 0, do: "thicken", target: T, amount: 0.6 }]);
+    if (ty === "tendon") S(`calcify (${T})`, [{ t: 0, do: "calcify", target: T, at: 0.6 }]);
+  }
+  if (want("muscle")) {
+    const T = byType.muscle[0];
+    for (const [d, x] of [["contract", { amount: 0.7 }], ["stretch", { amount: 0.5 }], ["atrophy", { amount: 0.7 }], ["spasm", {}]]) S(`${d} (${T})`, [{ t: 0, do: d, target: T, ...x }]);
+    for (const gr of [1, 2, 3]) S(`strain grade ${gr} (${T})`, [{ t: 0, do: "strain", target: T, grade: gr, at: 0.55 }], 1.0);
+    S(`haematoma (${T})`, [{ t: 0, do: "haematoma", target: T, at: 0.5 }]);
+    S(`ossify (${T})`, [{ t: 0, do: "ossify", target: T, at: 0.5 }]);
+  }
+  if (want("cartilage")) {
+    const T = byType.cartilage.find((i) => /menisc/i.test(i)) || byType.cartilage[0], T2 = byType.cartilage.find((i) => !/menisc/i.test(i)) || T;
+    for (const p of CARTILAGE_TEARS) S(`tear ${p} (${T})`, [{ t: 0, do: "tear", target: T, pattern: p, at: 0.5 }], 1.0);
+    S(`compress (${T})`, [{ t: 0, do: "compress", target: T, amount: 0.6 }]);
+    for (const dp of ["partial", "full", "osteochondral"]) S(`lesion ${dp} (${T2})`, [{ t: 0, do: "lesion", target: T2, at: 0.6, depth: dp }]);
+    S(`degenerate (${T2})`, [{ t: 0, do: "degenerate", target: T2 }]);
+  }
+  if (want("nerve")) {
+    const T = byType.nerve[0];
+    S(`compress (${T})`, [{ t: 0, do: "compress", target: T, at: 0.5 }]);
+    S(`stretch (${T})`, [{ t: 0, do: "stretch", target: T, amount: 0.5 }]);
+    S(`irritate (${T})`, [{ t: 0, do: "irritate", target: T }], 0.8);
+    S(`entrap (${T})`, [{ t: 0, do: "entrap", target: T, at: 0.5 }, { t: 0.2, do: "irritate", target: T }]);
+  }
+  if (want("vessel")) {
+    const T = byType.vessel[0];
+    for (const d of ["compress", "tear", "occlude"]) S(`${d} (${T})`, [{ t: 0, do: d, target: T, at: 0.5 }]);
+  }
+  if (want("bursa")) { const T = byType.bursa[0]; S(`compress (${T})`, [{ t: 0, do: "compress", target: T, amount: 0.7 }]); S(`swell+inflame (bursitis) (${T})`, [{ t: 0, do: "swell", target: T, amount: 0.8 }, { t: 0, do: "inflame", target: T, amount: 0.6 }]); }
+  if (want("disc")) {
+    const T = byType.disc[0];
+    for (const gr of HERNIATION_GRADES) S(`herniate ${gr} posterior (${T})`, [{ t: 0, do: "herniate", target: T, grade: gr, dir: "posterior" }]);
+    S(`herniate protrusion posterolateral-left (${T})`, [{ t: 0, do: "herniate", target: T, grade: "protrusion", dir: "posterolateral-left" }]);
+    for (const d of ["degenerate", "fissure", "compress"]) S(`${d} (${T})`, [{ t: 0, do: d, target: T }]);
+  }
+  if (want("capsule")) { const T = byType.capsule[0]; for (const [d, x] of [["tighten", { amount: 0.8 }], ["stretch", { amount: 0.6 }], ["tear", { at: 0.3 }]]) S(`${d} (${T})`, [{ t: 0, do: d, target: T, ...x }]); }
+  if (want("fatpad")) { const T = byType.fatpad[0]; S(`impinge (${T})`, [{ t: 0, do: "impinge", target: T }]); }
+  if (want("fascia")) { const T = byType.fascia[0]; for (const [d, x] of [["tear", { grade: 2, at: 0.5 }], ["thicken", { amount: 0.7 }], ["degenerate", {}]]) S(`${d} (${T})`, [{ t: 0, do: d, target: T, ...x }]); }
+  if (want("space")) { const T = byType.space[0]; S(`bleed (${T})`, [{ t: 0, do: "bleed", target: T }]); S(`bleed half-way (${T})`, [{ t: 0, do: "bleed", target: T }], 0.8); S(`effuse (${T})`, [{ t: 0, do: "effuse", target: T, amount: 0.8 }]); S(`pressure (${T})`, [{ t: 0, do: "pressure", target: T, amount: 0.9 }]); }
+  if (want("physis")) {
+    const T = byType.physis[0];
+    for (const gr of SALTER_HARRIS) S(`separate Salter–Harris ${gr} (${T})`, [{ t: 0, do: "separate", target: T, grade: gr }]);
+    S(`fracture (${T})`, [{ t: 0, do: "fracture", target: T, at: 0.4 }]); S(`stress (${T})`, [{ t: 0, do: "stress", target: T }]);
+  }
+  if (want("brain")) { const T = byType.brain[0]; S(`accelerate (coup) (${T})`, [{ t: 0, do: "accelerate", target: T, dir: "posterior" }], 0.42); S(`accelerate (contrecoup) (${T})`, [{ t: 0, do: "accelerate", target: T, dir: "posterior" }], 0.9); S(`shear (${T})`, [{ t: 0, do: "shear", target: T }]); S(`bruise (${T})`, [{ t: 0, do: "bruise", target: T, at: anchors[0] }]); }
+  if (want("particles")) { const T = byType.particles[0]; S(`scatter mid (${T})`, [{ t: 0, do: "scatter", target: T, to: anchors[anchors.length - 1] }], 1.1); S(`scatter end (${T})`, [{ t: 0, do: "scatter", target: T, to: anchors[anchors.length - 1] }]); }
+  return segs;
+}
+
+try {
+  if (Q.get("id")) {
+    const inj = await (await fetch(`../data/injuries/${Q.get("id")}.json`)).json();
+    const phases = inj.animation?.phases || [];
+    const pi = Q.has("phase") ? +Q.get("phase") : phases.findIndex((p) => p.type === "closeup");
+    const phase = { ...phases[pi], mirror: mirror || phases[pi]?.mirror };
+    if (!phase || phase.type !== "closeup") throw new Error(`phase ${pi} is not a closeup`);
+    await loadScene(phase.scene);
+    title.textContent = `${inj.id} — phase ${pi} (${phase.scene}), ${phase.duration}s`;
+    if (Q.has("sheet")) {
+      const n = Math.max(1, +Q.get("sheet")); cols(Q.get("cols") || (n <= 4 ? 2 : n <= 9 ? 3 : 4));
+      for (let i = 0; i < n; i++) { const t = (phase.duration * (i + 0.5)) / n; const cap = (phase.captions || []).filter((c) => c.t <= t).pop(); cell(phase, t, `t = ${t.toFixed(2)} s — ${cap ? cap.text : ""}`); }
+    } else { cols(1); const t = +(Q.get("t") || 0); cell(phase, t, `t = ${t} s`, true); }
+  } else if (Q.get("scene")) {
+    const id = Q.get("scene"), scene = await loadScene(id);
+    if (!scene) throw new Error(`scene ${id} failed to load`);
+    if (Q.get("demo") === "1") {
+      const segs = demoSegments(id, scene, Q.get("types") ? Q.get("types").split(",") : null);
+      title.textContent = `${id} — demo (${segs.length} actions)`; cols(+(Q.get("cols") || 4));
+      for (const s of segs) cell({ type: "closeup", scene: id, mirror, duration: 10, actions: s.actions }, s.t, s.title);
+    } else { title.textContent = `${id} — static`; cols(1); cell({ type: "closeup", scene: id, mirror, duration: 1, actions: [] }, +(Q.get("t") || 0), id, true); }
+  }
+} catch (e) { warnings.push("ERROR " + (e.stack || e)); }
+document.getElementById("warn").textContent = [...new Set(warnings)].join("\n");
+window.__ready = true;
+</script>
+</body></html>

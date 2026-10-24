@@ -89,7 +89,7 @@ const fg = (() => {
   const inGap = (x, y) => Math.abs(x - 408) < 32;
   return {
     rbc: P(80, [350, 64, 470, 330]), plt: P(14, [380, 100, 440, 300]), neut: P(9, [370, 90, 450, 310]), mac: P(6, [372, 100, 446, 300]),
-    msc: P(8, [300, 60, 520, 340]), chon: P(34, [300, 50, 520, 330]), woven: P(80, [296, 46, 524, 330]),
+    msc: P(8, [300, 60, 520, 340]), chon: P(34, [300, 50, 520, 330]), woven: P(420, [288, 44, 528, 332]),
     fibro: P(10, [290, 50, 530, 96])
   };
 })();
@@ -127,7 +127,14 @@ function render(g, { stage, progress: p }) {
   const callusK = si === 4 ? ease(p) : si === 5 ? 1 : si === 6 ? lerp(1, 0.18, k) : 0;
   const periLift = (x) => Math.max(18 * liftK * Math.max(0, 1 - Math.abs(x - 408) / 90), callusH(x, callusK) + 2 * (callusK > 0 ? 1 : 0));
   const base = { dead, periLift, periTorn: si >= 1 && si <= 3 && d > 2 ? [crackX(BONE.peri) - 6, crackX(BONE.peri) + d + 6] : null, canalVessel: 1 };
-  if (si === 0) boneBase(g, base); else fragments(g, d, base);
+  if (si === 0) boneBase(g, base);
+  else {
+    // what shows through the gap outside the cortex: soft tissue above, marrow (→ granulation tissue) below
+    el("rect", { x: 300, y: 56, width: 220, height: BONE.peri - 52, fill: mix("anat-muscle", "stage-bg", 0.82) }, g);
+    el("rect", { x: 300, y: BONE.bot, width: 220, height: 200, fill: si >= 3 ? mix("anat-marrow", "fx-heal", 0.15, 0.55) : mix("anat-marrow", "stage-bg", 0.62) }, g);
+    if (si === 6) el("rect", { x: 300, y: BONE.top, width: 220, height: BONE.bot - BONE.top, fill: mix("anat-bone", "anat-bone-edge", 0.25) }, g);
+    fragments(g, d, base);
+  }
 
   // crack propagation (fracture stage)
   if (si === 1) {
@@ -203,9 +210,11 @@ function render(g, { stage, progress: p }) {
       });
       if (si === 5) { // osteoblasts at the front + vessels invading
         fg.chon.slice(0, 10).forEach((c, i) => { const s = i % 2 ? 1 : -1; const x = 408 + s * Math.max(front, 0); const y = lerp(BONE.top - 30 * ck, BONE.bot + 10, (i + 0.5) / 10); if (inCallus(x, y, ck)) drawCell(g, "osteoblast", x + s * 6, y, 4.2, { angle: s * 90, seed: c.seed }); });
-        capillary(g, [[300, BONE.top - 20], [350, BONE.top - 30], [408 - Math.max(front, 0), BONE.top - 26]], { width: 6, seed: 81, rbcs: 2 });
+        capillary(g, [[330, BONE.top - 6], [360, BONE.top - 16], [Math.min(398, 408 - Math.max(front, 0)), BONE.top - 20]], { width: 6, seed: 81, rbcs: 2 });
       }
       if (si === 6) { // lamellar bone fills the gap via cutting cones
+        const gp = []; for (let y = BONE.top; y <= BONE.bot; y += 10) gp.push([crackX(y) - 1, y]);
+        el("path", { d: smoothPath([...gp, ...gp.slice().reverse().map(([x, y]) => [x + d + 2, y])], true), fill: mix("anat-bone", "anat-bone-edge", 0.25) }, g);
         const xHead = lerp(330, 500, k);
         const fillW = Math.max(0, xHead - 360);
         el("rect", { x: 380, y: BONE.top, width: Math.min(fillW, 60), height: BONE.bot - BONE.top, fill: col("anat-bone", fade(0.1, 0.6, p)) }, g);

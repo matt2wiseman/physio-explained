@@ -86,7 +86,7 @@ function prepare(scene, warn) {
   P.structs.sort((a, b) => a.z - b.z || a.order - b.order);
   P.structs.forEach((sp, i) => (sp.idx = i));
   const [x, y, w, h] = P.vb;
-  const sp0 = P.structs.find((s) => s.type === "space" && s.geom.kind !== "band");
+  const sp0 = P.structs.find((s) => s.type === "space" && s.poly);
   P.jointCentre = P.anchors.jointCentre || P.anchors.centreOfMass || (sp0 ? sp0.c : [x + w / 2, y + h / 2]);
   P.dirVec = (k) => dirVec(P, k);
   PREP.set(scene, P);
@@ -1424,7 +1424,7 @@ export function renderCloseupFrame(g, phase, t, ctx = {}) {
     if (e.status === "missing") { warn(`scene "${id}" could not be loaded (${e.error && e.error.message}) — placeholder drawn`); drawPlaceholder(g, null, `Close-up “${id}” unavailable`); return fallback; }
     return drawFrame(g, e.scene, phase, num(t, 0), ctx, warn);
   } catch (err) {
-    warn(`frame failed: ${err && err.message}`);
+    warn(`frame failed: ${err && err.message} @ ${String(err && err.stack || "").split("\n").slice(1, 3).join(" | ")}`);
     try { drawPlaceholder(g, null, "Close-up unavailable"); } catch { /* ignore */ }
     return fallback;
   }
@@ -1571,17 +1571,19 @@ function occupancy(P, x, y, target) {
   if (!P.grid) {
     const [vx, vy, vw, vh] = P.vb, cs = 10, nx = Math.ceil(vw / cs), ny = Math.ceil(vh / cs), grid = new Array(nx * ny);
     const solid = P.structs.filter((s) => s.type !== "space" && s.type !== "particles" && !s.ghost);
+    const backdrop = []; for (const b of P.scene.backdrop || []) { try { for (const q of F.flattenPath(b.d)) backdrop.push(q.pts); } catch { /* ignore */ } }
     for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
       const p = [vx + (i + 0.5) * cs, vy + (j + 0.5) * cs], ids = [];
       for (const s of solid) { const b = s.bb; if (p[0] < b.x || p[0] > b.x + b.w || p[1] < b.y || p[1] > b.y + b.h) continue; if (insideStruct(s, p)) ids.push(s.id); }
-      grid[j * nx + i] = ids.length ? ids : null;
+      grid[j * nx + i] = ids.length ? ids : backdrop.some((b) => F.pointInPoly(p, b)) ? 1 : null;
     }
     P.grid = { grid, nx, ny, cs, vx, vy };
   }
   const G = P.grid, i = Math.floor((x - G.vx) / G.cs), j = Math.floor((y - G.vy) / G.cs);
   if (i < 0 || j < 0 || i >= G.nx || j >= G.ny) return 0;
   const c = G.grid[j * G.nx + i]; if (!c) return 0;
-  return target && c.includes(target) ? 2 : 1;
+  if (c === 1) return 1;
+  return target && c.includes(target) ? 3 : 2;
 }
 
 /* ================================================================== static preview */

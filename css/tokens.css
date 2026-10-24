@@ -212,3 +212,49 @@
   --shadow-2: 0 8px 28px rgba(0, 0, 0, .45);
   color-scheme: dark;
 }
+
+/* Print always uses the light palette, whatever theme is active (requested by P4). */
+@media print {
+  :root, :root[data-theme="dark"], :root:not([data-theme="light"]) {
+  /* Surfaces & ink (light) */
+  --paper: #f3f5f1;
+  --surface: #ffffff;
+  --surface-2: #e9ede6;
+  --surface-3: #dde3dc;
+  --ink: #16202a;
+  --ink-2: #46525e;
+  --ink-3: #6b7782;
+  --line: #d3d9d1;
+  --line-strong: #b7c0b6;
+
+  /* Brand */
+  --accent: #0e5f6f;          /* links, primary buttons, focus */
+  --accent-ink: #ffffff;      /* text on accent */
+  --accent-soft: #d6ebee;     /* chips, selected rows */
+  --tissue: #b23a33;          /* anatomy / injury marks, sparingly */
+  --tissue-soft: #f6dedb;
+
+  /* Semantic */
+  --danger: #b42318;  --danger-soft: #fde5e2;
+  --warn:   #a15c07;  --warn-soft:   #fcefd9;
+  --ok:     #2d6a3a;  --ok-soft:     #dcefdf;
+  --info:   #2b5f9e;  --info-soft:   #dde8f6;
+
+  /* Evidence badges */
+  --ev-strong: #2d6a3a;
+  --ev-moderate: #4f7d2a;
+  --ev-limited: #a15c07;
+  --ev-very-limited: #9a4d1f;
+  --ev-conflicting: #6b4c9a;
+  --ev-expert: #5b6670;
+  --ev-against: #b42318;
+
+  /* Healing phases (timeline chart) */
+  --phase-inflammatory: #c2410c;
+  --phase-proliferative: #b07d09;
+  --phase-remodelling: #2563a6;
+  --phase-other: #6b7782;
+
+      color-scheme: light;
+  }
+}

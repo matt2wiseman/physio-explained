@@ -45,7 +45,7 @@ const COLOR_ATTRS = new Set(["fill", "stroke", "stop-color", "flood-color", "lig
 export function el(tag, attrs, parent) {
   const e = document.createElementNS(NS, tag);
   if (attrs) {
-    let style = attrs.style || "";
+    let style = attrs.style ? String(attrs.style).replace(/;?\s*$/, ";") : "";
     for (const k in attrs) {
       const v = attrs[k];
       if (v === undefined || v === null || v === false || k === "style") continue;
@@ -378,7 +378,7 @@ export function wrapLabel(s, max = 30) {
 /**
  * Greedy, deterministic callout placement.
  * items: [{ pt:[x,y], lines:[...], fs, pref?:[x,y], fixed?:{x,y,w,h} , target? }] (in drawing order: oldest first)
- * occ(x, y) → 0 empty, 1 other anatomy, 2 target (called with the item's target id) — coarse occupancy test.
+ * occ(x, y, target) → 0 empty, 1 backdrop (skin), 2 other anatomy, 3 the labelled structure — coarse occupancy test.
  * vb: [x, y, w, h] visible viewBox. Returns [{ x, y, w, h, anchor:'start'|'end'|'middle' , lx, ly }] boxes.
  */
 export function placeLabels(items, vb, occ, k = 1) {
@@ -405,14 +405,14 @@ export function placeLabels(items, vb, occ, k = 1) {
       let s = 0;
       if (b.x < vb[0] + pad * 0.5 || b.y < vb[1] + pad * 0.5 || b.x + w > vb[0] + vb[2] - pad * 0.5 || b.y + h > vb[1] + vb[3] - pad * 0.5) s += 1000;
       for (const q of placed) { const o = overlap(b, { x: q.x - 4 * k, y: q.y - 3 * k, w: q.w + 8 * k, h: q.h + 6 * k }); if (o > 0) s += 300 + (500 * o) / (w * h); }
-      for (let gy = 0; gy <= 2; gy++) for (let gx = 0; gx <= 4; gx++) { const o = occ(b.x + (gx / 4) * w, b.y + (gy / 2) * h, it.target); s += o === 2 ? 30 : o === 1 ? 4 : 0; }
+      for (let gy = 0; gy <= 2; gy++) for (let gx = 0; gx <= 4; gx++) { const o = occ(b.x + (gx / 4) * w, b.y + (gy / 2) * h, it.target); s += o === 3 ? 30 : o === 2 ? 7 : o === 1 ? 1.2 : 0; }
       const lp = [clamp(it.pt[0], b.x, b.x + w), clamp(it.pt[1], b.y, b.y + h)];
       for (const L of leaders) if (segX(lp, it.pt, L[0], L[1])) s += 90;
       for (const q of placed) if (segBox(lp, it.pt, q)) s += 120;
       if (dist(lp, it.pt) < 18 * k) s += 40;
       s += (dist(lp, it.pt) / k) * 0.12;
       const outward = (b.x + w / 2 - cx) * (it.pt[0] - cx) > 0 ? -6 : 4;
-      s += outward + (c.margin ? 6 : 0) - (c.pref ? 25 : 0);
+      s += outward - (c.pref ? 25 : 0);
       if (s < bs) { bs = s; best = b; }
     }
     const lp = [clamp(it.pt[0], best.x, best.x + w), clamp(it.pt[1], best.y, best.y + h)];
