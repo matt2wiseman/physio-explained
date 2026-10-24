@@ -363,7 +363,7 @@ export default {
           { t: 5.8, pose: "stand" }
         ],
         forces: [
-          { t: [2.2, 3.8], at: "hipR", dir: "forward", label: "Head–neck junction levers into the rim" },
+          { t: [2.2, 3.8], at: "hipR", dir: "forward", label: "Neck meets rim" },
           { t: [2.4, 3.6], at: "groinR", dir: "up", label: "Flexion + adduction + internal rotation" }
         ],
         highlights: [{ t: [2.2, 6], at: "hipR" }],
