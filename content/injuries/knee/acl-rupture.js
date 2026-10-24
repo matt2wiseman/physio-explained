@@ -347,7 +347,7 @@ export default {
           { t: 2.2, pose: "valgus-collapse", joints: { kneeR: 14, hipR: -10, trunk: 10 }, root: { x: 0 }, ease: "in" },
           { t: 3.2, pose: "valgus-collapse", joints: { kneeR: 18, hipR: -12, trunk: 12 }, root: { x: 2 } },
           { t: 4.4, pose: "squat", joints: { kneeR: 20 }, root: { x: 8 } },
-          { t: 5.6, pose: "kneel", root: { x: 12 } }
+          { t: 5.6, pose: "fall-sideways", root: { x: 12 } }
         ],
         props: [{ id: "ball", type: "ball-basketball", attach: "handL" }],
         forces: [

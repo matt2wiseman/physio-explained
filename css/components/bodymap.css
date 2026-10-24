@@ -1,1 +1,56 @@
-/* owner: see docs/ARCHITECTURE.md */
+/* Body map component, #bodymap view and #saved view. OWNER: P6. Tokens only; both themes. */
+
+/* ====================================================================== the figure (.bm) */
+.bm {
+  --bm-bg: var(--surface);
+  display: block; width: 100%; height: auto; max-height: 78vh; margin-inline: auto;
+  user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent;
+  overflow: visible;
+}
+.bm__outline path, .bm__outline ellipse { fill: var(--surface-2); stroke: var(--ink-3); stroke-width: 2.6; stroke-linejoin: round; }
+
+.bm__shape {
+  fill: var(--surface-2);
+  stroke: var(--bm-bg); stroke-width: 1.8; stroke-linejoin: round;
+  transition: fill var(--dur-fast) var(--ease);
+}
+.bm__r { cursor: pointer; outline: none; }
+.bm__r.has-count .bm__shape {
+  fill: color-mix(in srgb, var(--tissue) calc(var(--heat, 0) * 1%), var(--surface-2));
+}
+.bm__r:hover .bm__shape, .bm__r.is-hover .bm__shape { fill: color-mix(in srgb, var(--accent) 22%, var(--surface-2)); }
+.bm__r.is-selected .bm__shape { fill: color-mix(in srgb, var(--accent) 34%, var(--surface-2)); }
+
+.bm__detail path { fill: none; stroke: var(--ink-3); stroke-width: 0.9; stroke-linecap: round; stroke-linejoin: round; opacity: 0.55; pointer-events: none; }
+.bm__detail circle { fill: var(--ink-3); opacity: 0.5; pointer-events: none; }
+
+.bm__ovl path { fill: none; stroke-linejoin: round; pointer-events: none; }
+.bm__ovl--hover path { stroke: var(--accent); stroke-width: 3.2; }
+.bm__ovl--sel path { stroke: var(--accent); stroke-width: 4.4; fill: color-mix(in srgb, var(--accent) 14%, transparent); }
+.bm__ovl--focus path { stroke: var(--ink); stroke-width: 6; }
+
+.bm__badge { pointer-events: none; }
+.bm__badge circle { fill: var(--surface); stroke: var(--tissue); stroke-width: 1.4; }
+.bm__badge text { font-family: var(--font-mono); font-size: 9.2px; font-weight: 600; fill: var(--ink); text-anchor: middle; }
+
+.bm__pill { fill: var(--surface); stroke: var(--line-strong); stroke-width: 1.2; transition: fill var(--dur-fast) var(--ease), stroke var(--dur-fast) var(--ease); }
+.bm__pill-t { font-family: var(--font-display); font-size: 10.5px; font-weight: 650; letter-spacing: 0.04em; fill: var(--ink-2); }
+.bm__pill-n { font-family: var(--font-mono); font-size: 10px; font-weight: 600; fill: var(--ink); }
+.bm__r--general:hover .bm__pill, .bm__r--general.is-hover .bm__pill { stroke: var(--accent); fill: var(--accent-soft); }
+.bm__r--general.has-count .bm__pill { stroke: var(--tissue); }
+.bm__r--general.is-selected .bm__pill { fill: var(--accent); stroke: var(--accent); }
+.bm__r--general.is-selected .bm__pill-t, .bm__r--general.is-selected .bm__pill-n { fill: var(--accent-ink); }
+.bm__r--general.is-focus .bm__pill { stroke: var(--ink); stroke-width: 2.4; }
+
+.bm__side, .bm__lr { font-family: var(--font-display); font-size: 8.5px; font-weight: 700; letter-spacing: 0.14em; fill: var(--ink-3); pointer-events: none; }
+.bm__lr { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0; }
+
+.bm__tip { pointer-events: none; }
+.bm__tip-bg { fill: var(--ink); opacity: 0.96; }
+.bm__tip-t { font-family: var(--font-body); font-size: 10.5px; font-weight: 600; fill: var(--paper); }
+.bm__tip-n { font-family: var(--font-mono); font-size: 9.5px; fill: var(--paper); opacity: 0.8; }
+
+.bm--compact .bm__lr { display: none; }
+
+@media (prefers-reduced-motion: reduce) { .bm__shape, .bm__pill { transition: none; } }
+@media print { .bm__tip { display: none; } }

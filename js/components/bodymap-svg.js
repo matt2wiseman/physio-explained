@@ -28,7 +28,7 @@ const FALLBACK_LABELS = {
 export const regionLabel = (r) => (dom.REGION_LABELS && dom.REGION_LABELS[r]) || FALLBACK_LABELS[r] || String(r);
 
 /* ------------------------------------------------------------------ geometry */
-const mir = (pts) => pts.map(([x, y]) => [2 * CX - x, y]);
+const mir = (pts) => pts.map(([x, y, c]) => (c ? [2 * CX - x, y, c] : [2 * CX - x, y]));
 const fmt = (n) => +n.toFixed(2);
 const poly = (pts) => "M" + pts.map(([x, y]) => `${fmt(x)} ${fmt(y)}`).join("L") + "Z";
 /** left-half outline from the centre line (top) to the centre line (bottom) → symmetric closed polygon */
@@ -64,9 +64,7 @@ const OUTLINE_L = [
   [115.5, 322], [117.5, 296], [119.2, 272], [120, 258, 1]                          // thigh (inner) → crotch
 ];
 const BODY_D = (() => {
-  const right = mir(OUTLINE_L).reverse().slice(1).map(([x, y, c], i, a) => [x, y, c]);
-  const all = [...OUTLINE_L, ...right];
-  all[all.length - 1] = [...all[all.length - 1].slice(0, 2), 1];
+  const all = [...OUTLINE_L, ...mir(OUTLINE_L).reverse().slice(1)];
   return `M${all[0][0]} ${all[0][1]}${spline(all)}Z`;
 })();
 const HEAD_D = "M120 9C133 9 142 20 142 36C142 50 138 60 131 66C127 70 123.5 71 120 71C116.5 71 113 70 109 66C102 60 98 50 98 36C98 20 107 9 120 9Z";
@@ -230,7 +228,7 @@ export function bodyMap(opts = {}) {
   const tipRect = h("rect", { class: "bm__tip-bg", rx: 4, height: 34 });
   const tipName = h("text", { class: "bm__tip-t", x: 8, y: 14 });
   const tipCount = h("text", { class: "bm__tip-n", x: 8, y: 27 });
-  const tip = h("g", { class: "bm__tip", "aria-hidden": "true", hidden: true }, tipRect, tipName, tipCount);
+  const tip = h("g", { class: "bm__tip", "aria-hidden": "true" }, tipRect, tipName, tipCount);
   tip.style.display = "none";
   svg.append(tip);
 

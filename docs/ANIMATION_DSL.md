@@ -66,6 +66,7 @@ Every phase may have `captions: [{ t, text }]` — each caption shows from its `
 **Authoring tips**
 - Use `view: "anterior"` for frontal-plane mechanisms (valgus, inversion sprain, lateral trunk flexion, AC joint fall on point of shoulder), `"lateral"` for sagittal mechanisms (hamstring late swing, Achilles push-off, whiplash, stoop lift, FOOSH).
 - The right side (`R`) is the injured side by convention. In lateral view R is the near limb.
+- In `anterior` view, `kneel`, `foosh`, `trip` and other forward-flexed/forward-falling presets read poorly (they look like a shortened standing figure). Use `lateral` view for sagittal falls and kneeling; in anterior view end a giving-way sequence on `fall-sideways`, `squat` or `jump-land`.
 - 3–6 keyframes is usually enough. Put the injury moment roughly 50–70 % through the phase, wrap it in `slowmo`, and fire `impacts` at the exact instant.
 
 

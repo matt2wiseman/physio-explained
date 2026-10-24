@@ -10,7 +10,7 @@
  *   wallerian-degen.  distal axon & myelin break into ovoids; macrophages clear debris; Schwann cells form bands of Büngner
  *   regeneration      growth cones advance along the Schwann tubes (~1 mm/day); new, thinner myelin with short internodes
  */
-import { el, rng, lerp, clamp, ease, fade, seg, col, mix, field, label, arrow, drawCell, capillary, smoothPath, linear, radial, f } from "./index.js";
+import { el, rng, lerp, clamp, ease, fade, seg, col, mix, field, label, arrow, drawCell, capillary, smoothPath, linear, radial, def, f } from "./index.js";
 
 /* ---------------- geometry */
 const AX = 150, AY = 228, AR = 100;                       // transverse section
@@ -81,11 +81,12 @@ function capsulePath(w, x0, x1, yc, h) {
 }
 
 /* ---------------- longitudinal panel */
-function longitudinal(g, s, p, stage) {
+function longitudinal(g0, s, p, stage) {
   const w = W(s.comp);
+  const clip = def(g0, "nv-clipB", (defs, id) => { const cp = el("clipPath", { id }, defs); el("rect", { x: BX0, y: 56, width: 800 - BX0, height: 394 }, cp); });
+  const g = el("g", { "clip-path": clip }, g0);
   // epineurium + perineurium
   el("path", { d: bandPath(w, BX0, BX1, () => EPI[0], () => EPI[1]), fill: mix("anat-fascia", "stage-bg", 0.8), stroke: mix("anat-nerve-edge", "stage-bg", 0.35), "stroke-width": 2 }, g);
-  [[312, 336], [410, 108], [700, 334], [770, 110]].forEach(([x, y], i) => { const [xx, yy] = w(x, y); drawCell(g, "adipocyte", xx, yy, 9 * (1 - 0.4 * squeeze(s.comp, x)), { seed: 40 + i }); });
   el("path", { d: bandPath(w, BX0, BX1, () => PERI[0], () => PERI[1]), fill: mix("anat-nerve", "stage-bg", 0.86), stroke: col("anat-capsule"), "stroke-width": 3 }, g);
   el("path", { d: bandPath(w, BX0, BX1, () => PERI[0] + 4, () => PERI[1] - 4), fill: "none", stroke: col("anat-capsule", 0.45), "stroke-width": 1 }, g);
   // vasa nervorum: epineurial arteriole (top), endoneurial capillary, epineurial venule (bottom)
@@ -126,8 +127,8 @@ function longitudinal(g, s, p, stage) {
       let h = H, op = 1;
       if (s.demy > 0 && near) {                                        // paranodal retraction + thinning under the compression
         const k = s.demy * (1 - Math.abs(mid - LX) / 160);
-        if (mid < LX) x1 -= 22 * k; else x0 += 22 * k;
-        h = H * (1 - 0.5 * k); op = 1 - 0.35 * k;
+        if (mid < LX) x1 -= 28 * k; else x0 += 28 * k;
+        h = H * (1 - 0.62 * k); op = 1 - 0.4 * k;
       }
       if (s.cut > 0 && x1 > LX - 6 && x0 < LX + 6) { if (mid < LX) x1 = LX - 10 - 14 * s.cut; else x0 = LX + 10 + 10 * s.cut; }
       if (x1 - x0 < 8) return;
@@ -188,6 +189,9 @@ function longitudinal(g, s, p, stage) {
     }
   });
 
+  // macrophages recruited into the distal stump (Wallerian degeneration)
+  const mk = s.wall * (1 - clamp(s.regen * 3));
+  if (mk > 0.03) G.macros.forEach((m, i) => drawCell(g, "macrophage", m.x + (1 - s.wall) * 18, m.y + (i % 2 ? 4 : -4), 12 + m.s * 3, { opacity: clamp(mk * 1.4 - i * 0.08), engulf: 0.3 + 0.7 * s.clear, phase: p + i * 0.2, seed: 90 + i }));
   // action potential (saltatory conduction along the middle axon)
   const block = s.demy > 0.45 || s.cut > 0.2;
   if (s.wall < 0.05 && s.regen === 0) {
@@ -222,8 +226,8 @@ function longitudinal(g, s, p, stage) {
   const fc = mix("stage-bg", "anat-nerve", 0.05);
   el("rect", { x: BX0 - 2, y: 60, width: 46, height: 320, fill: linear(g, "nv-fadeL", [[0, fc], [1, mix("stage-bg", "anat-nerve", 0.05, 0)]], { x1: 0, y1: 0, x2: 1, y2: 0 }) }, g);
   // orientation
-  el("text", { x: BX0 + 6, y: 362, "font-size": 12, fill: col("stage-ink-2"), "font-family": "inherit", text: "◂ proximal" }, g);
-  el("text", { x: BX1 - 18, y: 362, "font-size": 12, fill: col("stage-ink-2"), "text-anchor": "end", text: "distal ▸" }, g);
+  el("text", { x: BX0 + 6, y: 357, "font-size": 11, fill: col("stage-ink-2"), "font-family": "inherit", text: "◂ proximal" }, g);
+  el("text", { x: BX1 - 18, y: 357, "font-size": 11, fill: col("stage-ink-2"), "text-anchor": "end", text: "distal ▸" }, g);
   void stage;
 }
 const NUCC = (a) => mix("anat-vein", "anat-brain-deep", 0.35, a);
@@ -296,9 +300,10 @@ function labels(g, stage, s, p, T) {
   const [ac, acy] = T.P(FASC[0][0], FASC[0][1]);
   switch (stage) {
     case "healthy": {
-      const a = fade(0.48, 0.38, p), b = fade(0.52, 0.62, p);
+      const a = fade(0.52, 0.45, p), b = fade(0.45, 0.52, p);
+      const node = G.internodes[0].map((n) => n.x1 + GAP / 2).reduce((best, x) => (Math.abs(x - 450) < Math.abs(best - 450) ? x : best), 0);
       L(316, 84, "Axon", w(352, AXONS[0]), { opacity: a });
-      L(432, 84, "Node of Ranvier", w(G.internodes[0][2].x1 + GAP / 2, AXONS[0] - 4), { anchor: "middle", opacity: a });
+      L(450, 84, "Node of Ranvier", w(node, AXONS[0] - 5), { anchor: "middle", opacity: a });
       L(664, 84, "Myelin sheath\n(Schwann cell)", w(660, AXONS[0] - 10), { anchor: "middle", opacity: a });
       L(392, 84, "Vasa nervorum", w(430, 112), { anchor: "middle", opacity: b });
       L(640, 84, "Perineurium (fascicle)", w(620, PERI[0]), { anchor: "middle", opacity: b });
@@ -313,28 +318,28 @@ function labels(g, stage, s, p, T) {
     case "ischaemia":
       L(694, 84, "Intraneural oedema", [LX + 90, 168], { anchor: "middle", opacity: fade(0.2, 0.45, p) });
       L(412, 84, "Reduced blood flow", w(440, 112), { anchor: "middle", opacity: fade(0.1, 0.35, p) });
-      L(380, 366, "Venous congestion", w(410, 338), { anchor: "middle", opacity: fade(0.35, 0.6, p) });
+      L(440, 370, "Venous congestion", w(410, 338), { anchor: "middle", opacity: fade(0.35, 0.6, p) });
       break;
     case "demyelination":
       L(LX + 110, 84, "Focal demyelination", w(LX + 30, AXONS[0] - 6), { anchor: "middle", opacity: fade(0.2, 0.45, p) });
-      L(380, 366, "Conduction block (neurapraxia)", w(LX - 14, AXONS[1] + 8), { anchor: "middle", opacity: fade(0.35, 0.6, p) });
-      L(660, 366, "Axon intact", w(LX + 40, AXONS[2] + 3), { anchor: "middle", opacity: fade(0.5, 0.7, p) });
+      L(450, 370, "Conduction block (neurapraxia)", w(LX - 14, AXONS[1] + 8), { anchor: "middle", opacity: fade(0.35, 0.6, p) });
+      L(672, 370, "Axon intact", w(LX + 40, AXONS[2] + 3), { anchor: "middle", opacity: fade(0.5, 0.7, p) });
       break;
     case "axonal-injury":
       L(LX - 120, 84, "Axon divided (axonotmesis)", w(LX - 14, AXONS[0]), { anchor: "middle", opacity: fade(0.25, 0.5, p) });
-      L(650, 366, "Endoneurial tube intact", w(LX + 30, AXONS[2] + H + 2), { anchor: "middle", opacity: fade(0.45, 0.7, p) });
+      L(650, 370, "Endoneurial tube intact", w(LX + 30, AXONS[2] + H + 2), { anchor: "middle", opacity: fade(0.45, 0.7, p) });
       L(AX, 362, "Axons disrupted", [ac, acy + 12], { anchor: "middle", opacity: fade(0.4, 0.65, p) });
       break;
     case "wallerian-degeneration":
       L(700, 84, "Macrophages clear\nmyelin debris", [G.macros[4].x, G.macros[4].y - 10], { anchor: "middle", opacity: fade(0.15, 0.4, p) });
       L(470, 84, "Lesion", [LX, w(LX, EPI[0])[1] + 6], { anchor: "middle", opacity: fade(0.05, 0.25, p), color: col("fx-injury") });
-      L(560, 366, "Myelin & axon break into ovoids", [575, AXONS[2] + 8], { anchor: "middle", opacity: fade(0.3, 0.55, p) * fade(0.85, 0.7, p) });
-      L(560, 366, "Schwann cells form bands of Büngner", [700, AXONS[2] + 2], { anchor: "middle", opacity: fade(0.75, 0.9, p) });
+      L(560, 370, "Myelin & axon break into ovoids", [575, AXONS[2] + 8], { anchor: "middle", opacity: fade(0.3, 0.55, p) * fade(0.85, 0.7, p) });
+      L(560, 370, "Schwann cells form bands of Büngner", [700, AXONS[2] + 2], { anchor: "middle", opacity: fade(0.75, 0.9, p) });
       break;
     case "regeneration": {
-      const xg = growthX(s, 1);
-      L(Math.min(xg, 640), 84, "Growth cone", [xg + 10, AXONS[1] - 10], { anchor: "middle", opacity: fade(0.1, 0.3, p) });
-      L(600, 366, "Schwann tubes guide regrowth", [Math.min(780, xg + 60), AXONS[2]], { anchor: "middle", opacity: fade(0.35, 0.6, p) });
+      const xg = growthX(s, 0);
+      L(790, 78, "Growth cone advancing along a Schwann tube", [xg + 12, AXONS[0] - 7], { anchor: "end", opacity: fade(0.1, 0.3, p) });
+      L(560, 370, "New myelin: thinner, shorter internodes", [LX + 40, AXONS[2] + 8], { anchor: "middle", opacity: fade(0.45, 0.7, p) });
       L(AX, 362, "Regenerating sprouts", [ac + 6, acy], { anchor: "middle", opacity: fade(0.4, 0.65, p) });
       break;
     }
@@ -343,13 +348,11 @@ function labels(g, stage, s, p, T) {
 }
 function ruler(g, s, p) {
   if (!s.regen) return;
-  const xg = growthX(s, 0), y = 94;
-  const k = fade(0.15, 0.35, p);
-  const gg = el("g", { opacity: f(k) }, g);
-  el("path", { d: `M${LX},${y - 5} L${LX},${y + 1} L${f(xg)},${y + 1} L${f(xg)},${y - 5}`, stroke: col("fx-heal"), "stroke-width": 1.6, fill: "none" }, gg);
-  void gg;
+  const xg = growthX(s, 0), y = 95;
+  const gg = el("g", { opacity: f(fade(0.15, 0.35, p)) }, g);
+  el("path", { d: `M${LX},${y - 5} L${LX},${y} L${f(xg)},${y} L${f(xg)},${y - 5}`, stroke: col("fx-heal"), "stroke-width": 1.6, fill: "none" }, gg);
+  label(gg, LX - 8, y + 3, "≈ 1 mm/day", { anchor: "end", size: 13, color: col("fx-heal"), weight: 600 });
 }
-
 export default {
   id: "nerve",
   scale: { default: "≈ 25 µm", "wallerian-degeneration": "≈ 25 µm", regeneration: "≈ 25 µm" },
