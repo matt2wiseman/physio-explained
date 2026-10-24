@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Micro preview</title>
+<link rel="stylesheet" href="../css/tokens.css">
+<style>
+  body { margin: 0; background: var(--stage-bg); color: var(--stage-ink); font: 13px/1.3 system-ui, sans-serif; }
+  h1 { font-size: 15px; margin: 10px 12px 4px; font-weight: 650; }
+  p.sub { margin: 0 12px 8px; color: var(--stage-ink-2); }
+  #grid { display: grid; grid-template-columns: repeat(var(--cols, 2), 1fr); gap: 10px; padding: 0 10px 10px; }
+  figure { margin: 0; background: var(--stage-bg-2); border-radius: 6px; overflow: hidden; }
+  figcaption { padding: 5px 8px; font-weight: 600; color: var(--stage-ink-2); }
+  figcaption b { color: var(--stage-ink); }
+  svg { width: 100%; height: auto; display: block; background: var(--stage-bg); }
+  #err { color: #ff8a80; white-space: pre-wrap; margin: 8px 12px; }
+</style></head>
+<body>
+<h1 id="title"></h1><p class="sub" id="sub"></p><div id="err"></div>
+<div id="grid"></div>
+<script type="module">
+// Contact sheet for micro tissue modules (owner A7).
+//   ?tissue=ligament                    every catalogue stage, rendered through renderMicroFrame at progress p (default 0.7)
+//   &p=0.3                              in-stage progress to sample
+//   &stage=failure&frames=6             motion strip: one stage at evenly spaced progress values
+//   &variant=intra-articular            pass phase.variant
+//   &cols=3                             grid columns
+// Sets window.__ready and window.__microErrors (render exceptions, console warnings, idempotency mismatches).
+const q = new URLSearchParams(location.search);
+const tissue = q.get("tissue") || "ligament";
+const p = Number(q.get("p") ?? 0.7);
+const only = q.get("stage"), frames = Number(q.get("frames") || 6), variant = q.get("variant") || undefined;
+document.documentElement.style.setProperty("--cols", q.get("cols") || (only ? 3 : 2));
+const NS = "http://www.w3.org/2000/svg";
+window.__microErrors = [];
+const ow = console.warn; console.warn = (...a) => { window.__microErrors.push(a.map(String).join(" ")); ow(...a); };
+const warn = (m) => window.__microErrors.push(String(m));
+try {
+  const { MICRO_TISSUES } = await import("../js/anim/catalogue.js");
+  const M = await import("../js/anim/micro/index.js");
+  const cat = MICRO_TISSUES[tissue];
+  if (!cat) throw new Error(`"${tissue}" not in MICRO_TISSUES`);
+  document.getElementById("title").textContent = `${tissue} — ${cat.title}`;
+  await M.preloadMicro(tissue);
+  const STEP = 2;
+  const phase = { type: "micro", tissue, variant, duration: cat.stages.length * STEP,
+    stages: cat.stages.map((s, i) => ({ t: i * STEP, stage: s })),
+    timeLabels: cat.stages.map((s, i) => ({ t: i * STEP, text: `Stage ${i + 1} of ${cat.stages.length}` })) };
+  const jobs = only
+    ? Array.from({ length: frames }, (_, k) => { const i = cat.stages.indexOf(only); return { i, stage: only, prog: frames > 1 ? k / (frames - 1) : p }; })
+    : cat.stages.map((s, i) => ({ i, stage: s, prog: p }));
+  document.getElementById("sub").textContent = only ? `motion strip for "${only}" (${frames} frames)` : `all ${cat.stages.length} stages at progress ${p}${variant ? " · variant " + variant : ""}`;
+  const grid = document.getElementById("grid");
+  for (const j of jobs) {
+    if (j.i < 0) { warn(`stage "${j.stage}" not in catalogue for ${tissue}`); continue; }
+    const fig = document.createElement("figure");
+    const svg = document.createElementNS(NS, "svg"); svg.setAttribute("viewBox", "0 0 800 450");
+    const defs = document.createElementNS(NS, "defs"); svg.append(defs);
+    const g = document.createElementNS(NS, "g"); svg.append(g);
+    const cap = document.createElement("figcaption");
+    cap.innerHTML = `${j.i + 1}/${cat.stages.length} · <b>${j.stage}</b> — ${M.stageLabel(j.stage)} · p=${j.prog.toFixed(2)}`;
+    fig.append(svg, cap); grid.append(fig);
+    // avoid the cross-fade window unless sampling progress 0 in a motion strip
+    const t = j.i * STEP + Math.max(j.prog, only ? j.prog : 0.21) * STEP * (j.i === cat.stages.length - 1 ? 1 : 0.9999);
+    const ctx = { reducedMotion: false, width: 800, height: 450, defs, warn };
+    try {
+      M.renderMicroFrame(g, phase, t, ctx);
+      const a = g.innerHTML; M.renderMicroFrame(g, phase, t, ctx);
+      if (g.innerHTML.replace(/micro-\d+-/g, "") !== a.replace(/micro-\d+-/g, "")) warn(`${j.stage}: render is not idempotent`);
+    } catch (e) { warn(`${j.stage}: ${e.stack || e}`); }
+  }
+} catch (e) { warn(String(e.stack || e)); }
+document.getElementById("err").textContent = window.__microErrors.join("\n");
+window.__ready = true;
+</script>
+</body></html>

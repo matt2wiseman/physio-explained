@@ -3,11 +3,12 @@
  * ======================================================================================================
  * Draws the microscopic / cellular view of an injury (docs/ANIMATION_DSL.md §1.4, §5) in an 800 × 450 space.
  *
- *   renderMicroFrame(g, phase, t, ctx)  → { viewBox: [0,0,800,450], stage, progress, ready, whenReady }
+ *   renderMicroFrame(g, phase, t, ctx)  → { viewBox: [0,0,800,450], stage, progress, ready, whenReady }   (alias: renderMicro)
  *       g      SVG <g> to draw into (cleared on every call — pure & idempotent for any t, forwards or backwards)
  *       phase  { type:"micro", tissue, duration, stages:[{t, stage}], timeLabels?:[{t, text}], variant? }
  *       t      seconds from the start of the phase
- *       ctx    { reducedMotion, width, height, defs }  (defs is not required — gradients live in a local <defs>)
+ *       ctx    { reducedMotion, width, height, defs, warn }  (ctx.defs is NOT used — gradients live in a per-frame local
+ *              <defs> via def()/radial()/linear(); problems are reported with ctx.warn() and never thrown)
  *     Works out the active stage (+ progress 0–1 within it, prevStage), cross-fades from the previous stage over
  *     ~0.4 s (cut when ctx.reducedMotion), lazy-loads ./<tissue>.js (cached) and draws shared overlays:
  *     stage-name chip + stage dots (top-left), optional clock chip from timeLabels (top-right), scale hint (bottom-right).
@@ -55,7 +56,7 @@
  *               activated 0–1 (platelet spikes, satellite rounding, mast degranulation), aspect (y-squash),
  *               engulf 0–1 (macrophage phagosomes), demyelinated 0–1 (schwann), fill/nucleus (colour overrides) }
  *   collagenFibre(g, path, {crimp 0–1, aligned true|0–1, type "I"|"III", width, wavelength, amplitude, phase,
- *                 seed, color, edge, opacity, frayStart 0–1, frayEnd 0–1, highlight})
+ *                 seed, color, edge, opacity, frayStart 0–1, frayEnd 0–1, frayLength px (34), highlight, fibrils (0|2))
  *       path = [[x,y], …] centreline (≥2 pts) or {from:[x,y], to:[x,y]}. Type I = thick bundled, bright;
  *       type III = thin, finer, wavier, healing tint. crimp 1 = resting wave, 0 = straight (loaded).
  *   capillary(g, path, {width, sprouting 0–1, sprouts, flow 0–1, rbcs, torn: {at 0–1, gap}, opacity, seed, leaky 0–1})
@@ -382,7 +383,8 @@ export function collagenFibre(g, path, o = {}) {
     line.push([x - ty * off, y + tx * off]);
   }
   const fs = o.frayStart || 0, fe = o.frayEnd || 0;
-  const cut = (k) => Math.round(clamp(k) * steps * 0.28);
+  const stepLen = pl.len / steps, frayPx = o.frayLength ?? 34;
+  const cut = (k) => Math.min(Math.round(steps * 0.45), Math.round((clamp(k) * frayPx) / stepLen));
   const i0 = cut(fs), i1 = steps - cut(fe);
   const core = line.slice(i0, i1 + 1);
   const base = o.color || (type === "I" ? col("anat-ligament") : mix("fx-heal", "anat-ligament", 0.35));
@@ -393,7 +395,8 @@ export function collagenFibre(g, path, o = {}) {
     if (type === "I") {
       el("path", { d, stroke: edge, "stroke-width": width + 2 }, gg);
       el("path", { d, stroke: base, "stroke-width": width }, gg);
-      if (o.highlight !== false && width >= 4) el("path", { d, stroke: mix("stage-ink", "anat-ligament", 0.2, 0.55), "stroke-width": Math.max(0.8, width * 0.18), transform: `translate(0,${f(-width * 0.22)})` }, gg);
+      if (o.highlight !== false && width >= 4) el("path", { d, stroke: mix("stage-ink", "anat-ligament", 0.2, 0.5), "stroke-width": Math.max(0.8, width * 0.14), transform: `translate(0,${f(-width * 0.26)})` }, gg);
+      if ((o.fibrils ?? (width >= 8 ? 2 : 0)) > 0) for (const s of [-0.08, 0.2]) el("path", { d, stroke: edge, "stroke-opacity": 0.45, "stroke-width": 0.7, transform: `translate(0,${f(width * s)})` }, gg);
     } else {
       el("path", { d, stroke: base, "stroke-width": width }, gg);
     }
@@ -401,19 +404,19 @@ export function collagenFibre(g, path, o = {}) {
   // frayed ends: fibrils splay & curl
   const fray = (from, to, dir, k) => {
     if (k <= 0 || Math.abs(to - from) < 2) return;
-    const n = type === "I" ? 4 : 2;
+    const n = type === "I" ? 3 : 2;
     for (let j = 0; j < n; j++) {
-      const spread = ((j / (n - 1)) * 2 - 1) * width * (1.1 + k * 1.4);
+      const spread = ((j / (n - 1)) * 2 - 1) * width * (0.35 + k * 0.6);
       const seq = [];
       const cnt = Math.abs(to - from);
       for (let s = 0; s <= cnt; s += 2) {
         const idx = from + dir * s, q = s / cnt;
         const [x, y] = line[idx];
         const [tx, ty] = pl.tan(idx / steps);
-        const curl = Math.sin(q * Math.PI * (1.3 + j * 0.4) + j) * k * 5 * q;
+        const curl = Math.sin(q * Math.PI * (1.3 + j * 0.4) + j) * k * 3 * q;
         seq.push([x - ty * (spread * q + curl), y + tx * (spread * q + curl)]);
       }
-      if (seq.length > 1) el("path", { d: smoothPath(seq), stroke: base, "stroke-width": Math.max(0.9, width / n), opacity: 0.9 }, gg);
+      if (seq.length > 1) { const dd = smoothPath(seq); if (type === "I") el("path", { d: dd, stroke: edge, "stroke-width": Math.max(1.6, width / n) + 1.2 }, gg); el("path", { d: dd, stroke: base, "stroke-width": Math.max(1.2, width / n) }, gg); }
     }
   };
   fray(i0, 0, -1, fs);
@@ -681,6 +684,7 @@ export function stageAt(phase, t) {
 
 /* ------------------------------------------------------------------ module loading */
 const _mods = new Map(); // tissue → { mod, promise, failed }
+const _badTissue = new Set();
 export function preloadMicro(tissue) {
   if (!/^[a-z0-9-]+$/.test(String(tissue || ""))) return Promise.resolve(null);
   let rec = _mods.get(tissue);
@@ -724,7 +728,8 @@ function drawStage(g, mod, tissue, stage, progress, extra) {
     placeholder(g, tissue, stage, false);
     if (!drawStage._warned?.has(tissue + stage)) {
       (drawStage._warned ||= new Set()).add(tissue + stage);
-      console.warn(`[micro] ${tissue}.render failed at stage "${stage}"`, e);
+      const msg = `[micro] ${tissue}.render failed at stage "${stage}": ${e?.message || e}`;
+      if (typeof extra.ctx?.warn === "function") extra.ctx.warn(msg); else console.warn(msg, e);
     }
   }
 }
@@ -794,6 +799,8 @@ export function renderMicroFrame(g, phase, t = 0, ctx = {}) {
   const rec = _mods.get(tissue);
   const mod = rec?.mod || null;
   const loading = !!rec && !rec.mod && !rec.failed;
+  if (rec?.failed && !rec.warned && typeof ctx.warn === "function") { rec.warned = true; ctx.warn(`[micro] tissue module "${tissue}" missing — placeholder shown`); }
+  if (!rec && typeof ctx.warn === "function" && !_badTissue.has(String(tissue))) { _badTissue.add(String(tissue)); ctx.warn(`[micro] invalid tissue id "${tissue}"`); }
   const { body } = makeRoot(g);
   const fadeLen = Math.min(CROSSFADE, info.dur * 0.4);
   const k = info.prevStage && !ctx.reducedMotion && info.since < fadeLen ? ease(info.since / fadeLen) : 1;
@@ -823,4 +830,6 @@ export function renderMicroStage(g, tissue, stage, progress = 0.6, opts = {}) {
   return { viewBox: [0, 0, MICRO_W, MICRO_H], stage, progress, ready: !!mod || !!rec?.failed, whenReady: rec?.promise || null };
 }
 
+/** Alias (ANIMATION_DSL §2 lists renderMicro). */
+export const renderMicro = renderMicroFrame;
 export default { renderMicroFrame, renderMicroStage, preloadMicro, stageAt };
