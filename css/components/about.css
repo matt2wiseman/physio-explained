@@ -1,1 +1,89 @@
-/* owner: see docs/ARCHITECTURE.md */
+/* About & methods view (#about). OWNER: P2. Prefix ab-. Tokens only.
+   Re-uses the film-strip classes (.hm-film*, .pg) defined in home.css for the animation phases. */
+
+.ab-head { max-width: 62rem; margin-bottom: var(--sp-6); }
+.ab-head h1 { margin-top: var(--sp-2); }
+.ab-head .lead { margin-top: var(--sp-3); }
+.ab-callout { margin-top: var(--sp-5); max-width: 68ch; }
+.ab-callout ul { margin: 0; }
+
+.ab-layout { --split-gap: var(--sp-7); align-items: start; }
+
+/* table of contents */
+.ab-toc__h { margin-bottom: var(--sp-2); }
+.ab-toc ul { margin: 0; padding: 0; list-style: none; border-top: 2px solid var(--ink); }
+.ab-toc li { border-bottom: 1px solid var(--line); }
+.ab-toc a { display: block; padding: var(--sp-2) var(--sp-1); font-size: var(--fs-sm); color: var(--ink-2); text-decoration: none; }
+.ab-toc a:hover { color: var(--accent); background: var(--surface-2); }
+@media (max-width: 959.98px) {
+  .ab-toc ul { display: flex; gap: var(--sp-2); overflow-x: auto; padding: var(--sp-2) 0; border-top: 0; scrollbar-width: thin; }
+  .ab-toc li { flex: none; border: 0; }
+  .ab-toc a { padding: 0 var(--sp-3); min-height: 36px; display: inline-flex; align-items: center; border: 1px solid var(--line-strong); border-radius: 999px; background: var(--surface); }
+}
+
+/* sections */
+.ab-body { min-width: 0; }
+.ab-sec { padding-top: var(--sp-3); border-top: 2px solid var(--ink); }
+.ab-sec + .ab-sec { margin-top: var(--sp-8); }
+.ab-sec > h2 { margin-bottom: var(--sp-4); }
+.ab-sec h3 { font-size: var(--fs-md); font-weight: 680; }
+.ab-sec .prose p + p { margin-top: var(--sp-3); }
+.ab-after { margin-top: var(--sp-4); }
+.ab-h3 { margin-top: var(--sp-6); margin-bottom: var(--sp-3); }
+.ab-note { max-width: 68ch; margin-top: var(--sp-5); padding-left: var(--sp-4); border-left: 3px solid var(--accent); color: var(--ink-2); }
+
+.ab-list { margin: var(--sp-3) 0 0; padding-left: 1.2em; }
+.ab-list li + li { margin-top: var(--sp-2); }
+.ab-list--not li::marker { color: var(--danger); }
+
+.ab-who { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--sp-6); margin-top: var(--sp-5); }
+@media (min-width: 720px) { .ab-who { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.ab-who h3 { padding-bottom: var(--sp-2); border-bottom: 1px solid var(--line-strong); }
+
+/* method: a real sequence */
+.ab-steps { margin: 0; padding: 0; list-style: none; max-width: 70ch; }
+.ab-steps > li { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); gap: var(--sp-3); padding: var(--sp-4) 0; border-top: 1px solid var(--line); }
+.ab-steps > li:last-child { border-bottom: 1px solid var(--line); }
+.ab-steps__n { font-family: var(--font-mono); font-size: var(--fs-lg); line-height: 1.2; color: var(--accent); }
+.ab-steps p { margin-top: var(--sp-1); color: var(--ink-2); }
+.ab-live { margin-top: var(--sp-4); }
+
+/* evidence tables */
+.ab-table { margin-top: var(--sp-5); max-width: 62rem; }
+.ab-table th[scope="row"] { width: 1%; white-space: nowrap; background: transparent; font-family: inherit; text-transform: none; letter-spacing: 0; color: inherit; vertical-align: middle; }
+.ab-table td { vertical-align: middle; }
+.ab-t-basis { color: var(--ink-2); }
+@media (max-width: 719.98px) { .ab-table table { min-width: 34rem; } }
+
+/* reading guide */
+.ab-read { display: grid; margin: 0; max-width: 62rem; border-top: 1px solid var(--line-strong); }
+.ab-read > div { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--sp-1); padding: var(--sp-3) 0; border-bottom: 1px solid var(--line); }
+@media (min-width: 720px) { .ab-read > div { grid-template-columns: 13rem minmax(0, 1fr); gap: var(--sp-5); } }
+.ab-read dt { font-family: var(--font-display); font-size: var(--fs-md); font-weight: 680; font-stretch: 90%; }
+.ab-read dd { margin: 0; color: var(--ink-2); max-width: 62ch; }
+
+.ab-markers { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--sp-5); max-width: 62rem; }
+@media (min-width: 860px) { .ab-markers { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.ab-markers > div { padding-top: var(--sp-2); border-top: 1px solid var(--line-strong); }
+.ab-markers__k { font-family: var(--font-display); font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); }
+.ab-markers p + p { margin-top: var(--sp-2); font-size: var(--fs-sm); color: var(--ink-2); }
+.ab-markers__ex { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-top: var(--sp-2); }
+.ab-urgency { display: grid; gap: var(--sp-2); margin: var(--sp-2) 0 0; padding: 0; list-style: none; font-size: var(--fs-sm); color: var(--ink-2); }
+.ab-urgency li { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: var(--sp-2); align-items: baseline; }
+
+/* animations */
+.ab-film { margin-top: var(--sp-4); max-width: 62rem; }
+.ab-phases { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--sp-4); max-width: 62rem; margin: var(--sp-5) 0 0; padding: 0; list-style: none; counter-reset: ab-phase; }
+@media (min-width: 720px) { .ab-phases { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--sp-6); } }
+.ab-phases li { counter-increment: ab-phase; padding-top: var(--sp-2); border-top: 1px solid var(--line-strong); }
+.ab-phases h3::before { content: counter(ab-phase) "  "; font-family: var(--font-mono); font-weight: 500; color: var(--accent); white-space: pre; }
+.ab-phases h3 { display: flex; align-items: baseline; gap: var(--sp-2); }
+.ab-phases__t { margin-left: auto; font-size: var(--fs-xs); color: var(--ink-3); font-weight: 400; }
+.ab-phases p { margin-top: var(--sp-1); color: var(--ink-2); font-size: var(--fs-sm); }
+
+/* sources */
+.ab-src { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--sp-5); max-width: 62rem; }
+@media (min-width: 860px) { .ab-src { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr); gap: var(--sp-6); } }
+.ab-src__lead { font-family: var(--font-display); font-size: var(--fs-lg); font-weight: 680; font-stretch: 88%; line-height: 1.2; }
+.ab-src__k { font-family: var(--font-display); font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-3); }
+.ab-src p + p { margin-top: var(--sp-2); font-size: var(--fs-sm); color: var(--ink-2); }

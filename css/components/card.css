@@ -1,1 +1,153 @@
-/* owner: see docs/ARCHITECTURE.md */
+/* Injury card (.ic) and the pieces the library shares with it. OWNER: P3.
+   Markup comes from js/components/injury-card.js. Tokens only; light and dark follow the theme tokens.
+   The name link is stretched over the whole card; the save toggle sits above it as a separate control. */
+
+.ic {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  padding: var(--sp-4);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .ic { transition: border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease); }
+}
+.ic:hover { border-color: var(--line-strong); box-shadow: var(--shadow-1); }
+.ic:focus-within { border-color: var(--accent); }
+
+/* urgent / emergency: a semantic edge. The badge carries the same message in words. */
+.ic[data-urgency="urgent"] { box-shadow: inset 3px 0 0 var(--warn); }
+.ic[data-urgency="emergency"] { box-shadow: inset 3px 0 0 var(--danger); }
+.ic[data-urgency="urgent"]:hover { box-shadow: inset 3px 0 0 var(--warn), var(--shadow-1); }
+.ic[data-urgency="emergency"]:hover { box-shadow: inset 3px 0 0 var(--danger), var(--shadow-1); }
+
+.ic-body { display: flex; flex-direction: column; gap: var(--sp-2); min-width: 0; }
+.ic-bottom { margin-top: auto; padding-top: var(--sp-4); display: flex; flex-direction: column; gap: var(--sp-3); min-width: 0; }
+
+.ic-top { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--sp-2); }
+
+.ic-region {
+  min-width: 0;
+  margin: 0;
+  padding-top: var(--sp-1);
+  font-family: var(--font-display);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  font-stretch: 100%;
+  letter-spacing: 0.08em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.ic-area { color: var(--ink-3); font-weight: 500; }
+.ic-area::before { content: "\00B7"; margin-inline: 0.5em; }
+@supports (content: "x" / "y") { .ic-area::before { content: "\00B7" / ""; } }
+
+.ic-name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  font-weight: 680;
+  font-stretch: 90%;
+  line-height: 1.22;
+  letter-spacing: -0.003em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.ic-link { color: inherit; text-decoration: none; }
+.ic-link::after { content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: 1; }
+.ic-link:hover { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 0.18em; }
+.ic-link:focus-visible { outline: none; }
+.ic-link:focus-visible::after { box-shadow: var(--focus-ring), 0 0 0 1px var(--accent); }
+
+.ic-summary {
+  margin: 0;
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+  color: var(--ink-2);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+/* tissues: plain words; the primary injured tissue carries the tissue-red marker */
+.ic-tissues { display: flex; flex-wrap: wrap; gap: var(--sp-1) var(--sp-3); margin: 0; padding: 0; list-style: none; font-size: var(--fs-xs); color: var(--ink-2); }
+.ic-tissues li { display: inline-flex; align-items: center; gap: 0.4em; line-height: 1.4; }
+.ic-tissues li::before { content: ""; width: 6px; height: 6px; border-radius: 1px; background: var(--line-strong); flex: none; }
+.ic-tissues li.is-primary { color: var(--ink); font-weight: 600; }
+.ic-tissues li.is-primary::before { background: var(--tissue); }
+.ic-tissues li.ic-more::before { display: none; }
+.ic-tissues li.ic-more { font-family: var(--font-mono); color: var(--ink-3); }
+
+.ic-fact { margin: 0; padding-top: var(--sp-3); border-top: 1px solid var(--line); display: grid; gap: 2px; }
+.ic-fact dt { font-family: var(--font-display); font-size: var(--fs-xs); font-weight: 700; font-stretch: 100%; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); line-height: 1.3; }
+.ic-fact dd {
+  margin: 0;
+  font-size: var(--fs-sm);
+  line-height: 1.4;
+  color: var(--ink);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.ic-foot { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-1) var(--sp-3); min-height: 1.5rem; }
+.ic-anim { display: inline-flex; align-items: center; gap: 0.4em; font-size: var(--fs-xs); font-weight: 600; color: var(--accent); }
+.ic-anim .ic-i { flex: none; }
+.ic-refs { margin-left: auto; font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--ink-3); white-space: nowrap; }
+.ic-refs b { font-weight: 500; color: var(--ink-2); }
+
+/* urgency badge (shared .badge look, tuned for cards and rows) */
+.ic-badge { gap: 0.4em; padding: 0.1em 0.5em; }
+.ic-badge .ic-i { flex: none; }
+.ic-badge--sm { font-size: 0.6875rem; padding: 0 0.4em; }
+
+/* save toggle: separate <button aria-pressed>, above the stretched link */
+.ic-fav {
+  position: relative;
+  z-index: 2;
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  margin: -6px -6px 0 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  color: var(--ink-3);
+  background: transparent;
+  cursor: pointer;
+}
+.ic-fav:hover { color: var(--ink); background: var(--surface-2); }
+.ic-fav:focus-visible { outline: none; box-shadow: var(--focus-ring), 0 0 0 1px var(--accent); }
+.ic-fav .ic-i { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
+.ic-fav[aria-pressed="true"] { color: var(--accent); }
+.ic-fav[aria-pressed="true"] .ic-i { fill: currentColor; }
+.ic-i { flex: none; }
+.ic-i--alert, .ic-i--clock, .ic-i--close, .ic-i--search, .ic-i--filter, .ic-i--chevron, .ic-i--grid, .ic-i--list, .ic-i--check, .ic-i--arrow {
+  fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* compact: one row for related / recent lists */
+.ic--compact { flex-direction: row; align-items: center; gap: var(--sp-3); height: auto; padding: var(--sp-3) var(--sp-3) var(--sp-3) var(--sp-4); }
+.ic--compact .ic-main { flex: 1 1 auto; min-width: 0; display: grid; gap: 2px; }
+.ic--compact .ic-region { padding-top: 0; }
+.ic--compact .ic-name { font-size: var(--fs-base); line-height: 1.25; }
+.ic--compact .ic-fav { margin: 0; }
+.ic--compact .ic-badge { flex: none; position: relative; z-index: 0; }
+
+.ic-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+@media (forced-colors: active) {
+  .ic { border-color: CanvasText; }
+  .ic-tissues li::before { background: CanvasText; }
+}

@@ -109,15 +109,15 @@ export function keyFact(e) {
 }
 
 const URG = {
-  emergency: { icon: "alert", hint: "Emergency: needs same-day emergency medical care" },
-  urgent: { icon: "clock", hint: "Urgent: needs medical review within days" }
+  emergency: { icon: "alert", tone: "danger", hint: "Emergency: needs same-day emergency medical care" },
+  urgent: { icon: "clock", tone: "warn", hint: "Urgent: needs medical review within days" }
 };
-/** Badge for urgent / emergency entries (icon + text); null for routine. */
+/** Badge for urgent / emergency entries (icon + text, uses the shared .badge classes); null for routine. */
 export function urgencyBadge(urgency, { small = false } = {}) {
   const u = URG[urgency];
   if (!u) return null;
-  return el("span", { class: `ic-badge ic-badge--${urgency}${small ? " ic-badge--sm" : ""}`, title: u.hint },
-    cardIcon(u.icon, small ? 13 : 14), el("span", null, labels.urgency(urgency)));
+  return el("span", { class: `badge badge--${u.tone} ic-badge${small ? " ic-badge--sm" : ""}`, title: u.hint },
+    cardIcon(u.icon, small ? 12 : 14), el("span", null, labels.urgency(urgency)));
 }
 
 /* --- favourites: one shared subscription keeps every rendered toggle in step with the store --- */

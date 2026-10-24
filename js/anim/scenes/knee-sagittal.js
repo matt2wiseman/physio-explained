@@ -42,8 +42,8 @@ const offset = (c, d) => c.map((p, i) => { const n = normalAt(c, i); const di = 
 const ribbon = (c, w) => spline([...offset(c, (i) => (Array.isArray(w) ? w[i] : w)), ...offset(c, (i) => -(Array.isArray(w) ? w[i] : w)).reverse()]);
 /** Lens-shaped band between a surface polyline and its offset, tapering at both ends (articular cartilage). */
 const rim = (c, t, taper = 0.6) => spline([...c, ...offset(c, (i) => t * Math.pow(Math.sin((Math.PI * i) / (c.length - 1)), taper)).slice(1, -1).reverse()]);
-const quadAt = (b, t) => { // point on the band's quadratic (same convention as the scene preview)
-  const [x1, y1] = b.from, [x2, y2] = b.to, L = Math.hypot(x2 - x1, y2 - y1), k = b.bend || 0;
+const quadAt = (b, t) => { // point on a band's quadratic (closeup.js convention: bend = bow at mid-length)
+  const [x1, y1] = b.from, [x2, y2] = b.to, L = Math.hypot(x2 - x1, y2 - y1), k = 2 * (b.bend || 0);
   const c = [(x1 + x2) / 2 - ((y2 - y1) / L) * k, (y1 + y2) / 2 + ((x2 - x1) / L) * k];
   return [(1 - t) ** 2 * x1 + 2 * (1 - t) * t * c[0] + t * t * x2, (1 - t) ** 2 * y1 + 2 * (1 - t) * t * c[1] + t * t * y2];
 };
@@ -73,7 +73,7 @@ const TIB_SURF = [[338, 245], [362, 243], [392, 242], [422, 240], [446, 239]];
 const PAT_SURF = [[480, 86], [474, 104], [471, 126], [472, 150], [477, 172], [486, 190]];
 
 /* ---------- bands ---------- */
-const PATELLAR_TENDON = { from: [500, 201], to: [470, 299], bend: -3 };
+const PATELLAR_TENDON = { from: [500, 201], to: [470, 299], bend: -1.5 };
 
 export default {
   id: "knee-sagittal",
@@ -100,10 +100,10 @@ export default {
       d: spline([[340, 150], [328, 164], [308, 200], [284, 248], [262, 304], [248, 366], [246, 470], [344, 470], [350, 404], [346, 334], [337, 286], [331, 246], [330, 206], [334, 172]]),
       axis: [[336, 156], [300, 460]]
     },
-    capsule: { type: "capsule", z: 3, from: [341, 146], to: [336, 260], width: 6, bend: 52, label: [312, 196] },
+    capsule: { type: "capsule", z: 3, from: [341, 146], to: [336, 260], width: 6, bend: 26, label: [312, 196] },
     fibula: { type: "bone", z: 4, d: spline(FIBULA), label: [366, 400] },
     // decorative: distal biceps femoris tendon to the fibular head
-    bicepsFemorisTendonDeco: { type: "tendon", z: 5, from: [306, 192], to: [331, 280], width: 8, bend: -4 },
+    bicepsFemorisTendonDeco: { type: "tendon", z: 5, from: [306, 192], to: [331, 280], width: 8, bend: -2 },
     femur: { type: "bone", z: 6, d: spline(FEMUR), label: [394, 60] },
     distalFemoralPhysis: {
       type: "physis", z: 7, label: [360, 136],
@@ -135,8 +135,8 @@ export default {
       ].join(" "),
       axis: [[440, 235], [346, 239]]   // anterior horn (0) → posterior horn (1)
     },
-    pcl: { type: "ligament", z: 15, from: [420, 214], to: [346, 264], width: 17, bend: 40 },
-    acl: { type: "ligament", z: 16, from: [361, 203], to: [421, 240], width: 13, bend: -3 },
+    pcl: { type: "ligament", z: 15, from: [420, 214], to: [346, 264], width: 17, bend: 20 },
+    acl: { type: "ligament", z: 16, from: [361, 203], to: [421, 240], width: 13, bend: -1.5 },
     suprapatellarPouch: {
       type: "space", z: 17, label: [458, 60],
       d: spline([[446, 34], [455, 30], [461, 50], [470, 72], [475, 98], [472, 122], [464, 134], [453, 130], [447, 112], [443, 74]])
@@ -149,7 +149,7 @@ export default {
     infrapatellarBursa: { type: "bursa", z: 19, cx: 469, cy: 284, rx: 4.5, ry: 10, rotate: -17 },
     patella: { type: "bone", z: 20, d: spline(PATELLA), label: [506, 140] },
     patellarCartilage: { type: "cartilage", z: 21, d: rim(PAT_SURF, -10, 0.45), axis: [[478, 90], [484, 188]], label: [478, 140] },
-    quadricepsTendon: { type: "tendon", z: 22, from: [480, 12], to: [496, 80], width: 18, bend: -3 },
+    quadricepsTendon: { type: "tendon", z: 22, from: [480, 12], to: [496, 80], width: 18, bend: -1.5 },
     patellarTendon: { type: "tendon", z: 23, ...PATELLAR_TENDON, width: 14 },
     prepatellarBursa: { type: "bursa", z: 24, cx: 534, cy: 140, rx: 5.5, ry: 34, rotate: -6 }
   },

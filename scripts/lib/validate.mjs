@@ -333,6 +333,7 @@ export function validateAnimation(an, E, W) {
         last = Math.max(last, idx);
       });
       if (!ph.stages?.length) E(`${P}.stages`, "micro needs stages");
+      if (ph.variant !== undefined && !(A.MICRO_VARIANTS[ph.tissue] || []).includes(ph.variant)) E(`${P}.variant`, `"${ph.variant}" is not a variant of ${ph.tissue} (${(A.MICRO_VARIANTS[ph.tissue] || []).join(", ") || "none"})`);
       (ph.timeLabels || []).forEach((l, i) => inT(l.t, `${P}.timeLabels[${i}].t`));
     }
   });

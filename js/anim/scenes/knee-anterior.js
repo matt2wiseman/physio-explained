@@ -99,10 +99,10 @@ const MM_C = [[7, 18], [14, 18.5], [22, 16], [29, 10], [32.5, 1], [31.5, -8], [2
 const MM_W = [1.6, 3.2, 3.8, 4.2, 4.8, 5.8, 6.6, 6.2, 4.5, 2.0];
 
 /* ---------- bands ---------- */
-const MCL = { from: [512, 142], to: [456, 358], bend: -46 };
-const quadMid = (b) => { // point at t = 0.5 on the quadratic used for bands (same convention as the preview)
+const MCL = { from: [512, 142], to: [456, 358], bend: -23 };
+const quadMid = (b) => { // point at t = 0.5 on a band's quadratic (closeup.js convention: bend = bow at mid-length)
   const [x1, y1] = b.from, [x2, y2] = b.to, L = Math.hypot(x2 - x1, y2 - y1);
-  const c = [(x1 + x2) / 2 - ((y2 - y1) / L) * b.bend, (y1 + y2) / 2 + ((x2 - x1) / L) * b.bend];
+  const c = [(x1 + x2) / 2 - ((y2 - y1) / L) * 2 * b.bend, (y1 + y2) / 2 + ((x2 - x1) / L) * 2 * b.bend];
   return [0.25 * x1 + 0.5 * c[0] + 0.25 * x2, 0.25 * y1 + 0.5 * c[1] + 0.25 * y2];
 };
 
@@ -138,7 +138,7 @@ export default {
       d: femoralCartilage,
       axis: [[296, 180], [510, 180]]   // lateral (LFC) → medial (MFC); MFC lateral aspect (OCD site) ≈ 0.62
     },
-    popliteusTendon: { type: "tendon", z: 6, from: [298, 168], to: [320, 252], width: 8, bend: -6 },
+    popliteusTendon: { type: "tendon", z: 6, from: [298, 168], to: [320, 252], width: 8, bend: -3 },
     tibia: { type: "bone", z: 7, d: spline(TIBIA), label: [404, 392] },
     proximalTibialPhysis: {
       type: "physis", z: 8, label: [470, 300],
@@ -147,7 +147,7 @@ export default {
     },
     tibialCartilage: { type: "cartilage", z: 9, d: tibialCartilage, axis: [pj([-36, 0]), pj([36, 0])], label: pj([19, -2]) },
     // decorative (not targetable): transverse intermeniscal ligament joining the anterior horns
-    transverseLigament: { type: "ligament", z: 10, from: pj([-9, 10]), to: pj([9, 18.5]), width: 4, bend: 2 },
+    transverseLigament: { type: "ligament", z: 10, from: pj([-9, 10]), to: pj([9, 18.5]), width: 4, bend: 1 },
     lateralMeniscus: {
       type: "cartilage", z: 11, label: pj([-31, 8]),
       d: meniscus(LM_C, LM_W, [-19, -1]),
@@ -158,9 +158,9 @@ export default {
       d: meniscus(MM_C, MM_W, [19, -1]),
       axis: [pj([29.5, 11]), pj([29.5, -11])]    // anterior body → posterior horn/body (posteromedial = 0.75–1)
     },
-    pcl: { type: "ligament", z: 12, from: [421, 150], to: [391, 223], width: 19, bend: -4 },
-    acl: { type: "ligament", z: 13, from: [379, 156], to: pj([3, 6]), width: 16, bend: 3 },
-    lcl: { type: "ligament", z: 14, from: [293, 141], to: [272, 264], width: 9, bend: 7 },
+    pcl: { type: "ligament", z: 12, from: [421, 150], to: [391, 223], width: 19, bend: -2 },
+    acl: { type: "ligament", z: 13, from: [379, 156], to: pj([3, 6]), width: 16, bend: 1.5 },
+    lcl: { type: "ligament", z: 14, from: [293, 141], to: [272, 264], width: 9, bend: 3.5 },
     mcl: { type: "ligament", z: 15, ...MCL, width: 18 },
     pesAnserine: { type: "tendon", z: 16, points: [[548, 40], [546, 110], [539, 168], [528, 218], [511, 268], [487, 311], [462, 337], [448, 345]], width: 14, label: [536, 180] },
     itBand: { type: "tendon", z: 17, points: [[304, -12], [296, 60], [289, 115], [286, 142], [288, 176], [293, 212], [302, 248], [318, 281]], width: 16, label: [292, 80] },

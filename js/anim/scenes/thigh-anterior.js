@@ -91,7 +91,7 @@ export default {
     },
     rectusFemoris: { type: "muscle", z: 4, d: ribbon(RF, [3, 8, 17, 20, 18, 11, 4]), axis: [RF[0], [371, 394]], fibreAngle: 25, label: [362, 250] },
     rectusFemorisProximalTendon: { type: "tendon", z: 5, from: [357, 47], to: [357, 96], width: 7 },
-    rfCentralTendon: { type: "tendon", z: 5, from: [357, 92], to: [364, 256], width: 3.5, bend: -2 },
+    rfCentralTendon: { type: "tendon", z: 5, from: [357, 92], to: [364, 256], width: 3.5, bend: -1 },
     femoralNerve: { type: "nerve", z: 6, points: [[378, 28], [380, 60], [382, 88], [385, 112]], width: 6, label: [384, 100] },
     femoralNerveBranchesDeco: { type: "nerve", z: 6, points: [[385, 112], [378, 140], [372, 172]], width: 3 },
     saphenousNerveDeco: { type: "nerve", z: 6, points: [[385, 112], [396, 160], [405, 220], [411, 280]], width: 2.5 },

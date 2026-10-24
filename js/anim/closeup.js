@@ -403,7 +403,7 @@ function fractureGeom(P, sp, A, pattern, displaced, R) {
     }
     case "stress": {
       const S = surfaceAt(sp, A), inward = dot(n, S.nrm) > 0 ? mul(n, -1) : n;
-      g.lines.push(F.jagged(add(S.B, mul(S.nrm, 0.5)), add(S.B, mul(inward, 0.38 * W)), R, 0.7, 5)); g.hair = true; g.surf = S; break;
+      g.lines.push(F.jagged(add(S.B, mul(S.nrm, 0.5)), add(S.B, mul(inward, 0.48 * W)), R, 0.9, 6)); g.surf = S; break;
     }
     case "compression": case "wedge": {
       const lv = norm(load), cr = perp(lv), s2 = F.spanAt(sp.poly, A, cr) || span, h = 0.06 * Math.max(sp.len, sp.thick);
@@ -413,7 +413,7 @@ function fractureGeom(P, sp, A, pattern, displaced, R) {
       const bot = F.jagged(add(a2, mul(lv, pattern === "wedge" ? -h * 0.3 : -h)), add(a1, mul(lv, -h)), R, 1.2, 10);
       if (pattern === "wedge" && antS < 0) { top.reverse(); }
       g.bands.push([...top, ...bot]); g.lines.push(top.slice(), bot.slice());
-      const compact = sp.len / Math.max(1, sp.thick) < 1.9, width = Math.max(1, s2[1] - s2[0]);
+      const compact = sp.len / Math.max(1, sp.thick) < 1.5, width = Math.max(1, s2[1] - s2[0]);
       g.deform = { A, lv, cr, compact, wedge: pattern === "wedge", antS, s2, width }; break;
     }
     case "greenstick": {
@@ -477,9 +477,21 @@ function physisGeom(P, sp, a, warn) {
     g.lines.push(plateLine(0.12, 0.58, 1));
     g.vline = F.jagged(pE(0.12, -half - 1), pE(0.12, half + epiDepth * 2.2), R, 1, 7); g.lines.push(g.vline);
   } else if (gr === "IV") {
-    g.oline = F.jagged(pE(0.05, -half - metaDepth), pE(0.3, half + epiDepth * 2.2), R, 1.2, 9); g.lines.push(g.oline);
+    g.oline = F.jagged(pE(0.72, -half - metaDepth), pE(0.12, half + epiDepth * 2.4), R, 1.2, 9); g.lines.push(g.oline);
   } else if (gr === "V") { g.crush = true; }
+  const solid = P.structs.filter((o) => (o.type === "bone" || o.type === "physis") && o.poly);
+  g.lines = g.lines.flatMap((L) => trimInside(L, solid));
   return g;
+}
+/** Keep only the runs of a polyline that lie inside any of the given structures (lines stop at the bone surface). */
+function trimInside(pts, structs) {
+  const runs = []; let cur = [];
+  for (let i = 1; i < pts.length; i++) {
+    const a = pts[i - 1], b = pts[i], n = Math.max(1, Math.ceil(dist(a, b) / 2));
+    for (let k = i === 1 ? 0 : 1; k <= n; k++) { const q = lerp2(a, b, k / n); if (structs.some((o) => insideStruct(o, q))) cur.push(q); else if (cur.length) { if (cur.length > 1) runs.push(cur); cur = []; } }
+  }
+  if (cur.length > 1) runs.push(cur);
+  return runs;
 }
 function discDir(P, sp, dir, warn, where) {
   const post = dirVec(P, "posterior"), ant = dirVec(P, "anterior");
@@ -660,6 +672,18 @@ function apply(P, S, a, p, age, reduced) {
 function derive(P, S, t) {
   for (const sp of P.structs) {
     const st = S.st.get(sp.id);
+    if (sp.type === "bone") {
+      for (const f of st.fx) {
+        if (f.kind !== "fracture") continue;
+        const geo = f.a.geo, q = f.p * f.w, list = [];
+        if ((geo.displaced || geo.hinge) && geo.cut) list.push({ region: F.sideOfCut(geo.cut, geo.mv), disp: geo.hinge ? [0, 0] : mul(geo.disp, q), rot: (geo.hinge ? geo.rot * (geo.displaced ? 1 : 0.3) : geo.rot) * q, pivot: geo.pivot });
+        for (const fr of geo.frags) if (geo.displaced || fr.always) list.push({ region: fr.poly, disp: mul(fr.disp, (geo.displaced ? 1 : 0.18) * q), rot: fr.rot * (geo.displaced ? 1 : 0.15) * q, pivot: F.centroidOf(fr.poly), frag: true });
+        if (!list.length) continue;
+        st.pieces.push(...list);
+        const main = list.filter((pc) => !pc.frag);
+        if (main.length) for (const o of attachedTo(P, sp)) S.st.get(o.id).pieces.push(...main);
+      }
+    }
     if (sp.type === "physis") {
       for (const f of st.fx) {
         if (f.kind !== "separate") continue;
@@ -687,6 +711,23 @@ function derive(P, S, t) {
     }
   }
 }
+const inBB = (p, b, tol = 0) => p[0] >= b.x - tol && p[0] <= b.x + b.w + tol && p[1] >= b.y - tol && p[1] <= b.y + b.h + tol;
+/** Structures that travel with a bone's fragments: contents (marrow, nutrient vessels, periosteum) and, through a physis that
+ *  names its `epiphysis`, the epiphysis and its articular cartilage. */
+function attachedTo(P, b) {
+  if (b.attached) return b.attached;
+  const out = new Set();
+  for (const o of P.structs) {
+    if (o === b || !o.c) continue;
+    if (o.type !== "bone" && inBB(o.c, b.bb) && insideStruct(b, o.c)) out.add(o);
+    if (o.type === "physis" && o.s.epiphysis && P.byId[o.s.epiphysis] && P.byId[o.s.epiphysis] !== b && overlapsBB({ x: o.bb.x - 6, y: o.bb.y - 6, w: o.bb.w + 12, h: o.bb.h + 12 }, b.bb)) {
+      const e = P.byId[o.s.epiphysis]; out.add(o); out.add(e);
+      for (const k of P.structs) if (k !== b && k.type !== "bone" && k.c && inBB(k.c, e.bb, 12)) out.add(k);
+    }
+  }
+  b.attached = [...out];
+  return b.attached;
+}
 const overlapsBB = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
 function sideRegion(sp, ne) { return F.halfPlane(sp.c, ne); }
 function quadrant(sp, g) {
@@ -708,7 +749,7 @@ function matrixFor(sp, st, t, reduced) {
   if (T === "fatpad") { sn *= 1 - 0.25 * st.impinge; su *= 1 + 0.08 * st.impinge; }
   if (T === "space") { const e = 1 + 0.04 * st.bleed + 0.07 * st.effuse + 0.03 * st.pressure; su *= e; sn *= e; }
   if (T === "physis") sn *= 1 + 0.7 * st.pstress - 0.55 * st.crush;
-  if (T === "fascia" && sp.poly) sn *= 1 + 0.8 * st.thick + 0.3 * st.degen;
+  if (T === "fascia" && sp.poly && !sp.s.fillRule) sn *= 1 + 0.8 * st.thick + 0.3 * st.degen;
   let dx = st.dx, dy = st.dy;
   if (st.spasm > 0.01 && !reduced) { const j = 0.9 * st.spasm * Math.sin(t * 2 * Math.PI * 11) * (0.6 + 0.4 * Math.sin(t * 7.3)); dx += sp.n[0] * j; dy += sp.n[1] * j; }
   su *= k; sn *= k;
@@ -740,21 +781,24 @@ function drawStructure(sp, st, rc) {
   if (op < 0.005) return g;
   if (op < 0.999) g.setAttribute("opacity", fmt(op));
   const M = matrixFor(sp, st, rc.t, rc.reduced);
-  const inner = isIdentity(M) ? g : el("g", { transform: mstr(M) }, g);
+  const outer = isIdentity(M) ? g : el("g", { transform: mstr(M) }, g);
+  const pcs = sp.type === "bone" ? [] : st.pieces;
+  if (!pcs.length) { paint(outer, sp, st, rc); return g; }
+  paint(el("g", { "clip-path": selfClip(outer, rc, sp, F.dPoly(F.BIG_RECT) + pcs.map((pc) => F.dPoly(pc.region)).join(""), "gstay", "evenodd") }, outer), sp, st, rc);
+  pcs.forEach((pc, i) => { const pg = el("g", { transform: pieceTf(pc, sp.c) }, outer); paint(el("g", { "clip-path": selfClip(outer, rc, sp, F.dPoly(pc.region), "gpc" + i) }, pg), sp, st, rc); });
+  return g;
+}
+function paint(inner, sp, st, rc) {
   rc.outline = sp.outline;
-  // halos beneath
   if (sp.outline && st.swell > 0.01) el("path", { d: sp.outline, fill: C("fx-oedema"), stroke: C("anat-fluid"), "stroke-width": 8 + 18 * st.swell, "stroke-opacity": 0.35 * st.swell, "fill-opacity": 0.6 * st.swell, filter: F.blur(5), "stroke-linejoin": "round" }, inner);
   if (sp.outline && st.inflame > 0.01) { const sh = rc.reduced ? 1 : 0.82 + 0.18 * Math.sin(rc.t * 5.5 + sp.idx); el("path", { d: sp.outline, fill: "none", stroke: C("fx-inflame"), "stroke-width": 7 + 14 * st.inflame, "stroke-opacity": 0.5 * st.inflame * sh, filter: F.blur(5), "stroke-linejoin": "round" }, inner); }
-  const custom = typeof sp.s.draw === "function";
-  if (custom) {
+  if (typeof sp.s.draw === "function") {
     try { sp.s.draw(inner, { ...st, t: rc.t }, api(rc, sp)); } catch (e) { rc.warn(`custom draw of "${sp.id}" threw (${e.message}) — default drawing used`); (DRAW[sp.type] || drawFascia)(inner, sp, st, rc); }
   } else (DRAW[sp.type] || drawFascia)(inner, sp, st, rc);
-  // overlays
   const o = rc.outline || sp.outline;
   if (o && st.inflame > 0.01) el("path", { d: o, fill: C("fx-inflame"), "fill-opacity": 0.22 * st.inflame, stroke: "none" }, inner);
   const I = Math.max(st.hl, st.pulse * (rc.reduced ? 0.85 : 0.55 + 0.45 * Math.sin(rc.t * 2 * Math.PI * 0.9)));
   if (o && I > 0.01) F.glowOutline(inner, o, "fx-highlight", I, 2.2);
-  return g;
 }
 function api(rc, sp) { return { el, css: C, mix, fx: F, frame: sp.frame, structure: sp.s, t: rc.t, reducedMotion: rc.reduced, defs: rc.defs }; }
 
@@ -763,16 +807,7 @@ function drawBone(g, sp, st, rc) {
   let d = sp.d, rule = sp.s.fillRule || null;
   const defo = st.fx.filter((f) => f.kind === "fracture" && f.a.geo.deform);
   if (defo.length) { let poly = sp.poly; for (const f of defo) poly = deformPoly(poly, f.a.geo.deform, f.p * f.w); d = F.dPoly(poly); rule = null; rc.outline = d; }
-  const pieces = st.pieces.slice();
-  for (const f of st.fx) {
-    if (f.kind !== "fracture") continue;
-    const geo = f.a.geo, q = f.p * f.w;
-    if ((geo.displaced || geo.hinge) && geo.cut) {
-      const rot = geo.hinge ? geo.rot * (geo.displaced ? 1 : 0.3) * q : geo.rot * q;
-      pieces.push({ region: F.sideOfCut(geo.cut, geo.mv), disp: geo.hinge ? [0, 0] : mul(geo.disp, q), rot, pivot: geo.pivot });
-    }
-    for (const fr of geo.frags) if (geo.displaced || fr.always) pieces.push({ region: fr.poly, disp: mul(fr.disp, (geo.displaced ? 1 : 0.18) * q), rot: fr.rot * (geo.displaced ? 1 : 0.15) * q, pivot: F.centroidOf(fr.poly), frag: true });
-  }
+  const pieces = st.pieces;
   const self = selfClip(g, rc, sp, d, "self", rule);
   if (!pieces.length) boneBody(g, sp, d, rule, self);
   else {
@@ -817,8 +852,8 @@ function drawStressReaction(clipG, top, sp, f, q, R) {
     const a = add(S.B, mul(S.tan, -S.depth * 2)), b = add(S.B, mul(S.tan, S.depth * 2)), c = add(S.B, mul(S.nrm, S.depth * 0.45));
     el("path", { d: `M${fmt(a[0])},${fmt(a[1])}Q${fmt(c[0])},${fmt(c[1])} ${fmt(b[0])},${fmt(b[1])}`, fill: "none", stroke: mix("anat-bone", "fx-heal", 70), "stroke-width": 2.4, "stroke-opacity": 0.8 * p2, "stroke-linecap": "round" }, top);
     const inward = mul(S.nrm, -1), along = perp(inward);
-    const L = F.jagged(add(S.B, mul(S.nrm, 0.5)), add(add(S.B, mul(inward, sp.minDim * 0.32)), mul(along, 1.5)), R, 0.6, 5);
-    F.crack(top, L, p2, { w: 1.3, glow: 0.7 });
+    const L = F.jagged(add(S.B, mul(S.nrm, 0.5)), add(add(S.B, mul(inward, sp.minDim * 0.3)), mul(along, 1.5)), R, 0.8, 5);
+    F.crack(top, L, p2, { w: 1.8, glow: 0.9 });
   }
 }
 function drawFractureLines(g, sp, f, q) {
@@ -1046,14 +1081,35 @@ function drawCapsule(g, sp, st, rc) {
   el("path", { d, fill: "none", stroke: mix("anat-capsule", "anat-fluid", 50), "stroke-width": 0.7, "stroke-opacity": 0.6 * (1 - st.tighten), "stroke-dasharray": "2 3", transform: `translate(0 0)` }, g);
 }
 function drawFascia(g, sp, st, rc) {
-  if (!sp.poly || !bandIntact(st) || st.fx.some((f) => f.kind === "tear")) {
-    if (sp.bm && (!sp.poly || st.fx.some((f) => f.kind === "tear") || st.degen > 0.005)) return drawBand(g, sp, st, rc, BAND_COL.fascia);
-  }
   if (!sp.poly) return drawBand(g, sp, st, rc, BAND_COL.fascia);
-  const self = selfClip(g, rc, sp, sp.d, "self", sp.s.fillRule);
-  el("path", { d: sp.d, fill: url("closeup-g-fascia"), "fill-opacity": 0.62, "fill-rule": sp.s.fillRule }, g);
-  if (sp.bm) fibresFromModel(el("g", { "clip-path": self }, g), sp, sp.bm.C, sp.bm.H, sp.bm.H, sp.bm.S, { col: "anat-ligament-edge", crimp: 0.5, count: fibreCount(sp), R: F.rng(F.hash(sp.id)), cross: true });
-  el("path", { d: sp.d, fill: "none", stroke: mix("anat-fascia", "anat-ligament-edge", 50), "stroke-width": 0.9, "fill-rule": sp.s.fillRule }, g);
+  const rule = sp.s.fillRule || null, self = selfClip(g, rc, sp, sp.d, "self", rule);
+  const tears = st.fx.filter((f) => f.kind === "tear"), g3 = tears.find((f) => f.a.grade === 3 && f.p * f.w > 0.001);
+  const body = (host) => {
+    el("path", { d: sp.d, fill: url("closeup-g-fascia"), "fill-opacity": 0.66, "fill-rule": rule }, host);
+    if (st.degen > 0.01) el("path", { d: sp.d, fill: C("anat-fat"), "fill-opacity": 0.35 * st.degen, "fill-rule": rule }, host);
+    if (sp.bm) fibresFromModel(el("g", { "clip-path": self }, host), sp, sp.bm.C, sp.bm.H, sp.bm.H, sp.bm.S, { col: "anat-ligament-edge", crimp: 0.5, count: fibreCount(sp), R: F.rng(F.hash(sp.id)), cross: true, degen: st.degen });
+    if (rule && st.thick + st.degen > 0.01) el("path", { d: sp.d, fill: "none", stroke: st.degen > 0.01 ? mix("anat-fascia", "anat-fat", 70) : C("anat-fascia"), "stroke-width": 1 + 7 * st.thick + 3 * st.degen, "stroke-opacity": 0.85, "stroke-linejoin": "round" }, host);
+    el("path", { d: sp.d, fill: "none", stroke: mix("anat-fascia", "anat-ligament-edge", 45), "stroke-width": 0.9 + st.thick, "fill-rule": rule }, host);
+  };
+  if (!g3) body(g);
+  else {
+    const q = g3.p * g3.w, fr = frameAt(sp, g3.a.s), gap = (0.02 + 0.03 * q) * (sp.len || 100);
+    [[F.halfPlane(fr.p, mul(fr.u, -1)), -1], [F.halfPlane(fr.p, fr.u), 1]].forEach(([reg, sg], k) => {
+      const pg = el("g", { transform: `translate(${fmt(fr.u[0] * gap * sg)} ${fmt(fr.u[1] * gap * sg)})` }, g);
+      body(el("g", { "clip-path": selfClip(g, rc, sp, F.dPoly(reg), "half" + k) }, pg));
+    });
+  }
+  const fx = el("g", { "clip-path": self }, g);
+  for (const f of tears) {
+    const q = f.p * f.w, fr = frameAt(sp, f.a.s), R = F.rng(f.a.seed); if (q < 0.005) continue;
+    const span = F.spanAt(sp.poly, fr.p, fr.n) || [-fr.half, fr.half];
+    const reach = f.a.grade === 1 ? 0.35 : f.a.grade === 2 ? 0.7 : 1.05;
+    const L = F.jagged(add(fr.p, mul(fr.n, span[0] - 2)), add(fr.p, mul(fr.n, span[0] + (span[1] - span[0] + 4) * reach)), R, 1.4, 8);
+    if (f.age < 0.6) F.cloud(g, fr.p[0], fr.p[1], 26, 26, "fx-injury", (1 - f.age / 0.6) * 0.7 * f.w);
+    F.crack(f.a.grade === 3 ? g : fx, L, clamp(f.age / 0.3) * f.w, { w: 1.8, glow: 0.7 });
+    if (f.a.grade >= 2) F.pool(g, fr.p[0], fr.p[1], 5 + 6 * q, R, 0.6 * q, 4 + 3 * q);
+  }
+  if (st.degen > 0.05) { const R = F.rng(F.hash(sp.id) + 7); for (let k = 0; k < 4; k++) { const fr = frameAt(sp, clamp(st.degenAt + (R() - 0.5) * 0.4)), a = add(fr.p, mul(fr.n, fr.half * (R() < 0.5 ? -1 : 1))), pts = []; for (let m = 0; m <= 5; m++) pts.push(add(lerp2(a, fr.p, (m / 5) * 0.8), mul(fr.u, Math.sin(m * 1.9 + k) * 2))); el("path", { d: F.dPoly(pts, false), fill: "none", stroke: C("anat-artery"), "stroke-width": 1, "stroke-opacity": 0.85 * st.degen }, fx); } }
 }
 
 /* ---------- muscle ---------- */

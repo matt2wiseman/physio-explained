@@ -59,14 +59,14 @@ const PHYS = [0, 0.25, 0.5, 0.75, 1].map((f) => { const s = -36.9 + 73.8 * f, bo
 const HEAD = [...arc(176, 448, R, 15).slice(0, -1), PHYS[4], PHYS[3], PHYS[2], PHYS[1]];
 const FEMUR = [
   PHYS[0], PHYS[1], PHYS[2], PHYS[3], PHYS[4], neck(50, 33), neck(70, 34), neck(95, 36), [356, 310], [365, 320, 1], [361, 333], [348, 343],
-  [352, 400], [360, 470], [301, 470], [291, 400], [282, 340], [275, 308], [260, 288], [246, 262], [242, 232], [248, 207], [264, 193],
-  [279, 206], [289, 228], [296, 247], neck(75, -33), neck(50, -32)
+  [352, 400], [360, 470], [301, 470], [291, 400], [282, 340], [275, 308], [260, 288], [245, 262], [240, 232], [245, 210], [258, 197],
+  [275, 195], [290, 207], [302, 223], [316, 228], neck(50, -32)
 ];
 
 /* ---------- muscle centrelines ---------- */
 const RF = [[341, 120], [338, 160], [334, 210], [330, 270], [326, 340], [322, 420], [320, 470]];
 const SART = [[308, 56], [314, 120], [330, 200], [352, 280], [380, 360], [408, 440], [416, 470]];
-const IL_TENDON = { from: [424, 190], to: [364, 321], bend: -14 };
+const IL_TENDON = { from: [424, 190], to: [364, 321], bend: -7 };
 
 export default {
   id: "hip-anterior",
@@ -81,7 +81,7 @@ export default {
   structures: {
     capsule: {
       type: "capsule", z: 0, label: [292, 262],
-      d: spline([[352, 138], [330, 150], [316, 170], [302, 198], [288, 222], [282, 250], [298, 282], [330, 302], [362, 310], [388, 300], [402, 280], [414, 258], [436, 232], [446, 200], [440, 166], [418, 144], [390, 134]])
+      d: spline([[352, 138], [338, 150], [326, 168], [316, 192], [302, 216], [290, 240], [292, 268], [318, 294], [350, 306], [380, 302], [400, 282], [414, 258], [436, 232], [446, 200], [440, 166], [418, 144], [390, 134]])
     },
     pelvis: {
       type: "bone", z: 1, label: [356, 40],
@@ -99,7 +99,7 @@ export default {
     obturatorNerve: { type: "nerve", z: 3, points: [[492, -16], [494, 60], [488, 130], [470, 190], [452, 236], [446, 254], [456, 292], [474, 342], [490, 400]], width: 6, label: [496, 100] },
     femur: { type: "bone", z: 4, d: spline(FEMUR), label: [308, 380] },
     femoralHead: { type: "bone", z: 5, d: spline(HEAD), label: [392, 196] },
-    proximalFemoralPhysis: { type: "physis", z: 6, d: ribbon(PHYS, 2.6), axis: [PHYS[0], PHYS[4]], label: PHYS[2] },
+    proximalFemoralPhysis: { type: "physis", z: 6, epiphysis: "femoralHead", d: ribbon(PHYS, 2.6), axis: [PHYS[0], PHYS[4]], label: PHYS[2] },
     hipCartilage: {
       type: "cartilage", z: 7, label: polar(-100, R + 9),
       d: [
@@ -120,13 +120,13 @@ export default {
     },
     iliopsoas: {
       type: "muscle", z: 10, label: [430, 70], fibreAngle: 0,
-      d: spline([[326, -16], [522, -16], [500, 60], [470, 120], [456, 165], [448, 210], [430, 255], [406, 292], [384, 312], [372, 318], [370, 300], [384, 268], [395, 225], [393, 180], [378, 140], [352, 100], [334, 50]]),
+      d: spline([[326, -16], [522, -16], [502, 50], [478, 110], [464, 160], [458, 205], [446, 248], [424, 282], [396, 306], [374, 320], [369, 306], [392, 280], [411, 248], [419, 210], [412, 170], [392, 130], [360, 90], [336, 44]]),
       axis: [[424, -10], [366, 318]]
     },
-    iliopsoasBursa: { type: "bursa", z: 11, cx: 410, cy: 214, rx: 10, ry: 24, rotate: -24 },
+    iliopsoasBursa: { type: "bursa", z: 11, cx: 422, cy: 218, rx: 9, ry: 22, rotate: -26 },
     iliopsoasTendon: { type: "tendon", z: 12, ...IL_TENDON, width: 11 },
-    femoralNerve: { type: "nerve", z: 13, points: [[424, -16], [414, 60], [403, 120], [397, 165], [392, 205], [388, 240]], width: 7, label: [418, 30] },
-    femoralNerveBranchesDeco: { type: "nerve", z: 13, points: [[388, 240], [376, 270], [366, 300]], width: 3 },
+    femoralNerve: { type: "nerve", z: 13, points: [[436, -16], [424, 60], [413, 120], [414, 165], [420, 205], [414, 242]], width: 7, label: [430, 30] },
+    femoralNerveBranchesDeco: { type: "nerve", z: 13, points: [[414, 242], [402, 268], [390, 296]], width: 3 },
     adductorLongus: {
       type: "muscle", z: 13, label: [500, 380], fibreAngle: 0,
       d: spline([[530, 226], [552, 232], [560, 262], [548, 320], [520, 380], [488, 440], [470, 470], [412, 470], [432, 420], [470, 350], [505, 286], [522, 250]]),
@@ -144,7 +144,7 @@ export default {
     },
     adductorLongusTendon: { type: "tendon", z: 14, from: [541, 230], to: [527, 286], width: 10 },
     inguinalCanal: { type: "space", z: 15, d: ribbon([[418, 120], [450, 143], [484, 168], [513, 194]], [4, 5, 5, 6]), label: [462, 150] },
-    inguinalLigament: { type: "ligament", z: 16, from: [308, 54], to: [532, 218], width: 5, bend: 24 },
+    inguinalLigament: { type: "ligament", z: 16, from: [308, 54], to: [532, 218], width: 5, bend: 12 },
     rectusFemoris: { type: "muscle", z: 17, ghost: true, d: ribbon(RF, [5, 7, 11, 17, 21, 22, 22]), axis: [RF[0], RF[RF.length - 1]], fibreAngle: 20, label: [322, 330] },
     sartorius: { type: "muscle", z: 18, ghost: true, d: ribbon(SART, 12), axis: [SART[0], SART[SART.length - 1]], fibreAngle: 0, label: [372, 350] }
   },
@@ -154,7 +154,7 @@ export default {
     anterosuperiorLabrum: polar(-140, R + 7),
     headNeckJunction: neck(43, -34),
     acetabularRim: polar(-122, R + 15),
-    femoralNeckSuperior: neck(75, -32),
+    femoralNeckSuperior: [311, 229],
     femoralNeckInferior: neck(70, 33),
     subcapital: neck(46, 0),
     pubicTubercle: [532, 217],

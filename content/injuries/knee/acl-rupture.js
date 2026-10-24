@@ -403,7 +403,7 @@ export default {
         ]
       },
       {
-        type: "micro", label: "Cellular response", duration: 10, tissue: "ligament",
+        type: "micro", label: "Cellular response", duration: 10, tissue: "ligament", variant: "intra-articular",
         stages: [
           { t: 0, stage: "healthy" }, { t: 1.0, stage: "loaded" }, { t: 2.0, stage: "overload" }, { t: 3.0, stage: "failure" },
           { t: 4.0, stage: "haemorrhage" }, { t: 5.3, stage: "inflammation" }, { t: 6.8, stage: "proliferation" }, { t: 8.4, stage: "remodelling" }

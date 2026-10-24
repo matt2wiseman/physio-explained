@@ -660,6 +660,11 @@ export const MICRO_TISSUES = {
   "vestibular": { title: "Otoconia in the semicircular canal", stages: ["healthy", "dislodged", "canal-migration", "head-movement", "endolymph-drag", "repositioned"] }
 };
 
+/** Optional micro-phase `variant` values per tissue (passed to the tissue module).
+ *  "intra-articular" (ligament/tendon inside a synovial joint, e.g. ACL/PCL): synovial fluid dilutes the clot,
+ *  a synovial layer caps each stump, NO bridging scar forms and the stumps retract. */
+export const MICRO_VARIANTS = { ligament: ["intra-articular"], tendon: ["intra-articular"] };
+
 /** Helper used by the validator and engine. */
 export function listStructureActions(type) {
   return [...GENERIC_ACTIONS, ...(STRUCTURE_TYPES[type] || [])];

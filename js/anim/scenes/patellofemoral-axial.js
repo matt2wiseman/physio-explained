@@ -55,8 +55,8 @@ const TROCH_SURF = [[266, 214], [278, 190], [300, 173], [340, 189], [372, 204], 
 const PAT_SURF = [[318, 169], [340, 177], [372, 190], [408, 205], [438, 195], [466, 188], [489, 181]];
 
 /* ---------- bands ---------- */
-const MPFL = { from: [558, 272], to: [496, 162], bend: 36 };
-const LAT_RET = { from: [246, 274], to: [307, 158], bend: -32 };
+const MPFL = { from: [558, 272], to: [496, 162], bend: 18 };
+const LAT_RET = { from: [246, 274], to: [307, 158], bend: -16 };
 
 export default {
   id: "patellofemoral-axial",

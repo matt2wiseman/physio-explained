@@ -127,7 +127,7 @@ function filmStrip(compact = false) {
 function buildLede(ctx) {
   const input = h("input", {
     type: "search", id: "hm-q", class: "hm-search__input", name: "q", autocomplete: "off", spellcheck: "false",
-    placeholder: "Injury, structure or test: ACL, rotator cuff, Lachman…"
+    placeholder: window.innerWidth < 520 ? "Search injuries or tests" : "Search an injury, structure or test: ACL, rotator cuff, Lachman…"
   });
   const form = h("form", {
     class: "hm-search", role: "search", "aria-label": "Search injuries",

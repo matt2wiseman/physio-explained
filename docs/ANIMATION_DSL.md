@@ -162,7 +162,8 @@ Every phase may have `captions: [{ t, text }]` — each caption shows from its `
   captions: [ ... ]
 }
 ```
-`tissue` ∈ MICRO_TISSUES and every `stage` must be in that tissue's list (any subset, in order). Each stage shows a clearly different, labelled microscopic state (e.g. *inflammation*: platelets → neutrophils → macrophages; *proliferation*: fibroblasts laying down disorganised type III collagen + new capillaries; *remodelling*: aligned type I collagen along the line of load). The engine shows the stage name as a small chip.
+`tissue` ∈ MICRO_TISSUES and every `stage` must be in that tissue's list (any subset, in order).
+Optional `variant` (see MICRO_VARIANTS): `variant: "intra-articular"` for ligament/tendon inside a synovial joint (ACL, PCL, LHB) — the clot is diluted by synovial fluid, a synovial cap forms on each stump and **no bridging scar forms**; use it whenever your captions say the tissue does not heal across the gap. Each stage shows a clearly different, labelled microscopic state (e.g. *inflammation*: platelets → neutrophils → macrophages; *proliferation*: fibroblasts laying down disorganised type III collagen + new capillaries; *remodelling*: aligned type I collagen along the line of load). The engine shows the stage name as a small chip.
 
 ---
 
@@ -182,7 +183,7 @@ js/anim/
   closeup.js          A8    — renders a closeup phase frame from a scene file + actions (all structure types & actions)
   closeup-fx.js       A8    — shared effect primitives (tear, fracture lines, glow, bleed, arrows, labels)
   scenes/<id>.js      A3–A6, A8 — one declarative file per SCENES id
-  micro/index.js      A7    — renderMicro(svgGroup, tissue, stageState)
+  micro/index.js      A7    — renderMicroFrame(g, phase, t, ctx) (alias renderMicro); renderMicroStage() for single-stage previews
   micro/<tissue>.js   A7, A9 — one module per MICRO_TISSUES id
 ```
 

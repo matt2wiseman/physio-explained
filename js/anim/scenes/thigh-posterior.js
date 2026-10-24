@@ -85,9 +85,9 @@ export default {
     semitendinosus: { type: "muscle", z: 7, d: ribbon(ST, [4, 12, 15, 15, 11, 4]), axis: [ST[0], [346, 400]], fibreAngle: 0, label: [336, 210] },
     stDistalTendonDeco: { type: "tendon", z: 7, points: [[349, 294], [346, 340], [343, 380], [347, 412]], width: 5 },
     bicepsFemorisLong: { type: "muscle", z: 8, d: ribbon(BFLH, [4, 13, 18, 19, 16, 11, 5]), axis: [BFLH[0], [424, 412]], fibreAngle: 14, label: [398, 248] },
-    bicepsFemorisTendon: { type: "tendon", z: 9, from: [418, 350], to: [425, 412], width: 7, bend: -2 },
+    bicepsFemorisTendon: { type: "tendon", z: 9, from: [418, 350], to: [425, 412], width: 7, bend: -1 },
     proximalHamstringTendon: { type: "tendon", z: 9, from: [352, 64], to: [358, 100], width: 11 },
-    bflhCentralTendon: { type: "tendon", z: 10, from: [358, 96], to: [384, 196], width: 4, bend: -3 },
+    bflhCentralTendon: { type: "tendon", z: 10, from: [358, 96], to: [384, 196], width: 4, bend: -1.5 },
     ischialBursa: { type: "bursa", z: 11, cx: 345, cy: 66, rx: 11, ry: 7, rotate: -10 },
     gluteusMaximus: {
       type: "muscle", z: 12, ghost: true, label: [404, 40], fibreAngle: 0,

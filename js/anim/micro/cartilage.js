@@ -51,7 +51,7 @@ function render(g, { stage, progress: p }) {
   el("path", { d: `M0,${CALC} L800,${CALC} L800,${BONE_Y + 22 * scl} ${trabEdge(scl)} L0,${BONE_Y + 22 * scl} Z`, fill: col("anat-bone"), stroke: col("anat-bone-edge"), "stroke-width": 1.2 }, g);
   if (scl > 0.05) el("rect", { x: 0, y: CALC, width: 800, height: BONE_Y - CALC + 20 * scl, fill: col("anat-bone-edge", 0.25 * scl) }, g);
   // ---- synovial fluid
-  el("rect", { x: 0, y: 56, width: 800, height: SURF - 56 + 30, fill: mix("anat-fluid", "stage-bg", 0.72) }, g);
+  el("rect", { x: 0, y: 56, width: 800, height: TIDE - 56, fill: mix("anat-fluid", "stage-bg", 0.72) }, g);
   // ---- cartilage matrix (surface → calcified layer)
   const top = []; for (let x = -10; x <= 810; x += 6) top.push([x, surf(x)]);
   const cartD = smoothPath(top) + ` L810,${CALC} L-10,${CALC} Z`;
@@ -111,7 +111,7 @@ function render(g, { stage, progress: p }) {
   // surface (lamina splendens)
   el("path", { d: smoothPath(top), stroke: col("stage-ink", 0.75 - 0.4 * deplete), "stroke-width": 1.8, fill: "none" }, g);
   // fissures & fibrillation clefts
-  if (fissure > 0.01) for (const dx of [-36, -8, 22, 50]) { const x = CX + dx, y0 = surf(x); el("path", { d: `M${f(x)},${f(y0)} l${dx % 3 ? 3 : -3},${f(12 * fissure + (si >= 2 ? 10 : 0))} l-2,${f(10 * fissure)}`, stroke: col("fx-injury", 0.8), "stroke-width": 1.8, fill: "none" }, g); }
+  if (fissure > 0.01) for (const dx of [-36, -8, 22, 50]) { const x = CX + dx, y0 = surf(x); if (crater > 0.05 && Math.abs(dx) < W / 2 + 4) continue; el("path", { d: `M${f(x)},${f(y0)} l${dx % 3 ? 3 : -3},${f(12 * fissure + (si >= 2 ? 10 : 0))} l-2,${f(10 * fissure)}`, stroke: col("fx-injury", 0.8), "stroke-width": 1.8, fill: "none" }, g); }
   if (si === 5) cg.clefts.forEach((c) => {
     const x = c.x, y0 = surf(x), dep = (40 + 90 * c.depth) * k;
     if (Math.abs(x - CX) < W / 2 + 6) return;
@@ -121,8 +121,11 @@ function render(g, { stage, progress: p }) {
   // impactor (opposing surface) during impact
   if (si === 1) {
     const yb = SURF - 4 + compDepth(CX) - (1 - Math.min(1, comp * 3 + (p > 0.35 ? 1 : 0))) * 30;
-    const d = smoothPath(Array.from({ length: 21 }, (_, i) => { const x = 160 + i * 24; return [x, yb - ((x - CX) / 260) ** 2 * 80 - 2]; }));
-    el("path", { d: d + " L640,52 L160,52 Z", fill: mix("anat-cartilage", "stage-bg", 0.5, 0.9), stroke: col("stage-ink", 0.6), "stroke-width": 1.4 }, g);
+    const prof = (x) => Math.max(58, yb - ((x - CX) / 300) ** 2 * 60 - 2);
+    const d = smoothPath(Array.from({ length: 21 }, (_, i) => [i * 40, prof(i * 40)]));
+    el("path", { d: d + " L800,56 L0,56 Z", fill: mix("anat-cartilage", "stage-bg", 0.45), stroke: col("stage-ink", 0.6), "stroke-width": 1.4 }, g);
+    el("path", { d: smoothPath(Array.from({ length: 21 }, (_, i) => [i * 40, Math.max(56, prof(i * 40) - 16)])) + " L800,56 L0,56 Z", fill: col("anat-bone", 0.9) }, g);
+    label(g, 180, 76, "Opposing joint surface", { anchor: "middle", size: 12, color: col("stage-ink-2") });
     arrow(g, CX, 58, CX, 58 + 4 + 20 * Math.min(1, comp * 1.5), { width: 5, head: 12 });
     // fluid droplets squeezed out sideways
     for (let i = 0; i < 8; i++) { const s = i % 2 ? 1 : -1, m = seg(p, 0.1 + i * 0.03, 0.6 + i * 0.03); if (m <= 0 || m >= 1) continue; el("circle", { cx: CX + s * (60 + 150 * m + i * 4), cy: SURF - 6 - 10 * Math.sin(m * Math.PI), r: 3.2, fill: col("anat-fluid", 1 - m * 0.6) }, g); }
