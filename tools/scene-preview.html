@@ -27,7 +27,7 @@ function bandPath(s) {
   if (s.path) return s.path;
   const [x1, y1] = s.from, [x2, y2] = s.to, b = s.bend || 0;
   const mx = (x1 + x2) / 2, my = (y1 + y2) / 2, dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy) || 1;
-  return `M${x1},${y1} Q${mx - (dy / L) * b},${my + (dx / L) * b} ${x2},${y2}`;
+  return `M${x1},${y1} Q${mx - (dy / L) * b * 2},${my + (dx / L) * b * 2} ${x2},${y2}`; // bend = true bow at the midpoint (matches closeup.js)
 }
 function centroid(s, node) { try { const b = node.getBBox(); return [b.x + b.width / 2, b.y + b.height / 2]; } catch { return [0, 0]; } }
 function draw(svg, scene, labels) {

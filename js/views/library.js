@@ -593,7 +593,7 @@ function emptyState() {
     h("p", null, onlyLoc ? "More are added as they pass review. Browse the rest of the library, or find the area on the body map." : "Loosen one of the filters, or start again."),
     sug.length ? h("ul", { class: "lib-sug", role: "list", "aria-label": "Suggestions" }, sug.map(({ c, n }) => h("li", null,
       h("button", { type: "button", class: "lib-sug-btn", on: { click: () => { removeChip(S, c); apply(); } } },
-        h("span", null, "Remove “", c.label, "”"), h("span", { class: "mono muted" }, `${n} ${n === 1 ? "injury" : "injuries"}`))))) : null,
+        h("span", null, "Remove filter: ", c.label), h("span", { class: "mono muted" }, `${n} ${n === 1 ? "injury" : "injuries"}`))))) : null,
     h("div", { class: "cluster" },
       chips.length ? h("button", { type: "button", class: "btn btn--primary", on: { click: clearAll } }, "Clear all filters") : null,
       slug ? h("a", { class: "btn", href: `#search.${slug}` }, `Search the whole site for “${q}”`) : null,

@@ -238,7 +238,7 @@ export default {
     medialMeniscus: { type: "cartilage", d: "M ... Z", axis: [[x1, y1], [x2, y2]], z: 4 },   // axis needed for tear/lesion `at`
     vastusMedialis: { type: "muscle", d: "M ... Z", axis: [[x1, y1], [x2, y2]], fibreAngle: 20, z: 2 },  // axis origin→insertion
     // bands (ligament, tendon, nerve, vessel, fascia, capsule may also be bands)
-    acl: { type: "ligament", from: [x, y], to: [x, y], width: 14, bend: 0, z: 5 },     // straight/curved band; bend = perpendicular bow (px)
+    acl: { type: "ligament", from: [x, y], to: [x, y], width: 14, bend: 0, z: 5 },     // straight/curved band; bend = true perpendicular bow at the midpoint (px), sign: + bows toward (−dy, +dx) of the from→to direction
     sciaticNerve: { type: "nerve", points: [[x, y], [x, y], [x, y]], width: 8, z: 3 }, // polyline centreline (smoothed)
     // ellipses
     prepatellarBursa: { type: "bursa", cx, cy, rx, ry, rotate: 0, z: 6 },

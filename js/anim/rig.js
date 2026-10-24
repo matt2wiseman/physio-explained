@@ -465,7 +465,7 @@ export function buildBody(pose, view = "lateral", opts = {}) {
 }
 
 /* ---------------- hull of circles → SVG path (screen coords, y down) ---------------- */
-export function circlePath(x, y, r) { return `M${fmt(x - r)},${fmt(y)}a${fmt(r)},${fmt(r)} 0 1,0 ${fmt(2 * r)},0a${fmt(r)},${fmt(r)} 0 1,0 ${fmt(-2 * r)},0Z`; }
+export function circlePath(x, y, r) { return `M${fmt(x - r)},${fmt(y)}a${fmt(r)},${fmt(r)} 0 1,1 ${fmt(2 * r)},0a${fmt(r)},${fmt(r)} 0 1,1 ${fmt(-2 * r)},0Z`; }
 export function hullPath(circles) {
   const cs = [];
   for (let i = 0; i < circles.length; i++) {

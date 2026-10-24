@@ -229,7 +229,9 @@ class Stage {
     } else {
       if (slot.placeholder) { this.fresh(slot); slot.placeholder = false; }
       try {
-        const raw = fn(slot.g, entry.phase, t, this.ctx);
+        // moi: tell A2 the real camera scale (stage px per cm) so force labels render at a constant ≈ 14 px
+        const ctx = entry.type === "moi" ? { ...this.ctx, pxPerCm: this.moiCamera(entry).at(t).s } : this.ctx;
+        const raw = fn(slot.g, entry.phase, t, ctx);
         if (raw && typeof raw.then === "function") { this.warnOnce(`async${entry.index}`, `${entry.type} renderer returned a Promise — frames must render synchronously`); res = {}; }
         else res = entry.type === "moi" ? normalizeMoiResult(raw, slot.g) : raw || {};
         if (raw && raw.ready === false) {

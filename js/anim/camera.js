@@ -16,10 +16,14 @@
 import { clamp, lerp, ease, smoothstep, locate } from "./timeline.js";
 
 export const STAGE_W = 800, STAGE_H = 450;
-/** Area the MOI actors are framed into: clear of the chapter chip (top-left) and of overlay captions (bottom). */
-export const SAFE = { x: 48, y: 40, w: 704, h: 306 };
-/** Safe area when captions are docked below the stage (narrow players): only the chip needs room. */
-export const SAFE_DOCKED = { x: 40, y: 44, w: 720, h: 374 };
+/**
+ * Area the MOI actors' union bbox is framed into. The bbox bottom is the ground (y = 0), so the ground line
+ * lands near the area's bottom edge: just above a one-line overlay caption (≈ y 396–422), leaving the floor
+ * visible below it. Result: a standing figure fills ≈ 75 % of the stage height.
+ */
+export const SAFE = { x: 40, y: 30, w: 720, h: 362 };
+/** Captions docked below the stage (narrow players): the ground can sit lower. */
+export const SAFE_DOCKED = { x: 40, y: 30, w: 720, h: 384 };
 export const ZOOM_FACTOR = 6;
 export const ZOOM_FADE_START = 0.6;     // cross-fade over the last 40 % of the zoom phase
 export const DISSOLVE = 0.45;           // s of playback: soft dissolve between other phases (cut under reduced motion)
@@ -58,7 +62,7 @@ const contains = (b, [x, y], pad = 4) => x >= b.x - pad && x <= b.x + b.w + pad 
 const flipBox = (b) => ({ x: b.x, y: -(b.y + b.h), w: b.w, h: b.h });
 
 /** Camera that fits a world box (plus margin) into `area`, centred. */
-export function fitBox(box, area = SAFE, { margin = 0.06, minW = 110, minH = 150, maxScale = 12 } = {}) {
+export function fitBox(box, area = SAFE, { margin = 0.025, minW = 110, minH = 150, maxScale = 12 } = {}) {
   const w = Math.max(minW, box.w * (1 + 2 * margin)), h = Math.max(minH, box.h * (1 + 2 * margin));
   const s = Math.min(maxScale, area.w / w, area.h / h);
   return { s, cx: box.x + box.w / 2, cy: box.y + box.h / 2, ox: area.x + area.w / 2, oy: area.y + area.h / 2 };

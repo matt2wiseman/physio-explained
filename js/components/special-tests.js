@@ -88,7 +88,7 @@ export function specialTestsTable(tests, refs, opts = {}) {
 
   const cols = [
     ["test", "Test"], ["proc", "How to perform"], ["pos", "Positive finding"],
-    ["sn", "Sn"], ["sp", "Sp"], ["lrp", "LR+"], ["lrn", "LR−"], ["src", "Sources"]
+    ["sn", "Sn"], ["sp", "Sp"], ["lrp", "LR+"], ["lrn", "LR−"], ["src", "Refs"]
   ];
   const colTitle = { sn: "Sensitivity", sp: "Specificity", lrp: "Positive likelihood ratio", lrn: "Negative likelihood ratio" };
 

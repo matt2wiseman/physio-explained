@@ -147,7 +147,8 @@
 .xp__fig { aspect-ratio: 4 / 3; background: var(--stage-bg); display: grid; place-items: stretch; overflow: hidden; border-bottom: 1px solid var(--line); }
 .xp__svg { display: block; width: 100%; height: 100%; }
 .xp__ph { display: grid; place-content: center; justify-items: center; gap: 6px; color: var(--stage-ink-2); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.75; }
-.xp__fig--none { background: color-mix(in srgb, var(--stage-bg) 70%, var(--surface-2)); }
+.xp__fig--none { background: var(--stage-bg-2); }
+.xp__fig--none .xp__ph { opacity: 0.5; }
 .xp__card-body { display: grid; gap: var(--sp-2); padding: var(--sp-3) var(--sp-4) var(--sp-4); align-content: start; }
 .xp__card-top { display: flex; align-items: baseline; gap: 10px; }
 .xp__idx { font-size: var(--fs-xs); color: var(--tissue); font-weight: 600; }
@@ -182,12 +183,10 @@
 .st__wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .st__table { width: 100%; min-width: 0; table-layout: fixed; font-size: var(--fs-sm); border-collapse: collapse; }
 .st__th { padding: var(--sp-3) var(--sp-3); }
-.st__th--test { width: 17%; padding-left: var(--sp-4); }
-.st__th--proc { width: 24%; }
-.st__th--pos { width: 20%; }
-.st__th--sn, .st__th--sp { width: 118px; }
-.st__th--lrp, .st__th--lrn { width: 82px; }
-.st__th--src { width: 70px; }
+.st__th--test { padding-left: var(--sp-4); }
+.st__th--sn, .st__th--sp { width: 122px; }
+.st__th--lrp, .st__th--lrn { width: 62px; }
+.st__th--src { width: 56px; }
 .st__td { padding: var(--sp-3); vertical-align: top; line-height: 1.5; }
 .st__td--test { padding-left: var(--sp-4); }
 .st__row:last-child .st__td { border-bottom: 0; }
@@ -214,7 +213,7 @@
 .st__note abbr { text-decoration: none; font-weight: 600; color: var(--ink-2); }
 
 /* card layout when the container is not wide enough for eight columns */
-@container (max-width: 980px) {
+@container (max-width: 860px) {
   .st__wrap { border: 0; background: none; overflow: visible; }
   .st__table, .st__table tbody { display: block; }
   .st__table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
