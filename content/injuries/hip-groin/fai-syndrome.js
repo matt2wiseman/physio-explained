@@ -1,0 +1,432 @@
+export default {
+  id: "fai-syndrome",
+  name: "Femoroacetabular impingement (FAI) syndrome",
+  shortName: "FAI syndrome",
+  aka: ["FAI", "femoroacetabular impingement", "hip impingement", "cam impingement", "pincer impingement", "cam morphology", "FAIS"],
+  region: "hip-groin",
+  tissues: ["cartilage", "labrum", "bone"],
+  onset: "gradual",
+  mechanismType: ["overuse", "insidious"],
+  populations: ["young and middle-aged active adults", "male adolescent and young adult athletes", "football and hockey players", "dancers and martial artists"],
+  sports: ["soccer", "australian football", "ice hockey", "field hockey", "rugby", "martial arts", "dance", "golf"],
+  urgency: "routine",
+  summary: "Motion-related hip or groin pain caused by premature contact between the femur and acetabulum, from cam and/or pincer morphology, with positive clinical signs and imaging findings.",
+  keyFacts: [
+    { label: "Typical recovery", value: "At least 3 months of exercise-based care; 6–12 months after arthroscopy" },
+    { label: "Key test", value: "FADIR: high sensitivity (≈94–99%), so a negative test helps rule out; it cannot confirm" },
+    { label: "Imaging", value: "AP pelvis + lateral (e.g. Dunn 45°) radiographs first; MRI/MRA only if it will change management" },
+    { label: "Peak age", value: "Late adolescence to 40s; cam morphology forms before the growth plate closes" },
+    { label: "Diagnosis", value: "Triad: symptoms + clinical signs + imaging (Warwick Agreement)" },
+    { label: "Management", value: "Physio-led exercise first line; arthroscopy gives a modest extra short-term benefit in selected patients" }
+  ],
+  overview: "Femoroacetabular impingement (FAI) syndrome is a motion-related clinical disorder of the hip. It is defined by a triad of symptoms (usually groin pain with hip flexion activities), clinical signs and imaging evidence of cam and/or pincer morphology [r1]. Cam and pincer morphology alone are not a diagnosis: they are common in pain-free people, so the word 'syndrome' was adopted to keep symptoms central [r1,r2]. Repeated premature contact between the femoral head–neck junction and the acetabular rim damages the labrum and acetabular cartilage and is a recognised pathway to early hip osteoarthritis [r3].\n\nManagement starts with education, activity modification and at least 3 months of physiotherapist-led exercise. Arthroscopic reshaping of the hip can be considered for persistent symptoms. In two large UK trials arthroscopy produced a statistically and clinically meaningful but modest extra improvement in hip-related quality of life over physiotherapist-led care at 8–12 months [r4,r5]. International consensus recommends exercise-based treatment, shared decision-making and physiotherapist-led rehabilitation after surgery [r6].",
+
+  epidemiology: {
+    text: "Cam and pincer morphology are very common without symptoms. A systematic review of 2,114 asymptomatic hips found cam morphology in 37% (54.8% of athletes vs 23.1% of the general population), pincer morphology in 67% and labral lesions in 68.1% of hips imaged with MRI [r7]. Cam morphology is present in almost two of every three football players [r8]. It develops during adolescence: in academy footballers it formed gradually during skeletal maturation [r9], and 82.7% of new cam morphology developed while the proximal femoral growth plate was still open, from about 12–13 years until closure around 18 years [r10]. Cam morphology predicts osteoarthritis: an alpha angle >60° and >83° gave adjusted odds ratios of 3.67 and 9.66 for end-stage hip osteoarthritis within 5 years [r11]. FAI syndrome itself (symptoms plus signs plus morphology) is far less common than the morphology, and true population incidence is unknown.",
+    riskFactors: {
+      intrinsic: [
+        "Cam morphology (aspherical femoral head–neck junction), especially larger alpha angles [r8,r11]",
+        "Pincer morphology (acetabular overcoverage or retroversion) [r12]",
+        "Male sex for cam morphology; female sex for pincer-dominant presentations",
+        "Reduced hip internal rotation, which accompanies larger cam morphology [r11]",
+        "Hip muscle weakness and poor dynamic single-leg control (modifiable) [r13]"
+      ],
+      extrinsic: [
+        "High-volume, high-impact sport during adolescence while the growth plate is open (football, hockey, basketball) [r9,r10]",
+        "Sports and tasks demanding repeated deep flexion with rotation (goalkeeping, hockey, martial arts, squatting work)",
+        "Rapid increases in training load or deep-flexion strength work"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "FAI syndrome is a motion-driven overuse condition rather than a single injury. During hip flexion, especially when combined with adduction and internal rotation, a cam bump at the anterosuperior head–neck junction is levered into the acetabulum, or a pincer rim contacts the femoral neck early [r3,r12]. Repeated contact shears the acetabular cartilage away from the labrum (cam) or crushes the labrum between rim and neck (pincer). Symptoms appear when cumulative load exceeds the capacity of the chondrolabral tissues.",
+    sequence: [
+      "Cam morphology develops during adolescence, often in high-load sport, while the proximal femoral growth plate is open [r9,r10].",
+      "The athlete repeatedly flexes the hip beyond about 90°, often with adduction and internal rotation (squatting, kicking, cutting, sitting low).",
+      "The aspherical head–neck junction enters the acetabulum (cam 'inclusion'), or the femoral neck abuts an overcovering rim (pincer 'abutment') [r12].",
+      "Cam: shear forces lift the anterosuperior acetabular cartilage off the bone and separate it from the labrum at the chondrolabral junction [r12].",
+      "Pincer: the labrum is crushed between rim and neck and degenerates, with a narrow strip of circumferential cartilage damage and contre-coup posteroinferior wear [r12].",
+      "Synovitis and pain develop; the athlete limits flexion and rotation and compensates through the pelvis and lumbar spine.",
+      "Without load modification, chondrolabral damage accumulates and can progress to early osteoarthritis [r3,r11]."
+    ],
+    variants: [
+      { name: "Cam type", description: "Aspherical femoral head–neck junction. Most common in young male athletes. Produces outside-in acetabular cartilage delamination with chondrolabral separation." },
+      { name: "Pincer type", description: "Global or focal acetabular overcoverage (including retroversion). Labral crushing and degeneration, sometimes ossification, with contre-coup cartilage damage." },
+      { name: "Mixed type", description: "Cam and pincer morphology together. Isolated forms are less common than mixed morphology in surgical series [r12]." },
+      { name: "Acute exacerbation", description: "A single forceful end-range movement (e.g. a slide tackle or deep lunge) may provoke a symptomatic labral tear in a hip with pre-existing morphology." }
+    ]
+  },
+
+  anatomy: {
+    text: "The hip is a deep ball-and-socket joint. Its stability comes from bony congruence, a strong capsule (iliofemoral, pubofemoral and ischiofemoral ligaments) and the fibrocartilaginous labrum, which deepens the socket and seals the joint. Normal clearance between the femoral head–neck junction and the acetabular rim allows about 110–120° of flexion and 30–40° of internal rotation at 90° flexion. A cam bump (loss of head–neck offset) or an overcovering rim reduces this clearance, so contact occurs earlier in the range. The anterosuperior quadrant of the acetabulum is the contact zone in flexion and internal rotation and is where most damage occurs.",
+    structures: [
+      { name: "Femoral head–neck junction", role: "Provides offset so the neck clears the rim; a cam bump here causes impingement" },
+      { name: "Acetabular rim", role: "Bony socket margin; excessive or retroverted cover produces pincer impingement" },
+      { name: "Acetabular labrum", role: "Deepens the socket, creates a suction seal and distributes load; innervated, so it can be a pain source" },
+      { name: "Acetabular articular cartilage", role: "Load-bearing surface; anterosuperior cartilage is sheared off the bone in cam impingement" },
+      { name: "Hip capsule and synovium", role: "Passive stability; synovitis contributes to pain and stiffness" },
+      { name: "Iliopsoas", role: "Hip flexor and anterior dynamic stabiliser; often guarded and painful in anterior hip pain" },
+      { name: "Gluteus medius/minimus and deep rotators", role: "Control femoral adduction and rotation and the pelvis in single-leg tasks" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "In cam impingement the non-spherical head is forced into the socket during flexion. The resulting shear separates the anterosuperior acetabular cartilage from the subchondral bone and from the labrum, often leaving an intact-looking labrum next to a delaminated 'carpet' of cartilage [r12]. In pincer impingement the labrum is the first structure to fail. It is crushed repeatedly between the rim and the femoral neck, degenerates and may ossify; cartilage damage is a narrow circumferential strip, sometimes with posteroinferior contre-coup wear [r12]. Both patterns are motion-driven rather than axial-load driven [r3].\n\nThe tissues fail by fatigue: each impingement event is small, but repeated high-flexion loading exceeds the chondrolabral tissues' capacity to repair. Larger cam morphology is associated with more MRI-defined cartilage defects and labral tears in football players with and without pain [r8]. Pain arises from the innervated labrum, synovitis and subchondral bone. Damage can progress to osteoarthritis, particularly with a severe cam and reduced internal rotation [r11]. Imaging findings correlate poorly with symptoms, so tissue damage must always be interpreted alongside the clinical picture [r7].",
+    structures: [
+      { name: "Acetabular labrum", effect: "Chondrolabral separation (cam) or intrasubstance degeneration, crushing and ossification (pincer) [r12]" },
+      { name: "Anterosuperior acetabular cartilage", effect: "Delamination and full-thickness defects from outside-in shear; marker of established cam damage [r12]" },
+      { name: "Femoral head–neck junction", effect: "Cam bump; may show a herniation pit or reactive bone change at the contact site" },
+      { name: "Synovium and capsule", effect: "Reactive synovitis and effusion; capsular stiffness with restricted flexion and internal rotation" },
+      { name: "Posteroinferior acetabulum", effect: "Contre-coup cartilage wear from leverage in pincer impingement [r12]" }
+    ],
+    muscles: [
+      { name: "Hip abductors, adductors, flexors and external rotators", effect: "Reduced strength compared with pain-free controls; a key rehabilitation target [r13]" },
+      { name: "Iliopsoas", effect: "Protective guarding and tenderness; can amplify anterior groin pain and limit hip extension" },
+      { name: "Gluteus maximus and deep rotators", effect: "Altered recruitment and reduced dynamic single-leg balance, giving poorer pelvic and femoral control [r13]" }
+    ],
+    cellular: [
+      { phase: "Repetitive impaction and shear", timing: "Each provocative movement", description: "Contact stresses concentrate at the chondrolabral junction. Chondrocytes sense excessive shear and upregulate catabolic enzymes." },
+      { phase: "Chondrocyte death and matrix loss", timing: "Months", description: "Proteoglycan is lost from the superficial and transitional zones, the collagen network weakens and cartilage softens and delaminates from bone." },
+      { phase: "Synovitis", timing: "Months, fluctuating with load", description: "Wear particles and matrix fragments activate synovial macrophages, releasing cytokines that sensitise nociceptors and further degrade cartilage." },
+      { phase: "Labral degeneration", timing: "Months to years", description: "Fibrocartilage fibres disorganise, mucoid change develops and the labrum may calcify or ossify (especially with pincer morphology) [r12]." },
+      { phase: "Early osteoarthritis", timing: "Years to decades", description: "Joint-space narrowing, subchondral sclerosis and osteophytes develop in a subset, most strongly with severe cam morphology and reduced internal rotation [r11]." }
+    ],
+    systems: [
+      { system: "Nervous system", effect: "Persistent groin pain sensitises peripheral and central nociceptive pathways. Dynamic single-leg balance is reduced, which suggests altered sensorimotor control [r13]." },
+      { system: "Immune / inflammatory", effect: "Low-grade synovitis drives pain flares after high-flexion loading and contributes to cartilage catabolism." },
+      { system: "Musculoskeletal chain", effect: "Lost hip flexion and rotation is compensated by posterior pelvic tilt and lumbar flexion, which can overload the lumbar spine, pubic symphysis and adductors." },
+      { system: "Psychological", effect: "Long symptom duration, uncertainty about imaging findings and fear of 'damaging' the hip reduce activity. Expectations and shared decision-making shape outcomes [r6]." },
+      { system: "Long-term joint health", effect: "Cam morphology is a modifiable-at-growth risk factor for hip osteoarthritis [r11]. Whether treatment prevents osteoarthritis is unknown [r1]." }
+    ]
+  },
+
+  grading: {
+    system: "Morphological type (Warwick Agreement terminology)",
+    grades: [
+      { grade: "Cam", description: "Aspherical femoral head or reduced head–neck offset, commonly quantified by an alpha angle ≥60° on radiographs [r10].", prognosis: "Larger cam morphology is linked to cartilage damage and osteoarthritis [r8,r11]" },
+      { grade: "Pincer", description: "Global or focal acetabular overcoverage, including acetabular retroversion. Definitions vary widely between studies [r7].", prognosis: "Labral degeneration dominates; link with osteoarthritis is less consistent" },
+      { grade: "Mixed", description: "Both cam and pincer morphology present.", prognosis: "Treated according to the dominant symptomatic mechanism" }
+    ]
+  },
+
+  timeframes: {
+    summary: "This is a load-capacity problem, not a healing injury. Damaged cartilage and labrum have limited capacity to heal, so recovery reflects settling of synovitis and sensitisation and gains in strength and movement control. Exercise-based care needs at least 3 months [r6].",
+    healing: [
+      { phase: "Symptom settling and load modification", startDay: 0, endDay: 42, description: "Reduce provocative deep flexion and rotation; synovitis and irritability settle" },
+      { phase: "Capacity building", startDay: 28, endDay: 120, description: "Progressive hip and trunk strengthening and movement control; minimum 3 months of exercise [r6]" },
+      { phase: "Performance and return to sport", startDay: 90, endDay: 240, description: "Power, change of direction and sport-specific deep-flexion tasks" },
+      { phase: "Post-arthroscopy tissue recovery (if operated)", startDay: 0, endDay: 180, description: "Capsule, labral repair and bone remodel; follow the surgeon's protocol" }
+    ],
+    milestones: [
+      { label: "Daily activities and sitting comfortable", day: 42 },
+      { label: "Hip strength ≥80% of the other side", day: 90, note: "Measured with hand-held dynamometry" },
+      { label: "Pain-free running and change of direction", day: 120 },
+      { label: "Full training (non-surgical pathway)", day: 150, note: "Typical clinical range 3–6 months" },
+      { label: "Return to sport after arthroscopy", day: 210, note: "Typical clinical range 4–9 months, criteria-based" }
+    ],
+    returnToSport: "Non-surgical: usually 3–6 months, but many athletes keep training with load modification throughout. After arthroscopy: typically 4–9 months. Both are criteria-based, not time-based."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Gradual-onset groin or anterior hip pain, sometimes lateral hip or buttock pain; often shown with a 'C-sign' grip around the hip",
+      "Pain with prolonged sitting, deep squatting, getting in and out of a car, putting on shoes and socks",
+      "Pain with kicking, cutting, pivoting or sprinting, and stiffness after activity",
+      "Clicking, catching or a sense of locking (suggests associated labral pathology)",
+      "Reduced performance and sport participation"
+    ],
+    signs: [
+      "Painful, restricted hip flexion and internal rotation at 90° flexion compared with the other side",
+      "Reproduction of familiar groin pain with the FADIR test",
+      "Reduced hip abductor, adductor, flexor and external rotator strength [r13]",
+      "Poor dynamic single-leg control (pelvic drop, femoral adduction) [r13]",
+      "Reduced bent-knee fall-out or FABER range in some patients [r14]"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Location of pain (groin, C-sign) and aggravating positions: deep flexion, sitting, rotation, kicking, cutting",
+      "Onset, duration and training-load history, including adolescent sport exposure",
+      "Mechanical symptoms (clicking, catching, locking, giving way)",
+      "Screen for serious pathology: night or rest pain, fever, weight loss, history of cancer, corticosteroid use, and bone stress risk (RED-S, rapid load increase) [r2]",
+      "Competing sources: lumbar spine, adductor, iliopsoas, inguinal and pubic-related groin pain",
+      "Goals, sport demands, expectations of surgery and previous treatment, including the dose of any previous exercise program"
+    ],
+    observation: ["Gait: often normal; antalgic or reduced hip extension when irritable", "Single-leg stance and squat: pelvic drop, trunk lean, femoral adduction", "Squat depth limited, with early posterior pelvic tilt"],
+    palpation: ["Usually little focal tenderness; deep anterior hip pain on palpation is non-specific", "Palpate adductor longus origin, iliopsoas, inguinal canal and pubic symphysis to identify competing groin-pain entities"],
+    rangeOfMotion: [
+      "Hip flexion and internal rotation at 90° flexion (goniometer or inclinometer) compared with the other side; symptomatic players with cam morphology have lower internal rotation than pain-free players with cam [r14]",
+      "Bent-knee fall-out and FABER distance",
+      "Hip extension (prone or modified Thomas test) for iliopsoas or capsular restriction",
+      "Lumbar screen to exclude referred pain"
+    ],
+    strength: [
+      "Hand-held dynamometry of hip abduction, adduction, flexion, extension and external rotation; express as limb symmetry and torque relative to body mass [r13]",
+      "Adductor squeeze test (pain and force)",
+      "Trunk endurance (side plank)"
+    ],
+    neuro: [],
+    functional: [
+      "Single-leg squat and step-down quality",
+      "Star Excursion or Y-balance test for dynamic single-leg balance [r13]",
+      "Deep squat, sit-to-stand from a low seat and hop tests in athletes"
+    ],
+    specialTests: [
+      { name: "FADIR (flexion–adduction–internal rotation) test", purpose: "Screen for intra-articular hip pain including FAI syndrome", procedure: "Patient supine. Flex the hip to 90°, then passively adduct and internally rotate it.", positive: "Reproduction of the patient's familiar groin or anterior hip pain.", sensitivity: "Pooled 0.94 (95% CI 0.90–0.97) to 0.99 (95% CI 0.98–1.00)", refs: ["r15"] },
+      { name: "Flexion–internal rotation test", purpose: "Screen for intra-articular hip pain", procedure: "Patient supine. Flex the hip to 90° and apply internal rotation.", positive: "Reproduction of familiar groin pain.", sensitivity: "Pooled 0.96 (95% CI 0.81–0.99)", refs: ["r15"] },
+      { name: "FABER (flexion–abduction–external rotation) test", purpose: "Hip or sacroiliac pain provocation and range (FABER distance)", procedure: "Patient supine with the heel resting on the opposite knee. Lower the flexed knee toward the couch and measure the distance from couch to knee.", positive: "Familiar groin pain or a greater FABER distance than the other side.", refs: [] },
+      { name: "Log roll", purpose: "Low-load test for intra-articular irritability", procedure: "Patient supine with legs straight. Passively roll the thigh into internal and external rotation.", positive: "Pain or guarding suggests a highly irritable joint (consider synovitis, fracture or infection).", refs: [] }
+    ],
+    clinicalRules: [{ name: "Warwick Agreement diagnostic triad", description: "Diagnose FAI syndrome only when all three are present: motion- or position-related hip or groin pain; clinical signs (e.g. restricted internal rotation in flexion, positive FADIR); and imaging showing cam and/or pincer morphology [r1]. A negative FADIR helps rule out hip-related pain [r2]." }],
+    outcomeMeasures: [
+      { name: "iHOT-33 (International Hip Outcome Tool)", use: "Hip-related quality of life in young active adults; primary outcome in FASHIoN [r4]" },
+      { name: "HAGOS (Copenhagen Hip and Groin Outcome Score)", use: "Six subscales including sport/recreation and participation; widely used in athletes" },
+      { name: "HOS (Hip Outcome Score) ADL and Sport subscales", use: "Function; primary outcome in FAIT [r5]" },
+      { name: "Hand-held dynamometry", use: "Objective hip strength monitoring across rehabilitation [r6]" }
+    ],
+    imaging: [
+      { modality: "Plain radiographs (AP pelvis and lateral femoral head–neck view, e.g. Dunn 45°)", indication: "Initial imaging of choice when FAI syndrome is suspected [r2]", findings: "Cam morphology (alpha angle ≥60°, loss of offset), pincer signs (crossover, posterior wall sign, high lateral centre-edge angle), dysplasia, joint-space width" },
+      { modality: "MRI or MR arthrography", indication: "Only when more detail will change management, e.g. surgical planning, or when another diagnosis (stress fracture, AVN) must be excluded [r2]", findings: "Labral tears, cartilage defects, synovitis, bone marrow oedema; labral changes are common in pain-free hips [r7]" },
+      { modality: "CT (low-dose, 3D)", indication: "Pre-operative planning of bony resection", findings: "Three-dimensional cam and pincer morphology and femoral version" }
+    ]
+  },
+
+  differentials: [
+    { name: "Acetabular labral tear (without distinct bony morphology)", id: "hip-labral-tear", distinguishing: "Similar symptoms and FADIR response, but imaging shows no cam or pincer morphology. Mechanical symptoms are more prominent." },
+    { name: "Femoral neck stress fracture", id: "femoral-neck-stress-fracture", distinguishing: "Endurance runner or recruit with a recent load increase. Pain with weight-bearing and hopping, and night pain. MRI is needed; this must not be missed." },
+    { name: "Adductor-related groin pain", id: "adductor-related-groin-pain", distinguishing: "Pain and tenderness at the adductor longus origin, reproduced by resisted adduction. Hip range is often normal." },
+    { name: "Iliopsoas-related groin pain", id: "iliopsoas-related-groin-pain", distinguishing: "Pain with resisted hip flexion and iliopsoas stretch. Tender iliopsoas below the inguinal ligament." },
+    { name: "Inguinal-related groin pain", id: "inguinal-related-groin-pain", distinguishing: "Pain at the inguinal canal, worse with coughing, sit-ups or resisted abdominal testing. Hip examination unremarkable." },
+    { name: "Slipped capital femoral epiphysis", id: "scfe", distinguishing: "Adolescent with a limp, obligatory external rotation on hip flexion and pain that may present at the knee. Urgent radiographs." },
+    { name: "Acetabular dysplasia / hip instability", distinguishing: "Undercovered femoral head (low lateral centre-edge angle), apprehension in extension and external rotation, often hypermobile. Bony reshaping (osteotomy), not rim resection, is considered surgically." },
+    { name: "Lumbar referred pain", id: "lumbar-disc-herniation", distinguishing: "Lumbar movement reproduces symptoms, with neural signs or dermatomal distribution. Hip examination does not reproduce the pain." }
+  ],
+  redFlags: [
+    "Hip or groin pain with weight-bearing, hopping or at night in a runner or military recruit, especially with RED-S indicators: suspect a femoral neck stress fracture. Stop impact loading and arrange urgent MRI.",
+    "An adolescent with a limp, hip, thigh or knee pain and obligatory external rotation as the hip flexes: suspect SCFE. Refer for same-day radiographs and orthopaedic review.",
+    "Fever, a hot, irritable hip with severe pain on the log roll, or inability to weight-bear: suspect septic arthritis. Refer to emergency.",
+    "Unremitting night or rest pain, unexplained weight loss or a history of cancer: suspect neoplasm. Arrange urgent medical review and imaging.",
+    "Long-term corticosteroid use, heavy alcohol use or sickle cell disease with progressive groin pain: consider avascular necrosis of the femoral head and arrange MRI."
+  ],
+
+  management: {
+    principles: "Diagnose carefully using the full triad, because cam and pincer morphology and labral changes are common in pain-free people [r1,r7]. Explain the condition as a mismatch between hip shape, load and tissue capacity, not as a 'worn-out' joint. First-line care is education, modification of provocative deep-flexion and rotation loads, and a progressive physiotherapist-led exercise program lasting at least 3 months, with maintenance of physical activity and sport where possible [r6].\n\nIf symptoms persist despite a good-quality program, discuss arthroscopic reshaping using shared decision-making. Arthroscopy outperformed physiotherapist-led care by a modest but clinically meaningful margin at 8–12 months [r4,r5,r17] and at 3 years for function, without a difference in radiographic osteoarthritis [r18]. One military trial found no difference at 2 years and frequent crossover [r16]. Both pathways improve most patients, surgery has a small risk of serious complications, and rehabilitation after surgery is essential [r4,r6].",
+    medical: [
+      { name: "Hip arthroscopy (femoroplasty, rim trimming, labral repair)", description: "Arthroscopic resection of cam and/or pincer morphology with treatment of the labrum. Indicated for persistent FAI syndrome despite adequate conservative care, without established osteoarthritis or dysplasia. Superior to physiotherapist-led care on iHOT-33 at 12 months (mean difference 6.8, 95% CI 1.7–12.0; MCID 6.1) [r4] and on HOS ADL at 8 months (10.0 points, 95% CI 6.4–13.6) [r5].", evidence: "moderate", recommendation: "consider", refs: ["r4", "r5", "r16", "r17", "r18"] },
+      { name: "Image-guided intra-articular anaesthetic ± corticosteroid injection", description: "Used mainly diagnostically to confirm that pain is intra-articular before surgery. Any therapeutic effect is short-lived.", evidence: "expert-opinion", recommendation: "consider", refs: [] },
+      { name: "Simple analgesia and short courses of NSAIDs", description: "To settle a flare of synovitic pain so the patient can exercise. Not a long-term solution.", evidence: "expert-opinion", recommendation: "consider", refs: [] },
+      { name: "Arthroscopy in established osteoarthritis or dysplasia", description: "Rim trimming in a dysplastic hip worsens instability, and arthroscopy in established osteoarthritis has poor outcomes. These patients were excluded from the trials that support surgery [r5].", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] }
+    ],
+    physio: [
+      { name: "Progressive exercise-based treatment for at least 3 months", description: "Individualised, supervised and progressive program targeting hip and trunk strength, movement control and function, combined with education. Consensus recommends at least 3 months before judging response [r6]. Personalised hip therapy of this kind was the comparator in FASHIoN and improved iHOT-33 by about 14 points [r4].", evidence: "moderate", recommendation: "recommended", refs: ["r4", "r6"] },
+      { name: "Targeted hip strengthening (versus stretching)", description: "In PhysioFIRST (n=154), targeted strengthening and standardised stretching improved iHOT-33 by similar, clinically meaningful amounts at 6 months (between-group difference 0.2 points). Strengthening produced more patients rating their pain as improved (72% vs 52%) and greater strength gains [r19].", evidence: "moderate", recommendation: "recommended", refs: ["r19"] },
+      { name: "Education, activity modification and shared decision-making", description: "Explain hip morphology versus symptoms, reduce sustained or repeated end-range flexion and rotation, adjust seating and training, and discuss expectations of each pathway [r1,r6].", evidence: "limited", recommendation: "recommended", refs: ["r1", "r6"] },
+      { name: "Rehabilitation after hip arthroscopy", description: "Physiotherapist-led, staged rehabilitation after surgery, following the surgeon's restrictions on weight-bearing and range [r6].", evidence: "limited", recommendation: "recommended", refs: ["r6"] },
+      { name: "Manual therapy and soft-tissue techniques", description: "May be used as a short-term adjunct to reduce pain and improve exercise tolerance. Their effect has not been established in FAI syndrome [r6].", evidence: "very-limited", recommendation: "consider", refs: ["r6"] },
+      { name: "Aggressive stretching into flexion, adduction and internal rotation", description: "Forcing the hip into the impingement position repeatedly loads the damaged chondrolabral junction and usually aggravates symptoms. Stretching should not be the core of treatment [r19].", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] },
+      { name: "Passive electrotherapy as stand-alone treatment", description: "Ultrasound, laser or TENS without active exercise do not address capacity and are not part of any effective trial protocol.", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] }
+    ],
+    education: [
+      "Hip shape differences such as a cam are common and often painless. Pain comes from how often and how far the hip is loaded into the impingement position, combined with tissue capacity.",
+      "You can usually keep training. We will adjust deep-flexion and rotation loads rather than stop activity.",
+      "Give exercise at least 3 months. Both exercise and surgery help most people, and surgery is a choice to discuss if a good program has not worked.",
+      "Avoid sitting low for long periods, deep squats to end range and repeated hard stretching into the painful position while symptoms settle.",
+      "Imaging findings such as a labral tear are common in people without pain and do not by themselves mean you need surgery."
+    ]
+  },
+
+  rehab: {
+    overview: "Progress by symptom response and objective criteria rather than time [r6]. Use a pain-monitoring approach: exercise and training are acceptable if pain stays ≤3/10 during activity and settles within 24 hours. Early stages work in pain-free mid-range of hip flexion and rotation, then progressively expose the hip to greater depth, load and speed. Strength is measured with hand-held dynamometry at each stage. After arthroscopy use the same stages, but follow the surgeon's protocol for weight-bearing, range limits (often avoiding deep flexion and external rotation early) and capsular or labral repair precautions.",
+    stages: [
+      {
+        name: "Settle & educate",
+        timeframe: "Weeks 0–4",
+        goals: ["Reduce irritability and synovitis", "Understand the condition and the load-modification plan", "Maintain general fitness and sport participation where tolerated", "Activate hip and trunk muscles in pain-free range"],
+        precautions: ["Avoid sustained or repeated end-range flexion with adduction and internal rotation", "No forced stretching into the impingement position", "Screen for red flags if pain is constant, nocturnal or weight-bearing"],
+        exercises: [
+          { name: "Double-leg glute bridge", dosage: "3 × 12–15, daily", cues: "Posteriorly tilt the pelvis slightly, then drive through the heels", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } },
+          { name: "Side-lying clamshell (mid-range)", dosage: "3 × 15 each side, progress with band", cues: "Keep the pelvis stacked; move only through comfortable range", figure: { pose: "ex-clamshell", view: "lateral", props: ["mat", "resistance-band"] } },
+          { name: "Supine adductor squeeze (ball between knees)", dosage: "5 × 10 s holds at 50–70% effort, daily", cues: "Squeeze without groin pain above 3/10" },
+          { name: "Dead bug", dosage: "3 × 8 each side", cues: "Keep the low back gently on the floor; hip flexion stays below 90°", figure: { pose: "ex-dead-bug", view: "lateral", props: ["mat"] } },
+          { name: "Cycling with a high seat or brisk walking", dosage: "20–30 min, 3–5×/week", cues: "Raise the saddle so the hip avoids deep flexion" }
+        ],
+        progressionCriteria: ["Pain ≤3/10 during daily activity and settling within 24 h", "Able to sit for 30 min with tolerable symptoms", "Exercises completed without a next-day flare"]
+      },
+      {
+        name: "Build hip strength & control",
+        timeframe: "Weeks 4–12",
+        goals: ["Restore hip abductor, adductor, extensor, flexor and rotator strength", "Single-leg control without pelvic drop or femoral adduction", "Introduce controlled deeper flexion within symptom limits"],
+        precautions: ["Squat depth to a box set just above the provocative depth, lowering it gradually", "Monitor 24-hour pain response after each progression"],
+        exercises: [
+          { name: "Single-leg bridge", dosage: "3 × 8–12 each side, 3×/week", cues: "Level pelvis; feel the gluteals rather than the hamstrings", figure: { pose: "ex-single-leg-bridge", view: "lateral", props: ["mat"] } },
+          { name: "Side plank (knees, progressing to feet)", dosage: "3 × 20–45 s each side", cues: "Straight line from head to knees or feet", figure: { pose: "ex-side-plank", view: "lateral", props: ["mat"] } },
+          { name: "Box squat (graded depth)", dosage: "3–4 × 8–12, 3×/week, add load as tolerated", cues: "Sit back to the box; knees track over the second toe", figure: { pose: "ex-squat", view: "lateral", props: ["box"] } },
+          { name: "Forward step-down", dosage: "3 × 10 each side", cues: "Slow lowering; pelvis level; knee over foot", figure: { pose: "ex-step-down", view: "anterior", props: ["step"] } },
+          { name: "Short-lever Copenhagen adduction", dosage: "3 × 6–10 each side, 2–3×/week", cues: "Support at the knee; lift the body in line", figure: { pose: "ex-copenhagen", view: "lateral", props: ["bench"] } },
+          { name: "Standing banded hip abduction", dosage: "3 × 12–15 each side", cues: "Tall stance, no trunk lean", figure: { pose: "ex-hip-abduction-standing", view: "anterior", props: ["resistance-band"] } }
+        ],
+        progressionCriteria: ["Hip strength limb symmetry ≥80% for abduction, adduction and flexion (dynamometry)", "Single-leg squat to 60° knee flexion without pelvic drop or valgus", "Pain ≤3/10 during and after sessions", "Improving iHOT-33 or HAGOS scores"]
+      },
+      {
+        name: "Load, power & running",
+        timeframe: "Months 3–6",
+        goals: ["Heavy strength and rate of force development", "Return to running, then acceleration and change of direction", "Tolerance of sport-specific deep-flexion tasks"],
+        precautions: ["Introduce kicking, sprinting and cutting in graded volumes", "Keep deep-flexion strength work at 2–3 non-consecutive days per week"],
+        exercises: [
+          { name: "Split squat progressing to Bulgarian split squat", dosage: "4 × 6–8 each side, heavy, 2–3×/week", cues: "Upright trunk; front knee over foot", figure: { pose: "ex-split-squat", view: "lateral", props: ["dumbbell"] } },
+          { name: "Romanian deadlift", dosage: "4 × 6–8", cues: "Hinge with a neutral spine; stop before groin pain", figure: { pose: "ex-rdl", view: "lateral", props: ["barbell"] } },
+          { name: "Long-lever Copenhagen adduction", dosage: "3 × 6–10 each side", cues: "Support at the ankle; control the lowering", figure: { pose: "ex-copenhagen", view: "lateral", props: ["bench"] } },
+          { name: "Single-leg squat", dosage: "3 × 8 each side", figure: { pose: "ex-single-leg-squat", view: "anterior" } },
+          { name: "Jump squat and hop progressions", dosage: "3–4 × 5, full recovery", cues: "Soft, quiet landings with hips and knees bent", figure: { pose: "ex-jump-squat", view: "lateral" } }
+        ],
+        progressionCriteria: ["Hip strength limb symmetry ≥90%", "Pain-free running for 30 min and at 80% sprint speed", "Single-leg hop symmetry ≥90%", "Pain ≤2/10 during and after training"]
+      },
+      {
+        name: "Return to sport & maintenance",
+        timeframe: "Months 4–9 (longer after surgery)",
+        goals: ["Full sport-specific training, including kicking, cutting and goalkeeping or skating postures", "Long-term load management and strength maintenance", "Confidence in the hip"],
+        precautions: ["Monitor weekly training load and deep-flexion volume", "Expect occasional flares; manage with short-term load reduction, not rest"],
+        exercises: [
+          { name: "Planned then unplanned change-of-direction drills", dosage: "2–3 sessions/week, progressing speed and angle", figure: { pose: "cut-plant", view: "anterior" } },
+          { name: "Kicking progression (short to long, low to high intensity)", dosage: "Graded volumes over 2–4 weeks" },
+          { name: "Strength maintenance (split squat, RDL, Copenhagen)", dosage: "2×/week, 3–4 × 4–8 heavy" },
+          { name: "Hip and groin injury-prevention warm-up", dosage: "Before every session" }
+        ],
+        progressionCriteria: ["Completion of full, unrestricted team training", "Hip strength and hop symmetry ≥90%", "Acceptable symptoms on HAGOS sport subscale and athlete confidence", "Shared decision with the athlete, coach and medical team"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "Familiar groin pain ≤2/10 during and after full training, settling within 24 h",
+      "Hip abduction, adduction, flexion and extension strength ≥90% limb symmetry",
+      "Single-leg hop and change-of-direction tests ≥90% symmetry with good quality",
+      "Completion of graded sport-specific exposure (kicking, sprinting, cutting, deep-flexion postures)",
+      "Patient-reported hip function and confidence acceptable to the athlete (HAGOS sport, iHOT-33)",
+      "After arthroscopy: surgeon clearance and completion of the post-operative protocol"
+    ],
+    tests: ["Hand-held dynamometry of hip muscle groups", "Adductor squeeze test", "Single-leg squat and Y-balance test", "Single, triple and side hop tests", "HAGOS and iHOT-33 questionnaires"]
+  },
+  prognosis: "Most people with FAI syndrome improve with either physiotherapist-led care or arthroscopy. In FASHIoN, iHOT-33 improved from 35.6 to 49.7 with personalised hip therapy and from 39.2 to 58.8 with arthroscopy at 12 months [r4]. In a pooled analysis of three trials (650 patients), 51% of the surgical group versus 32% of the non-surgical group reached the minimal clinically important difference in one trial [r17]. At 3 years, function remained better after surgery (HOS ADL difference 8.9 points), with no difference in radiographic joint-space width [r18]. Crossover from rehabilitation to surgery is common (28 of the rehabilitation group in one trial) [r16]. Severe cam morphology combined with reduced internal rotation strongly predisposes to progression to end-stage osteoarthritis [r11]; whether any treatment changes this long-term risk is unknown [r1].",
+  prevention: [
+    "There is no proven prevention strategy for FAI syndrome. Because cam morphology mostly forms while the growth plate is open, modifying high-impact load during early adolescence has been proposed but not tested [r9,r10].",
+    "Maintaining hip strength and dynamic single-leg control may protect symptomatic capacity in athletes with known morphology [r13].",
+    "Manage training load and the volume of repeated deep flexion with rotation, especially after periods of reduced training."
+  ],
+  clinicalPearls: [
+    "Diagnose the syndrome, not the X-ray. Cam morphology and labral tears are common in pain-free athletes, so they need matching symptoms and signs [r1,r7].",
+    "FADIR is a rule-out test. A negative result makes intra-articular pain unlikely, but a positive one is non-specific [r2,r15].",
+    "Groin pain in athletes is often multi-entity. Examine adductors, iliopsoas, inguinal canal and pubic symphysis as well as the hip.",
+    "Measure strength. Hip strength deficits are consistent in FAI syndrome, and targeted strengthening improves strength and perceived pain [r13,r19].",
+    "Before referring for surgery, check that the patient has completed at least 3 months of a progressive, adequately dosed program [r6].",
+    "Always consider a femoral neck stress fracture in an endurance athlete with groin pain on weight-bearing."
+  ],
+  related: ["hip-labral-tear", "adductor-related-groin-pain", "iliopsoas-related-groin-pain", "femoral-neck-stress-fracture", "scfe", "snapping-hip-syndrome"],
+
+  references: [
+    { id: "r1", citation: "Griffin DR, Dickenson EJ, O'Donnell J, et al. The Warwick Agreement on femoroacetabular impingement syndrome (FAI syndrome): an international consensus statement. Br J Sports Med. 2016;50(19):1169-76.", pmid: "27629403", doi: "10.1136/bjsports-2016-096743", type: "consensus-statement", year: 2016 },
+    { id: "r2", citation: "Reiman MP, Agricola R, Kemp JL, et al. Consensus recommendations on the classification, definition and diagnostic criteria of hip-related pain in young and middle-aged active adults from the International Hip-related Pain Research Network, Zurich 2018. Br J Sports Med. 2020;54(11):631-41.", pmid: "31959678", doi: "10.1136/bjsports-2019-101453", type: "consensus-statement", year: 2020 },
+    { id: "r3", citation: "Ganz R, Parvizi J, Beck M, et al. Femoroacetabular impingement: a cause for osteoarthritis of the hip. Clin Orthop Relat Res. 2003;(417):112-20.", pmid: "14646708", doi: "10.1097/01.blo.0000096804.78689.c2", type: "narrative-review", year: 2003 },
+    { id: "r4", citation: "Griffin DR, Dickenson EJ, Wall PDH, et al. Hip arthroscopy versus best conservative care for the treatment of femoroacetabular impingement syndrome (UK FASHIoN): a multicentre randomised controlled trial. Lancet. 2018;391(10136):2225-35.", pmid: "29893223", doi: "10.1016/S0140-6736(18)31202-9", type: "rct", year: 2018 },
+    { id: "r5", citation: "Palmer AJR, Ayyar Gupta V, Fernquest S, et al. Arthroscopic hip surgery compared with physiotherapy and activity modification for the treatment of symptomatic femoroacetabular impingement: multicentre randomised controlled trial. BMJ. 2019;364:l185.", pmid: "30733197", doi: "10.1136/bmj.l185", type: "rct", year: 2019 },
+    { id: "r6", citation: "Kemp JL, Risberg MA, Mosler A, et al. Physiotherapist-led treatment for young to middle-aged active adults with hip-related pain: consensus recommendations from the International Hip-related Pain Research Network, Zurich 2018. Br J Sports Med. 2020;54(9):504-11.", pmid: "31732651", doi: "10.1136/bjsports-2019-101458", type: "consensus-statement", year: 2020 },
+    { id: "r7", citation: "Frank JM, Harris JD, Erickson BJ, et al. Prevalence of femoroacetabular impingement imaging findings in asymptomatic volunteers: a systematic review. Arthroscopy. 2015;31(6):1199-204.", pmid: "25636988", doi: "10.1016/j.arthro.2014.11.042", type: "systematic-review", year: 2015 },
+    { id: "r8", citation: "Heerey J, Kemp J, Agricola R, et al. Cam morphology is associated with MRI-defined cartilage defects and labral tears: a case-control study of 237 young adult football players with and without hip and groin pain. BMJ Open Sport Exerc Med. 2021;7(4):e001199.", pmid: "34987861", doi: "10.1136/bmjsem-2021-001199", type: "case-control", year: 2021 },
+    { id: "r9", citation: "Agricola R, Heijboer MP, Ginai AZ, et al. A cam deformity is gradually acquired during skeletal maturation in adolescent and young male soccer players: a prospective study with minimum 2-year follow-up. Am J Sports Med. 2014;42(4):798-806.", pmid: "24585362", doi: "10.1177/0363546514524364", type: "cohort", year: 2014 },
+    { id: "r10", citation: "van Klij P, Heijboer MP, Ginai AZ, et al. Cam morphology in young male football players mostly develops before proximal femoral growth plate closure: a prospective study with 5-year follow-up. Br J Sports Med. 2019;53(9):532-8.", pmid: "30323059", doi: "10.1136/bjsports-2018-099328", type: "cohort", year: 2019 },
+    { id: "r11", citation: "Agricola R, Heijboer MP, Bierma-Zeinstra SM, et al. Cam impingement causes osteoarthritis of the hip: a nationwide prospective cohort study (CHECK). Ann Rheum Dis. 2013;72(6):918-23.", pmid: "22730371", doi: "10.1136/annrheumdis-2012-201643", type: "cohort", year: 2013 },
+    { id: "r12", citation: "Beck M, Kalhor M, Leunig M, et al. Hip morphology influences the pattern of damage to the acetabular cartilage: femoroacetabular impingement as a cause of early osteoarthritis of the hip. J Bone Joint Surg Br. 2005;87(7):1012-8.", pmid: "15972923", doi: "10.1302/0301-620X.87B7.15203", type: "cohort", year: 2005 },
+    { id: "r13", citation: "Freke MD, Kemp J, Svege I, et al. Physical impairments in symptomatic femoroacetabular impingement: a systematic review of the evidence. Br J Sports Med. 2016;50(19):1180.", pmid: "27301577", doi: "10.1136/bjsports-2016-096152", type: "systematic-review", year: 2016 },
+    { id: "r14", citation: "Mosler AB, Heerey JJ, Kemp JL, et al. Relationship between hip and groin pain and hip range of motion in amateur soccer and Australian rules football players. Orthop J Sports Med. 2024;12(10):23259671241277662.", pmid: "39492872", doi: "10.1177/23259671241277662", type: "cross-sectional", year: 2024 },
+    { id: "r15", citation: "Reiman MP, Goode AP, Cook CE, et al. Diagnostic accuracy of clinical tests for the diagnosis of hip femoroacetabular impingement/labral tear: a systematic review with meta-analysis. Br J Sports Med. 2015;49(12):811.", pmid: "25515771", doi: "10.1136/bjsports-2014-094302", type: "meta-analysis", year: 2015 },
+    { id: "r16", citation: "Mansell NS, Rhon DI, Meyer J, et al. Arthroscopic surgery or physical therapy for patients with femoroacetabular impingement syndrome: a randomized controlled trial with 2-year follow-up. Am J Sports Med. 2018;46(6):1306-14.", pmid: "29443538", doi: "10.1177/0363546517751912", type: "rct", year: 2018 },
+    { id: "r17", citation: "Dwyer T, Whelan D, Shah PS, et al. Operative versus nonoperative treatment of femoroacetabular impingement syndrome: a meta-analysis of short-term outcomes. Arthroscopy. 2020;36(1):263-73.", pmid: "31864588", doi: "10.1016/j.arthro.2019.07.025", type: "meta-analysis", year: 2020 },
+    { id: "r18", citation: "Palmer A, Fernquest S, Rombach I, et al. Medium-term results of arthroscopic hip surgery compared with physiotherapy and activity modification for the treatment of femoroacetabular impingement syndrome: a multi-centre randomised controlled trial. Br J Sports Med. 2025;59(2):109-17.", pmid: "39592214", doi: "10.1136/bjsports-2023-107712", type: "rct", year: 2025 },
+    { id: "r19", citation: "Kemp JL, Scholes MJ, Smith AJ, et al. Physiotherapist-led treatment for femoroacetabular impingement syndrome (the PhysioFIRST study): an assessor-blinded, limited disclosure randomised controlled trial. Br J Sports Med. 2026;60(13):951-61.", pmid: "42082318", doi: "10.1136/bjsports-2025-110986", type: "rct", year: 2026 }
+  ],
+
+  animation: {
+    title: "How FAI syndrome develops",
+    phases: [
+      {
+        type: "moi", label: "Mechanism", duration: 6, view: "lateral", environment: "gym",
+        actors: [{ id: "athlete", kit: "athlete" }],
+        keyframes: [
+          { t: 0, pose: "stand", root: { x: 0 } },
+          { t: 1.2, pose: "squat", root: { x: 0 } },
+          { t: 2.4, pose: "deep-squat", joints: { hipR: 120, trunk: 35 }, ease: "in" },
+          { t: 3.4, pose: "deep-squat", joints: { hipR: 125, trunk: 40 } },
+          { t: 4.6, pose: "squat" },
+          { t: 5.8, pose: "stand" }
+        ],
+        forces: [
+          { t: [2.2, 3.8], at: "hipR", dir: "forward", label: "Head–neck junction levers into the rim" },
+          { t: [2.4, 3.6], at: "groinR", dir: "up", label: "Flexion + adduction + internal rotation" }
+        ],
+        highlights: [{ t: [2.2, 6], at: "hipR" }],
+        impacts: [{ t: 3.0, at: "hipR" }],
+        slowmo: [{ t: [2.2, 3.6], rate: 0.4 }],
+        captions: [
+          { t: 0, text: "A footballer does repeated deep squats, a common provocative load in FAI syndrome." },
+          { t: 1.2, text: "As the hip flexes past about 90°, the femoral head–neck junction nears the front of the socket." },
+          { t: 2.4, text: "With adduction and internal rotation, a cam bump or a deep socket makes bone contact early." },
+          { t: 3.4, text: "Each repetition shears the labrum and cartilage. Load exceeds what these tissues tolerate." },
+          { t: 4.6, text: "Deep groin pain follows, often shown with a 'C-sign' grip, and eases as the hip extends." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "hipR",
+        captions: [{ t: 0, text: "Zooming into the front of the right hip." }]
+      },
+      {
+        type: "closeup", label: "Inside the hip", duration: 10, scene: "hip-anterior",
+        actions: [
+          { t: 0, do: "highlight", target: "femoralHead" },
+          { t: 0.3, do: "label", target: "femur", text: "Cam: bump at the head–neck junction" },
+          { t: 1.2, do: "arrow", at: "headNeckJunction", dir: "superior", label: "Flexion + internal rotation" },
+          { t: 1.6, do: "pulse", target: "labrum" },
+          { t: 2.4, do: "impact", at: "anterosuperiorLabrum" },
+          { t: 2.5, do: "compress", target: "labrum", amount: 0.4 },
+          { t: 3.2, do: "tear", target: "labrum", pattern: "detachment", at: 0.1 },
+          { t: 3.4, do: "label", target: "labrum", text: "Chondrolabral separation" },
+          { t: 4.6, do: "lesion", target: "hipCartilage", at: 0.2, depth: "partial" },
+          { t: 4.8, do: "label", target: "hipCartilage", text: "Acetabular cartilage delamination" },
+          { t: 6.0, do: "inflame", target: "capsule", amount: 0.4 },
+          { t: 6.2, do: "effuse", target: "jointSpace", amount: 0.3 },
+          { t: 6.8, do: "pain", at: "anterosuperiorLabrum" },
+          { t: 7.4, do: "camera", at: "anterosuperiorLabrum", zoom: 1.6, dur: 1 },
+          { t: 9.2, do: "camera", zoom: 1, dur: 0.8 }
+        ],
+        captions: [
+          { t: 0, text: "A cam bump at the head–neck junction reduces the clearance between femur and socket." },
+          { t: 1.2, text: "In flexion and internal rotation the bump is driven into the anterosuperior acetabulum." },
+          { t: 2.4, text: "Repeated contact compresses the labrum against the rim." },
+          { t: 3.2, text: "Shear separates cartilage from labrum at the chondrolabral junction." },
+          { t: 4.6, text: "The acetabular cartilage delaminates from the bone: the typical cam damage pattern." },
+          { t: 6.0, text: "Synovitis and a small effusion follow, sensitising the joint." },
+          { t: 7.4, text: "Damage in this anterosuperior zone drives groin pain and may progress to osteoarthritis." }
+        ]
+      },
+      {
+        type: "micro", label: "Cartilage", duration: 8, tissue: "cartilage",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.6, stage: "impact" }, { t: 3.2, stage: "chondrocyte-death" },
+          { t: 4.8, stage: "matrix-loss" }, { t: 6.4, stage: "degeneration" }
+        ],
+        timeLabels: [{ t: 1.6, text: "Each impingement" }, { t: 3.2, text: "Months" }, { t: 6.4, text: "Years" }],
+        captions: [
+          { t: 0, text: "Healthy cartilage: chondrocytes in a proteoglycan-rich collagen matrix." },
+          { t: 1.6, text: "Repeated impingement concentrates shear at the surface and the chondrolabral junction." },
+          { t: 3.2, text: "Overloaded chondrocytes die or switch to a catabolic state." },
+          { t: 4.8, text: "Proteoglycan is lost, the collagen network weakens and the cartilage softens and splits." },
+          { t: 6.4, text: "Without load modification, the surface wears away: early osteoarthritis." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "LL1" }
+};

@@ -197,9 +197,9 @@ export function bodyMap(opts = {}) {
     det.dots.map(([x, y, r]) => h("circle", { cx: x, cy: y, r }))));
 
   // state overlays (hover / selected / focus), cloned from the tile shapes
-  const ovl = { sel: h("g", { class: "bm__ovl bm__ovl--sel", "aria-hidden": "true" }), hover: h("g", { class: "bm__ovl bm__ovl--hover", "aria-hidden": "true" }), focus: h("g", { class: "bm__ovl bm__ovl--focus", "aria-hidden": "true" }) };
-  clipped.append(ovl.sel, ovl.hover, ovl.focus);
   svg.append(clipped);
+  const ovl = { sel: h("g", { class: "bm__ovl bm__ovl--sel", "aria-hidden": "true" }), hover: h("g", { class: "bm__ovl bm__ovl--hover", "aria-hidden": "true" }), focus: h("g", { class: "bm__ovl bm__ovl--focus", "aria-hidden": "true" }) };
+  svg.append(ovl.sel, ovl.hover, ovl.focus);
 
   // badges (drawn above, unclipped)
   const badgeLayer = h("g", { class: "bm__badges", "aria-hidden": "true" });
@@ -255,14 +255,17 @@ export function bodyMap(opts = {}) {
     setOverlay(ovl.sel, selected);
   }
 
+  // Outline of one region: its seams (tile edges, kept inside the silhouette) plus the body edge that bounds it.
   function setOverlay(layer, id) {
     layer.replaceChildren();
     const item = id && groups.get(id);
-    if (!item || id === "general") {
-      if (id === "general" && layer !== ovl.sel) { /* pill handled by CSS */ }
-      return;
-    }
-    for (const p of item.g.querySelectorAll(".bm__shape")) layer.append(h("path", { d: p.getAttribute("d") }));
+    if (!item || id === "general") return;
+    const ds = item.def.d;
+    const regionClip = `${clipId}-${layer.classList[1]}`;
+    layer.append(
+      h("clipPath", { id: regionClip }, ds.map((d) => h("path", { d }))),
+      h("g", { "clip-path": `url(#${clipId})` }, ds.map((d) => h("path", { class: "bm__ovl-seam", d }))),
+      h("g", { "clip-path": `url(#${regionClip})` }, silhouette().map((n) => { n.setAttribute("class", "bm__ovl-edge"); return n; })));
   }
 
   function showTip(id) {

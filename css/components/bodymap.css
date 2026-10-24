@@ -24,10 +24,12 @@
 .bm__detail path { fill: none; stroke: var(--ink-3); stroke-width: 0.9; stroke-linecap: round; stroke-linejoin: round; opacity: 0.55; pointer-events: none; }
 .bm__detail circle { fill: var(--ink-3); opacity: 0.5; pointer-events: none; }
 
-.bm__ovl path { fill: none; stroke-linejoin: round; pointer-events: none; }
-.bm__ovl--hover path { stroke: var(--accent); stroke-width: 3.2; }
-.bm__ovl--sel path { stroke: var(--accent); stroke-width: 4.4; fill: color-mix(in srgb, var(--accent) 14%, transparent); }
-.bm__ovl--focus path { stroke: var(--ink); stroke-width: 6; }
+.bm__ovl path, .bm__ovl ellipse { fill: none; stroke-linejoin: round; pointer-events: none; }
+.bm__ovl--hover { --ovl: var(--accent); --ovl-w: 3; }
+.bm__ovl--sel { --ovl: var(--accent); --ovl-w: 4; }
+.bm__ovl--focus { --ovl: var(--ink); --ovl-w: 5.5; }
+.bm__ovl-seam, .bm__ovl-edge { stroke: var(--ovl); stroke-width: var(--ovl-w); }
+.bm__ovl--focus .bm__ovl-seam, .bm__ovl--focus .bm__ovl-edge { stroke-dasharray: none; }
 
 .bm__badge { pointer-events: none; }
 .bm__badge circle { fill: var(--surface); stroke: var(--tissue); stroke-width: 1.4; }

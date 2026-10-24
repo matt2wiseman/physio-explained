@@ -341,10 +341,10 @@ function parenMask(text) {
 function makeItem(field, text, weight, { paren = false, label } = {}) {
   const toks = tokenize(text);
   const inParen = paren ? parenMask(text) : null;
-  let p = -1, n = 0;
+  let p = -1, n = 0, tr = 0;
   for (const t of toks) {
-    if (STOP.has(t.f) || (inParen && inParen(t.s))) { t.skip = STOP.has(t.f); t.pos = p + 0.5; t.paren = !t.skip; continue; }
-    p += 1; n += 1; t.pos = p;
+    if (STOP.has(t.f) || (inParen && inParen(t.s))) { t.skip = STOP.has(t.f); t.pos = p + 0.5 + 0.001 * tr++; t.paren = !t.skip; continue; }
+    p += 1; n += 1; tr = 0; t.pos = p;
   }
   n = Math.max(1, n);
   return { field, label: label || FIELD_LABELS[field] || field, weight, text, toks, n, lenNorm: 1 / (1 + 0.03 * Math.max(0, n - 3)) };
@@ -475,13 +475,13 @@ const SYN_TOKENS = new Set(SYN_LIST.flatMap((s) => s.toks));
 
 function tokenEq(qt, kt, isLast, partialOk) {
   if (qt.c === kt) return 1;
-  if (isLast && partialOk && qt.c.length >= 2 && kt.startsWith(qt.c)) return 0.8;
+  if (isLast && partialOk && qt.c.length >= 3 && kt.startsWith(qt.c)) return 0.8;
   const l = qt.c.length;
-  if (l >= 4 && dl(qt.c, kt, maxTypos(l)) <= maxTypos(l)) return 0.8;
+  if (l >= 5 && dl(qt.c, kt, maxTypos(l)) <= maxTypos(l)) return 0.8;
   return 0;
 }
 /** Which synonym phrases does the query contain (or partially type)? → Map(entryId → { score, covered:Set<qi>, phrase }) */
-function matchSynonyms(qTokens) {
+function matchSynonyms(qTokens, isGeneric) {
   const res = new Map();
   const n = qTokens.length;
   if (!n) return res;
@@ -507,7 +507,7 @@ function matchSynonyms(qTokens) {
           if (!e) { ok = false; break; }
           q = Math.min(q, e);
         }
-        if (ok && (m > 1 || qTokens[n - 1].c.length >= 3)) { best = { q: q * 0.7, start: n - m, len: m }; break; }
+        if (ok && (m > 1 || (qTokens[n - 1].c.length >= 3 && !isGeneric(qTokens[n - 1].c)))) { best = { q: q * 0.7, start: n - m, len: m }; break; }
       }
     }
     if (!best) continue;
@@ -721,7 +721,7 @@ export function createSearch(entriesIn, { glossary = [] } = {}) {
       return entries.filter((e) => passFilters(e, filters)).sort((a, b) => a.name.localeCompare(b.name)).slice(0, limit)
         .map((entry) => ({ kind: "injury", entry, score: 0, coverage: 1, partial: false, matches: [], nameRanges: [], why: null }));
     }
-    const syn = matchSynonyms(q.tokens);
+    const syn = matchSynonyms(q.tokens, (c) => (inj.df.get(c) || 0) >= 6);
     const raw = scoreIndex(inj, q, { synonyms: syn });
     const rows = [];
     for (const r of raw) {
