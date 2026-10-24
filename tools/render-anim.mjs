@@ -4,15 +4,27 @@
 //   node tools/render-anim.mjs <injury-id> --times 0,2.5,7     → tools/output/anim-<id>-t<time>.png (one PNG per global time)
 // Depends on tools/anim-preview.html (owned by A1): ?id=<injury>&t=<seconds> or ?id=<injury>&sheet=<n>; it sets window.__ready = true when drawn
 // and window.__animErrors = [] (any engine warnings, e.g. unknown structure ids).
-// Requires `npm run build` so data/injuries/<id>.json exists.
-import { mkdirSync } from "node:fs";
+// Reads content/injuries/<region>/<id>.js directly (writes data/injuries/<id>.json for the preview page).
+import { mkdirSync, writeFileSync, readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
+import { pathToFileURL } from "node:url";
 import { serve, browser, openPage, ROOT } from "./lib/harness.mjs";
 const a = process.argv.slice(2);
 const opt = (k, d) => { const i = a.indexOf(k); return i >= 0 ? a[i + 1] : d; };
 const ids = a.filter((x, i) => !x.startsWith("--") && !(a[i - 1] || "").startsWith("--"));
 if (!ids.length) { console.error("usage: node tools/render-anim.mjs <injury-id> [--sheet 12 | --times 0,2,4]"); process.exit(1); }
 const out = join(ROOT, "tools/output"); mkdirSync(out, { recursive: true });
+// Refresh data/injuries/<id>.json straight from the content file so writers can preview without a full build.
+const catalogue = JSON.parse(readFileSync(join(ROOT, "content/catalogue.json"), "utf8"));
+mkdirSync(join(ROOT, "data/injuries"), { recursive: true });
+for (const id of ids) {
+  const c = catalogue.find((x) => x.id === id);
+  const f = c && join(ROOT, "content/injuries", c.region, id + ".js");
+  if (f && existsSync(f)) {
+    try { const inj = (await import(pathToFileURL(f).href + "?t=" + Date.now())).default; writeFileSync(join(ROOT, "data/injuries", id + ".json"), JSON.stringify(inj)); }
+    catch (e) { console.error(`${id}: could not import content file: ${e.message}`); }
+  }
+}
 const srv = await serve(); const b = await browser();
 let bad = 0;
 for (const id of ids) {
