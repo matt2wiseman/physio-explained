@@ -330,7 +330,7 @@ function fmtDay(d) {
   d = Number(d);
   if (!isFinite(d)) return { n: "", u: "" };
   if (d < 14) return { n: String(Math.round(d)), u: d === 1 ? "day" : "days" };
-  if (d < 112) { const w = d / 7; return { n: String(Number.isInteger(w) ? w : Math.round(w * 2) / 2), u: "wk" }; }
+  if (d < 84) { const w = d / 7; return { n: String(Number.isInteger(w) ? w : Math.round(w * 2) / 2), u: "wk" }; }
   if (d < 540) { const m = Math.round((d / 30.44) * 2) / 2; return { n: String(m), u: "mo" }; }
   const y = Math.round((d / 365) * 2) / 2; return { n: String(y), u: y === 1 ? "yr" : "yr" };
 }
