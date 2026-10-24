@@ -98,7 +98,7 @@ function renderSarc(g, stage, p) {
   let popped = () => new Array(n).fill(0);
   let o = {};
   if (stage === "contracting") {
-    const L = L0 - 30 * wave(p, 1.5) ;
+    const L = L0 - 32 * ease(seg(p, 0.05, 0.6));
     lens = () => new Array(n).fill(L);
     o.head = p * 4;
   } else if (stage === "eccentric-overstretch" || stage === "sarcomere-disruption") {
@@ -139,7 +139,7 @@ function renderSarc(g, stage, p) {
     label(g, 400, 410, "A band: myosin (thick)", { to: [(zs[3] + zs[4]) / 2 + 20, MF[2] + 7.5], anchor: "middle" });
     label(g, 632, 410, "I band: actin (thin)", { to: [zs[5] - 10, MF[2] + 15], anchor: "end" });
   } else if (stage === "contracting") {
-    const L = 22 + 10 * wave(p, 1.5);
+    const L = 22 + 10 * ease(seg(p, 0.05, 0.6));
     arrow(g, 120, 66, 120 + L, 66, { width: 4, head: 12 }); arrow(g, 680, 66, 680 - L, 66, { width: 4, head: 12 });
     label(g, 400, 70, "Myosin heads pull actin toward the M-line", { anchor: "middle", size: 13 });
     label(g, 632, 412, "I band & H zone narrow;\nA band length unchanged", { to: [zs[4] + 6, MF[2] + 30], anchor: "end" });

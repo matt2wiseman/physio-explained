@@ -685,6 +685,7 @@ class Player {
     }
     // chapter chip + chapter buttons
     if (loc && chapIdx !== this.lastChapIdx) {
+      this.root.dataset.phase = loc.entry.type;      // CSS: micro draws its own stage chip top-left → hide ours
       ui.chipNum.textContent = `${loc.index + 1}/${tl.phases.length}`;
       ui.chipText.textContent = loc.entry.label;
       ui.chapters.forEach((c, i) => (i === chapIdx ? c.setAttribute("aria-current", "step") : c.removeAttribute("aria-current")));

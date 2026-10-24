@@ -59,6 +59,7 @@
 .pe-player__chip-num { font-family: var(--font-mono); font-weight: 500; color: var(--stage-accent); }
 .pe-player__slowmo { right: clamp(8px, 2.4cqi, 18px); color: var(--fx-force); }
 .pe-player__slowmo .pe-icon { width: 14px; height: 14px; }
+.pe-player[data-phase="micro"] .pe-player__chip,     /* the micro engine draws its own stage-name chip there */
 .pe-player[data-state="poster"] .pe-player__chip,
 .pe-player[data-state="ended"] .pe-player__chip { visibility: hidden; }
 
