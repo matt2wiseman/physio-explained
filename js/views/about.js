@@ -77,7 +77,7 @@ export async function render(main, params, ctx) {
   try { const m = await import("./home.js"); phaseGlyph = m.phaseGlyph; } catch { /* decorative only */ }
 
   const exampleId = (entries.find((e) => e.hasAnimation) || entries[0] || {}).id;
-  const exampleName = (entries.find((e) => e.id === exampleId) || {}).name;
+  const exampleName = (entries.find((e) => e.id === exampleId) || {}).shortName || (entries.find((e) => e.id === exampleId) || {}).name;
 
   /* purpose */
   const purpose = section("purpose", "What it is, and who it is for",
@@ -175,7 +175,7 @@ export async function render(main, params, ctx) {
     h("div", { class: "prose ab-after" },
       h("p", null, "The player lets you play and pause, scrub between chapters, slow the action down, show captions and switch to a step-by-step storyboard. If your device is set to reduce motion, animations start paused."),
       h("p", null, h("b", null, "Treat them as schematic."), " They are teaching illustrations drawn from a fixed catalogue of anatomical structures. They are not to scale, are not patient imaging and simplify anatomy and timing. The text and references carry the clinical facts.")),
-    exampleId ? h("p", { class: "ab-after" }, h("a", { class: "btn", href: `#injury.${exampleId}.mechanism` }, icon("play"), `Watch an example: ${exampleName}`)) : null);
+    exampleId ? h("p", { class: "ab-after" }, h("a", { class: "btn ab-example", href: `#injury.${exampleId}.mechanism` }, icon("play"), `Watch an example: ${exampleName}`)) : null);
 
   /* disclaimer */
   const disclaimer = section("disclaimer", "Disclaimer",

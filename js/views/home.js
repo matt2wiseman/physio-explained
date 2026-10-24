@@ -127,7 +127,7 @@ function filmStrip(compact = false) {
 function buildLede(ctx) {
   const input = h("input", {
     type: "search", id: "hm-q", class: "hm-search__input", name: "q", autocomplete: "off", spellcheck: "false",
-    placeholder: window.innerWidth < 520 ? "Search injuries or tests" : "Search an injury, structure or test: ACL, rotator cuff, Lachman…"
+    placeholder: window.innerWidth < 520 ? "Search injuries or tests" : "Search an injury, structure or test"
   });
   const form = h("form", {
     class: "hm-search", role: "search", "aria-label": "Search injuries",
@@ -224,10 +224,10 @@ function statsStrip() {
     el,
     fill({ entries, meta }) {
       const n = Number.isFinite(meta.injuries) ? meta.injuries : entries.length;
-      cells.injuries.textContent = String(n);
+      cells.injuries.textContent = n.toLocaleString("en-AU");
       if (Number.isFinite(meta.planned) && meta.planned > n) sub.injuries.textContent = `of ${meta.planned} planned`;
       const refTotal = Number.isFinite(meta.references) ? meta.references : entries.reduce((a, e) => a + (e.refCount || 0), 0);
-      cells.refs.textContent = String(refTotal);
+      cells.refs.textContent = refTotal.toLocaleString("en-AU");
       cells.anim.textContent = String(entries.filter((e) => e.hasAnimation).length);
       cells.regions.textContent = `${new Set(entries.map((e) => e.region)).size} of ${ALL_REGIONS.length}`;
     }

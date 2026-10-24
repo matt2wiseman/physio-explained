@@ -294,7 +294,7 @@ export function buildBody(pose, view = "lateral", opts = {}) {
   piece("torso", "skin", [{ p: NB, r: 5.4 * S }, { p: HB, r: 4.8 * S }]); // neck
   torsoChain(["P0", "P1", "P2", "L1"], "shorts");
   torsoChain(["L1", "L2", "L3", "T1", "T2", "T3", "T4", "T5"], "shirt");
-  if (K.vest) { torsoChain(["L1", "L2", "L3", "T1", "T2", "T3"], "vest", 0.5); piece("torso", "stripe", [...stPair("L2", 0.7), ...stPair("L2", 0.7).map((q) => ({ p: at(q.p, 2.2 * S, fl.u), r: q.r }))]); }
+  if (K.vest) torsoChain(["L1", "L2", "L3", "T1", "T2", "T3"], "vest", 0.5);
 
   // head pieces
   piece("head", "skin", [{ p: P.cranium, r: 9.2 * hs }, { p: P.face, r: 6.3 * hs }]);

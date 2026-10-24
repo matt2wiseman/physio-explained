@@ -71,12 +71,24 @@ try {
     grid.style.gridTemplateColumns = "1fr 1fr";
     for (const view of ["lateral", "anterior"]) { const { c, n } = cell(view); c.append(rig.renderFigure({ view, pose: id, width: 560, height: 460, props: (q.get("props") || "").split(",").filter(Boolean) }), n); }
   } else if (mode === "moi") {
-    const id = q.get("injury"), n = +(q.get("n") || 8);
-    const list = await (await fetch("../content/catalogue.json")).json();
-    const entry = list.find((e) => e.id === id);
-    if (!entry) throw new Error("unknown injury " + id);
-    const inj = (await import(`../content/injuries/${entry.region}/${id}.js?t=${Date.now()}`)).default;
-    const phase = inj.animation.phases.find((p) => p.type === "moi");
+    const id = q.get("injury") || "demo", n = +(q.get("n") || 8);
+    let phase;
+    if (id === "demo") phase = { type: "moi", label: "Demo", duration: 4, view: q.get("view") || "lateral", environment: q.get("env") || "pitch",
+      actors: [{ id: "athlete", kit: "athlete" }, { id: "opp", kit: "opponent", facing: "left" }],
+      keyframes: [
+        { t: 0, pose: "run-contact", root: { x: -120 } }, { t: 1.2, pose: "run-swing-late", root: { x: -40 } }, { t: 2.0, pose: "tackle-low", root: { x: 0 }, ease: "in" }, { t: 3.4, pose: "fall-backward", root: { x: 30 } },
+        { t: 0, actor: "opp", pose: "run-midstance", root: { x: 160 } }, { t: 1.8, actor: "opp", pose: "sprint-drive", root: { x: 40 } }, { t: 3.4, actor: "opp", pose: "kneel", root: { x: 60 } }],
+      props: [{ id: "b", type: "ball-soccer", keyframes: [{ t: 0, x: -60, y: 11 }, { t: 1.4, x: 10, y: 11 }, { t: 2.4, x: 160, y: 60 }] }],
+      forces: [{ t: [1.8, 3], at: "kneeR", dir: "lateral", label: "Contact force" }, { t: [1.8, 3], at: "thighR", dir: "backward", label: "Hamstring stretch" }, { t: [1.8, 3], at: "shinR", dir: "medial", label: "Medial (away)" }],
+      highlights: [{ t: [1.6, 4], at: "thighR" }], impacts: [{ t: 2.0, at: "kneeR" }],
+      captions: [{ t: 0, text: "Built-in demo: two actors, keyframed ball, lateral-view force symbols." }] };
+    else {
+      const list = await (await fetch("../content/catalogue.json")).json();
+      const entry = list.find((e) => e.id === id);
+      if (!entry) throw new Error("unknown injury " + id);
+      const inj = (await import(`../content/injuries/${entry.region}/${id}.js?t=${Date.now()}`)).default;
+      phase = inj.animation.phases.find((p) => p.type === "moi");
+    }
     const { renderMoiFrame, moiBounds } = await import("../js/anim/moi.js");
     title.textContent = `${id} — moi (${phase.view}, ${phase.environment || "plain"}, ${phase.duration}s)`;
     grid.style.gridTemplateColumns = "repeat(2, 1fr)";

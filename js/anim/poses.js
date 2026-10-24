@@ -33,7 +33,7 @@ const armsRun = { shoulderR: 9, shoulderL: 9, elbowR: 38, elbowL: 38 };
 const supineArms = { shoulderR: 4, shoulderL: 4, elbowR: 6, elbowL: 6 };
 const seatLegs = { hipR: 90, kneeR: 90, hipL: 90, kneeL: 90 };
 const seatAnt = { hipR: 6, hipL: 6, kneeR: -5, kneeL: -5 };
-const squatAnt = { hipR: 62, kneeR: -58, hipL: 62, kneeL: -58, shoulderR: 14, shoulderL: 14, elbowR: 0, elbowL: 0 };
+const squatAnt = { hipR: 24, kneeR: -18, hipL: 24, kneeL: -18, shoulderR: 14, shoulderL: 14, elbowR: 0, elbowL: 0 };
 
 export const PRESETS = {
   /* ---- locomotion ---- */
@@ -138,8 +138,8 @@ export const PRESETS = {
     lat: { trunk: 22, neck: -8, hipL: 34, kneeL: 8, hipR: -22, kneeR: 32, ankleR: -24, toeR: 42, shoulderR: 178, elbowR: 0, shoulderL: 40, elbowL: 50 },
     ant: { trunk: -32, neck: 8, pelvis: -6, hipL: 12, kneeL: 2, hipR: 16, shoulderR: 172, elbowR: 0, shoulderL: 60, elbowL: 45 } },
   "swing-golf-top": { x: { trunkRot: 80, pelvisRot: 40, gripR: 0.9, gripL: 0.9 },
-    lat: { trunk: 38, neck: -28, hipR: 26, kneeR: 22, hipL: 26, kneeL: 26, shoulderR: 132, elbowR: 95, wristR: 20, shoulderL: 120, elbowL: 8, wristL: 20 },
-    ant: { trunk: 6, hipR: 8, hipL: 8, kneeL: 6, shoulderR: 100, elbowR: -75, shoulderL: -50, elbowL: 10, wristR: 20, wristL: 20 }, hints: { hold: "both" } },
+    lat: { trunk: 38, neck: -28, hipR: 26, kneeR: 22, hipL: 26, kneeL: 26, shoulderR: 196, elbowR: 70, wristR: 20, shoulderL: 214, elbowL: 4, wristL: 20 },
+    ant: { trunk: 6, hipR: 8, hipL: 8, kneeL: 6, shoulderR: 112, elbowR: -70, shoulderL: -140, elbowL: 6, wristR: 20, wristL: 20 }, hints: { hold: "both" } },
   "swing-golf-impact": { x: { trunkRot: -20, pelvisRot: -35, gripR: 0.9, gripL: 0.9 },
     lat: { trunk: 36, neck: -26, hipR: 24, kneeR: 26, ankleR: -10, toeR: 20, hipL: 22, kneeL: 14, shoulderR: 66, elbowR: 10, shoulderL: 66, elbowL: 2 },
     ant: { trunk: 10, hipR: 6, hipL: 6, shoulderR: 12, elbowR: 15, shoulderL: -8, elbowL: 0, wristR: 10, wristL: 10 }, hints: { hold: "both" } },
@@ -162,7 +162,7 @@ export const PRESETS = {
   /* ---- falls & collisions ---- */
   "foosh": { r: { rot: 52 }, x: { gripR: 0, gripL: 0 },
     lat: { trunk: 8, neck: -26, hipR: 14, kneeR: 16, ankleR: -10, toeR: 34, hipL: 30, kneeL: 30, ankleL: -12, shoulderR: 108, elbowR: 4, wristR: 72, shoulderL: 96, elbowL: 18, wristL: 50 },
-    ant: { shoulderR: 22, elbowR: 0, wristR: 0, shoulderL: 26, elbowL: 10, hipR: 6, hipL: 8, ankleR: 0, ankleL: 0 } },
+    ant: { shoulderR: 40, elbowR: 0, wristR: 0, shoulderL: 44, elbowL: 10, hipR: 6, hipL: 8, ankleR: 0, ankleL: 0 } },
   "fall-sideways": { rl: { yaw: 90, roll: 62 }, ra: { roll: 62 },
     lat: { hipR: 10, kneeR: 15, ankleR: 0, hipL: 20, kneeL: 25, ankleL: 0, shoulderR: 20, elbowR: 30, shoulderL: 30, elbowL: 30 },
     ant: { trunk: 12, neck: -14, hipR: 6, hipL: 22, kneeL: -6, ankleR: 0, ankleL: 0, shoulderR: 38, elbowR: 20, shoulderL: 110, elbowL: 25 } },
@@ -189,7 +189,7 @@ export const PRESETS = {
     ant: { hipR: 2, kneeR: 12, hipL: 18, kneeL: -6, shoulderR: 40, shoulderL: 50, elbowR: 20, elbowL: 20 } },
   "ballet-releve": { x: { toeOutR: 22, toeOutL: 22 },
     lat: { neck: -4, kneeR: 0, kneeL: 0, ankleR: -62, toeR: 4, ankleL: -62, toeL: 4, shoulderR: 158, elbowR: 32, shoulderL: 158, elbowL: 32 },
-    ant: { hipR: 2, hipL: 2, kneeR: 0, kneeL: 0, ankleR: 0, ankleL: 0, shoulderR: 148, elbowR: 48, shoulderL: 148, elbowL: 48 } },
+    ant: { hipR: 2, hipL: 2, kneeR: 0, kneeL: 0, ankleR: 0, ankleL: 0, shoulderR: 150, elbowR: -58, shoulderL: 150, elbowL: -58 } },
 
   /* ---- lifting / sitting / lying ---- */
   "lift-stoop": { x: { gripR: 0.8, gripL: 0.8 }, hints: { hold: "both" },
@@ -197,7 +197,7 @@ export const PRESETS = {
     ant: { shoulderR: 10, shoulderL: 10, elbowR: 10, elbowL: 10, hipR: 6, hipL: 6 } },
   "lift-squat": { x: { gripR: 0.8, gripL: 0.8, toeOutR: 15, toeOutL: 15 }, hints: { hold: "both" },
     lat: { pelvis: 24, hipR: 106, kneeR: 104, hipL: 106, kneeL: 104, trunk: 14, neck: -18, shoulderR: 46, elbowR: 4, shoulderL: 46, elbowL: 4 },
-    ant: { hipR: 40, kneeR: -36, hipL: 40, kneeL: -36, shoulderR: 8, shoulderL: 8 } },
+    ant: { hipR: 22, kneeR: -18, hipL: 22, kneeL: -18, shoulderR: 8, shoulderL: 8 } },
   "carry": { x: { gripR: 0.7, gripL: 0.7 }, hints: { carry: true },
     lat: { trunk: -8, neck: 6, kneeR: 6, kneeL: 6, shoulderR: 26, elbowR: 86, shoulderL: 26, elbowL: 86 },
     ant: { shoulderR: 18, elbowR: 46, shoulderL: 18, elbowL: 46 } },
@@ -217,8 +217,8 @@ export const PRESETS = {
     lat: { neck: -12, kneeR: 3, kneeL: 3, ankleR: -50, ankleL: -50, shoulderR: 6, shoulderL: 6, elbowR: 8, elbowL: 8 },
     ant: { shoulderR: 12, shoulderL: 12, hipR: 4, hipL: 4, kneeR: 0, kneeL: 0, ankleR: 0, ankleL: 0 } },
   "lie-side": { rl: SIDE_L, ra: SIDE_A,
-    lat: { hipR: 30, kneeR: 45, ankleR: -10, hipL: 25, kneeL: 45, ankleL: -10, shoulderR: 10, elbowR: 20, shoulderL: 30, elbowL: 30 },
-    ant: { shoulderL: 150, elbowL: 120, shoulderR: 10, elbowR: 20, hipR: 2, hipL: 0, kneeR: 0, kneeL: 0, ankleR: 0, ankleL: 0 } },
+    lat: { hipR: 30, kneeR: 45, ankleR: -10, hipL: 25, kneeL: 45, ankleL: -10, shoulderR: 10, elbowR: 20, shoulderL: 8, elbowL: 10 },
+    ant: { shoulderL: 168, elbowL: 4, shoulderR: 10, elbowR: 20, hipR: 2, hipL: 0, kneeR: 0, kneeL: 0, ankleR: 0, ankleL: 0 } },
 
   /* ---- exercise presets (lateral required; `ant` where a frontal view is meaningful) ---- */
   "ex-quad-set": { rl: SUP, lat: { hipR: 0, kneeR: -2, ankleR: 10, hipL: 45, kneeL: 90, ...supineArms } },
@@ -231,11 +231,11 @@ export const PRESETS = {
   "ex-hip-thrust": { rl: { rot: -92 }, hints: { support: "upperBack" },
     lat: { neck: 22, hipR: 2, kneeR: 92, hipL: 2, kneeL: 92, shoulderR: 30, elbowR: 40, shoulderL: 30, elbowL: 40 } },
   "ex-clamshell": { rl: SIDE_L, ra: SIDE_A,
-    lat: { hipR: 42, kneeR: 85, ankleR: -10, hipL: 42, kneeL: 85, ankleL: -10, shoulderL: 10, elbowL: 120, shoulderR: 10, elbowR: 30 },
-    ant: { hipR: 38, kneeR: -36, hipL: 0, kneeL: 0, ankleR: 0, ankleL: 0, shoulderL: 160, elbowL: 110, shoulderR: 10, elbowR: 40 } },
+    lat: { hipR: 42, kneeR: 85, ankleR: -10, hipL: 42, kneeL: 85, ankleL: -10, shoulderL: 8, elbowL: 10, shoulderR: 10, elbowR: 30 },
+    ant: { hipR: 38, kneeR: -36, hipL: 0, kneeL: 0, ankleR: 0, ankleL: 0, shoulderL: 168, elbowL: 4, shoulderR: 10, elbowR: 40 } },
   "ex-side-plank": { rl: { yaw: 90, roll: -74 }, ra: { roll: -74 },
-    lat: { shoulderL: 6, elbowL: 90, shoulderR: 0, elbowR: 10, ankleR: 0, ankleL: 0, kneeR: 0, kneeL: 0 },
-    ant: { shoulderL: 74, elbowL: 0, shoulderR: 10, elbowR: 60, hipR: 0, hipL: 0, kneeR: 0, kneeL: 0, ankleR: 0, ankleL: 0 } },
+    lat: { shoulderL: 6, elbowL: 90, shoulderR: 0, elbowR: 0, ankleR: 0, ankleL: 0, kneeR: 0, kneeL: 0 },
+    ant: { shoulderL: 74, elbowL: 0, shoulderR: 90, elbowR: 0, hipR: 0, hipL: 0, kneeR: 0, kneeL: 0, ankleR: 0, ankleL: 0 } },
   "ex-plank": { rl: { rot: 80 }, x: { gripR: 0.8, gripL: 0.8 },
     lat: { neck: -6, shoulderR: 80, elbowR: 90, shoulderL: 80, elbowL: 90, hipR: 0, kneeR: 0, ankleR: 0, toeR: 80, hipL: 0, kneeL: 0, ankleL: 0, toeL: 80 } },
   "ex-bird-dog": { rl: { rot: 76 }, x: { gripR: 0, gripL: 0 },
@@ -243,10 +243,10 @@ export const PRESETS = {
   "ex-dead-bug": { rl: SUP, lat: { neck: 8, shoulderR: 90, elbowR: 0, shoulderL: 165, elbowL: 0, hipR: 22, kneeR: 8, ankleR: -10, hipL: 90, kneeL: 90, ankleL: -10 } },
   "ex-copenhagen": { rl: { yaw: 90, roll: -76 }, ra: { roll: -76 }, hints: { support: "kneeR" },
     lat: { shoulderL: 6, elbowL: 90, shoulderR: 0, elbowR: 10, ankleR: 0, ankleL: 0, kneeR: 0, kneeL: 0 },
-    ant: { shoulderL: 76, elbowL: 0, shoulderR: 10, elbowR: 60, hipR: 0, kneeR: 0, hipL: -14, kneeL: 0, ankleR: 0, ankleL: 0 } },
+    ant: { shoulderL: 76, elbowL: 0, shoulderR: 90, elbowR: 0, hipR: 0, kneeR: 0, hipL: -14, kneeL: 0, ankleR: 0, ankleL: 0 } },
   "ex-squat": { x: { toeOutR: 18, toeOutL: 18 },
     lat: { trunk: 38, neck: -28, hipR: 88, kneeR: 102, hipL: 88, kneeL: 102, shoulderR: 120, elbowR: 6, shoulderL: 120, elbowL: 6 },
-    ant: { ...squatAnt, hipR: 58, kneeR: -54, hipL: 58, kneeL: -54 } },
+    ant: { ...squatAnt, hipR: 22, kneeR: -16, hipL: 22, kneeL: -16 } },
   "ex-split-squat": { x: { gripR: 0.9, gripL: 0.9 }, hints: { hold: "both" },
     lat: { trunk: 4, hipR: 72, kneeR: 88, hipL: -14, kneeL: 86, ankleL: 22, toeL: 52, shoulderR: 2, elbowR: 4, shoulderL: 2, elbowL: 4 },
     ant: { hipR: 6, kneeR: -4, hipL: 5, kneeL: 0, ankleL: 0, shoulderR: 8, shoulderL: 8, elbowR: 0, elbowL: 0 } },
@@ -294,8 +294,8 @@ export const PRESETS = {
   "ex-ankle-alphabet": { seat: true, hints: { arcAt: "toeR" },
     lat: { trunk: -4, hipR: 88, kneeR: 12, ankleR: -18, hipL: 90, kneeL: 90, shoulderR: 14, elbowR: 30, shoulderL: 14, elbowL: 30 } },
   "ex-shoulder-er-side-lying": { rl: SIDE_L, ra: SIDE_A, x: { gripR: 0.9 }, hints: { hold: "R" },
-    lat: { hipR: 35, kneeR: 50, ankleR: -10, hipL: 35, kneeL: 50, ankleL: -10, shoulderR: 0, elbowR: 0, shoulderL: 10, elbowL: 100 },
-    ant: { shoulderR: 4, elbowR: -88, shoulderL: 160, elbowL: 120, hipR: 0, hipL: 0, kneeR: 0, kneeL: 0, ankleR: 0, ankleL: 0 } },
+    lat: { hipR: 35, kneeR: 50, ankleR: -10, hipL: 35, kneeL: 50, ankleL: -10, shoulderR: 0, elbowR: 0, shoulderL: 8, elbowL: 10 },
+    ant: { shoulderR: 4, elbowR: -88, shoulderL: 168, elbowL: 4, hipR: 0, hipL: 0, kneeR: 0, kneeL: 0, ankleR: 0, ankleL: 0 } },
   "ex-shoulder-er-band": { x: { gripR: 0.85 }, hints: { band: "R" },
     lat: { shoulderR: 6, elbowR: 90, wristR: 0, shoulderL: 3, elbowL: 15 },
     ant: { shoulderR: 6, elbowR: -90, shoulderL: 7 } },
@@ -329,8 +329,8 @@ export const PRESETS = {
   "ex-neck-isometric": { seat: true, x: { gripR: 0 },
     lat: { trunk: -2, ...seatLegs, shoulderR: 70, elbowR: 128, wristR: 10, shoulderL: 14, elbowL: 50 },
     ant: { ...seatAnt, shoulderR: 60, elbowR: 118, wristR: 0 } },
-  "ex-thoracic-extension": { rl: { rot: -78 }, hints: { roller: "upperBack" },
-    lat: { trunk: -32, neck: 12, hipR: 62, kneeR: 96, hipL: 62, kneeL: 96, shoulderR: 150, elbowR: 135, shoulderL: 150, elbowL: 135 } },
+  "ex-thoracic-extension": { rl: { rot: -60 }, hints: { roller: "upperBack" },
+    lat: { trunk: -36, neck: 12, hipR: 62, kneeR: 96, hipL: 62, kneeL: 96, shoulderR: 150, elbowR: 135, shoulderL: 150, elbowL: 135 } },
   "ex-cat-camel": { rl: { rot: 76 }, x: { gripR: 0, gripL: 0 },
     lat: { trunk: 22, neck: 20, shoulderR: 98, elbowR: 2, wristR: 86, shoulderL: 98, elbowL: 2, wristL: 86, hipR: 76, kneeR: 90, ankleR: -55, hipL: 76, kneeL: 90, ankleL: -55 } },
   "ex-prone-press-up": { rl: PRONE, x: { gripR: 0, gripL: 0 },

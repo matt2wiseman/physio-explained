@@ -270,13 +270,14 @@ export function validateAnimation(an, E, W) {
       (ph.props || []).forEach((p, i) => {
         if (!A.PROPS.includes(p.type)) E(`${P}.props[${i}].type`, `"${p.type}" not in PROPS`);
         if (p.attach && !A.BODY_TARGETS.includes(p.attach)) E(`${P}.props[${i}].attach`, `"${p.attach}" not in BODY_TARGETS`);
-        (p.keyframes || []).forEach((k, j) => inT(k.t, `${P}.props[${i}].keyframes[${j}].t`));
+        (p.keyframes || []).forEach((k, j) => { inT(k.t, `${P}.props[${i}].keyframes[${j}].t`); if (k.at !== undefined && !A.BODY_TARGETS.includes(k.at)) E(`${P}.props[${i}].keyframes[${j}].at`, `"${k.at}" not in BODY_TARGETS`); });
       });
       (ph.forces || []).forEach((f, i) => {
         inRange(f.t, `${P}.forces[${i}].t`);
         if (!A.BODY_TARGETS.includes(f.at)) E(`${P}.forces[${i}].at`, `"${f.at}" not in BODY_TARGETS`);
         if (f.dir === undefined && f.angle === undefined) E(`${P}.forces[${i}]`, "needs dir or angle");
         if (f.dir !== undefined && !A.FORCE_DIRS.includes(f.dir)) E(`${P}.forces[${i}].dir`, `"${f.dir}" not in FORCE_DIRS`);
+        if (f.size !== undefined && !["s", "m", "l"].includes(f.size)) E(`${P}.forces[${i}].size`, "s|m|l");
       });
       (ph.highlights || []).forEach((h, i) => { inRange(h.t, `${P}.highlights[${i}].t`); if (!A.BODY_TARGETS.includes(h.at)) E(`${P}.highlights[${i}].at`, `"${h.at}" not in BODY_TARGETS`); });
       (ph.impacts || []).forEach((h, i) => { inT(h.t, `${P}.impacts[${i}].t`); if (!A.BODY_TARGETS.includes(h.at)) E(`${P}.impacts[${i}].at`, `"${h.at}" not in BODY_TARGETS`); });

@@ -68,6 +68,15 @@ Every phase may have `captions: [{ t, text }]` — each caption shows from its `
 - The right side (`R`) is the injured side by convention. In lateral view R is the near limb.
 - 3–6 keyframes is usually enough. Put the injury moment roughly 50–70 % through the phase, wrap it in `slowmo`, and fire `impacts` at the exact instant.
 
+
+**Rig extras (from the rig implementation, A2):**
+- Anterior-view joint angles are the *visible (projected)* frontal-plane angles — a heavily flexed segment reads by its screen direction.
+- `root` also accepts `roll` (+ = topples toward the patient's right) and `yaw` (+ = turns toward the patient's right; lateral view + `yaw: 90` shows the front); both interpolate.
+- `grounded: false` places the pelvis at standing height + `lift`.
+- Lying presets: `lie-supine` = rot −90 (head screen-left), `lie-prone` = rot +90 (head screen-right), side-lying = yaw 90 + roll −90.
+- Prop keyframes may use `{ t, at: "<BODY_TARGET>" }` instead of `x`/`y`, plus optional `rot`.
+- `forces` accept optional `actor` (default first actor) and `size: "s" | "m" | "l"`.
+
 ### 1.2 `zoom` phase
 ```js
 { type: "zoom", label: "Zoom in", duration: 1.5, to: "kneeR", captions: [] }

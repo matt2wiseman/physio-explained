@@ -47,7 +47,7 @@ const tp = (body, id) => body.targets[id]; // world y-up
 /* ---------------- placement ---------------- */
 function supportPlace(type, body, target, view) {
   const m = body.facing;
-  const unitsFor = { pelvis: ["torso", "legR", "legL"], upperBack: ["torso"], lowBack: ["torso"], heels: ["legR", "legL"], footR: ["legR"], footL: ["legL"], kneeR: ["legR"], kneeL: ["legL"], shinR: ["legR"], shinL: ["legL"], handL: ["armL"], handR: ["armR"] };
+  const unitsFor = { pelvis: ["torso"], upperBack: ["torso"], lowBack: ["torso"], heels: ["legR", "legL"], footR: ["legR"], footL: ["legL"], kneeR: ["legR"], kneeL: ["legL"], shinR: ["legR"], shinL: ["legL"], handL: ["armL"], handR: ["armR"] };
   let xc, top;
   if (target === "heels") { xc = (tp(body, "heelR")[0] + tp(body, "heelL")[0]) / 2; top = bottomNear(body, unitsFor.heels, xc, 9); }
   else if (target === "pelvis") { xc = tp(body, "pelvis")[0] - m * 3; top = bottomNear(body, unitsFor.pelvis, xc, 10); }
@@ -130,6 +130,7 @@ export function placeStaticProps(ids, body, hints = {}, opts = {}) {
   const frames = targetFrames(body);
   const out = [];
   for (const id of ids) { const pl = placeProp(id, body, hints, { ...opts, frames }); if (pl) out.push(...[].concat(pl)); }
+  if (hints.desk && !ids.includes("desk")) { const pl = placeProp("desk", body, hints, { ...opts, frames }); if (pl) out.push(pl); }
   if (opts.seat && !ids.some((i) => SUPPORT_PROPS.includes(i))) { const pl = placeProp(hints.seatProp || "chair", body, hints, { ...opts, frames, seat: true }); if (pl) out.push(pl); }
   if (hints.anchor === "ankles") out.push({ type: "_anchor", x: (body.targets.heelR[0] + body.targets.heelL[0]) / 2, y: -Math.max(body.targets.heelR[1], body.targets.heelL[1]) - 4, front: true });
   if (hints.arcAt) { const p = body.targets[hints.arcAt]; out.push({ type: "_arc", x: p[0], y: -p[1], front: true }); }
@@ -359,7 +360,7 @@ const DRAW = {
     return bb(Math.min(a[0], b[0]) - 2, Math.max(a[0], b[0]) + 2, Math.min(a[1], b[1]) - 4, Math.max(a[1], b[1], cy) + 4);
   },
   mat(g, pl) {
-    E(g, "rect", { x: f2(pl.x0), y: -1.5, width: f2(pl.x1 - pl.x0), height: 2.1, rx: 0.9, style: S(mx("--fig-kit-far", 46, "--stage-bg-2"), mx("--fig-kit-far", 60, "--stage-bg"), 0.4) });
+    E(g, "rect", { x: f2(pl.x0), y: -2, width: f2(pl.x1 - pl.x0), height: 2.6, rx: 1.1, style: S(mx("--fig-kit-far", 62, "--stage-bg-2"), mx("--fig-kit", 40, "--stage-bg"), 0.5) });
     return bb(pl.x0, pl.x1, -1.5, 0.6);
   },
   "foam-roller"(g, pl, o) {

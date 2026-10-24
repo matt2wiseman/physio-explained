@@ -3,6 +3,7 @@
 //   node tools/render-rig.mjs                       → rig-sheet-lateral-p<N>.png + rig-sheet-anterior-p<N>.png (every POSE_PRESETS id, names)
 //   node tools/render-rig.mjs --view lateral        → one view only;  --per 24 (presets per page)  --kit older-adult
 //   node tools/render-rig.mjs --injury acl-rupture  → rig-moi-<id>.png (that injury's moi phase at 8 times; --n 12)
+//   node tools/render-rig.mjs --injury demo [--view anterior] [--env court] → built-in two-actor demo phase
 //   node tools/render-rig.mjs --figures             → rig-figures.png (exercise thumbnails at 160×120 on a light page)
 //   node tools/render-rig.mjs --kits                → rig-kits.png
 //   node tools/render-rig.mjs --pose foosh          → rig-pose-foosh.png (large, both views)
@@ -14,7 +15,7 @@ const opt = (k, d) => { const i = a.indexOf(k); return i >= 0 ? a[i + 1] : d; };
 const out = join(ROOT, "tools/output"); mkdirSync(out, { recursive: true });
 const { POSE_PRESETS } = await import("../js/anim/catalogue.js");
 const jobs = [];
-if (a.includes("--injury")) for (const id of opt("--injury").split(",")) jobs.push({ q: `mode=moi&injury=${id}&n=${opt("--n", 8)}`, name: `rig-moi-${id}`, w: 1400 });
+if (a.includes("--injury")) for (const id of opt("--injury").split(",")) jobs.push({ q: `mode=moi&injury=${id}&n=${opt("--n", 8)}&view=${opt("--view", "lateral")}&env=${opt("--env", "pitch")}`, name: `rig-moi-${id}`, w: 1400 });
 else if (a.includes("--figures")) jobs.push({ q: `mode=figures&view=${opt("--view", "lateral")}`, name: `rig-figures${a.includes("--view") ? "-" + opt("--view") : ""}`, w: 1440 });
 else if (a.includes("--kits")) jobs.push({ q: "mode=kits", name: "rig-kits", w: 1200 });
 else if (a.includes("--pose")) for (const id of opt("--pose").split(",")) jobs.push({ q: `mode=pose&pose=${id}&props=${opt("--props", "")}`, name: `rig-pose-${id}`, w: 1200 });
