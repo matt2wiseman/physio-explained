@@ -883,7 +883,7 @@ function buildBand(sp, st, rc) {
   const t3 = tears.filter((f) => f.kind === "vtear" || f.a.grade === 3).reduce((m, f) => Math.max(m, f.p * f.w), 0);
   const se = st.stretch * (1 - t3);
   let Cc = bm.C.map((p) => [p[0], p[1]]);
-  if (se > 0.001) { const a = Cc[0], b = Cc[N - 1]; Cc = Cc.map((p, i) => lerp2(p, lerp2(a, b, (S[i] - s0) / span), Math.min(1, se * 2.2))); }
+  if (se > 0.001) { const a = Cc[0], b = Cc[N - 1]; const k = sp.s.points || sp.s.path ? Math.min(0.3, se * 0.8) : Math.min(0.9, se * 2.2); Cc = Cc.map((p, i) => lerp2(p, lerp2(a, b, (S[i] - s0) / span), k)); }
   const L = sp.len || 50;
   for (const f of st.fx.filter((x) => x.kind === "avulse")) {
     const q = f.p * f.w, fromEnd = f.a.end === "from", end = fromEnd ? Cc[0] : Cc[N - 1], other = fromEnd ? Cc[N - 1] : Cc[0], dv = norm(sub(other, end)), pv = perp(dv);

@@ -274,17 +274,17 @@ export function buildBody(pose, view = "lateral", opts = {}) {
   P.cranium = at(HB, 9.3 * hs, fh.u, 1.3 * hs, fh.a);
   P.face = at(HB, 2.9 * hs, fh.u, 4.3 * hs, fh.a);
   P.nose = at(HB, 6.2 * hs, fh.u, 10.3 * hs, fh.a);
-  P.earR = at(HB, 7.2 * hs, fh.u, -0.6 * hs, fh.a, -8.6 * hs, fh.l);
-  P.earL = at(HB, 7.2 * hs, fh.u, -0.6 * hs, fh.a, 8.6 * hs, fh.l);
+  P.earR = at(HB, 7.0 * hs, fh.u, -1.9 * hs, fh.a, -8.6 * hs, fh.l);
+  P.earL = at(HB, 7.0 * hs, fh.u, -1.9 * hs, fh.a, 8.6 * hs, fh.l);
   P.head = at(HB, 8 * hs, fh.u, 2 * hs, fh.a);
 
   // torso stations: [frame, u, f, halfSpread, r]
   const st = (fr, o, u, f, w, r) => { const c = at(o, u * S, fr.u, f * S, fr.a); return [at(c, -w * S, fr.l), at(c, w * S, fr.l), r]; };
   const STN = {
-    P0: st(fp, O, -6.5, 0, 5.4, 8.8), P1: st(fp, O, 0, -1.8, 6.2, 10.9), P2: st(fp, O, 8, -0.6, 5.7, 10.1),
-    L1: st(fl, B, 2, -0.2, 4.8, 9.7), L2: st(fl, B, 10, 0.2, 4.4, 9.3), L3: st(fl, B, 17, 0.7, 4.8, 10.3),
-    T1: st(ft, T12, 7, 1.4, 5.3, 11.2), T2: st(ft, T12, 15, 1.6, 5.7, 11.5), T3: st(ft, T12, 22, 0.6, 6.4, 10.2),
-    T4: st(ft, T12, 27, -0.9, 8.8, 6.6), T5: st(ft, T12, 30.6, -1.1, 1.4, 5.6)
+    P0: st(fp, O, -6.5, 0, 5.0, 8.8), P1: st(fp, O, 0, -1.8, 5.6, 10.7), P2: st(fp, O, 8, -0.6, 5.2, 10.0),
+    L1: st(fl, B, 2, -0.2, 4.4, 9.6), L2: st(fl, B, 10, 0.2, 3.9, 9.1), L3: st(fl, B, 17, 0.7, 4.8, 10.2),
+    T1: st(ft, T12, 7, 1.4, 5.6, 11.2), T2: st(ft, T12, 15, 1.6, 6.4, 11.5), T3: st(ft, T12, 22, 0.6, 7.6, 10.2),
+    T4: st(ft, T12, 27, -0.9, 10.2, 6.6), T5: st(ft, T12, 30.6, -1.1, 1.4, 5.6)
   };
   const pieces = []; // { unit, role, s: [sphereObj...] }
   const piece = (unit, role, list) => { pieces.push({ unit, role, s: list }); };
@@ -583,30 +583,20 @@ function drawHeadDetails(g, body, scr, far) {
   const h3 = norm(add(mul(F.u, 0.86), mul(F.a, -0.5)));
   const h2 = body.pd(h3), hl = Math.hypot(h2[0], h2[1]);
   if (hl > 0.25) {
-    const hx = h2[0] / hl, hy = -h2[1] / hl; // screen y down
-    const kitHair = body.kitName === "older-adult" ? 0.46 : body.kitName === "child" ? 0.16 : 0.3;
-    const dlt = R * kitHair * hl;
-    const half = Math.sqrt(Math.max(0, R * R - dlt * dlt));
-    const px = -hy, py = hx;
-    const e1 = [cx + hx * dlt + px * half, cy + hy * dlt + py * half], e2 = [cx + hx * dlt - px * half, cy + hy * dlt - py * half];
-    const ctrl = [cx + hx * (dlt - R * 0.28), cy + hy * (dlt - R * 0.28)];
-    // arc from e2 to e1 passing through the far point c + h*R
-    const cw = (e1[0] - cx) * (e2[1] - cy) - (e1[1] - cy) * (e2[0] - cx);
-    const d = `M${fmt(e1[0])},${fmt(e1[1])}A${fmt(R)},${fmt(R)} 0 ${dlt < 0 ? 1 : 0},${cw > 0 ? 1 : 0} ${fmt(e2[0])},${fmt(e2[1])}Q${fmt(ctrl[0])},${fmt(ctrl[1])} ${fmt(e1[0])},${fmt(e1[1])}Z`;
-    // choose the arc that contains the far point: test by flipping sweep if needed
-    const far2 = [cx + hx * R, cy + hy * R];
-    const side = (e2[0] - e1[0]) * (far2[1] - e1[1]) - (e2[1] - e1[1]) * (far2[0] - e1[0]);
-    const sweep = side > 0 ? 0 : 1;
-    const d2 = `M${fmt(e1[0])},${fmt(e1[1])}A${fmt(R)},${fmt(R)} 0 ${dlt < 0 ? 1 : 0},${sweep} ${fmt(e2[0])},${fmt(e2[1])}Q${fmt(ctrl[0])},${fmt(ctrl[1])} ${fmt(e1[0])},${fmt(e1[1])}Z`;
-    void d;
-    svgEl("path", { d: d2, style: `fill: ${body.kit.c.hair[far]}` }, g);
+    const th = Math.atan2(-h2[1], h2[0]); // screen angle (y down) of the hair direction
+    const kitHair = body.kitName === "older-adult" ? 0.42 : body.kitName === "child" ? 0.12 : 0.26;
+    const dlt = R * kitHair * hl, beta = Math.acos(Math.max(-1, Math.min(1, dlt / R)));
+    const e1 = [cx + R * Math.cos(th - beta), cy + R * Math.sin(th - beta)], e2 = [cx + R * Math.cos(th + beta), cy + R * Math.sin(th + beta)];
+    const ctrl = [cx + Math.cos(th) * (dlt - R * 0.3), cy + Math.sin(th) * (dlt - R * 0.3)];
+    const d = `M${fmt(e1[0])},${fmt(e1[1])}A${fmt(R)},${fmt(R)} 0 ${beta > Math.PI / 2 ? 1 : 0},1 ${fmt(e2[0])},${fmt(e2[1])}Q${fmt(ctrl[0])},${fmt(ctrl[1])} ${fmt(e1[0])},${fmt(e1[1])}Z`;
+    svgEl("path", { d, style: `fill: ${body.kit.c.hair[far]}` }, g);
   }
   // near ear cue (lateral-ish views)
   for (const s of ["R", "L"]) {
     const e = P["ear" + s];
     if (body.depth(e) > body.depth(P.cranium) + 4.5 * hs) {
       const [ex, ey] = scr(e), ua = body.pd(F.u), ang = Math.atan2(-ua[1], ua[0]) * 180 / Math.PI;
-      svgEl("ellipse", { cx: fmt(ex), cy: fmt(ey), rx: fmt(2.6 * hs), ry: fmt(1.7 * hs), transform: `rotate(${fmt(ang)} ${fmt(ex)} ${fmt(ey)})`, style: `fill: ${mixc("--fig-skin", 78, "--stage-bg")}; opacity: .55` }, g);
+      svgEl("ellipse", { cx: fmt(ex), cy: fmt(ey), rx: fmt(2.9 * hs), ry: fmt(1.9 * hs), transform: `rotate(${fmt(ang)} ${fmt(ex)} ${fmt(ey)})`, style: `fill: none; stroke: ${mixc("--fig-skin", 55, "--stage-bg")}; stroke-width: ${fmt(0.55 * hs)}; opacity: .7` }, g);
     }
   }
 }
