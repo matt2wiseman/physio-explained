@@ -502,9 +502,9 @@ function loadResponseFigure() {
     h("line", { x1: 34, y1: 24, x2: 34, y2: 166, style: "stroke:var(--ink-3);stroke-width:1.5" }),
     h("path", { d: "M34 142 C 68 140 92 84 170 62 C 232 46 276 100 312 154", fill: "none", "stroke-linecap": "round", style: "stroke:var(--accent);stroke-width:3.2" }),
     h("circle", { cx: 170, cy: 62, r: 4.5, style: "fill:var(--accent)" }),
-    t(72, 42, "Too little", { weight: 700 }), t(72, 55, "weak, disorganised", { size: 9.5, fill: "--ink-3" }),
-    t(170, 42, "Adaptive range", { weight: 700, fill: "--accent" }), t(170, 55, "repair and remodelling", { size: 9.5, fill: "--ink-3" }),
-    t(271, 42, "Too much", { weight: 700, fill: "--tissue" }), t(271, 55, "further damage", { size: 9.5, fill: "--ink-3" }),
+    t(72, 44, "Too little", { weight: 700, size: 11.5 }), t(72, 58, "weakens", { size: 10.5, fill: "--ink-3" }),
+    t(170, 44, "Adaptive range", { weight: 700, fill: "--accent", size: 11.5 }), t(170, 58, "repair, remodelling", { size: 10.5, fill: "--ink-3" }),
+    t(271, 44, "Too much", { weight: 700, fill: "--tissue", size: 11.5 }), t(271, 58, "damage", { size: 10.5, fill: "--ink-3" }),
     t(175, 190, "Mechanical load", { weight: 600 }),
     t(14, 100, "Tissue response", { weight: 600, rot: "rotate(-90 14 100)" }));
   return h("figure", { class: "hl-fig" }, svg,
@@ -621,7 +621,7 @@ function renderPanel() {
   const media = h("div", { class: "hl-media" },
     h("figure", { class: "hl-anim" }, stage,
       h("figcaption", { class: "small muted" }, "Schematic cellular view of this tissue. Stages are listed below for reading without motion.")),
-    h("details", { class: "hl-guide", open: "" }, h("summary", null, "Stage guide"), stageList));
+    h("details", { class: "hl-guide", open: window.innerWidth >= 1000 ? "" : null }, h("summary", null, "Stage guide"), stageList));
 
   const cites = citedIds(v);
   const related = relatedInjuries(v);
