@@ -11,7 +11,7 @@ export default {
   populations: ["male football players", "kicking and change-of-direction sport athletes", "ice hockey players", "athletes with previous groin injury"],
   sports: ["soccer", "australian football", "rugby", "gaelic football", "ice hockey", "field hockey", "futsal"],
   urgency: "routine",
-  summary: "Longstanding groin pain from the adductor longus origin, defined by adductor tenderness plus pain on resisted adduction. It builds gradually in kicking and change-of-direction sports and responds to progressive adductor strengthening.",
+  summary: "Longstanding groin pain from the adductor longus origin (adductor tenderness plus pain on resisted adduction) that builds up in kicking and cutting sports and responds to progressive adductor strengthening.",
   keyFacts: [
     { label: "Typical recovery", value: "8–12 weeks of progressive active training, then graded return" },
     { label: "Return to sport", value: "79% returned to the same level without groin pain after active training" },
@@ -20,7 +20,7 @@ export default {
     { label: "Incidence", value: "Most common groin entity: 61% of athletes in a groin clinic" },
     { label: "Mechanism", value: "Cumulative kicking, cutting and skating load exceeding adductor capacity" }
   ],
-  overview: "Adductor-related groin pain (ARGP) is one of the defined clinical entities of the Doha agreement. It requires adductor tenderness and pain on resisted adduction testing [r1]. It is the most common cause of longstanding groin pain in athletes: 61% of athletes seen at a multidisciplinary groin pain clinic had it, and 44% had more than one entity contributing to their pain [r2]. Pain arises mainly from the adductor longus origin on the pubis, where repetitive kicking, cutting and skating load concentrate on a small enthesis that is anatomically continuous with the rectus abdominis sheath and the pubic symphysis capsule.\n\nARGP is a load–capacity problem, usually without a single injury moment. In the landmark randomised trial, an 8–12 week active training program focused on adductor and pelvic-muscle strength and coordination was far superior to passive physiotherapy. Twenty-three of 34 athletes in the active group returned to sport without groin pain, compared with 4 in the passive group [r3]. The physiotherapist leads diagnosis (including other contributing entities), load management and a progressive strengthening program, which is the cornerstone of treatment.",
+  overview: "Adductor-related groin pain (ARGP) is one of the defined clinical entities of the Doha agreement. It requires adductor tenderness and pain on resisted adduction testing [r1]. It is the most common cause of longstanding groin pain in athletes: 61% of athletes seen at a multidisciplinary groin pain clinic had it, and 44% had more than one entity contributing to their pain [r2]. Pain arises mainly from the adductor longus origin on the pubis, where repetitive kicking, cutting and skating load concentrate on a small enthesis that is anatomically continuous with the rectus abdominis sheath and the pubic symphysis capsule.\n\nARGP is a load–capacity problem, usually without a single injury moment. In the landmark randomised trial, an 8–12 week active training program focused on adductor and pelvic-muscle strength and coordination was far superior to passive physiotherapy. Twenty-three athletes in the active group returned to sport without groin pain, compared with 4 in the passive group [r3]. The physiotherapist leads diagnosis (including other contributing entities), load management and a progressive strengthening program, which is the cornerstone of treatment.",
 
   epidemiology: {
     text: "Groin problems are far more common than time-loss surveillance suggests. Over a 6-week period of match congestion the average weekly prevalence of any groin problem in male footballers was 29%, and substantial problems 10%. A time-loss definition captured only one-third of these problems [r4]. In UEFA elite football, hip and groin injuries occur at 1.1 per 1000 hours and adductor-related injuries are the most common diagnosis [r5]. ARGP was the most prevalent Doha entity (61%) in a clinic cohort of mostly male (98%) footballers (60%) [r2]. Risk factors with level 1–2 evidence include previous groin injury, a higher level of play, reduced adductor strength (absolute and relative to the abductors) and less sport-specific training [r6]. Reduced adductor strength is **modifiable**. Low eccentric adduction strength was associated with adductor-related injury in professional footballers (HR 1.7), although screening could not identify individual athletes at risk [r7].",
@@ -242,7 +242,7 @@ export default {
       { name: "Progressive adductor strengthening including the Copenhagen adduction", description: "Heavy eccentric adductor loading progressed from short to long lever. It increases eccentric adduction strength by about 36% in 8 weeks [r18].", evidence: "moderate", recommendation: "recommended", refs: ["r18"] },
       { name: "Multimodal treatment including manual therapy", description: "Adding manual therapy techniques to active exercise may shorten the time to return to sport compared with exercise alone (moderate evidence from few trials) [r13,r14].", evidence: "limited", recommendation: "consider", refs: ["r13", "r14"] },
       { name: "Load management and education", description: "Temporarily reduce kicking volume, long passing and maximal cutting while maintaining fitness. Return these progressively using pain-monitoring rules. Explain the load–capacity model and the poor link between imaging and pain [r9].", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
-      { name: "Passive physiotherapy alone (massage, stretching, laser, TENS, rest)", description: "Passive treatment without active training was clearly inferior to an active program in the RCT (4 of 34 vs 23 of 34 returned without pain) [r3,r13].", evidence: "moderate", recommendation: "not-recommended", refs: ["r3", "r13"] },
+      { name: "Passive physiotherapy alone (massage, stretching, laser, TENS, rest)", description: "Passive treatment without active training was clearly inferior to an active program in the RCT (4 vs 23 athletes returned without pain) [r3,r13].", evidence: "moderate", recommendation: "not-recommended", refs: ["r3", "r13"] },
       { name: "Complete rest from sport until pain-free", description: "Rest reduces symptoms but also capacity. Pain often returns on resuming sport unless strength is rebuilt [r3].", evidence: "limited", recommendation: "not-recommended", refs: ["r3"] }
     ],
     education: [
@@ -371,15 +371,15 @@ export default {
         type: "moi", label: "Load vs capacity", duration: 7, view: "anterior", environment: "pitch",
         actors: [{ id: "athlete", kit: "athlete" }],
         keyframes: [
-          { t: 0, pose: "run-contact", root: { x: -90 } },
-          { t: 1.0, pose: "cut-plant", joints: { hipR: 26 }, root: { x: -50 } },
-          { t: 1.8, pose: "pivot", root: { x: -35 } },
-          { t: 2.6, pose: "run-midstance", root: { x: -10 } },
-          { t: 3.4, pose: "squat", joints: { hipR: 38, kneeR: 0, hipL: 6, kneeL: 30, trunk: -10, shoulderL: 40, shoulderR: 50 }, root: { x: 10 }, ease: "in" },
-          { t: 4.4, pose: "cut-plant", joints: { hipR: 30 }, root: { x: 25 } },
-          { t: 5.6, pose: "stand", joints: { trunk: 6, elbowR: 80, shoulderR: 15 }, root: { x: 35 } }
+          { t: 0, pose: "run-contact", root: { x: -55 } },
+          { t: 1.0, pose: "cut-plant", joints: { hipR: 26 }, root: { x: -15 } },
+          { t: 1.8, pose: "pivot", root: { x: 0 } },
+          { t: 2.6, pose: "run-midstance", root: { x: 25 } },
+          { t: 3.4, pose: "squat", joints: { hipR: 38, kneeR: 0, hipL: 6, kneeL: 30, trunk: -10, shoulderL: 40, shoulderR: 50 }, root: { x: 45 }, ease: "in" },
+          { t: 4.4, pose: "cut-plant", joints: { hipR: 30 }, root: { x: 60 } },
+          { t: 5.6, pose: "stand", joints: { trunk: 6, elbowR: 80, shoulderR: 15 }, root: { x: 70 } }
         ],
-        props: [{ id: "ball", type: "ball-soccer", keyframes: [{ t: 0, x: -40, y: 11 }, { t: 3.4, x: 60, y: 11 }, { t: 4.4, x: 140, y: 11 }, { t: 7, x: 260, y: 11 }] }],
+        props: [{ id: "ball", type: "ball-soccer", keyframes: [{ t: 0, x: -5, y: 11 }, { t: 3.4, x: 95, y: 11 }, { t: 4.4, x: 175, y: 11 }, { t: 7, x: 295, y: 11 }] }],
         forces: [
           { t: [0.8, 2.0], at: "groinR", dir: "medial", label: "Adductor load: cutting", size: "m" },
           { t: [3.0, 4.2], at: "groinR", dir: "medial", label: "Adductor load at long length", size: "l" },

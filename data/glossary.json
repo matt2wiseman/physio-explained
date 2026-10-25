@@ -1,0 +1,1914 @@
+[
+ {
+  "id": "acute-chronic-workload-ratio",
+  "term": "Acute:chronic workload ratio",
+  "aka": [
+   "ACWR"
+  ],
+  "definition": "A ratio of recent training load to the load accumulated over a longer period. It has been proposed as an indicator of injury risk, but its usefulness for predicting injury is contested.",
+  "category": "rehab"
+ },
+ {
+  "id": "allodynia",
+  "term": "Allodynia",
+  "definition": "Pain from a stimulus that does not normally provoke pain, such as light touch.",
+  "category": "pain",
+  "seeAlso": [
+   "complex-regional-pain-syndrome"
+  ]
+ },
+ {
+  "id": "angiogenesis",
+  "term": "Angiogenesis",
+  "definition": "The formation of new blood vessels from existing ones, an essential step in the repair of injured tissue.",
+  "category": "healing"
+ },
+ {
+  "id": "annular-pulley",
+  "term": "Annular pulley",
+  "aka": [
+   "A2 pulley"
+  ],
+  "definition": "A fibrous band that holds a finger flexor tendon against the phalanx. The A2 and A4 pulleys are the most important for preventing bowstringing.",
+  "category": "anatomy",
+  "seeAlso": [
+   "a2-pulley-rupture",
+   "trigger-finger"
+  ]
+ },
+ {
+  "id": "anterior-drawer-test",
+  "term": "Anterior drawer test",
+  "definition": "A test of anterior translation of the tibia on the femur (knee at 90°) or of the talus on the tibia (ankle). Excess translation suggests ACL or anterior talofibular ligament injury respectively.",
+  "category": "assessment",
+  "seeAlso": [
+   "acl-rupture",
+   "lateral-ankle-sprain"
+  ]
+ },
+ {
+  "id": "apophysis",
+  "term": "Apophysis",
+  "definition": "A bony prominence with its own growth centre that serves as a tendon or muscle attachment site and does not contribute to the length of the bone. In adolescents it is vulnerable to traction injury before it fuses.",
+  "category": "anatomy",
+  "seeAlso": [
+   "osgood-schlatter",
+   "calcaneal-apophysitis",
+   "pelvic-apophyseal-avulsion",
+   "little-league-elbow"
+  ]
+ },
+ {
+  "id": "apophysitis",
+  "term": "Apophysitis",
+  "definition": "Overuse irritation of an apophysis caused by repeated traction from its attached tendon in a skeletally immature person. Sever's disease and Osgood–Schlatter disease are examples.",
+  "category": "anatomy",
+  "seeAlso": [
+   "calcaneal-apophysitis",
+   "osgood-schlatter",
+   "sinding-larsen-johansson"
+  ]
+ },
+ {
+  "id": "apprehension-test",
+  "term": "Apprehension test",
+  "definition": "A test in which a joint is moved toward the direction of suspected instability, such as the shoulder in abduction and external rotation or the patella pushed laterally. A feeling of imminent dislocation is a positive finding.",
+  "category": "assessment",
+  "seeAlso": [
+   "anterior-shoulder-dislocation",
+   "patellar-dislocation"
+  ]
+ },
+ {
+  "id": "arthrogenic-muscle-inhibition",
+  "term": "Arthrogenic muscle inhibition",
+  "aka": [
+   "AMI"
+  ],
+  "definition": "A reflex-mediated reduction in muscle activation after joint injury, effusion or surgery, which stops the muscle being fully recruited even though it is not damaged. It is well described for the quadriceps after knee injury.",
+  "category": "healing",
+  "seeAlso": [
+   "acl-rupture",
+   "patellofemoral-pain"
+  ]
+ },
+ {
+  "id": "arthroscopy",
+  "term": "Arthroscopy",
+  "definition": "A minimally invasive procedure in which a small camera is placed inside a joint to inspect and, if needed, treat the structures within it.",
+  "category": "imaging",
+  "seeAlso": [
+   "meniscal-tear",
+   "fai-syndrome"
+  ]
+ },
+ {
+  "id": "articular-cartilage",
+  "term": "Articular cartilage",
+  "aka": [
+   "hyaline cartilage"
+  ],
+  "definition": "The smooth hyaline cartilage that covers the ends of bones in synovial joints. It has no blood supply or nerves and a limited capacity for intrinsic repair.",
+  "category": "anatomy",
+  "seeAlso": [
+   "articular-cartilage-defect-knee",
+   "osteochondral-lesion-talus"
+  ]
+ },
+ {
+  "id": "avulsion-fracture",
+  "term": "Avulsion fracture",
+  "definition": "A fracture in which a fragment of bone is pulled away at the attachment of a tendon or ligament. It is common at apophyses in adolescents.",
+  "category": "injury",
+  "seeAlso": [
+   "pelvic-apophyseal-avulsion",
+   "proximal-hamstring-avulsion",
+   "fifth-metatarsal-fracture"
+  ]
+ },
+ {
+  "id": "axonotmesis",
+  "term": "Axonotmesis",
+  "definition": "Disruption of the axon and its myelin with the surrounding connective tissue framework preserved. Wallerian degeneration follows and the axon can regenerate at roughly 1 mm per day.",
+  "category": "nerve",
+  "seeAlso": [
+   "peripheral-nerve-injury"
+  ]
+ },
+ {
+  "id": "bankart-lesion",
+  "term": "Bankart lesion",
+  "definition": "Detachment of the anteroinferior glenoid labrum and its attached capsule from the glenoid, usually after an anterior shoulder dislocation.",
+  "category": "injury",
+  "seeAlso": [
+   "anterior-shoulder-dislocation"
+  ]
+ },
+ {
+  "id": "beighton-score",
+  "term": "Beighton score",
+  "definition": "A nine-point screening tool for generalised joint hypermobility, scoring passive finger, thumb, elbow and knee hyperextension and forward trunk flexion. The thresholds used vary with age and criteria.",
+  "category": "assessment",
+  "seeAlso": [
+   "multidirectional-instability"
+  ]
+ },
+ {
+  "id": "biopsychosocial-model",
+  "term": "Biopsychosocial model",
+  "definition": "A framework in which health and illness result from interacting biological, psychological and social factors rather than from tissue pathology alone.",
+  "category": "pain",
+  "seeAlso": [
+   "acute-low-back-pain"
+  ]
+ },
+ {
+  "id": "blood-flow-restriction-training",
+  "term": "Blood flow restriction training",
+  "aka": [
+   "BFR"
+  ],
+  "definition": "Low-load resistance exercise performed with a cuff that partly restricts blood flow to the limb. It is used to build muscle when heavy loading is not tolerated.",
+  "category": "rehab",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "bone-marrow-oedema",
+  "term": "Bone marrow oedema",
+  "aka": [
+   "bone bruise"
+  ],
+  "definition": "A signal change on MRI indicating increased fluid in bone marrow. It is seen in bone stress injury, bone bruises and arthritis, and is not specific to any one cause.",
+  "category": "imaging",
+  "seeAlso": [
+   "bone-stress-injury",
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "bone-stress-injury",
+  "term": "Bone stress injury",
+  "aka": [
+   "BSI"
+  ],
+  "definition": "A spectrum of overuse bone injury, from a stress reaction (bone marrow oedema without a fracture line) to a stress fracture. It occurs when repetitive loading outpaces the bone's ability to repair.",
+  "category": "injury",
+  "seeAlso": [
+   "bone-stress-injury",
+   "tibial-stress-fracture",
+   "metatarsal-stress-fracture"
+  ]
+ },
+ {
+  "id": "brachial-plexus",
+  "term": "Brachial plexus",
+  "definition": "The network of nerves formed from the C5–T1 nerve roots that supplies the upper limb.",
+  "category": "anatomy",
+  "seeAlso": [
+   "stinger-burner",
+   "thoracic-outlet-syndrome"
+  ]
+ },
+ {
+  "id": "bursa",
+  "term": "Bursa",
+  "aka": [
+   "bursae"
+  ],
+  "definition": "A flat, fluid-containing sac lined with synovium that reduces friction between tendon, muscle or skin and underlying bone.",
+  "category": "anatomy",
+  "seeAlso": [
+   "prepatellar-bursitis",
+   "olecranon-bursitis",
+   "gluteal-tendinopathy"
+  ]
+ },
+ {
+  "id": "bursitis",
+  "term": "Bursitis",
+  "definition": "Inflammation of a bursa, often from repeated friction, pressure or a direct blow. The bursa becomes swollen and painful.",
+  "category": "injury",
+  "seeAlso": [
+   "prepatellar-bursitis",
+   "olecranon-bursitis"
+  ]
+ },
+ {
+  "id": "callus",
+  "term": "Callus",
+  "definition": "The tissue that bridges a fracture during healing. A soft callus of cartilage and fibrous tissue is progressively replaced by hard, woven bone and then remodelled.",
+  "category": "healing",
+  "seeAlso": [
+   "tibia-fibula-shaft-fracture",
+   "clavicle-fracture"
+  ]
+ },
+ {
+  "id": "cam-morphology",
+  "term": "Cam morphology",
+  "aka": [
+   "cam deformity"
+  ],
+  "definition": "A non-spherical femoral head or reduced head–neck offset, producing a bump that can abut the acetabular rim during hip flexion. It is one of the morphologies associated with femoroacetabular impingement syndrome.",
+  "category": "injury",
+  "seeAlso": [
+   "fai-syndrome",
+   "hip-labral-tear"
+  ]
+ },
+ {
+  "id": "cauda-equina-syndrome",
+  "term": "Cauda equina syndrome",
+  "aka": [
+   "CES"
+  ],
+  "definition": "Compression of the lumbosacral nerve roots below the end of the spinal cord. Saddle sensory change, bladder or bowel disturbance, sexual dysfunction and bilateral leg symptoms are red flags that need emergency assessment.",
+  "category": "injury",
+  "seeAlso": [
+   "cauda-equina-syndrome"
+  ]
+ },
+ {
+  "id": "central-sensitisation",
+  "term": "Central sensitisation",
+  "aka": [
+   "central sensitization"
+  ],
+  "definition": "Amplified signalling within the central nervous system that produces pain hypersensitivity. Clinically it may appear as pain spreading beyond the injured area or out of proportion to a stimulus.",
+  "category": "pain",
+  "seeAlso": [
+   "complex-regional-pain-syndrome",
+   "persisting-post-concussion-symptoms"
+  ]
+ },
+ {
+  "id": "clinical-decision-rule",
+  "term": "Clinical decision rule",
+  "aka": [
+   "clinical prediction rule"
+  ],
+  "definition": "A tool that combines items from the history and examination to estimate the probability of a condition or guide a decision, such as whether to order imaging.",
+  "category": "evidence",
+  "seeAlso": [
+   "ankle-fracture",
+   "cervical-spine-fracture"
+  ]
+ },
+ {
+  "id": "clinical-practice-guideline",
+  "term": "Clinical practice guideline",
+  "aka": [
+   "CPG"
+  ],
+  "definition": "A set of recommendations developed from a systematic review of the evidence to help practitioners and patients make decisions about care.",
+  "category": "evidence"
+ },
+ {
+  "id": "closed-kinetic-chain-exercise",
+  "term": "Closed kinetic chain exercise",
+  "aka": [
+   "CKC"
+  ],
+  "definition": "An exercise in which the distal segment is fixed or loaded against a surface, such as a squat or leg press.",
+  "category": "rehab",
+  "seeAlso": [
+   "acl-rupture",
+   "patellofemoral-pain"
+  ]
+ },
+ {
+  "id": "collagen-type-i",
+  "term": "Collagen type I",
+  "definition": "The main structural collagen of tendon, ligament, bone and skin, arranged in tight parallel bundles that resist tension.",
+  "category": "healing"
+ },
+ {
+  "id": "collagen-type-iii",
+  "term": "Collagen type III",
+  "definition": "A thinner, less organised collagen that predominates in early repair tissue. During remodelling much of it is replaced by type I collagen, although the original tissue structure is rarely fully restored.",
+  "category": "healing"
+ },
+ {
+  "id": "compartment-syndrome",
+  "term": "Compartment syndrome",
+  "definition": "Raised pressure within a closed fascial compartment that reduces blood flow and can damage muscle and nerve. The acute form is a surgical emergency; the exertional form recurs with activity and settles with rest.",
+  "category": "injury",
+  "seeAlso": [
+   "acute-compartment-syndrome",
+   "chronic-exertional-compartment-syndrome"
+  ]
+ },
+ {
+  "id": "computed-tomography",
+  "term": "Computed tomography",
+  "aka": [
+   "CT"
+  ],
+  "definition": "Cross-sectional X-ray imaging that shows detailed bone anatomy. It is used for complex fractures and subtle bony lesions.",
+  "category": "imaging"
+ },
+ {
+  "id": "concentric-contraction",
+  "term": "Concentric contraction",
+  "definition": "A muscle contraction in which the muscle shortens while producing force.",
+  "category": "rehab"
+ },
+ {
+  "id": "confidence-interval",
+  "term": "Confidence interval",
+  "aka": [
+   "CI"
+  ],
+  "definition": "A range of values within which the true effect is likely to lie, given the data. A 95% confidence interval that is wide indicates imprecision.",
+  "category": "evidence"
+ },
+ {
+  "id": "contusion",
+  "term": "Contusion",
+  "aka": [
+   "bruise"
+  ],
+  "definition": "A bruise caused by a direct blow that damages muscle or other soft tissue and causes bleeding without breaking the skin.",
+  "category": "injury",
+  "seeAlso": [
+   "quadriceps-contusion",
+   "hip-pointer"
+  ]
+ },
+ {
+  "id": "coup-and-contrecoup-injury",
+  "term": "Coup and contrecoup injury",
+  "definition": "Brain injury at the site of impact (coup) and at the opposite pole of the skull (contrecoup), produced as the brain moves within the skull during rapid acceleration or deceleration.",
+  "category": "injury",
+  "seeAlso": [
+   "concussion"
+  ]
+ },
+ {
+  "id": "crepitus",
+  "term": "Crepitus",
+  "definition": "A palpable or audible grating, crackling or creaking felt during joint or tendon movement.",
+  "category": "assessment",
+  "seeAlso": [
+   "intersection-syndrome"
+  ]
+ },
+ {
+  "id": "criteria-based-progression",
+  "term": "Criteria-based progression",
+  "definition": "Advancing rehabilitation when defined functional, strength and symptom criteria are met, rather than after a fixed time.",
+  "category": "rehab",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "dash",
+  "term": "DASH",
+  "definition": "The Disabilities of the Arm, Shoulder and Hand questionnaire, a 30-item patient-reported measure of upper-limb symptoms and function.",
+  "category": "evidence",
+  "seeAlso": [
+   "lateral-elbow-tendinopathy",
+   "distal-radius-fracture"
+  ]
+ },
+ {
+  "id": "degenerative-tendinopathy",
+  "term": "Degenerative tendinopathy",
+  "definition": "A late stage of the tendinopathy continuum with a disorganised matrix, areas of cell loss and focal change in tendon structure. These changes are less likely to reverse.",
+  "category": "injury"
+ },
+ {
+  "id": "delayed-onset-muscle-soreness",
+  "term": "Delayed-onset muscle soreness",
+  "aka": [
+   "DOMS"
+  ],
+  "definition": "Muscle soreness and stiffness that peaks about one to three days after unaccustomed or eccentric-biased exercise and then settles.",
+  "category": "injury",
+  "seeAlso": [
+   "delayed-onset-muscle-soreness"
+  ]
+ },
+ {
+  "id": "dermatome",
+  "term": "Dermatome",
+  "definition": "The area of skin supplied by sensory fibres of a single spinal nerve root.",
+  "category": "nerve",
+  "seeAlso": [
+   "cervical-radiculopathy",
+   "lumbar-disc-herniation"
+  ]
+ },
+ {
+  "id": "diaphysis",
+  "term": "Diaphysis",
+  "definition": "The shaft of a long bone, made mainly of thick cortical bone surrounding the medullary canal.",
+  "category": "anatomy",
+  "seeAlso": [
+   "tibia-fibula-shaft-fracture",
+   "humeral-shaft-fracture"
+  ]
+ },
+ {
+  "id": "dislocation",
+  "term": "Dislocation",
+  "definition": "A complete loss of contact between the articulating surfaces of a joint.",
+  "category": "injury",
+  "seeAlso": [
+   "anterior-shoulder-dislocation",
+   "patellar-dislocation",
+   "elbow-dislocation"
+  ]
+ },
+ {
+  "id": "dix-hallpike-manoeuvre",
+  "term": "Dix–Hallpike manoeuvre",
+  "aka": [
+   "Dix-Hallpike"
+  ],
+  "definition": "A positional test for posterior canal benign paroxysmal positional vertigo. The patient is moved from sitting to lying with the head turned and extended, and vertigo with characteristic nystagmus is a positive finding.",
+  "category": "assessment",
+  "seeAlso": [
+   "bppv"
+  ]
+ },
+ {
+  "id": "dual-energy-x-ray-absorptiometry",
+  "term": "Dual-energy X-ray absorptiometry",
+  "aka": [
+   "DEXA",
+   "DXA"
+  ],
+  "definition": "A low-dose scan that measures bone mineral density, used to diagnose and monitor osteoporosis.",
+  "category": "imaging",
+  "seeAlso": [
+   "osteoporotic-vertebral-fracture",
+   "bone-stress-injury"
+  ]
+ },
+ {
+  "id": "dynamic-knee-valgus",
+  "term": "Dynamic knee valgus",
+  "aka": [
+   "knee valgus collapse"
+  ],
+  "definition": "Inward collapse of the knee toward the midline during a landing, squat or cut. It is seen in many ACL injuries and in patellofemoral pain, but its predictive value for injury is debated.",
+  "category": "rehab",
+  "seeAlso": [
+   "acl-rupture",
+   "patellofemoral-pain"
+  ]
+ },
+ {
+  "id": "eccentric-contraction",
+  "term": "Eccentric contraction",
+  "definition": "A muscle contraction in which the muscle lengthens while producing force, as when lowering a weight. Eccentric exercise features in the rehabilitation of tendinopathy and muscle strain.",
+  "category": "rehab",
+  "seeAlso": [
+   "midportion-achilles-tendinopathy",
+   "hamstring-strain"
+  ]
+ },
+ {
+  "id": "effect-size",
+  "term": "Effect size",
+  "definition": "A measure of the magnitude of a difference or relationship, such as a standardised mean difference, rather than whether it is statistically significant.",
+  "category": "evidence"
+ },
+ {
+  "id": "effusion",
+  "term": "Effusion",
+  "aka": [
+   "joint effusion"
+  ],
+  "definition": "An abnormal amount of fluid within a joint. Synovial effusion typically develops more slowly than haemarthrosis, over many hours to a day or more.",
+  "category": "injury"
+ },
+ {
+  "id": "end-feel",
+  "term": "End-feel",
+  "definition": "The quality of resistance felt by the examiner at the end of passive range of motion, described as firm, hard, soft or empty. It helps identify the structure limiting movement.",
+  "category": "assessment",
+  "seeAlso": [
+   "frozen-shoulder",
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "enthesis",
+  "term": "Enthesis",
+  "aka": [
+   "entheses"
+  ],
+  "definition": "The site where a tendon, ligament or joint capsule attaches to bone, with a graded transition from tendon through fibrocartilage to bone. It concentrates mechanical stress and is a common site of overuse pathology.",
+  "category": "anatomy",
+  "seeAlso": [
+   "insertional-achilles-tendinopathy",
+   "plantar-heel-pain",
+   "lateral-elbow-tendinopathy"
+  ]
+ },
+ {
+  "id": "enthesopathy",
+  "term": "Enthesopathy",
+  "definition": "Any disorder of an enthesis, the attachment of tendon, ligament or capsule to bone, usually causing localised pain and tenderness.",
+  "category": "injury",
+  "seeAlso": [
+   "insertional-achilles-tendinopathy",
+   "plantar-heel-pain"
+  ]
+ },
+ {
+  "id": "epiphysis",
+  "term": "Epiphysis",
+  "definition": "The end of a long bone, separated from the shaft by the physis until growth is complete. It is largely covered by articular cartilage at the joint surface.",
+  "category": "anatomy",
+  "seeAlso": [
+   "scfe"
+  ]
+ },
+ {
+  "id": "fadir-test",
+  "term": "FADIR test",
+  "aka": [
+   "hip impingement test"
+  ],
+  "definition": "A hip test combining flexion, adduction and internal rotation. Reproduction of the patient's groin pain suggests an intra-articular hip condition such as femoroacetabular impingement; it is sensitive but not specific.",
+  "category": "assessment",
+  "seeAlso": [
+   "fai-syndrome",
+   "hip-labral-tear"
+  ]
+ },
+ {
+  "id": "fascia",
+  "term": "Fascia",
+  "definition": "Sheets of connective tissue that surround, separate and connect muscles, nerves and vessels.",
+  "category": "anatomy",
+  "seeAlso": [
+   "plantar-heel-pain",
+   "acute-compartment-syndrome"
+  ]
+ },
+ {
+  "id": "fascial-compartment",
+  "term": "Fascial compartment",
+  "aka": [
+   "compartment"
+  ],
+  "definition": "A group of muscles, with their nerves and vessels, enclosed by fascia and bone. Raised pressure inside a compartment can compromise blood flow and nerve function.",
+  "category": "anatomy",
+  "seeAlso": [
+   "acute-compartment-syndrome",
+   "chronic-exertional-compartment-syndrome"
+  ]
+ },
+ {
+  "id": "fear-avoidance-model",
+  "term": "Fear-avoidance model",
+  "definition": "A model in which catastrophic thinking about pain leads to fear, avoidance of activity, and then disability and deconditioning that sustain pain.",
+  "category": "pain",
+  "seeAlso": [
+   "acute-low-back-pain"
+  ]
+ },
+ {
+  "id": "fibroblast",
+  "term": "Fibroblast",
+  "definition": "The main cell of connective tissue repair. It synthesises collagen and other components of the extracellular matrix.",
+  "category": "healing"
+ },
+ {
+  "id": "fibrocartilage",
+  "term": "Fibrocartilage",
+  "definition": "A dense tissue of type I collagen with cartilage cells, found in menisci, labra, the annulus of the intervertebral disc and tendon and ligament entheses. It resists both tension and compression.",
+  "category": "anatomy"
+ },
+ {
+  "id": "grade",
+  "term": "GRADE",
+  "aka": [
+   "certainty of evidence"
+  ],
+  "definition": "A system for rating the certainty of a body of evidence as high, moderate, low or very low, and the strength of a recommendation.",
+  "category": "evidence"
+ },
+ {
+  "id": "graded-exposure",
+  "term": "Graded exposure",
+  "definition": "A planned, gradual return to feared or painful activities, so that the person rebuilds confidence and function.",
+  "category": "pain",
+  "seeAlso": [
+   "acute-low-back-pain",
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "granulation-tissue",
+  "term": "Granulation tissue",
+  "definition": "Newly formed connective tissue rich in capillaries and fibroblasts that fills a wound or defect during the proliferative phase.",
+  "category": "healing"
+ },
+ {
+  "id": "haemarthrosis",
+  "term": "Haemarthrosis",
+  "aka": [
+   "hemarthrosis"
+  ],
+  "definition": "Bleeding into a joint. Swelling that develops within hours of an injury suggests a significant intra-articular injury, such as an ACL rupture, fracture or patellar dislocation.",
+  "category": "injury",
+  "seeAlso": [
+   "acl-rupture",
+   "patellar-dislocation"
+  ]
+ },
+ {
+  "id": "haematoma",
+  "term": "Haematoma",
+  "aka": [
+   "hematoma"
+  ],
+  "definition": "A localised collection of blood outside blood vessels. In muscle it may be intramuscular, contained by the fascia, or intermuscular, where blood tracks between muscles and bruising appears sooner.",
+  "category": "injury",
+  "seeAlso": [
+   "quadriceps-contusion",
+   "hamstring-strain"
+  ]
+ },
+ {
+  "id": "hill-sachs-lesion",
+  "term": "Hill–Sachs lesion",
+  "aka": [
+   "Hill-Sachs"
+  ],
+  "definition": "An impaction fracture on the posterolateral humeral head caused by contact with the anterior glenoid rim during an anterior shoulder dislocation.",
+  "category": "injury",
+  "seeAlso": [
+   "anterior-shoulder-dislocation"
+  ]
+ },
+ {
+  "id": "hoffmann-sign",
+  "term": "Hoffmann sign",
+  "definition": "A reflex tested by flicking the fingernail of the middle finger. Flexion of the thumb and index finger suggests an upper motor neuron lesion, such as cervical myelopathy.",
+  "category": "assessment",
+  "seeAlso": [
+   "degenerative-cervical-myelopathy"
+  ]
+ },
+ {
+  "id": "hop-test",
+  "term": "Hop test",
+  "aka": [
+   "hop tests"
+  ],
+  "definition": "A test of single-leg power, control and endurance, such as the single, triple, crossover and timed hop. Results are commonly expressed as a limb symmetry index.",
+  "category": "assessment",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "hyperalgesia",
+  "term": "Hyperalgesia",
+  "definition": "Increased pain from a stimulus that normally causes pain.",
+  "category": "pain",
+  "seeAlso": [
+   "complex-regional-pain-syndrome"
+  ]
+ },
+ {
+  "id": "impingement",
+  "term": "Impingement",
+  "definition": "Mechanical compression or pinching of soft tissue or bone between two structures during movement. The term is used for conditions at the shoulder, hip and ankle.",
+  "category": "injury",
+  "seeAlso": [
+   "rotator-cuff-related-shoulder-pain",
+   "fai-syndrome",
+   "anterior-ankle-impingement"
+  ]
+ },
+ {
+  "id": "incidental-imaging-findings",
+  "term": "Incidental imaging findings",
+  "definition": "Abnormalities, such as disc bulges, rotator cuff tears and meniscal degeneration, that are common in people without pain and become more frequent with age. They must be interpreted alongside the clinical picture.",
+  "category": "imaging",
+  "seeAlso": [
+   "degenerative-meniscal-tear",
+   "degenerative-rotator-cuff-tear",
+   "acute-low-back-pain"
+  ]
+ },
+ {
+  "id": "inflammatory-phase",
+  "term": "Inflammatory phase",
+  "definition": "The first phase of soft-tissue healing, lasting the first days after injury. Bleeding is controlled, inflammatory cells arrive, and damaged tissue is cleared.",
+  "category": "healing"
+ },
+ {
+  "id": "intervertebral-disc",
+  "term": "Intervertebral disc",
+  "aka": [
+   "annulus fibrosus",
+   "nucleus pulposus"
+  ],
+  "definition": "The shock-absorbing joint between adjacent vertebral bodies, made of a gel-like nucleus pulposus surrounded by the fibrous rings of the annulus fibrosus.",
+  "category": "anatomy",
+  "seeAlso": [
+   "lumbar-disc-herniation",
+   "cervical-radiculopathy"
+  ]
+ },
+ {
+  "id": "isometric-contraction",
+  "term": "Isometric contraction",
+  "definition": "A muscle contraction in which tension is produced without a change in muscle length or joint angle.",
+  "category": "rehab",
+  "seeAlso": [
+   "patellar-tendinopathy",
+   "gluteal-tendinopathy"
+  ]
+ },
+ {
+  "id": "joint-capsule",
+  "term": "Joint capsule",
+  "definition": "The fibrous envelope surrounding a synovial joint, lined internally by synovium. Together with ligaments it provides passive stability.",
+  "category": "anatomy",
+  "seeAlso": [
+   "frozen-shoulder",
+   "multidirectional-instability"
+  ]
+ },
+ {
+  "id": "joint-instability",
+  "term": "Joint instability",
+  "aka": [
+   "instability"
+  ],
+  "definition": "The inability of a joint to stay in a normal position or to control motion under load. It may arise from structural laxity, impaired neuromuscular control, or both.",
+  "category": "injury",
+  "seeAlso": [
+   "chronic-ankle-instability",
+   "multidirectional-instability",
+   "posterior-shoulder-instability"
+  ]
+ },
+ {
+  "id": "joint-line-tenderness",
+  "term": "Joint line tenderness",
+  "definition": "Pain on palpation of the tibiofemoral joint line. It is a sensitive but not specific sign of meniscal pathology.",
+  "category": "assessment",
+  "seeAlso": [
+   "meniscal-tear"
+  ]
+ },
+ {
+  "id": "kinesiophobia",
+  "term": "Kinesiophobia",
+  "aka": [
+   "fear of movement"
+  ],
+  "definition": "An excessive, irrational fear of movement or activity arising from a feeling of vulnerability to painful injury or re-injury. It is commonly measured with the Tampa Scale of Kinesiophobia.",
+  "category": "pain",
+  "seeAlso": [
+   "acl-rupture",
+   "acute-low-back-pain"
+  ]
+ },
+ {
+  "id": "kinetic-chain",
+  "term": "Kinetic chain",
+  "definition": "The concept that body segments are linked, so that forces and motion at one joint influence others. It underpins assessment of proximal contributors to distal problems.",
+  "category": "rehab"
+ },
+ {
+  "id": "koos",
+  "term": "KOOS",
+  "definition": "The Knee injury and Osteoarthritis Outcome Score, a patient-reported questionnaire covering pain, symptoms, daily activities, sport and recreation, and knee-related quality of life.",
+  "category": "evidence",
+  "seeAlso": [
+   "acl-rupture",
+   "meniscal-tear",
+   "patellofemoral-pain"
+  ]
+ },
+ {
+  "id": "labrum",
+  "term": "Labrum",
+  "aka": [
+   "glenoid labrum",
+   "acetabular labrum"
+  ],
+  "definition": "A rim of fibrocartilage around the edge of the glenoid or acetabulum that deepens the socket and contributes to joint stability.",
+  "category": "anatomy",
+  "seeAlso": [
+   "hip-labral-tear",
+   "slap-lesion",
+   "anterior-shoulder-dislocation"
+  ]
+ },
+ {
+  "id": "lachman-test",
+  "term": "Lachman test",
+  "aka": [
+   "Lachman"
+  ],
+  "definition": "A test for ACL integrity performed with the knee in 20–30° of flexion: the examiner stabilises the femur and draws the tibia forward. Increased anterior translation or a soft end-feel is a positive finding.",
+  "category": "assessment",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "laxity",
+  "term": "Laxity",
+  "definition": "Increased passive translation or rotation at a joint, found on examination. Laxity is not always symptomatic and is not the same as functional instability.",
+  "category": "injury",
+  "seeAlso": [
+   "acl-rupture",
+   "multidirectional-instability"
+  ]
+ },
+ {
+  "id": "limb-symmetry-index",
+  "term": "Limb symmetry index",
+  "aka": [
+   "LSI"
+  ],
+  "definition": "The performance of the injured limb expressed as a percentage of the uninjured limb on a strength or hop test. A value of 90% or more is commonly used as a return-to-sport criterion, though it can overestimate recovery if the uninjured limb has also lost capacity.",
+  "category": "rehab",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "load-management",
+  "term": "Load management",
+  "definition": "Planning and monitoring training and rehabilitation load in relation to the capacity of the tissue and the person, so that load is high enough to drive adaptation but not so high that it causes injury or a flare of symptoms.",
+  "category": "rehab",
+  "seeAlso": [
+   "midportion-achilles-tendinopathy",
+   "patellar-tendinopathy"
+  ]
+ },
+ {
+  "id": "magnetic-resonance-imaging",
+  "term": "Magnetic resonance imaging",
+  "aka": [
+   "MRI"
+  ],
+  "definition": "A scan that uses magnetic fields to show soft tissue, cartilage and bone marrow in detail without ionising radiation.",
+  "category": "imaging"
+ },
+ {
+  "id": "manual-muscle-testing",
+  "term": "Manual muscle testing",
+  "aka": [
+   "MMT",
+   "MRC scale"
+  ],
+  "definition": "A clinical grading of muscle strength on the 0–5 Medical Research Council scale, from no contraction to full strength against resistance.",
+  "category": "assessment"
+ },
+ {
+  "id": "mcmurray-test",
+  "term": "McMurray test",
+  "definition": "A test for meniscal tear in which the flexed knee is extended while the tibia is rotated and a varus or valgus stress is applied. A painful click or catch along the joint line is a positive finding, although accuracy is limited.",
+  "category": "assessment",
+  "seeAlso": [
+   "meniscal-tear",
+   "degenerative-meniscal-tear"
+  ]
+ },
+ {
+  "id": "mechanotransduction",
+  "term": "Mechanotransduction",
+  "definition": "The process by which cells convert mechanical forces into biochemical signals. It is how tendon, muscle and bone adapt to load.",
+  "category": "healing"
+ },
+ {
+  "id": "meniscus",
+  "term": "Meniscus",
+  "aka": [
+   "menisci"
+  ],
+  "definition": "A C-shaped wedge of fibrocartilage between the femoral condyle and tibial plateau. The medial and lateral menisci distribute load, absorb shock and contribute to knee stability.",
+  "category": "anatomy",
+  "seeAlso": [
+   "meniscal-tear",
+   "degenerative-meniscal-tear"
+  ]
+ },
+ {
+  "id": "meta-analysis",
+  "term": "Meta-analysis",
+  "definition": "A statistical method that combines results from several studies into a single pooled estimate.",
+  "category": "evidence"
+ },
+ {
+  "id": "metaphysis",
+  "term": "Metaphysis",
+  "definition": "The flared region of a long bone between the shaft (diaphysis) and the physis. In children it is a site of rapid bone turnover.",
+  "category": "anatomy"
+ },
+ {
+  "id": "minimal-clinically-important-difference",
+  "term": "Minimal clinically important difference",
+  "aka": [
+   "MCID"
+  ],
+  "definition": "The smallest change in an outcome that patients perceive as beneficial. It is used to judge whether a change in score matters to the patient.",
+  "category": "evidence"
+ },
+ {
+  "id": "minimal-detectable-change",
+  "term": "Minimal detectable change",
+  "aka": [
+   "MDC"
+  ],
+  "definition": "The smallest change in a measurement that exceeds measurement error. A change smaller than this may reflect noise rather than true change.",
+  "category": "evidence"
+ },
+ {
+  "id": "muscle-atrophy",
+  "term": "Muscle atrophy",
+  "definition": "Loss of muscle mass and strength, for example after immobilisation, denervation or reduced use following injury.",
+  "category": "healing",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "muscle-tendon-unit",
+  "term": "Muscle–tendon unit",
+  "aka": [
+   "MTU"
+  ],
+  "definition": "The functional unit made up of a muscle belly, its musculotendinous junction and its tendon. Force is generated by the muscle and transmitted through the tendon to bone.",
+  "category": "anatomy"
+ },
+ {
+  "id": "musculoskeletal-ultrasound",
+  "term": "Musculoskeletal ultrasound",
+  "aka": [
+   "ultrasound"
+  ],
+  "definition": "Real-time imaging with sound waves of tendons, muscles, ligaments and fluid collections. It allows dynamic assessment but depends on operator skill.",
+  "category": "imaging"
+ },
+ {
+  "id": "musculotendinous-junction",
+  "term": "Musculotendinous junction",
+  "aka": [
+   "MTJ",
+   "myotendinous junction"
+  ],
+  "definition": "The region where muscle fibres merge into tendon. It is the usual site of acute muscle strain injury.",
+  "category": "anatomy",
+  "seeAlso": [
+   "hamstring-strain",
+   "calf-strain",
+   "quadriceps-strain"
+  ]
+ },
+ {
+  "id": "myelopathy",
+  "term": "Myelopathy",
+  "definition": "Dysfunction of the spinal cord, for example from compression, producing upper motor neuron signs below the level of the lesion.",
+  "category": "injury",
+  "seeAlso": [
+   "degenerative-cervical-myelopathy"
+  ]
+ },
+ {
+  "id": "myositis-ossificans",
+  "term": "Myositis ossificans",
+  "aka": [
+   "heterotopic ossification"
+  ],
+  "definition": "Formation of bone within muscle after trauma, most often after a deep contusion. It presents with a firm, painful mass and loss of range of motion.",
+  "category": "injury",
+  "seeAlso": [
+   "quadriceps-contusion"
+  ]
+ },
+ {
+  "id": "myotome",
+  "term": "Myotome",
+  "definition": "The group of muscles supplied by a single spinal nerve root.",
+  "category": "nerve",
+  "seeAlso": [
+   "cervical-radiculopathy",
+   "lumbar-disc-herniation"
+  ]
+ },
+ {
+  "id": "negative-likelihood-ratio",
+  "term": "Negative likelihood ratio",
+  "aka": [
+   "LR−",
+   "LR-"
+  ],
+  "definition": "How much more likely a negative result is in people with the condition than in those without it, calculated as (1 − sensitivity) ÷ specificity. Lower values shift the probability of the condition down more.",
+  "category": "evidence"
+ },
+ {
+  "id": "neovascularisation",
+  "term": "Neovascularisation",
+  "aka": [
+   "neovascularization"
+  ],
+  "definition": "Ingrowth of new blood vessels, often accompanied by small nerves, into tissue. It is seen in painful tendons, though its role in symptoms is uncertain.",
+  "category": "healing",
+  "seeAlso": [
+   "midportion-achilles-tendinopathy"
+  ]
+ },
+ {
+  "id": "neural-mechanosensitivity",
+  "term": "Neural mechanosensitivity",
+  "definition": "Increased sensitivity of a nerve to mechanical load, such as stretch or compression. It is assessed with neurodynamic tests such as the straight leg raise and slump test.",
+  "category": "nerve",
+  "seeAlso": [
+   "lumbar-disc-herniation",
+   "deep-gluteal-syndrome"
+  ]
+ },
+ {
+  "id": "neurapraxia",
+  "term": "Neurapraxia",
+  "definition": "The mildest nerve injury, a temporary block of conduction with the axon intact. There is no Wallerian degeneration and function usually returns over days to weeks.",
+  "category": "nerve",
+  "seeAlso": [
+   "peripheral-nerve-injury",
+   "stinger-burner"
+  ]
+ },
+ {
+  "id": "neurogenic-claudication",
+  "term": "Neurogenic claudication",
+  "definition": "Leg pain, heaviness or weakness brought on by standing or walking and eased by sitting or leaning forward, typical of lumbar spinal stenosis.",
+  "category": "injury",
+  "seeAlso": [
+   "lumbar-spinal-stenosis"
+  ]
+ },
+ {
+  "id": "neuromuscular-control",
+  "term": "Neuromuscular control",
+  "definition": "The ability to coordinate muscle activation so that a joint stays stable and movement is well controlled, including in response to unexpected perturbation.",
+  "category": "rehab",
+  "seeAlso": [
+   "chronic-ankle-instability",
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "neuropathic-pain",
+  "term": "Neuropathic pain",
+  "definition": "Pain caused by a lesion or disease of the somatosensory nervous system. It is often described as burning, shooting or electric, and may coexist with numbness.",
+  "category": "nerve",
+  "seeAlso": [
+   "complex-regional-pain-syndrome",
+   "mortons-neuroma"
+  ]
+ },
+ {
+  "id": "neurotmesis",
+  "term": "Neurotmesis",
+  "definition": "Complete division of the nerve, including its connective tissue. Spontaneous recovery is not expected and surgical repair is usually required.",
+  "category": "nerve",
+  "seeAlso": [
+   "peripheral-nerve-injury"
+  ]
+ },
+ {
+  "id": "nociception",
+  "term": "Nociception",
+  "definition": "The neural processing of noxious stimuli. Nociception is not the same as pain, which is a conscious experience shaped by many factors.",
+  "category": "pain"
+ },
+ {
+  "id": "nordic-hamstring-exercise",
+  "term": "Nordic hamstring exercise",
+  "definition": "An eccentric exercise in which the athlete kneels with the ankles anchored and lowers the body forward under control using the hamstrings. It is used in strengthening and injury-prevention programs.",
+  "category": "rehab",
+  "seeAlso": [
+   "hamstring-strain"
+  ]
+ },
+ {
+  "id": "number-needed-to-treat",
+  "term": "Number needed to treat",
+  "aka": [
+   "NNT"
+  ],
+  "definition": "The number of patients who must receive an intervention for one additional patient to benefit, compared with control.",
+  "category": "evidence"
+ },
+ {
+  "id": "numeric-pain-rating-scale",
+  "term": "Numeric pain rating scale",
+  "aka": [
+   "NPRS"
+  ],
+  "definition": "A scale on which the patient rates pain from 0 (no pain) to 10 (worst pain imaginable).",
+  "category": "evidence"
+ },
+ {
+  "id": "oedema",
+  "term": "Oedema",
+  "aka": [
+   "edema"
+  ],
+  "definition": "Excess fluid accumulating in the tissue spaces, causing swelling.",
+  "category": "injury"
+ },
+ {
+  "id": "open-kinetic-chain-exercise",
+  "term": "Open kinetic chain exercise",
+  "aka": [
+   "OKC"
+  ],
+  "definition": "An exercise in which the distal segment of the limb moves freely, such as a seated knee extension.",
+  "category": "rehab",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "ottawa-ankle-rules",
+  "term": "Ottawa ankle rules",
+  "definition": "A clinical decision rule that identifies which patients with an acute ankle or midfoot injury need radiographs, based on bony tenderness at defined sites and inability to take four steps. It is designed to be highly sensitive, so a negative result can safely avoid imaging.",
+  "category": "assessment",
+  "seeAlso": [
+   "ankle-fracture",
+   "lateral-ankle-sprain"
+  ]
+ },
+ {
+  "id": "pain-catastrophising",
+  "term": "Pain catastrophising",
+  "aka": [
+   "pain catastrophizing"
+  ],
+  "definition": "An exaggerated negative mental response to pain, made up of rumination, magnification and helplessness. It is associated with worse pain and disability.",
+  "category": "pain"
+ },
+ {
+  "id": "pain-neuroscience-education",
+  "term": "Pain neuroscience education",
+  "aka": [
+   "PNE"
+  ],
+  "definition": "Education that explains the biology of pain, including the role of the nervous system, to reduce threat and support active recovery.",
+  "category": "pain",
+  "seeAlso": [
+   "acute-low-back-pain"
+  ]
+ },
+ {
+  "id": "pain-self-efficacy",
+  "term": "Pain self-efficacy",
+  "definition": "A person's confidence in their ability to do activities despite their pain.",
+  "category": "pain"
+ },
+ {
+  "id": "patient-reported-outcome-measure",
+  "term": "Patient-reported outcome measure",
+  "aka": [
+   "PROM",
+   "PROMs"
+  ],
+  "definition": "A questionnaire completed by the patient to report symptoms, function or quality of life. Examples include the KOOS, DASH and VISA-A.",
+  "category": "evidence"
+ },
+ {
+  "id": "periosteum",
+  "term": "Periosteum",
+  "definition": "The dense fibrous membrane covering the outer surface of bone except at joint surfaces. It is richly innervated and contributes cells to bone healing.",
+  "category": "anatomy"
+ },
+ {
+  "id": "peripheral-sensitisation",
+  "term": "Peripheral sensitisation",
+  "aka": [
+   "peripheral sensitization"
+  ],
+  "definition": "Increased responsiveness and reduced threshold of nociceptors at the site of injury, contributing to tenderness around damaged tissue.",
+  "category": "pain"
+ },
+ {
+  "id": "physis",
+  "term": "Physis",
+  "aka": [
+   "growth plate",
+   "epiphyseal plate"
+  ],
+  "definition": "The growth plate: a layer of cartilage between the epiphysis and metaphysis of a growing long bone, responsible for lengthening of the bone. In skeletally immature patients it is often weaker than the surrounding ligaments, so forces that would sprain an adult can injure the physis.",
+  "category": "anatomy",
+  "seeAlso": [
+   "physeal-fracture",
+   "scfe",
+   "little-league-shoulder"
+  ]
+ },
+ {
+  "id": "pincer-morphology",
+  "term": "Pincer morphology",
+  "definition": "Over-coverage of the femoral head by the acetabulum, either focal or global, which can pinch the labrum against the femoral neck. It is a morphology associated with femoroacetabular impingement syndrome.",
+  "category": "injury",
+  "seeAlso": [
+   "fai-syndrome",
+   "hip-labral-tear"
+  ]
+ },
+ {
+  "id": "pivot-shift-test",
+  "term": "Pivot shift test",
+  "definition": "A dynamic test of rotatory knee instability in which a valgus and internal rotation force is applied while the knee moves from extension into flexion. A sudden shift as the lateral tibial plateau reduces is a positive finding and indicates ACL deficiency.",
+  "category": "assessment",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "plyometric-exercise",
+  "term": "Plyometric exercise",
+  "definition": "Exercise that uses fast stretch–shortening cycle actions, such as jumping and bounding, to develop power and tendon stiffness.",
+  "category": "rehab",
+  "seeAlso": [
+   "acl-rupture",
+   "patellar-tendinopathy"
+  ]
+ },
+ {
+  "id": "positive-likelihood-ratio",
+  "term": "Positive likelihood ratio",
+  "aka": [
+   "LR+"
+  ],
+  "definition": "How much more likely a positive result is in people with the condition than in those without it, calculated as sensitivity ÷ (1 − specificity). Higher values shift the probability of the condition up more.",
+  "category": "evidence"
+ },
+ {
+  "id": "posterior-drawer-test",
+  "term": "Posterior drawer test",
+  "definition": "A test with the knee flexed to 90° in which the tibia is pushed backward on the femur. Increased posterior translation suggests a PCL injury.",
+  "category": "assessment",
+  "seeAlso": [
+   "pcl-injury"
+  ]
+ },
+ {
+  "id": "pre-test-probability",
+  "term": "Pre-test probability",
+  "definition": "The estimated likelihood that a patient has a condition before a test is done, based on prevalence and clinical findings. It sets the starting point for interpreting test results.",
+  "category": "evidence"
+ },
+ {
+  "id": "predictive-value",
+  "term": "Predictive value",
+  "aka": [
+   "PPV",
+   "NPV"
+  ],
+  "definition": "The probability that a positive result is correct (positive predictive value) or that a negative result is correct (negative predictive value). Both depend on how common the condition is in the group tested.",
+  "category": "evidence"
+ },
+ {
+  "id": "prehabilitation",
+  "term": "Prehabilitation",
+  "definition": "A program of exercise and education undertaken before surgery to improve strength, movement and recovery afterwards.",
+  "category": "rehab",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "progressive-overload",
+  "term": "Progressive overload",
+  "definition": "The gradual increase of training or rehabilitation load over time so that tissue capacity keeps adapting.",
+  "category": "rehab"
+ },
+ {
+  "id": "proliferative-phase",
+  "term": "Proliferative phase",
+  "aka": [
+   "repair phase"
+  ],
+  "definition": "The second phase of healing, from days to a few weeks after injury, in which fibroblasts multiply, new capillaries form and disorganised type III collagen is laid down.",
+  "category": "healing"
+ },
+ {
+  "id": "proprioception",
+  "term": "Proprioception",
+  "definition": "The sense of joint position, movement and force, which arises from receptors in muscle, tendon, joint and skin.",
+  "category": "rehab",
+  "seeAlso": [
+   "chronic-ankle-instability"
+  ]
+ },
+ {
+  "id": "psychological-readiness",
+  "term": "Psychological readiness",
+  "definition": "An athlete's confidence and willingness to return to sport, often measured with scales such as the ACL Return to Sport after Injury (ACL-RSI) scale. Low readiness is associated with not returning to sport.",
+  "category": "rehab",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "radicular-pain",
+  "term": "Radicular pain",
+  "definition": "Shooting or lancinating pain along a limb that arises from an inflamed or compressed spinal nerve root or dorsal root ganglion. It is distinct from radiculopathy, which involves loss of nerve conduction.",
+  "category": "injury",
+  "seeAlso": [
+   "lumbar-disc-herniation",
+   "cervical-radiculopathy"
+  ]
+ },
+ {
+  "id": "radiculopathy",
+  "term": "Radiculopathy",
+  "definition": "Dysfunction of a spinal nerve root, producing dermatomal sensory change, myotomal weakness or a reduced reflex. It is a neurological deficit, not pain alone.",
+  "category": "injury",
+  "seeAlso": [
+   "cervical-radiculopathy",
+   "lumbar-disc-herniation"
+  ]
+ },
+ {
+  "id": "radiograph",
+  "term": "Radiograph",
+  "aka": [
+   "X-ray"
+  ],
+  "definition": "A plain X-ray image. It is the first-line investigation for suspected fracture or dislocation, but shows soft tissue poorly.",
+  "category": "imaging"
+ },
+ {
+  "id": "randomised-controlled-trial",
+  "term": "Randomised controlled trial",
+  "aka": [
+   "RCT",
+   "randomized controlled trial"
+  ],
+  "definition": "A study in which participants are randomly assigned to an intervention or a comparison group, which reduces bias when comparing outcomes.",
+  "category": "evidence"
+ },
+ {
+  "id": "rate-of-force-development",
+  "term": "Rate of force development",
+  "aka": [
+   "RFD"
+  ],
+  "definition": "How quickly a muscle can produce force. It is often reduced after injury and is important for sprinting, jumping and landing.",
+  "category": "rehab",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "reactive-tendinopathy",
+  "term": "Reactive tendinopathy",
+  "definition": "An early, non-inflammatory response of the tendon to sudden overload, with swelling of the matrix and little structural disruption. It tends to settle if the load is reduced.",
+  "category": "injury"
+ },
+ {
+  "id": "red-flags",
+  "term": "Red flags",
+  "definition": "Features in the history or examination that raise the possibility of serious pathology, such as fracture, malignancy, infection or cauda equina syndrome, and prompt further investigation or referral. A single red flag does not establish a diagnosis.",
+  "category": "injury",
+  "seeAlso": [
+   "cauda-equina-syndrome",
+   "cervical-arterial-dysfunction",
+   "osteoporotic-vertebral-fracture"
+  ]
+ },
+ {
+  "id": "referred-pain",
+  "term": "Referred pain",
+  "definition": "Pain felt in an area away from its source, for example shoulder pain from a cervical spine problem.",
+  "category": "pain",
+  "seeAlso": [
+   "cervicogenic-headache",
+   "cervical-radiculopathy"
+  ]
+ },
+ {
+  "id": "reliability",
+  "term": "Reliability",
+  "definition": "The consistency of a measurement when it is repeated, by the same examiner (intra-rater) or different examiners (inter-rater).",
+  "category": "evidence"
+ },
+ {
+  "id": "remodelling-phase",
+  "term": "Remodelling phase",
+  "aka": [
+   "maturation phase"
+  ],
+  "definition": "The final and longest phase of healing, lasting weeks to months or longer, in which scar tissue matures and collagen fibres realign along lines of stress.",
+  "category": "healing"
+ },
+ {
+  "id": "retinaculum",
+  "term": "Retinaculum",
+  "definition": "A thickened band of fascia that holds tendons in position as they cross a joint, such as the peroneal retinaculum at the lateral ankle.",
+  "category": "anatomy",
+  "seeAlso": [
+   "peroneal-tendon-subluxation",
+   "ecu-tendinopathy"
+  ]
+ },
+ {
+  "id": "return-to-sport-continuum",
+  "term": "Return-to-sport continuum",
+  "definition": "A framework that treats return to sport as a progression from return to participation, to return to sport, to return to performance, rather than a single yes-or-no decision.",
+  "category": "rehab",
+  "seeAlso": [
+   "acl-rupture",
+   "hamstring-strain"
+  ]
+ },
+ {
+  "id": "rhabdomyolysis",
+  "term": "Rhabdomyolysis",
+  "definition": "Breakdown of skeletal muscle that releases myoglobin and creatine kinase into the blood. It can cause dark urine and kidney injury.",
+  "category": "injury",
+  "seeAlso": [
+   "exertional-rhabdomyolysis"
+  ]
+ },
+ {
+  "id": "saddle-anaesthesia",
+  "term": "Saddle anaesthesia",
+  "aka": [
+   "saddle numbness"
+  ],
+  "definition": "Reduced or absent sensation in the perineum, buttocks and inner thighs. It is a red flag for cauda equina syndrome.",
+  "category": "nerve",
+  "seeAlso": [
+   "cauda-equina-syndrome"
+  ]
+ },
+ {
+  "id": "salter-harris-classification",
+  "term": "Salter–Harris classification",
+  "aka": [
+   "Salter-Harris"
+  ],
+  "definition": "A system for classifying fractures that involve the growth plate. Type I runs through the physis, II exits through the metaphysis, III through the epiphysis, IV crosses metaphysis, physis and epiphysis, and V is a crush injury of the physis.",
+  "category": "injury",
+  "seeAlso": [
+   "physeal-fracture",
+   "supracondylar-fracture"
+  ]
+ },
+ {
+  "id": "satellite-cell",
+  "term": "Satellite cell",
+  "definition": "A muscle stem cell lying beside muscle fibres that is activated after injury to help regenerate damaged fibres.",
+  "category": "healing"
+ },
+ {
+  "id": "seddon-classification",
+  "term": "Seddon classification",
+  "definition": "A three-grade system for peripheral nerve injury: neurapraxia, axonotmesis and neurotmesis. It is based on whether the axon and the supporting connective tissue are disrupted.",
+  "category": "nerve",
+  "seeAlso": [
+   "peripheral-nerve-injury"
+  ]
+ },
+ {
+  "id": "sensitivity",
+  "term": "Sensitivity",
+  "definition": "The proportion of people who have the condition who test positive. A highly sensitive test with a negative result helps rule a condition out (SnNout).",
+  "category": "evidence",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "sesamoid-bone",
+  "term": "Sesamoid bone",
+  "definition": "A bone embedded within a tendon. The patella is the largest; smaller sesamoids lie beneath the first metatarsal head.",
+  "category": "anatomy",
+  "seeAlso": [
+   "sesamoid-injury",
+   "patellar-dislocation"
+  ]
+ },
+ {
+  "id": "slump-test",
+  "term": "Slump test",
+  "definition": "A seated neurodynamic test that combines trunk flexion, neck flexion and knee extension to load the neural tissues. Reproduction of symptoms that change with neck position suggests neural mechanosensitivity.",
+  "category": "assessment",
+  "seeAlso": [
+   "lumbar-disc-herniation",
+   "deep-gluteal-syndrome"
+  ]
+ },
+ {
+  "id": "special-test",
+  "term": "Special test",
+  "definition": "A clinical manoeuvre designed to stress a specific structure and reproduce a sign or symptom. Its value depends on its sensitivity, specificity and likelihood ratios, not on its name.",
+  "category": "assessment"
+ },
+ {
+  "id": "specificity",
+  "term": "Specificity",
+  "definition": "The proportion of people without the condition who test negative. A highly specific test with a positive result helps rule a condition in (SpPin).",
+  "category": "evidence",
+  "seeAlso": [
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "spondylolisthesis",
+  "term": "Spondylolisthesis",
+  "definition": "Forward slip of one vertebra on the one below it.",
+  "category": "injury",
+  "seeAlso": [
+   "spondylolisthesis",
+   "spondylolysis"
+  ]
+ },
+ {
+  "id": "spondylolysis",
+  "term": "Spondylolysis",
+  "definition": "A defect or stress fracture of the pars interarticularis of a vertebra, most often at L5 in young athletes who repeatedly extend the spine.",
+  "category": "injury",
+  "seeAlso": [
+   "spondylolysis",
+   "spondylolisthesis"
+  ]
+ },
+ {
+  "id": "sprain",
+  "term": "Sprain",
+  "definition": "An injury to a ligament caused by excessive load, graded by the extent of fibre disruption from mild stretching to complete rupture.",
+  "category": "injury",
+  "seeAlso": [
+   "lateral-ankle-sprain",
+   "mcl-sprain",
+   "high-ankle-sprain"
+  ]
+ },
+ {
+  "id": "spurling-test",
+  "term": "Spurling test",
+  "definition": "A test for cervical radiculopathy in which the neck is extended, side-flexed toward the symptomatic side and gently compressed. Reproduction of arm symptoms is a positive finding.",
+  "category": "assessment",
+  "seeAlso": [
+   "cervical-radiculopathy"
+  ]
+ },
+ {
+  "id": "squeeze-test",
+  "term": "Squeeze test",
+  "definition": "A test for syndesmosis injury in which the tibia and fibula are compressed at mid-calf. Pain at the distal tibiofibular joint is a positive finding.",
+  "category": "assessment",
+  "seeAlso": [
+   "high-ankle-sprain"
+  ]
+ },
+ {
+  "id": "straight-leg-raise",
+  "term": "Straight leg raise",
+  "aka": [
+   "SLR"
+  ],
+  "definition": "A neurodynamic test in which the examiner passively raises the extended leg of a supine patient. Reproduction of leg pain, typically between about 30° and 70°, suggests lumbosacral nerve root irritation.",
+  "category": "assessment",
+  "seeAlso": [
+   "lumbar-disc-herniation"
+  ]
+ },
+ {
+  "id": "strain",
+  "term": "Strain",
+  "definition": "An injury to a muscle–tendon unit from excessive stretch or contraction, most often at the musculotendinous junction.",
+  "category": "injury",
+  "seeAlso": [
+   "hamstring-strain",
+   "quadriceps-strain",
+   "calf-strain"
+  ]
+ },
+ {
+  "id": "stress-fracture",
+  "term": "Stress fracture",
+  "aka": [
+   "fatigue fracture"
+  ],
+  "definition": "A fatigue fracture of bone caused by repetitive submaximal loading, in which a fracture line is present. It is the more advanced end of the bone stress injury spectrum.",
+  "category": "injury",
+  "seeAlso": [
+   "tibial-stress-fracture",
+   "navicular-stress-fracture",
+   "femoral-neck-stress-fracture"
+  ]
+ },
+ {
+  "id": "stress-reaction",
+  "term": "Stress reaction",
+  "definition": "The early stage of bone stress injury, with marrow oedema and periosteal change on imaging but no visible fracture line.",
+  "category": "injury",
+  "seeAlso": [
+   "bone-stress-injury",
+   "medial-tibial-stress-syndrome"
+  ]
+ },
+ {
+  "id": "stretch-shortening-cycle",
+  "term": "Stretch–shortening cycle",
+  "definition": "A muscle action in which an eccentric stretch is immediately followed by a concentric contraction, using stored elastic energy. It underlies running, jumping and hopping.",
+  "category": "rehab"
+ },
+ {
+  "id": "subluxation",
+  "term": "Subluxation",
+  "definition": "A partial or transient loss of contact between joint surfaces, after which the joint returns to its normal position.",
+  "category": "injury",
+  "seeAlso": [
+   "pulled-elbow",
+   "peroneal-tendon-subluxation"
+  ]
+ },
+ {
+  "id": "sulcus-sign",
+  "term": "Sulcus sign",
+  "definition": "A visible dimple below the acromion when downward traction is applied to the arm, indicating inferior glenohumeral laxity. It is associated with multidirectional instability.",
+  "category": "assessment",
+  "seeAlso": [
+   "multidirectional-instability"
+  ]
+ },
+ {
+  "id": "sunderland-classification",
+  "term": "Sunderland classification",
+  "definition": "A five-degree extension of Seddon's classification that separates axonotmesis according to which connective tissue layers (endoneurium, perineurium, epineurium) are disrupted. Degree 5 is a complete transection.",
+  "category": "nerve",
+  "seeAlso": [
+   "peripheral-nerve-injury"
+  ]
+ },
+ {
+  "id": "syndesmosis",
+  "term": "Syndesmosis",
+  "definition": "A fibrous joint in which two bones are held together by ligaments. The distal tibiofibular syndesmosis stabilises the ankle mortise.",
+  "category": "anatomy",
+  "seeAlso": [
+   "high-ankle-sprain"
+  ]
+ },
+ {
+  "id": "synovium",
+  "term": "Synovium",
+  "aka": [
+   "synovial membrane"
+  ],
+  "definition": "The thin membrane lining the inside of a synovial joint capsule, bursa or tendon sheath. It produces synovial fluid that lubricates and nourishes the joint.",
+  "category": "anatomy"
+ },
+ {
+  "id": "systematic-review",
+  "term": "Systematic review",
+  "definition": "A review that uses explicit, reproducible methods to find, appraise and summarise all relevant studies on a question.",
+  "category": "evidence"
+ },
+ {
+  "id": "tendinopathy",
+  "term": "Tendinopathy",
+  "aka": [
+   "tendinitis",
+   "tendonitis",
+   "tendinosis"
+  ],
+  "definition": "A clinical syndrome of pain, localised tendon tenderness and reduced load tolerance, usually from overuse. It is the preferred term over tendinitis and tendinosis, which imply inflammation or degeneration that may not be present.",
+  "category": "injury",
+  "seeAlso": [
+   "midportion-achilles-tendinopathy",
+   "patellar-tendinopathy",
+   "lateral-elbow-tendinopathy"
+  ]
+ },
+ {
+  "id": "tendinopathy-continuum",
+  "term": "Tendinopathy continuum",
+  "aka": [
+   "Cook and Purdam model"
+  ],
+  "definition": "A model describing tendon pathology as three overlapping stages: reactive tendinopathy, tendon disrepair and degenerative tendinopathy. It guides how load is adjusted at each stage.",
+  "category": "injury",
+  "seeAlso": [
+   "midportion-achilles-tendinopathy",
+   "patellar-tendinopathy"
+  ]
+ },
+ {
+  "id": "tendon-sheath",
+  "term": "Tendon sheath",
+  "aka": [
+   "tenosynovium"
+  ],
+  "definition": "A synovial-lined tube that surrounds a tendon where it passes through a tight tunnel or beneath a retinaculum, allowing it to glide.",
+  "category": "anatomy",
+  "seeAlso": [
+   "de-quervain-tenosynovitis",
+   "trigger-finger"
+  ]
+ },
+ {
+  "id": "tenocyte",
+  "term": "Tenocyte",
+  "definition": "A tendon cell, responsible for producing and maintaining the collagen matrix of the tendon.",
+  "category": "healing"
+ },
+ {
+  "id": "tenosynovitis",
+  "term": "Tenosynovitis",
+  "definition": "Inflammation of the synovial sheath around a tendon, causing pain, swelling and sometimes crepitus.",
+  "category": "injury",
+  "seeAlso": [
+   "de-quervain-tenosynovitis",
+   "trigger-finger",
+   "intersection-syndrome"
+  ]
+ },
+ {
+  "id": "thessaly-test",
+  "term": "Thessaly test",
+  "definition": "A weight-bearing test for meniscal tear in which the patient stands on one leg with the knee flexed to about 20° and twists the body. Joint line pain, catching or a sense of locking is positive.",
+  "category": "assessment",
+  "seeAlso": [
+   "meniscal-tear",
+   "degenerative-meniscal-tear"
+  ]
+ },
+ {
+  "id": "thompson-test",
+  "term": "Thompson test",
+  "aka": [
+   "Simmonds test",
+   "calf squeeze test"
+  ],
+  "definition": "A test for complete Achilles tendon rupture in which the calf is squeezed with the patient prone or kneeling. Absence of plantar flexion is a positive finding.",
+  "category": "assessment",
+  "seeAlso": [
+   "achilles-rupture"
+  ]
+ },
+ {
+  "id": "tinels-sign",
+  "term": "Tinel's sign",
+  "aka": [
+   "Tinel sign"
+  ],
+  "definition": "Tingling or paraesthesia felt in a nerve's distribution when the nerve is tapped. It suggests an irritable compressed or regenerating nerve.",
+  "category": "nerve",
+  "seeAlso": [
+   "carpal-tunnel-syndrome",
+   "cubital-tunnel-syndrome",
+   "tarsal-tunnel-syndrome"
+  ]
+ },
+ {
+  "id": "tissue-capacity",
+  "term": "Tissue capacity",
+  "definition": "The amount of load a tissue can tolerate without damage or symptoms. Injury is more likely when load exceeds capacity.",
+  "category": "rehab"
+ },
+ {
+  "id": "trendelenburg-sign",
+  "term": "Trendelenburg sign",
+  "definition": "A drop of the pelvis on the unsupported side during single-leg stance, suggesting weakness or dysfunction of the stance-side hip abductors.",
+  "category": "assessment",
+  "seeAlso": [
+   "gluteal-tendinopathy"
+  ]
+ },
+ {
+  "id": "upper-motor-neuron-signs",
+  "term": "Upper motor neuron signs",
+  "aka": [
+   "UMN signs"
+  ],
+  "definition": "Signs of a lesion in the brain or spinal cord, including hyperreflexia, spasticity, clonus and an extensor plantar response.",
+  "category": "nerve",
+  "seeAlso": [
+   "degenerative-cervical-myelopathy"
+  ]
+ },
+ {
+  "id": "valgus-stress-test",
+  "term": "Valgus stress test",
+  "definition": "A test of the medial collateral ligament in which a valgus force is applied to the knee at 0° and about 30° of flexion. Laxity or pain is compared with the other side.",
+  "category": "assessment",
+  "seeAlso": [
+   "mcl-sprain",
+   "acl-rupture"
+  ]
+ },
+ {
+  "id": "validity",
+  "term": "Validity",
+  "definition": "The extent to which a test or measure actually assesses what it is meant to assess.",
+  "category": "evidence"
+ },
+ {
+  "id": "varus-stress-test",
+  "term": "Varus stress test",
+  "definition": "A test of the lateral collateral ligament and posterolateral corner in which a varus force is applied to the knee at 0° and about 30° of flexion.",
+  "category": "assessment",
+  "seeAlso": [
+   "posterolateral-corner-injury"
+  ]
+ },
+ {
+  "id": "visa-a",
+  "term": "VISA-A",
+  "definition": "The Victorian Institute of Sport Assessment–Achilles questionnaire, an eight-item patient-reported score of pain, function and activity in Achilles tendinopathy.",
+  "category": "evidence",
+  "seeAlso": [
+   "midportion-achilles-tendinopathy"
+  ]
+ },
+ {
+  "id": "viscoelasticity",
+  "term": "Viscoelasticity",
+  "definition": "The property of tissues such as tendon and ligament whose response to load depends on time as well as force, so they deform gradually (creep) and relax under sustained stretch.",
+  "category": "healing"
+ },
+ {
+  "id": "wallerian-degeneration",
+  "term": "Wallerian degeneration",
+  "definition": "The breakdown of the part of an axon, and its myelin, that lies beyond the site of a nerve injury. It is followed by regeneration if the supporting tubes remain intact.",
+  "category": "nerve",
+  "seeAlso": [
+   "peripheral-nerve-injury"
+  ]
+ },
+ {
+  "id": "wolffs-law",
+  "term": "Wolff's law",
+  "definition": "The principle that bone remodels in response to the mechanical loads placed on it, becoming stronger where load is regularly applied and weaker where it is removed.",
+  "category": "healing",
+  "seeAlso": [
+   "bone-stress-injury"
+  ]
+ },
+ {
+  "id": "yellow-flags",
+  "term": "Yellow flags",
+  "definition": "Psychosocial and occupational factors, such as fear of movement, low mood or worries about work, that increase the risk of persisting pain and disability.",
+  "category": "pain",
+  "seeAlso": [
+   "acute-low-back-pain"
+  ]
+ }
+]
