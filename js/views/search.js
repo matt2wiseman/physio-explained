@@ -6,7 +6,7 @@
 // results). Glossary definitions that match appear in their own section. "Did you mean" for near-misses; an empty state with
 // popular searches, how-to-search hints and browse-by-region links. The result count lives in an aria-live status line.
 
-import { h, icon, debounce, REGIONS, BODY_AREAS } from "../util/dom.js";
+import { h, icon, debounce, BODY_AREAS } from "../util/dom.js";
 import { injuryCard } from "../components/injury-card.js";
 import { getEngine, highlightNodes, queryToSlug, slugToQuery, BODY_AREA_LABELS, BODY_AREA_ORDER, REGION_LABELS, CATEGORY_LABELS, areaOf, POPULAR } from "../search/engine.js";
 
@@ -29,7 +29,7 @@ export async function render(main, params, ctx) {
   S.shown = PAGE;
   const ui = {};
   M = { main, ctx, ui, engine: null, gone: false };
-  main.append(shell(ui, ctx));
+  main.append(shell(ui));
   ui.input.value = S.q;
   ui.clear.hidden = !S.q;
   ui.results.append(h("div", { class: "srch-skeleton", "aria-hidden": "true" }));
@@ -69,10 +69,10 @@ export function destroy() {
 }
 
 /* ------------------------------------------------------------------ shell */
-function shell(ui, ctx) {
+function shell(ui) {
   ui.input = h("input", {
     id: "srch-q", class: "srch-input", type: "search", autocomplete: "off", autocapitalize: "off", spellcheck: "false", enterkeyhint: "search",
-    placeholder: "Injury, nickname, special test, structure, sport…", "data-search-primary": "", "aria-describedby": "srch-hint"
+    placeholder: "Search injuries, tests, terms…", "data-search-primary": "", "aria-describedby": "srch-hint"
   });
   ui.clear = h("button", { type: "button", class: "srch-clear", "aria-label": "Clear search", hidden: true }, icon("close", { size: 18 }));
   ui.form = h("form", { class: "srch-form", role: "search", "aria-label": "Search the site" },
@@ -82,7 +82,6 @@ function shell(ui, ctx) {
   ui.chips = h("ul", { class: "srch-chips", role: "list", "aria-label": "Filter results by body area", hidden: true });
   ui.results = h("div", { class: "srch-body" });
 
-  let t = 0;
   const onInput = debounce(() => {
     S.q = ui.input.value;
     S.area = "all"; S.shown = PAGE;
@@ -103,7 +102,6 @@ function shell(ui, ctx) {
     run({ mirror: "replace" });
     ui.input.focus();
   });
-  void t; void ctx;
 
   return h("div", { class: "srch" },
     h("header", { class: "srch-head" },
@@ -184,7 +182,8 @@ function resultItem(hit) {
   const card = injuryCard(hit.entry, { headingLevel: 3 });
   const link = card.querySelector(".ic-link");
   if (link && hit.nameRanges?.length) link.replaceChildren(highlightNodes(hit.entry.name, hit.nameRanges));
-  const extras = hit.matches.filter((m) => m.field !== "name" && m.field !== "shortName").slice(0, 2);
+  const nameLc = hit.entry.name.toLowerCase();
+  const extras = hit.matches.filter((m) => m.field !== "name" && m.field !== "shortName" && !nameLc.includes(m.text.toLowerCase())).slice(0, 2);
   if (extras.length) {
     const why = h("p", { class: "srch-why" }, h("span", { class: "srch-key" }, "matched:"),
       extras.map((m) => h("span", { class: "srch-why-item" }, h("span", { class: "srch-field" }, m.label.toLowerCase()), highlightNodes(m.text, m.ranges))));

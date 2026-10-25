@@ -64,7 +64,7 @@ export function mountSearchbox(container, { autofocus = false, onSubmit = null, 
   function whyNode(hit) {
     if (hit.kind === "term") {
       const d = hit.term.definition || "";
-      return h("span", { class: "sbx-why" }, h("span", { class: "sbx-key" }, "definition"), d.length > 90 ? d.slice(0, 88).trimEnd() + "…" : d);
+      return h("span", { class: "sbx-why" }, h("span", { class: "sbx-key" }, "definition"), " ", d.length > 90 ? d.slice(0, 88).trimEnd() + "…" : d);
     }
     const m = hit.why;
     if (!m) return null;

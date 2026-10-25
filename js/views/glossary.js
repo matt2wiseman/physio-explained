@@ -42,12 +42,20 @@ export async function render(main, params, ctx) {
   ui.input.value = S.q;
   ui.clear.hidden = !S.q;
 
-  // names for related-injury links (index first; catalogue as a fallback for injuries that are not published yet)
-  loadNames(ctx).then(() => { if (M && !M.gone) { M.namesReady = true; paint(); } });
+  // names for related-injury links (index first; catalogue as a fallback for injuries that are not published yet).
+  // Loaded before the first paint so heights never shift under a deep-link scroll.
+  await loadNames(ctx);
+  if (M?.gone) return;
   getEngine(ctx.store).then((e) => { if (M && !M.gone) { M.engine = e; if (S.q) paint(); } }).catch(() => {});
-  if (params[0] && !M.byId.has(params[0])) { /* unknown deep link: show the full list */ }
-  else if (params[0]) { S.q = ""; S.cat = "all"; ui.input.value = ""; ui.clear.hidden = true; }
+  const target = params[0] && M.byId.has(params[0]) ? params[0] : null; // unknown deep link: just show the list
+  if (target) { S.q = ""; S.cat = "all"; ui.input.value = ""; ui.clear.hidden = true; }
   paint();
+  if (target) markTarget(target);
+}
+
+function markTarget(id) {
+  document.querySelectorAll(".gl-term.is-target").forEach((n) => n.classList.remove("is-target"));
+  document.getElementById(id)?.classList.add("is-target");
 }
 
 /** In-page deep-link changes (#glossary.<id> while already here): reveal, scroll and focus the term without a re-render. */
@@ -58,6 +66,7 @@ export function update(main, params) {
   if (!document.getElementById(id)) { S.q = ""; S.cat = "all"; M.ui.input.value = ""; M.ui.clear.hidden = true; paint(); }
   const el = document.getElementById(id);
   if (!el) return false;
+  markTarget(id);
   const head = el.querySelector(".gl-name") || el;
   if (!head.hasAttribute("tabindex")) head.setAttribute("tabindex", "-1");
   el.scrollIntoView({ block: "start", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
