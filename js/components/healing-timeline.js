@@ -228,72 +228,72 @@ function drawChart(W, model, ctx) {
 
   // ---------------- build svg
   const svg = h("svg", {
-    class: "hl__svg", viewBox: `0 0 ${W} ${H}`, width: W, height: H, role: "img",
+    class: "htl__svg", viewBox: `0 0 ${W} ${H}`, width: W, height: H, role: "img",
     "aria-label": `Healing timeline chart: ${phases.length} phases${milestones.length ? `, ${milestones.length} milestones` : ""} across ${fmtDay(domain)} on a compressed time axis. A data table follows.`
   });
 
   // grid
-  const grid = h("g", { class: "hl__grid", "aria-hidden": "true" });
+  const grid = h("g", { class: "htl__grid", "aria-hidden": "true" });
   for (const t of accepted) grid.append(h("line", { x1: t.x, x2: t.x, y1: lanesTop - (rts ? 4 : 0), y2: axisY }));
   svg.append(grid);
 
   // return-to-sport band
   if (rts) {
     const xa = X(rts.from), xb = X(rts.to);
-    const g = h("g", { class: "hl__rts" });
+    const g = h("g", { class: "htl__rts" });
     g.append(h("svg:title", null, `Return to sport: ${plain(model.rtsText)}`));
-    if (xb - xa > 2) g.append(h("rect", { class: "hl__rts-band", x: xa, y: lanesTop - 4, width: xb - xa, height: axisY - lanesTop + 4 }));
-    g.append(h("line", { class: "hl__rts-line", x1: xa, x2: xa, y1: lanesTop - 4, y2: axisY }));
+    if (xb - xa > 2) g.append(h("rect", { class: "htl__rts-band", x: xa, y: lanesTop - 4, width: xb - xa, height: axisY - lanesTop + 4 }));
+    g.append(h("line", { class: "htl__rts-line", x1: xa, x2: xa, y1: lanesTop - 4, y2: axisY }));
     const lw = measure(rtsLabel, FS_S, { weight: 600 });
     const lx = Math.min(Math.max(xa + 5, padL - 6), W - 6 - lw);
-    g.append(h("text", { class: "hl__rts-label", x: lx, y: 15 }, rtsLabel));
+    g.append(h("text", { class: "htl__rts-label", x: lx, y: 15 }, rtsLabel));
     svg.append(g);
   }
 
   // phase lanes
   lanes.forEach((l, i) => {
     const { p } = l;
-    const g = h("g", { class: `hl__lane hl__lane--${p.kind}`, style: { "--i": i } });
+    const g = h("g", { class: `htl__lane htl__lane--${p.kind}`, style: { "--i": i } });
     g.append(h("svg:title", null, `${p.name}: ${fmtRange(p.start, p.end)} (day ${Math.round(p.start)}–${Math.round(p.end)}). ${plain(p.desc)}`));
     const tw = measure(p.name, FS, { weight: 600 }) + (l.withRange ? 10 + measure(l.rangeTxt, FS_S, { mono: true }) : 0);
     const widest = l.withRange ? tw : Math.max(...l.lines.map((t) => measure(t, FS, { weight: 600 })));
     const lx = Math.min(Math.max(l.x0, padL - 6), Math.max(padL - 6, W - 6 - widest));
-    const label = h("text", { class: "hl__t hl__t--lane", x: lx, y: l.y + 14 });
+    const label = h("text", { class: "htl__t htl__t--lane", x: lx, y: l.y + 14 });
     l.lines.forEach((t, k) => label.append(h("tspan", { x: lx, dy: k ? 16 : 0 }, t)));
-    if (l.withRange) label.append(h("tspan", { class: "hl__tm", dx: 10 }, l.rangeTxt));
-    else label.append(h("tspan", { class: "hl__tm", x: lx, dy: 16 }, l.rangeTxt));
+    if (l.withRange) label.append(h("tspan", { class: "htl__tm", dx: 10 }, l.rangeTxt));
+    else label.append(h("tspan", { class: "htl__tm", x: lx, dy: 16 }, l.rangeTxt));
     g.append(label);
     const by = l.y + 20 + (l.lines.length - 1 + l.extra) * 16 + 4;
-    g.append(h("rect", { class: `hl__bar hl__bar--${p.kind}`, x: l.x0, y: by, width: Math.max(l.x1 - l.x0, 3), height: 10, rx: 2.5 }));
+    g.append(h("rect", { class: `htl__bar htl__bar--${p.kind}`, x: l.x0, y: by, width: Math.max(l.x1 - l.x0, 3), height: 10, rx: 2.5 }));
     svg.append(g);
   });
 
   // axis
-  const ax = h("g", { class: "hl__axis" });
-  ax.append(h("line", { class: "hl__axis-line", x1: padL, x2: padL + plotW, y1: axisY, y2: axisY }));
-  for (const d of minor) ax.append(h("line", { class: "hl__tick hl__tick--minor", x1: X(d), x2: X(d), y1: axisY, y2: axisY + 3 }));
+  const ax = h("g", { class: "htl__axis" });
+  ax.append(h("line", { class: "htl__axis-line", x1: padL, x2: padL + plotW, y1: axisY, y2: axisY }));
+  for (const d of minor) ax.append(h("line", { class: "htl__tick htl__tick--minor", x1: X(d), x2: X(d), y1: axisY, y2: axisY + 3 }));
   for (const t of accepted) {
-    ax.append(h("line", { class: "hl__tick", x1: t.x, x2: t.x, y1: axisY, y2: axisY + 6 }));
+    ax.append(h("line", { class: "htl__tick", x1: t.x, x2: t.x, y1: axisY, y2: axisY + 6 }));
     const anchor = t.x - t.w / 2 < 2 ? "start" : t.x + t.w / 2 > W - 2 ? "end" : "middle";
-    ax.append(h("text", { class: "hl__tm hl__tm--tick", x: t.x, y: axisY + 20, "text-anchor": anchor }, t.label));
+    ax.append(h("text", { class: "htl__tm htl__tm--tick", x: t.x, y: axisY + 20, "text-anchor": anchor }, t.label));
   }
   svg.append(ax);
 
   // milestones
   if (items.length) {
-    const g = h("g", { class: "hl__ms" });
-    g.append(h("line", { class: "hl__track", x1: padL, x2: padL + plotW, y1: trackY, y2: trackY }));
+    const g = h("g", { class: "htl__ms" });
+    g.append(h("line", { class: "htl__track", x1: padL, x2: padL + plotW, y1: trackY, y2: trackY }));
     for (const it of items) {
       const top = rowTop[it.row];
-      const mg = h("g", { class: `hl__m${it.isRts ? " hl__m--rts" : ""}` });
+      const mg = h("g", { class: `htl__m${it.isRts ? " htl__m--rts" : ""}` });
       mg.append(h("svg:title", null, `${it.m.label} — ${it.time} (day ${Math.round(it.m.day)})${it.m.note ? `. ${plain(it.m.note)}` : ""}`));
-      mg.append(h("line", { class: "hl__ref", x1: it.x, x2: it.x, y1: axisY + 3, y2: trackY }));
-      mg.append(h("line", { class: "hl__leader", x1: it.x, x2: it.x, y1: trackY, y2: top + 2 }));
-      mg.append(h("path", { class: "hl__diamond", d: `M${it.x} ${trackY - 5.5}L${it.x + 5.5} ${trackY}L${it.x} ${trackY + 5.5}L${it.x - 5.5} ${trackY}Z` }));
+      mg.append(h("line", { class: "htl__ref", x1: it.x, x2: it.x, y1: axisY + 3, y2: trackY }));
+      mg.append(h("line", { class: "htl__leader", x1: it.x, x2: it.x, y1: trackY, y2: top + 2 }));
+      mg.append(h("path", { class: "htl__diamond", d: `M${it.x} ${trackY - 5.5}L${it.x + 5.5} ${trackY}L${it.x} ${trackY + 5.5}L${it.x - 5.5} ${trackY}Z` }));
       const tx = it.s;
-      const t = h("text", { class: "hl__t hl__t--ms", x: tx, y: top + 9 });
+      const t = h("text", { class: "htl__t htl__t--ms", x: tx, y: top + 9 });
       it.lines.forEach((ln, k) => t.append(h("tspan", { x: tx, dy: k ? lineH : 0 }, ln)));
-      t.append(h("tspan", { class: "hl__tm", x: tx, dy: lineH }, it.time));
+      t.append(h("tspan", { class: "htl__tm", x: tx, dy: lineH }, it.time));
       mg.append(t);
       g.append(mg);
     }
@@ -306,33 +306,33 @@ function drawChart(W, model, ctx) {
 export function healingTimeline(injury) {
   const model = buildModel(injury);
   const ctx = { id: injury?.id || "", refs: arr(injury?.references) };
-  const id = `hl${++uid}`;
+  const id = `htl${++uid}`;
 
   if (!model.phases.length && !model.milestones.length) {
-    return h("p", { class: "hl-empty" }, "No healing timeline is available for this injury yet.");
+    return h("p", { class: "htl-empty" }, "No healing timeline is available for this injury yet.");
   }
 
   const kinds = [...new Set(model.phases.map((p) => p.kind))];
-  const legend = h("ul", { class: "hl__legend", role: "list", "aria-label": "Phase colours" },
-    kinds.map((k) => h("li", { class: `hl__key hl__key--${k}` }, h("i", { "aria-hidden": "true" }), KIND_LABEL[k])),
-    model.rts ? h("li", { class: "hl__key hl__key--rts" }, h("i", { "aria-hidden": "true" }), "Return-to-sport window") : null,
-    model.milestones.length ? h("li", { class: "hl__key hl__key--ms" }, h("i", { "aria-hidden": "true" }), "Milestone") : null);
+  const legend = h("ul", { class: "htl__legend", role: "list", "aria-label": "Phase colours" },
+    kinds.map((k) => h("li", { class: `htl__key htl__key--${k}` }, h("i", { "aria-hidden": "true" }), KIND_LABEL[k])),
+    model.rts ? h("li", { class: "htl__key htl__key--rts" }, h("i", { "aria-hidden": "true" }), "Return-to-sport window") : null,
+    model.milestones.length ? h("li", { class: "htl__key htl__key--ms" }, h("i", { "aria-hidden": "true" }), "Milestone") : null);
 
-  const chart = h("div", { class: "hl__chart" });
-  const head = h("div", { class: "hl__head" }, legend,
-    h("p", { class: "hl__scale" }, icon("clock", { size: 14 }), h("span", null, "Time from onset or surgery. The axis is compressed (log-like): early weeks are stretched so days, weeks and months all stay readable.")));
+  const chart = h("div", { class: "htl__chart" });
+  const head = h("div", { class: "htl__head" }, legend,
+    h("p", { class: "htl__scale" }, icon("clock", { size: 14 }), h("span", null, "Time from onset or surgery. The axis is compressed (log-like): early weeks are stretched so days, weeks and months all stay readable.")));
 
   const notes = model.phases.length
-    ? h("ol", { class: "hl__phases", role: "list", "aria-label": "Healing phases" },
-      model.phases.map((p) => h("li", { class: `hl__phase hl__phase--${p.kind}` },
-        h("div", { class: "hl__phase-head" }, h("strong", { class: "hl__phase-name" }, p.name), h("span", { class: "hl__phase-time mono" }, fmtRange(p.start, p.end))),
+    ? h("ol", { class: "htl__phases", role: "list", "aria-label": "Healing phases" },
+      model.phases.map((p) => h("li", { class: `htl__phase htl__phase--${p.kind}` },
+        h("div", { class: "htl__phase-head" }, h("strong", { class: "htl__phase-name" }, p.name), h("span", { class: "htl__phase-time mono" }, fmtRange(p.start, p.end))),
         p.desc ? h("p", null, rich(p.desc, ctx)) : null)))
     : null;
 
   // data table
   const tbl = [];
   if (model.phases.length) {
-    tbl.push(h("table", { class: "hl__table" },
+    tbl.push(h("table", { class: "htl__table" },
       h("caption", null, "Healing phases (days from onset)"),
       h("thead", null, h("tr", null, ["Phase", "Starts", "Ends", "Day range"].map((t) => h("th", { scope: "col" }, t)))),
       h("tbody", null, model.phases.map((p) => h("tr", null,
@@ -340,7 +340,7 @@ export function healingTimeline(injury) {
         h("td", { class: "mono" }, `${Math.round(p.start)}–${Math.round(p.end)} d`))))));
   }
   if (model.milestones.length || model.rtsText) {
-    tbl.push(h("table", { class: "hl__table" },
+    tbl.push(h("table", { class: "htl__table" },
       h("caption", null, "Milestones"),
       h("thead", null, h("tr", null, ["Milestone", "When", "Day", "Note"].map((t) => h("th", { scope: "col" }, t)))),
       h("tbody", null,
@@ -349,9 +349,9 @@ export function healingTimeline(injury) {
           h("td", null, m.note ? rich(m.note, ctx) : "—"))),
         model.rtsText ? h("tr", null, h("th", { scope: "row" }, "Return to sport"), h("td", { colspan: 3 }, rich(model.rtsText, ctx))) : null)));
   }
-  const tableWrap = h("div", { class: "hl__tables table-wrap visually-hidden", id: `${id}-tables` }, tbl);
+  const tableWrap = h("div", { class: "htl__tables table-wrap visually-hidden", id: `${id}-tables` }, tbl);
   const toggle = h("button", {
-    type: "button", class: "btn btn--sm hl__toggle", "aria-expanded": "false", "aria-controls": `${id}-tables`,
+    type: "button", class: "btn btn--sm htl__toggle", "aria-expanded": "false", "aria-controls": `${id}-tables`,
     on: {
       click: () => {
         const open = toggle.getAttribute("aria-expanded") !== "true";
@@ -362,7 +362,7 @@ export function healingTimeline(injury) {
     }
   }, icon("list", { size: 16 }), h("span", null, "Show data table"));
 
-  const root = h("figure", { class: "hl hl--intro", "aria-label": "Healing timeline" }, head, chart, notes, h("div", { class: "hl__foot" }, toggle), tableWrap);
+  const root = h("figure", { class: "htl htl--intro", "aria-label": "Healing timeline" }, head, chart, notes, h("div", { class: "htl__foot" }, toggle), tableWrap);
 
   let lastW = 0, introTimer = 0;
   const redraw = (w) => {
@@ -374,9 +374,9 @@ export function healingTimeline(injury) {
     const ro = new ResizeObserver(() => {
       const w = Math.floor(chart.clientWidth);
       if (w < 200 || Math.abs(w - lastW) < 3) return;
-      if (lastW && lastW !== 720) root.classList.remove("hl--intro");
+      if (lastW && lastW !== 720) root.classList.remove("htl--intro");
       redraw(w);
-      if (!introTimer) introTimer = setTimeout(() => root.classList.remove("hl--intro"), 1600);
+      if (!introTimer) introTimer = setTimeout(() => root.classList.remove("htl--intro"), 1600);
     });
     ro.observe(chart);
   }

@@ -1,1 +1,100 @@
-/* owner: see docs/ARCHITECTURE.md */
+/* Glossary (#glossary). OWNER: P5. Tokens only; light and dark follow the theme tokens.
+   An atlas index: a big letter in the left gutter, ruled entries, mono category tags, a sticky A–Z strip. */
+
+.gl { display: grid; gap: var(--sp-5); }
+.gl-head { display: grid; gap: var(--sp-2); }
+.gl-head h1 { font-size: clamp(1.875rem, 2.4vw + 1.2rem, var(--fs-2xl)); }
+.gl-lede { margin: 0; max-width: var(--measure); color: var(--ink-2); }
+
+/* ---------------------------------------------------------------- tools */
+.gl-tools { display: grid; gap: var(--sp-3); }
+.gl-filter { position: relative; display: flex; align-items: center; max-width: 36rem; }
+.gl-filter-icon { position: absolute; left: 12px; display: inline-flex; color: var(--ink-3); pointer-events: none; }
+.gl .gl-input { width: 100%; min-width: 0; padding-left: 40px; padding-right: 44px; -webkit-appearance: none; appearance: none; }
+.gl .gl-input::-webkit-search-cancel-button, .gl .gl-input::-webkit-search-decoration { -webkit-appearance: none; display: none; }
+.gl-clear { position: absolute; right: 4px; display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: var(--radius-sm); color: var(--ink-3); }
+.gl-clear:hover { background: var(--surface-2); color: var(--ink); }
+.gl-clear:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.gl-chips { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin: 0; padding: 0; list-style: none; }
+
+.gl-count { margin: 0; color: var(--ink-2); }
+.gl-count strong { font-family: var(--font-mono); font-weight: 500; color: var(--ink); }
+
+/* ---------------------------------------------------------------- A–Z strip */
+.gl-az {
+  position: sticky;
+  top: var(--sticky-top, var(--header-h));
+  z-index: 5;
+  margin-inline: calc(-1 * var(--gutter, 16px));
+  padding: var(--sp-2) var(--gutter, 16px);
+  background: color-mix(in srgb, var(--paper) 94%, transparent);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.gl-az::-webkit-scrollbar { display: none; }
+.gl-az ul { display: flex; gap: 2px; margin: 0; padding: 0; list-style: none; width: max-content; }
+.gl-az a, .gl-az span {
+  display: inline-grid; place-items: center;
+  min-width: 34px; height: 34px; padding: 0 4px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono); font-size: var(--fs-sm); font-weight: 500;
+  text-decoration: none;
+}
+.gl-az a { color: var(--ink); }
+.gl-az a:hover { background: var(--accent-soft); }
+.gl-az a:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.gl-az .is-empty { color: var(--line-strong); }
+
+/* ---------------------------------------------------------------- list */
+.gl-list { min-width: 0; }
+.gl-group { display: grid; gap: var(--sp-2) var(--sp-5); grid-template-columns: minmax(0, 1fr); padding-block: var(--sp-4); border-top: 2px solid var(--ink); scroll-margin-top: 4.5rem; }
+.gl-group:first-child { margin-top: 0; }
+.gl-letter { margin: 0; font-family: var(--font-display); font-size: 2.5rem; font-weight: 800; font-stretch: 80%; line-height: 1; color: var(--accent); }
+@media (min-width: 760px) {
+  .gl-group { grid-template-columns: 5rem minmax(0, 1fr); }
+  .gl-letter { position: sticky; top: calc(var(--sticky-top, var(--header-h)) + 3.75rem); align-self: start; font-size: 3.5rem; }
+}
+.gl-terms, .gl-flat { display: grid; min-width: 0; max-width: 48rem; }
+.gl-flat { border-top: 2px solid var(--ink); }
+
+.gl-term {
+  position: relative;
+  display: grid;
+  gap: var(--sp-1);
+  padding: var(--sp-4) var(--sp-3) var(--sp-4) 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 4.5rem;
+}
+.gl-terms > .gl-term:first-child { padding-top: var(--sp-1); }
+.gl-term:focus-within { background: linear-gradient(90deg, var(--accent-soft), transparent 85%); box-shadow: -12px 0 0 var(--accent-soft), inset 3px 0 0 var(--accent); padding-left: var(--sp-3); margin-left: -12px; }
+.gl-flat .gl-term { padding-left: var(--sp-1); }
+.gl-name { display: flex; align-items: baseline; gap: var(--sp-2); margin: 0; font-size: var(--fs-md); font-weight: 680; font-stretch: 90%; line-height: 1.25; }
+.gl-name:focus { outline: none; }
+.gl-anchor { display: inline-grid; place-items: center; width: 24px; height: 24px; align-self: center; border-radius: var(--radius-sm); color: var(--ink-3); opacity: 0; }
+.gl-term:hover .gl-anchor, .gl-anchor:focus-visible { opacity: 1; }
+@media (hover: none) { .gl-anchor { opacity: 0.55; } }
+.gl-anchor:hover { color: var(--accent); background: var(--surface-2); }
+.gl-anchor:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.gl-aka { display: flex; flex-wrap: wrap; gap: 0 0.5em; margin: 0; font-size: var(--fs-sm); color: var(--ink-3); }
+.gl-aka-k { font-family: var(--font-mono); font-size: var(--fs-xs); letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.9; }
+.gl-aka-v { font-style: italic; }
+.gl-def { margin: 0; max-width: var(--measure); color: var(--ink); }
+.gl-meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2) var(--sp-3); margin-top: var(--sp-1); }
+.gl-cat { padding: 0 0.5em; border: 1px solid var(--line-strong); border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: var(--fs-xs); line-height: 1.7; letter-spacing: 0.02em; color: var(--ink-3); white-space: nowrap; }
+.gl-see { display: flex; flex-wrap: wrap; gap: var(--sp-1) var(--sp-2); margin: 0; padding: 0; list-style: none; }
+.gl-see li::before { content: none; }
+.gl-see a {
+  display: inline-block; padding: 0 0.65em; border-radius: 999px;
+  background: var(--accent-soft); color: var(--ink);
+  font-size: var(--fs-xs); font-weight: 600; line-height: 1.9; text-decoration: none;
+}
+.gl-see a:hover { box-shadow: inset 0 0 0 1px var(--accent); }
+.gl-see a:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+.gl-empty { padding: var(--sp-6) 0; max-width: var(--measure); color: var(--ink-2); }
+.gl-skeleton { height: 12rem; border-radius: var(--radius); background: linear-gradient(90deg, var(--surface-2), var(--surface-3), var(--surface-2)); background-size: 200% 100%; }
+@media (prefers-reduced-motion: no-preference) { .gl-skeleton { animation: gl-shimmer 1.4s linear infinite; } }
+@keyframes gl-shimmer { to { background-position: -200% 0; } }

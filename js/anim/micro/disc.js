@@ -21,8 +21,8 @@ const G = (() => {
   const r = rng("disc-geo");
   const brushes = Array.from({ length: 13 }, () => ({ u: r(), v: r(), a: r() * 180, l: 13 + r() * 7, s: r() }));
   const cells = Array.from({ length: 4 }, () => ({ u: r(), v: r(), s: r() }));
-  const marrowU = Array.from({ length: 16 }, () => ({ x: XA - 50 + r() * 470, y: 30 + r() * 95, rr: 7 + r() * 9, s: Math.floor(r() * 1e6) }));
-  const marrowL = Array.from({ length: 12 }, () => ({ x: XA - 50 + r() * 470, y: 322 + r() * 110, rr: 7 + r() * 9, s: Math.floor(r() * 1e6) }));
+  const marrowU = scatter(r, 34, { x: XA + 4, y: -60, w: XP - XA - 12, h: 180 }, { minDist: 26 }).map(([x, y]) => ({ x, y, rr: 6 + r() * 7, s: Math.floor(r() * 1e6) }));
+  const marrowL = scatter(r, 34, { x: XA + 4, y: 322, w: XP - XA - 12, h: 190 }, { minDist: 26 }).map(([x, y]) => ({ x, y, rr: 6 + r() * 7, s: Math.floor(r() * 1e6) }));
   const cyto = Array.from({ length: 34 }, () => ({ a: r() * Math.PI * 2, d: r(), s: r() }));
   return { brushes, cells, marrowU, marrowL, cyto };
 })();
@@ -59,17 +59,17 @@ function vertebra(g, upper, s, G0) {
   const yb = (x) => (upper ? G0.topY(x) - CART : BOT + CART);
   const pts = [];
   if (upper) {
-    for (let x = XA - 60; x <= XP + 6; x += 20) pts.push([x, yb(x)]);
-    pts.push([XP + 8, yb(XP) - 40], [XP + 10, -10], [XA - 64, -10]);
+    for (let x = XA - 6; x <= XP + 6; x += 20) pts.push([x, yb(x)]);
+    pts.push([XP + 8, yb(XP) - 40], [XP + 10, -220], [XA - 8, -220], [XA - 8, yb(XA) - 30]);
   } else {
-    pts.push([XA - 64, 470], [XP + 10, 470], [XP + 8, yb(0) + 40]);
-    for (let x = XP + 6; x >= XA - 60; x -= 20) pts.push([x, yb(x)]);
+    pts.push([XA - 8, 680], [XP + 10, 680], [XP + 8, yb(0) + 40]);
+    for (let x = XP + 6; x >= XA - 6; x -= 20) pts.push([x, yb(x)]);
   }
   const d = "M" + pts.map(([x, y]) => `${f(x)},${f(y)}`).join("L") + "Z";
-  el("path", { d, fill: mix("anat-bone", "stage-bg", 0.12), stroke: col("anat-bone-edge"), "stroke-width": 2.5 }, g);
+  el("path", { d, fill: mix("anat-bone", "stage-bg", 0.42), stroke: col("anat-bone-edge"), "stroke-width": 3 }, g);
   (upper ? G.marrowU : G.marrowL).forEach((m) => {
     const y = upper ? m.y - (TOP - G0.topY(m.x)) : m.y;
-    el("path", { d: blobPath(rng(m.s), m.x, y, m.rr, { irregular: 0.35 }), fill: mix("anat-marrow", "stage-bg", 0.35), stroke: mix("anat-bone-edge", "stage-bg", 0.3), "stroke-width": 1 }, g);
+    el("path", { d: blobPath(rng(m.s), m.x, y, m.rr, { irregular: 0.35 }), fill: mix("anat-marrow", "stage-bg", 0.62) }, g);
   });
   // hyaline cartilage endplate
   const ep = [];
@@ -87,6 +87,9 @@ function hatch(g, key, angle) {
 
 function annulus(g, s, G0) {
   const hA = hatch(g, "dk-hA", 30), hB = hatch(g, "dk-hB", -30);
+  // transition zone (inner annulus ↔ nucleus) fills the disc interior
+  const tz = []; for (let x = 280; x <= 500; x += 20) tz.push([x, G0.topY(x)]);
+  el("path", { d: "M" + [...tz, [500, BOT], [280, BOT]].map(([x, y]) => `${f(x)},${f(y)}`).join("L") + "Z", fill: mix("anat-annulus", "anat-nucleus", 0.55, 0.55) }, g);
   const strip = (xin, xout, k, side, bulgeExtra) => {
     const L = [], R = [];
     for (let i = 0; i <= 12; i++) {
@@ -194,18 +197,23 @@ function canal(g, s, G0) {
   const wid = (y) => 13 * (1 - 0.28 * clamp(push / 22) * Math.exp(-(((y - G0.fy) / 30) ** 2)));
   const Lp = [], Rp = [];
   for (let y = -10; y <= 470; y += 12) { Lp.push([cx(y) - wid(y), y]); Rp.push([cx(y) + wid(y), y]); }
-  if (s.inf > 0.02) el("path", { d: smoothPath(Lp.map(([x, y], i) => [(x + Rp[i][0]) / 2, y])), stroke: col("fx-inflame", 0.35 * s.inf), "stroke-width": 44, fill: "none", "stroke-linecap": "round" }, g);
+  if (s.inf > 0.02) el("ellipse", { cx: cx(G0.fy), cy: G0.fy, rx: 46, ry: 120, fill: radial(g, "dk-rad", [[0, col("fx-inflame", 0.55)], [0.55, col("fx-inflame", 0.18)], [1, col("fx-inflame", 0)]]), opacity: f(s.inf) }, g);
   el("path", { d: smoothPath([...Lp, ...Rp.reverse()], true), fill: col("anat-nerve"), stroke: col("anat-nerve-edge"), "stroke-width": 1.4 }, g);
   for (const o of [-5, 0, 5]) el("path", { d: smoothPath(Lp.map(([x, y], i) => [(x + Rp[Rp.length - 1 - i][0]) / 2 + o * (wid(y) / 13), y])), stroke: col("anat-nerve-edge", 0.5), "stroke-width": 0.8, fill: "none" }, g);
 }
 
+function neovessels(g, s, G0, p) {
+  const k = Math.max(s.inf, s.res * 0.6), R = G0.fragR;
+  if (k <= 0.01) return;
+  const grow = clamp(k * 1.4);
+  const tip = (a, b) => [lerp(a[0], b[0], grow), lerp(a[1], b[1], grow)];
+  capillary(g, [[RX + 120, G0.fy - 150], [RX - 34, G0.fy - 92], tip([RX - 34, G0.fy - 92], [G0.fx + R * 0.3, G0.fy - R * 1.05])], { width: 6, seed: 21, sprouting: k, sprouts: 2, sproutLength: 18, flow: p * 0.8 });
+  capillary(g, [[RX + 120, G0.fy + 160], [RX - 32, G0.fy + 100], tip([RX - 32, G0.fy + 100], [G0.fx + R * 0.2, G0.fy + R * 1.15])], { width: 6, seed: 22, sprouting: k, sprouts: 2, sproutLength: 16, flow: p * 0.8 });
+}
 function inflammation(g, s, G0, p) {
   const k = s.inf;
   if (k <= 0.01 && s.res <= 0.01) return;
   const R = G0.fragR;
-  // neovessels growing toward the fragment
-  capillary(g, [[RX + 70, 60], [RX + 20, G0.fy - 70], [G0.fx + R * 0.5, G0.fy - R * 0.9]], { width: 8, seed: 21, sprouting: k, sprouts: 2, sproutLength: 26, flow: p * 0.8, opacity: clamp(k * 1.5) });
-  capillary(g, [[RX + 80, 420], [RX + 18, G0.fy + 90], [G0.fx + R * 0.4, G0.fy + R * 1.1]], { width: 8, seed: 22, sprouting: k, sprouts: 2, sproutLength: 24, flow: p * 0.8, opacity: clamp(k * 1.5) });
   // cytokines diffusing toward the root
   G.cyto.forEach((c, i) => {
     const d = R + 6 + c.d * (34 + 30 * k), x = G0.fx + Math.cos(c.a) * d * 1.1 + 18 * k * c.s, y = G0.fy + Math.sin(c.a) * d * 1.3;
@@ -224,41 +232,40 @@ function labels(g, stage, s, G0, p, Z) {
   switch (stage) {
     case "healthy": {
       const a = fade(0.52, 0.45, p), b = fade(0.45, 0.52, p);
-      L(20, 214, "Annulus fibrosus\n(lamellae ±30°)", [196, 214], { opacity: a });
-      L(NX, 92, "Nucleus pulposus\n(proteoglycan–water gel)", [NX - 20, 196], { anchor: "middle", opacity: a });
-      L(20, 140, "Cartilage endplate", [216, 146], { opacity: a });
+      L(18, 132, "Cartilage\nendplate", [214, 146], { opacity: a });
+      L(18, 204, "Annulus fibrosus\n(lamellae ±30°)", [196, 214], { opacity: a });
+      L(18, 276, "Nucleus pulposus\n(proteoglycan gel)", [330, 246], { opacity: a });
+      L(18, 92, "Vertebral body", [250, 92], { opacity: b });
       L(790, 92, "Nerve root", [RX + 6, 120], { anchor: "end", opacity: b });
-      L(20, 96, "Vertebral body", [190, 92], { opacity: b });
-      L(790, 340, "Outer annulus\nis innervated", [XP + 2, G0.mid + 52], { anchor: "end", opacity: b });
+      L(790, 340, "Outer annulus\nis innervated", [XP - 4, G0.mid + 50], { anchor: "end", opacity: b });
       break;
     }
     case "loaded":
-      L(20, 214, "Flexion + axial load", null, { opacity: fade(0.05, 0.25, p), color: col("fx-force"), weight: 600 });
-      L(NX, 92, "Intradiscal pressure rises;\nnucleus pushed posteriorly", [G0.nx + 40, G0.mid], { anchor: "middle", opacity: fade(0.2, 0.45, p) });
+      L(18, 204, "Flexion +\naxial load", null, { opacity: fade(0.05, 0.25, p), color: col("fx-force"), weight: 600 });
+      L(18, 276, "Intradiscal\npressure rises", [G0.nx, G0.mid + 18], { opacity: fade(0.2, 0.45, p) });
       L(790, 340, "Posterior annulus\nin hoop tension", [XP - 4, G0.mid + 40], { anchor: "end", opacity: fade(0.4, 0.65, p) });
       break;
     case "annular-fissure":
       L(790, 340, "Radial fissure through\nthe inner annulus", [548, G0.mid + 12], { anchor: "end", opacity: fade(0.15, 0.4, p) });
-      L(NX, 92, "Outer lamellae still intact", [XP - 10, G0.mid - 30], { anchor: "middle", opacity: fade(0.5, 0.7, p) });
+      L(790, 92, "Outer lamellae\nstill intact", [XP - 6, G0.mid - 24], { anchor: "end", opacity: fade(0.5, 0.7, p) });
       break;
     case "nucleus-migration":
-      L(NX + 10, 360, "Nuclear gel tracks along the fissure", [540, G0.mid + 10], { anchor: "middle", opacity: fade(0.15, 0.4, p) });
+      L(790, 340, "Nuclear gel tracks\nalong the fissure", [552, G0.mid + 12], { anchor: "end", opacity: fade(0.15, 0.4, p) });
       L(790, 92, "Contained bulge", [XP + 10, G0.mid + 6], { anchor: "end", opacity: fade(0.45, 0.7, p) });
       break;
     case "herniation":
-      L(790, 92, "Extruded nucleus", [G0.fx + 4, G0.fy - G0.fragR], { anchor: "end", opacity: fade(0.2, 0.45, p) });
-      L(790, 350, "Nerve root\ncompressed", [RX + G0.push + 10, G0.fy + 30], { anchor: "end", opacity: fade(0.45, 0.7, p) });
-      L(NX, 92, "Outer annulus ruptured", [XP - 2, G0.mid + 6], { anchor: "middle", opacity: fade(0.1, 0.3, p) });
+      L(790, 92, "Nucleus extrudes through\nthe ruptured annulus", [G0.fx + 4, G0.fy - G0.fragR], { anchor: "end", opacity: fade(0.2, 0.45, p) });
+      L(790, 340, "Nerve root displaced\nand compressed", [RX + G0.push + 10, G0.fy + 34], { anchor: "end", opacity: fade(0.45, 0.7, p) });
       break;
     case "inflammation":
-      L(20, 96, "Macrophages & cytokines\n(TNF-α, IL-1β)", [G0.fx - G0.fragR - 14, G0.fy - G0.fragR * 0.9], { opacity: fade(0.35, 0.55, p) });
-      L(790, 350, "Chemical radiculitis", [RX + G0.push + 8, G0.fy + 60], { anchor: "end", opacity: fade(0.5, 0.7, p) });
-      L(790, 80, "New vessels", [RX + 26, G0.fy - 60], { anchor: "end", opacity: fade(0.6, 0.8, p) });
+      L(790, 92, "Macrophages & cytokines\n(TNF-α, IL-1β)", [G0.fx + 6, G0.fy - G0.fragR - 18], { anchor: "end", opacity: fade(0.35, 0.55, p) });
+      L(790, 340, "Chemical radiculitis", [RX + G0.push + 8, G0.fy + 44], { anchor: "end", opacity: fade(0.5, 0.7, p) });
+      L(790, 220, "New vessels", [RX + 40, G0.fy - 112], { anchor: "end", opacity: fade(0.6, 0.8, p) });
       break;
     case "resorption":
-      L(20, 96, "Macrophages phagocytose\nthe fragment", [G0.fx - G0.fragR - 8, G0.fy - G0.fragR], { opacity: fade(0.1, 0.3, p) });
-      L(20, 340, "Fragment shrinks", [G0.fx - 4, G0.fy + G0.fragR], { opacity: fade(0.4, 0.6, p) });
-      L(790, 350, "Root decompressed", [RX + G0.push + 10, G0.fy + 40], { anchor: "end", opacity: fade(0.65, 0.85, p) });
+      L(790, 92, "Macrophages phagocytose\nthe fragment", [G0.fx + 8, G0.fy - G0.fragR - 8], { anchor: "end", opacity: fade(0.1, 0.3, p) });
+      L(790, 220, "Fragment shrinks", [G0.fx + G0.fragR, G0.fy], { anchor: "end", opacity: fade(0.4, 0.6, p) });
+      L(790, 340, "Root decompressed", [RX + G0.push + 10, G0.fy + 40], { anchor: "end", opacity: fade(0.6, 0.8, p) });
       break;
     default: break;
   }
@@ -266,7 +273,7 @@ function labels(g, stage, s, G0, p, Z) {
 
 export default {
   id: "disc",
-  scale: { default: "≈ 5 mm", inflammation: "≈ 3 mm", resorption: "≈ 3 mm" },
+  scale: { default: "≈ 5 mm", inflammation: "cells not to scale", resorption: "cells not to scale" },
   labels: { herniation: "Herniation (extrusion)" },
   render(g, { stage, progress = 0 }) {
     const p = clamp(progress);
@@ -283,6 +290,7 @@ export default {
     annulus(v, s, G0);
     nucleus(v, s, G0, p);
     fissure(v, s, G0);
+    neovessels(v, s, G0, p);
     canal(v, s, G0);
     fragment(v, s, G0);
     inflammation(v, s, G0, p);

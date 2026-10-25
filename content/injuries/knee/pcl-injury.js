@@ -400,7 +400,7 @@ export default {
           { t: 0, text: "Healthy ligament: crimped type I collagen fibres aligned along the line of load." },
           { t: 1.0, text: "In flexion the PCL fibres straighten and take up the posterior shear." },
           { t: 2.0, text: "Beyond the elastic range, fibrils slide and begin to fail." },
-          { t: 3.0, text: "Groups of fibres rupture: a partial, mid-substance tear." },
+          { t: 3.0, text: "Fibres rupture. Full failure is shown here, although many sporting PCL tears are partial." },
           { t: 4.0, text: "Torn vessels bleed into the ligament, forming a clot." },
           { t: 5.2, text: "Neutrophils, then macrophages, clear debris over the first days." },
           { t: 6.7, text: "Unlike the ACL, the PCL can bridge the gap with scar, often a little longer than before." },

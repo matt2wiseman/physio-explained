@@ -1,9 +1,9 @@
 /* Clinical widgets embedded in injury pages. OWNER: P6.
-   .hl  healing timeline      .xp  exercise program      .st  special tests table
+   .htl healing timeline      .xp  exercise program      .st  special tests table
    Tokens only; works in both themes. Exercise illustrations sit on the fixed dark stage (--stage-*). */
 
 /* ====================================================================== healing timeline */
-.hl {
+.htl {
   margin: 0;
   padding: var(--sp-4);
   background: var(--surface);
@@ -11,85 +11,85 @@
   border-radius: var(--radius);
   min-width: 0;
 }
-.hl-empty, .xp-empty, .st-empty { color: var(--ink-3); font-size: var(--fs-sm); }
+.htl-empty, .xp-empty, .st-empty { color: var(--ink-3); font-size: var(--fs-sm); }
 
-.hl__head { display: grid; gap: var(--sp-2); margin-bottom: var(--sp-3); }
-.hl__legend { display: flex; flex-wrap: wrap; gap: 6px var(--sp-4); list-style: none; padding: 0; margin: 0; }
-.hl__key {
+.htl__head { display: grid; gap: var(--sp-2); margin-bottom: var(--sp-3); }
+.htl__legend { display: flex; flex-wrap: wrap; gap: 6px var(--sp-4); list-style: none; padding: 0; margin: 0; }
+.htl__key {
   display: inline-flex; align-items: center; gap: 7px;
   font-family: var(--font-display); font-stretch: 100%;
   font-size: var(--fs-xs); font-weight: 650; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-2);
 }
-.hl__key i { display: inline-block; width: 18px; height: 8px; border-radius: 2px; flex: none; }
-.hl__key--inflammatory i { background: var(--phase-inflammatory); }
-.hl__key--proliferative i { background: var(--phase-proliferative); }
-.hl__key--remodelling i { background: var(--phase-remodelling); }
-.hl__key--other i { background: var(--phase-other); }
-.hl__key--rts i { height: 11px; background: var(--ok-soft); border: 1px dashed var(--ok); }
-.hl__key--ms i { width: 9px; height: 9px; transform: rotate(45deg); border-radius: 1px; background: var(--ink); }
-.hl__scale { display: flex; gap: 6px; align-items: flex-start; margin: 0; max-width: 72ch; font-size: var(--fs-xs); line-height: 1.45; color: var(--ink-3); }
-.hl__scale .icon { margin-top: 1px; }
+.htl__key i { display: inline-block; width: 18px; height: 8px; border-radius: 2px; flex: none; }
+.htl__key--inflammatory i { background: var(--phase-inflammatory); }
+.htl__key--proliferative i { background: var(--phase-proliferative); }
+.htl__key--remodelling i { background: var(--phase-remodelling); }
+.htl__key--other i { background: var(--phase-other); }
+.htl__key--rts i { height: 11px; background: var(--ok-soft); border: 1px dashed var(--ok); }
+.htl__key--ms i { width: 9px; height: 9px; transform: rotate(45deg); border-radius: 1px; background: var(--ink); }
+.htl__scale { display: flex; gap: 6px; align-items: flex-start; margin: 0; max-width: 72ch; font-size: var(--fs-xs); line-height: 1.45; color: var(--ink-3); }
+.htl__scale .icon { margin-top: 1px; }
 
-.hl__chart { min-width: 0; }
-.hl__svg { display: block; max-width: 100%; height: auto; overflow: visible; }
+.htl__chart { min-width: 0; }
+.htl__svg { display: block; max-width: 100%; height: auto; overflow: visible; }
 
-.hl__grid line { stroke: var(--line); stroke-width: 1; }
-.hl__axis-line, .hl__track { stroke: var(--ink-3); stroke-width: 1.25; }
-.hl__tick { stroke: var(--ink-3); stroke-width: 1.25; }
-.hl__tick--minor { stroke: var(--line-strong); stroke-width: 1; }
-.hl__ref { stroke: var(--line-strong); stroke-width: 1; stroke-dasharray: 2 3; }
-.hl__leader { stroke: var(--ink-3); stroke-width: 1; }
+.htl__grid line { stroke: var(--line); stroke-width: 1; }
+.htl__axis-line, .htl__track { stroke: var(--ink-3); stroke-width: 1.25; }
+.htl__tick { stroke: var(--ink-3); stroke-width: 1.25; }
+.htl__tick--minor { stroke: var(--line-strong); stroke-width: 1; }
+.htl__ref { stroke: var(--line-strong); stroke-width: 1; stroke-dasharray: 2 3; }
+.htl__leader { stroke: var(--ink-3); stroke-width: 1; }
 
-.hl__t, .hl__tm { paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }
-.hl__t { font-family: var(--font-body); fill: var(--ink); }
-.hl__t--lane { font-size: 13px; font-weight: 600; }
-.hl__t--ms { font-size: 12px; }
-.hl__tm { font-family: var(--font-mono); font-size: 11.5px; font-weight: 400; fill: var(--ink-3); letter-spacing: 0; }
-.hl__tm--tick { fill: var(--ink-2); }
+.htl__t, .htl__tm { paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }
+.htl__t { font-family: var(--font-body); fill: var(--ink); }
+.htl__t--lane { font-size: 13px; font-weight: 600; }
+.htl__t--ms { font-size: 12px; }
+.htl__tm { font-family: var(--font-mono); font-size: 11.5px; font-weight: 400; fill: var(--ink-3); letter-spacing: 0; }
+.htl__tm--tick { fill: var(--ink-2); }
 
-.hl__bar--inflammatory { fill: var(--phase-inflammatory); }
-.hl__bar--proliferative { fill: var(--phase-proliferative); }
-.hl__bar--remodelling { fill: var(--phase-remodelling); }
-.hl__bar--other { fill: var(--phase-other); }
+.htl__bar--inflammatory { fill: var(--phase-inflammatory); }
+.htl__bar--proliferative { fill: var(--phase-proliferative); }
+.htl__bar--remodelling { fill: var(--phase-remodelling); }
+.htl__bar--other { fill: var(--phase-other); }
 
-.hl__rts-band { fill: var(--ok-soft); opacity: 0.75; }
-.hl__rts-line { stroke: var(--ok); stroke-width: 1.5; stroke-dasharray: 5 3; }
-.hl__rts-label { font-family: var(--font-body); font-size: 11.5px; font-weight: 650; fill: var(--ok); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }
-.hl__diamond { fill: var(--ink); stroke: var(--surface); stroke-width: 1.5; }
-.hl__m--rts .hl__diamond { fill: var(--ok); }
+.htl__rts-band { fill: var(--ok-soft); opacity: 0.75; }
+.htl__rts-line { stroke: var(--ok); stroke-width: 1.5; stroke-dasharray: 5 3; }
+.htl__rts-label { font-family: var(--font-body); font-size: 11.5px; font-weight: 650; fill: var(--ok); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }
+.htl__diamond { fill: var(--ink); stroke: var(--surface); stroke-width: 1.5; }
+.htl__m--rts .htl__diamond { fill: var(--ok); }
 
 @media (prefers-reduced-motion: no-preference) {
-  .hl--intro .hl__bar { transform-box: fill-box; transform-origin: left center; animation: hl-grow 0.7s var(--ease) both; animation-delay: calc(var(--i, 0) * 90ms); }
-  .hl--intro .hl__diamond { animation: hl-pop 0.5s var(--ease) 0.5s both; transform-box: fill-box; transform-origin: center; }
+  .htl--intro .htl__bar { transform-box: fill-box; transform-origin: left center; animation: htl-grow 0.7s var(--ease) both; animation-delay: calc(var(--i, 0) * 90ms); }
+  .htl--intro .htl__diamond { animation: htl-pop 0.5s var(--ease) 0.5s both; transform-box: fill-box; transform-origin: center; }
 }
-@keyframes hl-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-@keyframes hl-pop { from { transform: scale(0); } to { transform: scale(1); } }
+@keyframes htl-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes htl-pop { from { transform: scale(0); } to { transform: scale(1); } }
 
-.hl__phases {
+.htl__phases {
   list-style: none; padding: 0; margin: var(--sp-5) 0 0;
   display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: var(--sp-4) var(--sp-5);
 }
-.hl__phase { --ph: var(--phase-other); border-left: 4px solid var(--ph); padding: 1px 0 1px var(--sp-3); min-width: 0; }
-.hl__phase--inflammatory { --ph: var(--phase-inflammatory); }
-.hl__phase--proliferative { --ph: var(--phase-proliferative); }
-.hl__phase--remodelling { --ph: var(--phase-remodelling); }
-.hl__phase-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 var(--sp-3); }
-.hl__phase-name { font-family: var(--font-display); font-stretch: 92%; font-weight: 650; font-size: var(--fs-base); line-height: 1.3; }
-.hl__phase-time { font-size: var(--fs-xs); color: var(--ink-3); white-space: nowrap; }
-.hl__phase p { margin: 2px 0 0; font-size: var(--fs-sm); line-height: 1.5; color: var(--ink-2); }
+.htl__phase { --ph: var(--phase-other); border-left: 4px solid var(--ph); padding: 1px 0 1px var(--sp-3); min-width: 0; }
+.htl__phase--inflammatory { --ph: var(--phase-inflammatory); }
+.htl__phase--proliferative { --ph: var(--phase-proliferative); }
+.htl__phase--remodelling { --ph: var(--phase-remodelling); }
+.htl__phase-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 var(--sp-3); }
+.htl__phase-name { font-family: var(--font-display); font-stretch: 92%; font-weight: 650; font-size: var(--fs-base); line-height: 1.3; }
+.htl__phase-time { font-size: var(--fs-xs); color: var(--ink-3); white-space: nowrap; }
+.htl__phase p { margin: 2px 0 0; font-size: var(--fs-sm); line-height: 1.5; color: var(--ink-2); }
 
-.hl__foot { margin-top: var(--sp-4); }
-.hl__tables { margin-top: var(--sp-3); display: grid; gap: var(--sp-4); border: 0; background: none; }
-.hl__tables:not(.visually-hidden) { overflow: visible; }
-.hl__table { font-size: var(--fs-sm); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); display: block; overflow-x: auto; max-width: 100%; }
-.hl__table caption { display: block; padding: var(--sp-2) var(--sp-3) 0; font-family: var(--font-display); font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-3); }
-.hl__table thead, .hl__table tbody { display: table; width: 100%; }
-.hl__table th[scope="row"] { font-weight: 600; color: var(--ink); }
+.htl__foot { margin-top: var(--sp-4); }
+.htl__tables { margin-top: var(--sp-3); display: grid; gap: var(--sp-4); border: 0; background: none; }
+.htl__tables:not(.visually-hidden) { overflow: visible; }
+.htl__table { font-size: var(--fs-sm); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); display: block; overflow-x: auto; max-width: 100%; }
+.htl__table caption { display: block; padding: var(--sp-2) var(--sp-3) 0; font-family: var(--font-display); font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-3); }
+.htl__table thead, .htl__table tbody { display: table; width: 100%; }
+.htl__table th[scope="row"] { font-weight: 600; color: var(--ink); }
 
 @media print {
-  .hl { border-color: var(--line-strong); break-inside: avoid; }
-  .hl__foot { display: none; }
-  .hl__tables.visually-hidden { display: none; }
+  .htl { border-color: var(--line-strong); break-inside: avoid; }
+  .htl__foot { display: none; }
+  .htl__tables.visually-hidden { display: none; }
 }
 
 /* ====================================================================== exercise program */

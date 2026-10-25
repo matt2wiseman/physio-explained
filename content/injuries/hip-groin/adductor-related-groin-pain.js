@@ -1,0 +1,449 @@
+// Adductor-related groin pain (longstanding) — LL2
+export default {
+  id: "adductor-related-groin-pain",
+  name: "Adductor-related groin pain (longstanding)",
+  shortName: "Adductor-related groin pain",
+  aka: ["ARGP", "adductor tendinopathy", "adductor enthesopathy", "chronic groin strain", "longstanding adductor-related groin pain", "athletic groin pain", "groin pain in athletes"],
+  region: "hip-groin",
+  tissues: ["tendon", "muscle", "bone"],
+  onset: "gradual",
+  mechanismType: ["overuse"],
+  populations: ["male football players", "kicking and change-of-direction sport athletes", "ice hockey players", "athletes with previous groin injury"],
+  sports: ["soccer", "australian football", "rugby", "gaelic football", "ice hockey", "field hockey", "futsal"],
+  urgency: "routine",
+  summary: "Longstanding groin pain from the adductor longus origin, defined by adductor tenderness plus pain on resisted adduction. It builds gradually in kicking and change-of-direction sports and responds to progressive adductor strengthening.",
+  keyFacts: [
+    { label: "Typical recovery", value: "8–12 weeks of progressive active training, then graded return" },
+    { label: "Return to sport", value: "79% returned to the same level without groin pain after active training" },
+    { label: "Key test", value: "Adductor longus origin palpation + resisted adduction (squeeze) reproducing pain" },
+    { label: "Imaging", value: "Rarely needed. MRI changes are common in asymptomatic footballers" },
+    { label: "Incidence", value: "Most common groin entity: 61% of athletes in a groin clinic" },
+    { label: "Mechanism", value: "Cumulative kicking, cutting and skating load exceeding adductor capacity" }
+  ],
+  overview: "Adductor-related groin pain (ARGP) is one of the defined clinical entities of the Doha agreement. It requires adductor tenderness and pain on resisted adduction testing [r1]. It is the most common cause of longstanding groin pain in athletes: 61% of athletes seen at a multidisciplinary groin pain clinic had it, and 44% had more than one entity contributing to their pain [r2]. Pain arises mainly from the adductor longus origin on the pubis, where repetitive kicking, cutting and skating load concentrate on a small enthesis that is anatomically continuous with the rectus abdominis sheath and the pubic symphysis capsule.\n\nARGP is a load–capacity problem, usually without a single injury moment. In the landmark randomised trial, an 8–12 week active training program focused on adductor and pelvic-muscle strength and coordination was far superior to passive physiotherapy. Twenty-three of 34 athletes in the active group returned to sport without groin pain, compared with 4 in the passive group [r3]. The physiotherapist leads diagnosis (including other contributing entities), load management and a progressive strengthening program, which is the cornerstone of treatment.",
+
+  epidemiology: {
+    text: "Groin problems are far more common than time-loss surveillance suggests. Over a 6-week period of match congestion the average weekly prevalence of any groin problem in male footballers was 29%, and substantial problems 10%. A time-loss definition captured only one-third of these problems [r4]. In UEFA elite football, hip and groin injuries occur at 1.1 per 1000 hours and adductor-related injuries are the most common diagnosis [r5]. ARGP was the most prevalent Doha entity (61%) in a clinic cohort of mostly male (98%) footballers (60%) [r2]. Risk factors with level 1–2 evidence include previous groin injury, a higher level of play, reduced adductor strength (absolute and relative to the abductors) and less sport-specific training [r6]. Reduced adductor strength is **modifiable**. Low eccentric adduction strength was associated with adductor-related injury in professional footballers (HR 1.7), although screening could not identify individual athletes at risk [r7].",
+    riskFactors: {
+      intrinsic: [
+        "Previous groin injury, which roughly doubles the risk [r20,r6]",
+        "Reduced hip adductor strength, absolute or relative to the abductors (modifiable) [r6,r7]",
+        "Male sex: weekly groin-problem prevalence is about 3 times higher in elite male than elite female footballers [r4]",
+        "Reduced hip internal rotation and bent-knee fall-out range in athletes with hip and groin pain [r10]"
+      ],
+      extrinsic: [
+        "Higher level of play, which roughly triples the risk [r20,r6]",
+        "Match congestion and high volumes of kicking, cutting and skating [r4]",
+        "Lower levels of sport-specific (preseason) training [r6]",
+        "No adductor strengthening in the injury-prevention program [r19]"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "ARGP develops when the cumulative load at the adductor longus origin outpaces its capacity to adapt. Each kick, side-step, reach or skating stride loads the adductor eccentrically at long length and transmits force across the anterior pubis. This happens through an aponeurotic connection with the contralateral rectus sheath, the symphysis capsule and the opposite adductor longus [r8]. Pain usually starts as stiffness after training and progresses to pain during sport, especially with sudden increases in match or training load [r4,r6].",
+    sequence: [
+      "Training or match load rises: preseason, congested fixtures, a change of position or a return after time off [r4,r6].",
+      "Repeated kicking and change of direction load the adductor longus eccentrically at long length, hundreds of times per session.",
+      "Force concentrates at the small fibrocartilaginous enthesis on the anterior pubis and spreads across the pubic aponeurotic plate [r8].",
+      "With insufficient recovery the enthesis and proximal tendon develop a reactive, then disorganised, tendinopathy-like response.",
+      "The athlete notices groin stiffness the morning after training that 'warms up', then pain during kicking, sprinting or cutting.",
+      "Adductor strength falls and pain on the squeeze test develops, which further reduces capacity [r10].",
+      "Without load management and strengthening, symptoms can persist for months and spread to bilateral or multiple entities [r2]."
+    ],
+    variants: [
+      { name: "After an acute adductor strain", description: "Incomplete rehabilitation of an acute adductor injury (persisting strength deficit, early return) can evolve into longstanding pain at the origin [r6]." },
+      { name: "Multiple entities", description: "ARGP often coexists with pubic-, inguinal-, iliopsoas- or hip-related groin pain. In one clinic 44% of athletes had more than one entity [r2]." },
+      { name: "Ice hockey and skating", description: "The skating stride loads the adductors eccentrically during push-off and recovery. Low adduction-to-abduction strength ratios are common in affected players [r6]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The adductor longus arises from the anterior pubic body just below the pubic tubercle. In most people (18 of 20 limbs in one dissection study) its attachment is tendinous on the superficial surface and muscular on the deep surface. The proximal tendon communicates with the contralateral distal rectus sheath, the anterior capsule of the pubic symphysis, the ilio-inguinal ligament and the opposite adductor longus tendon, forming a force-transmitting 'aponeurotic plate' across the front of the pubis [r8]. This shared attachment explains why adductor, pubic and inguinal pain so often overlap. The adductors stabilise the pelvis in single-leg stance, decelerate abduction when cutting and accelerate the thigh across the body when kicking.",
+    structures: [
+      { name: "Adductor longus origin (enthesis)", role: "Fibrocartilaginous attachment to the anterior pubis. It is the main site of tenderness in ARGP, positive in 94% of affected athletes [r11]." },
+      { name: "Rectus abdominis–adductor aponeurotic plate", role: "Links the adductor longus with the contralateral rectus sheath and the symphysis capsule, transmitting force across the pubis [r8]" },
+      { name: "Pubic symphysis and pubic bone", role: "Central fibrocartilaginous joint. Pubic bone marrow oedema is more frequent and of higher grade in symptomatic players [r9]." },
+      { name: "Adductor brevis, pectineus and gracilis", role: "Synergists that share the load and may be tender, but palpation outside the adductor longus has poor reliability [r11]" },
+      { name: "Hip abductors and trunk muscles", role: "Control pelvic position in single-leg tasks. Trunk-muscle function is altered in athletes with hip and groin pain [r10]." }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "The precise pathology is debated. The best-supported model is an overload enthesopathy and tendinopathy of the adductor longus origin. Repeated eccentric loading at long muscle length exceeds the capacity of the enthesis and proximal tendon. Tenocytes become reactive, the matrix becomes disorganised and the tendon thickens, and in some athletes the adjacent pubic bone shows marrow oedema or a 'secondary cleft' [r9,r10]. Because the adductor longus tendon blends with the rectus sheath and symphysis capsule, load and pain can spread across the pubis and to the opposite side [r8].\n\nImaging changes do not equal pain. In a 3 T MRI study, up to 71% of asymptomatic footballers had positive findings (bone marrow oedema, adductor tendinopathy, degenerative changes), and footballers had 6 to 13 times higher odds of these changes than non-footballers regardless of symptoms. Only higher-grade pubic bone marrow oedema and central disc protrusion were associated with ARGP [r9]. ARGP is therefore best understood as a clinical, load-related pain condition. Diagnosis rests on examination [r1], and treatment aims to restore adductor capacity, not to 'heal a scan'.",
+    structures: [
+      { name: "Adductor longus enthesis and proximal tendon", effect: "Tendinopathy-like change: thickening, matrix disorganisation and enthesopathy on MRI or ultrasound in some athletes. Tender in almost all [r11]." },
+      { name: "Pubic bone", effect: "Bone marrow oedema, more frequent at higher grades in symptomatic players but also common in asymptomatic footballers [r9]" },
+      { name: "Rectus abdominis–adductor aponeurosis", effect: "Shared load path. Microtears or 'secondary cleft' signs may extend from the adductor origin [r8,r10]." },
+      { name: "Pubic symphysis", effect: "Central disc protrusion is associated with ARGP on MRI [r9]. Pubic-related groin pain may coexist [r2]." }
+    ],
+    muscles: [
+      { name: "Hip adductors", effect: "Pain and reduced strength on the squeeze test are the features that best distinguish athletes with hip and groin pain from those without [r10]." },
+      { name: "Hip abductors", effect: "Relative abductor dominance lowers the adduction-to-abduction ratio, a recognised risk marker [r6]." },
+      { name: "Trunk and abdominal muscles", effect: "Altered trunk-muscle function is associated with hip and groin pain and may reduce pelvic control during kicking and cutting [r10]." }
+    ],
+    cellular: [
+      { phase: "Reactive tendinopathy", timing: "Days to weeks after a load spike", description: "Tenocytes become rounded and active and increase proteoglycan production. The tendon thickens and swells without collagen breakdown. This stage is reversible with load modification." },
+      { phase: "Tendon disrepair", timing: "Weeks to months", description: "Collagen becomes disorganised, cellularity increases and there is early neovascularisation. Capacity is reduced, but the tissue can still adapt to progressive load." },
+      { phase: "Degenerative enthesopathy", timing: "Months (refractory cases)", description: "Areas of matrix breakdown and cell death at the enthesis, sometimes with adjacent pubic bone marrow oedema. Imaging changes persist even after pain resolves [r9]." },
+      { phase: "Load adaptation", timing: "8–12+ weeks of progressive loading", description: "Progressive strength training restores the muscle–tendon unit's capacity and reduces pain. The benefit of an active program persisted 8–12 years later [r3,r16]." }
+    ],
+    systems: [
+      { system: "Nervous system", effect: "Longstanding nociceptive input can sensitise pain processing. Pain often becomes bilateral or diffuse, and many athletes describe electric or aching qualities that overlap between entities." },
+      { system: "Musculoskeletal chain", effect: "Reduced hip internal rotation and bent-knee fall-out range, altered trunk-muscle function and adductor weakness change how load is shared across the pelvis [r10]." },
+      { system: "Bone", effect: "Pubic bone marrow oedema reflects the stress response of the pubis to repetitive shear and traction [r9]." },
+      { system: "Psychological / performance", effect: "Months of 'playing through' pain, uncertainty about diagnosis and repeated failed rests reduce confidence. Patient-reported outcome scores (HAGOS) are markedly lower in athletes with groin pain [r10,r12]." }
+    ]
+  },
+
+  grading: null,
+
+  timeframes: {
+    summary: "ARGP is a capacity problem, so recovery tracks how quickly strength and load tolerance can be rebuilt rather than a tissue-healing clock. Active training programs run 8–12 weeks before a graded return [r3]. Symptoms of several months' duration are common at presentation (median 40 weeks in the landmark trial) [r3].",
+    healing: [
+      { phase: "Settle irritability", startDay: 0, endDay: 14, description: "Load modification and isometric loading to reduce pain" },
+      { phase: "Rebuild capacity", startDay: 10, endDay: 84, description: "Progressive adductor, abductor and trunk strengthening (8–12 week active training)" },
+      { phase: "Return to sport", startDay: 56, endDay: 126, description: "Graded running, change of direction and kicking, then full training" },
+      { phase: "Maintenance & tissue adaptation", startDay: 84, endDay: 365, description: "Ongoing strength maintenance. Imaging changes may persist without pain." }
+    ],
+    milestones: [
+      { label: "Pain ≤2/10 on squeeze test and daily activities", day: 21, note: "Typical; varies with irritability" },
+      { label: "Start graded running", day: 28 },
+      { label: "Pain-free change of direction and kicking", day: 70 },
+      { label: "Active training program completed", day: 84, note: "8–12 weeks in the RCT [r3]" },
+      { label: "Return to full sport (typical)", day: 112, note: "Criteria-based; many take 3–4 months" }
+    ],
+    returnToSport: "Typically 3–4 months after starting an active training program, but criteria-based rather than time-based. In the RCT, 79% of athletes in the active group returned to the same level of sport without groin pain [r16]."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Gradual onset of medial groin pain over weeks, without a single injury moment",
+      "Stiffness or pain the morning after training or matches that eases with warm-up early on",
+      "Pain with kicking (especially long passes and shooting), sprinting, cutting and skating",
+      "Pain may become bilateral or spread toward the pubis and lower abdomen",
+      "Reduced kicking power and performance, often while still playing"
+    ],
+    signs: [
+      "Tenderness at the adductor longus origin on the pubis (the most consistent sign) [r11]",
+      "Recognisable pain and reduced force on resisted adduction (squeeze test) [r10]",
+      "Reduced bent-knee fall-out range and hip internal rotation compared with the other side [r10]",
+      "Possible pain at end-range passive abduction",
+      "Pain-free hip joint tests if ARGP is the only entity (FADIR and internal rotation reproduce deep hip pain in hip-related groin pain)"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Onset (gradual vs a specific injury), duration and progression; previous groin injuries [r6]",
+      "Aggravating activities: kicking, sprinting, cutting, skating, getting out of a car, and next-morning stiffness",
+      "Pain with coughing, sneezing or sit-ups (inguinal), central pubic pain (pubic) or deep hip pain with catching (hip-related) [r1]",
+      "Training and match load over the last 4–8 weeks, fixture congestion and preseason history [r4]",
+      "Systemic, urological, bowel or gynaecological symptoms and night pain to screen for 'other causes' [r1]",
+      "Previous treatments (rest, injections) and the athlete's goals and timelines"
+    ],
+    observation: ["Usually unremarkable", "Gait and single-leg stance quality; pelvic control in single-leg squat", "Muscle bulk of the adductors and abdominals"],
+    palpation: [
+      "Adductor longus origin on the pubis: tender in 94% of athletes classified with ARGP [r11]",
+      "Proximal adductor longus tendon and muscle belly",
+      "Pubic symphysis, inguinal canal and iliopsoas, to identify coexisting entities [r1]",
+      "Palpation of other adductors (brevis, pectineus, gracilis) has limited inter-examiner reliability [r11]"
+    ],
+    rangeOfMotion: [
+      "Bent-knee fall-out test (reduced in athletes with hip and groin pain) [r10]",
+      "Hip internal rotation at 90° flexion (reduced in hip and groin pain) [r10]",
+      "Passive hip abduction in supine and side-lying",
+      "Hip flexion, FADIR and FABER to screen hip-related groin pain"
+    ],
+    strength: [
+      "Adductor squeeze test at 0° and 45° with hand-held or sphygmomanometer dynamometry: pain (NRS) and force [r10]",
+      "Side-lying eccentric adduction and abduction strength, and the adduction-to-abduction ratio [r6,r7]",
+      "Resisted hip flexion (iliopsoas) and resisted sit-up or oblique sit-up (inguinal)",
+      "Trunk endurance (side bridge)"
+    ],
+    neuro: ["Screen L2–L4 dermatomes, femoral and obturator nerve function, and lumbar spine referral when pain is diffuse or paraesthesia is reported"],
+    functional: [
+      "Single-leg squat and lateral lunge for pain and pelvic control",
+      "Copenhagen adduction short and long lever hold, pain and repetitions",
+      "Sport-specific tests: sprint, change of direction, long pass and shooting with pain rating"
+    ],
+    specialTests: [
+      {
+        name: "Adductor longus origin palpation",
+        purpose: "Core Doha criterion for ARGP",
+        procedure: "Supine with the hip slightly abducted. Palpate the adductor longus origin on the anterior pubis and follow the tendon distally, comparing both sides.",
+        positive: "Recognisable groin pain. Positive in 94% of athletes classified with ARGP. Inter-examiner reliability ranges from slight to moderate (κ 0.02–0.54 across adductor palpation sites) [r11].",
+        refs: ["r11"]
+      },
+      {
+        name: "Adductor resistance (squeeze) tests",
+        purpose: "Core Doha criterion: pain on resisted adduction; quantify adduction strength",
+        procedure: "Supine. Bilateral squeeze against the examiner's fist, a ball or a dynamometer between the knees at 45° hip flexion and between the ankles at 0°. Unilateral resisted adduction can also be tested in side-lying.",
+        positive: "Recognisable groin pain and/or reduced force. Reliability is fair to substantial (κ 0.22–0.74) [r11], and pain with lower squeeze strength strongly differentiates athletes with hip and groin pain from those without [r10].",
+        refs: ["r11", "r10"]
+      },
+      {
+        name: "Adductor stretch test",
+        purpose: "Provoke adductor pain with passive lengthening",
+        procedure: "Supine. Passively abduct the straight leg to end range while stabilising the pelvis.",
+        positive: "Recognisable adductor pain. Moderate reliability (κ 0.50), but it did not help classify ARGP, so use it as supporting information only [r11].",
+        refs: ["r11"]
+      },
+      {
+        name: "Bent-knee fall-out test",
+        purpose: "Adductor flexibility and hip range",
+        procedure: "Supine with the foot of the test leg beside the opposite knee. Let the knee fall outward and measure the fibular head-to-couch distance.",
+        positive: "Larger distance than the other side or normative values. Reduced range is consistently found in athletes with hip and groin pain [r10].",
+        refs: ["r10"]
+      }
+    ],
+    clinicalRules: [
+      { name: "Doha agreement classification", description: "Classify groin pain by history and examination into adductor-, iliopsoas-, inguinal- and pubic-related groin pain, hip-related groin pain and other causes. ARGP = adductor tenderness + pain on resisted adduction. Record and treat every contributing entity [r1,r2]." }
+    ],
+    outcomeMeasures: [
+      { name: "Copenhagen Hip and Groin Outcome Score (HAGOS)", use: "Six-subscale PROM for young to middle-aged active people with hip and groin pain [r12]" },
+      { name: "Adductor squeeze test force and pain (NRS)", use: "Repeated measure of capacity and irritability, session to session [r10]" },
+      { name: "Oslo Sports Trauma Research Center (OSTRC) overuse questionnaire", use: "Weekly monitoring of groin problems that may not cause time loss [r4]" }
+    ],
+    imaging: [
+      { modality: "MRI (3 T) of the pelvis", indication: "Atypical presentation, failure of 8–12 weeks of good rehabilitation, or to exclude stress fracture or 'other causes'", findings: "Pubic bone marrow oedema, adductor enthesopathy, secondary cleft or symphyseal disc protrusion. Common in asymptomatic footballers (up to 71%), so correlate with clinical findings [r9]." },
+      { modality: "Ultrasound", indication: "Adductor tendon morphology, or to guide an injection", findings: "Thickening, hypoechogenicity or calcification at the adductor longus origin" },
+      { modality: "Plain radiograph (AP pelvis)", indication: "Suspected hip-related groin pain or pubic bone change", findings: "Cam or pincer morphology, symphyseal sclerosis or irregularity" }
+    ]
+  },
+
+  differentials: [
+    { name: "Acute adductor longus strain", id: "adductor-longus-strain", distinguishing: "Sudden onset during a kick or change of direction, often with a 'pull' or bruising. Tenderness may be at the MTJ as well as the origin." },
+    { name: "Pubic-related groin pain", id: "pubic-related-groin-pain", distinguishing: "Local tenderness over the pubic symphysis and immediately adjacent bone. Central pubic pain rather than adductor origin pain [r1]." },
+    { name: "Inguinal-related groin pain", id: "inguinal-related-groin-pain", distinguishing: "Pain at the inguinal canal provoked by resisted abdominal tests, coughing or sneezing. No palpable hernia [r1]." },
+    { name: "Iliopsoas-related groin pain", id: "iliopsoas-related-groin-pain", distinguishing: "Pain on resisted hip flexion and/or iliopsoas stretch, with tenderness lateral to the femoral artery or above the inguinal ligament [r1]." },
+    { name: "Hip-related groin pain (FAI syndrome / labral tear)", id: "fai-syndrome", distinguishing: "Deep anterior hip pain, clicking or catching, pain with FADIR and limited internal rotation [r1]." },
+    { name: "Pubic ramus stress fracture", id: "pubic-ramus-stress-fracture", distinguishing: "Endurance runners (often female) with pain on hopping and inferior ramus tenderness. Needs MRI." },
+    { name: "Obturator nerve entrapment / referred lumbar pain", distinguishing: "Exercise-induced medial thigh pain with paraesthesia or adductor weakness, or pain that changes with lumbar movement." }
+  ],
+  redFlags: [
+    "Night pain, unexplained weight loss, fever or a history of cancer: consider tumour or infection (osteomyelitis pubis, septic arthritis). Arrange urgent medical review and imaging.",
+    "Pain on hopping or weight-bearing with bony tenderness in an endurance athlete: suspect femoral neck or pubic ramus stress fracture. Stop impact loading and arrange urgent MRI.",
+    "Testicular pain or swelling, haematuria, urinary symptoms, or gynaecological symptoms: refer for urological, gynaecological or general medical assessment.",
+    "An irreducible tender groin lump, or abdominal pain with vomiting: suspect incarcerated hernia. Send to the emergency department.",
+    "Progressive neurological deficit (adductor weakness with medial thigh numbness) or bowel or bladder disturbance: refer urgently for spinal or nerve assessment."
+  ],
+
+  management: {
+    principles: "Exercise-based treatment is first-line [r3,r13]. Confirm ARGP and identify every coexisting entity with a structured Doha-based examination [r1,r2]. Then modify (not stop) sports load and start a progressive program that rebuilds adductor strength and pelvic control over 8–12 weeks [r3]. Pain during exercise of ≤3/10 that settles by the next morning is acceptable, and the squeeze test is a simple daily gauge of irritability. Explain that MRI changes are common in pain-free footballers and do not predict outcome [r9]. Passive treatments alone (rest, massage, stretching, electrotherapy) are inferior [r3,r13]. Injections may be considered to settle pain so the athlete can complete rehabilitation, and surgery is reserved for athletes who fail well-conducted rehabilitation [r13].",
+    medical: [
+      { name: "Corticosteroid and local anaesthetic injection at the adductor enthesis (pubic cleft)", description: "Image-guided injection to the adductor longus origin can give short-term relief. In a case series of 28 recreational athletes, 68% had a good result at one year, but recurrences occurred within weeks to months [r15]. Use it to enable rehabilitation, not as a stand-alone treatment. Avoid repeated injections.", evidence: "very-limited", recommendation: "consider", refs: ["r15", "r14"] },
+      { name: "Adductor longus tenotomy", description: "Partial or complete release of the adductor longus tendon for refractory ARGP after at least 3–6 months of failed, well-conducted rehabilitation. Moderate but low-quality evidence suggests it improves treatment success over time [r13].", evidence: "limited", recommendation: "consider", refs: ["r13"] },
+      { name: "Platelet-rich plasma and other injection therapies", description: "Evidence for PRP, prolotherapy, percutaneous electrolysis and pulsed radiofrequency comes from low-quality studies with conflicting results [r14]. They are not recommended outside research.", evidence: "conflicting", recommendation: "not-recommended", refs: ["r14"] },
+      { name: "Short-course analgesia / NSAIDs", description: "May help during flare-ups to allow participation in rehabilitation. They do not address capacity.", evidence: "expert-opinion", recommendation: "consider", refs: [] }
+    ],
+    physio: [
+      { name: "Active training program (Hölmich-style progressive strengthening)", description: "8–12 weeks of progressive strength and coordination training for the adductors, abductors and abdominal and pelvic muscles. Start with isometric squeezes and progress to dynamic and functional exercises. In the RCT the odds ratio for return to sport without pain versus passive physiotherapy was 12.7 (95% CI 3.4–47.2) [r3], and the effect persisted 8–12 years later [r16].", evidence: "moderate", recommendation: "recommended", refs: ["r3", "r16", "r13"] },
+      { name: "Progressive adductor strengthening including the Copenhagen adduction", description: "Heavy eccentric adductor loading progressed from short to long lever. It increases eccentric adduction strength by about 36% in 8 weeks [r18].", evidence: "moderate", recommendation: "recommended", refs: ["r18"] },
+      { name: "Multimodal treatment including manual therapy", description: "Adding manual therapy techniques to active exercise may shorten the time to return to sport compared with exercise alone (moderate evidence from few trials) [r13,r14].", evidence: "limited", recommendation: "consider", refs: ["r13", "r14"] },
+      { name: "Load management and education", description: "Temporarily reduce kicking volume, long passing and maximal cutting while maintaining fitness. Return these progressively using pain-monitoring rules. Explain the load–capacity model and the poor link between imaging and pain [r9].", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
+      { name: "Passive physiotherapy alone (massage, stretching, laser, TENS, rest)", description: "Passive treatment without active training was clearly inferior to an active program in the RCT (4 of 34 vs 23 of 34 returned without pain) [r3,r13].", evidence: "moderate", recommendation: "not-recommended", refs: ["r3", "r13"] },
+      { name: "Complete rest from sport until pain-free", description: "Rest reduces symptoms but also capacity. Pain often returns on resuming sport unless strength is rebuilt [r3].", evidence: "limited", recommendation: "not-recommended", refs: ["r3"] }
+    ],
+    education: [
+      "This is a load problem at the adductor tendon attachment. It gets better by gradually making the tendon and muscles stronger, not by resting until it stops hurting.",
+      "Some discomfort during exercise is fine if it stays mild (≤3/10) and settles by the next morning. Use the squeeze test as your daily check.",
+      "Scan findings such as bone 'bruising' or tendon change are common in pain-free footballers and do not mean the groin is damaged [r9].",
+      "Expect about 2–3 months of consistent training before full return. Shortcuts usually lead to relapse.",
+      "Keep a Copenhagen adduction program going after you return. It lowers the risk of groin problems coming back [r19]."
+    ]
+  },
+
+  rehab: {
+    overview: "The program follows the principles of the Hölmich active training trial: progressive strengthening and coordination of the adductors and the muscles acting on the pelvis over 8–12 weeks [r3]. It adds modern heavy and long-lever adductor loading (Copenhagen adduction) [r18]. Progression is criteria-based using pain (≤3/10 during, settled by the next morning), squeeze-test pain and force, and functional performance. Sport is modified, not stopped. Running and non-provocative training usually continue within pain limits, while kicking and maximal cutting are reintroduced progressively. Address any coexisting entities in parallel.",
+    stages: [
+      {
+        name: "Settle & isometric loading",
+        timeframe: "Weeks 0–2",
+        goals: ["Reduce irritability (squeeze-test pain ≤3/10)", "Establish pain-free isometric adductor activation", "Maintain fitness with non-provocative training"],
+        precautions: ["Reduce long passing, shooting and maximal cutting", "Avoid aggressive adductor stretching"],
+        exercises: [
+          { name: "Isometric adduction, ball between knees (hips flexed)", dosage: "10 × 30 s, daily, effort set to pain ≤3/10", cues: "Squeeze steadily, breathe normally" },
+          { name: "Isometric adduction, ball between ankles (legs straight)", dosage: "10 × 30 s, daily", cues: "Progress effort as pain allows" },
+          { name: "Abdominal curl-up with ball squeeze between knees", dosage: "3 × 10", cues: "Lift the shoulders and squeeze the ball together", figure: { pose: "ex-dead-bug", view: "lateral", props: ["mat"] } },
+          { name: "Glute bridge", dosage: "3 × 12", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } },
+          { name: "Single-leg balance (wobble board progression)", dosage: "3 × 30–60 s each leg", figure: { pose: "ex-single-leg-balance", view: "anterior" } }
+        ],
+        progressionCriteria: ["Squeeze-test pain ≤3/10 at near-maximal effort", "No increase in morning stiffness over 1 week", "Pain-free walking and jogging"]
+      },
+      {
+        name: "Dynamic strength & pelvic control",
+        timeframe: "Weeks 2–6",
+        goals: ["Increase concentric and eccentric adductor and abductor strength", "Improve trunk and pelvic control in single-leg tasks", "Improve squeeze force by ≥15–20% from baseline"],
+        precautions: ["Increase lever length or load, not both at once", "Monitor next-day squeeze pain"],
+        exercises: [
+          { name: "Side-lying hip adduction (bottom leg) and abduction (top leg)", dosage: "3 × 10–15 each, slow 3 s lowering, 3×/week", figure: { pose: "ex-clamshell", view: "lateral", props: ["mat"] } },
+          { name: "Standing band or cable adduction and abduction", dosage: "3 × 10–12 each, 3×/week", cues: "Stand tall on the support leg and keep the pelvis level", figure: { pose: "ex-hip-abduction-standing", view: "anterior", props: ["resistance-band"] } },
+          { name: "Copenhagen adduction, short lever", dosage: "3 × 6–10 each side, 3×/week", cues: "Straight line from shoulder to knee", figure: { pose: "ex-copenhagen", view: "anterior", props: ["bench"] } },
+          { name: "Side plank", dosage: "3 × 20–45 s each side", figure: { pose: "ex-side-plank", view: "anterior", props: ["mat"] } },
+          { name: "Single-leg squat to box", dosage: "3 × 8 each side", cues: "Knee over the second toe, pelvis level", figure: { pose: "ex-single-leg-squat", view: "anterior" } }
+        ],
+        progressionCriteria: ["Squeeze test pain ≤2/10 with improving force", "Copenhagen short lever 3 × 10 with pain ≤3/10", "Eccentric adduction strength ≥80% of the other side", "Pain-free running for 20–30 minutes"]
+      },
+      {
+        name: "Heavy, long-lever & sport-specific loading",
+        timeframe: "Weeks 6–12",
+        goals: ["Eccentric adduction strength symmetrical, with an adduction-to-abduction ratio ≥0.9", "Pain-free change of direction, skating or sliding drills", "Progressive return of long passing and shooting"],
+        precautions: ["Add kicking volume gradually and alternate hard and easy days"],
+        exercises: [
+          { name: "Copenhagen adduction, long lever", dosage: "3 × 6–12 each side, 2–3×/week", figure: { pose: "ex-copenhagen", view: "anterior", props: ["bench"] } },
+          { name: "Lateral lunge and slide-board skating", dosage: "3 × 8–10 each side; 3 × 30 s slide board", cues: "Control the trailing leg as it slides out" },
+          { name: "Split squat (loaded)", dosage: "3–4 × 6–8", figure: { pose: "ex-split-squat", view: "lateral", props: ["dumbbell"] } },
+          { name: "Change-of-direction progression", dosage: "45° → 90° → 180°, planned → reactive, 2–3×/week", figure: { pose: "cut-plant", view: "anterior" } },
+          { name: "Graded kicking program", dosage: "Short passes → long passes → shooting, 50 → 75 → 100% effort", cues: "Increase only when the previous session caused no next-day flare" }
+        ],
+        progressionCriteria: ["Squeeze test pain-free at maximal effort", "Eccentric adduction strength ≥90% symmetry", "Pain-free maximal kicking, sprinting and change of direction", "HAGOS Sport subscale approaching the pre-injury level"]
+      },
+      {
+        name: "Return to sport & maintenance",
+        timeframe: "Weeks 10–16+",
+        goals: ["Full training, then match play", "Long-term maintenance of adductor strength"],
+        precautions: ["Monitor groin symptoms weekly during congested periods (OSTRC)"],
+        exercises: [
+          { name: "Full team training", dosage: "≥1–2 weeks before match selection" },
+          { name: "Copenhagen Adductor Strengthening Programme", dosage: "1 session/week in season, 2–3/week preseason [r19]", figure: { pose: "ex-copenhagen", view: "anterior", props: ["bench"] } },
+          { name: "Hip and trunk strength maintenance", dosage: "1–2×/week" }
+        ],
+        progressionCriteria: ["Completion of full training without symptom flare", "Squeeze-test force maintained or improving", "Athlete confidence in kicking and duels"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "Pain-free (or ≤2/10) squeeze test at 0° and 45° at maximal effort",
+      "Eccentric adduction strength ≥90% of the other side and an adduction-to-abduction ratio near normal [r6]",
+      "Pain-free sprinting, change of direction and maximal kicking or shooting",
+      "Completion of full team training without next-day symptom flare",
+      "HAGOS Sport and Participation subscales recovered and the athlete is confident [r12]"
+    ],
+    tests: ["Adductor squeeze test with dynamometer (0° and 45°)", "Side-lying eccentric adduction and abduction strength", "Copenhagen adduction endurance", "Sport-specific sprint, change-of-direction and kicking tests", "HAGOS"]
+  },
+  prognosis: "With an active training program, 79% of athletes returned to the same level of sport without groin pain, and the benefit over passive treatment was still significant 8–12 years later, particularly in footballers [r16]. Study quality in groin-pain treatment remains low overall, and only 6% of published studies are high quality. There is nonetheless moderate evidence that active exercise beats passive treatment and that adductor tenotomy helps refractory cases [r13]. Previous groin injury roughly doubles the risk of a new episode, so ongoing strength maintenance matters [r20]. Coexisting entities are common (44%) and, if missed, are a frequent reason for 'failed' rehabilitation [r2].",
+  prevention: [
+    "A Copenhagen adduction-based Adductor Strengthening Programme reduced the prevalence of groin problems by 41% in male footballers (OR 0.59) [r19].",
+    "A broader six-exercise groin-prevention program reduced groin injuries by 31%, which was not statistically significant (HR 0.69, 95% CI 0.40–1.19). Exercise intensity and specificity matter [r20,r17].",
+    "Build adequate sport-specific preseason training and manage fixture congestion [r4,r6].",
+    "Restore adductor strength fully after any groin injury before returning to sport [r6]."
+  ],
+  clinicalPearls: [
+    "Use the Doha definition: ARGP needs both adductor tenderness and pain on resisted adduction. Then look for the second and third entity, because 44% of athletes have more than one [r1,r2].",
+    "The squeeze test is your best daily 'thermometer'. Record pain and force every session [r10].",
+    "Do not chase MRI findings. Up to 71% of pain-free footballers have them [r9].",
+    "Passive treatment and rest alone do not work. The key is progressive load for 8–12 weeks [r3].",
+    "Ask about load before pathology. Congested fixtures and preseason spikes are the usual triggers [r4].",
+    "Most 'failed' cases had an unaddressed entity, too little load or too short a program. Check all three before referring for injection or surgery [r13]."
+  ],
+  related: ["adductor-longus-strain", "pubic-related-groin-pain", "inguinal-related-groin-pain", "iliopsoas-related-groin-pain", "fai-syndrome", "pubic-ramus-stress-fracture"],
+
+  references: [
+    { id: "r1", citation: "Weir A, Brukner P, Delahunt E, et al. Doha agreement meeting on terminology and definitions in groin pain in athletes. Br J Sports Med. 2015;49(12):768-74.", pmid: "26031643", doi: "10.1136/bjsports-2015-094869", type: "consensus-statement", year: 2015 },
+    { id: "r2", citation: "Taylor R, Vuckovic Z, Mosler A, et al. Multidisciplinary assessment of 100 athletes with groin pain using the Doha agreement: high prevalence of adductor-related groin pain in conjunction with multiple causes. Clin J Sport Med. 2018;28(4):364-9.", pmid: "28654441", doi: "10.1097/JSM.0000000000000469", type: "cross-sectional", year: 2018 },
+    { id: "r3", citation: "Hölmich P, Uhrskou P, Ulnits L, et al. Effectiveness of active physical training as treatment for long-standing adductor-related groin pain in athletes: randomised trial. Lancet. 1999;353(9151):439-43.", pmid: "9989713", doi: "10.1016/S0140-6736(98)03340-6", type: "rct", year: 1999 },
+    { id: "r4", citation: "Harøy J, Clarsen B, Thorborg K, et al. Groin problems in male soccer players are more common than previously reported. Am J Sports Med. 2017;45(6):1304-8.", pmid: "28298059", doi: "10.1177/0363546516687539", type: "cohort", year: 2017 },
+    { id: "r5", citation: "Werner J, Hägglund M, Waldén M, et al. UEFA injury study: a prospective study of hip and groin injuries in professional football over seven consecutive seasons. Br J Sports Med. 2009;43(13):1036-40.", pmid: "19945984", doi: "10.1136/bjsm.2009.066944", type: "cohort", year: 2009 },
+    { id: "r6", citation: "Whittaker JL, Small C, Maffey L, et al. Risk factors for groin injury in sport: an updated systematic review. Br J Sports Med. 2015;49(12):803-9.", pmid: "25833903", doi: "10.1136/bjsports-2014-094287", type: "systematic-review", year: 2015 },
+    { id: "r7", citation: "Mosler AB, Weir A, Serner A, et al. Musculoskeletal screening tests and bony hip morphology cannot identify male professional soccer players at risk of groin injuries: a 2-year prospective cohort study. Am J Sports Med. 2018;46(6):1294-305.", pmid: "29585730", doi: "10.1177/0363546518763373", type: "cohort", year: 2018 },
+    { id: "r8", citation: "Norton-Old KJ, Schache AG, Barker PJ, et al. Anatomical and mechanical relationship between the proximal attachment of adductor longus and the distal rectus sheath. Clin Anat. 2013;26(4):522-30.", pmid: "23553712", doi: "10.1002/ca.22116", type: "basic-science", year: 2013 },
+    { id: "r9", citation: "Branci S, Thorborg K, Bech BH, et al. MRI findings in soccer players with long-standing adductor-related groin pain and asymptomatic controls. Br J Sports Med. 2015;49(10):681-91.", pmid: "25512059", doi: "10.1136/bjsports-2014-093710", type: "case-control", year: 2015 },
+    { id: "r10", citation: "Mosler AB, Agricola R, Weir A, et al. Which factors differentiate athletes with hip/groin pain from those without? A systematic review with meta-analysis. Br J Sports Med. 2015;49(12):810.", pmid: "26031646", doi: "10.1136/bjsports-2015-094602", type: "meta-analysis", year: 2015 },
+    { id: "r11", citation: "Heijboer WMP, Weir A, Vuckovic Z, et al. Clinical examination tests for adductor- and pubic-related groin pain in athletes with longstanding groin pain: inter-examiner reliability and prevalence of positive tests. Phys Ther Sport. 2024;66:9-16.", pmid: "38219694", doi: "10.1016/j.ptsp.2023.12.008", type: "diagnostic-accuracy", year: 2024 },
+    { id: "r12", citation: "Thorborg K, Hölmich P, Christensen R, et al. The Copenhagen Hip and Groin Outcome Score (HAGOS): development and validation according to the COSMIN checklist. Br J Sports Med. 2011;45(6):478-91.", pmid: "21478502", doi: "10.1136/bjsm.2010.080937", type: "cohort", year: 2011 },
+    { id: "r13", citation: "Serner A, van Eijck CH, Beumer BR, et al. Study quality on groin injury management remains low: a systematic review on treatment of groin pain in athletes. Br J Sports Med. 2015;49(12):813.", pmid: "25633830", doi: "10.1136/bjsports-2014-094256", type: "systematic-review", year: 2015 },
+    { id: "r14", citation: "Bisciotti GN, Chamari K, Cena E, et al. The conservative treatment of longstanding adductor-related groin pain syndrome: a critical and systematic review. Biol Sport. 2021;38(1):45-63.", pmid: "33795914", doi: "10.5114/biolsport.2020.97669", type: "systematic-review", year: 2021 },
+    { id: "r15", citation: "Schilders E, Talbot JC, Robinson P, et al. Adductor-related groin pain in recreational athletes: role of the adductor enthesis, magnetic resonance imaging, and entheseal pubic cleft injections. J Bone Joint Surg Am. 2009;91(10):2455-60.", pmid: "19797582", doi: "10.2106/JBJS.H.01675", type: "cohort", year: 2009 },
+    { id: "r16", citation: "Hölmich P, Nyvold P, Larsen K. Continued significant effect of physical training as treatment for overuse injury: 8- to 12-year outcome of a randomized clinical trial. Am J Sports Med. 2011;39(11):2447-51.", pmid: "21813441", doi: "10.1177/0363546511416075", type: "rct", year: 2011 },
+    { id: "r17", citation: "Krommes K, Bandholm T, Jakobsen MD, et al. Dynamic hip adduction, abduction and abdominal exercises from the Hölmich groin-injury prevention program are intense enough to be considered strengthening exercises - a cross-sectional study. Int J Sports Phys Ther. 2017;12(3):371-80.", pmid: "28593090", type: "cross-sectional", year: 2017 },
+    { id: "r18", citation: "Ishøi L, Sørensen CN, Kaae NM, et al. Large eccentric strength increase using the Copenhagen Adduction exercise in football: a randomized controlled trial. Scand J Med Sci Sports. 2016;26(11):1334-42.", pmid: "26589483", doi: "10.1111/sms.12585", type: "rct", year: 2016 },
+    { id: "r19", citation: "Harøy J, Clarsen B, Wiger EG, et al. The Adductor Strengthening Programme prevents groin problems among male football players: a cluster-randomised controlled trial. Br J Sports Med. 2019;53(3):150-7.", pmid: "29891614", doi: "10.1136/bjsports-2017-098937", type: "rct", year: 2019 },
+    { id: "r20", citation: "Hölmich P, Larsen K, Krogsgaard K, et al. Exercise program for prevention of groin pain in football players: a cluster-randomized trial. Scand J Med Sci Sports. 2010;20(6):814-21.", pmid: "19883386", doi: "10.1111/j.1600-0838.2009.00998.x", type: "rct", year: 2010 }
+  ],
+
+  animation: {
+    title: "How longstanding adductor-related groin pain develops",
+    phases: [
+      {
+        type: "moi", label: "Load vs capacity", duration: 7, view: "anterior", environment: "pitch",
+        actors: [{ id: "athlete", kit: "athlete" }],
+        keyframes: [
+          { t: 0, pose: "run-contact", root: { x: -90 } },
+          { t: 1.0, pose: "cut-plant", joints: { hipR: 26 }, root: { x: -50 } },
+          { t: 1.8, pose: "pivot", root: { x: -35 } },
+          { t: 2.6, pose: "run-midstance", root: { x: -10 } },
+          { t: 3.4, pose: "squat", joints: { hipR: 38, kneeR: 0, hipL: 6, kneeL: 30, trunk: -10, shoulderL: 40, shoulderR: 50 }, root: { x: 10 }, ease: "in" },
+          { t: 4.4, pose: "cut-plant", joints: { hipR: 30 }, root: { x: 25 } },
+          { t: 5.6, pose: "stand", joints: { trunk: 6, elbowR: 80, shoulderR: 15 }, root: { x: 35 } }
+        ],
+        props: [{ id: "ball", type: "ball-soccer", keyframes: [{ t: 0, x: -40, y: 11 }, { t: 3.4, x: 60, y: 11 }, { t: 4.4, x: 140, y: 11 }, { t: 7, x: 260, y: 11 }] }],
+        forces: [
+          { t: [0.8, 2.0], at: "groinR", dir: "medial", label: "Adductor load: cutting", size: "m" },
+          { t: [3.0, 4.2], at: "groinR", dir: "medial", label: "Adductor load at long length", size: "l" },
+          { t: [3.0, 4.2], at: "footR", dir: "lateral", label: "Leg forced into abduction", size: "s" }
+        ],
+        highlights: [{ t: [3.2, 7], at: "groinR" }],
+        captions: [
+          { t: 0, text: "Every cut, slide and kick loads the adductor longus where it attaches to the pubic bone." },
+          { t: 1.8, text: "One session means hundreds of these loads. Healthy tendon adapts if there is time to recover." },
+          { t: 3.2, text: "Reaching wide stretches the adductor while it contracts, so peak load lands on a small enthesis." },
+          { t: 4.6, text: "When load rises faster than capacity, for example in preseason or congested fixtures, the origin becomes overloaded." },
+          { t: 5.8, text: "Pain creeps in over weeks: stiff the next morning, then sore during kicking and cutting." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "groinR",
+        captions: [{ t: 0, text: "Zooming into the right groin, viewed from the front." }]
+      },
+      {
+        type: "closeup", label: "At the pubis", duration: 10, scene: "hip-anterior",
+        actions: [
+          { t: 0, do: "highlight", target: "adductorLongusTendon" },
+          { t: 0.3, do: "label", target: "adductorLongusTendon", text: "Adductor longus origin" },
+          { t: 1.0, do: "highlight", target: "rectusAbdominis" },
+          { t: 1.2, do: "label", target: "rectusAbdominis", text: "Shared aponeurosis with rectus abdominis" },
+          { t: 2.2, do: "unhighlight", target: "rectusAbdominis" },
+          { t: 2.4, do: "arrow", at: "adductorLongusMTJ", dir: "inferior", label: "Repetitive traction", size: "m" },
+          { t: 2.6, do: "stretch", target: "adductorLongusTendon", amount: 0.15, dur: 0.6 },
+          { t: 3.4, do: "reset", target: "adductorLongusTendon", dur: 0.4 },
+          { t: 3.8, do: "thicken", target: "adductorLongusTendon", amount: 0.4, dur: 1.2 },
+          { t: 4.6, do: "degenerate", target: "adductorLongusTendon" },
+          { t: 5.0, do: "label", target: "adductorLongusTendon", text: "Thickened, disorganised enthesis" },
+          { t: 6.0, do: "bruise", target: "pelvis", at: "pubicBody" },
+          { t: 6.3, do: "label", target: "pelvis", text: "Pubic bone marrow oedema (common, even pain-free)" },
+          { t: 7.4, do: "pain", at: "adductorLongusOrigin" },
+          { t: 7.6, do: "camera", at: "adductorLongusOrigin", zoom: 1.6, dur: 1 },
+          { t: 9.2, do: "camera", zoom: 1, dur: 0.7 }
+        ],
+        captions: [
+          { t: 0, text: "The adductor longus arises by a short tendon from the front of the pubic bone." },
+          { t: 1.1, text: "Its tendon blends with the rectus abdominis sheath and symphysis, forming one load-sharing plate." },
+          { t: 2.4, text: "Each kick and cut pulls on the origin. With enough recovery the tendon adapts." },
+          { t: 3.8, text: "With repeated overload the tendon thickens and its collagen becomes disorganised." },
+          { t: 6.0, text: "The pubic bone may show marrow oedema on MRI, though many pain-free footballers have this too." },
+          { t: 7.4, text: "Pain sits at the adductor origin: tender to touch and painful on squeezing the knees together." }
+        ]
+      },
+      {
+        type: "micro", label: "Tendon response", duration: 9, tissue: "tendon-continuum",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.6, stage: "reactive" }, { t: 3.6, stage: "disrepair" },
+          { t: 5.4, stage: "degenerative" }, { t: 7.0, stage: "load-adaptation" }
+        ],
+        timeLabels: [{ t: 1.6, text: "Days–weeks" }, { t: 3.6, text: "Weeks–months" }, { t: 7.0, text: "8–12 weeks of loading" }],
+        captions: [
+          { t: 0, text: "Healthy tendon: tightly packed, aligned type I collagen with sparse, flat tenocytes." },
+          { t: 1.6, text: "Reactive: after a load spike, cells swell and make more ground substance. This is reversible." },
+          { t: 3.6, text: "Disrepair: collagen becomes disorganised and small vessels grow in. Capacity drops." },
+          { t: 5.4, text: "Degenerative areas can develop in refractory cases. Imaging change may persist." },
+          { t: 7.0, text: "Progressive strengthening rebuilds capacity. Active training beat passive care in the RCT." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "LL2" }
+};

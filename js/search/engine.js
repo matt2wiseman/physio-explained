@@ -59,7 +59,7 @@ const IRREGULAR = {
 const VARIANT = {
   tendinitis: "tendinopathy", tendonitis: "tendinopathy", tendinosis: "tendinopathy", tendonosis: "tendinopathy",
   tendinopathies: "tendinopathy", programme: "program", grey: "gray", sulphate: "sulfate", jewellery: "jewelry", aluminium: "aluminum",
-  kneecap: "patella", ageing: "aging", whilst: "while"
+  kneecap: "patella", patellar: "patella", ageing: "aging", whilst: "while"
 };
 const NOSTEM = new Set(["achilles", "diabetes", "herpes", "series", "species", "news", "lens"]);
 
@@ -321,6 +321,12 @@ const SYNONYMS = [
   [["nerve injury", "nerve damage", "neurapraxia", "axonotmesis", "neurotmesis", "seddon", "sunderland", "wallerian", "pins and needles", "numbness"], ["peripheral-nerve-injury"]],
   [["red flags", "emergency", "serious pathology", "urgent referral"], ["cauda-equina-syndrome", "cervical-arterial-dysfunction", "acute-compartment-syndrome"]]
 ];
+export const GLOSSARY_CATEGORIES = [
+  ["anatomy", "Anatomy & tissue"], ["injury", "Injury & pathology"], ["healing", "Healing & biology"], ["nerve", "Nerve"],
+  ["assessment", "Assessment & tests"], ["imaging", "Imaging & investigation"], ["rehab", "Rehabilitation & performance"],
+  ["pain", "Pain & psychosocial"], ["evidence", "Evidence & measurement"]
+];
+export const CATEGORY_LABELS = Object.fromEntries(GLOSSARY_CATEGORIES);
 export const POPULAR = ["ACL", "Shin splints", "Tennis elbow", "Rotator cuff", "Hamstring strain", "Ankle sprain", "Concussion", "Plantar heel pain", "Frozen shoulder", "Low back pain"];
 
 /* ================================================================== indexing */
@@ -351,7 +357,7 @@ function makeItem(field, text, weight, { paren = false, label } = {}) {
 }
 
 function buildIndex(docs) {
-  const postings = new Map(), df = new Map(), raws = new Map();
+  const postings = new Map(), df = new Map(), raws = new Map(), rawN = new Map();
   docs.forEach((doc, d) => {
     const seen = new Set();
     doc.items.forEach((item, it) => {
@@ -362,6 +368,7 @@ function buildIndex(docs) {
         arr.push(d, it, ti);
         if (!seen.has(t.c)) { seen.add(t.c); df.set(t.c, (df.get(t.c) || 0) + 1); }
         if (!raws.has(t.f)) raws.set(t.f, t.c);
+        rawN.set(t.f, (rawN.get(t.f) || 0) + 1);
       });
     });
   });
@@ -372,7 +379,7 @@ function buildIndex(docs) {
   const rawList = [...raws.keys()].sort();
   const idf = new Map();
   for (const [w, c] of df) idf.set(w, Math.log(1 + N / c));
-  return { docs, N, postings, df, idf, vocab, byLen, rawList, rawCanon: raws, cache: new Map() };
+  return { docs, N, postings, df, idf, vocab, byLen, rawList, rawCanon: raws, rawN, cache: new Map() };
 }
 
 /* ---------- candidate expansion for one query token ---------- */
@@ -636,7 +643,8 @@ function toMatches(doc, r, q, { max = 3, snippets = true } = {}) {
     if (snippets && text.length > 130) ({ text, ranges } = snippet(text, ranges));
     matches.push({ field: item.field, label: item.label, text, ranges });
   }
-  if (r.syn) matches.push({ field: "synonym", label: FIELD_LABELS.synonym, text: r.syn.phrase, ranges: [[0, r.syn.phrase.length]] });
+  const STRONG = new Set(["name", "shortName", "aka", "tests", "structures", "term"]);
+  if (r.syn && !matches.some((m) => STRONG.has(m.field))) matches.push({ field: "synonym", label: FIELD_LABELS.synonym, text: r.syn.phrase, ranges: [[0, r.syn.phrase.length]] });
   // keep the name match first, drop redundant aka matches already visible inside the name
   matches.sort((a, b) => (b.field === "name") - (a.field === "name"));
   const nameText = fold(doc.label || "");
@@ -696,7 +704,11 @@ export function createSearch(entriesIn, { glossary = [] } = {}) {
   for (const w of dymVocab) { const l = w.length; (dymByLen.get(l) || dymByLen.set(l, []).get(l)).push(w); }
   const dfAll = (w) => (inj.df.get(w) || 0) + (gl.df.get(w) || 0) + (SYN_TOKENS.has(w) ? 1 : 0);
   const display = new Map(); // canonical → a readable raw form
-  for (const idx of [inj, gl]) for (const [raw, c] of idx.rawCanon) { const cur = display.get(c); if (!cur || raw.length < cur.length) display.set(c, raw); }
+  const displayN = new Map();
+  for (const idx of [inj, gl]) for (const [raw, c] of idx.rawCanon) {
+    const n = idx.rawN.get(raw) || 0, cur = display.get(c);
+    if (!cur || n > displayN.get(c) || (n === displayN.get(c) && raw.length < cur.length)) { display.set(c, raw); displayN.set(c, n); }
+  }
 
   const passFilters = (e, f) => {
     if (!f) return true;
@@ -753,7 +765,7 @@ export function createSearch(entriesIn, { glossary = [] } = {}) {
     return raw.filter((r) => r.score > 0 && r.score >= top * 0.1)
       .map((r) => {
         const term = termDocs[r.d].ref;
-        const matches = toMatches(termDocs[r.d], r, q);
+        const matches = toMatches(termDocs[r.d], r, q, { snippets: false });
         const nm = matches.find((m) => m.field === "term");
         return { kind: "term", term, id: term.id, href: `#glossary.${term.id}`, score: r.score, coverage: r.coverage, partial: r.coverage < 1, matches, nameRanges: nm ? nm.ranges : [] };
       })
@@ -834,3 +846,21 @@ export function getEngine(store) {
   return enginePromise;
 }
 export const resetEngine = () => { enginePromise = null; };
+
+/* ================================================================== DOM helper shared by the search box and views */
+/** highlightNodes("Lachman test", [[0,7]]) → DocumentFragment with <mark> around the ranges (text is never parsed as HTML). */
+export function highlightNodes(text, ranges = []) {
+  const frag = document.createDocumentFragment();
+  const t = String(text ?? "");
+  let at = 0;
+  for (const [a, b] of ranges || []) {
+    if (a < at || b > t.length || b <= a) continue;
+    if (a > at) frag.append(t.slice(at, a));
+    const m = document.createElement("mark");
+    m.textContent = t.slice(a, b);
+    frag.append(m);
+    at = b;
+  }
+  if (at < t.length) frag.append(t.slice(at));
+  return frag;
+}

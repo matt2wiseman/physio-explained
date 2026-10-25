@@ -1,0 +1,446 @@
+// Acute hamstring strain — LL3 (Component 3, lower-limb content).
+export default {
+  id: "hamstring-strain",
+  name: "Acute hamstring strain",
+  shortName: "Hamstring strain",
+  aka: ["hamstring strain injury (HSI)", "pulled hamstring", "torn hamstring", "hamstring tear", "posterior thigh strain", "biceps femoris strain", "hamstring muscle injury"],
+  region: "thigh",
+  tissues: ["muscle", "tendon"],
+  onset: "acute",
+  mechanismType: ["non-contact"],
+  populations: ["sprinting team-sport athletes", "track sprinters and jumpers", "older athletes with a previous hamstring injury", "dancers (stretch-type injury)"],
+  sports: ["soccer", "australian football", "rugby", "gaelic football", "american football", "sprinting", "hurdles", "cricket", "dance", "martial arts"],
+  urgency: "routine",
+  summary: "A tear of the hamstring muscle fibres, usually the biceps femoris long head near its proximal musculotendinous junction, during high-speed running or an extreme hip-flexion stretch.",
+  keyFacts: [
+    { label: "Typical recovery", value: "Sprint-type 2–8 weeks; stretch-type or intratendinous injuries take much longer" },
+    { label: "Return to sport", value: "Criteria-based: pain-free palpation, strength, flexibility and maximal sprinting" },
+    { label: "Key test", value: "Palpation (site and length of tenderness) plus resisted knee flexion; Askling H-test before RTS" },
+    { label: "Imaging", value: "Not routine. MRI if avulsion is suspected, in elite athletes, or for recurrent injury" },
+    { label: "Incidence", value: "22% of elite male footballers per season" },
+    { label: "Recurrence", value: "13.9–63.3% within 2 years" }
+  ],
+  overview: "Acute hamstring strain injury (HSI) is the most common muscle injury in sports that involve maximal sprinting. Most injuries affect the long head of biceps femoris (BFlh) during high-speed running, and the rate in elite football is still rising [r1,r2]. A second, less common type occurs during slow, extreme hip flexion with the knee straight. This stretch-type injury usually involves the proximal semimembranosus tendon and recovers much more slowly [r3].\n\nPrevious HSI is the strongest risk factor and recurrence rates are high, so rehabilitation must restore tissue capacity rather than just resolve pain [r4,r5]. Lengthening-type exercise, progressive running and criteria-based return to sport (RTS) are the core of management [r6,r7]. Nordic hamstring exercise in prevention programs roughly halves the injury rate [r8].",
+
+  epidemiology: {
+    text: "In the UEFA Elite Club Injury Study (36 clubs, 13 seasons, 1614 hamstring injuries), 22% of players sustained at least one hamstring injury per season. The overall rate was 1.20 injuries per 1000 h, and the match rate (4.77/1000 h) was about nine times the training rate (0.51/1000 h). Training-related hamstring injuries increased by 4.0% per year from 2001 to 2014 [r1]. A 2020 meta-analysis of 78 prospective studies (8319 injuries in 71,324 athletes) found older age and previous HSI to be the strongest risk factors. Risk ratios were 2.7 for any previous HSI and 4.8 for a recent HSI [r4]. Low eccentric knee flexor strength and short BFlh fascicles are the main modifiable factors [r9]. Recurrence ranges from 13.9% to 63.3% in the same season up to 2 years after injury [r5].",
+    riskFactors: {
+      intrinsic: [
+        "Previous hamstring strain, especially a recent one (RR 2.7 for any; 4.8 for recent) [r4]",
+        "Older age [r4]",
+        "Low eccentric knee flexor strength (below 337 N on a Nordic device: RR 4.4) — modifiable [r9]",
+        "Short BFlh fascicles (below 10.56 cm: RR 4.1) — modifiable [r9]",
+        "Previous ACL injury (RR 1.7) or calf strain (RR 1.5) [r4]"
+      ],
+      extrinsic: [
+        "Match play and high-speed running exposure; match injury rates are about 9 times training rates [r1]",
+        "Sports requiring maximal sprinting and kicking (football codes, sprinting)",
+        "Absence of the Nordic hamstring exercise from the injury-prevention program [r8]",
+        "Activities involving extreme hip flexion with an extended knee (dance, high kicks, splits) for stretch-type injuries [r3]"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "Sprint-type HSI occurs at maximal running speed, most often in late swing. The hip is flexed and the knee extends rapidly as the shank swings forward. The biarticular hamstrings contract eccentrically to decelerate the shank, so they are long, highly active and lengthening at their peak velocity [r10]. The long head of biceps femoris fails, typically near its proximal musculotendinous junction (MTJ) [r2]. Stretch-type HSI happens during slow, extreme hip flexion with the knee extended and usually affects the proximal semimembranosus tendon [r3].",
+    sequence: [
+      "At maximal speed the thigh swings forward and the lower leg is flung ahead of the body, extending the knee.",
+      "In late swing the hamstrings contract eccentrically to brake knee extension and start hip extension; their lengthening velocity peaks here [r10].",
+      "Inertial (motion-dependent) torques from the swinging leg act to lengthen the biarticular hamstrings at both the hip and the knee at the same time.",
+      "Fatigue, low eccentric strength or short fascicles reduce the capacity of the muscle to absorb this energy [r9].",
+      "Fibres fail next to the BFlh proximal MTJ, where muscle fibres insert onto the intramuscular tendon; the athlete feels a sudden sharp 'grab' and pulls up.",
+      "In larger injuries the tear extends into the intramuscular (central) tendon, which prolongs recovery and increases recurrence [r11].",
+      "Intramuscular bleeding and inflammation follow. Pain inhibits the hamstrings and bruising may track distally over 24–72 h."
+    ],
+    variants: [
+      { name: "Stretch-type (slow extreme stretch)", description: "Slow hip flexion with the knee extended, e.g. splits, high kicks or a sliding tackle. In professional dancers the injury involved the semimembranosus (87%, always its proximal free tendon), quadratus femoris (87%) and adductor magnus (33%). Median time to pre-injury level was 50 weeks [r3]." },
+      { name: "Late stance / early contact", description: "The hamstrings also work eccentrically in late stance, when the muscle–tendon length is greatest, so injury can occur around foot contact as well [r10]." },
+      { name: "Recurrent strain", description: "A re-injury at the same site soon after RTS, often after incomplete rehabilitation or a premature return [r5]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The hamstrings are biceps femoris long head (BFlh), semitendinosus and semimembranosus, which cross both the hip and the knee, plus the single-joint biceps femoris short head. BFlh and semitendinosus arise from the ischial tuberosity by a shared conjoint tendon, and semimembranosus arises by its own flat tendon just lateral to it. BFlh has a long intramuscular (central) tendon onto which its fibres insert, so its proximal MTJ extends well down the thigh. All hamstrings except the short head are supplied by the tibial division of the sciatic nerve, which runs close to their proximal tendons. Because they cross two joints, the hamstrings are lengthened most when hip flexion and knee extension are combined, as in late swing.",
+    structures: [
+      { name: "Biceps femoris long head", role: "Hip extensor and knee flexor; decelerates the shank in late swing. Most commonly strained hamstring" },
+      { name: "BFlh intramuscular (central) tendon", role: "Transmits force along the muscle. Involvement ('c' injury) delays recovery" },
+      { name: "Semimembranosus", role: "Hip extensor, knee flexor and internal rotator. Its proximal free tendon is the typical stretch-type injury site" },
+      { name: "Semitendinosus", role: "Hip extensor and knee flexor; often injured together with BFlh" },
+      { name: "Proximal (conjoint) tendon and ischial tuberosity", role: "Origin of the hamstrings; complete failure here is an avulsion rather than a strain" },
+      { name: "Sciatic nerve", role: "Supplies the hamstrings; lies close to the proximal tendons and can be irritated by scar or haematoma" },
+      { name: "Gluteus maximus and lumbopelvic muscles", role: "Share hip extension and control pelvic tilt, which alters hamstring length during sprinting" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "A strain occurs when an actively contracting muscle is lengthened beyond the capacity of its weakest region, which is the muscle fibres next to the MTJ. In sprint-type HSI this is the BFlh proximal MTJ along the intramuscular tendon [r2]. Myofibres rupture and retract, and torn capillaries bleed into the gap. A haematoma forms and the damaged fibre ends become necrotic. Within a few days inflammatory cells clear the debris. Satellite cells then regenerate new myofibres while fibroblasts lay down a connective tissue scar, which matures and contracts over the following weeks [r12].\n\nThe site and extent of the injury influence prognosis. In elite track and field, injuries that extend into the tendon (BAMIC 'c') had a longer time to return to full training and a higher recurrence rate [r11]. In elite sprinters, involvement of the proximal free tendon and tenderness closer to the ischial tuberosity were associated with longer recovery [r2]. After return, the healed muscle–tendon unit often keeps deficits in eccentric strength and fascicle length, which may contribute to re-injury [r9,r13].",
+    structures: [
+      { name: "BFlh proximal MTJ", effect: "Fibre disruption and haematoma. The primary site in all first-time sprint injuries in elite sprinters [r2]" },
+      { name: "BFlh intramuscular tendon", effect: "Partial or complete disruption in more severe ('c') injuries; slower recovery and more recurrence [r11]" },
+      { name: "Semimembranosus proximal free tendon", effect: "Typical stretch-type lesion, with long recovery [r3]" },
+      { name: "Semitendinosus", effect: "Often involved alongside BFlh in sprint injuries; isolated strains are less common" },
+      { name: "Quadratus femoris and adductor magnus", effect: "Frequently co-injured in stretch-type injuries [r3]" },
+      { name: "Sciatic nerve", effect: "Rarely irritated by haematoma or scar after extensive proximal injury; consider if neural symptoms appear" }
+    ],
+    muscles: [
+      { name: "Hamstrings", effect: "Pain inhibition reduces voluntary activation and knee flexor strength. Eccentric strength deficits and BFlh fascicle shortening can persist after RTS, and loading within tolerable pain better maintains strength and fascicle length [r13]." },
+      { name: "Gluteus maximus and adductor magnus", effect: "Take over hip extension during early rehabilitation; this compensation can persist if not retrained" },
+      { name: "Trunk and lumbopelvic muscles", effect: "Altered control of anterior pelvic tilt during sprinting changes hamstring length; trunk and agility training reduced re-injury in one trial [r14]" },
+      { name: "Calf and quadriceps", effect: "Disuse and altered running mechanics; previous calf strain is itself a risk factor for HSI [r4]" }
+    ],
+    cellular: [
+      { phase: "Destruction & haemorrhage", timing: "0–3 days", description: "Myofibres rupture and their ends become necrotic. Torn capillaries form a haematoma and platelets release growth factors [r12]." },
+      { phase: "Inflammation", timing: "0–7 days", description: "Neutrophils and then macrophages invade the injured area and phagocytose necrotic tissue [r12]." },
+      { phase: "Repair & regeneration", timing: "3 days – 3 weeks", description: "Satellite cells proliferate and fuse into new myotubes. Fibroblasts form a connective tissue scar and capillaries grow into the area [r12]." },
+      { phase: "Remodelling", timing: "3 weeks – 3+ months", description: "Regenerated myofibres mature and the scar contracts and reorganises along the line of load. Progressive tensile loading guides this realignment [r12]." }
+    ],
+    systems: [
+      { system: "Nervous system", effect: "Nociception and pain inhibition lower hamstring activation. Altered sensorimotor control and protective guarding may persist and reduce sprint performance." },
+      { system: "Vascular / immune", effect: "Intramuscular bleeding and the inflammatory cascade drive pain, swelling and later bruising that can track toward the knee [r12]." },
+      { system: "Musculoskeletal chain", effect: "Running mechanics shift toward shorter strides and hip-dominant patterns. Previous ACL or calf injuries increase HSI risk, which highlights whole-limb links [r4]." },
+      { system: "Psychological", effect: "Fear of re-injury and insecurity during maximal effort are common even when clinical tests are normal [r15]. Psychological readiness is a consensus RTS criterion [r7]." }
+    ]
+  },
+
+  grading: {
+    system: "British Athletics Muscle Injury Classification (BAMIC)",
+    grades: [
+      { grade: "Grade 0 (0a / 0b)", description: "MRI-negative: 0a is a focal neuromuscular injury and 0b a generalised muscle soreness pattern [r16].", prognosis: "Shortest time to return to full training [r11]" },
+      { grade: "Grade 1 (small)", description: "Small injury with a minor area of MRI high signal at the myofascial (a) or musculotendinous (b) site [r16].", prognosis: "Usually days to a few weeks" },
+      { grade: "Grade 2 (moderate)", description: "Moderate injury with clear fibre disruption on MRI [r16].", prognosis: "Typically several weeks" },
+      { grade: "Grade 3 (extensive)", description: "Extensive injury with marked fibre disruption over a large cross-section and length [r16].", prognosis: "Longer return to full training than lower grades [r11]" },
+      { grade: "Grade 4 (complete)", description: "Complete tear of the muscle or tendon (4c = complete tendon tear) [r16].", prognosis: "Specialist review; proximal tendon avulsions may need surgery" },
+      { grade: "Site suffix a / b / c", description: "a = myofascial, b = musculotendinous junction, c = intratendinous.", prognosis: "'c' injuries had delayed return and a higher recurrence rate in elite track and field [r11]" }
+    ]
+  },
+
+  timeframes: {
+    summary: "Muscle regenerates over weeks, but strength, fascicle length and sprint tolerance take longer to restore. Return times vary widely and cannot be predicted accurately on day 1 [r17].",
+    healing: [
+      { phase: "Destruction & haemorrhage", startDay: 0, endDay: 3, description: "Fibre rupture, necrosis and haematoma" },
+      { phase: "Inflammation", startDay: 0, endDay: 7, description: "Macrophage clearance of necrotic tissue" },
+      { phase: "Repair & regeneration", startDay: 3, endDay: 21, description: "Satellite-cell regeneration, scar formation and capillary ingrowth" },
+      { phase: "Remodelling", startDay: 21, endDay: 120, description: "Myofibre maturation and scar realignment under progressive load" }
+    ],
+    milestones: [
+      { label: "Normal walking, pain-free isometric contraction", day: 3 },
+      { label: "Start lengthening exercises and jogging", day: 7, note: "Once walking is pain-free" },
+      { label: "Running at ~70–85% maximal speed", day: 14 },
+      { label: "Return to full team training (typical sprint-type)", day: 28, note: "Mean 28 days with a lengthening protocol in elite football [r6]" },
+      { label: "Tendon-involved or stretch-type injuries", day: 70, note: "Return often takes 2–3 months or more [r18,r3]" }
+    ],
+    returnToSport: "Typically 2–8 weeks for sprint-type strains: a mean of 28 days in elite footballers and 49 days in elite sprinters with a lengthening protocol [r6,r18]. Injuries involving the proximal free tendon, and stretch-type injuries, take considerably longer. RTS is criteria-based, not time-based [r7]."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Sudden sharp pain or a 'grab' in the posterior thigh during sprinting, often with the athlete pulling up",
+      "Inability to continue, sometimes having to stop within minutes",
+      "Pain with fast walking, stairs, bending forward and getting in or out of a car",
+      "A feeling of tightness or cramping in the back of the thigh",
+      "Bruising appearing 1–3 days later, often tracking toward the knee"
+    ],
+    signs: [
+      "Localised tenderness, usually in the proximal to middle posterior thigh, with a measurable length of tenderness",
+      "Pain and weakness on resisted knee flexion and hip extension",
+      "Reduced passive straight-leg raise and active knee extension compared with the other side",
+      "Antalgic gait with a shortened stride",
+      "Posterior thigh ecchymosis; a palpable defect suggests a high-grade tear"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Mechanism: high-speed running (sprint-type) or a slow, extreme stretch (stretch-type) — the latter predicts a longer recovery [r3]",
+      "Pain severity at injury and whether the athlete was forced to stop within 5 minutes; both are associated with longer RTS [r17]",
+      "Location of pain relative to the ischial tuberosity [r2]",
+      "Previous hamstring, calf or ACL injury [r4]",
+      "Recent training load, sprint exposure and fatigue",
+      "Low back pain or neural symptoms (referred posterior thigh pain); in adolescents, ischial pain after a forceful movement (apophyseal avulsion)"
+    ],
+    observation: ["Gait: shortened stride and avoidance of hip flexion with knee extension", "Ecchymosis on the posterior thigh (often after 24–48 h)", "Visible swelling or a defect in the muscle contour"],
+    palpation: [
+      "Locate the point of maximal tenderness and measure its distance from the ischial tuberosity [r2]",
+      "Measure the length of the tender area in cm; longer length predicts longer RTS [r17]",
+      "Palpate the ischial tuberosity and proximal tendon for tenderness or a gap (avulsion)",
+      "Feel for a palpable defect within the muscle belly"
+    ],
+    rangeOfMotion: [
+      "Passive straight-leg raise compared with the other side",
+      "Active knee extension test in 90° hip flexion",
+      "Askling H-test (active, rapid straight-leg raise) in the late stage to detect residual insecurity [r15]"
+    ],
+    strength: [
+      "Resisted knee flexion at 0–15° and 90° knee flexion; pain at 90° is associated with longer RTS [r17]",
+      "Isometric knee flexor strength with a hand-held dynamometer as a repeatable progression measure [r13]",
+      "Eccentric knee flexor strength (Nordic device) later in rehabilitation [r9]",
+      "Hip extension strength with the knee bent and straight"
+    ],
+    neuro: [
+      "Slump test and straight-leg raise with neural sensitisers to identify neural mechanosensitivity",
+      "Lower-limb neurological examination if lumbar referral is suspected"
+    ],
+    functional: ["Single-leg bridge on the heel (pain, endurance)", "Walk–jog–run progression tolerance", "Maximal sprint with timing gates or GPS before RTS"],
+    specialTests: [
+      { name: "Taking-off-the-shoe test", purpose: "Identify a hamstring strain", procedure: "Standing, the patient removes the shoe of the injured leg by holding its heel down with the other foot, which needs an active hamstring contraction in a slightly flexed, externally rotated position.", positive: "Posterior thigh pain on the injured side.", sensitivity: "100% (95% CI 97–100)", specificity: "100% (95% CI 97–100); single small study", refs: ["r19"] },
+      { name: "Askling H-test", purpose: "Residual insecurity and active flexibility before RTS", procedure: "Supine with the knee braced straight and the other leg strapped down, the athlete performs a rapid, maximal active straight-leg raise. Record range and self-rated insecurity (0–100).", positive: "Any insecurity or reduced active range compared with the uninjured side. Athletes cleared by standard examination still showed 8% less active range and insecurity averaging 52/100 [r15].", refs: ["r15"] },
+      { name: "Resisted knee flexion at 90°", purpose: "Provocation and prognosis", procedure: "Prone or seated with the knee at 90°, the patient resists a knee extension force.", positive: "Pain or weakness. A painful test at baseline was independently associated with longer RTS [r17].", refs: ["r17"] },
+      { name: "Slump test", purpose: "Distinguish neural mechanosensitivity or lumbar referral", procedure: "Seated slump with knee extension and ankle dorsiflexion, then release neck flexion.", positive: "Reproduction of posterior thigh symptoms that changes with neck movement.", refs: [] }
+    ],
+    clinicalRules: [
+      { name: "Baseline predictors of time to RTS", description: "Maximum pain score, being forced to stop within 5 minutes, length of tenderness and painful resisted knee flexion at 90° explained 29% of the variance in RTS. Adding MRI explained only a further 2.8% [r17]." }
+    ],
+    outcomeMeasures: [
+      { name: "Hamstring Outcome Score (HaOS)", use: "Patient-reported symptoms and function; used as a secondary outcome in the Dutch PRP trial [r20]" },
+      { name: "Isometric knee flexor strength (dynamometry)", use: "Track strength recovery and limb symmetry [r13]" },
+      { name: "Eccentric knee flexor strength (Nordic device)", use: "Strength profiling and risk screening [r9]" },
+      { name: "Askling H-test", use: "Active flexibility and insecurity before RTS [r15]" }
+    ],
+    imaging: [
+      { modality: "Ultrasound", indication: "Early confirmation of structural injury where MRI is not available", findings: "Fibre disruption, haematoma and MTJ involvement; operator-dependent" },
+      { modality: "MRI", indication: "Suspected proximal tendon avulsion, elite athletes, unclear diagnosis or recurrent injury. Not needed routinely for prognosis [r17]", findings: "Oedema and fibre disruption graded with BAMIC; tendon involvement ('c'); avulsion and retraction [r16]" },
+      { modality: "Plain radiograph", indication: "Adolescents with ischial tuberosity tenderness after a forceful stretch or sprint", findings: "Ischial apophyseal avulsion fragment" }
+    ]
+  },
+
+  differentials: [
+    { name: "Proximal hamstring tendon avulsion", id: "proximal-hamstring-avulsion", distinguishing: "Forced hip flexion with knee extension, often a 'pop' and extensive bruising, tenderness or a gap at the ischial tuberosity, and marked weakness. Needs urgent MRI and surgical opinion." },
+    { name: "Pelvic apophyseal avulsion (ischial tuberosity)", id: "pelvic-apophyseal-avulsion", distinguishing: "Adolescent athlete (open apophysis), point tenderness on the ischial tuberosity, fragment on radiograph." },
+    { name: "Proximal hamstring tendinopathy", id: "proximal-hamstring-tendinopathy", distinguishing: "Gradual-onset deep buttock pain at the ischial tuberosity, worse with sitting and hip flexion loading; no acute event." },
+    { name: "Lumbar radicular / referred pain", id: "lumbar-disc-herniation", distinguishing: "Back pain, neural symptoms below the knee, positive slump or SLR with sensitisers, and no focal muscle tenderness." },
+    { name: "Deep gluteal syndrome", id: "deep-gluteal-syndrome", distinguishing: "Buttock pain with sciatic-type symptoms, worse sitting; tenderness in the sciatic notch rather than the muscle belly." },
+    { name: "Delayed-onset muscle soreness", id: "delayed-onset-muscle-soreness", distinguishing: "Diffuse bilateral soreness 24–72 h after unaccustomed eccentric exercise, with no sudden onset." },
+    { name: "Posterior thigh contusion", distinguishing: "Direct blow; tenderness at the impact site without a stretch or sprint mechanism." }
+  ],
+  redFlags: [
+    "Sudden pain at the ischial tuberosity during forced hip flexion with the knee extended, a palpable gap, extensive bruising or inability to walk normally: suspect proximal tendon avulsion. Arrange urgent MRI and orthopaedic review, as early repair gives better results.",
+    "Adolescent with ischial tuberosity pain after a sprint or stretch: radiograph to exclude an apophyseal avulsion fracture.",
+    "Calf swelling, pain and tenderness or breathlessness after injury or immobilisation: suspect DVT/PE and arrange same-day medical review.",
+    "Saddle anaesthesia, bladder or bowel changes or bilateral neurological symptoms with posterior thigh pain: suspect cauda equina syndrome and refer to emergency immediately.",
+    "Rapidly increasing, tense thigh swelling with severe pain out of proportion (especially on anticoagulants): consider compartment syndrome and refer urgently."
+  ],
+
+  management: {
+    principles: "Most acute hamstring strains are managed without surgery through early, progressive loading. After a short period of relative protection (a few days), start graded isometric and lengthening exercise. Running should progress to maximal sprinting, and progression should follow clinical criteria rather than time. Lengthening-type exercise shortened RTS compared with conventional exercise in two RCTs [r6,r18]. Training within tolerable pain did not delay RTS and improved strength recovery [r13]. Return to play should be a shared, criteria-based decision with the athlete, physician, physiotherapist, coach and fitness staff [r7]. Secondary prevention with Nordic hamstring exercise should continue after RTS [r8].",
+    medical: [
+      { name: "Platelet-rich plasma (PRP) injection", description: "In a double-blind RCT of 80 athletes, PRP did not accelerate return to play, and at 1 year it showed no benefit for re-injury (HR 0.89) or any secondary outcome compared with placebo [r20].", evidence: "moderate", recommendation: "not-recommended", refs: ["r20"] },
+      { name: "Analgesia and short-term NSAIDs", description: "Simple analgesia for the first days. NSAIDs may relieve early pain, but experimental data suggest they could interfere with muscle regeneration, so use short courses only [r12].", evidence: "very-limited", recommendation: "consider", refs: ["r12"] },
+      { name: "Routine MRI for prognosis", description: "MRI added only 2.8% to the prediction of RTS over history and clinical examination [r17]. Reserve it for suspected avulsion, elite settings, unclear diagnosis or recurrence.", evidence: "moderate", recommendation: "not-recommended", refs: ["r17"] },
+      { name: "Surgical referral", description: "For complete (grade 4) proximal tendon injuries or avulsions with retraction, refer for an orthopaedic opinion. Intramuscular strains are not repaired.", evidence: "expert-opinion", recommendation: "consider", refs: [] }
+    ],
+    physio: [
+      { name: "Lengthening-type exercise program (Askling L-protocol)", description: "Three exercises that load the hamstrings at long lengths: the Extender, the Diver and the Glider. Compared with conventional exercise, the L-protocol shortened return in elite footballers (mean 28 vs 51 days) and in elite sprinters and jumpers (49 vs 86 days) [r6,r18].", evidence: "moderate", recommendation: "recommended", refs: ["r6", "r18"] },
+      { name: "Progressive agility and trunk stabilisation (PATS)", description: "Agility, lumbopelvic control and trunk stabilisation exercises progressed from the acute phase. Re-injury at 1 year was 7.7% versus 70% with static stretching and isolated strengthening in a small RCT (n = 24) [r14].", evidence: "limited", recommendation: "recommended", refs: ["r14"] },
+      { name: "Pain-threshold rather than strictly pain-free loading", description: "Allowing tolerable pain during rehabilitation did not change time to RTP (median 17 vs 15 days) but gave 15% greater isometric strength recovery and better maintenance of BFlh fascicle length [r13].", evidence: "limited", recommendation: "consider", refs: ["r13"] },
+      { name: "Graded running and sprint exposure", description: "Progress from jogging to repeated maximal sprints, monitoring pain and quality, before RTS. Performance on field testing is a consensus criterion [r7].", evidence: "expert-opinion", recommendation: "recommended", refs: ["r7"] },
+      { name: "Nordic hamstring exercise (late rehab and secondary prevention)", description: "Eccentric knee flexor training. Programs that include it reduce hamstring injuries by up to 51% (RR 0.49) [r8]. Introduce once heavy lengthening exercise is tolerated and continue after RTS.", evidence: "strong", recommendation: "recommended", refs: ["r8"] },
+      { name: "Static stretching with isolated hamstring curls as the main program", description: "This approach had a far higher re-injury rate (70% at 1 year) than an agility and trunk stabilisation program [r14]. Aggressive early stretching into pain can also aggravate the injury.", evidence: "limited", recommendation: "not-recommended", refs: ["r14"] },
+      { name: "Prolonged rest or immobilisation", description: "Only a brief period of relative rest (a few days) is needed; early mobilisation promotes regeneration and alignment of muscle fibres and scar [r12].", evidence: "limited", recommendation: "not-recommended", refs: ["r12"] }
+    ],
+    education: [
+      "Most hamstring strains heal well without surgery, but the muscle needs to be retrained to tolerate sprinting before you return.",
+      "Some discomfort during exercise is acceptable if it settles quickly; avoid sharp pain and forced stretching in the first week.",
+      "No one can give an exact return date on day 1. Progress depends on passing strength, flexibility and running tests.",
+      "Returning too early is the main reason hamstrings re-injure; finishing the program protects you.",
+      "Keep doing Nordic hamstring exercise once or twice a week after you return to reduce the risk of another injury."
+    ]
+  },
+
+  rehab: {
+    overview: "Progression is criteria-based and built around three themes: restoring tolerance to load at long muscle lengths, rebuilding eccentric strength, and graded exposure to high-speed running. The stages follow the Askling lengthening protocol and current RTS consensus [r6,r7]. Timeframes are typical of sprint-type BFlh strains. Expect slower progress for tendon-involved ('c') and stretch-type injuries [r11,r3]. Use a pain-monitoring rule: mild pain during exercise (e.g. ≤ 3/10) is acceptable if it settles within 24 h and does not progressively worsen. Loading within tolerable pain did not delay return in an RCT [r13].",
+    stages: [
+      {
+        name: "Protect & early loading",
+        timeframe: "Days 0–5",
+        goals: ["Normal, pain-free walking", "Pain-free submaximal isometric knee flexion", "Control bleeding and pain", "Maintain fitness and trunk control"],
+        precautions: ["No passive stretching into pain and no sprinting", "Screen for avulsion (ischial tenderness, gap, major weakness)", "Crutches only if the patient cannot walk without a limp"],
+        exercises: [
+          { name: "Isometric knee flexion (heel dig) at several knee angles", dosage: "3–5 × 5 holds of 5–10 s at 30–70% effort, 2–3 times daily", cues: "Build tension slowly and stay within tolerable discomfort" },
+          { name: "Double-leg glute bridge", dosage: "3 × 10–12, daily", cues: "Push through the heels and keep the pelvis level", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } },
+          { name: "Side plank", dosage: "3 × 20–30 s each side", cues: "Long straight line from head to feet", figure: { pose: "ex-side-plank", view: "lateral", props: ["mat"] } },
+          { name: "Stationary bike, low resistance", dosage: "10–20 min daily", cues: "Smooth cadence, pain-free" },
+          { name: "Walking with a normal stride", dosage: "Daily, increase distance as tolerated" }
+        ],
+        progressionCriteria: ["Normal gait without pain", "Pain ≤ 3/10 during submaximal isometric knee flexion", "Able to start the Extender exercise without sharp pain"]
+      },
+      {
+        name: "Lengthening & strength",
+        timeframe: "Days 5–14",
+        goals: ["Restore range at long muscle lengths", "Progress strength through range", "Start straight-line running"],
+        precautions: ["Increase load only if symptoms settle within 24 h", "No maximal sprinting or kicking yet"],
+        exercises: [
+          { name: "The Extender", dosage: "3 × 12, twice daily", cues: "Supine, hold the thigh at 90° hip flexion and slowly straighten the knee to just short of pain" },
+          { name: "The Diver (single-leg hip hinge)", dosage: "3 × 6, every other day", cues: "Stand on the injured leg, hinge forward with arms reaching ahead as the other leg extends behind", figure: { pose: "ex-rdl", view: "lateral" } },
+          { name: "The Glider", dosage: "3 × 4, every third day", cues: "Slide the uninjured leg backward on a low-friction surface, controlling with the injured leg; return using the arms" },
+          { name: "Long-lever bridge (heels on box)", dosage: "3 × 8–10", cues: "Knees almost straight; lift and lower with control", figure: { pose: "ex-hamstring-bridge", view: "lateral", props: ["box"] } },
+          { name: "Progressive straight-line running", dosage: "Intervals at 50–70% of maximal speed, every other day", cues: "Relaxed and tall; stop if pain increases" }
+        ],
+        progressionCriteria: ["Pain-free full range on the Extender and passive SLR within 10% of the other side", "Isometric knee flexor strength ≥ 80% of the other side", "Pain-free running at 70% of maximal speed"]
+      },
+      {
+        name: "Eccentric strength & high-speed running",
+        timeframe: "Weeks 2–4",
+        goals: ["Restore eccentric knee flexor strength", "Build tolerance to high-speed running", "Develop hip extension power"],
+        precautions: ["Introduce Nordic exercise at low volume (expect soreness for 24–48 h)", "Progress sprint speed in steps of about 10%"],
+        exercises: [
+          { name: "Nordic hamstring lowering", dosage: "2–3 × 4–6, twice a week, progress to 3 × 8–10", cues: "Lower as slowly as possible, hips extended", figure: { pose: "ex-nordic", view: "lateral", props: ["mat"] } },
+          { name: "Single-leg Romanian deadlift (loaded)", dosage: "3–4 × 6–8, 2–3×/week", cues: "Long spine; hinge from the hip", figure: { pose: "ex-rdl", view: "lateral", props: ["dumbbell"] } },
+          { name: "Hip thrust", dosage: "3–4 × 6–8, heavy", cues: "Drive through the heels to full hip extension", figure: { pose: "ex-hip-thrust", view: "lateral", props: ["bench"] } },
+          { name: "Sprint drills (A-skips, high knees, accelerations)", dosage: "3–4 sets of 20 m, 2–3×/week", cues: "Active foot strike under the hips" },
+          { name: "Running progression to 85–95% maximal speed", dosage: "Tempo then build-up runs, 2–3×/week", cues: "Speed must be pain-free and technically sound" }
+        ],
+        progressionCriteria: ["Knee flexor strength ≥ 90% of the other side (isometric and eccentric)", "No insecurity on the Askling H-test [r15]", "Pain-free sprinting at ≥ 90–95% of pre-injury maximal speed"]
+      },
+      {
+        name: "Return to sport & prevention",
+        timeframe: "Weeks 3–8+",
+        goals: ["Full sport-specific training including maximal sprints, kicking and change of direction", "Psychological readiness", "Long-term re-injury prevention"],
+        precautions: ["Plan the first matches with limited minutes", "Monitor high-speed running load and avoid sudden spikes"],
+        exercises: [
+          { name: "Repeated maximal sprints and sport-specific drills", dosage: "2–3 sessions/week within team training", cues: "Include fatigued sprinting and kicking where relevant" },
+          { name: "Nordic hamstring maintenance", dosage: "1–2 × 3–5 reps, once or twice a week indefinitely [r8]", figure: { pose: "ex-nordic", view: "lateral", props: ["mat"] } },
+          { name: "Heavy hip-extension strength (RDL, hip thrust)", dosage: "1–2×/week, 3 × 5–6", figure: { pose: "ex-hip-thrust", view: "lateral", props: ["bench"] } },
+          { name: "Agility and trunk stabilisation circuit", dosage: "2–3×/week in warm-up [r14]", cues: "Fast feet, stable pelvis" }
+        ],
+        progressionCriteria: ["All RTS criteria met [r7]", "Completion of full team training without symptoms", "Athlete reports confidence at maximal speed"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "No pain on palpation [r7]",
+      "No pain during strength and flexibility testing, and flexibility similar to the other side [r7]",
+      "No pain during or after functional and field testing, including maximal sprints [r7]",
+      "Knee flexor strength (isometric and eccentric) close to the uninjured side",
+      "No insecurity on the Askling H-test [r15]",
+      "Psychological readiness and a shared decision with the athlete and staff [r7]"
+    ],
+    tests: ["Palpation", "Isometric knee flexor dynamometry (90/90 and near extension)", "Eccentric knee flexor strength (Nordic device)", "Askling H-test", "Maximal sprint with timing gates or GPS", "Sport-specific field test"]
+  },
+  prognosis: "Most athletes return to sport, but recurrence is common: 13.9–63.3% in the same season up to 2 years after injury, often early after return [r5]. A previous HSI is the strongest predictor of another one [r4]. Injuries involving the tendon have longer recovery and more recurrence [r11,r18]. Stretch-type injuries recover slowly, with a median of 50 weeks to pre-injury level in professional dancers compared with 16 weeks in sprinters [r3,r2]. Rehabilitation that includes agility and trunk control was associated with far fewer re-injuries in one small trial [r14].",
+  prevention: [
+    "Include the Nordic hamstring exercise in prevention programs; it roughly halves hamstring injury rates across sports [r8].",
+    "Build and maintain eccentric knee flexor strength and BFlh fascicle length, especially in older athletes and those with a previous HSI [r9].",
+    "Give regular, progressive exposure to high-speed running in training to prepare for match demands [r1].",
+    "Complete criteria-based rehabilitation before return; premature RTS increases recurrence [r7]."
+  ],
+  clinicalPearls: [
+    "Ask exactly how it happened. Sprint-type and stretch-type injuries have very different prognoses [r2,r3].",
+    "The closer the maximal tenderness is to the ischial tuberosity, the longer recovery tends to take; palpate carefully and record the distance [r2].",
+    "History and examination predict return about as well as MRI. Avoid quoting a return date at the first visit [r17].",
+    "Normal clinical tests do not equal readiness. The H-test and maximal sprinting often reveal residual deficits [r15].",
+    "Ischial pain plus a forced hip-flexion and knee-extension mechanism means avulsion until proven otherwise."
+  ],
+  related: ["proximal-hamstring-avulsion", "proximal-hamstring-tendinopathy", "pelvic-apophyseal-avulsion", "quadriceps-strain", "calf-strain", "adductor-longus-strain"],
+
+  references: [
+    { id: "r1", citation: "Ekstrand J, Waldén M, Hägglund M. Hamstring injuries have increased by 4% annually in men's professional football, since 2001: a 13-year longitudinal analysis of the UEFA Elite Club injury study. Br J Sports Med. 2016;50(12):731-7.", pmid: "26746908", doi: "10.1136/bjsports-2015-095359", type: "cohort", year: 2016 },
+    { id: "r2", citation: "Askling CM, Tengvar M, Saartok T, et al. Acute first-time hamstring strains during high-speed running: a longitudinal study including clinical and magnetic resonance imaging findings. Am J Sports Med. 2007;35(2):197-206.", pmid: "17170160", doi: "10.1177/0363546506294679", type: "cohort", year: 2007 },
+    { id: "r3", citation: "Askling CM, Tengvar M, Saartok T, et al. Acute first-time hamstring strains during slow-speed stretching: clinical, magnetic resonance imaging, and recovery characteristics. Am J Sports Med. 2007;35(10):1716-24.", pmid: "17567821", doi: "10.1177/0363546507303563", type: "cohort", year: 2007 },
+    { id: "r4", citation: "Green B, Bourne MN, van Dyk N, et al. Recalibrating the risk of hamstring strain injury (HSI): a 2020 systematic review and meta-analysis of risk factors for index and recurrent hamstring strain injury in sport. Br J Sports Med. 2020;54(18):1081-8.", pmid: "32299793", doi: "10.1136/bjsports-2019-100983", type: "meta-analysis", year: 2020 },
+    { id: "r5", citation: "de Visser HM, Reijman M, Heijboer MP, et al. Risk factors of recurrent hamstring injuries: a systematic review. Br J Sports Med. 2012;46(2):124-30.", pmid: "22011915", doi: "10.1136/bjsports-2011-090317", type: "systematic-review", year: 2012 },
+    { id: "r6", citation: "Askling CM, Tengvar M, Thorstensson A. Acute hamstring injuries in Swedish elite football: a prospective randomised controlled clinical trial comparing two rehabilitation protocols. Br J Sports Med. 2013;47(15):953-9.", pmid: "23536466", doi: "10.1136/bjsports-2013-092165", type: "rct", year: 2013 },
+    { id: "r7", citation: "van der Horst N, Backx F, Goedhart EA, et al. Return to play after hamstring injuries in football (soccer): a worldwide Delphi procedure regarding definition, medical criteria and decision-making. Br J Sports Med. 2017;51(22):1583-91.", pmid: "28360143", doi: "10.1136/bjsports-2016-097206", type: "consensus-statement", year: 2017 },
+    { id: "r8", citation: "van Dyk N, Behan FP, Whiteley R. Including the Nordic hamstring exercise in injury prevention programmes halves the rate of hamstring injuries: a systematic review and meta-analysis of 8459 athletes. Br J Sports Med. 2019;53(21):1362-70.", pmid: "30808663", doi: "10.1136/bjsports-2018-100045", type: "meta-analysis", year: 2019 },
+    { id: "r9", citation: "Timmins RG, Bourne MN, Shield AJ, et al. Short biceps femoris fascicles and eccentric knee flexor weakness increase the risk of hamstring injury in elite football (soccer): a prospective cohort study. Br J Sports Med. 2016;50(24):1524-35.", pmid: "26675089", doi: "10.1136/bjsports-2015-095362", type: "cohort", year: 2016 },
+    { id: "r10", citation: "Yu B, Queen RM, Abbey AN, et al. Hamstring muscle kinematics and activation during overground sprinting. J Biomech. 2008;41(15):3121-6.", pmid: "18848700", doi: "10.1016/j.jbiomech.2008.09.005", type: "biomechanical", year: 2008 },
+    { id: "r11", citation: "Pollock N, Patel A, Chakraverty J, et al. Time to return to full training is delayed and recurrence rate is higher in intratendinous ('c') acute hamstring injury in elite track and field athletes: clinical application of the British Athletics Muscle Injury Classification. Br J Sports Med. 2016;50(5):305-10.", pmid: "26888072", doi: "10.1136/bjsports-2015-094657", type: "cohort", year: 2016 },
+    { id: "r12", citation: "Järvinen TA, Järvinen TL, Kääriäinen M, et al. Muscle injuries: biology and treatment. Am J Sports Med. 2005;33(5):745-64.", pmid: "15851777", doi: "10.1177/0363546505274714", type: "narrative-review", year: 2005 },
+    { id: "r13", citation: "Hickey JT, Timmins RG, Maniar N, et al. Pain-free versus pain-threshold rehabilitation following acute hamstring strain injury: a randomized controlled trial. J Orthop Sports Phys Ther. 2020;50(2):91-103.", pmid: "32005093", doi: "10.2519/jospt.2020.8895", type: "rct", year: 2020 },
+    { id: "r14", citation: "Sherry MA, Best TM. A comparison of 2 rehabilitation programs in the treatment of acute hamstring strains. J Orthop Sports Phys Ther. 2004;34(3):116-25.", pmid: "15089024", doi: "10.2519/jospt.2004.34.3.116", type: "rct", year: 2004 },
+    { id: "r15", citation: "Askling CM, Nilsson J, Thorstensson A. A new hamstring test to complement the common clinical examination before return to sport after injury. Knee Surg Sports Traumatol Arthrosc. 2010;18(12):1798-803.", pmid: "20852842", doi: "10.1007/s00167-010-1265-3", type: "diagnostic-accuracy", year: 2010 },
+    { id: "r16", citation: "Pollock N, James SL, Lee JC, et al. British athletics muscle injury classification: a new grading system. Br J Sports Med. 2014;48(18):1347-51.", pmid: "25031367", doi: "10.1136/bjsports-2013-093302", type: "other", year: 2014 },
+    { id: "r17", citation: "Wangensteen A, Almusa E, Boukarroum S, et al. MRI does not add value over and above patient history and clinical examination in predicting time to return to sport after acute hamstring injuries: a prospective cohort of 180 male athletes. Br J Sports Med. 2015;49(24):1579-87.", pmid: "26305004", doi: "10.1136/bjsports-2015-094892", type: "cohort", year: 2015 },
+    { id: "r18", citation: "Askling CM, Tengvar M, Tarassova O, et al. Acute hamstring injuries in Swedish elite sprinters and jumpers: a prospective randomised controlled clinical trial comparing two rehabilitation protocols. Br J Sports Med. 2014;48(7):532-9.", pmid: "24620041", doi: "10.1136/bjsports-2013-093214", type: "rct", year: 2014 },
+    { id: "r19", citation: "Reiman MP, Loudon JK, Goode AP. Diagnostic accuracy of clinical tests for assessment of hamstring injury: a systematic review. J Orthop Sports Phys Ther. 2013;43(4):223-31.", pmid: "23321899", doi: "10.2519/jospt.2013.4343", type: "systematic-review", year: 2013 },
+    { id: "r20", citation: "Reurink G, Goudswaard GJ, Moen MH, et al. Rationale, secondary outcome scores and 1-year follow-up of a randomised trial of platelet-rich plasma injections in acute hamstring muscle injury: the Dutch Hamstring Injection Therapy study. Br J Sports Med. 2015;49(18):1206-12.", pmid: "25940636", doi: "10.1136/bjsports-2014-094250", type: "rct", year: 2015 }
+  ],
+
+  animation: {
+    title: "How a sprint-type hamstring strain happens",
+    phases: [
+      {
+        type: "moi", label: "Mechanism", duration: 6, view: "lateral", environment: "pitch",
+        actors: [{ id: "athlete", kit: "athlete" }],
+        keyframes: [
+          { t: 0, pose: "run-midstance", root: { x: -150 } },
+          { t: 0.7, pose: "run-toe-off", root: { x: -105 } },
+          { t: 1.5, pose: "run-swing-late", root: { x: -55 } },
+          { t: 2.4, pose: "run-swing-late", joints: { hipR: 78, kneeR: 22, trunk: 12 }, root: { x: -25 }, ease: "in" },
+          { t: 3.8, pose: "stand", joints: { trunk: 25, hipR: 25, kneeR: 30, hipL: 10, kneeL: 15, shoulderR: -35, elbowR: 40 }, root: { x: 10 } },
+          { t: 5.4, pose: "stand", joints: { trunk: 15, hipR: 15, kneeR: 20, shoulderR: -30, elbowR: 35 }, root: { x: 20 } }
+        ],
+        forces: [
+          { t: [1.6, 3.0], at: "thighR", dir: "backward", label: "Eccentric hamstring braking" },
+          { t: [1.6, 2.8], at: "shinR", dir: "forward", label: "Shank swinging forward" }
+        ],
+        highlights: [{ t: [2.2, 6], at: "thighR" }],
+        impacts: [{ t: 2.4, at: "thighR" }],
+        slowmo: [{ t: [1.6, 2.9], rate: 0.3 }],
+        captions: [
+          { t: 0, text: "A footballer sprints at maximal speed." },
+          { t: 1.4, text: "In late swing the hip is flexed and the knee extends rapidly as the shank swings forward." },
+          { t: 2.0, text: "The hamstrings contract eccentrically, lengthening at peak speed to brake the leg." },
+          { t: 2.6, text: "Load exceeds capacity: a sudden sharp 'grab' in the back of the thigh." },
+          { t: 3.9, text: "The athlete pulls up and clutches the posterior thigh." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "thighR",
+        captions: [{ t: 0, text: "Zooming into the back of the right thigh, viewed from behind." }]
+      },
+      {
+        type: "closeup", label: "Inside the thigh", duration: 10, scene: "thigh-posterior",
+        actions: [
+          { t: 0, do: "highlight", target: "bicepsFemorisLong" },
+          { t: 0.3, do: "label", target: "bicepsFemorisLong", text: "Biceps femoris long head" },
+          { t: 1.0, do: "arrow", at: "bflhProximalMTJ", dir: "distal", label: "Rapid eccentric lengthening" },
+          { t: 1.0, do: "stretch", target: "bicepsFemorisLong", amount: 0.3, dur: 1.4 },
+          { t: 2.6, do: "strain", target: "bicepsFemorisLong", grade: 2, at: 0.2 },
+          { t: 2.6, do: "impact", at: "bflhProximalMTJ" },
+          { t: 3.0, do: "label", target: "bicepsFemorisLong", text: "Strain at the proximal MTJ" },
+          { t: 3.6, do: "haematoma", target: "bicepsFemorisLong", at: 0.22 },
+          { t: 4.6, do: "highlight", target: "bflhCentralTendon" },
+          { t: 4.8, do: "label", target: "bflhCentralTendon", text: "Tendon involvement ('c') slows recovery" },
+          { t: 6.0, do: "pain", at: "bflhProximalMTJ" },
+          { t: 6.4, do: "camera", at: "bflhProximalMTJ", zoom: 1.6, dur: 1 },
+          { t: 7.8, do: "pulse", target: "semimembranosus" },
+          { t: 7.9, do: "label", target: "semimembranosus", text: "Stretch-type site: proximal semimembranosus" },
+          { t: 9.0, do: "camera", zoom: 1, dur: 0.8 }
+        ],
+        captions: [
+          { t: 0, text: "Biceps femoris long head runs from the ischial tuberosity to the fibular head, crossing hip and knee." },
+          { t: 1.0, text: "In late swing it is stretched at high speed while contracting hard." },
+          { t: 2.6, text: "Fibres tear next to the proximal musculotendinous junction, the most common site." },
+          { t: 3.6, text: "Torn capillaries bleed into the muscle, forming a haematoma." },
+          { t: 4.6, text: "If the tear extends into the central tendon, return takes longer and recurrence is higher." },
+          { t: 6.0, text: "Pain sits in the proximal posterior thigh; tenderness near the ischium predicts a longer recovery." },
+          { t: 7.8, text: "Slow extreme stretches injure a different site: the proximal semimembranosus tendon." }
+        ]
+      },
+      {
+        type: "micro", label: "Muscle healing", duration: 10, tissue: "muscle",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.0, stage: "contracting" }, { t: 2.0, stage: "eccentric-overstretch" },
+          { t: 3.0, stage: "sarcomere-disruption" }, { t: 4.0, stage: "haematoma" }, { t: 5.0, stage: "inflammation" },
+          { t: 6.2, stage: "satellite-activation" }, { t: 7.4, stage: "regeneration" }, { t: 8.6, stage: "scar" }
+        ],
+        timeLabels: [{ t: 4.0, text: "Hours" }, { t: 5.0, text: "Days 0–7" }, { t: 6.2, text: "Days 3–10" }, { t: 7.4, text: "Weeks 1–3" }, { t: 8.6, text: "Weeks 3–12+" }],
+        captions: [
+          { t: 0, text: "Healthy muscle: myofibres made of aligned sarcomeres." },
+          { t: 1.0, text: "Actin and myosin cross-bridges generate force as the fibre contracts." },
+          { t: 2.0, text: "The active fibre is forcibly lengthened beyond its capacity." },
+          { t: 3.0, text: "Sarcomeres overstretch and rupture; fibres retract from the tear." },
+          { t: 4.0, text: "Torn capillaries bleed and a haematoma fills the gap." },
+          { t: 5.0, text: "Neutrophils and macrophages clear necrotic fibre ends." },
+          { t: 6.2, text: "Satellite cells activate and proliferate beneath the basal lamina." },
+          { t: 7.4, text: "New myotubes form and fuse with surviving fibres." },
+          { t: 8.6, text: "A connective-tissue scar matures; graded loading helps it align and strengthen." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "LL3" }
+};
