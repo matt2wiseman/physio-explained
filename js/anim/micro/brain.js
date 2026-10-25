@@ -126,7 +126,7 @@ function synapse(g, s, p) {
     el("circle", { cx: x, cy: y, r: 1.6, fill: col(ION.Glu) }, g);
   }
   // postsynaptic dendrite with glutamate (NMDA/AMPA) receptors
-  el("path", { d: `M${DX},140 C${DX - 6},200 ${DX - 6},240 ${DX + 2},372 L${DX + 44},372 C${DX + 38},250 ${DX + 40},200 ${DX + 48},140 Z`, fill: mix("anat-brain", "stage-bg", 0.3), stroke: col("anat-brain"), "stroke-width": 3 }, g);
+  el("path", { d: `M${DX},184 C${DX - 4},150 ${DX + 46},150 ${DX + 44},180 C${DX + 40},220 ${DX + 38},260 ${DX + 44},380 L${DX + 2},380 C${DX - 6},260 ${DX - 6},220 ${DX},184 Z`, fill: mix("anat-brain", "stage-bg", 0.3), stroke: col("anat-brain"), "stroke-width": 3 }, g);
   for (const y of [AY - 24, AY - 8, AY + 8, AY + 24]) el("path", { d: `M${DX - 7},${y - 4} l6,4 l-6,4`, stroke: col(ION.Glu), "stroke-width": 2.2, fill: "none" }, g);
   // glutamate release into the cleft
   if (s.glu > 0.02) G.glu.forEach((q, i) => {
@@ -167,8 +167,8 @@ function gauges(g, s, p) {
   rows.forEach(([name, v, c], i) => {
     const y = y0 + 22 + i * 26;
     el("text", { x: x0 + 10, y: y + 4, "font-size": 12, "font-weight": i === 0 ? 700 : 500, fill: col("stage-ink", i === 0 ? 1 : 0.8), text: name }, g);
-    el("rect", { x: x0 + 104, y: y - 5, width: 88, height: 10, rx: 5, fill: col("stage-ink", 0.12) }, g);
-    el("rect", { x: x0 + 104, y: y - 5, width: Math.max(8, 88 * v), height: 10, rx: 5, fill: col(c) }, g);
+    el("rect", { x: x0 + 112, y: y - 5, width: 80, height: 10, rx: 5, fill: col("stage-ink", 0.12) }, g);
+    el("rect", { x: x0 + 112, y: y - 5, width: Math.max(8, 80 * v), height: 10, rx: 5, fill: col(c) }, g);
   });
   void p;
 }

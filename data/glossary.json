@@ -18,12 +18,6 @@
   ]
  },
  {
-  "id": "angiogenesis",
-  "term": "Angiogenesis",
-  "definition": "The formation of new blood vessels from existing ones, an essential step in the repair of injured tissue.",
-  "category": "healing"
- },
- {
   "id": "annular-pulley",
   "term": "Annular pulley",
   "aka": [
@@ -350,21 +344,6 @@
   "category": "imaging"
  },
  {
-  "id": "concentric-contraction",
-  "term": "Concentric contraction",
-  "definition": "A muscle contraction in which the muscle shortens while producing force.",
-  "category": "rehab"
- },
- {
-  "id": "confidence-interval",
-  "term": "Confidence interval",
-  "aka": [
-   "CI"
-  ],
-  "definition": "A range of values within which the true effect is likely to lie, given the data. A 95% confidence interval that is wide indicates imprecision.",
-  "category": "evidence"
- },
- {
   "id": "contusion",
   "term": "Contusion",
   "aka": [
@@ -375,24 +354,6 @@
   "seeAlso": [
    "quadriceps-contusion",
    "hip-pointer"
-  ]
- },
- {
-  "id": "coup-and-contrecoup-injury",
-  "term": "Coup and contrecoup injury",
-  "definition": "Brain injury at the site of impact (coup) and at the opposite pole of the skull (contrecoup), produced as the brain moves within the skull during rapid acceleration or deceleration.",
-  "category": "injury",
-  "seeAlso": [
-   "concussion"
-  ]
- },
- {
-  "id": "crepitus",
-  "term": "Crepitus",
-  "definition": "A palpable or audible grating, crackling or creaking felt during joint or tendon movement.",
-  "category": "assessment",
-  "seeAlso": [
-   "intersection-syndrome"
   ]
  },
  {
@@ -415,12 +376,6 @@
   ]
  },
  {
-  "id": "degenerative-tendinopathy",
-  "term": "Degenerative tendinopathy",
-  "definition": "A late stage of the tendinopathy continuum with a disorganised matrix, areas of cell loss and focal change in tendon structure. These changes are less likely to reverse.",
-  "category": "injury"
- },
- {
   "id": "delayed-onset-muscle-soreness",
   "term": "Delayed-onset muscle soreness",
   "aka": [
@@ -440,16 +395,6 @@
   "seeAlso": [
    "cervical-radiculopathy",
    "lumbar-disc-herniation"
-  ]
- },
- {
-  "id": "diaphysis",
-  "term": "Diaphysis",
-  "definition": "The shaft of a long bone, made mainly of thick cortical bone surrounding the medullary canal.",
-  "category": "anatomy",
-  "seeAlso": [
-   "tibia-fibula-shaft-fracture",
-   "humeral-shaft-fracture"
   ]
  },
  {
@@ -513,12 +458,6 @@
   ]
  },
  {
-  "id": "effect-size",
-  "term": "Effect size",
-  "definition": "A measure of the magnitude of a difference or relationship, such as a standardised mean difference, rather than whether it is statistically significant.",
-  "category": "evidence"
- },
- {
   "id": "effusion",
   "term": "Effusion",
   "aka": [
@@ -552,25 +491,6 @@
   ]
  },
  {
-  "id": "enthesopathy",
-  "term": "Enthesopathy",
-  "definition": "Any disorder of an enthesis, the attachment of tendon, ligament or capsule to bone, usually causing localised pain and tenderness.",
-  "category": "injury",
-  "seeAlso": [
-   "insertional-achilles-tendinopathy",
-   "plantar-heel-pain"
-  ]
- },
- {
-  "id": "epiphysis",
-  "term": "Epiphysis",
-  "definition": "The end of a long bone, separated from the shaft by the physis until growth is complete. It is largely covered by articular cartilage at the joint surface.",
-  "category": "anatomy",
-  "seeAlso": [
-   "scfe"
-  ]
- },
- {
   "id": "fadir-test",
   "term": "FADIR test",
   "aka": [
@@ -581,16 +501,6 @@
   "seeAlso": [
    "fai-syndrome",
    "hip-labral-tear"
-  ]
- },
- {
-  "id": "fascia",
-  "term": "Fascia",
-  "definition": "Sheets of connective tissue that surround, separate and connect muscles, nerves and vessels.",
-  "category": "anatomy",
-  "seeAlso": [
-   "plantar-heel-pain",
-   "acute-compartment-syndrome"
   ]
  },
  {
@@ -616,18 +526,6 @@
   ]
  },
  {
-  "id": "fibroblast",
-  "term": "Fibroblast",
-  "definition": "The main cell of connective tissue repair. It synthesises collagen and other components of the extracellular matrix.",
-  "category": "healing"
- },
- {
-  "id": "fibrocartilage",
-  "term": "Fibrocartilage",
-  "definition": "A dense tissue of type I collagen with cartilage cells, found in menisci, labra, the annulus of the intervertebral disc and tendon and ligament entheses. It resists both tension and compression.",
-  "category": "anatomy"
- },
- {
   "id": "grade",
   "term": "GRADE",
   "aka": [
@@ -645,12 +543,6 @@
    "acute-low-back-pain",
    "acl-rupture"
   ]
- },
- {
-  "id": "granulation-tissue",
-  "term": "Granulation tissue",
-  "definition": "Newly formed connective tissue rich in capillaries and fibroblasts that fills a wound or defect during the proliferative phase.",
-  "category": "healing"
  },
  {
   "id": "haemarthrosis",
@@ -773,16 +665,6 @@
   ]
  },
  {
-  "id": "joint-capsule",
-  "term": "Joint capsule",
-  "definition": "The fibrous envelope surrounding a synovial joint, lined internally by synovium. Together with ligaments it provides passive stability.",
-  "category": "anatomy",
-  "seeAlso": [
-   "frozen-shoulder",
-   "multidirectional-instability"
-  ]
- },
- {
   "id": "joint-instability",
   "term": "Joint instability",
   "aka": [
@@ -817,12 +699,6 @@
    "acl-rupture",
    "acute-low-back-pain"
   ]
- },
- {
-  "id": "kinetic-chain",
-  "term": "Kinetic chain",
-  "definition": "The concept that body segments are linked, so that forces and motion at one joint influence others. It underpins assessment of proximal contributors to distal problems.",
-  "category": "rehab"
  },
  {
   "id": "koos",
@@ -904,16 +780,6 @@
   "category": "imaging"
  },
  {
-  "id": "manual-muscle-testing",
-  "term": "Manual muscle testing",
-  "aka": [
-   "MMT",
-   "MRC scale"
-  ],
-  "definition": "A clinical grading of muscle strength on the 0–5 Medical Research Council scale, from no contraction to full strength against resistance.",
-  "category": "assessment"
- },
- {
   "id": "mcmurray-test",
   "term": "McMurray test",
   "definition": "A test for meniscal tear in which the flexed knee is extended while the tibia is rotated and a varus or valgus stress is applied. A painful click or catch along the joint line is a positive finding, although accuracy is limited.",
@@ -943,18 +809,6 @@
   ]
  },
  {
-  "id": "meta-analysis",
-  "term": "Meta-analysis",
-  "definition": "A statistical method that combines results from several studies into a single pooled estimate.",
-  "category": "evidence"
- },
- {
-  "id": "metaphysis",
-  "term": "Metaphysis",
-  "definition": "The flared region of a long bone between the shaft (diaphysis) and the physis. In children it is a site of rapid bone turnover.",
-  "category": "anatomy"
- },
- {
   "id": "minimal-clinically-important-difference",
   "term": "Minimal clinically important difference",
   "aka": [
@@ -980,15 +834,6 @@
   "seeAlso": [
    "acl-rupture"
   ]
- },
- {
-  "id": "muscle-tendon-unit",
-  "term": "Muscle–tendon unit",
-  "aka": [
-   "MTU"
-  ],
-  "definition": "The functional unit made up of a muscle belly, its musculotendinous junction and its tendon. Force is generated by the muscle and transmitted through the tendon to bone.",
-  "category": "anatomy"
  },
  {
   "id": "musculoskeletal-ultrasound",
@@ -1141,24 +986,6 @@
   ]
  },
  {
-  "id": "number-needed-to-treat",
-  "term": "Number needed to treat",
-  "aka": [
-   "NNT"
-  ],
-  "definition": "The number of patients who must receive an intervention for one additional patient to benefit, compared with control.",
-  "category": "evidence"
- },
- {
-  "id": "numeric-pain-rating-scale",
-  "term": "Numeric pain rating scale",
-  "aka": [
-   "NPRS"
-  ],
-  "definition": "A scale on which the patient rates pain from 0 (no pain) to 10 (worst pain imaginable).",
-  "category": "evidence"
- },
- {
   "id": "oedema",
   "term": "Oedema",
   "aka": [
@@ -1199,24 +1026,6 @@
   "category": "pain"
  },
  {
-  "id": "pain-neuroscience-education",
-  "term": "Pain neuroscience education",
-  "aka": [
-   "PNE"
-  ],
-  "definition": "Education that explains the biology of pain, including the role of the nervous system, to reduce threat and support active recovery.",
-  "category": "pain",
-  "seeAlso": [
-   "acute-low-back-pain"
-  ]
- },
- {
-  "id": "pain-self-efficacy",
-  "term": "Pain self-efficacy",
-  "definition": "A person's confidence in their ability to do activities despite their pain.",
-  "category": "pain"
- },
- {
   "id": "patient-reported-outcome-measure",
   "term": "Patient-reported outcome measure",
   "aka": [
@@ -1225,21 +1034,6 @@
   ],
   "definition": "A questionnaire completed by the patient to report symptoms, function or quality of life. Examples include the KOOS, DASH and VISA-A.",
   "category": "evidence"
- },
- {
-  "id": "periosteum",
-  "term": "Periosteum",
-  "definition": "The dense fibrous membrane covering the outer surface of bone except at joint surfaces. It is richly innervated and contributes cells to bone healing.",
-  "category": "anatomy"
- },
- {
-  "id": "peripheral-sensitisation",
-  "term": "Peripheral sensitisation",
-  "aka": [
-   "peripheral sensitization"
-  ],
-  "definition": "Increased responsiveness and reduced threshold of nociceptors at the site of injury, contributing to tenderness around damaged tissue.",
-  "category": "pain"
  },
  {
   "id": "physis",
@@ -1320,15 +1114,6 @@
   "category": "evidence"
  },
  {
-  "id": "prehabilitation",
-  "term": "Prehabilitation",
-  "definition": "A program of exercise and education undertaken before surgery to improve strength, movement and recovery afterwards.",
-  "category": "rehab",
-  "seeAlso": [
-   "acl-rupture"
-  ]
- },
- {
   "id": "progressive-overload",
   "term": "Progressive overload",
   "definition": "The gradual increase of training or rehabilitation load over time so that tissue capacity keeps adapting.",
@@ -1399,24 +1184,6 @@
   ],
   "definition": "A study in which participants are randomly assigned to an intervention or a comparison group, which reduces bias when comparing outcomes.",
   "category": "evidence"
- },
- {
-  "id": "rate-of-force-development",
-  "term": "Rate of force development",
-  "aka": [
-   "RFD"
-  ],
-  "definition": "How quickly a muscle can produce force. It is often reduced after injury and is important for sprinting, jumping and landing.",
-  "category": "rehab",
-  "seeAlso": [
-   "acl-rupture"
-  ]
- },
- {
-  "id": "reactive-tendinopathy",
-  "term": "Reactive tendinopathy",
-  "definition": "An early, non-inflammatory response of the tendon to sudden overload, with swelling of the matrix and little structural disruption. It tends to settle if the load is reduced.",
-  "category": "injury"
  },
  {
   "id": "red-flags",
@@ -1509,12 +1276,6 @@
   ]
  },
  {
-  "id": "satellite-cell",
-  "term": "Satellite cell",
-  "definition": "A muscle stem cell lying beside muscle fibres that is activated after injury to help regenerate damaged fibres.",
-  "category": "healing"
- },
- {
   "id": "seddon-classification",
   "term": "Seddon classification",
   "definition": "A three-grade system for peripheral nerve injury: neurapraxia, axonotmesis and neurotmesis. It is based on whether the axon and the supporting connective tissue are disrupted.",
@@ -1530,16 +1291,6 @@
   "category": "evidence",
   "seeAlso": [
    "acl-rupture"
-  ]
- },
- {
-  "id": "sesamoid-bone",
-  "term": "Sesamoid bone",
-  "definition": "A bone embedded within a tendon. The patella is the largest; smaller sesamoids lie beneath the first metatarsal head.",
-  "category": "anatomy",
-  "seeAlso": [
-   "sesamoid-injury",
-   "patellar-dislocation"
   ]
  },
  {
@@ -1707,15 +1458,6 @@
   ]
  },
  {
-  "id": "synovium",
-  "term": "Synovium",
-  "aka": [
-   "synovial membrane"
-  ],
-  "definition": "The thin membrane lining the inside of a synovial joint capsule, bursa or tendon sheath. It produces synovial fluid that lubricates and nourishes the joint.",
-  "category": "anatomy"
- },
- {
   "id": "systematic-review",
   "term": "Systematic review",
   "definition": "A review that uses explicit, reproducible methods to find, appraise and summarise all relevant studies on a question.",
@@ -1762,12 +1504,6 @@
    "de-quervain-tenosynovitis",
    "trigger-finger"
   ]
- },
- {
-  "id": "tenocyte",
-  "term": "Tenocyte",
-  "definition": "A tendon cell, responsible for producing and maintaining the collagen matrix of the tendon.",
-  "category": "healing"
  },
  {
   "id": "tenosynovitis",
@@ -1818,12 +1554,6 @@
   ]
  },
  {
-  "id": "tissue-capacity",
-  "term": "Tissue capacity",
-  "definition": "The amount of load a tissue can tolerate without damage or symptoms. Injury is more likely when load exceeds capacity.",
-  "category": "rehab"
- },
- {
   "id": "trendelenburg-sign",
   "term": "Trendelenburg sign",
   "definition": "A drop of the pelvis on the unsupported side during single-leg stance, suggesting weakness or dysfunction of the stance-side hip abductors.",
@@ -1855,12 +1585,6 @@
   ]
  },
  {
-  "id": "validity",
-  "term": "Validity",
-  "definition": "The extent to which a test or measure actually assesses what it is meant to assess.",
-  "category": "evidence"
- },
- {
   "id": "varus-stress-test",
   "term": "Varus stress test",
   "definition": "A test of the lateral collateral ligament and posterolateral corner in which a varus force is applied to the knee at 0° and about 30° of flexion.",
@@ -1877,12 +1601,6 @@
   "seeAlso": [
    "midportion-achilles-tendinopathy"
   ]
- },
- {
-  "id": "viscoelasticity",
-  "term": "Viscoelasticity",
-  "definition": "The property of tissues such as tendon and ligament whose response to load depends on time as well as force, so they deform gradually (creep) and relax under sustained stretch.",
-  "category": "healing"
  },
  {
   "id": "wallerian-degeneration",
