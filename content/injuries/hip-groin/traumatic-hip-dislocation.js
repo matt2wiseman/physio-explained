@@ -1,0 +1,419 @@
+export default {
+  id: "traumatic-hip-dislocation",
+  name: "Traumatic hip dislocation",
+  shortName: "Hip dislocation",
+  aka: ["dislocated hip", "posterior hip dislocation", "anterior hip dislocation", "hip fracture-dislocation", "dashboard injury", "traumatic hip subluxation"],
+  region: "hip-groin",
+  tissues: ["joint-capsule", "ligament", "labrum", "bone", "nerve"],
+  onset: "acute",
+  mechanismType: ["collision", "contact", "fall"],
+  populations: ["young adult males in road traffic crashes", "contact-sport athletes", "multi-trauma patients", "motorcyclists and skiers"],
+  sports: ["american football", "rugby", "australian football", "skiing", "motocross", "equestrian"],
+  urgency: "emergency",
+  summary: "The femoral head is forced out of the acetabulum, usually posteriorly when a flexed, adducted hip is driven backwards along the femur (dashboard injury). Reduction within 6 hours limits avascular necrosis.",
+  keyFacts: [
+    { label: "Typical recovery", value: "Protected weight-bearing about 6–8 weeks; return to sport often 3–6 months if no AVN" },
+    { label: "Key priority", value: "Emergency reduction: AVN risk rises sharply with delay (OR 5.6 if reduced after 12 h)" },
+    { label: "Imaging", value: "AP pelvis, then post-reduction CT; MRI at about 6 weeks to screen for AVN" },
+    { label: "Direction", value: "About 90% posterior: leg shortened, flexed, adducted and internally rotated" },
+    { label: "Nerve injury", value: "About 10% of adults, mainly the sciatic (peroneal division)" },
+    { label: "Long-term", value: "AVN and post-traumatic arthritis are common, especially with associated fractures" }
+  ],
+  overview: "Traumatic hip dislocation is a high-energy injury in which the femoral head is displaced from the acetabulum. Because the hip is deep and strongly stabilised, dislocation usually follows road traffic crashes, falls from height or high-impact sport, and it is often accompanied by acetabular or femoral head fractures and injuries elsewhere [r1,r9]. Most dislocations are posterior, typically when the knee of a seated occupant strikes the dashboard and drives the flexed, adducted femur backwards out of the socket [r1,r2].\n\nThe hip should be reduced as an emergency. The longer the femoral head stays out, the greater the risk of avascular necrosis (AVN) from stretched or torn retinacular vessels: in a classic series 88% of hips reduced within 6 hours had a good or excellent long-term result compared with 42% of those reduced later [r6], and reduction after 12 hours increased the odds of AVN more than fivefold [r5]. About 10% of adults sustain a nerve injury, usually of the sciatic nerve [r8]. Physiotherapy guides protected loading, monitors for AVN and nerve recovery, and rebuilds hip strength and confidence over several months.",
+
+  epidemiology: {
+    text: "Traumatic hip dislocations appear to be increasing in North America and mostly result from motor vehicle crashes [r1]. In a long-term series of 62 patients (mean age 34.5 years, 76% male), 83.9% of dislocations followed traffic accidents and 71% had associated injuries [r9]. Posterior dislocations are by far the commonest type [r2]. Lower-energy posterior subluxation also occurs in sport, classically from a fall onto a flexed, adducted hip in American football [r10].",
+    riskFactors: {
+      intrinsic: [
+        "Seated position with the hip flexed and adducted at the moment of impact (e.g. crossed legs) [r1,r2]",
+        "Acetabular retroversion or reduced posterior coverage (proposed)",
+        "Male sex and young adulthood, reflecting exposure to high-energy trauma [r9]"
+      ],
+      extrinsic: [
+        "Motor vehicle crashes, especially unrestrained front-seat occupants (modifiable: seat belts) [r9]",
+        "Motorcycle crashes and falls from height",
+        "Collision sports, with falls or tackles onto a flexed, adducted hip [r10]"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "Posterior dislocation occurs when an axial force travels along the femoral shaft with the hip flexed and adducted, as when the knee strikes a car dashboard. The force levers the femoral head over the posterior acetabular rim, tearing the posterior capsule and labrum. With less flexion or more abduction at impact, the posterior wall of the acetabulum fractures (fracture-dislocation) [r1,r2]. Anterior dislocation results from forced abduction and external rotation, with the hip extended (pubic type) or flexed (obturator type) [r2].",
+    sequence: [
+      "A car occupant sits with the right hip flexed about 90° and slightly adducted.",
+      "In a frontal crash the body continues forward and the knee strikes the dashboard.",
+      "The impact drives the femur backwards along its long axis, loading the posterior acetabulum.",
+      "With the hip flexed and adducted, the femoral head levers over the posterior rim, tearing the posterior capsule, labrum and ligamentum teres [r1].",
+      "The head comes to rest behind the acetabulum, where it can stretch or compress the sciatic nerve [r8].",
+      "Retinacular vessels to the femoral head are kinked or torn; ischaemia continues until the hip is reduced [r5,r6].",
+      "Associated injuries are common: posterior wall or femoral head fractures, patellar fracture and posterior cruciate ligament injury of the same knee [r9]."
+    ],
+    variants: [
+      { name: "Posterior dislocation (dashboard)", description: "Most common. Leg shortened, flexed, adducted and internally rotated. May include posterior wall fracture (Thompson–Epstein II–V) [r3]." },
+      { name: "Anterior dislocation", description: "Forced abduction and external rotation. Leg abducted and externally rotated; femoral nerve and vessels at risk [r2]." },
+      { name: "Sport-related posterior subluxation", description: "Lower-energy fall onto a flexed, adducted hip (e.g. American football). Triad of posterior acetabular lip fracture, iliofemoral ligament disruption and haemarthrosis; AVN can still occur [r10]." },
+      { name: "Fracture-dislocation with femoral head fracture", description: "Shear of the femoral head against the rim; graded by Pipkin type [r4]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The hip is intrinsically stable because the acetabulum covers much of the femoral head and the labrum deepens the socket. The capsule is reinforced anteriorly by the iliofemoral (Y) ligament, inferiorly by the pubofemoral ligament and posteriorly by the thinner ischiofemoral ligament, which is why posterior dislocation is easiest when the hip is flexed and adducted. The femoral head's blood supply comes mainly from retinacular branches of the medial circumflex femoral artery that run up the posterior and superior neck inside the capsule; the artery of the ligamentum teres contributes little in adults. The sciatic nerve passes directly behind the hip joint, beneath piriformis and over the short external rotators.",
+    structures: [
+      { name: "Posterior capsule and ischiofemoral ligament", role: "Restrain posterior translation and internal rotation; torn in posterior dislocation" },
+      { name: "Iliofemoral ligament", role: "Strongest capsular ligament; restrains extension and anterior translation; disrupted in subluxation [r10]" },
+      { name: "Acetabular labrum and posterior wall", role: "Deepen the socket and buttress the head; fracture or tear during dislocation" },
+      { name: "Retinacular vessels (medial circumflex femoral artery)", role: "Main femoral head blood supply; at risk until reduction [r5,r6]" },
+      { name: "Sciatic nerve", role: "Lies directly posterior to the joint; stretched or compressed by a posteriorly displaced head [r8]" },
+      { name: "Short external rotators and piriformis", role: "Posterior dynamic stabilisers; often torn or stretched" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "Dislocating a hip requires large forces. The posterior capsule, ischiofemoral ligament, labrum and ligamentum teres tear, and in many cases the posterior acetabular wall or femoral head fractures as it is driven over the rim [r1,r3,r4]. Articular cartilage is contused at impact, which predisposes to post-traumatic arthritis. While the head is dislocated, the retinacular vessels are stretched, kinked or torn; the longer they remain occluded, the more bone and marrow die. In a meta-analysis, AVN occurred in 10.6–43.0% and post-traumatic arthritis in 19.4–58.6% of posterior dislocations, increasing with injury severity [r5].\n\nThe displaced head can stretch, compress or (rarely) lacerate the sciatic nerve, usually affecting the peroneal division and causing foot drop [r8]. Reduction relieves nerve distortion and restores blood flow, but injured tissues then heal over months: the capsule scars, fractures unite, and dead bone may be replaced by creeping substitution or may collapse, which can take up to 2 years to declare itself.",
+    structures: [
+      { name: "Posterior capsule, ischiofemoral ligament, ligamentum teres", effect: "Torn; heal by scar during protected loading" },
+      { name: "Posterior acetabular wall", effect: "Fracture in fracture-dislocations; large or unstable fragments need fixation [r3]" },
+      { name: "Femoral head", effect: "Cartilage contusion, impaction or shear fracture (Pipkin I–IV) [r4]; AVN in 10–43% [r5]" },
+      { name: "Labrum", effect: "Tear or entrapment; an incarcerated fragment can block concentric reduction [r7]" },
+      { name: "Sciatic nerve", effect: "Neurapraxia or axonotmesis in about 10% of adults, mostly the peroneal division [r8]" },
+      { name: "Ipsilateral knee", effect: "Dashboard impact can cause patellar fracture or PCL injury [r9]" }
+    ],
+    muscles: [
+      { name: "Hip abductors and external rotators", effect: "Torn or stretched short rotators, pain inhibition and weeks of protected loading cause marked weakness and Trendelenburg gait" },
+      { name: "Hip flexors and adductors", effect: "Protective spasm before reduction holds the leg flexed, adducted and internally rotated" },
+      { name: "Ankle dorsiflexors and evertors", effect: "Weak or paralysed with sciatic (peroneal) nerve injury; risk of equinus contracture [r8]" }
+    ],
+    cellular: [
+      { phase: "Ischaemia and inflammation", timing: "0–7 days", description: "Haemarthrosis and torn capsule trigger inflammation. Femoral head osteocytes begin to die within hours if flow is not restored [r5,r6]." },
+      { phase: "Capsular and ligament repair", timing: "1–6 weeks", description: "Fibroblasts lay down type III collagen scar in the capsule; fractures form callus." },
+      { phase: "Remodelling", timing: "6 weeks–12 months", description: "Capsular scar matures and strengthens; fracture callus remodels; nerve axons regrow at about 1 mm per day after axonotmesis." },
+      { phase: "AVN evolution (if present)", timing: "Months–2 years", description: "Necrotic bone is resorbed and replaced; subchondral collapse and secondary arthritis may follow [r5,r10]." }
+    ],
+    systems: [
+      { system: "Vascular", effect: "Kinking or tearing of retinacular vessels causes femoral head ischaemia; time to reduction is the main modifiable factor [r5,r6]." },
+      { system: "Nervous system", effect: "Sciatic nerve palsy in about 10% of adults; at least partial recovery in 60–70% [r8]." },
+      { system: "Multi-system trauma", effect: "71% have associated injuries (head, chest, abdomen, other fractures), which may delay recognition and rehabilitation [r9]." },
+      { system: "Musculoskeletal chain", effect: "Associated knee injuries and prolonged protected weight-bearing cause widespread deconditioning." },
+      { system: "Psychological", effect: "Major trauma, uncertainty about AVN and long recovery can cause anxiety, post-traumatic stress and fear of re-injury." }
+    ]
+  },
+
+  grading: {
+    system: "Thompson–Epstein classification (posterior dislocation)",
+    grades: [
+      { grade: "Type I", description: "Dislocation with or without a minor fracture [r3].", prognosis: "Best outcomes; 90% excellent or good in one long-term series (grade I) [r6]" },
+      { grade: "Type II", description: "Dislocation with a single large fracture of the posterior acetabular rim [r3].", prognosis: "Often needs fixation of the fragment" },
+      { grade: "Type III", description: "Dislocation with a comminuted posterior rim fracture [r3].", prognosis: "Worse outcomes; 31% excellent or good in one series (grade III) [r6]" },
+      { grade: "Type IV", description: "Dislocation with fracture of the acetabular floor [r3].", prognosis: "Complex acetabular fixation; high arthritis risk" },
+      { grade: "Type V", description: "Dislocation with femoral head fracture, further graded by Pipkin [r3,r4].", prognosis: "High risk of AVN and post-traumatic arthritis [r5]" }
+    ]
+  },
+
+  timeframes: {
+    summary: "Soft tissues and any fractures heal over 6–12 weeks, but the femoral head must be monitored for AVN for up to 2 years. Full weight-bearing was resumed at 2–10 weeks (average 8) in one long-term series [r9].",
+    healing: [
+      { phase: "Acute and post-reduction", startDay: 0, endDay: 7, description: "Reduction, haemarthrosis, pain and inflammation; nerve and vascular checks" },
+      { phase: "Capsular repair and fracture union", startDay: 7, endDay: 56, description: "Protected weight-bearing; scar forms in the capsule; fractures unite" },
+      { phase: "Remodelling and strengthening", startDay: 42, endDay: 180, description: "Progressive loading and strength work once MRI shows no AVN" },
+      { phase: "AVN surveillance", startDay: 42, endDay: 730, description: "AVN can declare itself up to about 2 years after injury" }
+    ],
+    milestones: [
+      { label: "Reduction", day: 0, note: "Ideally within 6 h [r6]" },
+      { label: "MRI to screen for AVN", day: 42, note: "Players without AVN at 6 weeks returned safely to sport in one series [r10]" },
+      { label: "Full weight-bearing", day: 56, note: "Average 8 weeks, range 2–10 [r9]" },
+      { label: "Return to running", day: 100, note: "Typical clinical range 12–16 weeks for simple dislocations" },
+      { label: "Return to contact sport", day: 150, note: "Typical clinical range 3–6 months if no AVN" }
+    ],
+    returnToSport: "Simple dislocation or subluxation without AVN: typically 3–6 months. Six of eight American football players with posterior subluxation returned to their previous level after 6 weeks of toe-touch weight-bearing and a normal 6-week MRI [r10]. Fracture-dislocations and AVN prolong or prevent return."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Severe hip or buttock pain immediately after high-energy trauma",
+      "Inability to move the leg or bear weight",
+      "Numbness or weakness in the foot (sciatic nerve injury) [r8]",
+      "Pain from associated injuries (knee, other fractures) that may mask the hip injury [r9]"
+    ],
+    signs: [
+      "Posterior: leg shortened, flexed, adducted and internally rotated [r2]",
+      "Anterior: leg abducted and externally rotated, sometimes flexed [r2]",
+      "Palpable femoral head in the buttock (posterior) or groin (anterior)",
+      "Foot drop or reduced sensation in the peroneal distribution in sciatic injury [r8]",
+      "Knee bruising, patellar fracture or posterior sag from dashboard impact [r9]"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Mechanism and energy: vehicle speed, seat belt, position of the leg at impact, sport collision or fall [r1,r10]",
+      "Time of injury and time of reduction (prognostic) [r6]",
+      "Neurological symptoms in the leg and foot before and after reduction [r8]",
+      "Associated injuries and their management [r9]",
+      "Surgeon's instructions on weight-bearing, range limits and imaging plan",
+      "Pre-injury activity, sport and work demands"
+    ],
+    observation: ["Before reduction: characteristic limb position (do not attempt to move the hip)", "After reduction: gait with aids, Trendelenburg sign, muscle wasting", "Foot posture and use of an ankle–foot orthosis if foot drop is present"],
+    palpation: ["Posterior hip and buttock tenderness", "Greater trochanter and knee for associated injuries", "Calf for DVT after prolonged immobility"],
+    rangeOfMotion: ["Within surgeon-specified limits after reduction: typically avoid flexion beyond 90° with adduction and internal rotation for 6 weeks after posterior dislocation", "Ankle dorsiflexion range to prevent equinus if sciatic palsy [r8]", "Later: full hip range compared with the other side"],
+    strength: ["Gentle isometrics early", "Hand-held dynamometry of hip abductors, extensors and external rotators once loading is permitted", "Ankle dorsiflexion and eversion grading (MRC) to monitor peroneal recovery [r8]"],
+    neuro: ["Sciatic nerve: ankle dorsiflexion, great toe extension, eversion, plantarflexion, sensation of the first web space and lateral foot [r8]", "Femoral nerve: knee extension and anterior thigh sensation (anterior dislocation)", "Repeat neurological examination after reduction and document changes [r8]"],
+    functional: ["Gait with aids and stairs", "Single-leg stance and squat once weight-bearing", "Hop and agility tests before return to sport"],
+    specialTests: [
+      { name: "Lower-limb neurovascular examination", purpose: "Detect sciatic or femoral nerve injury and vascular compromise", procedure: "Test dorsiflexion, great toe extension, plantarflexion and sensation in peroneal and tibial distributions; check foot pulses and capillary refill before and after reduction.", positive: "Motor or sensory deficit, or reduced pulses; urgent communication with the treating team.", refs: [] },
+      { name: "Posterior apprehension (flexion–adduction–internal rotation with posterior load)", purpose: "Residual posterior instability after recovery", procedure: "Patient supine. Flex the hip to 90° with adduction and internal rotation and apply a gentle posterior force along the femur. Perform only once cleared by the surgeon.", positive: "Apprehension or pain suggesting posterior instability.", refs: [] }
+    ],
+    clinicalRules: [],
+    outcomeMeasures: [
+      { name: "Merle d'Aubigné–Postel score", use: "Pain, mobility and walking after hip dislocation [r9]" },
+      { name: "Lower Extremity Functional Scale (LEFS)", use: "Function across the rehabilitation course" },
+      { name: "HAGOS or iHOT-33", use: "Hip function and sport participation in active patients" },
+      { name: "MRC grading of ankle dorsiflexion and eversion", use: "Monitor sciatic (peroneal) nerve recovery [r8]" }
+    ],
+    imaging: [
+      { modality: "AP pelvis and lateral hip radiographs", indication: "All suspected dislocations, before and after reduction [r7]", findings: "Direction of dislocation, femoral head size asymmetry, acetabular and femoral head or neck fractures; concentric reduction" },
+      { modality: "CT", indication: "After reduction to confirm concentric reduction and identify fragments or fractures [r7]", findings: "Posterior wall fractures, femoral head fractures, intra-articular loose fragments" },
+      { modality: "MRI", indication: "About 6 weeks after injury to screen for AVN before increasing load and returning to sport [r10]", findings: "Femoral head AVN, capsular and labral tears, cartilage injury" }
+    ]
+  },
+
+  differentials: [
+    { name: "Hip fracture (femoral neck or intertrochanteric)", id: "hip-fracture", distinguishing: "Shortened, externally rotated leg rather than internally rotated; radiographs show a proximal femoral fracture with the head in the socket." },
+    { name: "Acetabular fracture without dislocation", distinguishing: "Pain and inability to weight-bear after trauma; femoral head remains in the socket on radiographs and CT." },
+    { name: "Posterior cruciate ligament injury", id: "pcl-injury", distinguishing: "Dashboard injury to the knee with posterior sag; always check the hip in dashboard mechanisms (and vice versa)." },
+    { name: "Patella fracture", id: "patella-fracture", distinguishing: "Anterior knee pain after dashboard impact; often coexists with hip dislocation." },
+    { name: "Hip labral tear after subluxation", id: "hip-labral-tear", distinguishing: "Persisting groin pain, clicking or catching after a traumatic subluxation; MRI shows labral tear." },
+    { name: "Peripheral nerve injury (sciatic)", id: "peripheral-nerve-injury", distinguishing: "Foot drop and sensory loss; may be part of the dislocation injury or from direct trauma." }
+  ],
+  redFlags: [
+    "Suspected hip dislocation after trauma: emergency. Do not attempt to move or reduce the hip; arrange urgent transfer for reduction, ideally within 6 hours [r6,r7].",
+    "New or worsening foot drop or sensory loss, before or after reduction: urgent orthopaedic review; document neurological status [r8].",
+    "Reduced or absent foot pulses, especially in anterior dislocation: suspect vascular injury and escalate immediately.",
+    "Increasing groin pain or reduced hip movement weeks to months after injury: suspect AVN or loss of reduction and arrange imaging [r5,r10].",
+    "Calf swelling, chest pain or breathlessness during protected weight-bearing: suspect DVT or PE.",
+    "Signs of head, chest or abdominal injury in a multi-trauma patient: follow trauma protocols; the hip may not be the priority."
+  ],
+
+  management: {
+    principles: "Management is led by the orthopaedic and trauma team. The priorities are emergency concentric reduction under sedation or anaesthesia, a neurovascular check before and after reduction, and post-reduction CT to detect fragments or fractures that need open treatment [r7]. Delayed reduction is associated with AVN [r5,r6,r7].\n\nAfter reduction of a simple dislocation, patients usually use crutches with protected weight-bearing for about 6 weeks and avoid the position of dislocation. MRI at about 6 weeks screens for AVN before load and sport are increased [r10]. The physiotherapist teaches safe mobility and precautions, preserves range, prevents equinus if there is a sciatic palsy [r8], and then progresses strength, balance and sport-specific training. Fracture-dislocations follow the surgeon's fixation protocol and progress more slowly.",
+    medical: [
+      { name: "Emergency closed reduction", description: "Reduction under sedation or general anaesthesia using traction with internal rotation for posterior dislocations, or traction and external rotation for anterior dislocations [r2,r7]. Reduce as soon as possible; AVN is more common after delays of more than 6–12 hours [r5,r6].", evidence: "moderate", recommendation: "recommended", refs: ["r2", "r5", "r6", "r7"] },
+      { name: "Post-reduction CT and open reduction or fixation if indicated", description: "CT identifies incarcerated fragments, posterior wall or femoral head fractures that require open reduction and fixation [r7].", evidence: "limited", recommendation: "recommended", refs: ["r7"] },
+      { name: "Aspiration of large haemarthrosis (subluxation)", description: "Recommended for large haemarthroses on MRI after posterior subluxation to reduce intracapsular pressure [r10].", evidence: "very-limited", recommendation: "consider", refs: ["r10"] },
+      { name: "MRI surveillance for AVN", description: "MRI at about 6 weeks; patients without AVN can progress to sport, while those with AVN should avoid high-impact activity [r10].", evidence: "very-limited", recommendation: "recommended", refs: ["r10"] },
+      { name: "Total hip arthroplasty for AVN collapse or arthritis", description: "Salvage for symptomatic AVN with collapse or post-traumatic arthritis [r10].", evidence: "very-limited", recommendation: "consider", refs: ["r10"] }
+    ],
+    physio: [
+      { name: "Protected weight-bearing with dislocation-position precautions", description: "Crutches with toe-touch or partial weight-bearing for about 6 weeks (or per surgeon), avoiding deep flexion with adduction and internal rotation after posterior dislocation [r10]. Progress to full weight-bearing (average 8 weeks in one series) [r9].", evidence: "very-limited", recommendation: "recommended", refs: ["r9", "r10"] },
+      { name: "Early rehabilitation for sciatic nerve palsy", description: "Begin as early as possible: ankle range of motion, stretching and an ankle–foot orthosis to prevent equinus; monitor recovery, which is at least partial in 60–70% [r8].", evidence: "limited", recommendation: "recommended", refs: ["r8"] },
+      { name: "Progressive hip strengthening and neuromuscular training", description: "From 6 weeks (once MRI excludes AVN), progressive abductor, extensor and rotator strengthening, balance and gait retraining.", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
+      { name: "Graded return to running and sport", description: "Criteria-based progression from 3 months for simple dislocations without AVN [r10].", evidence: "very-limited", recommendation: "recommended", refs: ["r10"] },
+      { name: "Early aggressive range-of-motion or impact loading", description: "Forcing flexion–adduction–internal rotation or early impact before capsular healing and AVN screening risks re-dislocation and femoral head collapse.", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] }
+    ],
+    education: [
+      "Your hip came out of its socket and was put back. The main worry over the next 2 years is the blood supply to the ball of the hip, so follow-up scans matter.",
+      "Use crutches as instructed and avoid bending the hip deeply with the knee crossing the midline while the capsule heals.",
+      "Report any new groin pain, stiffness or a limp in the months ahead; it can be an early sign of avascular necrosis.",
+      "If your foot is weak, wear the splint and do your ankle stretches daily; nerves recover slowly over months.",
+      "Seat belts greatly reduce the risk of this injury in car crashes."
+    ]
+  },
+
+  rehab: {
+    overview: "Progression depends on the type of injury (simple dislocation versus fracture-dislocation), the surgeon's protocol, nerve status and AVN screening. The stages below describe a simple posterior dislocation after closed reduction. Protect the capsule for about 6 weeks, keep the knee, ankle and other hip movements active, and avoid the position of dislocation. Progress loading only after MRI at about 6 weeks shows no AVN [r10]. With a sciatic nerve palsy, add orthotic management and nerve-recovery monitoring throughout [r8].",
+    stages: [
+      {
+        name: "Protect the capsule",
+        timeframe: "Weeks 0–6",
+        goals: ["Safe mobility with crutches", "Pain and swelling control", "Maintain knee and ankle range; prevent equinus", "Gentle isometric hip activation"],
+        precautions: ["Toe-touch or partial weight-bearing as prescribed", "Avoid hip flexion beyond 90° combined with adduction and internal rotation", "No sitting in low chairs or crossing legs", "Monitor neurology and for DVT"],
+        exercises: [
+          { name: "Quadriceps sets and ankle pumps", dosage: "10 reps hourly while awake", figure: { pose: "ex-quad-set", view: "lateral", props: ["mat"] } },
+          { name: "Gluteal sets and isometric hip abduction (supine)", dosage: "5–10 × 5–10 s, 3×/day", cues: "Gentle, pain-free effort" },
+          { name: "Supine heel slides (to 70–80° hip flexion)", dosage: "2 × 10, 2×/day", cues: "Keep the knee in line with the hip; do not let it cross the midline", figure: { pose: "ex-heel-slide", view: "lateral", props: ["mat"] } },
+          { name: "Ankle range of motion and calf stretch", dosage: "3 × 30 s stretch, 3×/day; AFO if foot drop [r8]", figure: { pose: "ex-ankle-alphabet", view: "lateral", props: ["chair"] } },
+          { name: "Crutch walking practice", dosage: "Several short walks daily", figure: { pose: "walk-heel-strike", view: "lateral" } }
+        ],
+        progressionCriteria: ["MRI at about 6 weeks without AVN [r10]", "Surgeon clearance to progress weight-bearing", "Pain-free gentle hip movement within precautions"]
+      },
+      {
+        name: "Restore loading & movement",
+        timeframe: "Weeks 6–12",
+        goals: ["Full weight-bearing without a limp", "Restore hip range including flexion and rotation", "Rebuild hip abductor and extensor strength"],
+        precautions: ["Wean crutches gradually as the Trendelenburg sign resolves", "Introduce combined flexion–rotation range slowly"],
+        exercises: [
+          { name: "Double-leg bridge progressing to single-leg bridge", dosage: "3 × 10–12", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } },
+          { name: "Side-lying clamshell", dosage: "3 × 12–15", figure: { pose: "ex-clamshell", view: "lateral", props: ["mat", "resistance-band"] } },
+          { name: "Standing hip abduction with band", dosage: "3 × 12–15 each side", figure: { pose: "ex-hip-abduction-standing", view: "anterior", props: ["resistance-band"] } },
+          { name: "Mini squat to box", dosage: "3 × 10–12", figure: { pose: "ex-squat", view: "lateral", props: ["box"] } },
+          { name: "Single-leg balance", dosage: "3 × 30 s", figure: { pose: "ex-single-leg-balance", view: "anterior" } }
+        ],
+        progressionCriteria: ["Normal gait without aids", "Hip strength ≥70–80% of the other side", "Pain-free functional range"]
+      },
+      {
+        name: "Strength & power",
+        timeframe: "Months 3–5",
+        goals: ["Hip strength ≥90% of the other side", "Return to running", "Plyometric and change-of-direction tolerance"],
+        precautions: ["Monitor for new groin pain (possible AVN) and reassess imaging if present [r5]"],
+        exercises: [
+          { name: "Split squat", dosage: "4 × 6–8 each side", figure: { pose: "ex-split-squat", view: "lateral", props: ["dumbbell"] } },
+          { name: "Romanian deadlift", dosage: "4 × 6–8", figure: { pose: "ex-rdl", view: "lateral", props: ["barbell"] } },
+          { name: "Side plank and Copenhagen adduction", dosage: "3 × 20–40 s / 3 × 6–10", figure: { pose: "ex-copenhagen", view: "lateral", props: ["bench"] } },
+          { name: "Hop and landing progressions", dosage: "3 × 5–8", figure: { pose: "ex-hop", view: "lateral" } }
+        ],
+        progressionCriteria: ["Strength and hop symmetry ≥90%", "Pain-free running for 30 min", "No new groin pain or loss of range"]
+      },
+      {
+        name: "Return to sport & surveillance",
+        timeframe: "Months 4–6+",
+        goals: ["Sport-specific contact and tackling drills", "Long-term strength maintenance", "Ongoing surveillance for AVN up to about 2 years"],
+        precautions: ["Return to contact last", "Avoid high-impact sport if AVN is present [r10]"],
+        exercises: [
+          { name: "Change-of-direction and agility drills", dosage: "2–3×/week", figure: { pose: "cut-plant", view: "anterior" } },
+          { name: "Progressive contact and tackling drills", dosage: "Graded over 2–4 weeks" },
+          { name: "Strength maintenance", dosage: "2×/week" }
+        ],
+        progressionCriteria: ["Full training without symptoms", "Surgeon clearance and normal follow-up imaging", "Athlete confidence"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "No AVN on MRI (typically at about 6 weeks, with clinical follow-up) [r10]",
+      "Full, pain-free hip range and normal gait",
+      "Hip strength and hop symmetry ≥90% of the other side",
+      "Completion of graded contact and sport-specific training",
+      "Surgeon clearance; acceptable nerve recovery if there was a palsy"
+    ],
+    tests: ["Hand-held dynamometry of hip muscles", "Single-leg hop tests", "Sport-specific agility tests", "HAGOS or iHOT-33"]
+  },
+  prognosis: "Time to reduction and injury severity are the main prognostic factors. In 100 hips followed for an average of 14 years, 88% reduced within 6 hours had an excellent or good result compared with 42% reduced later; grade I dislocations did much better than grade III (90% vs 31%) [r6]. In a meta-analysis, posterior dislocations had AVN rates of 10.6–43.0% and post-traumatic arthritis rates of 19.4–58.6%, and reduction after 12 hours increased the odds of AVN about 5.6-fold [r5]. In another long-term series, 16.1% developed post-traumatic osteoarthritis and 9.6% osteonecrosis [r9]. Sciatic nerve injuries show at least partial recovery in 60–70% [r8]. Sport-related posterior subluxation without AVN usually allows return to the previous level [r10].",
+  prevention: [
+    "Wear seat belts; many dislocations from traffic crashes could be prevented by their routine use [r9].",
+    "In collision sports, technique coaching for falls and tackles may reduce falls onto a flexed, adducted hip [r10].",
+    "Recognise and reduce dislocations quickly to prevent AVN, the most important complication [r5,r6]."
+  ],
+  clinicalPearls: [
+    "A dashboard knee injury means 'look at the hip'. A hip dislocation means 'look at the knee' [r9].",
+    "Time is femoral head. Reduction within 6 hours gives the best chance of a good long-term hip [r6].",
+    "Document the neurological examination before and after reduction; sciatic injury affects about 10% of adults [r8].",
+    "A posterior acetabular lip fracture with haemarthrosis after a sports fall may be a subluxation, not a 'hip sprain' [r10].",
+    "New groin pain months after a dislocation is AVN until proven otherwise [r5].",
+    "With foot drop, prevent equinus early. A stiff ankle limits function even if the nerve recovers [r8]."
+  ],
+  related: ["hip-labral-tear", "hip-fracture", "pcl-injury", "patella-fracture", "peripheral-nerve-injury", "fai-syndrome"],
+
+  references: [
+    { id: "r1", citation: "Clegg TE, Roberts CS, Greene JW, et al. Hip dislocations: epidemiology, treatment, and outcomes. Injury. 2010;41(4):329-34.", pmid: "19796765", doi: "10.1016/j.injury.2009.08.007", type: "narrative-review", year: 2010 },
+    { id: "r2", citation: "Dawson-Amoah K, Raszewski J, Duplantier N, et al. Dislocation of the hip: a review of types, causes, and treatment. Ochsner J. 2018;18(3):242-52.", pmid: "30275789", doi: "10.31486/toj.17.0079", type: "narrative-review", year: 2018 },
+    { id: "r3", citation: "Thompson VP, Epstein HC. Traumatic dislocation of the hip: a survey of two hundred and four cases covering a period of twenty-one years. J Bone Joint Surg Am. 1951;33-A(3):746-78.", pmid: "14850515", type: "cohort", year: 1951 },
+    { id: "r4", citation: "Pipkin G. Treatment of grade IV fracture-dislocation of the hip. J Bone Joint Surg Am. 1957;39-A(5):1027-42.", pmid: "13475403", type: "cohort", year: 1957 },
+    { id: "r5", citation: "Kellam P, Ostrum RF. Systematic review and meta-analysis of avascular necrosis and posttraumatic arthritis after traumatic hip dislocation. J Orthop Trauma. 2016;30(1):10-6.", pmid: "26849386", doi: "10.1097/BOT.0000000000000419", type: "meta-analysis", year: 2016 },
+    { id: "r6", citation: "Hougaard K, Thomsen PB. Coxarthrosis following traumatic posterior dislocation of the hip. J Bone Joint Surg Am. 1987;69(5):679-83.", pmid: "3597467", type: "cohort", year: 1987 },
+    { id: "r7", citation: "Yang EC, Cornwall R. Initial treatment of traumatic hip dislocations in the adult. Clin Orthop Relat Res. 2000;(377):24-31.", pmid: "10943182", doi: "10.1097/00003086-200008000-00006", type: "narrative-review", year: 2000 },
+    { id: "r8", citation: "Cornwall R, Radomisli TE. Nerve injury in traumatic dislocation of the hip. Clin Orthop Relat Res. 2000;(377):84-91.", pmid: "10943188", doi: "10.1097/00003086-200008000-00012", type: "narrative-review", year: 2000 },
+    { id: "r9", citation: "Sahin V, Karakaş ES, Aksu S, et al. Traumatic dislocation and fracture-dislocation of the hip: a long-term follow-up study. J Trauma. 2003;54(3):520-9.", pmid: "12634533", doi: "10.1097/01.TA.0000020394.32496.52", type: "cohort", year: 2003 },
+    { id: "r10", citation: "Moorman CT, Warren RF, Hershman EB, et al. Traumatic posterior hip subluxation in American football. J Bone Joint Surg Am. 2003;85(7):1190-6.", pmid: "12851341", doi: "10.2106/00004623-200307000-00002", type: "cohort", year: 2003 }
+  ],
+
+  animation: {
+    title: "How a posterior hip dislocation happens",
+    phases: [
+      {
+        type: "moi", label: "Mechanism", duration: 6, view: "lateral", environment: "car",
+        actors: [{ id: "driver", kit: "athlete" }],
+        keyframes: [
+          { t: 0, pose: "sit-car", root: { x: 0 } },
+          { t: 1.4, pose: "sit-car", joints: { trunk: 10, hipR: 95, kneeR: 90 }, root: { x: 6 } },
+          { t: 2.3, pose: "sit-car", joints: { trunk: 25, hipR: 100, kneeR: 95, neck: 15 }, root: { x: 16 }, ease: "in" },
+          { t: 3.2, pose: "sit-car", joints: { trunk: 30, hipR: 105, kneeR: 95, neck: 20 }, root: { x: 18 } },
+          { t: 4.6, pose: "sit-car", joints: { trunk: 15, hipR: 100, kneeR: 90 }, root: { x: 12 } },
+          { t: 5.8, pose: "sit-car", joints: { trunk: 10, hipR: 100, kneeR: 90 }, root: { x: 10 } }
+        ],
+        forces: [
+          { t: [2.2, 3.8], at: "kneeR", dir: "backward", label: "Dashboard impact" },
+          { t: [2.4, 3.8], at: "hipR", dir: "backward", label: "Head driven out posteriorly" }
+        ],
+        highlights: [{ t: [2.4, 6], at: "hipR" }],
+        impacts: [{ t: 2.4, at: "kneeR" }, { t: 2.6, at: "hipR" }],
+        slowmo: [{ t: [2.0, 3.4], rate: 0.3 }],
+        captions: [
+          { t: 0, text: "A front-seat occupant sits with the hip flexed about 90° and slightly adducted." },
+          { t: 1.4, text: "In a frontal crash the body keeps moving forward as the car stops." },
+          { t: 2.3, text: "The knee strikes the dashboard, driving the femur backwards along its shaft." },
+          { t: 3.2, text: "The femoral head levers over the posterior rim and dislocates behind the socket." },
+          { t: 4.6, text: "The leg is now shortened, flexed, adducted and internally rotated. Check the knee too." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "hipR",
+        captions: [{ t: 0, text: "Zooming into the right hip, viewed from the front." }]
+      },
+      {
+        type: "closeup", label: "Dislocation", duration: 8, scene: "hip-anterior",
+        actions: [
+          { t: 0, do: "highlight", target: "femoralHead" },
+          { t: 0.2, do: "fade", target: "rectusFemoris", to: 0.2 },
+          { t: 0.2, do: "fade", target: "sartorius", to: 0.2 },
+          { t: 0.8, do: "arrow", at: "headNeckJunction", dir: "posterior", label: "Axial force along the femur", size: "l" },
+          { t: 1.6, do: "tear", target: "capsule", at: 0.5 },
+          { t: 1.8, do: "tear", target: "labrum", pattern: "detachment", at: 0.2 },
+          { t: 2.0, do: "move", target: "femoralHead", to: "posteriorDislocationPosition", dur: 0.8 },
+          { t: 2.0, do: "impact", at: "acetabularRim" },
+          { t: 2.8, do: "label", target: "femoralHead", text: "Head displaced behind the socket" },
+          { t: 3.4, do: "fracture", target: "pelvis", pattern: "avulsion", at: "acetabularRim", displaced: false },
+          { t: 3.6, do: "label", target: "pelvis", text: "Posterior wall fracture (common)" },
+          { t: 4.4, do: "bleed", target: "jointSpace" },
+          { t: 5.0, do: "pulse", target: "femoralHead" },
+          { t: 6.2, do: "reset", target: "femoralHead", dur: 1 },
+          { t: 6.6, do: "label", target: "capsule", text: "Urgent reduction restores blood flow" }
+        ],
+        captions: [
+          { t: 0, text: "Normally the deep socket, labrum and capsule hold the femoral head firmly." },
+          { t: 0.8, text: "With the hip flexed and adducted, force along the femur pushes the head backwards." },
+          { t: 1.6, text: "The posterior capsule and labrum tear as the head escapes over the rim." },
+          { t: 3.4, text: "If the hip is less flexed at impact, the posterior acetabular wall breaks instead." },
+          { t: 4.4, text: "Torn and kinked vessels starve the femoral head of blood until it is put back." },
+          { t: 6.2, text: "Reduction within 6 hours gives the best chance of avoiding avascular necrosis." }
+        ]
+      },
+      {
+        type: "closeup", label: "Sciatic nerve", duration: 5.5, scene: "hip-posterior",
+        actions: [
+          { t: 0, do: "highlight", target: "sciaticNerve" },
+          { t: 0.3, do: "fade", target: "gluteusMaximus", to: 0.25 },
+          { t: 0.6, do: "label", target: "sciaticNerve", text: "Sciatic nerve lies just behind the hip" },
+          { t: 1.2, do: "arrow", at: "ischiofemoralSpace", dir: "posterior", label: "Dislocated head", size: "m" },
+          { t: 1.6, do: "stretch", target: "sciaticNerve", amount: 0.4 },
+          { t: 2.4, do: "compress", target: "sciaticNerve", at: 0.45 },
+          { t: 2.8, do: "irritate", target: "sciaticNerve" },
+          { t: 3.6, do: "pain", at: "piriformisSciaticCrossing" }
+        ],
+        captions: [
+          { t: 0, text: "From behind: the sciatic nerve runs over the back of the hip joint." },
+          { t: 1.2, text: "A posteriorly displaced head stretches and compresses the nerve." },
+          { t: 2.8, text: "About 10% of adults have a nerve injury, usually the peroneal division: watch for foot drop." }
+        ]
+      },
+      {
+        type: "micro", label: "Capsule healing", duration: 8, tissue: "ligament",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.0, stage: "overload" }, { t: 2.0, stage: "failure" },
+          { t: 3.0, stage: "haemorrhage" }, { t: 4.2, stage: "inflammation" }, { t: 5.6, stage: "proliferation" }, { t: 6.8, stage: "remodelling" }
+        ],
+        timeLabels: [{ t: 4.2, text: "Days 0–7" }, { t: 5.6, text: "Weeks 1–6" }, { t: 6.8, text: "Months 2–12" }],
+        captions: [
+          { t: 0, text: "The capsular ligaments are dense collagen running across the joint." },
+          { t: 1.0, text: "As the head is forced out, the posterior capsule is stretched beyond its limit." },
+          { t: 2.0, text: "Collagen fibres fail and the capsule tears." },
+          { t: 3.0, text: "Bleeding fills the joint (haemarthrosis)." },
+          { t: 4.2, text: "Inflammatory cells clear debris over the first week." },
+          { t: 5.6, text: "Fibroblasts lay down new collagen: protect the capsule for about 6 weeks." },
+          { t: 6.8, text: "The scar matures and strengthens as loading is gradually restored." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "LL1" }
+};

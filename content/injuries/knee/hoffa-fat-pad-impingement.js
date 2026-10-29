@@ -1,0 +1,381 @@
+export default {
+  id: "hoffa-fat-pad-impingement",
+  name: "Infrapatellar (Hoffa's) fat pad impingement",
+  shortName: "Hoffa's fat pad impingement",
+  aka: ["Hoffa's syndrome", "Hoffa's disease", "fat pad syndrome", "infrapatellar fat pad syndrome", "fat pad impingement", "superolateral Hoffa's fat pad impingement", "anterior knee fat pad pain"],
+  region: "knee",
+  tissues: ["fat-pad", "joint-capsule"],
+  onset: "acute-or-gradual",
+  mechanismType: ["compression", "overuse", "contact"],
+  populations: ["young athletes in jumping and kicking sports", "dancers and gymnasts with knee hyperextension", "people with patella alta", "people after knee arthroscopy or ACL reconstruction"],
+  sports: ["volleyball", "basketball", "soccer", "dance", "gymnastics", "netball", "martial arts"],
+  urgency: "routine",
+  summary: "Pain below the patella when the infrapatellar fat pad is pinched between the femur, tibia and patellar tendon, usually in knee hyperextension, causing inflammation, swelling and later fibrosis.",
+  keyFacts: [
+    { label: "Mechanism", value: "Hyperextension or direct blow pinching the fat pad; patella alta and maltracking" },
+    { label: "Key test", value: "Hoffa's test and pain on passive hyperextension (no accuracy data)" },
+    { label: "Imaging", value: "Sagittal MRI shows fat pad oedema; common in asymptomatic athletes too" },
+    { label: "Evidence", value: "No treatment trials; management is based on expert opinion and case series" },
+    { label: "Typical recovery", value: "Usually settles over 6–12 weeks with unloading and exercise" },
+    { label: "Peak age", value: "Adolescents and young adults; any age after knee surgery" }
+  ],
+  overview: "The infrapatellar (Hoffa's) fat pad is an intracapsular, extrasynovial structure that fills the anterior knee compartment behind the patellar tendon. It is richly vascularised and innervated, with substance-P-containing nerve fibres, which makes it one of the most pain-sensitive structures in the knee [r1,r2]. When it is pinched (impinged) between the femoral condyles, tibial plateau and patella, typically in knee hyperextension, it becomes inflamed and swollen, which makes further pinching more likely. Repeated impingement can lead to fibrosis [r1].\n\nPatients describe burning or aching pain under and either side of the patellar tendon, worse with standing in locked knees, kicking, jumping and prolonged walking. Patella alta and other markers of patellar maltracking predispose to the superolateral form [r3,r4]. Evidence for treatment is weak: a systematic review found no studies of treatment for Hoffa's fat pad syndrome [r3]. Most patients improve with avoiding hyperextension, taping to unload the fat pad, and quadriceps and hip strengthening; injections or arthroscopic resection are reserved for refractory cases [r1].",
+
+  epidemiology: {
+    text: "The incidence of symptomatic fat pad impingement is unknown. Fat pad oedema on MRI is common in athletes without symptoms: it was present in 75% of asymptomatic collegiate basketball players before the season and 81% after [r5]. Superolateral fat pad oedema was frequent in Olympic athletes, especially volleyball and beach volleyball players, and more common in women [r6]. A systematic review found that patella alta, increased tibial tubercle–trochlear groove (TT-TG) distance and increased trochlear angle predispose to Hoffa's fat pad syndrome, whereas age and body mass index did not [r3]. Superolateral fat pad oedema is also associated with proximal patellar tendinopathy [r4].",
+    riskFactors: {
+      intrinsic: [
+        "Patella alta [r3]",
+        "Increased TT-TG distance and trochlear angle (patellar maltracking) [r3]",
+        "Knee hyperextension (genu recurvatum) and generalised joint hypermobility",
+        "Quadriceps weakness or poor terminal extension control (modifiable)",
+        "Previous arthroscopy or ACL reconstruction (scarring of the fat pad) [r1]"
+      ],
+      extrinsic: [
+        "Jumping and landing sports, particularly volleyball [r6]",
+        "Kicking sports and dance or gymnastics that use end-range extension",
+        "Prolonged standing with knees locked into hyperextension",
+        "Direct blow to the front of the knee"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "Impingement occurs when the knee moves into extension or hyperextension and the fat pad is compressed between the inferior pole of the patella, the femoral condyles and the anterior tibial plateau. A sudden forced hyperextension (kicking air, an awkward landing) or a direct blow can bruise it acutely; repetitive end-range extension, standing in recurvatum or a high-riding, laterally tracking patella pinch it repeatedly [r1,r3]. Once inflamed, the swollen fat pad is pinched more easily, creating a self-perpetuating cycle.",
+    sequence: [
+      "The knee moves rapidly into full extension or hyperextension, for example kicking without contacting the ball.",
+      "The femoral condyles roll forward on the tibia and the inferior pole of the patella tilts posteriorly.",
+      "The fat pad is squeezed between the femur, the anterior tibial plateau and the back of the patellar tendon.",
+      "Small vessels in the fat pad bleed and the richly innervated tissue becomes painful and inflamed.",
+      "The fat pad swells, so it is pinched again with smaller movements into extension.",
+      "Repeated impingement leads to fibrosis, a thickened and less compliant fat pad and persistent anterior knee pain."
+    ],
+    variants: [
+      { name: "Repetitive hyperextension", description: "Dancers, gymnasts and people who stand in locked knees repeatedly load the fat pad at end-range extension." },
+      { name: "Superolateral fat pad impingement", description: "The superolateral part of the fat pad is pinched between the patellar tendon and lateral femoral condyle in people with patella alta and maltracking [r3,r4]." },
+      { name: "Direct trauma", description: "A blow to the anterior knee bruises the fat pad, sometimes with haemorrhage." },
+      { name: "Post-surgical fibrosis", description: "Arthroscopy portals and ACL reconstruction can cause fat pad scarring, anterior interval scarring or infrapatellar contracture syndrome with pain and loss of extension [r1]." }
+    ]
+  },
+
+  anatomy: {
+    text: "Hoffa's fat pad is a lobulated adipose structure that lies within the joint capsule but outside the synovium, bounded by the inferior pole of the patella above, the patellar tendon in front, the deep infrapatellar bursa below and the synovium of the joint behind. It attaches to the inferior patellar pole, the anterior horns of the menisci and the intercondylar notch via the infrapatellar plica. It is supplied by the genicular arteries and contains nociceptive fibres; in a conscious arthroscopic mapping study, palpation of the fat pad produced severe, accurately localised pain, whereas patellar articular cartilage produced no sensation [r7]. It may act as a deformable cushion and a store of reparative cells and inflammatory mediators [r1,r8].",
+    structures: [
+      { name: "Infrapatellar (Hoffa's) fat pad", role: "Fills the anterior compartment; deformable cushion; highly innervated pain generator [r1,r7]" },
+      { name: "Patellar tendon", role: "Anterior boundary; the fat pad is pinched behind it in extension" },
+      { name: "Inferior pole of the patella", role: "Tilts posteriorly in extension and can compress the superior fat pad" },
+      { name: "Femoral condyles and anterior tibial plateau", role: "Posterior and inferior boundaries that close together in hyperextension" },
+      { name: "Deep infrapatellar bursa", role: "Lies between the patellar tendon and tibia below the fat pad" },
+      { name: "Quadriceps", role: "Controls terminal extension and patellar position; tension lifts the patella and fat pad" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "Impingement compresses adipose lobules and their fibrous septa, damaging small vessels and nerve endings. The fat pad responds with oedema, haemorrhage and inflammation; substance P released from its nociceptive fibres causes vasodilation and further oedema, amplifying pain [r1,r8]. The swollen fat pad occupies more of the anterior compartment, so it is pinched more readily during normal extension, perpetuating the cycle.\n\nWith repeated or prolonged inflammation, fibroblasts lay down collagen and the fat pad becomes fibrotic and less compliant (Hoffa's disease). Severe fibrosis, particularly after surgery, can tether the patellar tendon, cause loss of extension and lower the patella (infrapatellar contracture syndrome) [r1]. Because fat pad oedema is common on MRI in athletes without symptoms, imaging findings must be matched to the clinical picture [r5].",
+    structures: [
+      { name: "Infrapatellar fat pad", effect: "Oedema, haemorrhage and inflammation; later fibrosis and reduced compliance [r1]" },
+      { name: "Synovium (posterior fat pad surface)", effect: "Reactive synovitis; possible small effusion" },
+      { name: "Patellar tendon", effect: "Proximal patellar tendinopathy often coexists with superolateral fat pad oedema [r4]" },
+      { name: "Infrapatellar plica and anterior interval", effect: "Scarring after surgery can restrict patellar tendon and fat pad gliding [r1]" },
+      { name: "Patellofemoral joint", effect: "Maltracking and patella alta increase superolateral impingement [r3]" }
+    ],
+    muscles: [
+      { name: "Quadriceps", effect: "Pain and synovitis inhibit the quadriceps; patients avoid terminal extension or, conversely, lock the knee passively into hyperextension [r9]" },
+      { name: "Gluteus medius and hip external rotators", effect: "Weakness increases hip internal rotation and knee valgus, altering patellar loading [r1]" },
+      { name: "Hamstrings and calf", effect: "Reduced control of terminal knee extension in stance contributes to recurvatum" }
+    ],
+    cellular: [
+      { phase: "Acute inflammation", timing: "0–7 days", description: "Capillary damage, oedema and haemorrhage; substance P and inflammatory cytokines sensitise nociceptors [r8]." },
+      { phase: "Proliferation", timing: "1–6 weeks", description: "Macrophages clear debris; fibroblasts lay down new collagen in the septa as inflammation settles if impingement stops." },
+      { phase: "Fibrosis (repeated impingement)", timing: "6 weeks to months", description: "Ongoing pinching leads to fibrotic thickening, reduced deformability and persistent pain [r1]." },
+      { phase: "Remodelling", timing: "3–6+ months", description: "With unloading, oedema resolves and fibrous tissue partially remodels; established fibrosis may persist." }
+    ],
+    systems: [
+      { system: "Nervous system", effect: "The fat pad is among the most pain-sensitive intra-articular tissues; sensitised nociceptors produce burning anterior knee pain that can spread [r7,r1]." },
+      { system: "Immune / inflammatory", effect: "The fat pad secretes cytokines, adipokines and growth factors that can influence synovium and cartilage, linking it to wider joint inflammation [r8]." },
+      { system: "Musculoskeletal chain", effect: "Habitual hyperextension in stance, hip internal rotation and knee valgus alter patellar and fat pad loading [r1]." },
+      { system: "Psychological", effect: "Persistent, poorly explained anterior knee pain can create frustration and fear of activity; a clear explanation helps." }
+    ]
+  },
+
+  grading: null,
+
+  timeframes: {
+    summary: "Acute fat pad irritation usually settles within weeks once hyperextension is avoided. Chronic or fibrotic presentations take longer, and post-surgical scarring may need procedural treatment. These timeframes are typical clinical ranges rather than trial data.",
+    healing: [
+      { phase: "Acute inflammation", startDay: 0, endDay: 7, description: "Oedema and pain; avoid hyperextension and start unloading" },
+      { phase: "Settling & repair", startDay: 7, endDay: 42, description: "Inflammation subsides with unloading; progressive strengthening" },
+      { phase: "Remodelling", startDay: 42, endDay: 180, description: "Oedema resolves; fibrotic tissue partially remodels" }
+    ],
+    milestones: [
+      { label: "Pain-free walking without locking the knee", day: 14 },
+      { label: "Pain-free stairs and squatting", day: 42 },
+      { label: "Return to jumping and kicking sport", day: 70, note: "Typical clinical range 6–12 weeks" },
+      { label: "Consider injection or surgical opinion if refractory", day: 120, note: "After about 3–6 months of good conservative care" }
+    ],
+    returnToSport: "Most athletes return within about 6–12 weeks once they can control terminal extension and land without pain. Refractory or post-surgical cases may take several months."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Burning or aching pain below the patella, either side of the patellar tendon [r1]",
+      "Pain with prolonged standing (especially with locked knees), walking downhill or in heels",
+      "Pain on kicking, landing or other end-range extension",
+      "Puffiness either side of the patellar tendon",
+      "Occasional catching or a feeling of fullness at the front of the knee"
+    ],
+    signs: [
+      "Tenderness and swelling either side of the patellar tendon",
+      "Pain on passive hyperextension with overpressure",
+      "Positive Hoffa's test",
+      "Knee hyperextension in standing and gait (recurvatum)",
+      "Pain relief with fat pad unloading tape"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Mechanism: hyperextension, kicking air, landing or a direct blow; or gradual onset with standing and walking",
+      "Aggravating activities: prolonged standing, walking downhill, high heels, kicking and jumping",
+      "Previous arthroscopy or ACL reconstruction (scarring, cyclops lesion, contracture)",
+      "Hypermobility, dance or gymnastics background",
+      "Swelling, locking or loss of extension (other intra-articular pathology)",
+      "Night pain, a palpable mass or systemic symptoms (red flags)"
+    ],
+    observation: ["Standing posture: knee hyperextension (recurvatum)", "Puffiness either side of the patellar tendon", "Patellar position (alta) and tracking", "Gait: knee snapping into extension in stance"],
+    palpation: ["Tenderness either side of the patellar tendon at the inferior pole", "Differentiate from patellar tendon (proximal tendinopathy) and tibial tuberosity", "Effusion grading", "Fat pad thickening or fibrosis"],
+    rangeOfMotion: ["Passive hyperextension with overpressure provokes pain", "Full flexion usually pain-free", "Loss of extension after surgery suggests scarring or a cyclops lesion"],
+    strength: ["Quadriceps strength and terminal extension control", "Gluteus medius and hip external rotator strength [r1]", "Calf strength"],
+    neuro: [],
+    functional: ["Single-leg stance: does the knee lock into hyperextension?", "Step-down and single-leg squat", "Landing pattern: stiff or hyperextended knee"],
+    specialTests: [
+      { name: "Hoffa's test", purpose: "Provoke fat pad pain", procedure: "Patient supine with the knee flexed about 30°. Press both thumbs firmly into the soft tissue either side of the patellar tendon just below the inferior pole, then ask the patient to extend the knee actively (or extend it passively).", positive: "Reproduction of familiar pain as the knee extends. No validated accuracy data.", refs: [] },
+      { name: "Passive hyperextension overpressure", purpose: "Compress the fat pad between femur and tibia", procedure: "Patient supine. Stabilise the femur and apply overpressure into knee extension or hyperextension.", positive: "Familiar anterior pain below the patella.", refs: [] },
+      { name: "Fat pad unloading tape test", purpose: "Support the diagnosis and guide management", procedure: "Apply a 'V' of tape from the tibial tuberosity toward each joint line, lifting the soft tissue toward the patella; then repeat the painful task (e.g. standing in extension, step-down).", positive: "Immediate reduction in pain with the provocative task [r1].", refs: ["r1"] }
+    ],
+    clinicalRules: [],
+    outcomeMeasures: [
+      { name: "Kujala Anterior Knee Pain Scale", use: "Anterior knee pain and function" },
+      { name: "KOOS (Knee injury and Osteoarthritis Outcome Score)", use: "Pain, symptoms, function and quality of life" },
+      { name: "Numeric pain rating during provocative tasks", use: "Standing in extension, step-down, kicking" }
+    ],
+    imaging: [
+      { modality: "MRI (sagittal)", indication: "Persistent symptoms, suspected other pathology or before injection or surgery [r1]", findings: "Fat pad oedema (especially superolateral), haemorrhage or fibrosis; patella alta and maltracking markers; patellar tendinopathy. Oedema is also common in asymptomatic athletes [r5]." },
+      { modality: "Dynamic ultrasound", indication: "Assess fat pad behaviour during knee extension and guide injection [r2]", findings: "Fat pad compression and hypervascularity in extension" },
+      { modality: "Plain radiographs", indication: "Exclude bony pathology and assess patellar height", findings: "Patella alta; calcification or ossification within a chronic fat pad lesion" }
+    ]
+  },
+
+  differentials: [
+    { name: "Patellar tendinopathy", id: "patellar-tendinopathy", distinguishing: "Pain at the inferior pole with loading (jumping, decline squat) that increases with load; tenderness on the tendon itself. Can coexist [r4]." },
+    { name: "Patellofemoral pain", id: "patellofemoral-pain", distinguishing: "Peripatellar or retropatellar pain with squatting, stairs and sitting; not reproduced by hyperextension." },
+    { name: "Sinding-Larsen–Johansson syndrome", id: "sinding-larsen-johansson", distinguishing: "Adolescent with tenderness at the inferior patellar pole apophysis." },
+    { name: "Osgood–Schlatter disease", id: "osgood-schlatter", distinguishing: "Pain and swelling over the tibial tuberosity in an adolescent." },
+    { name: "Meniscal tear (anterior horn)", id: "meniscal-tear", distinguishing: "Joint-line tenderness, rotational provocation and mechanical symptoms." },
+    { name: "Fat pad mass or synovial tumour", distinguishing: "Persistent swelling, night pain or a palpable mass; MRI shows a focal lesion (e.g. localised synovitis or tumour) [r1]." }
+  ],
+  redFlags: [
+    "A firm mass, progressive swelling or night pain in the anterior knee: arrange MRI to exclude a fat pad tumour or localised synovial lesion [r1].",
+    "Progressive loss of extension and a low-riding patella after knee surgery: suspect infrapatellar contracture syndrome or a cyclops lesion and refer promptly to the surgeon [r1].",
+    "Hot, red, swollen knee with fever: suspect septic arthritis and refer for same-day assessment.",
+    "Locking or a block to extension: assess for a meniscal tear or loose body."
+  ],
+
+  management: {
+    principles: "There are no randomised or comparative treatment trials for Hoffa's fat pad syndrome [r3], so management follows expert opinion and case series. The aims are to stop repeated pinching and let the inflamed fat pad settle, then restore control of terminal extension and patellar position [r1]. Avoid hyperextension in standing, gait and sport; unload the fat pad with taping and, if needed, a small heel raise; and strengthen the quadriceps and hip in closed chain through ranges that do not provoke pain. Address coexisting patellar maltracking or patellar tendinopathy. Image-guided injection or arthroscopic partial resection is reserved for symptoms that persist despite good conservative care [r1].",
+    medical: [
+      { name: "Image-guided injection of corticosteroid and local anaesthetic", description: "Injection into the fat pad for refractory pain; also helps confirm the fat pad as the pain source [r1].", evidence: "very-limited", recommendation: "consider", refs: ["r1"] },
+      { name: "Ultrasound-guided alcohol ablation", description: "Explored in case series for refractory fat pad pain [r1].", evidence: "very-limited", recommendation: "consider", refs: ["r1"] },
+      { name: "Arthroscopic partial resection or debridement", description: "Partial resection for impingement and Hoffa's disease, and debridement of fibrosis or anterior interval release after ACL reconstruction, have shown favourable results in case series [r1].", evidence: "limited", recommendation: "consider", refs: ["r1"] },
+      { name: "Total fat pad excision", description: "Removing the whole fat pad (e.g. at knee arthroplasty) gave worse results [r1]; preserve the fat pad where possible.", evidence: "limited", recommendation: "not-recommended", refs: ["r1"] },
+      { name: "Short course of NSAIDs", description: "May help an acute flare alongside unloading.", evidence: "expert-opinion", recommendation: "consider", refs: [] }
+    ],
+    physio: [
+      { name: "Avoiding hyperextension and education", description: "Teach the patient to stand and walk with a 'soft' knee, avoid locking out, and modify kicking and landing; explain the pinch–swell–pinch cycle [r1].", evidence: "very-limited", recommendation: "recommended", refs: ["r1"] },
+      { name: "Fat pad unloading taping", description: "A 'V' or diamond of rigid tape from the tibial tuberosity toward the joint lines, lifting the soft tissue toward the patella, to unload the inflamed fat pad [r1].", evidence: "very-limited", recommendation: "consider", refs: ["r1"] },
+      { name: "Closed-chain quadriceps strengthening", description: "Improves lower-limb control and patellar congruence; train in ranges that avoid end-range extension at first [r1].", evidence: "very-limited", recommendation: "recommended", refs: ["r1"] },
+      { name: "Gluteus medius strengthening and anterior hip stretching", description: "To reduce hip internal rotation and knee valgus [r1].", evidence: "very-limited", recommendation: "recommended", refs: ["r1"] },
+      { name: "Gait and landing retraining", description: "Retrain heel strike and stance to avoid knee hyperextension, and land with hips and knees flexed [r1].", evidence: "very-limited", recommendation: "consider", refs: ["r1"] },
+      { name: "Heel raise in footwear", description: "A small heel raise reduces knee hyperextension in stance during the irritable phase.", evidence: "expert-opinion", recommendation: "consider", refs: [] }
+    ],
+    education: [
+      "The fat pad behind your kneecap tendon is very sensitive. It hurts when it gets pinched as the knee straightens fully.",
+      "Avoid locking your knees back when standing; keep them slightly soft.",
+      "A pinched fat pad swells, which makes it easier to pinch again. Breaking this cycle for a few weeks lets it settle.",
+      "Strengthening the thigh and hip muscles helps you control the last part of straightening the knee.",
+      "A scan may show fat pad swelling even in people without pain, so the diagnosis rests on your symptoms and examination."
+    ]
+  },
+
+  rehab: {
+    overview: "Progress by symptoms: the first goal is to stop impingement, then build control of terminal extension, then reintroduce end-range and impact loading. There are no trial-based protocols [r3]; this program follows expert recommendations [r1]. Keep pain during exercise at or below 3/10 and settled by the next day.",
+    stages: [
+      {
+        name: "Unload & settle",
+        timeframe: "Weeks 0–2",
+        goals: ["Reduce pain and fat pad swelling", "Stop habitual hyperextension in standing and gait", "Maintain quadriceps activation"],
+        precautions: ["Avoid end-range extension and hyperextension under load", "Avoid kicking and jumping"],
+        exercises: [
+          { name: "Fat pad unloading tape", dosage: "Wear during the day; replace every 2–3 days; check the skin", cues: "Tape lifts the soft tissue toward the kneecap" },
+          { name: "Quadriceps sets with a small towel roll under the knee", dosage: "10 × 10 s, 3 times daily", cues: "Contract without forcing the knee into hyperextension", figure: { pose: "ex-quad-set", view: "lateral", props: ["mat"] } },
+          { name: "Bridge", dosage: "3 × 12", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } },
+          { name: "Side-lying clamshell", dosage: "3 × 15", figure: { pose: "ex-clamshell", view: "lateral", props: ["mat"] } },
+          { name: "Standing posture practice with soft knees", dosage: "Frequently through the day", figure: { pose: "stand", view: "lateral" } }
+        ],
+        progressionCriteria: ["Pain ≤2/10 with walking and standing", "Can stand and walk without locking the knee", "Reduced tenderness either side of the tendon"]
+      },
+      {
+        name: "Control & strength",
+        timeframe: "Weeks 2–6",
+        goals: ["Control terminal knee extension", "Build quadriceps and hip strength", "Normal stair descent"],
+        precautions: ["Stop just short of full lockout in closed-chain exercises", "Reduce load if the fat pad flares the next day"],
+        exercises: [
+          { name: "Wall sit", dosage: "3 × 30–45 s", figure: { pose: "ex-wall-sit", view: "lateral", props: ["wall"] } },
+          { name: "Squat to box", dosage: "3 × 10–12", cues: "Finish the rise with the knees soft, not snapped back", figure: { pose: "ex-squat", view: "lateral" } },
+          { name: "Forward step-down", dosage: "3 × 10", cues: "Slow lowering, knee over the second toe", figure: { pose: "ex-step-down", view: "anterior", props: ["step"] } },
+          { name: "Standing hip abduction with band", dosage: "3 × 15", figure: { pose: "ex-hip-abduction-standing", view: "anterior", props: ["resistance-band"] } },
+          { name: "Single-leg balance with soft knee", dosage: "3 × 30 s", figure: { pose: "ex-single-leg-balance", view: "anterior" } }
+        ],
+        progressionCriteria: ["Pain-free step-down and squat", "Single-leg stance without hyperextension for 30 s", "No next-day flare after strength sessions"]
+      },
+      {
+        name: "Load, end-range & landing",
+        timeframe: "Weeks 6–10",
+        goals: ["Tolerate end-range extension under control", "Land and decelerate without hyperextension", "Restore strength symmetry"],
+        precautions: ["Introduce full extension loading gradually", "Keep taping for sport if it helps"],
+        exercises: [
+          { name: "Split squat", dosage: "3 × 8–10", figure: { pose: "ex-split-squat", view: "lateral", props: ["dumbbell"] } },
+          { name: "Seated knee extension through full range", dosage: "3 × 10–12, slow", figure: { pose: "ex-knee-extension", view: "lateral", props: ["chair"] } },
+          { name: "Jump-squat and drop-landing drills", dosage: "3 × 5–6", cues: "Land with hips and knees bent", figure: { pose: "ex-jump-squat", view: "lateral" } },
+          { name: "Romanian deadlift", dosage: "3 × 8–10", figure: { pose: "ex-rdl", view: "lateral", props: ["dumbbell"] } }
+        ],
+        progressionCriteria: ["Pain-free full-range strength work", "Controlled landings without pain", "Quadriceps strength ≥90% of the other side"]
+      },
+      {
+        name: "Return to sport",
+        timeframe: "Weeks 8–12+",
+        goals: ["Sport-specific kicking, jumping and landing", "Full training without symptoms", "Long-term self-management"],
+        precautions: ["Build kicking volume gradually", "Monitor for flares after high-volume sessions"],
+        exercises: [
+          { name: "Single-leg hops", dosage: "3 × 5 each direction", figure: { pose: "ex-hop", view: "lateral" } },
+          { name: "Graded kicking program", dosage: "Increase number and power of kicks over 2–3 weeks", figure: { pose: "kick-follow-through", view: "lateral", props: ["ball-soccer"] } },
+          { name: "Strength maintenance", dosage: "2×/week", figure: { pose: "ex-single-leg-squat", view: "anterior" } }
+        ],
+        progressionCriteria: ["Full training without pain", "No swelling either side of the tendon after sessions", "Confidence with kicking and landing"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "Pain-free standing, stairs and squatting",
+      "Controlled terminal extension and landing without hyperextension",
+      "Quadriceps strength ≥90% of the other side",
+      "Full sport-specific training (kicking, jumping) without pain or swelling"
+    ],
+    tests: ["Single-leg squat and step-down quality", "Hop tests", "Hoffa's test and hyperextension overpressure pain-free"]
+  },
+  prognosis: "Most patients improve with conservative care, although there are no trials to quantify this [r3]. Refractory cases have responded to image-guided injection or arthroscopic partial resection in case series [r1]. Post-surgical fibrosis and infrapatellar contracture can cause persistent pain and loss of extension and may need arthroscopic release [r1]. Because fat pad oedema is common in asymptomatic athletes [r5], persisting MRI changes do not by themselves indicate treatment failure.",
+  prevention: [
+    "Avoid habitual standing in knee hyperextension; train terminal extension control in hypermobile athletes.",
+    "Teach landing with hip and knee flexion in jumping sports.",
+    "Early, full extension rehabilitation after knee surgery helps limit anterior interval scarring."
+  ],
+  clinicalPearls: [
+    "Ask the patient to stand and watch: knees that snap back into recurvatum are a strong clue.",
+    "If unloading tape reduces pain immediately, it supports the diagnosis and gives you a treatment tool [r1].",
+    "Differentiate from proximal patellar tendinopathy: fat pad pain is worse with extension and standing; tendon pain rises with load such as jumping and decline squats. The two often coexist [r4].",
+    "Do not over-read MRI fat pad oedema; it is common in pain-free athletes [r5].",
+    "After ACL reconstruction, anterior knee pain with loss of the last few degrees of extension needs surgical review for a cyclops lesion or fat pad scarring."
+  ],
+  related: ["patellar-tendinopathy", "patellofemoral-pain", "sinding-larsen-johansson", "prepatellar-bursitis", "acl-rupture"],
+
+  references: [
+    { id: "r1", citation: "Dragoo JL, Johnson C, McConnell J. Evaluation and treatment of disorders of the infrapatellar fat pad. Sports Med. 2012;42(1):51-67.", pmid: "22149697", doi: "10.2165/11595680-000000000-00000", type: "narrative-review", year: 2012 },
+    { id: "r2", citation: "Mace J, Bhatti W, Anand S. Infrapatellar fat pad syndrome: a review of anatomy, function, treatment and dynamics. Acta Orthop Belg. 2016;82(1):94-101.", pmid: "26984660", type: "narrative-review", year: 2016 },
+    { id: "r3", citation: "Abelleyra Lastoria DA, Benny CK, Hing CB. Predisposing factors for Hoffa's fat pad syndrome: a systematic review. Knee Surg Relat Res. 2023;35(1):17.", pmid: "37296488", doi: "10.1186/s43019-023-00192-4", type: "systematic-review", year: 2023 },
+    { id: "r4", citation: "Delorme JP, Jibri Z. The association of patellar tendinosis with patellar maltracking and Hoffa's fat pad impingement: a case-control MRI study. Clin Imaging. 2021;76:180-8.", pmid: "33957384", doi: "10.1016/j.clinimag.2021.04.011", type: "case-control", year: 2021 },
+    { id: "r5", citation: "Pappas GP, Vogelsong MA, Staroswiecki E, et al. Magnetic resonance imaging of asymptomatic knees in collegiate basketball players: the effect of one season of play. Clin J Sport Med. 2016;26(6):483-9.", pmid: "27347867", doi: "10.1097/JSM.0000000000000283", type: "cohort", year: 2016 },
+    { id: "r6", citation: "Jarraya M, Roemer FW, Engebretsen L, et al. Association of markers of patellofemoral maltracking to cartilage damage and bone marrow lesions on MRI: data from the 2016 Olympic Games of Rio De Janeiro. Eur J Radiol Open. 2021;8:100381.", pmid: "34660850", doi: "10.1016/j.ejro.2021.100381", type: "cross-sectional", year: 2021 },
+    { id: "r7", citation: "Dye SF, Vaupel GL, Dye CC. Conscious neurosensory mapping of the internal structures of the human knee without intraarticular anesthesia. Am J Sports Med. 1998;26(6):773-7.", pmid: "9850777", doi: "10.1177/03635465980260060601", type: "other", year: 1998 },
+    { id: "r8", citation: "Clockaerts S, Bastiaansen-Jenniskens YM, Runhaar J, et al. The infrapatellar fat pad should be considered as an active osteoarthritic joint tissue: a narrative review. Osteoarthritis Cartilage. 2010;18(7):876-82.", pmid: "20417297", doi: "10.1016/j.joca.2010.03.014", type: "narrative-review", year: 2010 },
+    { id: "r9", citation: "Rice DA, McNair PJ. Quadriceps arthrogenic muscle inhibition: neural mechanisms and treatment perspectives. Semin Arthritis Rheum. 2010;40(3):250-66.", pmid: "19954822", doi: "10.1016/j.semarthrit.2009.10.001", type: "narrative-review", year: 2010 }
+  ],
+
+  animation: {
+    title: "How Hoffa's fat pad gets pinched",
+    phases: [
+      {
+        type: "moi", label: "Mechanism", duration: 6, view: "lateral", environment: "pitch",
+        actors: [{ id: "athlete", kit: "athlete" }],
+        keyframes: [
+          { t: 0, pose: "run-contact", root: { x: -80 } },
+          { t: 1.0, pose: "kick-backswing", root: { x: -40 } },
+          { t: 1.9, pose: "kick-contact", joints: { kneeR: 0 }, root: { x: -20 }, ease: "in" },
+          { t: 2.4, pose: "kick-follow-through", joints: { kneeR: -10 }, root: { x: -10 } },
+          { t: 3.6, pose: "stand", root: { x: 0 } },
+          { t: 4.8, pose: "stand", joints: { kneeR: -8, kneeL: -6 }, root: { x: 0 } },
+          { t: 5.8, pose: "stand", joints: { kneeR: -8, kneeL: -6 }, root: { x: 0 } }
+        ],
+        props: [{ id: "ball", type: "ball-soccer", keyframes: [{ t: 0, x: -10, y: 0 }, { t: 1.9, x: -10, y: 0 }, { t: 2.3, x: 20, y: 0 }, { t: 3.2, x: 120, y: 0 }] }],
+        forces: [
+          { t: [1.8, 3.0], at: "kneeR", dir: "backward", label: "Snap into hyperextension" },
+          { t: [4.6, 6.0], at: "kneeR", dir: "backward", label: "Standing in locked knees" }
+        ],
+        highlights: [{ t: [2.0, 6], at: "kneeR" }],
+        impacts: [{ t: 2.3, at: "kneeR" }],
+        slowmo: [{ t: [1.7, 2.7], rate: 0.3 }],
+        captions: [
+          { t: 0, text: "A player swings to kick but scuffs the ball." },
+          { t: 1.9, text: "With no ball to stop the leg, the knee snaps past straight into hyperextension." },
+          { t: 2.8, text: "The fat pad behind the patellar tendon is pinched between femur and tibia." },
+          { t: 4.4, text: "Standing with knees locked back keeps pinching it, day after day." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "kneeR",
+        captions: [{ t: 0, text: "Zooming into the right knee, seen from the side as a sagittal slice." }]
+      },
+      {
+        type: "closeup", label: "Inside the knee", duration: 9, scene: "knee-sagittal",
+        actions: [
+          { t: 0, do: "highlight", target: "infrapatellarFatPad" },
+          { t: 0.3, do: "label", target: "infrapatellarFatPad", text: "Hoffa's fat pad: richly innervated" },
+          { t: 1.4, do: "arrow", at: "femoralCondyleWeightBearing", dir: "anterior", label: "Femur rolls forward in hyperextension" },
+          { t: 1.6, do: "arrow", at: "inferiorPolePatella", dir: "posterior", label: "Inferior pole tilts back" },
+          { t: 2.4, do: "impinge", target: "infrapatellarFatPad" },
+          { t: 2.4, do: "impact", at: "tibialPlateauAnterior" },
+          { t: 3.0, do: "label", target: "infrapatellarFatPad", text: "Pinched between femur, tibia and tendon" },
+          { t: 4.2, do: "inflame", target: "infrapatellarFatPad", amount: 0.7 },
+          { t: 4.4, do: "swell", target: "infrapatellarFatPad", amount: 0.5 },
+          { t: 5.0, do: "label", target: "infrapatellarFatPad", text: "Swollen fat pad is pinched more easily" },
+          { t: 6.0, do: "camera", at: "inferiorPolePatella", zoom: 1.6, dur: 1 },
+          { t: 6.6, do: "pain", at: "inferiorPolePatella" },
+          { t: 8.2, do: "camera", zoom: 1, dur: 0.8 }
+        ],
+        captions: [
+          { t: 0, text: "Hoffa's fat pad fills the space behind the patellar tendon, below the kneecap." },
+          { t: 1.4, text: "In hyperextension the femur rolls forward and the lower kneecap tilts back." },
+          { t: 2.4, text: "The fat pad is squeezed between bone and tendon, one of the most pain-sensitive tissues in the knee." },
+          { t: 4.2, text: "It bleeds a little, becomes inflamed and swells, so it is pinched again more easily." },
+          { t: 6.2, text: "Burning pain is felt either side of the tendon below the kneecap." }
+        ]
+      },
+      {
+        type: "micro", label: "Fat pad tissue", duration: 8, tissue: "capsule",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.8, stage: "inflammation" }, { t: 4.0, stage: "fibrosis" }, { t: 6.2, stage: "remodelling" }
+        ],
+        timeLabels: [{ t: 1.8, text: "Days" }, { t: 4.0, text: "Weeks to months of repeated pinching" }, { t: 6.2, text: "Months, once unloaded" }],
+        captions: [
+          { t: 0, text: "Fat lobules and fibrous septa lie under a thin synovial lining, threaded with nerves." },
+          { t: 1.8, text: "Pinching damages small vessels; substance P and cytokines cause swelling and pain." },
+          { t: 4.0, text: "Repeated impingement lays down collagen: the fat pad becomes fibrotic and stiff." },
+          { t: 6.2, text: "Unloaded, the inflammation settles and the tissue slowly remodels." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "LL5" }
+};
