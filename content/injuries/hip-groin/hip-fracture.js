@@ -343,10 +343,10 @@ export default {
         keyframes: [
           { t: 0, pose: "stand", root: { x: 0 } },
           { t: 1.2, pose: "stand", joints: { trunk: 8, hipR: 4, shoulderL: 30 }, root: { x: -4, roll: 6 } },
-          { t: 2.2, pose: "fall-sideways", root: { x: -20, roll: 40, grounded: false }, ease: "in" },
-          { t: 2.9, pose: "fall-sideways", root: { x: -40, roll: 85, grounded: false }, ease: "in" },
-          { t: 4.2, pose: "fall-sideways", root: { x: -42, roll: 88, grounded: false } },
-          { t: 5.8, pose: "fall-sideways", joints: { hipR: -6 }, root: { x: -42, roll: 88, grounded: false } }
+          { t: 2.2, pose: "fall-sideways", root: { x: -20, roll: 40, lift: -30, grounded: false }, ease: "in" },
+          { t: 2.9, pose: "fall-sideways", root: { x: -40, roll: 85, lift: -78, grounded: false }, ease: "in" },
+          { t: 4.2, pose: "fall-sideways", root: { x: -42, roll: 88, lift: -80, grounded: false } },
+          { t: 5.8, pose: "fall-sideways", joints: { hipR: -6 }, root: { x: -42, roll: 88, lift: -80, grounded: false } }
         ],
         forces: [
           { t: [2.6, 4.2], at: "hipR", dir: "medial", label: "Impact on greater trochanter" }

@@ -57,14 +57,14 @@ function bulgeY(s, x, y) {   // contents herniate through the fasciotomy (top of
 function compartment(g, s, p) {
   // interstitium / perimysium (fills with oedema fluid)
   el("ellipse", { cx: CX, cy: CY, rx: RX, ry: RY, fill: mix("anat-fascia", "stage-bg", 0.78) }, g);
-  if (s.open > 0.02) el("ellipse", { cx: CX, cy: CY - RY + 6 - 18 * s.open, rx: 112 * s.open, ry: 40 * s.open, fill: mix("anat-fascia", "stage-bg", 0.78) }, g);
+  if (s.open > 0.02) el("ellipse", { cx: CX, cy: CY - RY + 4 - 4 * s.open, rx: 124 * s.open, ry: 28 * s.open, fill: mix("anat-fascia", "stage-bg", 0.78) }, g);
   el("ellipse", { cx: CX, cy: CY, rx: RX, ry: RY, fill: col("fx-oedema"), opacity: f(0.2 + 0.8 * s.fluid * (1 - 0.4 * s.open)) }, g);
   // fibres
   const R = lerp(15.6, 17.2, s.swell);
   const healthyC = col("anat-muscle"), paleC = mix("anat-muscle", "stage-ink", 0.5), necC = mix("anat-muscle-edge", "stage-bg", 0.45);
   G.fibres.forEach((fb, i) => {
     const x = fb.x, y = bulgeY(s, fb.x, fb.y);
-    const necK = clamp((s.nec * 1.25 - fb.nec) * 3);
+    const necK = clamp((s.nec * 0.95 - fb.nec) * 3);
     const isch = s.isch * (0.75 + 0.25 * fb.k);
     const pts = []; for (let k = 0; k < 6; k++) { const a = Math.PI / 6 + (k * Math.PI) / 3; pts.push([x + Math.cos(a) * (R + fb.jit[k]), y + Math.sin(a) * (R + fb.jit[k])]); }
     const fill = necK > 0.5 ? necC : isch > 0.02 ? mix("anat-muscle", "stage-ink", 0.5 * isch) : mix("anat-muscle", "anat-muscle-light", 0.15 + 0.2 * fb.k);
@@ -113,9 +113,9 @@ function compartment(g, s, p) {
 const NUCC = () => mix("anat-vein", "anat-brain-deep", 0.35);
 
 function gauge(g, s) {
-  const cx = 690, cy = 150, r = 68, vmax = 80;
+  const cx = 690, cy = 160, r = 60, vmax = 80;
   el("rect", { x: 572, y: 62, width: 218, height: 190, rx: 8, fill: col("stage-caption-bg"), stroke: col("stage-ink", 0.15) }, g);
-  el("text", { x: cx, y: 82, "text-anchor": "middle", "font-size": 12.5, "font-weight": 600, fill: col("stage-ink", 0.9), text: "Compartment pressure" }, g);
+  el("text", { x: cx, y: 80, "text-anchor": "middle", "font-size": 12.5, "font-weight": 600, fill: col("stage-ink", 0.9), text: "Compartment pressure" }, g);
   const A = (v) => Math.PI + (clamp(v, 0, vmax) / vmax) * Math.PI;
   const P = (v, rr) => [cx + Math.cos(A(v)) * rr, cy + Math.sin(A(v)) * rr];
   const arcD = (v0, v1, rr) => { const [x0, y0] = P(v0, rr), [x1, y1] = P(v1, rr); return `M${f(x0)},${f(y0)} A${rr},${rr} 0 0 1 ${f(x1)},${f(y1)}`; };
@@ -131,7 +131,7 @@ function gauge(g, s) {
   const [nx, ny] = P(s.press, r - 10);
   el("path", { d: `M${cx},${cy} L${f(nx)},${f(ny)}`, stroke: col("stage-ink"), "stroke-width": 2.6, "stroke-linecap": "round" }, g);
   el("circle", { cx, cy, r: 5, fill: col("stage-ink") }, g);
-  el("text", { x: cx, y: cy + 26, "text-anchor": "middle", "font-size": 17, "font-weight": 700, fill: col(vc), text: `${Math.round(s.press)} mmHg` }, g);
+  el("text", { x: cx, y: cy + 24, "text-anchor": "middle", "font-size": 17, "font-weight": 700, fill: col(vc), text: `${Math.round(s.press)} mmHg` }, g);
   // perfusion bar
   el("text", { x: 584, y: 212, "font-size": 12, fill: col("stage-ink", 0.85), text: "Capillary perfusion" }, g);
   el("rect", { x: 584, y: 222, width: 194, height: 10, rx: 5, fill: col("stage-ink", 0.12) }, g);
@@ -188,7 +188,7 @@ export default {
     const s = params(ORDER.includes(stage) ? stage : "healthy", p);
     field(g, { tint: "anat-muscle", tintAmount: 0.05 });
     // subcutaneous tissue / neighbouring compartment outside the fascia
-    el("rect", { x: 0, y: 56, width: 560, height: 394, fill: mix("anat-fat", "stage-bg", 0.9) }, g);
+    el("rect", { x: 0, y: 0, width: 800, height: 450, fill: mix("anat-fat", "stage-bg", 0.9) }, g);
     compartment(g, s, p);
     gauge(g, s);
     labels(g, stage, s, p);

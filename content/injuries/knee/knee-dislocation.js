@@ -345,7 +345,7 @@ export default {
         props: [{ id: "ball", type: "ball-rugby", attach: "handL" }],
         forces: [
           { t: [2.2, 3.8], at: "kneeR", dir: "backward", label: "Hyperextension force", size: "l" },
-          { t: [2.4, 3.8], at: "shinR", dir: "forward", label: "Tibia driven forward off the femur" }
+          { t: [2.4, 3.8], at: "shinR", dir: "forward", label: "Tibia shifts forward" }
         ],
         highlights: [{ t: [2.4, 6], at: "kneeR" }],
         impacts: [{ t: 2.5, at: "kneeR" }],
@@ -406,7 +406,7 @@ export default {
         timeLabels: [{ t: 1.4, text: "Moment of injury" }, { t: 6.3, text: "Days – weeks" }, { t: 8.0, text: "Months" }],
         captions: [
           { t: 0, text: "The common peroneal nerve winds around the fibular neck, close to the posterolateral knee." },
-          { t: 1.4, text: "Traction stretches the nerve and its small blood vessels, starving it of oxygen." },
+          { t: 1.4, text: "Traction injures a segment of nerve and its small vessels, starving it of oxygen." },
           { t: 3.0, text: "Milder stretch damages the myelin sheath only: conduction blocks but axons survive." },
           { t: 4.6, text: "Greater stretch tears axons over a long segment of nerve." },
           { t: 6.3, text: "Below the tear, axons and myelin break down and macrophages clear the debris." },
