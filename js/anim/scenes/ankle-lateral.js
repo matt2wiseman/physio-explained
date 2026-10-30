@@ -70,7 +70,7 @@ const CUBOID = M([[82.5, 49.4], [88, 51], [96, 50.6], [103, 48.6], [107, 44.4], 
   [82, 34], [82.2, 42]]);
 const MT5 = M([[107.4, 39.4], [113, 38.2], [126, 33.6], [145, 27.2], [163, 21.6], [168, 21.6], [174, 20.8], [180, 17.8], [182.2, 13], [180.2, 9], [174, 7],
   [168, 8.4], [163, 12.4], [145, 17], [128, 20.4], [114, 23], [104.5, 19.6], [99, 18], [97.6, 21.4], [100.8, 26.2], [105.6, 30.4], [107.6, 35]]);
-const OS_TRIGONUM = M([[21.6, 66.6], [23.6, 70.2], [27.2, 71], [29.4, 69], [29.6, 65.2], [27.4, 62.4], [23.4, 62.8]]);
+const OS_TRIGONUM = M([[19.8, 66.4], [21.8, 70], [25.6, 70.8], [28.6, 69.2], [29.4, 65.4], [27, 62.4], [22.4, 62.6]]);
 // decorative medial-column / forefoot bones seen behind the lateral column
 const LAT_CUNEIFORM = M([[106.6, 50], [106.8, 58], [106.6, 66.5], [110, 69.4], [121, 68.6], [126, 64.5], [126.4, 53], [123, 48.2], [112, 47.6]]);
 const MT3 = M([[126.6, 66], [150, 55.6], [175, 42], [192, 30.6], [197.6, 25.4], [196, 18.6], [190, 16.6], [172, 26.4], [150, 40.4], [127.6, 51.6]]);
@@ -83,11 +83,11 @@ const DOME = [[35, 79], [40, 85], [46, 88], [52, 88.7], [58, 88.1], [63, 86], [6
 
 /* ---------- bands (mm → px) ---------- */
 const ATFL = { from: m([48.6, 70.6]), to: m([66, 73.4]), width: 7.5 * S, bend: -2 };
-const CFL = { from: m([44.6, 63.6]), to: m([39.6, 45.6]), width: 5 * S, bend: 3 };
+const CFL = { from: m([45.2, 65.4]), to: m([39.4, 45.4]), width: 5 * S, bend: 2.5 };
 const ACHILLES = M([[8, 192], [7.5, 160], [7, 130], [6, 104], [5, 80], [3.6, 62], [2.6, 50], [2.6, 39], [4.4, 30.5]]);
-const BREVIS = M([[37, 160], [35, 125], [33, 98], [32, 84], [32, 73], [33.6, 65], [36.6, 58.6], [40.6, 53], [47, 48.6], [55, 44.6], [64, 40], [75, 35], [86, 30],
+const BREVIS = M([[38, 198], [36, 150], [34.6, 120], [34, 98], [33.6, 84], [33.6, 73], [34.8, 65], [37.6, 58], [41.6, 52.6], [47.4, 48.4], [55, 44.6], [64, 40], [75, 35], [86, 30],
   [95, 26], [100.6, 24.2]]);
-const LONGUS = M([[32, 160], [29.6, 125], [27.6, 98], [27, 84], [27, 73], [28.6, 64], [31.6, 56], [36.6, 49], [43, 43.6], [51, 38.6], [61, 33.6], [72, 28.6],
+const LONGUS = M([[33, 198], [31, 150], [30, 120], [29.6, 98], [29.6, 84], [29.8, 73], [31, 64], [33.6, 56.4], [37.6, 49.4], [43.4, 43.6], [51, 38.6], [61, 33.6], [72, 28.6],
   [83, 24.6], [90.4, 22]]);
 const ATFL_MID = mid(ATFL.from, ATFL.to);
 
@@ -120,7 +120,7 @@ export default {
     cuboid: { type: "bone", z: 7, d: spline(CUBOID), label: m([94, 38]) },
     fifthMetatarsal: { type: "bone", z: 8, d: spline(MT5), label: m([150, 22]) },
     fifthToeDeco: { type: "bone", z: 8, d: spline(TOE5) },
-    osTrigonum: { type: "bone", z: 9, d: spline(OS_TRIGONUM), label: m([25.6, 66.6]) },
+    osTrigonum: { type: "bone", z: 9, d: spline(OS_TRIGONUM), label: m([23.6, 66.6]) },
 
     /* cartilage & spaces (translucent at rest; above bone so bleed/effusion read) */
     tibiotalarCartilage: { type: "cartilage", z: 10, d: rim(M(DOME), 4.2, 0.35), axis: [m([70, 80]), m([36, 80.5])], label: m([52, 87.4]) },
@@ -154,7 +154,7 @@ export default {
     achillesTendon: { type: "tendon", z: 17, points: ACHILLES, width: 6.6 * S, label: m([6, 120]) },
     peronealBrevisTendon: { type: "tendon", z: 18, points: BREVIS, width: 5 * S, label: m([80, 32.6]) },
     peronealLongusTendon: { type: "tendon", z: 19, points: LONGUS, width: 5 * S, label: m([66, 31]) },
-    superiorPeronealRetinaculum: { type: "ligament", z: 20, from: m([33.4, 77.6]), to: m([17, 52]), width: 9 * S, bend: -2, label: m([25, 64]) },
+    superiorPeronealRetinaculum: { type: "ligament", z: 20, from: m([34, 77]), to: m([21.6, 57.6]), width: 5 * S, bend: -1.5, label: m([28, 67.6]) },
     inferiorPeronealRetinaculumDeco: { type: "ligament", z: 20, ghost: true, from: m([58.4, 50.4]), to: m([50.4, 30]), width: 6 * S, bend: 2 },
     extensorTendonsDeco: { type: "tendon", z: 21, ghost: true, points: M([[70.6, 192], [73, 150], [76.6, 112], [81, 95], [89, 84], [106, 70.6], [128, 57], [156, 42.6], [184, 29]]), width: 6 * S }
   },
