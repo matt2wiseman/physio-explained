@@ -1,0 +1,404 @@
+export default {
+  id: "scfe",
+  name: "Slipped capital femoral epiphysis (SCFE)",
+  shortName: "SCFE",
+  aka: ["slipped upper femoral epiphysis", "SUFE", "slipped capital femoral epiphysis", "adolescent hip slip", "epiphyseal slip of the hip"],
+  region: "hip-groin",
+  tissues: ["physis", "bone"],
+  onset: "acute-or-gradual",
+  mechanismType: ["insidious", "non-contact"],
+  populations: ["children and adolescents aged about 8–15 years", "adolescents with obesity", "boys more than girls", "children with endocrine disorders (hypothyroidism, growth hormone treatment)"],
+  sports: [],
+  urgency: "emergency",
+  summary: "The femoral head (capital epiphysis) slips off the femoral neck through the growth plate in an adolescent, often presenting as a limp with thigh or knee pain. Same-day referral and non-weight-bearing are needed.",
+  keyFacts: [
+    { label: "Peak age", value: "About 8–15 years, during the adolescent growth spurt" },
+    { label: "Incidence", value: "About 10.8 per 100,000 children" },
+    { label: "Key sign", value: "Hip held in external rotation as it is flexed, with reduced internal rotation" },
+    { label: "Imaging", value: "Both hips: AP plus frog-leg (stable) or cross-table lateral (unstable) radiographs" },
+    { label: "Stability", value: "Unstable slips (cannot bear weight) had 47% AVN vs 0% in stable slips" },
+    { label: "Pitfall", value: "Knee or thigh pain doubles the diagnostic delay; always examine the hip" }
+  ],
+  overview: "Slipped capital femoral epiphysis (SCFE) is the most common hip disorder of adolescence and one of the most commonly missed diagnoses in children [r1]. The proximal femoral growth plate (physis) fails in shear, so the femoral neck moves forwards and upwards while the capital epiphysis stays in the acetabulum; relative to the neck, the head slips posteriorly and inferiorly. It is strongly linked to obesity, the growth spurt and, less often, endocrine disorders [r1,r3].\n\nThe single most important prognostic factor is physeal stability. In stable slips the child can bear weight; in unstable slips they cannot, even with crutches, and the risk of avascular necrosis (AVN) is far higher [r4]. Delayed diagnosis is common, particularly when pain is felt in the knee or distal thigh, and longer delays are linked with more severe slips [r5]. Any child or adolescent with a limp and hip, thigh or knee pain needs a hip examination; if SCFE is suspected the child should stop weight-bearing and be referred the same day. Treatment is surgical (usually in situ screw fixation), and physiotherapy supports protected mobilisation, recovery of strength and gait, return to activity and long-term hip health [r1].",
+
+  epidemiology: {
+    text: "Using US national inpatient data, the incidence of SCFE in children aged 9–16 years was 10.80 per 100,000, higher in boys (13.35) than girls (8.07), and 3.94 times higher in black and 2.53 times higher in Hispanic children than in white children; seasonal and latitude variation suggests environmental factors [r2]. In a Scottish cohort of almost 600,000 children, each unit increase in BMI score at age 5–6 years increased SCFE risk 1.7-fold; severe obesity at 5–6 years gave a 5.9-fold and at 11–12 years a 17.0-fold higher risk [r3]. After a unilateral slip, 14% of patients develop a symptomatic contralateral slip and a further 38% an asymptomatic one [r9].",
+    riskFactors: {
+      intrinsic: [
+        "Obesity, with a strong dose–response relationship (modifiable) [r3]",
+        "Adolescent growth spurt and male sex [r1,r2]",
+        "Endocrine disorders: hypothyroidism, growth hormone treatment, hypogonadism, panhypopituitarism [r1]",
+        "Black or Hispanic ethnicity [r2]",
+        "Younger age and a steeper posterior sloping angle (risk of contralateral slip) [r10]"
+      ],
+      extrinsic: [
+        "Sport and play add shear load but rarely cause SCFE alone; a minor fall or twist often precipitates an unstable slip",
+        "Delay in diagnosis allowing slip progression [r5]"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "SCFE is a mechanical failure of the proximal femoral physis under shear. During the growth spurt the physis is thicker and its hypertrophic zone weaker; excess body weight raises the shear force across it, and a more vertical physis or retroverted femoral neck increases that shear [r1,r10]. The physis gradually gives way (stable slip) or fails suddenly after minor trauma (unstable slip). The epiphysis stays in the acetabulum while the neck displaces anteriorly and rotates externally.",
+    sequence: [
+      "During the adolescent growth spurt the proximal femoral physis widens and its hypertrophic zone is mechanically weakest.",
+      "Body weight and muscle forces apply shear across the physis with every step; obesity multiplies this load [r3].",
+      "Microscopic failure in the physis causes vague hip, thigh or knee pain and a limp, often for weeks [r5].",
+      "The metaphysis (femoral neck) gradually moves anteriorly and externally rotates relative to the epiphysis (stable slip) [r1].",
+      "A minor fall, twist or sporting movement can complete the failure suddenly, so the child cannot bear weight (unstable slip) [r4].",
+      "Displacement can kink or tear the retinacular vessels to the epiphysis, causing AVN, especially in unstable slips [r4,r8].",
+      "The residual metaphyseal prominence acts as a cam and can cause femoroacetabular impingement later [r1]."
+    ],
+    variants: [
+      { name: "Stable (chronic) slip", description: "Gradual onset over weeks or months; the child can walk with or without crutches. Low AVN risk [r4]." },
+      { name: "Unstable (acute or acute-on-chronic) slip", description: "Sudden severe pain, unable to bear weight even with crutches. High AVN risk [r4]." },
+      { name: "Atypical SCFE", description: "Younger than 10 or older than 16 years, or low weight: screen for endocrine or renal disease [r1]." },
+      { name: "Contralateral slip", description: "Develops later in a substantial proportion, more often in younger children with endocrine disorders or a high posterior sloping angle [r9,r10]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The proximal femur has a capital epiphysis (the femoral head) separated from the metaphysis of the neck by the proximal femoral physis. During adolescence the physis becomes more oblique (vertical) and is under increasing shear as body mass rises. The perichondrial ring and periosteum provide some stability, which declines during the growth spurt. The epiphysis is supplied mainly by retinacular branches of the medial circumflex femoral artery that run along the posterior and superior neck; these are vulnerable when the epiphysis displaces. The obturator and femoral nerves supply the hip and knee, which explains why hip pathology so often presents as knee pain.",
+    structures: [
+      { name: "Proximal femoral physis", role: "Growth plate; fails in shear through the hypertrophic zone" },
+      { name: "Capital femoral epiphysis (femoral head)", role: "Stays in the acetabulum; displaces posteriorly and inferiorly relative to the neck" },
+      { name: "Femoral neck (metaphysis)", role: "Moves anteriorly and externally rotates; its anterior prominence can later cause cam impingement" },
+      { name: "Retinacular vessels", role: "Main blood supply to the epiphysis; at risk in unstable slips [r4]" },
+      { name: "Obturator and femoral nerves", role: "Shared hip and knee innervation, so pain is often referred to the knee [r5]" },
+      { name: "Hip abductors and external rotators", role: "Weakness and altered mechanics cause a Trendelenburg, out-toeing gait" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "The physis fails through its hypertrophic zone, where columns of enlarging chondrocytes and a thin matrix make it weakest in shear. Hormonal changes in the growth spurt (and endocrine disorders) widen and weaken this zone, while obesity increases the shear force and is associated with a more retroverted neck [r1,r3]. In stable slips, gradual displacement allows periosteal new bone to form along the posterior neck. In unstable slips, sudden failure tears the periosteum and can disrupt the retinacular vessels, leading to AVN: 47% of unstable versus none of the stable hips in Loder's series [r4], and 18.5–27.6% after pinning in situ or closed reduction in a later meta-analysis [r8].\n\nThe residual deformity — a posteriorly and inferiorly displaced head with an anterior metaphyseal prominence — reduces head–neck offset. This behaves like cam morphology, can damage the labrum and anterosuperior cartilage, and is associated with later impingement and osteoarthritis [r1,r9]. Chondrolysis (rapid loss of joint cartilage) is a further serious complication [r1].",
+    structures: [
+      { name: "Proximal femoral physis", effect: "Widening and irregularity (pre-slip), then shear failure (Salter–Harris I-type) [r1]" },
+      { name: "Capital epiphysis", effect: "Posterior and inferior displacement relative to the neck; AVN risk, especially in unstable slips [r4,r8]" },
+      { name: "Femoral neck", effect: "Anterior metaphyseal prominence (cam-like deformity) and remodelling" },
+      { name: "Hip joint", effect: "Synovitis and effusion; later labral and chondral damage from impingement; chondrolysis [r1]" }
+    ],
+    muscles: [
+      { name: "Hip abductors (gluteus medius/minimus)", effect: "Weakness and altered lever arm produce a Trendelenburg gait" },
+      { name: "Hip internal rotators and flexors", effect: "Reduced internal rotation and flexion range from the deformity, not just tightness" },
+      { name: "Quadriceps", effect: "Disuse atrophy during protected weight-bearing; knee pain may lead to misdirected knee rehab [r5]" }
+    ],
+    cellular: [
+      { phase: "Physeal weakening", timing: "Weeks–months (growth spurt)", description: "Hypertrophic-zone chondrocytes enlarge and matrix thins; hormonal factors reduce physeal strength." },
+      { phase: "Microfailure and synovitis", timing: "Weeks", description: "Shear microfractures and synovial inflammation cause pain and a limp before visible displacement." },
+      { phase: "Slip", timing: "Gradual or sudden", description: "Physeal separation; unstable slips tear periosteum and may disrupt retinacular vessels [r4]." },
+      { phase: "Physeal closure and remodelling", timing: "Months after fixation", description: "Screw fixation promotes physeal closure; the neck remodels partly, but the deformity usually persists." }
+    ],
+    systems: [
+      { system: "Endocrine / metabolic", effect: "Obesity and endocrine disorders (hypothyroidism, growth hormone, hypogonadism) weaken the physis or raise shear; atypical cases need endocrine screening [r1,r3]." },
+      { system: "Nervous system", effect: "Pain referred along the obturator and femoral nerves to the thigh and knee delays diagnosis (median delay 15 vs 6 weeks for knee vs hip pain) [r5]." },
+      { system: "Vascular", effect: "Retinacular vessel injury in unstable slips causes AVN [r4,r8]." },
+      { system: "Musculoskeletal chain", effect: "External rotation deformity, leg-length difference and abductor weakness alter gait; the other hip is at risk of slipping [r9]." },
+      { system: "Psychological / social", effect: "Weight stigma, reduced activity and time off school or sport; family-centred, non-judgemental education is needed." }
+    ]
+  },
+
+  grading: {
+    system: "Loder stability classification (with slip-angle severity)",
+    grades: [
+      { grade: "Stable", description: "Able to bear weight with or without crutches [r4].", prognosis: "Low AVN risk (0% in Loder's series); 96% satisfactory [r4]" },
+      { grade: "Unstable", description: "Unable to bear weight even with crutches because of severe pain [r4].", prognosis: "High AVN risk (47% in Loder's series) [r4]" },
+      { grade: "Mild (slip angle <30°)", description: "Southwick head–shaft angle difference less than 30° on the lateral view [r5,r7].", prognosis: "Best long-term outcome" },
+      { grade: "Moderate (30–50°)", description: "Slip angle 30–50° [r5,r7].", prognosis: "Greater risk of impingement" },
+      { grade: "Severe (>50°)", description: "Slip angle greater than 50°; associated with longer diagnostic delay [r5,r7].", prognosis: "Highest risk of impingement and osteoarthritis; may need realignment surgery" }
+    ]
+  },
+
+  timeframes: {
+    summary: "After in situ fixation, the physis closes over months and the child returns to activity gradually. Weight-bearing and sport timelines depend on slip stability and the surgeon's protocol; contralateral surveillance continues until skeletal maturity [r9].",
+    healing: [
+      { phase: "Post-operative recovery", startDay: 0, endDay: 14, description: "Pain and inflammation settle; crutch walking as allowed" },
+      { phase: "Physeal stabilisation", startDay: 14, endDay: 90, description: "Screw holds the epiphysis while the physis begins to close" },
+      { phase: "Physeal closure and remodelling", startDay: 60, endDay: 365, description: "Physis fuses; the neck remodels partly" },
+      { phase: "AVN and contralateral surveillance", startDay: 30, endDay: 730, description: "Clinical and radiographic follow-up until skeletal maturity" }
+    ],
+    milestones: [
+      { label: "Surgery (in situ fixation)", day: 1, note: "Urgent; unstable slips as emergencies" },
+      { label: "Full weight-bearing (stable slip)", day: 21, note: "Typical clinical range 0–6 weeks, per surgeon" },
+      { label: "Full weight-bearing (unstable slip)", day: 56, note: "Typical clinical range 6–8+ weeks, per surgeon" },
+      { label: "Return to non-contact activity", day: 90, note: "Typical clinical range 3–4 months" },
+      { label: "Return to contact sport", day: 150, note: "Surgeon-dependent; often after evidence of physeal closure" }
+    ],
+    returnToSport: "Return to running and non-contact sport typically 3–4 months after fixation of a stable slip; contact sport is often delayed until there is evidence of physeal closure. Unstable slips and AVN delay or prevent return. Decisions rest with the treating surgeon."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Limp and poorly localised pain in the hip, groin, thigh or knee [r1]",
+      "Knee or distal thigh pain alone in many children, which delays diagnosis [r5]",
+      "Gradual onset over weeks (stable) or sudden severe pain after a minor fall or twist (unstable) [r4]",
+      "Inability to bear weight even with crutches (unstable) [r4]",
+      "Reduced ability to run, play sport or sit cross-legged"
+    ],
+    signs: [
+      "Antalgic and Trendelenburg gait with the foot turned out",
+      "Obligatory external rotation as the hip is flexed (Drehmann sign)",
+      "Reduced or absent hip internal rotation and flexion",
+      "Apparent leg shortening on the affected side",
+      "Normal knee examination despite knee pain"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Age, growth spurt and weight history; any endocrine disorder or growth hormone treatment [r1,r3]",
+      "Location of pain, including the knee or thigh, and duration of symptoms [r5]",
+      "Ability to bear weight (stability) and any recent minor fall or twist [r4]",
+      "Previous slip or symptoms in the other hip [r9]",
+      "Red-flag screen: fever, night pain, systemic illness (septic arthritis, malignancy)",
+      "Impact on school, sport and family; previous assessments for 'knee pain'"
+    ],
+    observation: ["Gait: antalgic, Trendelenburg, out-toeing, or non-weight-bearing", "Resting leg position (externally rotated)", "Apparent leg-length difference"],
+    palpation: ["Usually little focal tenderness; anterior hip may be sore", "Normal knee palpation despite knee pain points to the hip"],
+    rangeOfMotion: ["Compare hip internal rotation in flexion and extension with the other side: reduced in SCFE", "Observe the thigh as the hip is flexed: obligatory external rotation (Drehmann sign)", "Do not force range if unstable SCFE is suspected"],
+    strength: ["Avoid strength testing if SCFE is suspected", "After fixation: hip abductor, extensor and flexor dynamometry; quadriceps strength"],
+    neuro: [],
+    functional: ["Ability to walk and bear weight (do not ask a child with suspected unstable SCFE to walk or hop)", "After treatment: single-leg stance, squat and hop tests before sport"],
+    specialTests: [
+      { name: "Drehmann sign", purpose: "Detect SCFE or other hip pathology reducing internal rotation", procedure: "Child supine. Passively flex the hip and knee and watch the thigh.", positive: "The thigh rolls into obligatory external rotation and abduction as the hip flexes.", refs: [] },
+      { name: "Internal rotation comparison", purpose: "Detect loss of hip internal rotation", procedure: "Measure internal rotation with the hip flexed to 90° and in prone, comparing sides.", positive: "Marked reduction or pain on the affected side.", refs: [] },
+      { name: "Log roll", purpose: "Low-load test for an irritable hip", procedure: "Child supine, legs straight. Gently roll the thigh inwards and outwards.", positive: "Pain or guarding; avoid further provocative testing and refer.", refs: [] }
+    ],
+    clinicalRules: [
+      { name: "Modified Klein's line (AP radiograph)", description: "A line along the superior femoral neck should intersect the epiphysis. The classic 'no intersection' definition identified only 40.3% of slips; measuring the width of epiphysis lateral to the line and treating a side-to-side difference of 2 mm as abnormal raised sensitivity to 79% [r6]." },
+      { name: "Examine the hip in every child with knee pain", description: "Knee or distal thigh pain was an independent predictor of diagnostic delay (median 15 vs 6 weeks) [r5]." }
+    ],
+    outcomeMeasures: [
+      { name: "Pain-free weight-bearing and gait quality", use: "Track recovery after fixation" },
+      { name: "Hip range of motion (internal rotation, flexion)", use: "Monitor deformity and impingement" },
+      { name: "Paediatric PROMs (e.g. PedsQL, HAGOS in adolescents)", use: "Quality of life and hip function during recovery" },
+      { name: "Hand-held dynamometry", use: "Hip and quadriceps strength before return to sport" }
+    ],
+    imaging: [
+      { modality: "Plain radiographs of both hips", indication: "Any child or adolescent with hip, thigh or knee pain and a limp: AP plus frog-leg lateral (stable) or cross-table lateral (unstable) [r1]", findings: "Widened, irregular physis; epiphysis displaced posteriorly and inferiorly; abnormal Klein's line [r6]; slip angle on the lateral view [r7]" },
+      { modality: "MRI", indication: "Suspected pre-slip with normal radiographs, or to assess AVN", findings: "Physeal widening and oedema; femoral head perfusion" }
+    ]
+  },
+
+  differentials: [
+    { name: "Osgood–Schlatter disease", id: "osgood-schlatter", distinguishing: "Pain and swelling at the tibial tuberosity with normal hip range. A child with knee pain but a normal knee needs a hip examination [r5]." },
+    { name: "Patellofemoral pain", id: "patellofemoral-pain", distinguishing: "Anterior knee pain with stairs and squats, normal hip internal rotation and normal gait." },
+    { name: "Pelvic apophyseal avulsion fracture", id: "pelvic-apophyseal-avulsion", distinguishing: "Sudden pain during sprinting or kicking with tenderness at the ASIS, AIIS or ischial tuberosity; hip rotation preserved." },
+    { name: "Adductor strain", id: "adductor-longus-strain", distinguishing: "Pain on resisted adduction and adductor tenderness; normal hip rotation." },
+    { name: "Septic arthritis or transient synovitis", distinguishing: "Younger children; fever, raised inflammatory markers and a very irritable hip suggest septic arthritis (emergency)." },
+    { name: "Legg–Calvé–Perthes disease", distinguishing: "Usually younger (4–8 years), insidious limp; radiographs show femoral head fragmentation rather than a slip." },
+    { name: "FAI syndrome", id: "fai-syndrome", distinguishing: "Older adolescents and adults with closed growth plates; groin pain with flexion and rotation. Previous SCFE can cause cam-type FAI." }
+  ],
+  redFlags: [
+    "A child or adolescent with hip, thigh or knee pain and a limp, reduced internal rotation or obligatory external rotation: suspect SCFE. Stop weight-bearing (crutches or wheelchair) and arrange same-day radiographs and orthopaedic referral.",
+    "Sudden inability to bear weight even with crutches: unstable SCFE. Treat as an emergency; do not ask the child to walk or hop [r4].",
+    "Fever, raised inflammatory markers or severe pain on any hip movement: suspect septic arthritis and refer to emergency.",
+    "SCFE before age 10 or after 16, or in a child with normal or low weight: screen for endocrine or renal disease [r1].",
+    "New pain in the other hip after a unilateral slip: suspect a contralateral slip and arrange urgent radiographs [r9]."
+  ],
+
+  management: {
+    principles: "SCFE is managed surgically. The goals are to prevent slip progression and avoid AVN, chondrolysis and later impingement [r1]. Stable slips are usually treated with in situ screw fixation; unstable slips are also usually fixed, but the timing of surgery and the role of reduction remain controversial [r1,r8]. Prophylactic fixation of the other hip is considered on an individual basis, particularly for younger children, those with endocrine disorders and those with a high posterior sloping angle [r9,r10].\n\nThe physiotherapist's most important roles are recognising the condition (especially when pain is felt at the knee), stopping weight-bearing and referring urgently [r5]. After fixation, physiotherapy follows the surgeon's weight-bearing protocol, restores gait, range and strength, and guides a staged return to activity, with education about weight, physical activity and warning signs in the other hip [r1,r3].",
+    medical: [
+      { name: "In situ screw fixation (stable SCFE)", description: "Single cannulated screw across the physis without attempting reduction; prevents further slip and promotes physeal closure [r1].", evidence: "limited", recommendation: "recommended", refs: ["r1"] },
+      { name: "Surgical management of unstable SCFE", description: "Usually urgent fixation; options include pinning in situ, closed or open reduction and subcapital realignment (e.g. modified Dunn). Pooled AVN prevalence was 18.5% after pinning in situ and 23.0–27.6% after pinning with closed reduction [r8].", evidence: "limited", recommendation: "recommended", refs: ["r8"] },
+      { name: "Prophylactic fixation of the contralateral hip", description: "After a unilateral slip, 14% develop a symptomatic and 38% an asymptomatic contralateral slip; the advantages of prophylactic pinning seem to outweigh the risks in many patients [r9]. Younger age and a higher posterior sloping angle predict a contralateral slip [r10].", evidence: "limited", recommendation: "consider", refs: ["r9", "r10"] },
+      { name: "Endocrine assessment", description: "For atypical presentations (younger than 10, older than 16, normal weight) or bilateral slips [r1].", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
+      { name: "Non-operative management (casting, bed rest)", description: "Does not reliably prevent slip progression and risks complications; surgery is standard [r1].", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] }
+    ],
+    physio: [
+      { name: "Recognition, protected weight-bearing and urgent referral", description: "Examine the hip in every child with thigh or knee pain and a limp; if SCFE is suspected, stop weight-bearing and arrange same-day referral. Knee pain doubles diagnostic delay, and longer delay is linked to more severe slips [r5].", evidence: "limited", recommendation: "recommended", refs: ["r5"] },
+      { name: "Post-operative staged rehabilitation", description: "Protected weight-bearing per the surgeon, then restoration of gait, range of motion, hip and quadriceps strength and functional tasks, progressing to running and sport [r1].", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
+      { name: "Physical activity and healthy-weight support", description: "Obesity is strongly associated with SCFE [r3]. Encourage enjoyable, joint-friendly activity and family-based healthy-lifestyle support, using non-stigmatising language.", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
+      { name: "Education on contralateral hip symptoms", description: "Teach the child and family to report any pain in the other hip, thigh or knee promptly [r9].", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
+      { name: "Treating knee pain without examining the hip", description: "Physiotherapy for 'knee pain' in a limping adolescent without a hip examination delays diagnosis and allows the slip to progress [r5].", evidence: "limited", recommendation: "not-recommended", refs: ["r5"] },
+      { name: "Stretching or mobilising to 'restore' internal rotation", description: "Loss of internal rotation reflects bony deformity; forced stretching does not correct it and may stress the fixation or the joint.", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] }
+    ],
+    education: [
+      "The growth plate at the top of the thigh bone has slipped. A small operation fixes it so it cannot slip further.",
+      "Knee pain can come from the hip. If the other hip, thigh or knee starts to hurt, tell us straight away.",
+      "Use crutches exactly as advised; the surgeon will decide when full weight-bearing is safe.",
+      "Being active is good for your hips and general health; we will build up activity step by step.",
+      "Some children need checks until they stop growing to make sure both hips stay healthy."
+    ]
+  },
+
+  rehab: {
+    overview: "Rehabilitation follows in situ fixation and is guided by slip stability and the surgeon's protocol. Stable slips may be allowed to bear weight as tolerated with crutches early; unstable slips usually require protected weight-bearing for 6–8 weeks or more. Progress through stages by criteria: pain-free gait, restored strength and functional control, and surgical clearance. Do not force internal rotation, which is limited by bony deformity. Monitor for AVN (new or worsening pain, stiffness, limp) and for symptoms in the other hip [r4,r9].",
+    stages: [
+      {
+        name: "Protect & mobilise",
+        timeframe: "Weeks 0–6 (longer if unstable)",
+        goals: ["Independent, safe crutch walking with prescribed weight-bearing", "Pain control", "Maintain knee and ankle range and general fitness"],
+        precautions: ["Weight-bearing exactly as prescribed by the surgeon", "No running, jumping or contact play", "Report increasing hip pain or stiffness (possible AVN)"],
+        exercises: [
+          { name: "Quadriceps sets", dosage: "10 × 5 s, 3×/day", figure: { pose: "ex-quad-set", view: "lateral", props: ["mat"] } },
+          { name: "Gluteal sets and supine isometric abduction", dosage: "10 × 5 s, 3×/day" },
+          { name: "Supine heel slides", dosage: "2 × 10, 2×/day", figure: { pose: "ex-heel-slide", view: "lateral", props: ["mat"] } },
+          { name: "Seated upper-body and core activity (e.g. dead bug)", dosage: "2–3 × 8–10", figure: { pose: "ex-dead-bug", view: "lateral", props: ["mat"] } },
+          { name: "Crutch walking and stairs practice", dosage: "Daily", figure: { pose: "walk-heel-strike", view: "lateral" } }
+        ],
+        progressionCriteria: ["Surgeon clearance for full weight-bearing", "Pain-free crutch walking", "No signs of AVN or contralateral symptoms"]
+      },
+      {
+        name: "Restore gait & strength",
+        timeframe: "Weeks 6–12",
+        goals: ["Normal gait without crutches", "Hip abductor and extensor strength", "Functional range within the limits of the deformity"],
+        precautions: ["Wean crutches as the Trendelenburg sign resolves", "No impact activity yet"],
+        exercises: [
+          { name: "Glute bridge", dosage: "3 × 10–15", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } },
+          { name: "Side-lying clamshell progressing to side plank", dosage: "3 × 12–15 / 3 × 20–30 s", figure: { pose: "ex-clamshell", view: "lateral", props: ["mat"] } },
+          { name: "Standing hip abduction with band", dosage: "3 × 12 each side", figure: { pose: "ex-hip-abduction-standing", view: "anterior", props: ["resistance-band"] } },
+          { name: "Sit-to-stand and box squat", dosage: "3 × 10–12", figure: { pose: "ex-squat", view: "lateral", props: ["box"] } },
+          { name: "Single-leg balance", dosage: "3 × 30 s each side", figure: { pose: "ex-single-leg-balance", view: "anterior" } },
+          { name: "Stationary cycling or swimming", dosage: "20–30 min, 3–5×/week" }
+        ],
+        progressionCriteria: ["Normal gait without aids", "Hip strength ≥80% of the other side", "Single-leg stance 30 s without pelvic drop"]
+      },
+      {
+        name: "Return to running & play",
+        timeframe: "Months 3–4",
+        goals: ["Pain-free running and jumping", "Agility and coordination", "Return to physical education and non-contact sport"],
+        precautions: ["Contact sport only when the surgeon allows (often after physeal closure)", "Monitor both hips for new pain"],
+        exercises: [
+          { name: "Step-ups and step-downs", dosage: "3 × 10 each side", figure: { pose: "ex-step-up", view: "lateral", props: ["step"] } },
+          { name: "Split squat", dosage: "3 × 8–10 each side", figure: { pose: "ex-split-squat", view: "lateral" } },
+          { name: "Jumping and hopping games", dosage: "2–3 × 5–10 contacts, progressing", figure: { pose: "ex-hop", view: "lateral" } },
+          { name: "Graded running program", dosage: "Alternate days, building to 20–30 min" }
+        ],
+        progressionCriteria: ["Pain-free running and hopping", "Strength and hop symmetry ≥90%", "Surgeon clearance for sport"]
+      },
+      {
+        name: "Sport & long-term hip health",
+        timeframe: "Months 4–12+",
+        goals: ["Return to chosen sport", "Lifelong physical activity", "Surveillance for impingement symptoms and the other hip"],
+        precautions: ["Report groin pain with deep flexion (possible impingement) or pain in the other hip"],
+        exercises: [
+          { name: "Sport-specific agility drills", dosage: "2–3×/week", figure: { pose: "cut-plant", view: "anterior" } },
+          { name: "Ongoing strength program", dosage: "2×/week" },
+          { name: "Enjoyable regular physical activity", dosage: "At least 60 min/day of play or sport" }
+        ],
+        progressionCriteria: ["Full participation without symptoms", "Discharge plan agreed with the surgeon and family"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "Surgeon clearance (often requiring radiographic evidence of physeal stability or closure for contact sport)",
+      "Pain-free walking, running, hopping and change of direction",
+      "Hip and quadriceps strength ≥90% of the other side",
+      "No signs of AVN or contralateral slip [r4,r9]",
+      "Child and family confident with the plan"
+    ],
+    tests: ["Hand-held dynamometry", "Single-leg hop tests", "Agility test relevant to the child's sport", "Hip internal rotation and impingement screen"]
+  },
+  prognosis: "Stable slips treated with in situ fixation generally do well: 96% had a satisfactory result in Loder's series, compared with 47% of unstable slips, in which AVN developed in 47% [r4]. In a meta-analysis of unstable SCFE, AVN prevalence ranged from about 10% to 28% depending on the treatment [r8]. Severity matters, and delay in diagnosis is linked to more severe slips [r5]. The residual deformity can cause femoroacetabular impingement and early osteoarthritis [r1]. A contralateral slip occurs in a substantial minority (14% symptomatic, 38% asymptomatic) [r9].",
+  prevention: [
+    "Promote healthy weight and physical activity from early childhood; SCFE risk rises steeply with childhood BMI [r3].",
+    "Educate clinicians, teachers and parents that a limping child with knee or thigh pain needs a hip examination [r5].",
+    "Consider prophylactic fixation of the other hip in high-risk children (younger age, endocrine disorder, high posterior sloping angle) [r9,r10]."
+  ],
+  clinicalPearls: [
+    "Knee pain in an adolescent with a limp is SCFE until the hip has been examined. Check internal rotation every time [r5].",
+    "Ask: can they bear weight? If not even with crutches, the slip is unstable and AVN risk is high [r4].",
+    "Do not ask a child with suspected SCFE to hop or walk 'to see'. Stop weight-bearing and refer the same day.",
+    "Request radiographs of both hips with a lateral view; classic Klein's line misses most slips on the AP view alone [r6].",
+    "Loss of internal rotation after SCFE is bony. Do not try to stretch it back.",
+    "Keep watching the other hip until skeletal maturity [r9]."
+  ],
+  related: ["fai-syndrome", "physeal-fracture", "pelvic-apophyseal-avulsion", "osgood-schlatter", "hip-labral-tear"],
+
+  references: [
+    { id: "r1", citation: "Peck DM, Voss LM, Voss TT. Slipped capital femoral epiphysis: diagnosis and management. Am Fam Physician. 2017;95(12):779-84.", pmid: "28671425", type: "narrative-review", year: 2017 },
+    { id: "r2", citation: "Lehmann CL, Arons RR, Loder RT, et al. The epidemiology of slipped capital femoral epiphysis: an update. J Pediatr Orthop. 2006;26(3):286-90.", pmid: "16670536", doi: "10.1097/01.bpo.0000217718.10728.70", type: "cross-sectional", year: 2006 },
+    { id: "r3", citation: "Perry DC, Metcalfe D, Lane S, et al. Childhood obesity and slipped capital femoral epiphysis. Pediatrics. 2018;142(5):e20181067.", pmid: "30348751", doi: "10.1542/peds.2018-1067", type: "cohort", year: 2018 },
+    { id: "r4", citation: "Loder RT, Richards BS, Shapiro PS, et al. Acute slipped capital femoral epiphysis: the importance of physeal stability. J Bone Joint Surg Am. 1993;75(8):1134-40.", pmid: "8354671", doi: "10.2106/00004623-199308000-00002", type: "cohort", year: 1993 },
+    { id: "r5", citation: "Kocher MS, Bishop JA, Weed B, et al. Delay in diagnosis of slipped capital femoral epiphysis. Pediatrics. 2004;113(4):e322-5.", pmid: "15060261", doi: "10.1542/peds.113.4.e322", type: "cohort", year: 2004 },
+    { id: "r6", citation: "Green DW, Mogekwu N, Scher DM, et al. A modification of Klein's line to improve sensitivity of the anterior-posterior radiograph in slipped capital femoral epiphysis. J Pediatr Orthop. 2009;29(5):449-53.", pmid: "19568015", doi: "10.1097/BPO.0b013e3181aa20cd", type: "diagnostic-accuracy", year: 2009 },
+    { id: "r7", citation: "Southwick WO. Osteotomy through the lesser trochanter for slipped capital femoral epiphysis. J Bone Joint Surg Am. 1967;49(5):807-35.", pmid: "6029256", type: "cohort", year: 1967 },
+    { id: "r8", citation: "Veramuthu V, Munajat I, Islam MA, et al. Prevalence of avascular necrosis following surgical treatments in unstable slipped capital femoral epiphysis (SCFE): a systematic review and meta-analysis. Children (Basel). 2022;9(9):1374.", pmid: "36138683", doi: "10.3390/children9091374", type: "meta-analysis", year: 2022 },
+    { id: "r9", citation: "Vink SJC, van Stralen RA, Moerman S, et al. Prophylactic fixation of the unaffected contralateral side in children with slipped capital femoral epiphysis seems favorable: a systematic review. World J Orthop. 2022;13(5):515-27.", pmid: "35633749", doi: "10.5312/wjo.v13.i5.515", type: "systematic-review", year: 2022 },
+    { id: "r10", citation: "Swarup I, Goodbody C, Goto R, et al. Risk factors for contralateral slipped capital femoral epiphysis: a meta-analysis of cohort and case-control studies. J Pediatr Orthop. 2020;40(6):e446-53.", pmid: "32501913", doi: "10.1097/BPO.0000000000001482", type: "meta-analysis", year: 2020 }
+  ],
+
+  animation: {
+    title: "How a slipped capital femoral epiphysis happens",
+    phases: [
+      {
+        type: "moi", label: "Mechanism", duration: 6, view: "lateral", environment: "pitch",
+        actors: [{ id: "child", kit: "child" }],
+        keyframes: [
+          { t: 0, pose: "run-contact", root: { x: -150 } },
+          { t: 0.8, pose: "run-midstance", joints: { trunk: 8 }, root: { x: -115 } },
+          { t: 1.6, pose: "run-toe-off", root: { x: -80 } },
+          { t: 2.4, pose: "run-contact", root: { x: -45 } },
+          { t: 3.1, pose: "pivot", root: { x: -20 }, ease: "in" },
+          { t: 4.4, pose: "stand", joints: { hipR: 20, kneeR: 45, trunk: 10 }, root: { x: -15 } },
+          { t: 5.8, pose: "stand", joints: { hipR: 22, kneeR: 50, trunk: 12 }, root: { x: -15 } }
+        ],
+        props: [{ id: "ball", type: "ball-soccer", keyframes: [{ t: 0, x: -110, y: 10 }, { t: 3.1, x: 10, y: 10 }, { t: 5.8, x: 90, y: 10 }] }],
+        forces: [
+          { t: [2.4, 3.8], at: "hipR", dir: "down", label: "Shear across the growth plate" }
+        ],
+        highlights: [{ t: [2.6, 6], at: "hipR" }],
+        impacts: [{ t: 3.2, at: "hipR" }],
+        slowmo: [{ t: [2.8, 3.8], rate: 0.35 }],
+        captions: [
+          { t: 0, text: "A 12-year-old in a growth spurt, carrying extra weight, has limped with thigh and knee pain for weeks." },
+          { t: 1.6, text: "Every step loads the weakened growth plate in shear." },
+          { t: 2.9, text: "A minor twist during play is enough for the growth plate to give way." },
+          { t: 4.4, text: "Now the child cannot bear weight, even with help: an unstable slip and an emergency." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "hipR",
+        captions: [{ t: 0, text: "Zooming into the right hip, viewed from the front." }]
+      },
+      {
+        type: "closeup", label: "Growth plate", duration: 10, scene: "hip-anterior",
+        actions: [
+          { t: 0, do: "highlight", target: "proximalFemoralPhysis" },
+          { t: 0.2, do: "fade", target: "rectusFemoris", to: 0.2 },
+          { t: 0.2, do: "fade", target: "sartorius", to: 0.2 },
+          { t: 0.4, do: "label", target: "proximalFemoralPhysis", text: "Proximal femoral growth plate" },
+          { t: 1.2, do: "arrow", at: "subcapital", dir: "inferior", label: "Shear from body weight", size: "l" },
+          { t: 1.8, do: "stress", target: "proximalFemoralPhysis" },
+          { t: 2.6, do: "inflame", target: "capsule", amount: 0.3 },
+          { t: 3.6, do: "separate", target: "proximalFemoralPhysis", grade: "I" },
+          { t: 3.6, do: "impact", at: "subcapital" },
+          { t: 3.8, do: "move", target: "femoralHead", dir: "inferior", amount: 0.25, dur: 1 },
+          { t: 4.6, do: "label", target: "femoralHead", text: "Epiphysis slips back and down" },
+          { t: 5.6, do: "bleed", target: "jointSpace" },
+          { t: 6.2, do: "pulse", target: "femoralHead" },
+          { t: 7.0, do: "arrow", at: "headNeckJunction", dir: "superior", label: "Neck prominence: later cam impingement", size: "s" },
+          { t: 7.6, do: "camera", at: "subcapital", zoom: 1.5, dur: 1 },
+          { t: 9.2, do: "camera", zoom: 1, dur: 0.8 }
+        ],
+        captions: [
+          { t: 0, text: "In adolescence, the femoral head is joined to the neck by a growth plate that is weakest in shear." },
+          { t: 1.8, text: "Repeated shear widens and roughens the plate: pain in the hip, thigh or knee, and a limp." },
+          { t: 3.6, text: "The plate fails. Relative to the neck, the head slips posteriorly and inferiorly." },
+          { t: 5.6, text: "In unstable slips, vessels to the head can tear, and avascular necrosis may follow." },
+          { t: 7.0, text: "The step left at the head–neck junction can act like a cam and cause impingement later." }
+        ]
+      },
+      {
+        type: "micro", label: "Growth plate", duration: 8, tissue: "physis",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.6, stage: "microdamage" }, { t: 3.2, stage: "inflammation" },
+          { t: 4.8, stage: "separation" }, { t: 6.4, stage: "healing" }
+        ],
+        timeLabels: [{ t: 1.6, text: "Weeks of growth spurt" }, { t: 4.8, text: "Slip" }, { t: 6.4, text: "Months after fixation" }],
+        captions: [
+          { t: 0, text: "The physis: columns of cartilage cells that enlarge, then turn into bone." },
+          { t: 1.6, text: "In the growth spurt the enlarged (hypertrophic) zone is weakest; shear causes microfailure." },
+          { t: 3.2, text: "Synovitis and microfractures cause pain before the slip is visible." },
+          { t: 4.8, text: "The plate separates through the hypertrophic zone." },
+          { t: 6.4, text: "After screw fixation, the growth plate closes and bone bridges it." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "LL1" }
+};

@@ -144,14 +144,14 @@ const spTip = (v, k, t) => v.F(SPd[k].tip - 1.1, mid([0, SPd[k].top], [0, SPd[k]
 
 /* facet capsules: ovals around IAP(upper) / SAP(lower) overlap, in the lower vertebra's frame */
 function facet(v, cp = -17, cq = -3.5) {
-  const pts = []; for (let k = 0; k < 16; k++) { const a = (k / 16) * Math.PI * 2, p = cp + 5.2 * Math.cos(a) - 1.6 * Math.sin(a) * 0.3, q = cq + 10.5 * Math.sin(a); pts.push(v.F(p + (q - cq) * -0.12, q)); }
+  const pts = []; for (let k = 0; k < 16; k++) { const a = (k / 16) * Math.PI * 2, p = cp + 5 * Math.cos(a), q = cq + 9 * Math.sin(a); pts.push(v.F(p + (q - cq) * -0.12, q)); }
   return spline(pts);
 }
 
 /* roots: cauda (above the disc they traverse) → lateral recess → under pedicle → foramen → out anteroinferiorly */
-const rootL4 = [L3.F(-10, 19), L4.F(-5, -4), L4.F(-2.8, 6), L4.F(-2.6, 13.5), L4.F(-3.2, 18.6), L4.F(0, 23.5), L4.F(6, 29.5), L5.F(13, 6), L5.F(21, 18), L5.F(28, 30)];
-const rootL5 = [L4.F(-10, 19), L5.F(-4.8, -6.5), L5.F(-2.8, 3), L5.F(-2.6, 13), L5.F(-3.2, 18.4), L5.F(0, 23.2), L5.F(6, 28.8), S1.F(12, 6), S1.F(20, 16), S1.F(28, 28)];
-const rootS1 = [L5.F(-10, 18), S1.F(-4.8, -6.5), S1.F(-2.8, 3), S1.F(-1.6, 12), S1.F(2.5, 20), S1.F(10, 26), S1.F(20, 31), S1.F(31, 37)];
+const rootL4 = [L3.F(-10, 19), L4.F(-5, -4), L4.F(-2.8, 6), L4.F(-2.6, 13.5), L4.F(-3, 18.4), L4.F(1.5, 22), L4.F(8, 25.6), L5.F(14, 3), L5.F(23, 10), L5.F(31, 19)];
+const rootL5 = [L4.F(-10, 19), L5.F(-4.8, -6.5), L5.F(-2.8, 3), L5.F(-2.6, 13), L5.F(-3, 18.2), L5.F(1.5, 21.6), L5.F(8, 25), S1.F(14, 3), S1.F(26, 7), S1.F(38, 13), S1.F(45, 23)];
+const rootS1 = [L5.F(-10, 18), S1.F(-4.8, -6.5), S1.F(-2.8, 3), S1.F(-1.5, 11), S1.F(4, 17.5), S1.F(14, 21), S1.F(26, 22.5), S1.F(37, 25), S1.F(44, 32), S1.F(48, 42)];
 
 /* muscles */
 const mfOut = [L2.F(-24, -14), L3.F(-23, 2), L3.F(-23.5, 26), L4.F(-24.5, 14), L5.F(-24, 6), L5.F(-25.5, 24), S1.F(-25, 12), S1.F(-21, 32), S1.F(-12, 52), S1.F(-4, 64, 0.6),
@@ -165,7 +165,7 @@ const fat = [L2.F(-101, -16), L2.F(-101.5, 12), L3.F(-103.5, 12), L4.F(-105.5, 1
 /* interspinous (L4–5 is the catalogue structure; other levels decorative) */
 function interspinous(a, ka, b, kb) {
   const fa = (p) => a.F(p, SPd[ka].bot - 0.2), fb = (p) => b.F(p, SPd[kb].top + 0.2);
-  return { from: R(mid(fa(-27), fb(-25))), to: R(mid(fa(SPd[ka].tip + 4), fb(SPd[kb].tip + 3))), width: r(Math.max(10, Math.hypot(...[0, 1].map((i) => fa(-42)[i] - fb(-40)[i])) - 2)) };
+  return { from: R(mid(fa(-27), fb(-25))), to: R(mid(fa(SPd[ka].tip + 4), fb(SPd[kb].tip + 3))), width: r(Math.max(9, 0.78 * Math.hypot(...[0, 1].map((i) => fa(-42)[i] - fb(-40)[i])))) };
 }
 
 export default {
@@ -197,9 +197,9 @@ export default {
     interspinousL3L4Context: { type: "ligament", ...interspinous(L3, "L3", L4, "L4"), z: 3.15 },
     interspinousL5S1Context: { type: "ligament", from: R(mid(L5.F(-26, 23.4), S1.F(-24, 3))), to: R(mid(L5.F(-46, 23.4), S1.F(-26, 14))), width: 12, z: 3.15 },
     supraspinousLigament: { type: "ligament", points: [spTip(L2, "L2", 0.2), spTip(L2, "L2", 0.9), spTip(L3, "L3", 0.15), spTip(L3, "L3", 0.9), spTip(L4, "L4", 0.15), spTip(L4, "L4", 0.9), spTip(L5, "L5", 0.2), spTip(L5, "L5", 0.8)].map(R), width: 5, z: 3.2 },
-    facetL4L5: { type: "capsule", d: facet(L5), z: 3.5, label: R(L5.F(-17, -3.5)) },
-    facetL5S1: { type: "capsule", d: facet(S1, -16.6, -3.8), z: 3.5, label: R(S1.F(-16.6, -3.8)) },
-    facetL3L4Context: { type: "capsule", d: facet(L4), z: 3.45 },
+    facetL4L5: { type: "capsule", d: facet(L5, -17, -1.5), z: 3.5, label: R(L5.F(-17, -1.5)) },
+    facetL5S1: { type: "capsule", d: facet(S1, -16.6, -2), z: 3.5, label: R(S1.F(-16.6, -2)) },
+    facetL3L4Context: { type: "capsule", d: facet(L4, -17, -1.5), z: 3.45 },
 
     caudaEquina: { type: "nerve", points: caudaPts.map(R), width: 10, z: 4 },
     nerveRootL4: { type: "nerve", points: rootL4.map(R), width: 6.5, z: 4.2 },
