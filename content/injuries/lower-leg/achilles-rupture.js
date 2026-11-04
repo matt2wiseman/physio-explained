@@ -19,40 +19,40 @@ export default {
     { label: "Peak age", value: "Mean age about 45 in a Danish registry; men three times as often as women" },
     { label: "Incidence", value: "About 27–31 per 100,000 per year in Denmark (1994–2013), rising in people over 50" }
   ],
-  overview: "Achilles tendon rupture is a complete tear of the tendon, most often in the mid-portion, during sudden explosive loading such as accelerating from standing, cutting or jumping. Most ruptures are non-contact and occur in a tendon that already shows degenerative change, often without prior symptoms [@kannus91,@dv22]. The person feels a pop or a blow to the back of the leg, loses push-off and cannot rise onto the toes on that side.\n\nA complete rupture can be managed non-operatively or surgically. In a large randomised trial of 526 analysed adults, non-operative treatment, open repair and minimally invasive repair gave similar patient-reported outcomes at 12 months, while re-rupture was more common without surgery (6.2% versus 0.6% in each surgical group) and surgery carried more nerve injuries and infections [@myhrvold22,@ochen19]. In both pathways, early functional rehabilitation with weight-bearing and early range of motion is the standard of care, and the physiotherapist leads a long, criteria-based rehabilitation to return to sport (RTS) [@willits10,@soroceanu12].",
+  overview: "Achilles tendon rupture is a complete tear of the tendon, most often in the mid-portion, during sudden explosive loading such as accelerating from standing, cutting or jumping. Most ruptures are non-contact and occur in a tendon that already shows degenerative change, often without prior symptoms [r1,r2]. The person feels a pop or a blow to the back of the leg, loses push-off and cannot rise onto the toes on that side.\n\nA complete rupture can be managed non-operatively or surgically. In a large randomised trial of 526 analysed adults, non-operative treatment, open repair and minimally invasive repair gave similar patient-reported outcomes at 12 months, while re-rupture was more common without surgery (6.2% versus 0.6% in each surgical group) and surgery carried more nerve injuries and infections [r3,r4]. In both pathways, early functional rehabilitation with weight-bearing and early range of motion is the standard of care, and the physiotherapist leads a long, criteria-based rehabilitation to return to sport (RTS) [r5,r6].",
 
   epidemiology: {
-    text: "In a Danish national registry of 33,160 acute ruptures from 1994 to 2013, incidence ranged from 26.95 to 31.17 per 100,000 per year and increased over time, driven by people over 50. The male-to-female ratio was 3:1, and the average age was 45 years in men and 44 in women [@ganestam16]. In video analyses most ruptures in professional athletes were non-contact (83%) [@dv22,@yuce24]. Degenerative changes are common in the tendons of people over 35 years of age and are associated with spontaneous rupture [@kannus91].",
+    text: "In a Danish national registry of 33,160 acute ruptures from 1994 to 2013, incidence ranged from 26.95 to 31.17 per 100,000 per year and increased over time, driven by people over 50. The male-to-female ratio was 3:1, and the average age was 45 years in men and 44 in women [r7]. In video analyses most ruptures in professional athletes were non-contact (83%) [r2,r8]. Degenerative changes are common in the tendons of people over 35 years of age and are associated with spontaneous rupture [r1].",
     riskFactors: {
       intrinsic: [
-        "Male sex (3:1 male-to-female ratio in a national registry) [@ganestam16]",
-        "Age over 35 years: degenerative tendon change is common and is associated with spontaneous rupture [@kannus91]",
-        "Pre-existing tendon degeneration, which may be symptom-free (no healthy structure was found in any of the spontaneously ruptured tendons studied) [@kannus91]",
+        "Male sex (3:1 male-to-female ratio in a national registry) [r7]",
+        "Age over 35 years: degenerative tendon change is common and is associated with spontaneous rupture [r1]",
+        "Pre-existing tendon degeneration, which may be symptom-free (no healthy structure was found in any of the spontaneously ruptured tendons studied) [r1]",
         "Intermittent, unconditioned participation in explosive sport ('weekend athlete'): a common clinical observation, not quantified in the sources reviewed"
       ],
       extrinsic: [
-        "Fluoroquinolone antibiotics, especially in older people and in diabetes or renal failure [@tsai11]",
-        "Local corticosteroid injection near the tendon (case reports and a cadaver study report rupture after retrocalcaneal injection) [@turmo14]",
-        "Sports that demand sudden acceleration, cutting and jumping: basketball, football and soccer accounted for most video-captured ruptures in professional athletes [@dv22,@yuce24]"
+        "Fluoroquinolone antibiotics, especially in older people and in diabetes or renal failure [r9]",
+        "Local corticosteroid injection near the tendon (case reports and a cadaver study report rupture after retrocalcaneal injection) [r10]",
+        "Sports that demand sudden acceleration, cutting and jumping: basketball, football and soccer accounted for most video-captured ruptures in professional athletes [r2,r8]"
       ]
     }
   },
 
   mechanism: {
-    summary: "Most ruptures are non-contact and happen during an explosive push-off: forward acceleration from standing, cross-over cutting or jumping [@dv22]. At the injury frame in professional footballers the ankle was at end-range dorsiflexion (about 40°), the hip extended and the trunk slightly flexed, with the knee near extension or early flexion (about 22°) and the foot pronated [@dv22]. The calf contracts forcefully against a tendon that is being lengthened, and the load exceeds the capacity of a degenerate mid-portion [@kannus91].",
+    summary: "Most ruptures are non-contact and happen during an explosive push-off: forward acceleration from standing, cross-over cutting or jumping [r2]. At the injury frame in professional footballers the ankle was at end-range dorsiflexion (about 40°), the hip extended and the trunk slightly flexed, with the knee near extension or early flexion (about 22°) and the foot pronated [r2]. The calf contracts forcefully against a tendon that is being lengthened, and the load exceeds the capacity of a degenerate mid-portion [r1].",
     sequence: [
-      "The athlete accelerates hard from standing, or cuts or jumps, often after a period of low activity and with a tendon that is already degenerate [@kannus91].",
-      "The forefoot is planted and the tibia drives forward over it, taking the ankle toward end-range dorsiflexion (about 40° in football players) [@dv22].",
-      "The hip and knee are close to extension and the trunk is slightly flexed, so the triceps surae is set to push off [@dv22,@yuce24].",
+      "The athlete accelerates hard from standing, or cuts or jumps, often after a period of low activity and with a tendon that is already degenerate [r1].",
+      "The forefoot is planted and the tibia drives forward over it, taking the ankle toward end-range dorsiflexion (about 40° in football players) [r2].",
+      "The hip and knee are close to extension and the trunk is slightly flexed, so the triceps surae is set to push off [r2,r8].",
       "The gastrocnemius and soleus fire maximally while the tendon is still lengthening, so load rises beyond the tendon's capacity within milliseconds.",
       "Fibres fail across the mid-portion, usually 2–6 cm above the calcaneal insertion, with a pop or a sensation of being struck on the back of the leg.",
       "The proximal stump retracts with the calf and a palpable gap opens; push-off power is lost.",
       "A haematoma fills the gap, and swelling and bruising spread over the following days."
     ],
     variants: [
-      { name: "Sudden unexpected dorsiflexion", description: "Stepping into a hole, slipping, or landing from a height forces the plantarflexed foot into dorsiflexion while the calf is contracting. This is a classic clinical mechanism, but the video studies reviewed here describe acceleration, cutting and jumping as the main patterns [@dv22]." },
-      { name: "Cutting and jumping", description: "Cross-over cutting (25%) and vertical jumping (18%) were the second and third most common patterns in a football video analysis, after forward acceleration from standing (42%) [@dv22]." },
-      { name: "Drug-associated rupture", description: "Fluoroquinolone antibiotics and local corticosteroid injections are linked with rupture of an already weakened tendon [@tsai11,@turmo14]." },
+      { name: "Sudden unexpected dorsiflexion", description: "Stepping into a hole, slipping, or landing from a height forces the plantarflexed foot into dorsiflexion while the calf is contracting. This is a classic clinical mechanism, but the video studies reviewed here describe acceleration, cutting and jumping as the main patterns [r2]." },
+      { name: "Cutting and jumping", description: "Cross-over cutting (25%) and vertical jumping (18%) were the second and third most common patterns in a football video analysis, after forward acceleration from standing (42%) [r2]." },
+      { name: "Drug-associated rupture", description: "Fluoroquinolone antibiotics and local corticosteroid injections are linked with rupture of an already weakened tendon [r9,r10]." },
       { name: "Chronic (neglected) rupture", description: "A missed or late-presenting tear leaves a gap bridged by scar, with a weak push-off and a limp. It usually needs specialist surgical assessment." },
       { name: "Partial tear on tendinopathy", description: "A partial tear in a tendinopathic tendon causes sudden pain and loss of load tolerance, but push-off and the calf squeeze test are preserved." }
     ]
@@ -66,34 +66,34 @@ export default {
       { name: "Soleus", role: "Plantarflexor that stabilises the stance phase and dominates with the knee bent" },
       { name: "Plantaris tendon", role: "Thin tendon on the medial side of the Achilles; may remain intact and produce weak residual plantarflexion" },
       { name: "Deep flexors and peroneals", role: "Produce residual plantarflexion after rupture, so the ability to plantarflex does not exclude a tear" },
-      { name: "Sural nerve", role: "Sensory nerve close to the lateral edge of the tendon; at risk during surgical repair, mainly with percutaneous techniques [@myhrvold22]" }
+      { name: "Sural nerve", role: "Sensory nerve close to the lateral edge of the tendon; at risk during surgical repair, mainly with percutaneous techniques [r3]" }
     ]
   },
 
   pathophysiology: {
-    tissueDamage: "Achilles rupture is most often the end result of a tendon that was already degenerate. In 891 spontaneously ruptured tendons (including 397 Achilles tendons) none had a healthy structure, and 97% of the pathological changes were degenerative, such as hypoxic degenerative tendinopathy and mucoid degeneration [@kannus91]. Similar changes were found in 34% of control tendons from people who died accidentally, so degeneration is common but does not always cause rupture [@kannus91]. A sudden, multiplanar but predominantly sagittal load then exceeds the failure strength of the degenerate fibres [@dv22].\n\nThe tendon fails across its full thickness. The ends fray ('mop-end') and the proximal stump retracts with the calf, leaving a gap that fills with haematoma. Healing is by scar tissue rather than regeneration: the repaired or healed tendon is typically longer, thicker and weaker. A year or more after open repair, tendon width was still greater on the operated side, and isometric triceps surae force, calf circumference and heel-to-floor distance were still lower [@saab24].",
+    tissueDamage: "Achilles rupture is most often the end result of a tendon that was already degenerate. In 891 spontaneously ruptured tendons (including 397 Achilles tendons) none had a healthy structure, and 97% of the pathological changes were degenerative, such as hypoxic degenerative tendinopathy and mucoid degeneration [r1]. Similar changes were found in 34% of control tendons from people who died accidentally, so degeneration is common but does not always cause rupture [r1]. A sudden, multiplanar but predominantly sagittal load then exceeds the failure strength of the degenerate fibres [r2].\n\nThe tendon fails across its full thickness. The ends fray ('mop-end') and the proximal stump retracts with the calf, leaving a gap that fills with haematoma. Healing is by scar tissue rather than regeneration: the repaired or healed tendon is typically longer, thicker and weaker. A year or more after open repair, tendon width was still greater on the operated side, and isometric triceps surae force, calf circumference and heel-to-floor distance were still lower [r11].",
     structures: [
-      { name: "Achilles tendon", effect: "Complete rupture of the mid-portion with retracted ends and a haematoma-filled gap; usually degenerate tissue [@kannus91]" },
+      { name: "Achilles tendon", effect: "Complete rupture of the mid-portion with retracted ends and a haematoma-filled gap; usually degenerate tissue [r1]" },
       { name: "Paratenon", effect: "Torn with the tendon; this is the layer that supplies healing tissue and, if intact, helps surgeons or the body bridge the gap." },
       { name: "Plantaris tendon", effect: "Often intact and may give a false impression of continuity" },
-      { name: "Associated injuries", effect: "Concomitant bony or ligament injury is uncommon, but a medial malleolar fracture was missed in one reported rupture, so examine the ankle [@nakajima16]" }
+      { name: "Associated injuries", effect: "Concomitant bony or ligament injury is uncommon, but a medial malleolar fracture was missed in one reported rupture, so examine the ankle [r12]" }
     ],
     muscles: [
-      { name: "Triceps surae (gastrocnemius and soleus)", effect: "Loss of push-off at once; then disuse atrophy. After repair, calf circumference and plantarflexion force were still lower than the other side at 12 months or more [@saab24]." },
+      { name: "Triceps surae (gastrocnemius and soleus)", effect: "Loss of push-off at once; then disuse atrophy. After repair, calf circumference and plantarflexion force were still lower than the other side at 12 months or more [r11]." },
       { name: "Dorsiflexors and ankle stabilisers", effect: "Resting plantarflexion tone is lost, which is the basis of the Matles test, and the foot sits in a more dorsiflexed position." },
       { name: "Hip and knee musculature", effect: "Disuse and reduced loading during protected walking; rehabilitate the whole limb, not just the calf." }
     ],
     cellular: [
       { phase: "Haemorrhage and inflammation", timing: "Days 0–7 (typical)", description: "Bleeding fills the gap. Platelets, neutrophils then macrophages clear debris and release signals that recruit repair cells." },
-      { phase: "Proliferation", timing: "Weeks 1–6 (typical)", description: "Fibroblasts lay down disorganised type III collagen and new capillaries form. Early controlled loading supports organised matrix formation [@willits10]." },
-      { phase: "Remodelling", timing: "Weeks 6 to 12+ months (typical)", description: "Collagen is replaced by aligned type I fibres along the line of load. The tendon remains thicker and the calf weaker for a year or more [@saab24]." }
+      { phase: "Proliferation", timing: "Weeks 1–6 (typical)", description: "Fibroblasts lay down disorganised type III collagen and new capillaries form. Early controlled loading supports organised matrix formation [r5]." },
+      { phase: "Remodelling", timing: "Weeks 6 to 12+ months (typical)", description: "Collagen is replaced by aligned type I fibres along the line of load. The tendon remains thicker and the calf weaker for a year or more [r11]." }
     ],
     systems: [
-      { system: "Vascular", effect: "Deep venous thrombosis frequently occurs after Achilles rupture, which is why calf pain or swelling in the boot needs prompt review [@saarensilta25]." },
-      { system: "Nervous system and pain processing", effect: "Acute pain settles within days. Sural nerve injury is a recognised complication of surgery: 5.2% after minimally invasive repair, 2.8% after open repair and 0.6% without surgery in one RCT [@myhrvold22]." },
-      { system: "Inflammatory and healing", effect: "Healing depends on the load environment: in trials, accelerated rehabilitation with early weight-bearing and range of motion did not increase re-rupture and was associated with better early function [@willits10,@deng23]." },
+      { system: "Vascular", effect: "Deep venous thrombosis frequently occurs after Achilles rupture, which is why calf pain or swelling in the boot needs prompt review [r13]." },
+      { system: "Nervous system and pain processing", effect: "Acute pain settles within days. Sural nerve injury is a recognised complication of surgery: 5.2% after minimally invasive repair, 2.8% after open repair and 0.6% without surgery in one RCT [r3]." },
+      { system: "Inflammatory and healing", effect: "Healing depends on the load environment: in trials, accelerated rehabilitation with early weight-bearing and range of motion did not increase re-rupture and was associated with better early function [r5,r14]." },
       { system: "Musculoskeletal chain", effect: "Protected weight-bearing and a heel wedge alter gait and load the knee, hip and back; maintain whole-limb and trunk strength throughout." },
-      { system: "Psychological", effect: "Fear of re-rupture and delayed return to work and sport are common. Return-to-play rates were lower where return was defined with objective measures, so set criteria and expectations early [@zellers16]." }
+      { system: "Psychological", effect: "Fear of re-rupture and delayed return to work and sport are common. Return-to-play rates were lower where return was defined with objective measures, so set criteria and expectations early [r15]." }
     ]
   },
 
@@ -101,28 +101,28 @@ export default {
     system: "Descriptive classification (no universally accepted grading scale)",
     grades: [
       { grade: "Partial tear", description: "Some fibres torn within a tendinopathic tendon; plantarflexion strength and the calf squeeze test are preserved or only mildly reduced.", prognosis: "Usually treated like severe tendinopathy; monitor for progression to complete rupture" },
-      { grade: "Complete (grade III) acute rupture", description: "Full-thickness tear with retracted ends and a gap; positive Thompson and Matles tests and loss of push-off.", prognosis: "Non-operative or surgical pathway with early functional rehabilitation [@myhrvold22]" },
+      { grade: "Complete (grade III) acute rupture", description: "Full-thickness tear with retracted ends and a gap; positive Thompson and Matles tests and loss of push-off.", prognosis: "Non-operative or surgical pathway with early functional rehabilitation [r3]" },
       { grade: "Chronic or neglected rupture", description: "A complete rupture diagnosed late (commonly after about 4 weeks, a clinical convention), with scar-bridged gap, weakness and limp.", prognosis: "Usually needs specialist surgical assessment; outcomes are less predictable" }
     ]
   },
 
   timeframes: {
-    summary: "Healing follows the typical inflammatory, proliferative and remodelling sequence, but the timeline of rehabilitation depends on the pathway and protocol. Functional recovery takes months, and strength deficits can persist for a year or more [@saab24]. Time is necessary but not sufficient: progress by criteria.",
+    summary: "Healing follows the typical inflammatory, proliferative and remodelling sequence, but the timeline of rehabilitation depends on the pathway and protocol. Functional recovery takes months, and strength deficits can persist for a year or more [r11]. Time is necessary but not sufficient: progress by criteria.",
     healing: [
       { phase: "Haemorrhage and inflammation", startDay: 0, endDay: 7, description: "Gap fills with haematoma; inflammatory cell infiltration (typical biology)" },
-      { phase: "Proliferation", startDay: 7, endDay: 42, description: "Fibroblasts and new vessels lay down disorganised collagen; protected early loading is applied [@willits10]" },
+      { phase: "Proliferation", startDay: 7, endDay: 42, description: "Fibroblasts and new vessels lay down disorganised collagen; protected early loading is applied [r5]" },
       { phase: "Early remodelling", startDay: 42, endDay: 120, description: "Collagen aligns along load lines; the tendon tolerates progressive strengthening" },
-      { phase: "Late remodelling and maturation", startDay: 120, endDay: 365, description: "Strength and tendon properties continue to improve; deficits can persist beyond 12 months [@saab24]" }
+      { phase: "Late remodelling and maturation", startDay: 120, endDay: 365, description: "Strength and tendon properties continue to improve; deficits can persist beyond 12 months [r11]" }
     ],
     milestones: [
-      { label: "Protected weight-bearing in a boot", day: 14, note: "Early weight-bearing and range of motion were used in the trials [@willits10,@deng23]; follow the surgeon's or treating team's protocol." },
+      { label: "Protected weight-bearing in a boot", day: 14, note: "Early weight-bearing and range of motion were used in the trials [r5,r14]; follow the surgeon's or treating team's protocol." },
       { label: "Out of the boot into shoes with a heel raise", day: 70, note: "Typical protocol timing (clinical range, not from a single source)" },
       { label: "Double-leg heel raises", day: 90, note: "Typical clinical convention; criteria-based" },
       { label: "Start jogging", day: 150, note: "Only when strength and calf-endurance criteria are met (clinical convention)" },
-      { label: "Return to sport (earliest)", day: 210, note: "Criteria-based; 80% return to play overall, with lower rates where RTS was measured objectively [@zellers16]" },
-      { label: "12-month review", day: 365, note: "Calf force, size and heel-rise deficits can still be present [@saab24]" }
+      { label: "Return to sport (earliest)", day: 210, note: "Criteria-based; 80% return to play overall, with lower rates where RTS was measured objectively [r15]" },
+      { label: "12-month review", day: 365, note: "Calf force, size and heel-rise deficits can still be present [r11]" }
     ],
-    returnToSport: "Typically 6–12 months and criteria-based (clinical range). In a meta-analysis of 108 studies (6506 patients), 80% (95% CI 75–85%) returned to play, but rates were lower in studies that defined return with explicit measures, and a standardised method is lacking [@zellers16]."
+    returnToSport: "Typically 6–12 months and criteria-based (clinical range). In a meta-analysis of 108 studies (6506 patients), 80% (95% CI 75–85%) returned to play, but rates were lower in studies that defined return with explicit measures, and a standardised method is lacking [r15]."
   },
 
   clinicalPresentation: {
@@ -146,37 +146,37 @@ export default {
     subjective: [
       "Mechanism: sudden push-off, cutting, jumping or forced dorsiflexion; a pop; whether it was non-contact",
       "Previous Achilles pain or tendinopathy, or earlier injection",
-      "Fluoroquinolone antibiotic or corticosteroid use, diabetes, renal disease [@tsai11,@turmo14]",
+      "Fluoroquinolone antibiotic or corticosteroid use, diabetes, renal disease [r9,r10]",
       "Function since the injury: ability to push off, rise onto the toes, walk and bear weight",
-      "Calf pain or swelling, recent immobilisation, travel or surgery (DVT risk) [@saarensilta25]",
+      "Calf pain or swelling, recent immobilisation, travel or surgery (DVT risk) [r13]",
       "Sport, occupation, goals and preferences about surgery versus non-operative care"
     ],
     observation: ["Swelling, ecchymosis and loss of the normal tendon contour at the back of the heel", "Foot posture at rest with the knee flexed over the couch (loss of resting plantarflexion)", "Gait: flat-footed with no push-off"],
-    palpation: ["Palpate along the tendon for a gap, usually 2–6 cm above the heel (may be masked by haematoma)", "Tenderness over the calf, medial gastrocnemius and posterior malleoli", "Palpate the malleoli, the fibula and the base of the fifth metatarsal if the mechanism is uncertain (associated fracture is uncommon but can be missed) [@nakajima16]"],
+    palpation: ["Palpate along the tendon for a gap, usually 2–6 cm above the heel (may be masked by haematoma)", "Tenderness over the calf, medial gastrocnemius and posterior malleoli", "Palpate the malleoli, the fibula and the base of the fifth metatarsal if the mechanism is uncertain (associated fracture is uncommon but can be missed) [r12]"],
     rangeOfMotion: ["Passive dorsiflexion compared with the other side: often increased because the tendon is lax", "Active plantarflexion: weak but may be present through the other plantarflexors, so presence of movement does not exclude rupture", "Resting ankle position with the knee at 90° (Matles)"],
-    strength: ["Single-leg heel raise (usually impossible or very weak on the affected side)", "Resisted plantarflexion with the knee extended and flexed", "Later, objective calf strength and endurance as limb symmetry measures [@saab24]"],
-    neuro: ["Sural nerve sensation (lateral foot and heel), especially after surgery [@myhrvold22]", "Distal pulses, capillary refill and sensation inside a cast or boot"],
+    strength: ["Single-leg heel raise (usually impossible or very weak on the affected side)", "Resisted plantarflexion with the knee extended and flexed", "Later, objective calf strength and endurance as limb symmetry measures [r11]"],
+    neuro: ["Sural nerve sensation (lateral foot and heel), especially after surgery [r3]", "Distal pulses, capillary refill and sensation inside a cast or boot"],
     functional: ["Gait, single-leg stance and heel-raise endurance", "Later: hop tests, jump tests and running assessment as rehabilitation progresses"],
     specialTests: [
-      { name: "Calf squeeze (Thompson) test", purpose: "Confirm complete rupture of the Achilles tendon", procedure: "Patient prone with the feet over the end of the couch, or kneeling on a chair. Squeeze the calf at its widest point and watch the foot.", positive: "Absent or reduced plantarflexion on squeezing the calf compared with the other side.", sensitivity: "96%", specificity: "93% (from 28 patients with an intact tendon)", refs: ["@maffulli98","@reiman14"] },
-      { name: "Matles test", purpose: "Detect loss of resting plantarflexion tone", procedure: "Patient prone with the knee flexed to 90°. Observe the resting ankle position and compare with the other side.", positive: "The foot on the affected side falls to a neutral or dorsiflexed position rather than staying slightly plantarflexed.", sensitivity: "88%", specificity: "85%", refs: ["@maffulli98"] },
-      { name: "Palpation of a gap", purpose: "Locate a defect in the tendon", procedure: "Palpate along the tendon from the calf to the heel with the patient prone.", positive: "A palpable defect in the tendon. It may be masked by haematoma after the first hours.", sensitivity: "73% (81% under anaesthesia)", specificity: "89%", refs: ["@maffulli98"] },
-      { name: "Copeland (sphygmomanometer) test", purpose: "Detect loss of tendon continuity using pressure change", procedure: "Patient prone with a cuff around the calf, inflated with the ankle in plantarflexion. Passively dorsiflex the ankle and watch the pressure.", positive: "Less rise in pressure on passive dorsiflexion than the other side or than expected.", sensitivity: "80%", refs: ["@maffulli98"] }
+      { name: "Calf squeeze (Thompson) test", purpose: "Confirm complete rupture of the Achilles tendon", procedure: "Patient prone with the feet over the end of the couch, or kneeling on a chair. Squeeze the calf at its widest point and watch the foot.", positive: "Absent or reduced plantarflexion on squeezing the calf compared with the other side.", sensitivity: "96%", specificity: "93% (from 28 patients with an intact tendon)", refs: ["r16","r17"] },
+      { name: "Matles test", purpose: "Detect loss of resting plantarflexion tone", procedure: "Patient prone with the knee flexed to 90°. Observe the resting ankle position and compare with the other side.", positive: "The foot on the affected side falls to a neutral or dorsiflexed position rather than staying slightly plantarflexed.", sensitivity: "88%", specificity: "85%", refs: ["r16"] },
+      { name: "Palpation of a gap", purpose: "Locate a defect in the tendon", procedure: "Palpate along the tendon from the calf to the heel with the patient prone.", positive: "A palpable defect in the tendon. It may be masked by haematoma after the first hours.", sensitivity: "73% (81% under anaesthesia)", specificity: "89%", refs: ["r16"] },
+      { name: "Copeland (sphygmomanometer) test", purpose: "Detect loss of tendon continuity using pressure change", procedure: "Patient prone with a cuff around the calf, inflated with the ankle in plantarflexion. Passively dorsiflex the ankle and watch the pressure.", positive: "Less rise in pressure on passive dorsiflexion than the other side or than expected.", sensitivity: "80%", refs: ["r16"] }
     ],
     clinicalRules: [
-      { name: "Use more than one test", description: "In one prospective series of 174 patients with complete rupture, at least two of the tests were positive in every patient, and a pooled review described the calf squeeze test as having the highest sensitivity and specificity. Combine tests and the history rather than rely on one [@maffulli98,@reiman14]." }
+      { name: "Use more than one test", description: "In one prospective series of 174 patients with complete rupture, at least two of the tests were positive in every patient, and a pooled review described the calf squeeze test as having the highest sensitivity and specificity. Combine tests and the history rather than rely on one [r16,r17]." }
     ],
     outcomeMeasures: [
-      { name: "Achilles tendon Total Rupture Score (ATRS)", use: "Patient-reported symptoms and function (0–100, higher is better); the primary outcome in the largest RCT [@myhrvold22]" },
-      { name: "Single-leg heel-rise height and repetitions", use: "Calf endurance and recovery of function; compare limbs [@saab24]" },
-      { name: "Isometric or isokinetic plantarflexion force and calf circumference", use: "Strength and muscle-size deficits that persist after repair [@saab24]" },
-      { name: "VISA-A score", use: "Tendon symptom and function score, reported alongside the ATRS at follow-up [@saab24]" },
-      { name: "Leppilahti score, range of motion and calf circumference", use: "Secondary outcomes used in a randomised trial [@willits10]" }
+      { name: "Achilles tendon Total Rupture Score (ATRS)", use: "Patient-reported symptoms and function (0–100, higher is better); the primary outcome in the largest RCT [r3]" },
+      { name: "Single-leg heel-rise height and repetitions", use: "Calf endurance and recovery of function; compare limbs [r11]" },
+      { name: "Isometric or isokinetic plantarflexion force and calf circumference", use: "Strength and muscle-size deficits that persist after repair [r11]" },
+      { name: "VISA-A score", use: "Tendon symptom and function score, reported alongside the ATRS at follow-up [r11]" },
+      { name: "Leppilahti score, range of motion and calf circumference", use: "Secondary outcomes used in a randomised trial [r5]" }
     ],
     imaging: [
       { modality: "Ultrasound", indication: "If the clinical tests are equivocal, the tear may be partial, or the presentation is delayed; also dynamic assessment of the gap", findings: "Discontinuity of fibres, retracted ends with a haematoma-filled gap; the gap changes with ankle position" },
       { modality: "MRI", indication: "Unclear diagnosis, suspected partial or chronic tear, or pre-operative planning", findings: "Tendon discontinuity, retraction, intratendinous signal change and associated pathology" },
-      { modality: "Plain radiograph", indication: "Suspected avulsion or associated fracture, or when the mechanism included a fall or twist", findings: "Posterior calcaneal avulsion fragment or associated malleolar fracture [@nakajima16]; soft-tissue swelling in the Kager's fat pad region" }
+      { modality: "Plain radiograph", indication: "Suspected avulsion or associated fracture, or when the mechanism included a fall or twist", findings: "Posterior calcaneal avulsion fragment or associated malleolar fracture [r12]; soft-tissue swelling in the Kager's fat pad region" }
     ]
   },
 
@@ -185,35 +185,35 @@ export default {
     { name: "Medial gastrocnemius strain ('tennis leg')", id: "calf-strain", distinguishing: "Sudden calf pain with tenderness at the muscle belly or musculotendinous junction. The Thompson test is negative and the tendon is intact." },
     { name: "Soleus strain", id: "soleus-strain", distinguishing: "Deeper calf pain worse with the knee bent, with a normal Thompson test and an intact tendon." },
     { name: "Plantaris tendon rupture", distinguishing: "Sudden medial calf pain, similar to the medial gastrocnemius strain, with an intact Achilles and a negative Thompson test. Ultrasound can show the plantaris tendon." },
-    { name: "Ankle fracture", id: "ankle-fracture", distinguishing: "Bony tenderness, inability to bear weight, positive Ottawa ankle rules. A fracture can coexist with Achilles rupture [@nakajima16]." },
-    { name: "Deep vein thrombosis", distinguishing: "Calf swelling, warmth and tenderness without a clear injury mechanism or pop. It can also complicate a rupture [@saarensilta25]." },
+    { name: "Ankle fracture", id: "ankle-fracture", distinguishing: "Bony tenderness, inability to bear weight, positive Ottawa ankle rules. A fracture can coexist with Achilles rupture [r12]." },
+    { name: "Deep vein thrombosis", distinguishing: "Calf swelling, warmth and tenderness without a clear injury mechanism or pop. It can also complicate a rupture [r13]." },
     { name: "Posterior ankle impingement", id: "posterior-ankle-impingement", distinguishing: "Deep pain on forced plantarflexion without loss of push-off and with an intact calf squeeze test." }
   ],
   redFlags: [
     "A suspected complete rupture: protect the ankle in a plantarflexed position and arrange orthopaedic review. Treatment decisions are usually made within days, so do not delay (clinical convention).",
-    "Calf swelling, pain, warmth or redness, particularly under a boot or cast, and especially with a history of recent immobilisation or travel: suspect deep vein thrombosis. Arrange same-day medical assessment, and emergency care if there is breathlessness or chest pain (pulmonary embolism). Frequent DVT is reported after Achilles rupture [@saarensilta25].",
+    "Calf swelling, pain, warmth or redness, particularly under a boot or cast, and especially with a history of recent immobilisation or travel: suspect deep vein thrombosis. Arrange same-day medical assessment, and emergency care if there is breathlessness or chest pain (pulmonary embolism). Frequent DVT is reported after Achilles rupture [r13].",
     "Severe or escalating calf pain that is out of proportion, a tense swollen calf, pain on passive stretch or numbness: suspect acute compartment syndrome. Send to emergency the same day.",
-    "Fever, spreading redness, wound discharge or wound breakdown after surgery: suspect surgical-site infection (reported in 2.8% of operated patients in a meta-analysis) and arrange urgent surgical review [@ochen19].",
-    "Numbness, tingling or pain on the lateral foot or heel after surgery or in a boot: assess for sural nerve injury and refer to the surgeon [@myhrvold22].",
-    "A new pop or sudden loss of push-off during rehabilitation, or a gap that reappears: suspect re-rupture and refer the same day [@myhrvold22,@ochen19].",
-    "Current fluoroquinolone use or a recent corticosteroid injection near the tendon with new Achilles pain: advise the patient to contact the prescriber and avoid heavy loading [@tsai11,@turmo14]."
+    "Fever, spreading redness, wound discharge or wound breakdown after surgery: suspect surgical-site infection (reported in 2.8% of operated patients in a meta-analysis) and arrange urgent surgical review [r4].",
+    "Numbness, tingling or pain on the lateral foot or heel after surgery or in a boot: assess for sural nerve injury and refer to the surgeon [r3].",
+    "A new pop or sudden loss of push-off during rehabilitation, or a gap that reappears: suspect re-rupture and refer the same day [r3,r4].",
+    "Current fluoroquinolone use or a recent corticosteroid injection near the tendon with new Achilles pain: advise the patient to contact the prescriber and avoid heavy loading [r9,r10]."
   ],
 
   management: {
-    principles: "The decision between non-operative and operative treatment should be shared and based on patient factors. Re-rupture is lower with surgery but complications are higher, and the difference in re-rupture is small in programs that use accelerated functional rehabilitation [@ochen19,@soroceanu12]. In the largest RCT, ATRS change at 12 months did not differ between non-operative treatment, open repair and minimally invasive repair [@myhrvold22]. Whichever pathway is chosen, early functional rehabilitation with weight-bearing and early range of motion is central, and the physiotherapist must follow the surgeon's protocol where one exists [@willits10]. Then a long, criteria-based program of calf strengthening and graded return to sport follows, because deficits can persist for a year or more [@saab24].",
+    principles: "The decision between non-operative and operative treatment should be shared and based on patient factors. Re-rupture is lower with surgery but complications are higher, and the difference in re-rupture is small in programs that use accelerated functional rehabilitation [r4,r6]. In the largest RCT, ATRS change at 12 months did not differ between non-operative treatment, open repair and minimally invasive repair [r3]. Whichever pathway is chosen, early functional rehabilitation with weight-bearing and early range of motion is central, and the physiotherapist must follow the surgeon's protocol where one exists [r5]. Then a long, criteria-based program of calf strengthening and graded return to sport follows, because deficits can persist for a year or more [r11].",
     medical: [
-      { name: "Early orthopaedic assessment and shared decision-making", description: "Present both pathways with their trade-offs. In a meta-analysis of 29 studies, re-rupture was 2.3% after operative treatment and 3.9% after non-operative treatment, but complications were 4.9% versus 1.6%, with infection (2.8%) driving the difference. The authors advise a decision based on patient factors [@ochen19].", evidence: "moderate", recommendation: "recommended", refs: ["@ochen19","@myhrvold22"] },
-      { name: "Non-operative treatment with early functional rehabilitation", description: "Boot or brace with early weight-bearing and range of motion. In a randomised trial of 144 patients, re-rupture occurred in 3 of 72 treated non-operatively and 2 of 72 operated on, with similar strength, range, calf circumference and Leppilahti scores and fewer complications without surgery [@willits10]. In a meta-analysis, re-rupture rates were equal when early range of motion was used (risk difference 1.7%, p = 0.45) [@soroceanu12]. In the NEJM trial re-rupture was 6.2% non-operatively versus 0.6% after surgery, with similar ATRS at 12 months [@myhrvold22].", evidence: "moderate", recommendation: "recommended", refs: ["@willits10","@soroceanu12","@myhrvold22"] },
-      { name: "Surgical repair (open or minimally invasive)", description: "Lowers re-rupture risk but adds wound, infection and nerve complications. In the NEJM trial nerve injuries were 5.2% after minimally invasive repair, 2.8% after open repair and 0.6% non-operatively, with no better ATRS change at 12 months [@myhrvold22]. Pooled complication rate was 4.9% with surgery versus 1.6% without [@ochen19]. Surgery returned people to work 19 days sooner in a meta-analysis [@soroceanu12].", evidence: "moderate", recommendation: "consider", refs: ["@myhrvold22","@ochen19","@soroceanu12"] },
-      { name: "Prolonged immobilisation without early movement", description: "Where early range of motion is not used, surgery cut re-rupture by an absolute 8.8%, so a non-operative protocol without early movement carries a higher re-rupture risk. Without early weight-bearing and motion, non-operative treatment is a weaker choice [@soroceanu12].", evidence: "moderate", recommendation: "not-recommended", refs: ["@soroceanu12"] },
-      { name: "Venous thromboembolism assessment and prophylaxis", description: "DVT frequently occurs after Achilles rupture. The treating doctor decides on thromboprophylaxis according to local protocol and patient risk [@saarensilta25].", evidence: "expert-opinion", recommendation: "consider", refs: ["@saarensilta25"] },
+      { name: "Early orthopaedic assessment and shared decision-making", description: "Present both pathways with their trade-offs. In a meta-analysis of 29 studies, re-rupture was 2.3% after operative treatment and 3.9% after non-operative treatment, but complications were 4.9% versus 1.6%, with infection (2.8%) driving the difference. The authors advise a decision based on patient factors [r4].", evidence: "moderate", recommendation: "recommended", refs: ["r4","r3"] },
+      { name: "Non-operative treatment with early functional rehabilitation", description: "Boot or brace with early weight-bearing and range of motion. In a randomised trial of 144 patients, re-rupture occurred in 3 of 72 treated non-operatively and 2 of 72 operated on, with similar strength, range, calf circumference and Leppilahti scores and fewer complications without surgery [r5]. In a meta-analysis, re-rupture rates were equal when early range of motion was used (risk difference 1.7%, p = 0.45) [r6]. In the NEJM trial re-rupture was 6.2% non-operatively versus 0.6% after surgery, with similar ATRS at 12 months [r3].", evidence: "moderate", recommendation: "recommended", refs: ["r5","r6","r3"] },
+      { name: "Surgical repair (open or minimally invasive)", description: "Lowers re-rupture risk but adds wound, infection and nerve complications. In the NEJM trial nerve injuries were 5.2% after minimally invasive repair, 2.8% after open repair and 0.6% non-operatively, with no better ATRS change at 12 months [r3]. Pooled complication rate was 4.9% with surgery versus 1.6% without [r4]. Surgery returned people to work 19 days sooner in a meta-analysis [r6].", evidence: "moderate", recommendation: "consider", refs: ["r3","r4","r6"] },
+      { name: "Prolonged immobilisation without early movement", description: "Where early range of motion is not used, surgery cut re-rupture by an absolute 8.8%, so a non-operative protocol without early movement carries a higher re-rupture risk. Without early weight-bearing and motion, non-operative treatment is a weaker choice [r6].", evidence: "moderate", recommendation: "not-recommended", refs: ["r6"] },
+      { name: "Venous thromboembolism assessment and prophylaxis", description: "DVT frequently occurs after Achilles rupture. The treating doctor decides on thromboprophylaxis according to local protocol and patient risk [r13].", evidence: "expert-opinion", recommendation: "consider", refs: ["r13"] },
       { name: "Analgesia", description: "Simple analgesics in the early phase, and early review if pain escalates.", evidence: "expert-opinion", recommendation: "consider", refs: [] },
-      { name: "Corticosteroid injection near the tendon and fluoroquinolone review", description: "Avoid local corticosteroid injection near the tendon (a cadaver study and case reports link retrocalcaneal injection with rupture) and ask the prescriber to review fluoroquinolones in people with Achilles symptoms [@turmo14,@tsai11].", evidence: "very-limited", recommendation: "not-recommended", refs: ["@turmo14","@tsai11"] }
+      { name: "Corticosteroid injection near the tendon and fluoroquinolone review", description: "Avoid local corticosteroid injection near the tendon (a cadaver study and case reports link retrocalcaneal injection with rupture) and ask the prescriber to review fluoroquinolones in people with Achilles symptoms [r10,r9].", evidence: "very-limited", recommendation: "not-recommended", refs: ["r10","r9"] }
     ],
     physio: [
-      { name: "Early functional (accelerated) rehabilitation", description: "Early protected weight-bearing and early range of motion, as used in the trials. In 68 patients after minimally invasive repair, early weight-bearing gave better ATRS (91.1 vs 88.9, P = 0.03) and a shorter time to return to work (4.5 vs 7.5 weeks) at 3 months, with no differences later and no increase in complications [@deng23]. Meta-analyses link early range of motion with re-rupture rates similar to surgery [@soroceanu12,@ochen19].", evidence: "moderate", recommendation: "recommended", refs: ["@willits10","@deng23","@soroceanu12","@ochen19"] },
-      { name: "Progressive calf strengthening and monitoring of limb symmetry", description: "At least a year after open repair, isometric triceps surae force, calf circumference and heel-to-floor distance were still significantly lower than on the other side, and the authors call for better monitoring of calf recovery [@saab24]. Build load progressively through the program.", evidence: "limited", recommendation: "recommended", refs: ["@saab24"] },
-      { name: "Graded return to running and sport with objective criteria", description: "Return to play was 80% overall, but studies that measured readiness reported lower rates, and a standardised, valid measure is lacking [@zellers16]. Use strength, endurance, hop and patient-reported criteria rather than time alone.", evidence: "limited", recommendation: "recommended", refs: ["@zellers16"] },
+      { name: "Early functional (accelerated) rehabilitation", description: "Early protected weight-bearing and early range of motion, as used in the trials. In 68 patients after minimally invasive repair, early weight-bearing gave better ATRS (91.1 vs 88.9, P = 0.03) and a shorter time to return to work (4.5 vs 7.5 weeks) at 3 months, with no differences later and no increase in complications [r14]. Meta-analyses link early range of motion with re-rupture rates similar to surgery [r6,r4].", evidence: "moderate", recommendation: "recommended", refs: ["r5","r14","r6","r4"] },
+      { name: "Progressive calf strengthening and monitoring of limb symmetry", description: "At least a year after open repair, isometric triceps surae force, calf circumference and heel-to-floor distance were still significantly lower than on the other side, and the authors call for better monitoring of calf recovery [r11]. Build load progressively through the program.", evidence: "limited", recommendation: "recommended", refs: ["r11"] },
+      { name: "Graded return to running and sport with objective criteria", description: "Return to play was 80% overall, but studies that measured readiness reported lower rates, and a standardised, valid measure is lacking [r15]. Use strength, endurance, hop and patient-reported criteria rather than time alone.", evidence: "limited", recommendation: "recommended", refs: ["r15"] },
       { name: "Boot with heel wedges, weaned in steps", description: "Common practice to protect the tendon in a shortened position while early weight-bearing proceeds. The detailed schedule varies by protocol and was not standardised in the sources reviewed.", evidence: "expert-opinion", recommendation: "consider", refs: [] },
       { name: "Early passive calf stretching or dorsiflexion beyond neutral", description: "Risks lengthening the healing tendon and weakening push-off. Avoid until the treating team clears it (clinical convention).", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] },
       { name: "Oedema control, wound care and general conditioning", description: "Elevation, compression where allowed, upper-body and cardiovascular conditioning and contralateral and hip strengthening during protected weight-bearing.", evidence: "expert-opinion", recommendation: "consider", refs: [] },
@@ -230,13 +230,13 @@ export default {
   },
 
   rehab: {
-    overview: "Progression is criteria-based and follows the treating team's protocol (surgeon or physician) where one exists. Early protected weight-bearing and early range of motion are the shared principles of both pathways [@willits10,@soroceanu12]. Timeframes below are typical clinical ranges, not from a single source. Dosages are typical clinical dosages. The program rebuilds range, then calf strength and endurance, then power and running, then sport-specific load. Because strength and calf-size deficits can persist beyond a year, plan for long-term strength work and objective testing [@saab24].",
+    overview: "Progression is criteria-based and follows the treating team's protocol (surgeon or physician) where one exists. Early protected weight-bearing and early range of motion are the shared principles of both pathways [r5,r6]. Timeframes below are typical clinical ranges, not from a single source. Dosages are typical clinical dosages. The program rebuilds range, then calf strength and endurance, then power and running, then sport-specific load. Because strength and calf-size deficits can persist beyond a year, plan for long-term strength work and objective testing [r11].",
     stages: [
       {
         name: "Protect & begin early function",
         timeframe: "Weeks 0–2",
         goals: ["Protect the tendon in a plantarflexed position", "Control pain, swelling and wound healing", "Begin protected weight-bearing as the protocol allows", "Maintain conditioning of the rest of the body"],
-        precautions: ["No dorsiflexion beyond neutral, and no passive calf stretching", "Wear the boot with heel wedges as prescribed", "Monitor for DVT (calf pain, swelling) and wound problems [@saarensilta25]", "Weight-bearing status and any early motion must follow the treating team's protocol [@willits10]"],
+        precautions: ["No dorsiflexion beyond neutral, and no passive calf stretching", "Wear the boot with heel wedges as prescribed", "Monitor for DVT (calf pain, swelling) and wound problems [r13]", "Weight-bearing status and any early motion must follow the treating team's protocol [r5]"],
         exercises: [
           { name: "Straight-leg raise (supine, all planes as tolerated)", dosage: "3 × 10, once or twice daily", cues: "Keep the knee straight and the movement slow", figure: { pose: "ex-straight-leg-raise", view: "lateral", props: ["mat"] } },
           { name: "Glute bridge", dosage: "3 × 12, daily", cues: "Drive through the heel of the good leg and the boot", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } },
@@ -292,14 +292,14 @@ export default {
         name: "Return to sport & performance",
         timeframe: "Months 6–12+",
         goals: ["Sport-specific acceleration, cutting and jumping", "Graded return to training then competition", "Symmetrical strength and endurance", "Long-term calf strength maintenance"],
-        precautions: ["Do not return to explosive sport before the criteria are met", "Monitor training load and calf soreness", "Calf strength deficits can persist beyond a year, so keep testing [@saab24]"],
+        precautions: ["Do not return to explosive sport before the criteria are met", "Monitor training load and calf soreness", "Calf strength deficits can persist beyond a year, so keep testing [r11]"],
         exercises: [
           { name: "Plyometric and acceleration drills", dosage: "2–3 sessions per week, progressing speed and distance", cues: "Quiet landings, quick contact" },
           { name: "Planned then reactive change-of-direction drills", dosage: "2–3 sessions per week", cues: "Stay low and control the push-off", figure: { pose: "cut-plant", view: "anterior" } },
           { name: "Heavy calf strength maintenance", dosage: "2 times per week, 3–5 × 5–8", cues: "Keep this program going for the long term", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
           { name: "Full team or sport training, then competition", dosage: "Stepwise increase over several weeks", cues: "Monitor calf response and next-day symptoms" }
         ],
-        progressionCriteria: ["Single-leg heel-rise and hop tests at least 90% of the other side (clinical convention)", "Plantarflexion force symmetry and calf size improving [@saab24]", "ATRS and confidence consistent with sport demands", "Full unrestricted training completed"]
+        progressionCriteria: ["Single-leg heel-rise and hop tests at least 90% of the other side (clinical convention)", "Plantarflexion force symmetry and calf size improving [r11]", "ATRS and confidence consistent with sport demands", "Full unrestricted training completed"]
       }
     ]
   },
@@ -308,48 +308,48 @@ export default {
     criteria: [
       "At least 6 months, and often 9–12 months, since injury or repair (a clinical range; criteria override time)",
       "Single-leg heel-rise height and repetitions at least 90% of the other side (clinical convention)",
-      "Plantarflexion force and hop tests at or near limb symmetry; deficits in force and calf size can persist beyond a year [@saab24]",
+      "Plantarflexion force and hop tests at or near limb symmetry; deficits in force and calf size can persist beyond a year [r11]",
       "Pain-free running, acceleration, jumping and cutting with no next-day swelling or pain",
-      "Patient-reported function (ATRS) and confidence suitable for the sport [@myhrvold22]",
-      "Shared decision with the athlete, coach and treating doctor, with a defined plan for load management [@zellers16]"
+      "Patient-reported function (ATRS) and confidence suitable for the sport [r3]",
+      "Shared decision with the athlete, coach and treating doctor, with a defined plan for load management [r15]"
     ],
     tests: ["Single-leg heel-rise endurance and height", "Isometric or isokinetic plantarflexion force compared with the other side", "Single, triple and repeated hop tests and countermovement or drop jumps", "ATRS and VISA-A questionnaires", "Sport-specific running and cutting assessment"]
   },
-  prognosis: "Most people return to daily activity and many to sport. In a meta-analysis, 80% returned to play (95% CI 75–85%), but the figure depends on how return is defined [@zellers16]. In a randomised trial, patient-reported outcomes at 12 months were similar with non-operative treatment, open repair and minimally invasive repair, with re-rupture in 6.2% of the non-operative group and 0.6% of each surgical group [@myhrvold22]. In pooled data, re-rupture was 2.3% after surgery and 3.9% without, with complications 4.9% versus 1.6% [@ochen19]. A year or more after open repair, calf force, calf circumference and heel-to-floor distance were still lower on the operated side, and the tendon was thicker [@saab24]. DVT can complicate recovery [@saarensilta25].",
+  prognosis: "Most people return to daily activity and many to sport. In a meta-analysis, 80% returned to play (95% CI 75–85%), but the figure depends on how return is defined [r15]. In a randomised trial, patient-reported outcomes at 12 months were similar with non-operative treatment, open repair and minimally invasive repair, with re-rupture in 6.2% of the non-operative group and 0.6% of each surgical group [r3]. In pooled data, re-rupture was 2.3% after surgery and 3.9% without, with complications 4.9% versus 1.6% [r4]. A year or more after open repair, calf force, calf circumference and heel-to-floor distance were still lower on the operated side, and the tendon was thicker [r11]. DVT can complicate recovery [r13].",
   prevention: [
     "Condition the calf and tendon before returning to sudden, explosive sport after a long break (common clinical advice; not tested in the sources reviewed).",
-    "Assess and treat Achilles pain early rather than playing through it, since tendon degeneration underlies most ruptures [@kannus91].",
-    "Review fluoroquinolone antibiotic use in people with Achilles pain or other risk factors, and avoid corticosteroid injection near the tendon [@tsai11,@turmo14].",
+    "Assess and treat Achilles pain early rather than playing through it, since tendon degeneration underlies most ruptures [r1].",
+    "Review fluoroquinolone antibiotic use in people with Achilles pain or other risk factors, and avoid corticosteroid injection near the tendon [r9,r10].",
     "Maintain calf strength and endurance with regular heavy calf work as part of a general conditioning program (clinical practice)."
   ],
   clinicalPearls: [
-    "The ability to plantarflex does not exclude rupture. The toe flexors and peroneals can produce weak plantarflexion, so use the squeeze and Matles tests and look for the gap [@maffulli98].",
-    "Combine tests. In one series every patient with a complete rupture had at least two positive tests, and the calf squeeze test had the highest sensitivity (96%) and specificity (93%) [@maffulli98,@reiman14].",
-    "A palpable gap may fill with haematoma after the first few hours. Do not rely on palpation alone: gap palpation had a sensitivity of 73% [@maffulli98].",
-    "Check the whole ankle. A medial malleolar fracture was missed in a reported rupture [@nakajima16].",
-    "Set expectations about the trade-off: re-rupture 6.2% non-operatively versus 0.6% after surgery in one trial, against more infection and nerve injury with surgery [@myhrvold22,@ochen19].",
-    "Test calf strength and endurance objectively and repeatedly. Deficits can persist beyond a year [@saab24]."
+    "The ability to plantarflex does not exclude rupture. The toe flexors and peroneals can produce weak plantarflexion, so use the squeeze and Matles tests and look for the gap [r16].",
+    "Combine tests. In one series every patient with a complete rupture had at least two positive tests, and the calf squeeze test had the highest sensitivity (96%) and specificity (93%) [r16,r17].",
+    "A palpable gap may fill with haematoma after the first few hours. Do not rely on palpation alone: gap palpation had a sensitivity of 73% [r16].",
+    "Check the whole ankle. A medial malleolar fracture was missed in a reported rupture [r12].",
+    "Set expectations about the trade-off: re-rupture 6.2% non-operatively versus 0.6% after surgery in one trial, against more infection and nerve injury with surgery [r3,r4].",
+    "Test calf strength and endurance objectively and repeatedly. Deficits can persist beyond a year [r11]."
   ],
   related: ["midportion-achilles-tendinopathy", "insertional-achilles-tendinopathy", "calf-strain", "soleus-strain", "ankle-fracture", "posterior-ankle-impingement"],
 
   references: [
-    { id: "@kannus91", citation: "Kannus P, Józsa L. Histopathological changes preceding spontaneous rupture of a tendon. A controlled study of 891 patients. J Bone Joint Surg Am. 1991;73(10):1507-25.", pmid: "1748700", type: "case-control", year: 1991 },
-    { id: "@dv22", citation: "Della Villa F, Buckthorpe M, Tosarelli F, et al. Video analysis of Achilles tendon rupture in male professional football (soccer) players: injury mechanisms, patterns and biomechanics. BMJ Open Sport Exerc Med. 2022;8(3):e001419.", pmid: "36172398", doi: "10.1136/bmjsem-2022-001419", type: "biomechanical", year: 2022 },
-    { id: "@myhrvold22", citation: "Myhrvold SB, Brouwer EF, Andresen TKM, et al. Nonoperative or surgical treatment of acute Achilles' tendon rupture. N Engl J Med. 2022;386(15):1409-20.", pmid: "35417636", doi: "10.1056/NEJMoa2108447", type: "rct", year: 2022 },
-    { id: "@ochen19", citation: "Ochen Y, Beks RB, van Heijl M, et al. Operative treatment versus nonoperative treatment of Achilles tendon ruptures: systematic review and meta-analysis. BMJ. 2019;364:k5120.", pmid: "30617123", doi: "10.1136/bmj.k5120", type: "meta-analysis", year: 2019 },
-    { id: "@willits10", citation: "Willits K, Amendola A, Bryant D, et al. Operative versus nonoperative treatment of acute Achilles tendon ruptures: a multicenter randomized trial using accelerated functional rehabilitation. J Bone Joint Surg Am. 2010;92(17):2767-75.", pmid: "21037028", doi: "10.2106/JBJS.I.01401", type: "rct", year: 2010 },
-    { id: "@soroceanu12", citation: "Soroceanu A, Sidhwa F, Aarabi S, et al. Surgical versus nonsurgical treatment of acute Achilles tendon rupture: a meta-analysis of randomized trials. J Bone Joint Surg Am. 2012;94(23):2136-43.", pmid: "23224384", doi: "10.2106/JBJS.K.00917", type: "meta-analysis", year: 2012 },
-    { id: "@ganestam16", citation: "Ganestam A, Kallemose T, Troelsen A, et al. Increasing incidence of acute Achilles tendon rupture and a noticeable decline in surgical treatment from 1994 to 2013. A nationwide registry study of 33,160 patients. Knee Surg Sports Traumatol Arthrosc. 2016;24(12):3730-7.", pmid: "25697284", doi: "10.1007/s00167-015-3544-5", type: "cross-sectional", year: 2016 },
-    { id: "@yuce24", citation: "Yüce A, Yerli M, Misir A. The injury mechanism of Achilles tendon rupture in professional athletes: a video analysis study. J Am Podiatr Med Assoc. 2024;114(3).", pmid: "39067034", doi: "10.7547/21-196", type: "biomechanical", year: 2024 },
-    { id: "@tsai11", citation: "Tsai WC, Yang YM. Fluoroquinolone-associated tendinopathy. Chang Gung Med J. 2011;34(5):461-7.", pmid: "22035890", type: "narrative-review", year: 2011 },
-    { id: "@turmo14", citation: "Turmo-Garuz A, Rodas G, Balius R, et al. Can local corticosteroid injection in the retrocalcaneal bursa lead to rupture of the Achilles tendon and the medial head of the gastrocnemius muscle? Musculoskelet Surg. 2014;98(2):121-6.", pmid: "24222527", doi: "10.1007/s12306-013-0305-9", type: "other", year: 2014 },
-    { id: "@saab24", citation: "Saab M, Derousseaux R, Beldame J, et al. Portable device for measuring isometric plantar-flexion force after open Achilles repair: retrospective cohort of 30 recreational athletes with one-year minimum follow-up. Orthop Traumatol Surg Res. 2024;110(5):103791.", pmid: "38072309", doi: "10.1016/j.otsr.2023.103791", type: "cohort", year: 2024 },
-    { id: "@saarensilta25", citation: "Saarensilta A, Chen J, Reitzner SM, et al. Novel tissue biomarker candidates to predict both deep venous thrombosis and healing outcome after Achilles tendon rupture. Sci Rep. 2025;15(1):7318.", pmid: "40025102", doi: "10.1038/s41598-025-91511-0", type: "cohort", year: 2025 },
-    { id: "@deng23", citation: "Deng Z, Li Z, Shen C, et al. Outcomes of early versus late functional weight-bearing after the acute Achilles tendon rupture repair with minimally invasive surgery: a randomized controlled trial. Arch Orthop Trauma Surg. 2023;143(4):2047-53.", pmid: "35767039", doi: "10.1007/s00402-022-04535-w", type: "rct", year: 2023 },
-    { id: "@zellers16", citation: "Zellers JA, Carmont MR, Grävare Silbernagel K. Return to play post-Achilles tendon rupture: a systematic review and meta-analysis of rate and measures of return to play. Br J Sports Med. 2016;50(21):1325-32.", pmid: "27259751", doi: "10.1136/bjsports-2016-096106", type: "meta-analysis", year: 2016 },
-    { id: "@maffulli98", citation: "Maffulli N. The clinical diagnosis of subcutaneous tear of the Achilles tendon. A prospective study in 174 patients. Am J Sports Med. 1998;26(2):266-70.", pmid: "9548122", doi: "10.1177/03635465980260021801", type: "diagnostic-accuracy", year: 1998 },
-    { id: "@reiman14", citation: "Reiman M, Burgi C, Strube E, et al. The utility of clinical measures for the diagnosis of Achilles tendon injuries: a systematic review with meta-analysis. J Athl Train. 2014;49(6):820-9.", pmid: "25243736", doi: "10.4085/1062-6050-49.3.36", type: "diagnostic-accuracy", year: 2014 },
-    { id: "@nakajima16", citation: "Nakajima K, Taketomi S, Inui H, et al. Missed medial malleolar fracture associated with Achilles tendon rupture: a case report and literature review. J Foot Ankle Surg. 2016;55(1):169-72.", pmid: "25441273", doi: "10.1053/j.jfas.2014.09.027", type: "other", year: 2016 },
+    { id: "r1", citation: "Kannus P, Józsa L. Histopathological changes preceding spontaneous rupture of a tendon. A controlled study of 891 patients. J Bone Joint Surg Am. 1991;73(10):1507-25.", pmid: "1748700", type: "case-control", year: 1991 },
+    { id: "r2", citation: "Della Villa F, Buckthorpe M, Tosarelli F, et al. Video analysis of Achilles tendon rupture in male professional football (soccer) players: injury mechanisms, patterns and biomechanics. BMJ Open Sport Exerc Med. 2022;8(3):e001419.", pmid: "36172398", doi: "10.1136/bmjsem-2022-001419", type: "biomechanical", year: 2022 },
+    { id: "r3", citation: "Myhrvold SB, Brouwer EF, Andresen TKM, et al. Nonoperative or surgical treatment of acute Achilles' tendon rupture. N Engl J Med. 2022;386(15):1409-20.", pmid: "35417636", doi: "10.1056/NEJMoa2108447", type: "rct", year: 2022 },
+    { id: "r4", citation: "Ochen Y, Beks RB, van Heijl M, et al. Operative treatment versus nonoperative treatment of Achilles tendon ruptures: systematic review and meta-analysis. BMJ. 2019;364:k5120.", pmid: "30617123", doi: "10.1136/bmj.k5120", type: "meta-analysis", year: 2019 },
+    { id: "r5", citation: "Willits K, Amendola A, Bryant D, et al. Operative versus nonoperative treatment of acute Achilles tendon ruptures: a multicenter randomized trial using accelerated functional rehabilitation. J Bone Joint Surg Am. 2010;92(17):2767-75.", pmid: "21037028", doi: "10.2106/JBJS.I.01401", type: "rct", year: 2010 },
+    { id: "r6", citation: "Soroceanu A, Sidhwa F, Aarabi S, et al. Surgical versus nonsurgical treatment of acute Achilles tendon rupture: a meta-analysis of randomized trials. J Bone Joint Surg Am. 2012;94(23):2136-43.", pmid: "23224384", doi: "10.2106/JBJS.K.00917", type: "meta-analysis", year: 2012 },
+    { id: "r7", citation: "Ganestam A, Kallemose T, Troelsen A, et al. Increasing incidence of acute Achilles tendon rupture and a noticeable decline in surgical treatment from 1994 to 2013. A nationwide registry study of 33,160 patients. Knee Surg Sports Traumatol Arthrosc. 2016;24(12):3730-7.", pmid: "25697284", doi: "10.1007/s00167-015-3544-5", type: "cross-sectional", year: 2016 },
+    { id: "r8", citation: "Yüce A, Yerli M, Misir A. The injury mechanism of Achilles tendon rupture in professional athletes: a video analysis study. J Am Podiatr Med Assoc. 2024;114(3).", pmid: "39067034", doi: "10.7547/21-196", type: "biomechanical", year: 2024 },
+    { id: "r9", citation: "Tsai WC, Yang YM. Fluoroquinolone-associated tendinopathy. Chang Gung Med J. 2011;34(5):461-7.", pmid: "22035890", type: "narrative-review", year: 2011 },
+    { id: "r10", citation: "Turmo-Garuz A, Rodas G, Balius R, et al. Can local corticosteroid injection in the retrocalcaneal bursa lead to rupture of the Achilles tendon and the medial head of the gastrocnemius muscle? Musculoskelet Surg. 2014;98(2):121-6.", pmid: "24222527", doi: "10.1007/s12306-013-0305-9", type: "other", year: 2014 },
+    { id: "r11", citation: "Saab M, Derousseaux R, Beldame J, et al. Portable device for measuring isometric plantar-flexion force after open Achilles repair: retrospective cohort of 30 recreational athletes with one-year minimum follow-up. Orthop Traumatol Surg Res. 2024;110(5):103791.", pmid: "38072309", doi: "10.1016/j.otsr.2023.103791", type: "cohort", year: 2024 },
+    { id: "r12", citation: "Nakajima K, Taketomi S, Inui H, et al. Missed medial malleolar fracture associated with Achilles tendon rupture: a case report and literature review. J Foot Ankle Surg. 2016;55(1):169-72.", pmid: "25441273", doi: "10.1053/j.jfas.2014.09.027", type: "other", year: 2016 },
+    { id: "r13", citation: "Saarensilta A, Chen J, Reitzner SM, et al. Novel tissue biomarker candidates to predict both deep venous thrombosis and healing outcome after Achilles tendon rupture. Sci Rep. 2025;15(1):7318.", pmid: "40025102", doi: "10.1038/s41598-025-91511-0", type: "cohort", year: 2025 },
+    { id: "r14", citation: "Deng Z, Li Z, Shen C, et al. Outcomes of early versus late functional weight-bearing after the acute Achilles tendon rupture repair with minimally invasive surgery: a randomized controlled trial. Arch Orthop Trauma Surg. 2023;143(4):2047-53.", pmid: "35767039", doi: "10.1007/s00402-022-04535-w", type: "rct", year: 2023 },
+    { id: "r15", citation: "Zellers JA, Carmont MR, Grävare Silbernagel K. Return to play post-Achilles tendon rupture: a systematic review and meta-analysis of rate and measures of return to play. Br J Sports Med. 2016;50(21):1325-32.", pmid: "27259751", doi: "10.1136/bjsports-2016-096106", type: "meta-analysis", year: 2016 },
+    { id: "r16", citation: "Maffulli N. The clinical diagnosis of subcutaneous tear of the Achilles tendon. A prospective study in 174 patients. Am J Sports Med. 1998;26(2):266-70.", pmid: "9548122", doi: "10.1177/03635465980260021801", type: "diagnostic-accuracy", year: 1998 },
+    { id: "r17", citation: "Reiman M, Burgi C, Strube E, et al. The utility of clinical measures for the diagnosis of Achilles tendon injuries: a systematic review with meta-analysis. J Athl Train. 2014;49(6):820-9.", pmid: "25243736", doi: "10.4085/1062-6050-49.3.36", type: "diagnostic-accuracy", year: 2014 },
   ],
 
   animation: {
