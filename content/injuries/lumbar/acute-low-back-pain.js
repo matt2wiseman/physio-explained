@@ -1,0 +1,438 @@
+export default {
+  id: "acute-low-back-pain",
+  name: "Acute non-specific low back pain (muscle/ligament strain)",
+  shortName: "Acute low back pain",
+  aka: ["acute LBP", "non-specific low back pain", "lumbar strain", "back sprain", "pulled back", "mechanical low back pain", "back spasm", "lumbago", "thrown out back"],
+  region: "lumbar",
+  tissues: ["multiple"],
+  onset: "acute",
+  mechanismType: ["non-contact", "overuse"],
+  populations: ["adults of all ages", "people in physically demanding jobs", "people with previous episodes of low back pain", "desk-based workers with long sitting exposure"],
+  sports: ["weightlifting", "rowing", "golf", "football codes", "gardening"],
+  urgency: "routine",
+  summary: "Back pain of under 6 weeks with no identifiable structural cause, usually triggered by a loaded or awkward movement. It improves quickly in most people, but recurs often and is shaped by biopsychosocial factors.",
+  keyFacts: [
+    { label: "Typical recovery", value: "Mean pain falls from 52 to 23 (0–100 scale) by 6 weeks, then improves more slowly" },
+    { label: "Recurrence", value: "69% have another episode within 12 months" },
+    { label: "Key test", value: "No test identifies the painful tissue; screen for red flags and for radicular signs" },
+    { label: "Imaging", value: "Not routinely needed: immediate imaging did not improve outcomes in 6 trials (n = 1804)" },
+    { label: "Serious pathology", value: "0.9% (11 of 1172) in one primary care cohort; 8 of the 11 were fractures" },
+    { label: "Burden", value: "Leading cause of disability worldwide" }
+  ],
+  overview: "Acute non-specific low back pain (LBP) is pain in the lumbar region, with or without referral to the buttock or thigh, of less than about 6 weeks' duration that has no identifiable specific cause such as fracture, malignancy, infection or nerve root compression. For nearly all people with LBP it is not possible to identify a specific nociceptive cause, and only a small proportion have a well-understood pathological cause [r1]. Labels such as 'muscle strain', 'ligament sprain' or 'facet irritation' are therefore working descriptions, not confirmed diagnoses.\n\nLBP is the leading cause of disability worldwide [r1]. Most new episodes improve quickly: in acute cohorts the mean pain score fell from 52 out of 100 at baseline to 23 at 6 weeks [r2]. Recurrence is common (69% within 12 months) [r3], and a small proportion progress to persistent disabling pain, which is predicted by high initial pain intensity, psychological distress and pain at multiple body sites [r1].\n\nBecause most episodes settle, the evidence supports a low-intervention, high-communication approach: screen for serious pathology and for radiculopathy, explain the favourable course, keep the person moving, use time-limited analgesia if needed, and review early for those who are not improving [r4,r5]. Guidelines identify the overuse of imaging, rest, opioids, spinal injections and surgery as the main gaps between evidence and practice [r4].",
+
+  epidemiology: {
+    text: "LBP occurs in high-, middle- and low-income countries and in all age groups from children to older adults, and is now the leading cause of disability worldwide; years lived with disability from LBP increased by 54% between 1990 and 2015, mainly through population growth and ageing [r1]. Disabling LBP is over-represented among people with low socioeconomic status [r1]. Most people with a new episode recover quickly, but recurrence is common and a small proportion develop persistent disabling LBP [r1]. In a Sydney primary care cohort of 1172 people with acute LBP, 11 (0.9%) had serious pathology, 8 of them vertebral fracture [r6].",
+    riskFactors: {
+      intrinsic: [
+        "More than two previous episodes of LBP (predicts recurrence within 12 months) [r3]",
+        "High initial pain intensity, psychological distress and pain at multiple body sites (predict persistent disabling LBP) [r1]",
+        "Physical and mental comorbidities [r1]",
+        "Obesity and smoking (groups at greatest risk of reporting LBP) [r1]"
+      ],
+      extrinsic: [
+        "Physically demanding work [r1]",
+        "Transient triggers in the 2 hours before onset: manual tasks with heavy loads, awkward postures, fatigue during a task, and moderate or vigorous activity (odds ratios 2.9–11.7) [r7]",
+        "Frequent awkward postures and sitting for more than 5 hours a day (predict recurrence; modifiable) [r3]",
+        "Low socioeconomic status [r1]"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "Most acute episodes are triggered, not caused by one identifiable injury. In a case-crossover study of 999 people with sudden-onset LBP, brief exposures in the 2 hours before onset (manual tasks with heavy loads, awkward postures, caring for live people or animals, moderate or vigorous activity and fatigue during a task) increased the odds of an episode 2.9 to 11.7 times [r7]. The painful tissue is rarely demonstrable, so the animation shows a provocative loaded bend and then the whole set of candidate tissues rather than one failing structure.",
+    sequence: [
+      "A person with background susceptibility (previous episodes, long sitting, poor sleep, stress, fatigue, low activity) starts an ordinary task.",
+      "A trigger occurs: a loaded or awkward posture such as bending to pick something up, often when tired or distracted [r7].",
+      "Load exceeds the current tolerance of one or more lumbar tissues (muscle, fascia, ligament, disc or facet joint), and nociceptors fire and become sensitised. Examination and imaging cannot usually identify which tissue [r1].",
+      "A protective response follows: paraspinal guarding, restricted movement and an antalgic posture.",
+      "Pain is amplified or dampened by central pain modulation and beliefs, such as fear of damage, catastrophising, poor sleep and work stress [r1].",
+      "Most episodes settle with movement and time, with the greatest improvement in the first 6 weeks [r2]; recurrence is common [r3]."
+    ],
+    variants: [
+      { name: "Flexion-provoked pain", description: "Pain with bending, lifting and prolonged sitting that eases on standing or walking. This is a clinical sub-grouping without a validated tissue basis; it is useful for choosing the exercise direction." },
+      { name: "Extension-provoked pain", description: "Pain with standing, walking and arching that eases on sitting or flexing. Also a clinical sub-grouping; consider facet, stenotic or spondylolytic contributions when it is persistent or extension-dominant in young athletes." },
+      { name: "Sudden severe onset with a 'catch'", description: "Intense pain and marked restriction after a minor movement such as a sneeze or a bend, usually improving over days. The tissue source is uncertain." },
+      { name: "Flare of recurrent low back pain", description: "A new episode in someone who has recovered from earlier ones. In one inception cohort of 250 recovered people, the median time to recurrence was 139 days [r3]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The lumbar spine is a stack of five vertebrae joined by intervertebral discs anteriorly and paired facet (zygapophyseal) joints posteriorly, held together by the anterior and posterior longitudinal ligaments, ligamentum flavum, and the interspinous and supraspinous ligaments. It is moved and stabilised by the multifidus and erector spinae, the abdominal wall, the psoas and the hip muscles, and encased posteriorly by the thoracolumbar fascia. Nociceptors are found in the outer annulus, facet capsules, ligaments, muscles and fascia and the dura, so many tissues are capable of producing pain, which is part of the reason a single source is so rarely identified.",
+    structures: [
+      { name: "Multifidus and erector spinae", role: "Segmental and global extensor control; common site of guarding and perceived tightness" },
+      { name: "Thoracolumbar fascia", role: "Connects the trunk and hip muscles and transmits tension across the lumbar spine" },
+      { name: "Intervertebral discs", role: "Carry compressive load and allow motion; the outer annulus is innervated" },
+      { name: "Facet joints", role: "Guide and limit motion, especially rotation and extension; capsules are richly innervated" },
+      { name: "Interspinous and supraspinous ligaments", role: "Resist flexion; can be loaded in sustained or end-range flexion" },
+      { name: "Lumbar nerve roots and dorsal rami", role: "Carry sensory input from the spine and supply the paraspinal muscles; irritation produces leg symptoms and neurological signs that move the diagnosis out of 'non-specific'" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "In most episodes no specific tissue lesion can be demonstrated. Several lumbar tissues could generate pain, but clinical tests and imaging cannot reliably tell which one is responsible [r1]. Imaging is a poor guide: in pain-free people disc bulge rises from 30% at age 20 to 84% at age 80, disc degeneration from 37% to 96% and annular fissure from 19% to 29% [r8], and early imaging in people without features of serious pathology did not improve pain or function in a meta-analysis of 6 trials (n = 1804) [r9].\n\nIf tissue is overloaded, plausible acute changes are minor muscle or fascial strain or capsule and ligament irritation with local inflammatory sensitisation. That is an inference from tissue biology, not a demonstrated finding in these patients, and these changes would be expected to settle over days to weeks. What the evidence supports better is that pain intensity and persistence are shaped by non-tissue factors: central pain-modulating mechanisms and pain cognitions have important roles in the development of persistent disabling LBP [r1].",
+    structures: [
+      { name: "Paraspinal muscles and thoracolumbar fascia", effect: "Possible minor overload or strain with guarding; not demonstrable on imaging in most cases" },
+      { name: "Interspinous and supraspinous ligaments and facet capsules", effect: "Possible irritation with sustained or end-range loading; no reliable clinical test" },
+      { name: "Intervertebral disc (outer annulus)", effect: "Annular fissures are common in pain-free people, so their presence does not prove the source [r8]" },
+      { name: "Facet joint", effect: "Possible source of extension-provoked pain; see the facet joint pain page for the limits of clinical diagnosis" }
+    ],
+    muscles: [
+      { name: "Multifidus and erector spinae", effect: "Reflex guarding and increased tone in the first days; movement is restricted and an antalgic posture is common (clinical observation)" },
+      { name: "Trunk muscle motor control", effect: "Altered recruitment and muscle size have been reported in LBP, but their role in acute non-specific episodes is unclear and was not tested in the sources reviewed" },
+      { name: "Abdominal wall, glutes and hip extensors", effect: "Avoidance of activity reduces capacity; deconditioning can add to recurrence risk" },
+      { name: "Hamstrings and hip flexors", effect: "Protective stiffness limits pelvic motion and forward bending" }
+    ],
+    cellular: [
+      { phase: "Nociceptor activation and peripheral sensitisation", timing: "Hours to days", description: "Mechanical overload and local inflammatory mediators are thought to lower nociceptor thresholds. This is inferred from tissue biology; direct data in acute non-specific LBP were not identified in the sources reviewed." },
+      { phase: "Rapid spontaneous settling", timing: "Days to ~6 weeks", description: "Mean pain falls from 52 to 23 out of 100 by 6 weeks in acute cohorts [r2]." },
+      { phase: "Slower improvement", timing: "6 weeks to 12 months", description: "Mean pain was 12 at 26 weeks and 6 at 52 weeks in acute cohorts, with low to moderate pain still present at 1 year in persistent cohorts [r2]." },
+      { phase: "Risk of persistence", timing: "From ~6 weeks", description: "Central pain modulation, pain cognitions, distress and multi-site pain predict persistent disabling LBP [r1]." }
+    ],
+    systems: [
+      { system: "Nervous system (central)", effect: "Central pain-modulating mechanisms and pain cognitions have important roles in persistent disabling LBP [r1]; threat appraisal can amplify pain in the acute episode" },
+      { system: "Psychological", effect: "Psychological distress, fear of movement and catastrophising increase the risk of persistence [r1]; early identification allows matched care [r10]" },
+      { system: "Occupational and social", effect: "Physically demanding work, low socioeconomic status and work disability influence outcome, and guidelines include work participation as a treatment target [r4]" },
+      { system: "Musculoskeletal", effect: "Guarding, reduced movement and deconditioning can follow prolonged inactivity and add to recurrence risk" },
+      { system: "Immune and inflammatory", effect: "Local inflammatory sensitisation is plausible if tissue is overloaded but not shown in this population" },
+      { system: "Sleep and stress", effect: "Poor sleep and stress commonly accompany episodes and are plausible contributors to pain amplification; their causal role was not tested in the sources reviewed" }
+    ]
+  },
+
+  grading: {
+    system: "Duration-based classification (conventional) and prognostic risk",
+    grades: [
+      { grade: "Acute (< 6 weeks)", description: "The usual definition of acute LBP in trials of acute LBP [r11,r12]. Most patients improve markedly in this period.", prognosis: "Mean pain 52 at baseline and 23 at 6 weeks (0–100) [r2]" },
+      { grade: "Subacute (6–12 weeks)", description: "Conventional definition; the 2021 JOSPT guideline differentiates only acute from chronic LBP because there is no accepted standard for subacute [r13].", prognosis: "Improvement slows; reassess for yellow flags and consider specialist or multidisciplinary input if progress stalls" },
+      { grade: "Chronic (> 12 weeks)", description: "Persistent LBP; not covered in detail here.", prognosis: "Mean pain in persistent cohorts was 33 at 6 weeks and 23 at 52 weeks [r2]" },
+      { grade: "Prognostic risk (low, medium, high)", description: "Stratified care using a short screening tool such as STarT Back matches the intensity of treatment to the risk of poor outcome.", prognosis: "Stratified care improved disability scores at 4 and 12 months and saved costs compared with best current care in one UK trial [r10]" }
+    ]
+  },
+
+  timeframes: {
+    summary: "Improvement is steepest in the first 6 weeks and slows after that. About two-thirds of people have a recurrence within a year, so recovery is better described as a course with relapses than a single healed injury [r2,r3].",
+    healing: [
+      { phase: "Acute symptomatic phase", startDay: 0, endDay: 14, description: "Peak pain and guarding; improvement usually begins within days with movement and reassurance" },
+      { phase: "Rapid improvement", startDay: 0, endDay: 42, description: "Mean pain falls from 52 to 23 out of 100 [r2]" },
+      { phase: "Slower improvement and recurrence risk", startDay: 42, endDay: 365, description: "Mean pain 12 at 26 weeks and 6 at 52 weeks in acute cohorts [r2]; 69% have a recurrence within 12 months [r3]" }
+    ],
+    milestones: [
+      { label: "Resume light normal activity and work as tolerated", day: 3, note: "Clinical convention; avoid bed rest [r5]" },
+      { label: "Review and consider referral if not improving", day: 28, note: "Guidelines recommend referral if there is no improvement after 4 weeks [r5]" },
+      { label: "Pain roughly halved from baseline", day: 42, note: "Mean 52 to 23 out of 100 in acute cohorts [r2]" },
+      { label: "Median time to first recurrence (among recovered people)", day: 139, note: "95% CI 105–173 days; 69% recur within 12 months [r3]" },
+      { label: "Mean pain very low in acute cohorts", day: 365, note: "Mean 6 out of 100 at 52 weeks [r2]" }
+    ],
+    returnToSport: "Return to usual work, sport and exercise as soon as symptoms allow, usually within days to a few weeks, guided by function and not by tissue healing time. There are no validated return-to-sport (RTS) criteria for non-specific LBP; the criteria below are clinical convention."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Central or paraspinal low back pain of recent onset, often after bending, lifting or a long period of sitting, or with no clear trigger",
+      "Stiffness and difficulty with transitions such as getting out of a chair or rolling over in bed",
+      "Pain that may refer to the buttock or posterior thigh above the knee, without leg pain below the knee in a dermatomal pattern",
+      "Pain that varies with position and activity, often eased by walking or changing position",
+      "No bladder, bowel or saddle symptoms, and no constant or night pain unrelated to movement"
+    ],
+    signs: [
+      "Guarded movement and an antalgic posture, sometimes a transient lateral shift",
+      "Reduced and painful lumbar range of movement, often in more than one direction",
+      "Paraspinal tenderness and muscle guarding",
+      "A normal neurological examination and negative neural tension tests",
+      "Pain on repeated movements or sustained postures that may change the symptom behaviour (directional preference)"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Onset, trigger, location and spread of pain; relation to flexion, extension, sitting, standing and walking",
+      "Previous episodes, their course and what helped; current treatment and medication",
+      "Leg symptoms below the knee, numbness, weakness, and bladder, bowel and sexual function",
+      "Red flag screen: significant trauma, age over 70, prolonged corticosteroid use, history of cancer, unexplained weight loss, fever, immunosuppression, constant or night pain [r6,r14]",
+      "Yellow flags: distress, low mood, fear of movement, belief that pain means damage, expectation of poor recovery, work and compensation factors [r1]",
+      "Sleep, stress, work demands (heavy loads, awkward postures, prolonged sitting) and activity levels",
+      "Patient goals and expectations of treatment, including scans or injections"
+    ],
+    observation: ["Posture, lateral shift or antalgic stance", "Gait and sit-to-stand", "Willingness to move and signs of fear-avoidant behaviour"],
+    palpation: ["Paraspinal tenderness and guarding", "Palpation is used to guide treatment and not to name a tissue; the sources reviewed identify no clinical test that localises the painful structure in non-specific LBP [r1]"],
+    rangeOfMotion: ["Active lumbar flexion, extension, side flexion and rotation, noting pain response and quality", "Repeated movements and sustained postures to identify any directional preference", "Hip range of motion to exclude a hip source"],
+    strength: ["Screen lower limb myotomes L2–S1 to exclude radiculopathy", "Functional trunk and hip strength and endurance as a baseline (for example sit-to-stand, bridge, side plank)"],
+    neuro: ["Dermatomes, myotomes and knee and ankle reflexes: guidelines recommend neurological testing to identify a radicular syndrome [r5]", "Straight leg raise or slump test if there are leg symptoms", "Sacral sensation and bladder or bowel function if any red flag"],
+    functional: ["Sit-to-stand, forward bend to the shins, lift from floor, walking tolerance", "The patient's own provocative task, such as lifting a child or sitting for a work meeting"],
+    specialTests: [
+      { name: "Straight leg raise or slump test (screen for radicular involvement)", purpose: "Identify leg-dominant pain that suggests nerve root irritation (see the lumbar disc herniation page for accuracy figures)", procedure: "Supine SLR to reproduction of symptoms, or seated slump with sequential knee extension, ankle dorsiflexion and neck flexion.", positive: "Reproduction of familiar leg pain below the knee that changes with sensitising manoeuvres", refs: [] },
+      { name: "Repeated movement testing (directional preference)", purpose: "Find a movement direction that reduces or centralises symptoms to guide exercise", procedure: "Test repeated flexion, extension and side-gliding in standing or lying while recording symptom location and range after each set.", positive: "Symptoms reduce, centralise or range improves with repetition in one direction. The 2021 JOSPT guideline states that physical therapists can use Mechanical Diagnosis and Therapy for acute LBP [r13]; no accuracy figures were identified.", refs: [] },
+      { name: "Neurological screen (myotomes, dermatomes, reflexes)", purpose: "Exclude radiculopathy and progressive deficit", procedure: "Test L2–S1 myotomes, light touch and pinprick, and knee and ankle reflexes bilaterally.", positive: "Weakness, sensory loss or reflex change in a root distribution: reclassify and manage as radiculopathy (see the lumbar disc herniation page).", refs: [] }
+    ],
+    clinicalRules: [
+      { name: "Red flag screening", description: "Serious pathology is rare. Of 1172 people with acute LBP in Sydney primary care, 0.9% had serious pathology, yet 80.4% had at least one red flag, so most flags are false positives when used alone. Only prolonged corticosteroid use, age over 70 and significant trauma were informative for fracture in that cohort [r6]. A systematic review found that a history of malignancy had the highest post-test probability for spinal malignancy (33%), and many flags in guidelines provide virtually no change in probability; multiple red flags together raised the probability of fracture [r14]. Judge the pattern, not single items." },
+      { name: "Prognostic risk stratification", description: "Use a brief validated screening tool such as STarT Back at the first consultation to match care intensity to risk [r10]." },
+      { name: "Review trigger", description: "Guidelines recommend specialist referral if there is suspicion of specific pathology or radiculopathy, or if there is no improvement after 4 weeks [r5]." }
+    ],
+    outcomeMeasures: [
+      { name: "Numeric Pain Rating Scale (0–10)", use: "Pain intensity; the primary outcome in a trial of education for acute LBP [r11]" },
+      { name: "Roland Morris Disability Questionnaire", use: "Back-specific disability; used in the STarT Back and education trials [r10,r11]" },
+      { name: "Patient-Specific Functional Scale", use: "Individual goals such as lifting a child or sitting for 30 minutes" },
+      { name: "STarT Back screening tool", use: "Stratifies risk into low, medium and high to guide treatment intensity [r10]" },
+      { name: "Oswestry Disability Index", use: "Disability measure used in spinal manipulation trials for acute LBP [r12]" }
+    ],
+    imaging: [
+      { modality: "Radiograph, CT or MRI (routine early use)", indication: "Not indicated for acute non-specific LBP without features of serious pathology. Guidelines discourage routine use [r5], and routine immediate lumbar imaging did not improve pain or function in 6 trials (n = 1804) [r9].", findings: "Degenerative findings (disc bulge, degeneration, annular fissure) are common in pain-free people [r8], so incidental findings can raise fear and trigger unnecessary treatment." },
+      { modality: "MRI", indication: "Suspected cauda equina syndrome (emergency), infection, malignancy, or a progressive neurological deficit", findings: "Compression of the cauda equina, abscess or marrow lesion; urgent specialist review" },
+      { modality: "Radiograph (or CT)", indication: "Suspected vertebral fracture: significant trauma, older age or prolonged corticosteroid use [r6]", findings: "Vertebral body wedge or compression fracture" }
+    ]
+  },
+
+  differentials: [
+    { name: "Lumbar disc herniation with radiculopathy", id: "lumbar-disc-herniation", distinguishing: "Leg-dominant pain below the knee in a dermatomal pattern, positive neural tension tests and possible myotomal weakness." },
+    { name: "Lumbar facet joint pain", id: "lumbar-facet-joint-pain", distinguishing: "Extension-provoked back pain with buttock or thigh referral; clinical diagnosis is unreliable, so it is a working label." },
+    { name: "Sacroiliac joint pain", id: "sacroiliac-joint-pain", distinguishing: "Pain below L5 near the posterior superior iliac spine with a cluster of provocation tests." },
+    { name: "Spondylolysis (pars stress fracture)", id: "spondylolysis", distinguishing: "Adolescent athletes in extension and rotation sports with extension-provoked pain that persists beyond a few weeks." },
+    { name: "Spondylolisthesis", id: "spondylolisthesis", distinguishing: "Radiographic vertebral slip; may have a palpable step and extension-related pain." },
+    { name: "Lumbar spinal stenosis", id: "lumbar-spinal-stenosis", distinguishing: "Older adults with bilateral leg symptoms on walking relieved by sitting or flexion." },
+    { name: "Cauda equina syndrome", id: "cauda-equina-syndrome", distinguishing: "Bladder, bowel or saddle change with bilateral leg symptoms; an emergency." },
+    { name: "Vertebral fracture, infection, malignancy or inflammatory back pain", distinguishing: "Trauma or osteoporosis risk, systemic features, constant or night pain, or young-adult insidious pain with morning stiffness and improvement with exercise [r6,r14]." }
+  ],
+  redFlags: [
+    "EMERGENCY: possible cauda equina syndrome (new urinary retention or loss of bladder sensation, faecal incontinence, saddle numbness, sexual dysfunction, bilateral leg symptoms or weakness). Send to an emergency department the same day for urgent MRI and surgical review. It most often follows a large central disc herniation and the incomplete form has a better prognosis if decompressed before it progresses to retention [r15].",
+    "Possible vertebral fracture: significant trauma, age over 70, prolonged corticosteroid use (these three were the informative flags in a primary care cohort), or osteoporosis risk. Arrange imaging and medical review before loading the spine [r6,r14].",
+    "Possible malignancy: past history of cancer (highest post-test probability in a systematic review), unexplained weight loss, constant or night pain unrelieved by position. Arrange urgent medical review and imaging [r14].",
+    "Possible spinal infection: fever, immunosuppression, intravenous drug use or recent infection or spinal procedure, with severe or night pain. Arrange same-day medical review (clinical convention).",
+    "Progressive neurological deficit (worsening weakness or foot drop) or upper motor neuron signs: urgent specialist review.",
+    "Possible inflammatory back pain or visceral referral: onset under about 45 years with morning stiffness over 30 minutes and improvement with exercise but not rest, or abdominal, pulsatile or renal-type pain: refer for rheumatological or medical assessment (clinical convention).",
+    "No improvement after 4 weeks, or worsening despite appropriate care: reassess and consider referral [r5]."
+  ],
+
+  management: {
+    principles: "Because most acute episodes improve regardless of treatment [r16], the evidence supports a low-intervention approach. Triage for serious pathology and radiculopathy, then provide education and reassurance about the favourable course, advice to stay active and avoid bed rest, and simple self-management, using time-limited analgesia if needed and a planned review [r4,r5]. Stratify risk early (for example with STarT Back) so that people with a poor prognosis get matched, psychologically informed care [r10]. Avoid the overuse of imaging, rest, opioids, spinal injections and surgery, which the Lancet low back pain series identified as the main gaps between evidence and practice [r4]. Treat work participation as an outcome, not just pain.",
+    medical: [
+      { name: "Paracetamol (acetaminophen)", description: "Regular or as-needed paracetamol (up to about 4 g a day) did not change the time to recovery compared with placebo in a trial of three groups of about 550 people with acute LBP (median 17, 17 and 16 days; hazard ratio for regular versus placebo 0.99, 95% CI 0.87–1.14). Adverse events were similar [r17].", evidence: "moderate", recommendation: "not-recommended", refs: ["r17"] },
+      { name: "Non-steroidal anti-inflammatory drugs (NSAIDs), short course", description: "The ACP guideline says that if drug treatment is wanted for acute or subacute LBP, NSAIDs or skeletal muscle relaxants should be selected (moderate-quality evidence), and the benefit is modest because most people improve anyway [r16]. A review of 15 guidelines found NSAIDs recommended for short periods in acute LBP [r5]. Use the lowest effective dose for the shortest time after screening for gastrointestinal, renal and cardiovascular risk (clinical convention).", evidence: "moderate", recommendation: "consider", refs: ["r16", "r5"] },
+      { name: "Skeletal muscle relaxants", description: "Listed with NSAIDs as a pharmacological option in the ACP guideline (moderate-quality evidence) [r16]. Sedation limits their use, and they are short-term options only.", evidence: "moderate", recommendation: "consider", refs: ["r16"] },
+      { name: "Opioid analgesics", description: "In the OPAL trial of 347 people with acute LBP or neck pain, a short oxycodone–naloxone course (up to 20 mg oxycodone a day) did not reduce pain at 6 weeks compared with placebo (adjusted mean difference 0.53, 95% CI −0.00 to 1.07) and caused more opioid-related adverse events [r18]. The authors state that opioids should not be recommended for acute non-specific LBP. Earlier guideline overviews had allowed weak opioids for short periods [r5].", evidence: "moderate", recommendation: "not-recommended", refs: ["r18", "r5"] },
+      { name: "Spinal injections, radiofrequency procedures and surgery for acute non-specific LBP", description: "No indication in acute non-specific LBP. The Lancet series reports inappropriately high use of spinal injections and surgery relative to guideline recommendations of prudent use [r4].", evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r4"] }
+    ],
+    physio: [
+      { name: "Reassurance, education and self-management advice (first-line)", description: "Explain the favourable prognosis, that hurt does not equal harm, and how to stay active, pace activities and plan for flare-ups. Guidelines recommend reassurance on the favourable prognosis and advice to return to normal activities [r5]. The 2021 JOSPT guideline says physical therapists may use active, one-to-one education on biopsychosocial contributors and self-management in preference to passive education, and may counsel on the favourable natural history [r13].", evidence: "moderate", recommendation: "recommended", refs: ["r5", "r13", "r4"] },
+      { name: "Stay active; avoid bed rest", description: "Guidelines recommend avoiding bed rest and returning to normal activities, within symptom limits [r5]. The Lancet series lists rest as an inappropriately overused response [r4].", evidence: "moderate", recommendation: "recommended", refs: ["r5", "r4"] },
+      { name: "Superficial heat", description: "Heat wraps or packs for short-term comfort. The ACP guideline recommends superficial heat for acute or subacute LBP on moderate-quality evidence [r16].", evidence: "moderate", recommendation: "recommended", refs: ["r16"] },
+      { name: "Spinal manipulation or joint mobilisation", description: "The 2021 JOSPT guideline says physical therapists should use thrust or non-thrust joint mobilisation to reduce pain and disability in acute LBP [r13]. In a meta-analysis of 15 trials (1711 patients) manipulation gave moderate-quality evidence of a modest improvement in pain (mean −9.95 mm on a 100-mm scale, 95% CI −15.6 to −4.3) and in function at up to 6 weeks, with heterogeneity large and minor transient harms reported in 50–67% of patients in large case series [r12]. The ACP rated the evidence as low quality [r16].", evidence: "moderate", recommendation: "recommended", refs: ["r13", "r12", "r16"] },
+      { name: "Massage and soft tissue mobilisation", description: "The JOSPT guideline says physical therapists may use massage or soft tissue mobilisation for short-term pain relief in acute LBP [r13]; the ACP rated the evidence as low quality [r16]. Use as an adjunct that enables movement, not as a stand-alone treatment.", evidence: "limited", recommendation: "consider", refs: ["r13", "r16"] },
+      { name: "Exercise", description: "A Cochrane review of 23 trials (2674 participants) found very-low-certainty evidence that exercise has no clinically relevant effect on pain or function in acute LBP compared with sham or no treatment [r19]. The JOSPT guideline nonetheless says physical therapists can use exercise, including specific trunk muscle activation, for acute LBP [r13]. In practice use exercise to restore confidence and function and to reduce recurrence, not as a promised cure for the acute episode. Exercise combined with education reduced the risk of a future episode in trials of prevention [r20].", evidence: "very-limited", recommendation: "consider", refs: ["r19", "r13", "r20"] },
+      { name: "Directional preference exercise (Mechanical Diagnosis and Therapy) and treatment-based classification", description: "The JOSPT guideline says physical therapists can use Mechanical Diagnosis and Therapy and may use treatment-based classification to reduce pain and disability in acute LBP [r13].", evidence: "limited", recommendation: "consider", refs: ["r13"] },
+      { name: "Risk-stratified (STarT Back) care", description: "In a UK primary care trial, stratified care matched to a low, medium or high risk of poor outcome improved Roland Morris scores more than best current care (difference 1.81 points at 4 months, 95% CI 1.06–2.57; 1.06 at 12 months, 95% CI 0.25–1.86) and saved costs [r10].", evidence: "moderate", recommendation: "consider", refs: ["r10"] },
+      { name: "Extra intensive education for people at high risk of persistence", description: "Adding two 1-hour sessions of education to first-line care for 202 high-risk people did not reduce pain at 3 months (mean difference −0.3, 95% CI −1.0 to 0.3), with a small disability benefit at 1 week (−1.6 points on a 24-point scale) and 3 months (−1.7 points) that was not present at 6 or 12 months [r11]. Good first-line care is therefore the priority before escalating.", evidence: "limited", recommendation: "consider", refs: ["r11"] },
+      { name: "Psychological programmes for persistent symptoms", description: "Guidelines recommend psychological programmes for people with persistent symptoms and a biopsychosocial framework for management [r4]. Not routine in the first weeks for low-risk people.", evidence: "moderate", recommendation: "consider", refs: ["r4"] }
+    ],
+    education: [
+      "Most back pain settles quickly. On average, pain roughly halves in the first 6 weeks, and you do not need a scan to know that.",
+      "A back that hurts is not necessarily a damaged back. Pain can be sensitive and protective even when the tissues are healthy.",
+      "Keep moving. Short, frequent walks and normal activities within what you can tolerate are better than bed rest.",
+      "Back pain often returns, so the plan is to build confidence, strength and good habits (varied postures, regular activity) and to know what to do in a flare-up.",
+      "Sleep, stress and mood affect pain. If worries, low mood or fear of moving are dominating, tell us so that we can help.",
+      "Go to an emergency department the same day if you develop numbness around the genitals or buttocks, difficulty passing urine, loss of bowel control, or leg weakness that is getting worse. See a doctor promptly if the pain is constant, wakes you at night, or you have a fever or unexplained weight loss."
+    ]
+  },
+
+  rehab: {
+    overview: "Rehabilitation is a graded return to normal movement and activity guided by function and confidence, not a tissue-healing protocol. Most people need education, walking and a few exercises, and stage lengths below are typical clinical conventions only. Exercise has very low-certainty evidence for acute pain relief [r19], so frame it as restoring function and reducing recurrence; exercise with education lowered the risk of a future episode in prevention trials [r20]. Progress when the criteria are met, and use the patient's own goal task (for example lifting a child, a work shift or sport) to set the finish line.",
+    stages: [
+      {
+        name: "Settle & keep moving",
+        timeframe: "Days 0–7 (typical; criteria override time)",
+        goals: ["Reduce guarding by explaining and reassuring", "Walk several times a day", "Find comfortable positions and movements", "Return to light work and daily activity as tolerated"],
+        precautions: ["Screen for red flags first and recheck if the pattern changes", "Avoid bed rest and prolonged sitting; change position often", "Stop and review if leg symptoms spread below the knee or any neurological or bladder symptoms appear"],
+        exercises: [
+          { name: "Short, frequent walks", dosage: "5–15 minutes, 3–6 times a day, building by about 10% every few days (clinical convention)", cues: "Walk tall with a relaxed arm swing; slow is fine", figure: { pose: "walk-heel-strike", view: "lateral" } },
+          { name: "Cat–camel in comfortable range", dosage: "10 slow repetitions, 3–4 times a day (clinical convention)", cues: "Small, smooth range; breathe throughout", figure: { pose: "ex-cat-camel", view: "lateral", props: ["mat"] } },
+          { name: "Directional preference movement: knee-to-chest if flexion eases symptoms, or prone press-up if extension eases them", dosage: "8–10 repetitions, every 2 hours while awake, if the response is positive (clinical convention)", cues: "Choose the direction that reduces or centralises symptoms; stop a direction that spreads pain down the leg", figure: { pose: "ex-prone-press-up", view: "lateral", props: ["mat"] } },
+          { name: "Sit-to-stand practice with position changes", dosage: "5–10 repetitions, 3 times a day (clinical convention)", cues: "Hinge forward from the hips, stand without holding your breath", figure: { pose: "sit", view: "lateral", props: ["chair"] } },
+          { name: "Relaxed breathing and positions of ease", dosage: "2–5 minutes, 2–3 times a day (clinical convention)", cues: "Let the ribs and belly move; let the jaw and shoulders soften" }
+        ],
+        progressionCriteria: ["Pain improving and below about 5/10 at rest (clinical convention)", "Walking 15–20 minutes without a flare", "Sleeping in most of the night and moving in and out of a chair independently"]
+      },
+      {
+        name: "Restore movement & confidence",
+        timeframe: "Weeks 1–3",
+        goals: ["Normal movement in all directions without fear", "Resume usual work and household tasks", "Build a baseline of trunk and hip control"],
+        precautions: ["Increase one variable at a time", "A mild temporary increase in discomfort that settles within 24 hours is acceptable (clinical convention)"],
+        exercises: [
+          { name: "Glute bridge", dosage: "3 sets of 10 repetitions with a 3-second hold, daily (clinical convention)", cues: "Drive through the heels, ribs down, avoid arching the low back", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } },
+          { name: "Bird-dog", dosage: "3 sets of 8 repetitions per side, daily (clinical convention)", cues: "Keep the pelvis level; reach long, not high", figure: { pose: "ex-bird-dog", view: "lateral", props: ["mat"] } },
+          { name: "Hip hinge pattern", dosage: "3 sets of 10 repetitions, 3 times a week (clinical convention)", cues: "Push the hips back; keep the trunk long", figure: { pose: "ex-rdl", view: "lateral" } },
+          { name: "Bodyweight squat to a chair", dosage: "3 sets of 10 repetitions, daily (clinical convention)", cues: "Knees follow the toes; stand tall at the top", figure: { pose: "ex-squat", view: "lateral" } },
+          { name: "Graded walking or cycling", dosage: "20–30 minutes, 4–5 days a week (clinical convention)", cues: "Moderate effort; talk comfortably" }
+        ],
+        progressionCriteria: ["Back pain 3/10 or lower with daily tasks", "Normal or near-normal active lumbar movement", "Back at usual work with modified duties if needed", "Confidence in bending and sitting (self-rated)"]
+      },
+      {
+        name: "Build capacity",
+        timeframe: "Weeks 3–6",
+        goals: ["Restore trunk and hip strength and endurance", "Lift and carry at the level of work and home demands", "Develop a flare-up plan"],
+        precautions: ["Increase load or repetitions by about 5–10% a week (clinical convention)", "Back off by one step for 2–3 days if a flare occurs, then restart"],
+        exercises: [
+          { name: "Dead bug", dosage: "3 sets of 8 repetitions per side, 3 times a week (clinical convention)", cues: "Keep the low back gently flat as the limbs move", figure: { pose: "ex-dead-bug", view: "lateral", props: ["mat"] } },
+          { name: "Side plank", dosage: "3 holds of 20–40 seconds per side, 3 times a week (clinical convention)", cues: "Stack the hips; lift the waist", figure: { pose: "ex-side-plank", view: "lateral", props: ["mat"] } },
+          { name: "Forearm plank", dosage: "3 holds of 20–40 seconds, 3 times a week (clinical convention)", cues: "Straight line from head to heels", figure: { pose: "ex-plank", view: "lateral", props: ["mat"] } },
+          { name: "Hip thrust", dosage: "3 sets of 8–12 repetitions, 2–3 times a week (clinical convention)", cues: "Pelvic tilt at the top; ribs down", figure: { pose: "ex-hip-thrust", view: "lateral", props: ["bench"] } },
+          { name: "Step-up", dosage: "3 sets of 8–10 repetitions per leg, 2–3 times a week (clinical convention)", cues: "Control the descent; keep the pelvis level", figure: { pose: "ex-step-up", view: "lateral", props: ["box"] } }
+        ],
+        progressionCriteria: ["Pain 2/10 or lower with work and exercise", "Side plank and plank 30 seconds or more with good form (clinical convention)", "Lifting a moderate load from the floor without a flare"]
+      },
+      {
+        name: "Full loading & recurrence prevention",
+        timeframe: "Weeks 6 onward",
+        goals: ["Return to full work, sport and recreational demands", "Establish a sustainable exercise habit", "Know how to self-manage a flare-up"],
+        precautions: ["Avoid abrupt jumps in training or work load (clinical convention)", "Seek review if pain returns with leg symptoms or does not settle within about 2 weeks"],
+        exercises: [
+          { name: "Squat lift from the floor", dosage: "4 sets of 6 repetitions at work-simulation loads, 2–3 times a week (clinical convention)", cues: "Keep the load close; exhale on the effort", figure: { pose: "lift-squat", view: "lateral", props: ["box"] } },
+          { name: "Graded stoop lift (varied lifting strategies)", dosage: "3 sets of 5–8 repetitions at moderate load, 2 times a week (clinical convention)", cues: "Exposure to bending with load builds confidence; no single technique is mandatory", figure: { pose: "lift-stoop", view: "lateral", props: ["box"] } },
+          { name: "Romanian deadlift", dosage: "3 sets of 6–10 repetitions, progressive load, 2 times a week (clinical convention)", cues: "Hinge from the hips; keep the bar close", figure: { pose: "ex-rdl", view: "lateral", props: ["barbell"] } },
+          { name: "Farmer carry", dosage: "3 carries of 20–30 metres, 2 times a week (clinical convention)", cues: "Walk tall; avoid leaning to one side", figure: { pose: "ex-farmer-carry", view: "lateral", props: ["kettlebell"] } },
+          { name: "Sport- or work-specific tasks", dosage: "Start at a fraction of usual volume and build in steps of roughly 10–20% a week (clinical convention)", cues: "Return the way the activity is actually done" }
+        ],
+        progressionCriteria: ["Full work and sport demands completed without a limiting flare", "Written self-management and flare-up plan agreed", "Regular exercise habit established (for example 2–3 sessions a week)"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "No validated criteria for returning to sport after acute non-specific LBP were identified; the criteria below reflect clinical convention",
+      "Pain does not limit the target activity (for example 2/10 or lower)",
+      "Normal or near-normal, confident lumbar movement in all directions",
+      "No neurological symptoms or signs and no red flags",
+      "Able to lift, carry and bend at the loads and speeds of the sport or job",
+      "Agreed self-management plan for flare-ups"
+    ],
+    tests: [
+      "Patient-Specific Functional Scale against the goal task",
+      "Roland Morris Disability Questionnaire or Oswestry Disability Index",
+      "Repeated sit-to-stand, floor lift and carry at work-simulation loads",
+      "Side plank and plank endurance, with left and right symmetry"
+    ]
+  },
+
+  prognosis: "The prognosis is generally favourable. In a meta-analysis of 33 inception cohorts (11,166 participants), the mean pain score in acute cohorts was 52 out of 100 at baseline, 23 at 6 weeks, 12 at 26 weeks and 6 at 52 weeks; disability followed a similar course, with most of the improvement in the first 6 weeks [r2]. Recurrence is the rule rather than the exception: in 250 people who had recently recovered, 69% had a further episode within 12 months, 40% had an activity-limiting episode and 41% sought care, and the median time to recurrence was 139 days. Frequent awkward postures, sitting for more than 5 hours a day and more than two previous episodes were predictors [r3]. A small proportion develop persistent disabling LBP, predicted by high initial pain intensity, psychological distress and pain at multiple sites [r1]. In persistent cohorts mean pain was still 23 out of 100 at 52 weeks [r2].",
+  prevention: [
+    "Exercise combined with education reduced the risk of a new LBP episode (relative risk 0.55, 95% CI 0.41–0.74; moderate-quality evidence), and exercise alone may also reduce risk (relative risk 0.65, 95% CI 0.50–0.86; low- to very low-quality evidence) [r20].",
+    "Education alone did not reduce LBP episodes (relative risk 1.03, 95% CI 0.83–1.27) [r20].",
+    "Back belts (relative risk 1.01) and shoe insoles (relative risk 1.01) did not reduce LBP episodes [r20].",
+    "Vary postures and break up long periods of sitting, because exposure to awkward postures and sitting for more than 5 hours a day predicted recurrence [r3].",
+    "Address modifiable general risk factors such as smoking, obesity and physical inactivity [r1]."
+  ],
+  clinicalPearls: [
+    "Avoid naming a tissue. 'Strain', 'sprain' and 'disc problem' are rarely verifiable and can build fear; describe the pain as common, sensitive and likely to improve [r1].",
+    "Triage first, then reassure. Serious pathology is rare (0.9% in one cohort), but 80.4% of that cohort had at least one red flag, so one flag in isolation has little diagnostic value; use the combination and the patient's context [r6].",
+    "Give a prognosis with numbers: mean pain roughly halves by 6 weeks [r2], and have a plan for recurrence, which is common (69% in 12 months) [r3].",
+    "Be cautious with medication expectations: paracetamol did not speed recovery and opioids did not reduce pain relative to placebo in acute LBP [r17,r18].",
+    "Fix the basics before escalating. Extra intensive education added little to good first-line care in high-risk people [r11], while risk-stratified care improved outcomes [r10].",
+    "Use the patient's goal task as the treatment compass and the outcome measure; confidence in movement and return to work are the real endpoints."
+  ],
+  related: ["lumbar-disc-herniation", "lumbar-facet-joint-pain", "sacroiliac-joint-pain", "spondylolysis", "spondylolisthesis", "cauda-equina-syndrome"],
+
+  references: [
+    { id: "r1", citation: "Hartvigsen J, Hancock MJ, Kongsted A, et al. What low back pain is and why we need to pay attention. Lancet. 2018;391(10137):2356-67.", pmid: "29573870", doi: "10.1016/S0140-6736(18)30480-X", type: "narrative-review", year: 2018 },
+    { id: "r2", citation: "da C Menezes Costa L, Maher CG, Hancock MJ, et al. The prognosis of acute and persistent low-back pain: a meta-analysis. CMAJ. 2012;184(11):E613-24.", pmid: "22586331", doi: "10.1503/cmaj.111271", type: "meta-analysis", year: 2012 },
+    { id: "r3", citation: "da Silva T, Mills K, Brown BT, et al. Recurrence of low back pain is common: a prospective inception cohort study. J Physiother. 2019;65(3):159-65.", pmid: "31208917", doi: "10.1016/j.jphys.2019.04.010", type: "cohort", year: 2019 },
+    { id: "r4", citation: "Foster NE, Anema JR, Cherkin D, et al. Prevention and treatment of low back pain: evidence, challenges, and promising directions. Lancet. 2018;391(10137):2368-83.", pmid: "29573872", doi: "10.1016/S0140-6736(18)30489-6", type: "narrative-review", year: 2018 },
+    { id: "r5", citation: "Oliveira CB, Maher CG, Pinto RZ, et al. Clinical practice guidelines for the management of non-specific low back pain in primary care: an updated overview. Eur Spine J. 2018;27(11):2791-803.", pmid: "29971708", doi: "10.1007/s00586-018-5673-2", type: "systematic-review", year: 2018 },
+    { id: "r6", citation: "Henschke N, Maher CG, Refshauge KM, et al. Prevalence of and screening for serious spinal pathology in patients presenting to primary care settings with acute low back pain. Arthritis Rheum. 2009;60(10):3072-80.", pmid: "19790051", doi: "10.1002/art.24853", type: "cohort", year: 2009 },
+    { id: "r7", citation: "Machado GC, Ferreira PH, Maher CG, et al. Transient physical and psychosocial activities increase the risk of nonpersistent and persistent low back pain: a case-crossover study with 12 months follow-up. Spine J. 2016;16(12):1445-52.", pmid: "27503263", doi: "10.1016/j.spinee.2016.08.010", type: "case-control", year: 2016 },
+    { id: "r8", citation: "Brinjikji W, Luetmer PH, Comstock B, et al. Systematic literature review of imaging features of spinal degeneration in asymptomatic populations. AJNR Am J Neuroradiol. 2015;36(4):811-6.", pmid: "25430861", doi: "10.3174/ajnr.A4173", type: "systematic-review", year: 2015 },
+    { id: "r9", citation: "Chou R, Fu R, Carrino JA, et al. Imaging strategies for low-back pain: systematic review and meta-analysis. Lancet. 2009;373(9662):463-72.", pmid: "19200918", doi: "10.1016/S0140-6736(09)60172-0", type: "meta-analysis", year: 2009 },
+    { id: "r10", citation: "Hill JC, Whitehurst DG, Lewis M, et al. Comparison of stratified primary care management for low back pain with current best practice (STarT Back): a randomised controlled trial. Lancet. 2011;378(9802):1560-71.", pmid: "21963002", doi: "10.1016/S0140-6736(11)60937-9", type: "rct", year: 2011 },
+    { id: "r11", citation: "Traeger AC, Lee H, Hübscher M, et al. Effect of intensive patient education vs placebo patient education on outcomes in patients with acute low back pain: a randomized clinical trial. JAMA Neurol. 2019;76(2):161-9.", pmid: "30398542", doi: "10.1001/jamaneurol.2018.3376", type: "rct", year: 2019 },
+    { id: "r12", citation: "Paige NM, Miake-Lye IM, Booth MS, et al. Association of spinal manipulative therapy with clinical benefit and harm for acute low back pain: systematic review and meta-analysis. JAMA. 2017;317(14):1451-60.", pmid: "28399251", doi: "10.1001/jama.2017.3086", type: "meta-analysis", year: 2017 },
+    { id: "r13", citation: "George SZ, Fritz JM, Silfies SP, et al. Interventions for the management of acute and chronic low back pain: revision 2021. J Orthop Sports Phys Ther. 2021;51(11):CPG1-60.", pmid: "34719942", doi: "10.2519/jospt.2021.0304", type: "clinical-practice-guideline", year: 2021 },
+    { id: "r14", citation: "Downie A, Williams CM, Henschke N, et al. Red flags to screen for malignancy and fracture in patients with low back pain: systematic review. BMJ. 2013;347:f7095.", pmid: "24335669", doi: "10.1136/bmj.f7095", type: "systematic-review", year: 2013 },
+    { id: "r15", citation: "Gardner A, Gardner E, Morley T. Cauda equina syndrome: a review of the current clinical and medico-legal position. Eur Spine J. 2011;20(5):690-7.", pmid: "21193933", doi: "10.1007/s00586-010-1668-3", type: "narrative-review", year: 2011 },
+    { id: "r16", citation: "Qaseem A, Wilt TJ, McLean RM, et al. Noninvasive treatments for acute, subacute, and chronic low back pain: a clinical practice guideline from the American College of Physicians. Ann Intern Med. 2017;166(7):514-30.", pmid: "28192789", doi: "10.7326/M16-2367", type: "clinical-practice-guideline", year: 2017 },
+    { id: "r17", citation: "Williams CM, Maher CG, Latimer J, et al. Efficacy of paracetamol for acute low-back pain: a double-blind, randomised controlled trial. Lancet. 2014;384(9954):1586-96.", pmid: "25064594", doi: "10.1016/S0140-6736(14)60805-9", type: "rct", year: 2014 },
+    { id: "r18", citation: "Jones CMP, Day RO, Koes BW, et al. Opioid analgesia for acute low back pain and neck pain (the OPAL trial): a randomised placebo-controlled trial. Lancet. 2023;402(10398):304-12.", pmid: "37392748", doi: "10.1016/S0140-6736(23)00404-X", type: "rct", year: 2023 },
+    { id: "r19", citation: "IJzelenberg W, Oosterhuis T, Hayden JA, et al. Exercise therapy for treatment of acute non-specific low back pain: a Cochrane systematic review and meta-analysis of randomized controlled trials. Arch Phys Med Rehabil. 2024;105(8):1571-84.", pmid: "38513994", doi: "10.1016/j.apmr.2024.02.732", type: "meta-analysis", year: 2024 },
+    { id: "r20", citation: "Steffens D, Maher CG, Pereira LS, et al. Prevention of low back pain: a systematic review and meta-analysis. JAMA Intern Med. 2016;176(2):199-208.", pmid: "26752509", doi: "10.1001/jamainternmed.2015.7431", type: "meta-analysis", year: 2016 }
+  ],
+
+  animation: {
+    title: "How an episode of acute low back pain comes about",
+    phases: [
+      {
+        type: "moi", label: "Trigger", duration: 6.5, view: "lateral", environment: "office",
+        actors: [{ id: "worker", kit: "worker" }],
+        keyframes: [
+          { t: 0, actor: "worker", pose: "sit-desk" },
+          { t: 2.0, actor: "worker", pose: "sit-desk" },
+          { t: 2.8, actor: "worker", pose: "stand" },
+          { t: 3.8, actor: "worker", pose: "lift-stoop" },
+          { t: 4.6, actor: "worker", pose: "lift-stoop", joints: { trunk: 54, pelvis: 54 }, ease: "in" },
+          { t: 5.8, actor: "worker", pose: "stand", joints: { trunk: 10 } }
+        ],
+        forces: [
+          { t: [4.0, 6.0], at: "lowBack", dir: "down", label: "Load on lumbar tissues" }
+        ],
+        highlights: [{ t: [4.2, 6.5], at: "lowBack" }],
+        impacts: [{ t: 4.7, at: "lowBack" }],
+        slowmo: [{ t: [4.2, 5.0], rate: 0.4 }],
+        captions: [
+          { t: 0, text: "After hours at a desk, on a poor night's sleep and under pressure at work, a person gets up." },
+          { t: 2.8, text: "They bend quickly to pick something up from the floor, tired and distracted." },
+          { t: 4.3, text: "A brief loaded, awkward posture is a typical trigger and raises the odds of an episode several-fold." },
+          { t: 5.4, text: "Pain starts and the back guards. No single injured structure can be seen." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "lowBack",
+        captions: [{ t: 0, text: "Zooming into the lumbar spine, seen from the side." }]
+      },
+      {
+        type: "closeup", label: "Which tissue?", duration: 11, scene: "lumbar-sagittal",
+        actions: [
+          { t: 0, do: "highlight", target: "multifidus" },
+          { t: 0.2, do: "label", target: "multifidus", text: "Muscle" },
+          { t: 1.6, do: "unhighlight", target: "multifidus" },
+          { t: 1.6, do: "highlight", target: "thoracolumbarFascia" },
+          { t: 1.8, do: "label", target: "thoracolumbarFascia", text: "Fascia" },
+          { t: 3.2, do: "unhighlight", target: "thoracolumbarFascia" },
+          { t: 3.2, do: "highlight", target: "discL4L5" },
+          { t: 3.4, do: "label", target: "discL4L5", text: "Disc" },
+          { t: 4.8, do: "unhighlight", target: "discL4L5" },
+          { t: 4.8, do: "highlight", target: "facetL4L5" },
+          { t: 5.0, do: "label", target: "facetL4L5", text: "Facet joint" },
+          { t: 6.4, do: "highlight", target: "interspinousLigament" },
+          { t: 6.4, do: "highlight", target: "supraspinousLigament" },
+          { t: 6.4, do: "highlight", target: "multifidus" },
+          { t: 6.4, do: "highlight", target: "thoracolumbarFascia" },
+          { t: 6.4, do: "highlight", target: "discL4L5" },
+          { t: 7.4, do: "spasm", target: "erectorSpinae" },
+          { t: 9.4, do: "camera", zoom: 1, dur: 0.6 }
+        ],
+        captions: [
+          { t: 0, text: "Several tissues in the lumbar spine contain pain receptors, including muscle and fascia." },
+          { t: 3.2, text: "So do the outer disc and the facet joint capsules." },
+          { t: 5.0, text: "Any of them could be hurting, but examination and imaging usually cannot show which one." },
+          { t: 6.4, text: "Pain is better thought of as a protective output from a sensitised system, not the signal from one damaged part." },
+          { t: 7.6, text: "The back muscles guard reflexively, which limits movement for a few days." },
+          { t: 9.0, text: "Scans often show disc bulges or degeneration that are just as common in people without pain." }
+        ]
+      },
+      {
+        type: "micro", label: "If strained", duration: 10, tissue: "muscle",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.5, stage: "contracting" }, { t: 3.0, stage: "eccentric-overstretch" },
+          { t: 5.0, stage: "inflammation" }, { t: 7.2, stage: "regeneration" }
+        ],
+        timeLabels: [{ t: 5.0, text: "Days 1–5" }, { t: 7.2, text: "Weeks 1–6" }],
+        captions: [
+          { t: 0, text: "Healthy paraspinal muscle: organised sarcomeres that shorten and lengthen smoothly." },
+          { t: 1.5, text: "In a loaded bend, the extensors work eccentrically to control the trunk." },
+          { t: 3.0, text: "If load exceeds tolerance, a minor overstretch is possible. In most episodes no tissue damage is actually shown." },
+          { t: 5.0, text: "Local inflammation can sensitise nerve endings for days; this is why movement feels guarded." },
+          { t: 7.2, text: "Whatever the source, most episodes settle over weeks as sensitivity falls and movement returns." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "SP3" }
+};

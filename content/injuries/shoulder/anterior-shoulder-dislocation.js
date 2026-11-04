@@ -1,7 +1,7 @@
 export default {
   id: "anterior-shoulder-dislocation",
   name: "Anterior shoulder dislocation (with Bankart/Hill–Sachs)",
-  shortName: "Anterior shoulder dislocation",
+  shortName: "Shoulder dislocation",
   aka: ["shoulder dislocation", "dislocated shoulder", "glenohumeral dislocation", "anterior glenohumeral dislocation", "Bankart lesion", "Hill–Sachs lesion", "anterior shoulder instability", "subcoracoid dislocation"],
   region: "shoulder",
   tissues: ["labrum", "joint-capsule", "bone", "ligament"],
@@ -19,7 +19,7 @@ export default {
     { label: "Peak age", value: "20–29 years; 71.8% of emergency department cases are male" },
     { label: "Recurrence", value: "About 39% overall in adults; markedly higher at 40 years or under" }
   ],
-  overview: "Acute anterior shoulder dislocation is the most common type of shoulder dislocation [r1]. The humeral head leaves the glenoid forward and below the coracoid, usually after a fall or a contact force on an abducted, externally rotated and extended arm. In young people the capsulolabral complex is detached from the anteroinferior glenoid rim (a Bankart or Perthes–Bankart lesion) in nearly all first-time dislocations, and the posterolateral humeral head is commonly dented against the glenoid rim (a Hill–Sachs lesion) [r2].\n\nThe central clinical problem is recurrence. Across ten studies of adults, recurrent instability followed 39% of first-time traumatic anterior dislocations, and the odds were about 13 times higher at 40 years or under [r3]. Non-operative care is still reasonable: in a 25-year cohort of people aged 12–40 years, 43% never re-dislocated, and in those aged 12–25 years about half had not recurred or had become stable [r4]. Surgical stabilisation lowers recurrence in randomised trials, but functional scores in the longer term are similar, so immediate surgery may not suit everyone [r5,r6].\n\nAcute care is prompt closed reduction with a neurovascular check before and after. Several techniques work [r7]. Immobilisation after reduction did not change the prognosis [r4], and the evidence on external-rotation versus internal-rotation immobilisation is very low certainty [r1]. Rehabilitation, preferably neuromuscular and criteria-based, is the physiotherapist's central role in both pathways [r8].",
+  overview: "Acute anterior shoulder dislocation is the most common type of shoulder dislocation [r1]. The humeral head leaves the glenoid forward and below the coracoid, usually after a fall or a contact force on an abducted, externally rotated and extended arm. In young people the capsulolabral complex is detached from the anteroinferior glenoid rim (a Bankart or Perthes–Bankart lesion) in nearly all first-time dislocations, and the posterolateral humeral head is commonly dented against the glenoid rim (a Hill–Sachs lesion) [r2].\n\nThe central clinical problem is recurrence. Across ten studies of adults, recurrent instability followed 39% of first-time traumatic anterior dislocations, and the odds were about 13 times higher at 40 years or under [r3]. Non-operative care is still reasonable: in a 25-year cohort of people aged 12–40 years, 43% never re-dislocated, and in those aged 12–25 years about half had not recurred or had become stable [r4]. Surgical stabilisation lowers recurrence in randomised trials [r5], but a pooled analysis found no significant difference in functional scores, so immediate surgery may not suit everyone [r6].\n\nAcute care is prompt closed reduction with a neurovascular check before and after. Several techniques work [r7]. Immobilisation after reduction did not change the prognosis [r4], and the evidence on external-rotation versus internal-rotation immobilisation is very low certainty [r1]. Rehabilitation, preferably neuromuscular and criteria-based, is the physiotherapist's central role in both pathways [r8].",
 
   epidemiology: {
     text: "A national sample of United States emergency departments estimated an incidence of 23.9 per 100,000 person-years for all shoulder dislocations; the male rate was 34.9, 2.64 times the female rate [r9]. Men made up 71.8% of cases, and the highest incidence, 47.8 per 100,000, was in the 20–29 year decade; 46.8% of all dislocations occurred between 15 and 29 years of age [r9]. Dislocations most often resulted from a fall (58.8%) and occurred at home (47.7%) or at a sports or recreation site (34.5%); 48.3% occurred during sport or recreation [r9]. Recurrence is common: 39% after a first dislocation in adults [r3], and the risk falls as time from the first dislocation increases [r3].",
@@ -52,8 +52,8 @@ export default {
       "Closed reduction restores alignment, but the labral tear and the humeral head defect remain."
     ],
     variants: [
-      { name: "Contact or collision (tackle) dislocation", description: "A high-energy force on the abducted arm in rugby, football, hockey or martial arts. This is the pattern most often associated with recurrence in young athletes [r10]." },
-      { name: "Fall onto the arm", description: "Falls cause most dislocations presenting to emergency departments (58.8%) [r9]. In people over 40, falls more often produce a rotator cuff tear, a greater tuberosity fracture or nerve injury [r11,r12]." },
+      { name: "Contact or collision (tackle) dislocation", description: "A high-energy force on the abducted arm in rugby, football, hockey or martial arts. In intercollegiate contact athletes with an in-season event, only 40% managed non-operatively returned to play without recurrence the next season [r10]." },
+      { name: "Fall onto the arm", description: "Falls cause most dislocations presenting to emergency departments (58.8%) [r9]. In people over 40, falls are more often associated with a rotator cuff tear [r11] or nerve injury [r12]." },
       { name: "Recurrent or low-energy dislocation", description: "After a first dislocation, later episodes can occur with minimal force or during sleep or daily tasks as the labrum, capsule and bone defects reduce stability. Management tends to shift toward surgical stabilisation." },
       { name: "Subluxation", description: "Partial, self-reducing translation of the head with a 'dead arm' or apprehension. It uses the same pathology as a dislocation but may not need emergency reduction." }
     ]
@@ -90,12 +90,12 @@ export default {
     ],
     cellular: [
       { phase: "Haemorrhage and inflammation", timing: "Days 0–7", description: "Haemarthrosis, platelet plug, then neutrophils and macrophages clear debris from the torn capsulolabral tissue and the impacted bone." },
-      { phase: "Proliferation", timing: "Weeks 1–6", description: "Fibroblasts and new capillaries lay down disorganised type III collagen. The torn labrum often fails to re-attach firmly to the glenoid rim, which is linked with recurrent instability [r2]." },
+      { phase: "Proliferation", timing: "Weeks 1–6", description: "Fibroblasts and new capillaries lay down disorganised type III collagen. The capsulolabral avulsion is strongly associated with recurrent instability in young patients [r2], and the torn labrum often does not re-attach firmly to the glenoid rim." },
       { phase: "Remodelling", timing: "Weeks 6–52", description: "Collagen is slowly replaced by aligned type I fibres along lines of load. Any scar is typically lax compared with the intact capsulolabral complex." },
       { phase: "Nerve recovery (if injured)", timing: "Typically under 4 months", description: "Most axillary and other nerve injuries recovered partially or completely within 4 months, but some leave persistent motor loss [r12]." }
     ],
     systems: [
-      { system: "Nervous system", effect: "Axillary nerve injury is the commonest peripheral nerve injury, and proprioception and reflex stabilisation are reduced after dislocation, so neuromuscular training is central to rehabilitation [r12,r8]" },
+      { system: "Nervous system", effect: "Axillary nerve injury is a recognised complication [r12], and proprioception and reflex stabilisation are reduced after dislocation, so neuromuscular training is central to rehabilitation [r8]" },
       { system: "Vascular", effect: "Haemarthrosis, and in rare cases axillary artery injury, especially in older people or after a delayed or forceful reduction" },
       { system: "Psychological", effect: "Apprehension and kinesiophobia (fear of movement) are common and affect return to sport; they were measured as secondary outcomes in a randomised trial of neuromuscular exercise [r8]" },
       { system: "Musculoskeletal chain", effect: "Scapular dyskinesis, thoracic stiffness and lower-limb and trunk drive during throwing or contact affect shoulder loading after injury" },
@@ -243,7 +243,7 @@ export default {
   ],
 
   management: {
-    principles: "Acute management is prompt, safe closed reduction with neurovascular assessment before and after, radiographs where fracture is possible and effective analgesia. Afterwards, choose between non-operative care and early stabilisation through shared decision-making that explains the recurrence risk for the person's age, sport and goals. Surgical stabilisation reduces recurrence in trials [r5,r6], but functional scores are similar in the longer term and immediate surgery may not suit everyone [r6], and in a 25-year cohort about half of those aged 12–25 years treated non-operatively had not recurred or had become stable [r4]. Early stabilisation is most clearly justified in young, high-demand contact athletes [r14,r10]. In both pathways, criteria-based rehabilitation with neuromuscular training is central [r8].",
+    principles: "Acute management is prompt, safe closed reduction with neurovascular assessment before and after, radiographs where fracture is possible and effective analgesia. Afterwards, choose between non-operative care and early stabilisation through shared decision-making that explains the recurrence risk for the person's age, sport and goals. Surgical stabilisation reduces recurrence in trials [r5,r6], but a pooled analysis found no significant difference in functional scores and immediate surgery may not suit everyone [r6], and in a 25-year cohort about half of those aged 12–25 years treated non-operatively had not recurred or had become stable [r4]. Early stabilisation is most clearly justified in young, high-demand contact athletes [r14,r10]. In both pathways, criteria-based rehabilitation with neuromuscular training is central [r8].",
     medical: [
       {
         name: "Closed reduction (scapular manipulation, FARES or traction–countertraction)",
@@ -316,7 +316,7 @@ export default {
     education: [
       "Most of the pain eases within a few weeks after the shoulder is put back, but the torn labrum often does not heal on its own, so rehabilitation focuses on stability and control.",
       "The chance of the shoulder coming out again is highest in people aged 40 or under, especially active men, and it is highest in the first few years. Many people still do well without surgery [r3,r4].",
-      "Surgery lowers the chance of a repeat dislocation, but the long-term function in many people is similar, so it is a choice to make with your surgeon and physiotherapist based on your sport and goals [r5,r6].",
+      "Surgery lowers the chance of a repeat dislocation, but function scores were not significantly different in a pooled analysis, so it is a choice to make with your surgeon and physiotherapist based on your sport and goals [r5,r6].",
       "Keep moving the elbow, wrist and hand. Use the sling for comfort for only a short time, and start gentle shoulder movement early.",
       "Avoid the 'at risk' position (arm out to the side and rotated outward, with the arm pushed behind you) until your physiotherapist says it is safe.",
       "Tell your clinician urgently about new numbness, weakness lifting the arm or a cold, pale hand."
@@ -483,8 +483,12 @@ export default {
           { t: 2.6, do: "tear", target: "labrum", pattern: "detachment", at: 0.8 },
           { t: 2.7, do: "impact", at: "anteroinferiorLabrum" },
           { t: 3.0, do: "label", target: "labrum", text: "Bankart lesion" },
+          { t: 3.0, do: "fade", target: "subscapularis", to: 0.2, dur: 0.6 },
+          { t: 3.0, do: "fade", target: "scapula", to: 0.5, dur: 0.6 },
           { t: 3.4, do: "move", target: "humerus", to: "subcoracoidPosition", dur: 1.2 },
-          { t: 4.8, do: "label", target: "humerus", text: "Head in front of and below the coracoid" },
+          { t: 3.4, do: "move", target: "humeralCartilage", dir: 339.7, amount: 1.44, dur: 1.2 },
+          { t: 3.4, do: "move", target: "humeralCartilage", dir: 339.7, amount: 1.44, dur: 1.2 },
+          { t: 4.8, do: "label", target: "humeralCartilage", text: "Head dislocated forward" },
           { t: 5.4, do: "bruise", target: "humerus", at: "posterolateralHumeralHead" },
           { t: 5.8, do: "fracture", target: "humerus", pattern: "impaction", at: "posterolateralHumeralHead", displaced: false },
           { t: 6.0, do: "bleed", target: "jointSpace" },
@@ -492,6 +496,9 @@ export default {
           { t: 6.6, do: "irritate", target: "axillaryNerve" },
           { t: 6.8, do: "label", target: "axillaryNerve", text: "Axillary nerve at risk" },
           { t: 8.0, do: "reset", target: "humerus", dur: 1.0 },
+          { t: 8.0, do: "reset", target: "humeralCartilage", dur: 1.0 },
+          { t: 8.0, do: "reset", target: "subscapularis", dur: 1.0 },
+          { t: 8.0, do: "reset", target: "scapula", dur: 1.0 },
           { t: 8.6, do: "camera", at: "anteroinferiorLabrum", zoom: 1.7, dur: 1 },
           { t: 10.0, do: "camera", zoom: 1, dur: 0.8 }
         ],

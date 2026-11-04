@@ -1,0 +1,432 @@
+export default {
+  id: "calf-strain",
+  name: "Medial gastrocnemius strain (\"tennis leg\")",
+  shortName: "Calf strain (tennis leg)",
+  aka: ["tennis leg", "calf strain", "gastrocnemius strain", "medial gastrocnemius tear", "pulled calf", "calf muscle tear", "calf muscle strain injury", "CMSI"],
+  region: "lower-leg",
+  tissues: ["muscle"],
+  onset: "acute",
+  mechanismType: ["non-contact", "traction"],
+  populations: ["middle-aged recreational racquet-sport players", "masters and older athletes", "sprinters and field-sport athletes", "Australian football players", "people with a previous calf strain"],
+  sports: ["tennis", "squash", "badminton", "running", "soccer", "australian football", "basketball", "netball", "rugby", "athletics"],
+  urgency: "routine",
+  summary: "A strain of the medial gastrocnemius, usually at the musculotendinous junction, from a sudden push-off or lunge with the knee straightening while the ankle is dorsiflexed. It causes sharp calf pain and often a haematoma.",
+  keyFacts: [
+    { label: "Typical recovery", value: "Mean return to play about 19 days for gastrocnemius strains (25 days for soleus) in elite Australian football; longer if severe" },
+    { label: "Return to sport", value: "Criteria-based; running criteria are stricter than for other muscle strains, and recurrence is common" },
+    { label: "Key test", value: "Medial belly or musculotendinous tenderness, painful single-leg heel raise, and pain on stretch with the knee straight; exclude Achilles rupture (Thompson) and DVT" },
+    { label: "Imaging", value: "Not always needed. Ultrasound or MRI if the diagnosis is uncertain: medial gastrocnemius rupture in 67% of 141 'tennis leg' referrals" },
+    { label: "Peak age", value: "Classically middle-aged recreational athletes; increasing age is one of the strongest risk factors" },
+    { label: "Incidence", value: "Calf strains made up 3.6% of injuries over 5 years in one soccer study cited in a review" }
+  ],
+  overview: "Calf muscle strain injuries are common in sport and in primary care. The medial head of the gastrocnemius is the most commonly injured muscle in the classic 'tennis leg' presentation, typically in a middle-aged player who suddenly extends the knee with the foot in dorsiflexion [r1]. The gastrocnemius is at risk because it crosses both the knee and the ankle and has a high density of fast-twitch fibres [r1]. In elite Australian football the soleus was involved more often than the gastrocnemius [r2].\n\nThe diagnosis is clinical and rests on separating gastrocnemius from soleus strain, and on excluding Achilles rupture and deep vein thrombosis (DVT). The evidence base for management is thin: much of the guidance comes from narrative reviews and expert practice, not from trials [r1,r3]. Rehabilitation is progressive loading with objective milestones, and recurrence is common [r4].",
+
+  epidemiology: {
+    text: "Specific injury-rate data are sparse. In one study of soccer players, calf strains were 3.6% of injuries over a 5-year period [r1]. In the Australian Football League registry, soleus injuries were most prevalent (84.6%) among 184 calf muscle strain injuries from 2014 to 2017, and re-injuries involved older players and took longer to recover [r2]. A systematic review of ten studies (5397 athletes, 518 calf or lower-leg muscle injuries) found that increasing age and a previous calf strain were the strongest risk factors, while height, weight, sex and side dominance were not associated. Evidence was sparse and at high risk of bias [r5].",
+    riskFactors: {
+      intrinsic: [
+        "Increasing age (strongest evidence) [r5]",
+        "Previous calf strain (strongest evidence; a history of calf strain increased the risk of recurrence within two seasons, adjusted hazard ratio 6.7) [r5,r4]",
+        "Previous lower-limb injury (hamstring, quadriceps, adductor or knee): limited evidence [r5]",
+        "A history of ankle injury was associated with early recurrence (within 2 months) in elite Australian football players [r4]",
+        "Biarticular design and a high proportion of fast-twitch fibres in the gastrocnemius [r1]"
+      ],
+      extrinsic: [
+        "Explosive sports with sudden acceleration, lunging and push-off: tennis, squash, field sports and Australian football [r1,r2]",
+        "Running-related mechanisms (injuries during running took about 12 days longer to recover than non-running injuries) [r2]",
+        "Rapid increases in sprinting and high-speed running load, fatigue and returning from a long break (clinical observation; not tested in the sources reviewed)"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "In the classic mechanism the knee extends while the ankle is dorsiflexed, as in a push-off from a lunge or an explosive start. This puts the biarticular medial gastrocnemius at its longest length just as it contracts hard [r1]. The muscle fails at its distal musculotendinous junction or aponeurosis, and blood tracks between the gastrocnemius and soleus. In an ultrasound series of 141 patients with a clinical diagnosis of tennis leg, the medial head was ruptured in 66.7% and the plantaris tendon in only 1.4% [r6].",
+    sequence: [
+      "The player lunges, serves, sprints or pushes off, with the rear (injured) leg driving the body forward.",
+      "The knee extends while the ankle stays dorsiflexed, so the medial gastrocnemius is stretched across both joints to its maximum length [r1].",
+      "The muscle fires forcefully at the same time (eccentric load, then push-off), as in the image of a cracking whip [r1].",
+      "Load concentrates at the distal musculotendinous junction and the aponeurosis of the medial head, and fibres fail.",
+      "A sudden sharp pain in the medial calf, sometimes with a snap, stops the player; push-off and toe-walking become painful.",
+      "Blood and fluid collect between the medial gastrocnemius and the soleus aponeuroses (fluid collection in 21.3% without muscle rupture, in a case series) [r6].",
+      "Swelling and bruising develop over the next day or two and may track down toward the ankle."
+    ],
+    variants: [
+      { name: "Running-related strain", description: "A running mechanism predicted a longer time to return to play (about 12 days longer than injuries not related to running) in elite Australian footballers [r2,r4]." },
+      { name: "Combined gastrocnemius and soleus strain", description: "Coexisting gastrocnemius and soleus strains were found in 17% of calf strains in one radiology study cited in a review, which can complicate the picture [r1]." },
+      { name: "Plantaris involvement", description: "Plantaris rupture was historically blamed for tennis leg but was found in only 1.4% of patients in an ultrasound series. It can only be separated from gastrocnemius injury by imaging [r6,r1]." },
+      { name: "Recurrent strain", description: "Re-injuries involved older players and took more time to return to play. Nearly all re-injuries in one registry involved the soleus [r2]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The gastrocnemius has medial and lateral heads that arise from the femoral condyles and join the soleus aponeurosis to form the Achilles tendon. It crosses the knee and the ankle, so its length and force depend on both joints. The medial head is the most commonly strained [r1]. The soleus lies deep to it, crosses only the ankle and is made up mainly of slow-twitch fibres. The plantaris is a small, largely vestigial muscle. With the knee fully flexed, the soleus is the main generator of plantarflexion force, and with the knee fully extended the gastrocnemius contributes more. This is the basis of clinical testing [r1]. The calf muscles lie in the superficial posterior compartment.",
+    structures: [
+      { name: "Medial gastrocnemius", role: "Biarticular knee flexor and plantarflexor; the muscle most often strained in tennis leg [r1]" },
+      { name: "Lateral gastrocnemius", role: "Companion head; involved less often in the classic pattern" },
+      { name: "Soleus", role: "Monoarticular plantarflexor with mainly slow-twitch fibres; strains are usually more subacute and more lateral [r1]" },
+      { name: "Aponeuroses and musculotendinous junction", role: "Transfer force from muscle fibres to the Achilles tendon; the distal junction and aponeurosis of the medial head is the usual site of failure [r6]" },
+      { name: "Plantaris", role: "Small tendon and muscle on the medial side; vestigial and rarely injured [r1,r6]" },
+      { name: "Achilles tendon", role: "Common tendon of the gastrocnemius and soleus; intact in calf strain, which separates it from rupture" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "A calf strain is a failure of muscle fibres under tension. The medial gastrocnemius is lengthened across the knee and ankle and contracts forcefully against that stretch, so sarcomeres and fibres disrupt, most often at the musculotendinous junction and its aponeurosis. The degree of aponeurotic disruption matters: in elite Australian footballers, severe aponeurotic disruption on MRI was associated with a longer return to play (31.3 ± 12.6 days versus 19.4 ± 10.8 days) [r4].\n\nBleeding from torn fibres collects in the plane between the gastrocnemius and soleus. Healing follows the usual sequence of haemorrhage and inflammation, satellite-cell activation and regeneration, then scar remodelling (typical muscle biology, not quantified for the calf in the sources reviewed). Rare complications include myositis ossificans and compartment syndrome [r1].",
+    structures: [
+      { name: "Medial gastrocnemius (distal musculotendinous junction and aponeurosis)", effect: "Fibre disruption and, in more severe injuries, a palpable defect and haematoma [r1,r6]" },
+      { name: "Intermuscular plane (between gastrocnemius and soleus)", effect: "Fluid and blood collect between the aponeuroses of the medial gastrocnemius and soleus, with or without frank rupture (21.3% of the ultrasound series without rupture) [r6]" },
+      { name: "Soleus", effect: "May be strained at the same time (about 17% in one radiology study) [r1]" },
+      { name: "Plantaris", effect: "Rarely involved (1.4% of patients in an ultrasound series) [r6]" },
+      { name: "Achilles tendon", effect: "Intact in calf strain; assess with the Thompson test to exclude rupture [r7]" }
+    ],
+    muscles: [
+      { name: "Medial gastrocnemius", effect: "Pain-limited contraction and weakness; loss of fast, high-load output in push-off and sprinting." },
+      { name: "Soleus", effect: "Often compensates in the early phase and is loaded by slow calf-raise variations; also injured more often in elite Australian football (84.6% of calf strains) [r2]." },
+      { name: "Hip and knee musculature", effect: "Reduced loading and altered gait during recovery; a prior hamstring, quadriceps, adductor or knee injury showed limited association with calf strain [r5]." }
+    ],
+    cellular: [
+      { phase: "Haemorrhage and inflammation", timing: "Days 0–5 (typical)", description: "Torn fibres and vessels bleed into the gap. Neutrophils and macrophages clear damaged tissue and release growth factors. Limiting stretch and contraction in the first 3–5 days is the standard acute approach [r1]." },
+      { phase: "Regeneration", timing: "Days 3–21 (typical)", description: "Satellite cells activate and form new muscle fibres, and fibroblasts lay down collagen. Early, pain-free loading guides alignment of the repair [r3]." },
+      { phase: "Remodelling and scar maturation", timing: "Weeks 3 to 12+ (typical)", description: "The scar matures and the muscle–tendon unit regains strength and stiffness. Calf loading demands are high, so rehabilitation is progressive and monitored [r3]." }
+    ],
+    systems: [
+      { system: "Vascular", effect: "A haematoma and swelling can mimic DVT, and DVT itself can coexist with tennis leg. In the ultrasound series, DVT without muscle injury was seen in 9.9% of patients referred with a clinical diagnosis of tennis leg [r6]." },
+      { system: "Nervous system and pain processing", effect: "Pain inhibits calf contraction and walking and hopping gait. A lumbar spine and neural tension screen forms part of the differential diagnosis for calf pain [r3]." },
+      { system: "Musculoskeletal chain", effect: "Previous lower-limb injuries (hamstring, quadriceps, adductor, knee) showed limited evidence of association with calf strain, so the whole limb should be assessed [r5]." },
+      { system: "Psychological and sport-specific", effect: "Recurrence is common, and a re-injury took longer to recover, so confidence and graded exposure matter [r2]." }
+    ]
+  },
+
+  grading: {
+    system: "Traditional clinical grading I–III (Dixon), with MRI-based alternatives: British Athletics Muscle Injury Classification (BAMIC) and the Munich consensus classification [r1,r8,r9]",
+    grades: [
+      { grade: "Grade I", description: "Minor fibre disruption: local pain, minimal swelling, near-normal strength and walking. A traditional clinical grade [r1].", prognosis: "Return to play in days to a few weeks with progressive loading" },
+      { grade: "Grade II", description: "Partial tear with more pain, swelling and bruising, a limp and clear strength loss on a single-leg heel raise [r1].", prognosis: "Several weeks; severe aponeurotic disruption on MRI predicted longer return to play (31.3 vs 19.4 days) [r4]" },
+      { grade: "Grade III", description: "Complete or near-complete disruption (50–100% of the muscle, per the review), often with a palpable defect and a large haematoma [r1].", prognosis: "Longest recovery; consider specialist or surgical review for large haematoma or prolonged symptoms [r1]" },
+      { grade: "BAMIC 0–4 (MRI)", description: "Grades 0–4 by MRI features, with suffix a, b or c for myofascial, musculotendinous or intratendinous injuries. It was proposed for hamstring injuries and its use in the calf is extrapolated [r8]." },
+      { grade: "Munich classification", description: "Four types: functional disorders (type 1 overexertion, type 2 neuromuscular) and structural injuries (type 3 partial tears, type 4 subtotal or total tears or avulsions) [r9]." }
+    ]
+  },
+
+  timeframes: {
+    summary: "Healing follows the typical muscle sequence, but return to play depends on severity, mechanism and rehabilitation quality. In elite Australian footballers the mean time to return to play was 19.1 ± 14.1 days for gastrocnemius injuries and 25.4 ± 16.2 days for soleus injuries (a difference that was not statistically significant, P = .097), and about 12 days longer when the injury occurred during running [r2]. Amateur athletes and severe injuries often take longer.",
+    healing: [
+      { phase: "Haemorrhage and inflammation", startDay: 0, endDay: 5, description: "Bleeding and inflammatory clean-up; protect from stretch and contraction [r1]" },
+      { phase: "Regeneration", startDay: 3, endDay: 21, description: "Satellite-cell activation and early scar formation; begin pain-free loading (typical biology)" },
+      { phase: "Remodelling", startDay: 14, endDay: 90, description: "Scar maturation and restoration of strength and stiffness; high-load and high-speed work built progressively [r3]" }
+    ],
+    milestones: [
+      { label: "Pain-free walking", day: 7, note: "Experts monitored the rate of resolution of pain-free walking as an early marker [r3]" },
+      { label: "Single-leg calf raise started", day: 7, note: "Experts started single-leg calf raises as soon as tolerated [r3]" },
+      { label: "Start running", day: 14, note: "Most experts slightly delayed return to running because running is a high load for the calf (clinical range, not a fixed date) [r3]" },
+      { label: "Return to play (mean, gastrocnemius, elite Australian football)", day: 19, note: "19.1 ± 14.1 days [r2]" },
+      { label: "Return to play with severe aponeurotic disruption", day: 31, note: "31.3 ± 12.6 days versus 19.4 ± 10.8 days without aponeurotic disruption [r4]" }
+    ],
+    returnToSport: "Criteria-based, not time-based. In elite Australian footballers the mean was about 19 days for gastrocnemius strains and 25 days for soleus strains, with running-related injuries about 12 days longer [r2]. Amateur athletes and severe injuries commonly take longer (clinical experience; recovery of pain and disability can last months depending on severity and initial treatment [r1])."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Sudden, sharp pain in the medial calf during a lunge, sprint or push-off, classically 'like being hit' or with a snap (typical clinical description)",
+      "Immediate difficulty continuing play, and pain on rising onto the toes and on walking",
+      "Swelling and bruising that develop over 24–48 hours and may track toward the ankle",
+      "Tightness and pain with stretch, stairs, running and jumping",
+      "A limp, often walking on a flexed knee or with a heel raise to avoid calf stretch"
+    ],
+    signs: [
+      "Tenderness at the medial belly or the musculotendinous junction, sometimes with a palpable defect in more severe injuries [r1]",
+      "Swelling and ecchymosis in the calf, sometimes with a visible bulge from a haematoma",
+      "Pain and weakness on resisted plantarflexion or a single-leg heel raise, particularly with the knee extended [r1]",
+      "Pain and restricted dorsiflexion on stretch with the knee extended, less so with the knee flexed [r1]",
+      "A negative Thompson test and an intact Achilles tendon"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Mechanism: lunge, sprint start, push-off or running; sudden onset with a snap, versus gradual calf tightness (more typical of soleus) [r1]",
+      "Onset, ability to continue, ability to walk on the toes, and swelling or bruising",
+      "Previous calf strain, hamstring or other lower-limb injury, and age (risk factors for recurrence) [r5,r4]",
+      "Calf swelling or pain without a clear injury, recent travel, immobilisation or surgery, family or personal history of clots (DVT screen) [r6]",
+      "Sport demands, training load and the timing of the next key event"
+    ],
+    observation: ["Gait: limp, flexed knee or reduced push-off", "Calf swelling, ecchymosis and a visible bulge or asymmetry", "Circumferential calf measurement to quantify asymmetry [r1]"],
+    palpation: ["Palpate the whole length of the gastrocnemius, the aponeuroses and the soleus for tenderness, swelling, thickening and defects [r1]", "Medial belly and musculotendinous junction tenderness points to the gastrocnemius; lateral pain is more often the soleus [r1]", "Calf tension, warmth and tenderness of the deep calf and popliteal fossa for DVT and compartment syndrome"],
+    rangeOfMotion: ["Passive dorsiflexion with the knee extended (stretches the gastrocnemius) and with the knee flexed (soleus) to isolate the muscle [r1]", "Weight-bearing lunge for dorsiflexion range and symmetry", "Knee extension range and posterior knee structures"],
+    strength: ["Resisted plantarflexion with the knee extended (gastrocnemius) and flexed (soleus) [r1]", "Single-leg heel raise: height, repetitions and pain, compared with the other side", "Isometric calf strength with a handheld dynamometer, if available"],
+    neuro: ["Lumbar spine and neural tension screen, which experts consider part of the differential for calf pain [r3]", "Distal pulses, capillary refill and sensation"],
+    functional: ["Single-leg hop, pogo hops and jump tests once walking is pain-free [r3]", "Single-leg heel raise to fatigue", "Running and acceleration tests later in rehabilitation"],
+    specialTests: [
+      { name: "Palpation for medial belly and musculotendinous junction tenderness or a defect", purpose: "Localise the injury and estimate severity", procedure: "Palpate the entire length of the medial gastrocnemius, its aponeurosis and the soleus. Identify tenderness, swelling, thickening and defects.", positive: "Focal tenderness at the medial belly or musculotendinous junction, with or without a palpable defect.", refs: [] },
+      { name: "Resisted plantarflexion and passive dorsiflexion, with the knee extended versus flexed", purpose: "Separate gastrocnemius (knee extended) from soleus (knee flexed) involvement", procedure: "Test resisted plantarflexion and passive dorsiflexion stretch in full knee extension, then in knee flexion. Compare pain and strength between positions.", positive: "Pain and weakness greater with the knee extended suggest gastrocnemius; greater with the knee flexed suggest soleus.", refs: [] },
+      { name: "Thompson (calf squeeze) test", purpose: "Exclude complete Achilles rupture in a patient with acute calf pain", procedure: "Patient prone with the feet over the end of the couch. Squeeze the calf and watch the foot.", positive: "Absent plantarflexion suggests Achilles rupture (calf strain should be negative).", sensitivity: "96% (for Achilles rupture)", specificity: "93% (for Achilles rupture)", refs: ["r7","r10"] },
+      { name: "Single-leg heel raise", purpose: "Calf capacity and progress; a functional marker rather than a diagnostic test", procedure: "Repeat single-leg heel raises to a consistent height and tempo until fatigue or pain stops the set. Compare sides.", positive: "Pain, lower height or fewer repetitions than the other side.", refs: [] }
+    ],
+    clinicalRules: [
+      { name: "DVT pre-test probability tool (e.g. Wells score)", description: "Use a validated pre-test probability tool and local DVT pathway whenever calf swelling is unexplained or out of proportion, because DVT can mimic or coexist with tennis leg (9.9% in an ultrasound series of referrals) [r6]." }
+    ],
+    outcomeMeasures: [
+      { name: "Single-leg heel-raise repetitions and height", use: "Calf capacity; experts monitor single-leg calf raise strength and plyometric function as key milestones [r3]" },
+      { name: "Calf circumference", use: "Swelling and atrophy asymmetry [r1]" },
+      { name: "Pain-free walking, palpation tenderness and stretch tolerance", use: "Early rehabilitation milestones used by experts [r3]" },
+      { name: "Patient-reported function (e.g. LEFS or FAAM Sport)", use: "Functional status and readiness; standard validated measures (not drawn from the sources reviewed)" }
+    ],
+    imaging: [
+      { modality: "Ultrasound", indication: "Diagnosis in doubt, suspected plantaris injury, large haematoma, or need to exclude DVT", findings: "Medial gastrocnemius rupture (66.7% in a series of 141 referrals), fluid between the gastrocnemius and soleus aponeuroses (21.3%), plantaris rupture (1.4%) and DVT [r6]" },
+      { modality: "MRI", indication: "Elite sport, suspected severe aponeurotic disruption, or an unclear clinical picture. Experts wait 1–2 days before imaging in elite settings [r3]", findings: "Location and extent of the strain and aponeurotic disruption (severe disruption was associated with longer return to play) [r4]. MRI findings did not predict recurrence; clinical data did [r4]" },
+      { modality: "Plain radiograph", indication: "Not routinely needed; consider if bony injury is suspected or symptoms fail to resolve", findings: "Normal in muscle strain; myositis ossificans is a rare late finding [r1]" }
+    ]
+  },
+
+  differentials: [
+    { name: "Soleus strain", id: "soleus-strain", distinguishing: "More gradual, subacute calf tightness, often lateral, and provoked by walking or jogging. Pain and weakness are greater with the knee flexed [r1]." },
+    { name: "Achilles tendon rupture", id: "achilles-rupture", distinguishing: "Pop and loss of push-off with a palpable gap in the tendon and a positive Thompson test. Calf strain has an intact tendon and a negative Thompson test." },
+    { name: "Mid-portion Achilles tendinopathy", id: "midportion-achilles-tendinopathy", distinguishing: "Gradual pain and stiffness in the tendon 2–6 cm above the heel without a sudden muscle event." },
+    { name: "Deep vein thrombosis", distinguishing: "Calf swelling, warmth and tenderness without a clear strain mechanism. Isolated DVT was found in 9.9% of patients referred with tennis leg, so test when in doubt [r6]." },
+    { name: "Acute compartment syndrome", id: "acute-compartment-syndrome", distinguishing: "Pain out of proportion, a tense swollen calf, pain on passive stretch and paraesthesia. It is rare after calf strain but is an emergency [r1]." },
+    { name: "Plantaris tendon rupture", distinguishing: "Clinically similar to a medial gastrocnemius strain and identified only by imaging; rare (1.4% in an ultrasound series) [r6]." },
+    { name: "Lumbar radiculopathy (S1) or other referred calf pain", distinguishing: "Back or buttock symptoms, positive neural tension tests and no local calf tenderness or loading provocation [r3]." }
+  ],
+  redFlags: [
+    "Unilateral calf swelling, warmth, tenderness or pitting oedema without a clear strain mechanism, or after recent immobilisation, surgery or long travel: suspect DVT. Arrange same-day medical assessment and ultrasound, and emergency care if there is chest pain or breathlessness (pulmonary embolism). DVT was seen in isolation in 9.9% of patients referred with tennis leg [r6].",
+    "Severe pain out of proportion to the injury, a tense swollen calf, pain on passive toe or ankle stretch, or numbness or weakness in the foot: suspect acute compartment syndrome. Send to emergency the same day [r1].",
+    "Sudden pop with loss of push-off, a palpable gap in the tendon or a positive Thompson test: suspect Achilles rupture. Protect the ankle and arrange urgent orthopaedic review [r7].",
+    "A large or expanding haematoma, symptoms not improving as expected, or a palpable defect: arrange imaging and medical or surgical review [r1].",
+    "Calf pain with back or leg neurological symptoms (radiating pain, sensory or motor loss): assess the lumbar spine and neural tension [r3].",
+    "Hot, red, increasingly painful calf with fever: suspect infection or an inflammatory cause and arrange urgent medical review."
+  ],
+
+  management: {
+    principles: "Diagnosis comes first: separate gastrocnemius from soleus strain, and exclude Achilles rupture, DVT and compartment syndrome. Differentiation matters for prognosis, treatment and recurrence prevention [r1]. The evidence base for management is sparse: no randomised trials were identified in the sources reviewed, and the guidance below comes from narrative reviews and an interview study of 20 expert clinicians [r1,r3]. The principles are a short period of protection (3–5 days), then early, progressive, pain-guided loading, objective milestones, and a slightly delayed and carefully graded return to running [r1,r3]. Plan for recurrence prevention from the start, because a history of calf strain is a strong predictor of another [r4].",
+    medical: [
+      { name: "Analgesia, with NSAIDs restricted early", description: "Simple analgesia (paracetamol). The review advises restricting NSAIDs in the first 24–72 hours because of bleeding risk, with COX-2 inhibitors as an option; this is expert advice, not trial evidence [r1].", evidence: "expert-opinion", recommendation: "consider", refs: ["r1"] },
+      { name: "Ultrasound or MRI", description: "For doubtful diagnosis, large haematoma, suspected plantaris injury, or elite-sport staging. Ultrasound can also exclude DVT [r6]. Elite-sport experts waited 1–2 days before imaging [r3].", evidence: "limited", recommendation: "consider", refs: ["r6","r3"] },
+      { name: "DVT assessment and treatment", description: "Apply a validated pre-test probability tool and arrange compression ultrasound according to local pathways when swelling is unexplained or out of proportion [r6].", evidence: "limited", recommendation: "recommended", refs: ["r6"] },
+      { name: "Surgical or specialist review", description: "Consider for a grade III injury, a large intramuscular haematoma that impairs progress, or contracture with prolonged symptoms (4–6 months) [r1].", evidence: "expert-opinion", recommendation: "consider", refs: ["r1"] },
+      { name: "Early local heat and deep massage", description: "Thought to increase bleeding and generally regarded as contraindicated in the early phase [r1].", evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r1"] }
+    ],
+    physio: [
+      { name: "Short period of protection (3–5 days)", description: "Limit stretch and contraction, use cryotherapy, a compression wrap or tape, elevation, a heel wedge in the shoe and crutches if walking is painful [r1].", evidence: "expert-opinion", recommendation: "consider", refs: ["r1"] },
+      { name: "Early progressive loading guided by symptoms", description: "Start with isometrics and calf-raise variations, and begin single-leg calf raises as soon as tolerated. Multiple loading bouts per day and progressive loading through full range were used by expert clinicians [r3]. Isometric, isotonic then dynamic exercise as each is tolerated without pain [r1].", evidence: "expert-opinion", recommendation: "recommended", refs: ["r3","r1"] },
+      { name: "Gastrocnemius–soleus specific loading", description: "Train and stretch with the knee extended for the gastrocnemius and flexed for the soleus, to match the injured muscle [r1].", evidence: "expert-opinion", recommendation: "recommended", refs: ["r1"] },
+      { name: "Graded return to running (slightly delayed) with strict criteria", description: "Running is a high load for the calf even at slow speeds, so experts used stricter running criteria than for other muscle strains and slightly delayed the start [r3].", evidence: "expert-opinion", recommendation: "recommended", refs: ["r3"] },
+      { name: "Plyometric, ballistic and sport-specific reconditioning", description: "After foundation strength, experts added pogos, hops, countermovement jumps and sprint progressions, because strength training alone does not address the loading rates of sport [r3].", evidence: "expert-opinion", recommendation: "recommended", refs: ["r3"] },
+      { name: "Objective return-to-play decision by consensus", description: "Use pain-free walking, palpation tenderness, stretch tolerance, single-leg calf raise strength and plyometric function, with the athlete, coach and medical team agreeing the decision [r3]. Clinical rather than MRI data best indicate recurrence risk [r4].", evidence: "expert-opinion", recommendation: "recommended", refs: ["r3","r4"] },
+      { name: "Prolonged complete rest or aggressive early stretching", description: "Both are avoided. Rest beyond the first few days delays loading, and early aggressive stretching risks re-injury [r1].", evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r1"] },
+      { name: "Therapeutic ultrasound, electrical stimulation or massage (later phase)", description: "May be considered as adjuncts once the acute phase has passed, but they do not replace loading. Controlled evidence was not found in the sources reviewed [r1].", evidence: "very-limited", recommendation: "consider", refs: ["r1"] }
+    ],
+    education: [
+      "A calf strain is a muscle tear at the junction of the muscle and tendon. It heals, but the calf is heavily loaded in walking and running, so the return is gradual.",
+      "Protect it for the first few days, then start moving and loading. Complete rest for too long delays recovery.",
+      "Bruising and swelling can move down toward the ankle over several days and does not mean the injury is worse.",
+      "Calf strains often come back. A previous calf strain and older age are the strongest risk factors, so the full program matters.",
+      "Seek urgent help if the calf becomes very tight and painful, if swelling or warmth appears without a clear cause, or if you have chest pain or breathlessness.",
+      "You will return to running later than to walking, and only after you can do repeated single-leg calf raises and hops without pain."
+    ]
+  },
+
+  rehab: {
+    overview: "Progression is criteria-based. The phases follow the principles reported by expert clinicians: early protection, early progressive loading, strength, power and plyometrics, graded running, and a criteria-based return to play [r3,r1]. Timeframes below are typical and depend on severity: in elite Australian footballers mean return to play was about 19 days for gastrocnemius strains and longer when aponeurotic disruption was severe [r2,r4]. Dosages are typical clinical ranges, not prescriptions from a single trial. Train the gastrocnemius with the knee straight and the soleus with the knee bent [r1].",
+    stages: [
+      {
+        name: "Protect & settle",
+        timeframe: "Days 0–5",
+        goals: ["Limit bleeding and settle pain", "Maintain pain-free walking", "Protect against stretch and forceful contraction", "Exclude DVT, rupture and compartment syndrome"],
+        precautions: ["No stretching, heat, deep massage or alcohol early on [r1]", "Use a heel wedge in the shoe and crutches if painful walking persists [r1]", "Stop and review for severe swelling, tightness or numbness (compartment syndrome) or calf swelling without cause (DVT)"],
+        exercises: [
+          { name: "Ankle pumps and circles", dosage: "2 × 20, every waking hour as tolerated", cues: "Pain-free range, no forceful stretch", figure: { pose: "ex-ankle-alphabet", view: "lateral", props: ["chair"] } },
+          { name: "Gentle isometric plantarflexion (seated, knee bent)", dosage: "5 × 20–30 s, light effort, 2–3 times daily", cues: "Steady, comfortable effort", figure: { pose: "ex-seated-calf-raise", view: "lateral", props: ["chair"] } },
+          { name: "Pain-free walking with a heel raise in the shoe", dosage: "5–10 min, several times daily", cues: "Heel-toe gait, short stride" },
+          { name: "Hip, quadriceps and core exercises", dosage: "3 × 10–12, daily", cues: "Maintain whole-limb strength", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } }
+        ],
+        progressionCriteria: ["Walking with minimal pain and a normal pattern", "Swelling and bruising not increasing", "Pain at rest minimal", "DVT, rupture and compartment syndrome excluded"]
+      },
+      {
+        name: "Early loading & range",
+        timeframe: "Days 3–14",
+        goals: ["Begin progressive, pain-guided calf loading", "Restore pain-free dorsiflexion range", "Return to pain-free stairs and brisk walking", "Start single-leg calf raise as tolerated"],
+        precautions: ["Keep pain at about 3/10 or below during exercise and settled by the next morning (clinical convention)", "Increase load only when next-day symptoms are stable", "No running or jumping yet"],
+        exercises: [
+          { name: "Double-leg calf raise (slow)", dosage: "3 × 15, 3 s up and 3 s down, 2 times daily", cues: "Full range as tolerated", figure: { pose: "ex-calf-raise", view: "lateral" } },
+          { name: "Seated bent-knee calf raise", dosage: "3 × 15, 2 times daily", cues: "Targets the soleus; slow tempo", figure: { pose: "ex-seated-calf-raise", view: "lateral", props: ["chair"] } },
+          { name: "Single-leg calf raise (assisted, then unassisted)", dosage: "3 × 8–12, daily, as soon as tolerated [r3]", cues: "Hold a rail for balance", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
+          { name: "Gentle calf stretch (knee straight and bent)", dosage: "3 × 30 s, 1–2 times daily, stopping before pain", cues: "Gentle tension only [r1]" },
+          { name: "Stationary cycling or pool walking", dosage: "15–20 min, daily", cues: "Easy effort and low resistance" }
+        ],
+        progressionCriteria: ["Pain-free walking and stairs", "Single-leg calf raise without a sharp pain", "Dorsiflexion within a few degrees of the other side", "Tenderness at the injury site reducing"]
+      },
+      {
+        name: "Strength & capacity",
+        timeframe: "Weeks 1–4",
+        goals: ["Build heavy, slow calf strength with the knee straight and bent", "Restore calf strength-endurance symmetry", "Begin low-load locomotive reconditioning", "Improve single-leg balance and control"],
+        precautions: ["Add load progressively and check swelling and next-day pain", "Do not start running until walking, calf-raise and low-level hopping criteria are met", "Report any new sharp pain or a snap"],
+        exercises: [
+          { name: "Single-leg calf raise (loaded, slow)", dosage: "3–4 × 6–12, 3 s up and 3 s down, 3 times per week", cues: "Add load as it becomes easy", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
+          { name: "Loaded seated calf raise", dosage: "3–4 × 8–15, 3 times per week", cues: "Soleus emphasis", figure: { pose: "ex-seated-calf-raise", view: "lateral", props: ["chair", "dumbbell"] } },
+          { name: "Step-up and stair ascent", dosage: "3 × 10 each side, 3 times per week", cues: "Drive through the whole foot", figure: { pose: "ex-step-up", view: "lateral", props: ["step"] } },
+          { name: "Romanian deadlift", dosage: "3 × 8–10, 2 times per week", cues: "Hinge at the hips", figure: { pose: "ex-rdl", view: "lateral", props: ["dumbbell"] } },
+          { name: "Single-leg balance", dosage: "3 × 30–45 s each side", cues: "Soft knee and a quiet trunk", figure: { pose: "ex-single-leg-balance", view: "anterior" } }
+        ],
+        progressionCriteria: ["Single-leg calf raise endurance within about 10–20% of the other side (clinical convention)", "Pain-free hopping on the spot", "No swelling after loading sessions", "Pain-free brisk walking"]
+      },
+      {
+        name: "Power, plyometrics & running",
+        timeframe: "Weeks 2–6",
+        goals: ["Restore stretch-shortening and power", "Return to running in steps", "Build sprint capacity", "Prepare for sport-specific tasks"],
+        precautions: ["Running criteria are stricter for the calf than for other muscles; start slightly later than feels possible [r3]", "Build volume before speed, and speed before sport-specific tasks", "Allow rest days between early running sessions"],
+        exercises: [
+          { name: "Pogo hops, then single-leg hops in place", dosage: "3 × 8–10, 2 times per week", cues: "Stiff ankle, quick contact", figure: { pose: "ex-hop", view: "lateral" } },
+          { name: "Jump squat", dosage: "3 × 6–8, 1–2 times per week", cues: "Land softly with the whole foot", figure: { pose: "ex-jump-squat", view: "lateral" } },
+          { name: "Walk–run progression", dosage: "Alternate short jog and walk intervals on non-consecutive days and increase jog time as pain allows (typical clinical protocol)", cues: "Stay below the pain threshold", figure: { pose: "run-toe-off", view: "lateral" } },
+          { name: "Acceleration and sprint drills (build-ups)", dosage: "4–6 × 20–40 m at 60–90% effort, 2 times per week", cues: "Smooth drive with no sudden maximal efforts", figure: { pose: "sprint-drive", view: "lateral" } },
+          { name: "Heavy calf maintenance", dosage: "3 × 5–8, 2 times per week", cues: "Slow, heavy and controlled", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } }
+        ],
+        progressionCriteria: ["Pain-free single-leg hopping and bounding", "Pain-free jogging with no next-day increase in symptoms", "Single-leg calf raise endurance and height close to symmetrical", "Controlled build-ups to 90% speed without pain"]
+      },
+      {
+        name: "Return to sport",
+        timeframe: "Weeks 4–10+",
+        goals: ["Maximum-speed running, change of direction and sport tasks", "Return to full training, then competition", "Maintain calf strength long term", "Ongoing monitoring"],
+        precautions: ["Do not return to competition before the criteria are met", "Monitor calf soreness and capacity after the first matches or sessions", "Older athletes and those with a calf strain history are at higher risk of recurrence [r5,r4]"],
+        exercises: [
+          { name: "Maximal sprint exposures", dosage: "Progressive volume at 95–100% speed, 2 times per week", cues: "Quality over quantity" },
+          { name: "Change-of-direction and sport-specific drills", dosage: "2–3 sessions per week, progressing speed and unpredictability", cues: "Control the push-off", figure: { pose: "cut-plant", view: "anterior" } },
+          { name: "Full team or sport training, then competition", dosage: "Stepwise increase over 1–2 weeks", cues: "Track calf response each session" },
+          { name: "Heavy calf and ballistic maintenance", dosage: "2 times per week, ongoing", cues: "Keep loading in the weekly program", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } }
+        ],
+        progressionCriteria: ["Pain-free full-speed running and change of direction", "Single-leg calf raise endurance and strength symmetrical (clinical convention; one expert expected at least 30 repetitions and under 10% asymmetry for foundation capacity [r3])", "Completed full training without pain or next-day swelling", "Agreement between athlete, coach and medical team [r3]"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "Pain-free walking and stairs, with no tenderness at the injury site [r3]",
+      "Full, symmetrical dorsiflexion and stretch tolerance (knee straight and bent) [r3]",
+      "Single-leg calf raise strength and endurance symmetrical (clinical convention; one expert expected at least 30 repetitions and under 10% asymmetry) [r3]",
+      "Pain-free hopping and plyometric function, and a graded return to maximal running speed and change of direction [r3]",
+      "Completed full, unrestricted training with no pain or swelling afterwards",
+      "A shared decision by the athlete, coach and medical team [r3]. Clinical findings rather than MRI best indicate the risk of recurrence [r4]"
+    ],
+    tests: ["Single-leg heel-raise endurance and height", "Isometric or dynamometer calf strength compared with the other side", "Hop and bounding tests, pogo and countermovement jumps", "Graded sprint and change-of-direction exposure"]
+  },
+  prognosis: "Most calf strains return to play within weeks, but recurrence is common. In elite Australian footballers the mean time to return was 19.1 ± 14.1 days for gastrocnemius injuries and 25.4 ± 16.2 days for soleus injuries (not a statistically significant difference); running-related injuries took about 12 days longer [r2]. Severe aponeurotic disruption on MRI predicted longer return (31.3 vs 19.4 days) [r4]. A history of calf strain raised the risk of recurrence within two seasons (adjusted hazard ratio 6.7), and older age raised the risk of early recurrence [r4]. Across a decade in elite male Australian football, recurrence within 2 years ranged from 13% to 21.3% depending on how recurrence was defined, and recurrent injuries averaged at least 35.6 days lost [r11]. Pain and disability can last months in more severe cases or with poor early treatment [r1].",
+  prevention: [
+    "No universal calf strain prevention program has been proven. Experts used individualised strategies that reflect athlete characteristics and sport demands [r3].",
+    "Target the strongest risk factors: older athletes and those with a previous calf strain need careful load management and objective monitoring [r5,r4].",
+    "Monitor calf capacity: single-leg calf raise endurance, hopping and stretch tolerance were used by experts to track fluctuations [r3].",
+    "Build foundation strength-endurance and, in sports with sprinting and cutting, also explosive and high-speed work, because slow strength alone does not address sport loading rates [r3].",
+    "Rehabilitate previous lower-limb injuries (hamstring, quadriceps, adductor, knee) fully, because they showed limited association with calf strain [r5]."
+  ],
+  clinicalPearls: [
+    "'Tennis leg' is usually a medial gastrocnemius strain, not a plantaris rupture. The plantaris was ruptured in only 1.4% of 141 ultrasound cases [r6].",
+    "Always screen for DVT. Isolated DVT was found in 9.9% of patients referred with a clinical diagnosis of tennis leg, so a swollen calf is not always a strain [r6].",
+    "Use the knee to separate the muscles: test and stretch with the knee straight for the gastrocnemius and bent for the soleus [r1].",
+    "Do not run a calf like a hamstring. Running is a high load for the calf even at slow speeds, so experts used stricter running criteria and a slight delay [r3].",
+    "Clinical history, not MRI, best predicts recurrence. A previous calf strain and older age matter more than the scan [r4,r5].",
+    "Combined gastrocnemius and soleus strains (17% in one radiology study) can explain slow progress [r1]."
+  ],
+  related: ["soleus-strain", "achilles-rupture", "midportion-achilles-tendinopathy", "acute-compartment-syndrome", "insertional-achilles-tendinopathy", "medial-tibial-stress-syndrome"],
+
+  references: [
+    { id: "r1", citation: "Dixon JB. Gastrocnemius vs. soleus strain: how to differentiate and deal with calf muscle injuries. Curr Rev Musculoskelet Med. 2009;2(2):74-7.", pmid: "19468870", doi: "10.1007/s12178-009-9045-8", type: "narrative-review", year: 2009 },
+    { id: "r2", citation: "Green B, Lin M, Schache AG, et al. Calf muscle strain injuries in elite Australian Football players: a descriptive epidemiological evaluation. Scand J Med Sci Sports. 2020;30(1):174-84.", pmid: "31494970", doi: "10.1111/sms.13552", type: "cohort", year: 2020 },
+    { id: "r3", citation: "Green B, McClelland JA, Semciw AI, et al. The assessment, management and prevention of calf muscle strain injuries: a qualitative study of the practices and perspectives of 20 expert sports clinicians. Sports Med Open. 2022;8(1):10.", pmid: "35032233", doi: "10.1186/s40798-021-00364-0", type: "other", year: 2022 },
+    { id: "r4", citation: "Green B, Lin M, McClelland JA, et al. Return to play and recurrence after calf muscle strain injuries in elite Australian football players. Am J Sports Med. 2020;48(13):3306-15.", pmid: "33030961", doi: "10.1177/0363546520959327", type: "case-control", year: 2020 },
+    { id: "r5", citation: "Green B, Pizzari T. Calf muscle strain injuries in sport: a systematic review of risk factors for injury. Br J Sports Med. 2017;51(16):1189-94.", pmid: "28259848", doi: "10.1136/bjsports-2016-097177", type: "systematic-review", year: 2017 },
+    { id: "r6", citation: "Delgado GJ, Chung CB, Lektrakul N, et al. Tennis leg: clinical US study of 141 patients and anatomic investigation of four cadavers with MR imaging and US. Radiology. 2002;224(1):112-9.", pmid: "12091669", doi: "10.1148/radiol.2241011067", type: "cross-sectional", year: 2002 },
+    { id: "r7", citation: "Maffulli N. The clinical diagnosis of subcutaneous tear of the Achilles tendon. A prospective study in 174 patients. Am J Sports Med. 1998;26(2):266-70.", pmid: "9548122", doi: "10.1177/03635465980260021801", type: "diagnostic-accuracy", year: 1998 },
+    { id: "r8", citation: "Pollock N, James SLJ, Lee JC, et al. British athletics muscle injury classification: a new grading system. Br J Sports Med. 2014;48(18):1347-51.", pmid: "25031367", doi: "10.1136/bjsports-2013-093302", type: "consensus-statement", year: 2014 },
+    { id: "r9", citation: "Mueller-Wohlfahrt HW, Haensel L, Mithoefer K, et al. Terminology and classification of muscle injuries in sport: the Munich consensus statement. Br J Sports Med. 2013;47(6):342-50.", pmid: "23080315", doi: "10.1136/bjsports-2012-091448", type: "consensus-statement", year: 2013 },
+    { id: "r10", citation: "Reiman M, Burgi C, Strube E, et al. The utility of clinical measures for the diagnosis of Achilles tendon injuries: a systematic review with meta-analysis. J Athl Train. 2014;49(6):820-9.", pmid: "25243736", doi: "10.4085/1062-6050-49.3.36", type: "diagnostic-accuracy", year: 2014 },
+    { id: "r11", citation: "Green B, Schache AG, Pizzari T. What is a recurrence? The onset, frequency and time loss impact of recurrent calf muscle strain injuries in elite male Australian football players over a decade. BMJ Open Sport Exerc Med. 2025;11(3):e002865.", pmid: "40919406", doi: "10.1136/bmjsem-2025-002865", type: "cohort", year: 2025 },
+  ],
+
+  animation: {
+    title: "How a medial gastrocnemius strain (tennis leg) happens",
+    phases: [
+      {
+        type: "moi", label: "Mechanism", duration: 6.5, view: "lateral", environment: "court",
+        actors: [{ id: "athlete", kit: "athlete" }],
+        keyframes: [
+          { t: 0, pose: "stand", root: { x: -40 } },
+          { t: 1.1, pose: "walk-push-off", root: { x: -30 } },
+          { t: 2.1, pose: "sudden-dorsiflexion", root: { x: -18 }, ease: "in" },
+          { t: 2.8, pose: "sudden-dorsiflexion", joints: { kneeR: 0, ankleR: 22 }, root: { x: -12 } },
+          { t: 3.8, pose: "stand", joints: { ankleR: 10, kneeR: 15, trunk: 12 }, root: { x: -10 } },
+          { t: 5.2, pose: "stand", joints: { ankleR: 12, kneeR: 28, trunk: 20 }, root: { x: -10 } }
+        ],
+        props: [{ id: "racquet", type: "racquet", attach: "handR" }],
+        forces: [
+          { t: [1.9, 3.0], at: "calfR", dir: "down", label: "Stretch across knee and ankle" },
+          { t: [1.9, 3.0], at: "footR", dir: "up", label: "Ground force at push-off" }
+        ],
+        highlights: [{ t: [2.6, 6.5], at: "calfR" }],
+        impacts: [{ t: 2.8, at: "calfR" }],
+        slowmo: [{ t: [2.0, 3.1], rate: 0.3 }],
+        captions: [
+          { t: 0, text: "A recreational tennis player is about to chase a drop shot." },
+          { t: 1.1, text: "He drives off the back leg and the knee extends." },
+          { t: 2.0, text: "As the knee straightens, the ankle is forced into dorsiflexion, stretching the medial gastrocnemius across both joints." },
+          { t: 2.8, text: "The muscle contracts hard against that stretch, and fibres fail near the musculotendinous junction." },
+          { t: 3.9, text: "A sudden sharp pain in the calf, as if he had been hit, stops play." },
+          { t: 5.2, text: "The same mechanism occurs in sprinting and field sports, and tennis leg is classically seen in middle-aged players." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "calfR",
+        captions: [{ t: 0, text: "Zooming into the right calf, viewed from behind." }]
+      },
+      {
+        type: "closeup", label: "Inside the calf", duration: 10, scene: "lower-leg-posterior",
+        actions: [
+          { t: 0, do: "highlight", target: "gastrocMedial" },
+          { t: 0.3, do: "label", target: "gastrocMedial", text: "Medial gastrocnemius" },
+          { t: 0.9, do: "arrow", at: "medialGastrocMTJ", dir: "distal", label: "Stretch at the junction" },
+          { t: 1.1, do: "stretch", target: "gastrocMedial", amount: 0.4, dur: 1.2 },
+          { t: 2.9, do: "strain", target: "gastrocMedial", grade: 2, at: 0.93 },
+          { t: 2.9, do: "impact", at: "medialGastrocMTJ" },
+          { t: 3.1, do: "pain", at: "medialGastrocMTJ", hold: 3 },
+          { t: 3.5, do: "label", target: "gastrocMedial", text: "Grade II strain at the distal junction" },
+          { t: 4.3, do: "haematoma", target: "gastrocMedial", at: 0.93 },
+          { t: 5.4, do: "swell", target: "gastrocMedial", amount: 0.3, dur: 1.0 },
+          { t: 6.0, do: "unhighlight", target: "gastrocMedial" },
+          { t: 6.1, do: "highlight", target: "achillesTendon" },
+          { t: 6.3, do: "label", target: "achillesTendon", text: "Achilles intact: Thompson test negative" },
+          { t: 7.4, do: "camera", at: "medialGastrocMTJ", zoom: 1.7, dur: 1.0 },
+          { t: 9.2, do: "camera", zoom: 1, dur: 0.8 }
+        ],
+        captions: [
+          { t: 0, text: "The medial gastrocnemius crosses both the knee and the ankle, so it is easily overstretched." },
+          { t: 0.9, text: "Knee extension plus ankle dorsiflexion lengthens the muscle to its limit just as it contracts." },
+          { t: 2.9, text: "Fibres fail at the distal musculotendinous junction and aponeurosis: a partial (grade II) strain." },
+          { t: 4.3, text: "Blood pools between the gastrocnemius and soleus, producing swelling and bruising." },
+          { t: 5.4, text: "The calf swells and bruising may track down toward the ankle over the next days." },
+          { t: 6.3, text: "The Achilles tendon is intact, which separates calf strain from rupture." },
+          { t: 7.5, text: "DVT can mimic or coexist with tennis leg, so always screen for it." }
+        ]
+      },
+      {
+        type: "micro", label: "Muscle response", duration: 10, tissue: "muscle",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 0.9, stage: "contracting" }, { t: 1.8, stage: "eccentric-overstretch" }, { t: 2.7, stage: "sarcomere-disruption" },
+          { t: 3.6, stage: "haematoma" }, { t: 4.5, stage: "inflammation" }, { t: 5.6, stage: "satellite-activation" }, { t: 6.8, stage: "regeneration" }, { t: 8.2, stage: "scar" }
+        ],
+        timeLabels: [{ t: 3.6, text: "Hours" }, { t: 4.5, text: "Days 0–5" }, { t: 5.6, text: "Days 3–10" }, { t: 6.8, text: "Weeks 1–4" }, { t: 8.2, text: "Weeks 3–12+" }],
+        captions: [
+          { t: 0, text: "Healthy muscle: aligned fibres with regular sarcomeres." },
+          { t: 0.9, text: "Contraction shortens the sarcomeres." },
+          { t: 1.8, text: "Overstretch: the muscle is lengthened while it is still contracting." },
+          { t: 2.7, text: "Sarcomeres and fibres disrupt near the musculotendinous junction." },
+          { t: 3.6, text: "Bleeding from torn fibres forms a haematoma." },
+          { t: 4.5, text: "Inflammation: neutrophils, then macrophages, clear the damaged tissue." },
+          { t: 5.6, text: "Satellite cells activate to rebuild fibres." },
+          { t: 6.8, text: "Regeneration: new fibres form. Early, pain-guided loading helps align the repair." },
+          { t: 8.2, text: "A scar forms and matures over weeks to months, so loading is rebuilt gradually." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "LL7" }
+};

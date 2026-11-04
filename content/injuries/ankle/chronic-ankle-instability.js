@@ -1,0 +1,515 @@
+export default {
+  id: "chronic-ankle-instability",
+  name: "Chronic ankle instability",
+  shortName: "Chronic ankle instability",
+  aka: ["CAI", "functional ankle instability", "mechanical ankle instability", "recurrent ankle sprains", "ankle giving way", "weak ankle", "chronic lateral ankle instability"],
+  region: "ankle",
+  tissues: ["ligament", "joint-capsule"],
+  onset: "acute-or-gradual",
+  mechanismType: ["non-contact", "insidious"],
+  populations: ["athletes with a previous lateral ankle sprain", "court-sport and dance athletes", "young adults", "people with recurrent ankle sprains"],
+  sports: ["basketball", "netball", "volleyball", "soccer", "australian football", "trail running", "dance"],
+  urgency: "routine",
+  summary: "Recurrent giving way and sprains more than 12 months after a lateral ankle sprain, driven by lasting mechanical laxity and sensorimotor deficits rather than by one structure alone.",
+  keyFacts: [
+    { label: "Definition", value: "More than 12 months after the first sprain, with recurrent sprains, frequent giving way and persistent symptoms" },
+    { label: "Incidence", value: "Estimates range from 10–20% (Cochrane review) to up to 40% after a first lateral ankle sprain" },
+    { label: "Typical recovery", value: "Exercise-based rehabilitation is first-line; neuromuscular training improved function at 4 weeks in small trials" },
+    { label: "Key test", value: "No single test: combine history of giving way, a validated questionnaire, laxity tests and balance tests" },
+    { label: "Imaging", value: "Radiographs to exclude other causes; MRI or arthroscopy for associated cartilage and ligament lesions" },
+    { label: "Return to sport", value: "Criteria-based, usually with a brace or tape and ongoing balance training" }
+  ],
+  overview: "Chronic ankle instability (CAI) is the persistent problem that follows some lateral ankle sprains. In the updated model of Hertel and Corbett, it is defined by being more than 12 months from the initial sprain, with a propensity for recurrent sprains, frequent giving way, and persistent symptoms such as pain, swelling, limited motion, weakness and diminished self-reported function. Up to 40% of people with a first-time lateral ankle sprain may develop it [r1], although a Cochrane review put the figure at 10–20% [r2].\n\nCAI is not just a lax ligament. The ligament injury leads to a collection of interrelated mechanical, sensory-perceptual and motor-behavioural impairments [r1]. Mechanical instability, functional (sensorimotor) instability and their combination all occur, and the combination is the most likely [r3]. Physiotherapists therefore assess and treat both the ankle and the control system around it. First-line treatment is supervised exercise-based rehabilitation with external support in sport; surgery is considered when rehabilitation fails [r4].",
+
+  epidemiology: {
+    text: "Estimates of how many people develop CAI after a first lateral ankle sprain vary. Hertel and Corbett estimate up to 40% [r1], whereas a Cochrane review states that chronic lateral instability occurs in 10% to 20% of people after an acute sprain [r2]. In a 7-year follow-up of 648 people (91% of those originally seen at an acute ward) who all received functional treatment, 32% reported chronic pain, swelling or recurrent sprains and 19% were bothered by repeated inversion injuries. The severity of the original sprain did not predict residual disability [r5]. A systematic review and meta-analysis of conservatively treated severe sprains found no significant association between a combined ATFL–CFL rupture and CAI compared with an isolated ATFL rupture, although combined ruptures had worse clinical scores and lower return to full sport [r6]. CAI is linked to lower physical activity, poorer quality of life and ankle osteoarthritis [r7].",
+    riskFactors: {
+      intrinsic: [
+        "A first lateral ankle sprain, particularly when rehabilitation is incomplete: LAS is often inadequately treated and recurs frequently [r3]",
+        "Inability to complete a single-leg drop landing and drop vertical jump 2 weeks after a first sprain (83% sensitivity, 55% specificity for CAI at 12 months) [r8]",
+        "Poorer dynamic postural control and lower self-reported function (FAAM ADL) 6 months after a first sprain [r8]",
+        "Increased inversion and anterior laxity, more missed balance trials and lower plantarflexion-to-dorsiflexion torque ratio in people with CAI compared with controls [r9]"
+      ],
+      extrinsic: [
+        "Repeated exposure to jumping, landing and cutting sports without ankle support",
+        "Return to sport before sensorimotor deficits have resolved (clinical reasoning)",
+        "Repeated giving-way episodes: cartilage damage was common in a surgical arthroscopy series of people with CAI [r10]",
+        "No brace or neuromuscular training after a sprain [r11]"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "CAI develops when the first lateral ankle sprain leaves lasting mechanical changes (laxity of the repaired ATFL and CFL) together with disrupted afferent input, altered reflexes and motor control, and altered perception of the ankle [r1,r12]. In later landings and cuts the foot reaches the vulnerable inverted position with a smaller trigger and a slower or poorly organised protective response, and the ankle gives way. Each event can add further capsular, cartilage and synovial damage [r10].",
+    sequence: [
+      "A first lateral ankle sprain tears the ATFL and often the CFL and damages mechanoreceptors in the ligaments and capsule [r1].",
+      "The ligaments heal in a lengthened, more compliant state. Arthroscopy in 148 patients with CAI found ATFL rupture or elongation in 86% and CFL rupture or elongation in 64% [r10].",
+      "Afferent input, reflexes and efferent motor control are altered. Feedback and feedforward control are both affected, and the problem is not confined to the ankle [r12,r13].",
+      "Muscle drive to the ankle is reduced. H-reflex ratios of soleus and peroneal muscles were smaller in the injured limb than the uninjured limb in people with functional ankle instability [r14].",
+      "During a cut, landing or step onto uneven ground the foot is placed or loaded in inversion with limited protection.",
+      "The ankle gives way into inversion and internal rotation. The athlete may fall, stumble or recover and carry on, depending on the control available.",
+      "Repeated episodes injure cartilage and synovium and reinforce pain, fear and avoidance, which further reduce confidence and activity [r10,r1]."
+    ],
+    variants: [
+      { name: "Mechanical instability dominant", description: "Pathological laxity, altered arthrokinematics, synovial irritation or degenerative change. Anterior and inversion laxity are the clearest differences between CAI ankles and controls [r3,r9]." },
+      { name: "Functional (sensorimotor) instability dominant", description: "Impaired proprioception, balance and neuromuscular control with little measurable laxity [r3]." },
+      { name: "Combined", description: "The most likely situation in practice: mechanical and functional insufficiencies coexist [r3]." },
+      { name: "Perceived instability with intra-articular pathology", description: "Giving way together with pain, catching or swelling from cartilage damage, synovitis or other intra-articular lesions. These are common in arthroscopy series of surgical candidates [r10]." },
+      { name: "Combined lateral–medial instability", description: "In 148 ankles, medial instability was presumed clinically in 38 but found arthroscopically in 54, so consider the deltoid ligament too [r10]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The ankle complex combines the talocrural, subtalar and inferior tibiofibular joints, and all contribute to stability [r3]. On the lateral side, the ATFL (taut in plantarflexion) and CFL (taut in dorsiflexion, crossing the subtalar joint) are the main static restraints to inversion, and the PTFL is rarely injured. They are extra-articular, which means they can heal with scar. The peroneus longus and brevis tendons provide the main dynamic restraint, and mechanoreceptors in the ligaments and capsule feed joint position information to spinal and cortical control centres. The deltoid ligament medially and the syndesmosis can also be involved in rotatory instability [r10].",
+    structures: [
+      { name: "Anterior talofibular ligament (ATFL)", role: "Resists inversion and anterior talar translation, particularly in plantarflexion" },
+      { name: "Calcaneofibular ligament (CFL)", role: "Resists inversion across the ankle and subtalar joints, mainly in dorsiflexion" },
+      { name: "Peroneus longus and brevis", role: "Evert the foot and form the main dynamic protection against inversion" },
+      { name: "Lateral capsule and mechanoreceptors", role: "Provide sensory information about joint position and loading" },
+      { name: "Talar dome cartilage and synovium", role: "Weight-bearing surface and joint lining, which are vulnerable to repeated giving way [r10]" },
+      { name: "Deltoid ligament", role: "Resists eversion and talar tilt on the medial side; it can be injured in combined instability [r10]" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "After a first sprain, the lateral ligaments heal by scar formation. In some people the repaired tissue stays elongated and compliant, so the talus can translate and tilt more than normal. In arthroscopy of 148 ankles with symptomatic CAI lasting 6 months or more, the ATFL was ruptured or elongated in 86%, the CFL in 64% and the deltoid in 40% [r10]. Increased inversion laxity and anterior laxity were the strongest discriminators between ankles with and without CAI in one case-control study [r9]. Initial severity is a weak predictor: the 7-year follow-up found no correlation between severity at injury and later disability [r5], and a meta-analysis found no significant association between combined ATFL–CFL rupture and later CAI [r6].\n\nMechanical laxity is only part of the story. Interrupted afferent input and disordered motor control are present at several levels, from local ligament mechanoreceptors to spinal reflexes and cortical control, and the origin of the deficits is not fully understood [r12]. The updated model describes interrelated pathomechanical, sensory-perceptual and motor-behavioural impairments, which differ between people [r1]. The deficits found in people with recurrent sprains are not always the ones most often tested: in one meta-analysis there was no difference in evertor strength, inversion joint position sense or peroneal reaction time, but there was greater postural sway, prolonged time to stabilisation after a jump and decreased concentric inversion strength [r15].",
+    structures: [
+      { name: "ATFL", effect: "Ruptured or elongated in 86% of ankles in an arthroscopic series of people with CAI, giving anterior and inversion laxity [r10]" },
+      { name: "CFL", effect: "Ruptured or elongated in 64% of the same series, which adds subtalar and inversion laxity [r10]" },
+      { name: "Deltoid ligament", effect: "Injured in 40% of the series and associated with medial instability that was often missed clinically [r10]" },
+      { name: "Articular cartilage", effect: "Cartilage damage was found in 66% of ankles with lateral ligament injuries in the same surgical series [r10]" },
+      { name: "Synovium and anterolateral recess", effect: "Synovial irritation is a recognised cause of mechanical symptoms and pain in CAI [r3]" },
+      { name: "Talus and subtalar joint", effect: "Radiographic changes in the talus and altered foot position in gait were found in people with recurrent sprains [r15]" }
+    ],
+    muscles: [
+      { name: "Peroneus longus and brevis", effect: "Soleus and peroneal H:M ratios were smaller in the injured limb in functional ankle instability, which suggests arthrogenic muscle inhibition [r14]. In meta-analysis, evertor strength was not different, but concentric inversion strength was lower [r15]." },
+      { name: "Calf (plantarflexors)", effect: "Lower plantarflexion-to-dorsiflexion peak torque ratio predicted CAI in one case-control study [r9]" },
+      { name: "Hip and trunk muscles", effect: "Altered proximal strategies are commonly assessed in the rehabilitation-oriented approach (clinical reasoning)" }
+    ],
+    cellular: [
+      { phase: "Incomplete ligament repair", timing: "Weeks to months after the first sprain", description: "Scar replaces the torn ligament, but it can be lengthened and disorganised, so laxity persists. Ligament strength takes months to recover, and mechanical stability can remain impaired." },
+      { phase: "Neural adaptation", timing: "Months", description: "Loss of mechanoreceptor input and altered reflex and cortical excitability change motor output, with effects at spinal and supraspinal levels [r12,r13]." },
+      { phase: "Repetitive micro-trauma and synovitis", timing: "Months to years", description: "Repeated giving way strains capsule and cartilage and irritates the synovium, with cartilage damage and synovial irritation found at arthroscopy [r10,r3]." },
+      { phase: "Degenerative change", timing: "Years to decades", description: "Ligamentous post-traumatic ankle osteoarthritis develops in a subset, and CAI is associated with higher rates of it [r7]." }
+    ],
+    systems: [
+      { system: "Nervous system", effect: "Afferent, reflex and efferent deficits are present, and supraspinal motor control changes. Gait initiation was altered in CAI, which led the authors to recommend treating CAI as a central and not just a local injury [r12,r13]." },
+      { system: "Perceptual and psychological", effect: "The updated model includes a patient-specific 'neurosignature', perception of the ankle and a biopsychosocial framework that shapes behaviour and recovery [r1]." },
+      { system: "Musculoskeletal chain", effect: "Balance, strength and laxity measures all differ in CAI, which shows that the whole limb adapts [r9]." },
+      { system: "Inflammatory and joint health", effect: "Synovial irritation, cartilage damage and later ligamentous osteoarthritis [r10,r7]." },
+      { system: "Behavioural and public health", effect: "Lower physical activity and quality of life are associated with CAI [r7]." }
+    ]
+  },
+
+  grading: {
+    system: "Contributing-factor classification (mechanical, functional, combined)",
+    grades: [
+      { grade: "Mechanical instability", description: "Pathological laxity, altered arthrokinematics, synovial irritation or degenerative change [r3]", prognosis: "Surgical stabilisation is considered when a thorough rehabilitation program fails [r4]" },
+      { grade: "Functional instability", description: "Insufficient proprioception and neuromuscular control with little or no laxity [r3]", prognosis: "Most likely to respond to neuromuscular and balance training [r2,r16]" },
+      { grade: "Combined instability", description: "Both mechanical and functional insufficiencies, the most likely presentation [r3]", prognosis: "Address both: exercise-based rehabilitation first, then reassess for surgery" }
+    ]
+  },
+
+  timeframes: {
+    summary: "CAI is defined in the chronic phase, more than 12 months after the first sprain [r1]. Because the ligament has already healed (with laxity), the timeline here runs from the start of a rehabilitation program for established CAI. Gains in strength, balance and self-reported function appear over 4–8 weeks in small trials, but longer-term data are limited [r2,r17,r16]. Mechanical laxity does not change with exercise.",
+    healing: [
+      { phase: "Assessment and early neuromuscular adaptation", startDay: 0, endDay: 28, description: "Baseline testing, flare settling and early balance and strength training. Early gains are mostly neural (clinical reasoning). Neuromuscular training improved function scores at 4 weeks in two small trials [r2]." },
+      { phase: "Strength and balance consolidation", startDay: 14, endDay: 84, description: "Progressive strength, balance and landing training. Six-week trials improved strength, perceived instability, CAIT and reach distances [r17,r16]." },
+      { phase: "Return to cutting and sport", startDay: 84, endDay: 168, description: "Hopping, cutting and reactive agility with brace or tape (clinical convention)" },
+      { phase: "Maintenance and prevention", startDay: 168, endDay: 365, description: "Ongoing balance, calf and hip strength work and external support in at-risk sport [r11]" }
+    ],
+    milestones: [
+      { label: "Baseline testing and education", day: 7, note: "CAIT, FAAM, Y-balance and hop tests (clinical convention)" },
+      { label: "Function scores improve with neuromuscular training", day: 28, note: "Seen after 4 weeks in two small trials [r2]" },
+      { label: "End of a 6-week strength or balance block", day: 42, note: "Gains in strength, perceived instability, CAIT and reach distances in separate RCTs [r17,r16]" },
+      { label: "Start jogging and landing drills", day: 56, note: "Once balance and calf criteria are met (clinical convention)" },
+      { label: "Return to cutting sport", day: 120, note: "Criteria-based; earlier or later by individual (clinical convention)" },
+      { label: "Ongoing maintenance", day: 365, note: "Brace or tape in sport plus balance training [r11]" }
+    ],
+    returnToSport: "Criteria-based, not time-based. After exercise-based rehabilitation, athletes often return to training within about 6–12 weeks once they pass the criteria. After surgical stabilisation, the surgeon's protocol applies, and a return to cutting sport typically takes several months (clinical convention). Early functional rehabilitation after reconstruction led to earlier return to work and sport than six weeks of immobilisation [r2]. Continued bracing or taping and balance training are usually advised on return."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Recurrent episodes of the ankle 'giving way', typically during cutting, landing or walking on uneven ground",
+      "A history of repeated ankle sprains, often with minimal trigger",
+      "Persistent pain, swelling and stiffness, with occasional flare-ups",
+      "A feeling of weakness or lack of trust in the ankle, with avoidance of certain activities",
+      "Lower self-reported function in daily living and sport"
+    ],
+    signs: [
+      "Increased anterior drawer and talar tilt compared with the other side [r9]",
+      "Poorer single-leg balance and greater postural sway, particularly with eyes closed or on unstable surfaces [r15]",
+      "Reduced reach distances on the Star Excursion Balance Test or Y-balance test [r9,r16]",
+      "Weak inversion and plantarflexion strength, with evertor strength often normal on testing [r15,r9]",
+      "Tenderness over the anterolateral ankle and lateral ligaments, peroneals, or the sinus tarsi, with possible effusion"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Number and timing of sprains and the date of the first significant sprain (CAI is defined by more than 12 months since the first sprain [r1])",
+      "Frequency of giving way, the triggering activities and whether the ankle rolls fully or just 'feels unstable'",
+      "Pain, swelling, catching or locking, which suggest an associated intra-articular lesion [r10]",
+      "Previous treatment: how much supervised rehabilitation was done and whether a brace or tape was used",
+      "Sport, level, position and demands of work, and the patient's goals",
+      "Confidence, fear of re-injury and activity avoidance, which are part of the updated CAI model [r1]"
+    ],
+    observation: ["Hindfoot alignment (varus), cavus foot posture and any leg-length or gait asymmetry", "Swelling around the anterolateral gutter and malleolus", "Gait and single-leg stance quality, comparing both sides", "Footwear wear pattern"],
+    palpation: [
+      "ATFL, CFL and the lateral capsule; the anterolateral gutter for synovitis",
+      "Peroneal tendons in the retromalleolar groove, and the base of the fifth metatarsal",
+      "Sinus tarsi, talar dome and the medial deltoid ligament (medial instability was often missed clinically [r10])",
+      "Syndesmosis and the Achilles tendon"
+    ],
+    rangeOfMotion: [
+      "Weight-bearing dorsiflexion (knee-to-wall lunge), compared with the other side",
+      "Talocrural and subtalar accessory motion",
+      "Great toe, midfoot and hip mobility as part of the chain"
+    ],
+    strength: [
+      "Concentric inversion and plantarflexion strength, which are commonly lower in CAI [r15,r9]",
+      "Evertor strength (often normal in studies, but still test) and endurance",
+      "Calf capacity (single-leg heel raises) and hip abductor, extensor and hamstring strength"
+    ],
+    neuro: [
+      "Sensorimotor deficits span conscious perception of afferent input, reflex responses and efferent motor control, so test balance and joint position sense [r12]",
+      "Screen for neurological causes of giving way (L5, common peroneal nerve, peripheral neuropathy such as Charcot-Marie-Tooth in cavovarus feet)"
+    ],
+    functional: [
+      "Star Excursion Balance Test or Y-balance test: compare reach distances with the other limb [r9,r16]",
+      "Single-leg stance eyes open and closed, and on a soft surface [r15]",
+      "Single-leg drop landing and drop vertical jump (inability to complete them after a first sprain was predictive of CAI [r8])",
+      "Figure-of-8 hop and triple crossover hop tests [r17]",
+      "Cutting and landing observed in person or on video"
+    ],
+    specialTests: [
+      {
+        name: "Anterior drawer test",
+        purpose: "Anterior talar translation, a marker of ATFL laxity. Increased anterior laxity helped to discriminate CAI ankles from controls [r9].",
+        procedure: "Patient seated or supine with the ankle in about 10–20° of plantarflexion. Stabilise the distal tibia and draw the heel and talus forward.",
+        positive: "Greater anterior translation or a soft end-point than the other side, sometimes with a sulcus or suction sign",
+        refs: []
+      },
+      {
+        name: "Talar tilt (inversion stress) test",
+        purpose: "Inversion laxity of the ATFL and CFL. Increased inversion laxity was the strongest discriminator of CAI in one study [r9].",
+        procedure: "With the ankle in neutral, stabilise the distal tibia and invert the hindfoot. Compare the tilt and end-feel with the other side.",
+        positive: "Greater inversion tilt or a soft end-point than the other side",
+        refs: []
+      },
+      {
+        name: "Medial stress and syndesmosis tests",
+        purpose: "Identify medial (deltoid) or syndesmotic involvement, because medial instability was missed clinically in some patients [r10]",
+        procedure: "Apply eversion and external rotation stress with the ankle in neutral and dorsiflexion. Squeeze the tibia and fibula at mid-calf.",
+        positive: "Medial or anterior syndesmotic pain or increased medial opening compared with the other side",
+        refs: []
+      }
+    ],
+    clinicalRules: [
+      {
+        name: "International Ankle Consortium CAI criteria",
+        description: "The International Ankle Consortium has a position statement that standardises selection criteria for people with CAI in research [r18]. The updated model describes CAI as more than 12 months from the initial sprain, with recurrent sprains, frequent giving way and persistent symptoms [r1]. As a clinical convention, combine a history of at least one significant sprain, at least two giving-way episodes in the recent past, and a validated questionnaire score below the published cut-off."
+      }
+    ],
+    outcomeMeasures: [
+      { name: "Cumberland Ankle Instability Tool (CAIT)", use: "Screening and tracking perceived instability; improved after 6 weeks of balance training in an RCT [r16]" },
+      { name: "Foot and Ankle Ability Measure (FAAM)", use: "Self-reported function in daily living and sport; a predictor in a prospective cohort [r8]" },
+      { name: "Identification of Functional Ankle Instability (IdFAI) questionnaire", use: "Identifies CAI in research and was used to select participants in an RCT [r17]" },
+      { name: "Star Excursion Balance Test or Y-balance test", use: "Dynamic postural control; reach distances improved with balance training [r16]" },
+      { name: "Figure-of-8 and triple crossover hop tests; isometric strength", use: "Functional performance and strength outcomes in an RCT of strength training [r17]" }
+    ],
+    imaging: [
+      { modality: "Weight-bearing radiograph", indication: "Routine for chronic symptoms or after a new injury", findings: "Excludes fracture, anterior or posterior spurs and early degenerative change; hindfoot alignment (varus)" },
+      { modality: "MRI or ultrasound", indication: "Persistent pain, swelling or catching, or planning surgery", findings: "ATFL and CFL attenuation or absence, osteochondral lesion of the talus, peroneal tendon tear, synovitis, and bone marrow oedema. In a surgical arthroscopy series, cartilage damage was found in 66% of ankles with lateral ligament injuries [r10]." },
+      { modality: "Ankle arthroscopy", indication: "Surgical planning when imaging or symptoms suggest intra-articular pathology", findings: "Preoperative arthroscopy revealed essential information that would otherwise have been undetected, including medial instability and cartilage damage [r10]" }
+    ]
+  },
+
+  differentials: [
+    { name: "Acute lateral ankle sprain (new injury)", id: "lateral-ankle-sprain", distinguishing: "A new inversion event with acute swelling, bruising and pain on weight-bearing. Screen with the Ottawa rules for a new fracture." },
+    { name: "Osteochondral lesion of the talus", id: "osteochondral-lesion-talus", distinguishing: "Deep ankle pain, catching, swelling or locking that persists, often after sprains. MRI confirms it, and it can coexist with CAI [r10]." },
+    { name: "Anterior ankle impingement", id: "anterior-ankle-impingement", distinguishing: "Anterior pain at end-range dorsiflexion with an anterior tibial or talar spur or thickened soft tissue, common after repeated sprains" },
+    { name: "Peroneal tendon subluxation or tear", id: "peroneal-tendon-subluxation", distinguishing: "Retromalleolar snapping or pain on resisted eversion and circumduction; giving way from tendon dysfunction" },
+    { name: "Peroneal tendinopathy", id: "peroneal-tendinopathy", distinguishing: "Load-related lateral ankle pain along the peroneal tendons without major ligament laxity" },
+    { name: "High ankle (syndesmosis) sprain or instability", id: "high-ankle-sprain", distinguishing: "Anterior or high ankle pain, pain with external rotation and squeeze test, and slower recovery" },
+    { name: "Medial ankle (deltoid) instability", id: "medial-ankle-sprain", distinguishing: "Medial pain and swelling with eversion giving way. In an arthroscopic series, medial instability was found in more patients than expected clinically [r10]." },
+    { name: "Cavovarus foot or neuropathic cause of giving way", distinguishing: "Fixed hindfoot varus, high arches, weak peroneals and sensory change, which might point to a neuropathy such as hereditary motor and sensory neuropathy" }
+  ],
+  redFlags: [
+    "A new twisting injury with bony tenderness or inability to take four steps: apply the Ottawa ankle rules and arrange radiographs for fracture.",
+    "Locking, persistent catching or a swollen, painful ankle despite rehabilitation: suspect an osteochondral lesion or loose body and arrange MRI.",
+    "Progressive pain at rest or at night, a progressive varus deformity, or marked stiffness: assess for degenerative change or other pathology and refer for imaging.",
+    "Giving way with foot drop, sensory loss or bilateral foot deformity (high arches, claw toes): consider a neurological cause, such as peroneal nerve or lumbar radiculopathy or a hereditary neuropathy, and refer.",
+    "Recurrent instability with generalised joint hypermobility: consider a connective tissue disorder before surgery, because soft-tissue procedures may fail.",
+    "After surgery: fever, wound problems, severe pain, a cold foot or numbness (infection, vascular or nerve injury) or calf pain and swelling (DVT) need urgent medical review. Nerve injury was more frequent after tenodesis than anatomical reconstruction in one trial in a Cochrane review [r2]."
+  ],
+
+  management: {
+    principles: "Treat CAI as a mechanical and sensorimotor problem, and begin with supervised exercise-based rehabilitation and external support during sport. Surgery is reserved for cases that fail thorough exercise-based treatment [r4,r11]. The Cochrane review of interventions found that neuromuscular training alone appeared effective in the short term, but long-term effects are unknown, and there was insufficient evidence to support any one surgical intervention over another [r2]. Rehabilitation should include balance, strength, functional and landing training, and should address confidence, perception and activity behaviour as part of a biopsychosocial approach [r1]. Trials are small, so decisions should be shared and outcomes tracked with the same measures at each review.",
+    medical: [
+      {
+        name: "Semi-rigid or lace-up ankle brace during sport",
+        description: "An overview of reviews found strong evidence for bracing in preventing recurrent ankle sprain [r11]. In a trial of 384 athletes after a lateral sprain, 15% of the brace group had a recurrence over a year compared with 27% of the neuromuscular training group (relative risk 0.53, 95% CI 0.29–0.97) [r19]. The guideline recommends considering braces to prevent recurrent sprain [r4]. The evidence relates to preventing re-sprain more than to treating CAI symptoms.",
+        evidence: "strong", recommendation: "recommended", refs: ["r11", "r19", "r4"]
+      },
+      {
+        name: "Ankle taping",
+        description: "An alternative to bracing for sport. The guideline groups tape and brace as external support combined with exercise after a sprain [r4]. Specific evidence in CAI was not reviewed here, and a brace is easier to apply consistently (clinical convention).",
+        evidence: "limited", recommendation: "consider", refs: ["r4"]
+      },
+      {
+        name: "Surgical stabilisation (anatomical lateral ligament repair or reconstruction)",
+        description: "Considered when thorough rehabilitation fails and there is mechanical instability [r4]. The Cochrane review found insufficient evidence to favour any one surgical procedure, likely limitations to dynamic tenodesis, and more nerve injuries after tenodesis than anatomical reconstruction (risk ratio 5.50, 95% CI 1.39–21.71). After surgery, early functional rehabilitation was superior to 6 weeks of immobilisation [r2]. Arthroscopy can identify associated cartilage and medial lesions [r10].",
+        evidence: "limited", recommendation: "consider", refs: ["r4", "r2", "r10"]
+      },
+      {
+        name: "Foot orthoses or lateral wedging for varus alignment",
+        description: "Sometimes used for cavovarus feet, in the hope of improving lateral loading. There is no trial evidence for orthoses in CAI in the sources reviewed.",
+        evidence: "expert-opinion", recommendation: "consider", refs: []
+      }
+    ],
+    physio: [
+      {
+        name: "Supervised exercise-based rehabilitation (neuromuscular, balance, strength, functional)",
+        description: "The Cochrane review found that neuromuscular training gave better function scores than no training at 4 weeks (FADI mean difference 8.83, 95% CI 4.46–13.20; 2 trials, 56 participants), but longer follow-up was not available [r2]. The guideline favours supervised exercise over passive modalities [r4].",
+        evidence: "moderate", recommendation: "recommended", refs: ["r2", "r4"]
+      },
+      {
+        name: "Balance and sensorimotor training",
+        description: "In 70 athletes, 6 weeks of multi-station balance training improved CAIT and Star Excursion Balance Test reach distances compared with usual training, but not pain [r16]. Use progressions in surface, vision, task and perturbation.",
+        evidence: "moderate", recommendation: "recommended", refs: ["r16"]
+      },
+      {
+        name: "Strength training (resistance-band or PNF patterns) with added multi-planar work",
+        description: "In 39 people with CAI, 6 weeks of resistance-band or PNF strength training (3 sessions per week) improved strength and perceived instability, but not triple crossover hop or Y-balance performance, so add multi-planar and multi-joint exercises [r17].",
+        evidence: "limited", recommendation: "recommended", refs: ["r17"]
+      },
+      {
+        name: "Proprioceptive training to prevent re-sprain",
+        description: "In a meta-analysis of 7 RCTs (3,726 participants), proprioceptive training reduced sprains (relative risk 0.65, 95% CI 0.55–0.77), including in those with a previous sprain (RR 0.64, 95% CI 0.51–0.81) [r20]. Neuromuscular training had moderate evidence in the overview of reviews [r11].",
+        evidence: "moderate", recommendation: "recommended", refs: ["r20", "r11"]
+      },
+      {
+        name: "Education, graded exposure and confidence building",
+        description: "The updated CAI model uses a biopsychosocial framework in which perception of the ankle and behaviour shape outcome [r1]. Explain the problem, set graded goals, and address fear. This approach is based on the model and clinical experience; there are no trials of psychological interventions in CAI in the sources reviewed.",
+        evidence: "expert-opinion", recommendation: "consider", refs: ["r1"]
+      },
+      {
+        name: "Passive modalities as stand-alone care",
+        description: "The guideline prefers supervised exercise-based programmes over passive modalities because exercise restores functional joint stability [r4]. Ultrasound, heat or manual treatment alone do not address the sensorimotor deficits.",
+        evidence: "limited", recommendation: "not-recommended", refs: ["r4"]
+      }
+    ],
+    education: [
+      "A weak or unstable ankle usually has two parts: a looser ligament and a control system that has become less reliable. Training can improve the control system, even when the ligament stays looser.",
+      "Balance and strength exercises work best when done regularly for at least 6 weeks, and the benefit is protected by continuing them.",
+      "Wear your brace or tape in sports that put the ankle at risk of rolling, particularly when returning to play.",
+      "Occasional soreness after exercise is normal, but catching, locking or persistent swelling should be reviewed.",
+      "Surgery is an option if a full exercise program has not given you a stable ankle. It still needs rehabilitation afterwards."
+    ]
+  },
+
+  rehab: {
+    overview: "Progression is criteria-based and combines range, strength, balance and landing training with external support in sport. Most trials in CAI used 4–6 weeks of training, and this program extends it into sport-specific work (clinical convention) [r2,r17,r16]. The same stages apply after surgical stabilisation, but follow the surgeon's protocol for weight-bearing and range limits, and use early functional rehabilitation rather than prolonged immobilisation unless otherwise directed [r2]. Dosages are common clinical conventions unless a reference is shown.",
+    stages: [
+      {
+        name: "Baseline assessment, education & calm the ankle",
+        timeframe: "Weeks 0–2",
+        goals: ["Baseline testing (CAIT, FAAM, SEBT or Y-balance, hop tests)", "Settle any flare of pain or swelling", "Restore dorsiflexion and normal gait", "Start low-load balance and strength work"],
+        precautions: ["Exclude a new fracture or an intra-articular lesion if there is a new injury, locking or persistent swelling", "Use tape or a brace for loaded exercise during flare-ups"],
+        exercises: [
+          { name: "Weight-bearing dorsiflexion lunge (knee-to-wall)", dosage: "3 × 10 holds of 5 s, daily", cues: "Heel down, knee over the second toe" },
+          { name: "Ankle alphabet", dosage: "2 sets, 2–3 times daily within pain-free range", cues: "Move at the ankle, not the knee", figure: { pose: "ex-ankle-alphabet", view: "lateral", props: ["chair"] } },
+          { name: "Double-leg calf raise", dosage: "3 × 12, daily", cues: "Rise evenly over both big toes", figure: { pose: "ex-calf-raise", view: "lateral" } },
+          { name: "Single-leg balance, eyes open", dosage: "3 × 30 s each leg, daily. Train both legs.", cues: "Soft knee, tall posture, quiet ankle", figure: { pose: "ex-single-leg-balance", view: "anterior" } }
+        ],
+        progressionCriteria: ["Pain ≤ 3/10 with daily activity", "No swelling after a session", "Weight-bearing dorsiflexion within a few millimetres of the other side", "Single-leg stance 30 s without hand support"]
+      },
+      {
+        name: "Strength & balance foundation",
+        timeframe: "Weeks 2–6",
+        goals: ["Increase inversion, eversion, dorsiflexion and plantarflexion strength", "Improve calf and hip strength", "Challenge balance with changes of surface and vision", "Build confidence in single-leg loading"],
+        precautions: ["Keep brace or tape on for higher-load work", "Progress surfaces and perturbations gradually"],
+        exercises: [
+          { name: "Band-resisted four-way ankle strengthening", dosage: "3 × 15 each direction, 3 times per week for 6 weeks, slow return", cues: "Control the return; avoid hip or knee movement", figure: { pose: "ex-ankle-alphabet", view: "lateral", props: ["resistance-band"] } },
+          { name: "Single-leg calf raise", dosage: "3 × 8–12, then add load", cues: "Drive over the big toe; avoid rolling out", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
+          { name: "Single-leg balance with wobble board, foam or ball catch", dosage: "3 × 30–60 s per variation, 3–5 times per week", cues: "Keep the pelvis level and the foot quiet", figure: { pose: "ex-single-leg-balance", view: "anterior" } },
+          { name: "Step-ups and step-downs", dosage: "3 × 10 each leg", cues: "Knee tracks over the second toe", figure: { pose: "ex-step-down", view: "anterior", props: ["step"] } },
+          { name: "Single-leg Romanian deadlift with reach", dosage: "3 × 8 each leg", cues: "Hinge from the hips, keep the foot flat", figure: { pose: "ex-rdl", view: "lateral", props: ["dumbbell"] } }
+        ],
+        progressionCriteria: ["Single-leg balance 30 s on a soft surface", "Single-leg calf raise × 10–15", "CAIT or FAAM improving from baseline", "Y-balance reach within a few centimetres of the other leg"]
+      },
+      {
+        name: "Neuromuscular control & landing",
+        timeframe: "Weeks 6–12",
+        goals: ["Dynamic control of the ankle in all planes", "Single-leg landing and hop control", "Running and change of direction preparation", "Reduce giving-way episodes"],
+        precautions: ["Tape or brace for jumping, hopping and running", "Stop and re-assess after any giving-way event"],
+        exercises: [
+          { name: "Multi-directional Y-balance style reach", dosage: "3 × 5 in each of 3 directions, 3 times per week", cues: "Reach without placing weight on the reaching foot" },
+          { name: "Single-leg squat", dosage: "3 × 8 each leg", cues: "Knee over the second toe, level pelvis", figure: { pose: "ex-single-leg-squat", view: "anterior" } },
+          { name: "Double-leg to single-leg landing drills", dosage: "3 × 8 double-leg, then 3 × 5 single-leg landings with a 2 s stick", cues: "Land on the whole foot with hips and knees bent", figure: { pose: "jump-land", view: "lateral" } },
+          { name: "Hopping progressions (forward, lateral, diagonal)", dosage: "3 × 5 each direction, 2–3 times per week", cues: "Stick the landing without wobble", figure: { pose: "ex-hop", view: "lateral" } },
+          { name: "Walk–jog to continuous running", dosage: "Intervals of 1–2 min jog, building to 20–30 min over 2–3 weeks", cues: "Short, quiet steps under the body", figure: { pose: "run-toe-off", view: "lateral" } }
+        ],
+        progressionCriteria: ["Pain-free jogging for 20 minutes", "Single-leg hop distance within about 90% of the other leg (clinical convention)", "No giving way in a 2-week window", "Good landing mechanics on video"]
+      },
+      {
+        name: "Cutting, reactive agility & return to sport",
+        timeframe: "Weeks 10–16+",
+        goals: ["Change of direction and reactive agility", "Sport-specific drills at speed", "Psychological readiness and confidence", "A permanent maintenance program"],
+        precautions: ["Continue brace or tape for sport (clinical convention)", "Increase volume gradually and monitor symptoms"],
+        exercises: [
+          { name: "Planned then unplanned cutting drills", dosage: "2–3 sessions per week, increasing speed and angle", cues: "Plant under the knee; keep the foot flat", figure: { pose: "cut-plant", view: "anterior" } },
+          { name: "Lateral bounds and skater hops with stick landing", dosage: "3 × 6 each side", cues: "Land on the whole foot", figure: { pose: "ex-hop", view: "lateral" } },
+          { name: "Sport-specific reactive drills (ball, opponent, uneven surface)", dosage: "Within team training, graded exposure", cues: "Respond to a visual cue and keep a quiet ankle" },
+          { name: "Maintenance: balance, calf and hip strength", dosage: "10–15 minutes before training, 2–3 times per week, ongoing", cues: "Include a perturbation or eyes-closed variation" }
+        ],
+        progressionCriteria: ["Full participation in unrestricted training without giving way", "Hop and agility tests within about 90% of the other leg (clinical convention)", "CAIT and FAAM sport score at or near the target for the sport", "Athlete confident in the ankle"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "No published validated criteria are available for CAI; the criteria here are clinical conventions.",
+      "No swelling or pain after full training, and no giving way in a recent period of full activity",
+      "Weight-bearing dorsiflexion and single-leg balance equal to the other side",
+      "Strength and calf-raise capacity within about 90% of the other leg (clinical convention)",
+      "Y-balance or Star Excursion Balance Test reach distances symmetrical or near the other leg",
+      "Hop tests and agility tests within about 90% of the other leg, without compensation",
+      "Brace or tape plan agreed, and confidence in the ankle (CAIT, FAAM, patient-rated readiness)"
+    ],
+    tests: ["Weight-bearing dorsiflexion lunge", "Y-balance or Star Excursion Balance Test", "Single-leg drop landing, single and triple hop tests, figure-of-8 hop", "Isometric inversion, eversion, plantarflexion strength", "CAIT and FAAM"]
+  },
+  prognosis: "CAI can be persistent. In a 7-year follow-up of 648 people with a past inversion injury who had all received functional treatment, 32% reported chronic complaints of pain, swelling or recurrent sprains, and 19% were bothered by repeated inversion injuries. Severity at the time of injury did not predict later disability [r5]. Exercise-based treatments improve function and balance in the short term, but longer follow-up data are limited [r2,r16]. CAI is also associated with lower physical activity, poorer quality of life and higher rates of post-traumatic ankle osteoarthritis [r7].",
+  prevention: [
+    "Complete supervised rehabilitation, including balance and neuromuscular training, after every lateral ankle sprain, and address deficits instead of waiting for symptoms to settle [r8].",
+    "Wear a brace in higher-risk sports after a sprain; an overview of reviews found strong evidence for bracing in preventing recurrence [r11,r19].",
+    "Proprioceptive or neuromuscular training reduced the sprain rate by about one third in a meta-analysis (relative risk 0.65), including in people with a previous sprain [r20].",
+    "Keep a short balance and calf-strength routine in the warm-up after return to sport."
+  ],
+  clinicalPearls: [
+    "Test both mechanical laxity and the control system. Anterior and inversion laxity, balance, and strength all contributed to separating CAI from controls [r9].",
+    "Do not rely on a strong peroneal test alone: in one meta-analysis evertor strength, inversion joint position sense and peroneal reaction time did not differ in recurrent sprain, but postural sway, time to stabilisation after jumping and inversion strength did [r15].",
+    "Treat CAI as a central as well as a local problem, and train both limbs and the proximal chain, because deficits extend beyond the injured ankle [r13].",
+    "Catching, locking, persistent swelling or pain at the joint line suggests an intra-articular lesion, which was common in a surgical arthroscopy series (cartilage damage in 66% of ankles with lateral ligament injuries) [r10].",
+    "Initial sprain severity does not reliably predict who develops CAI [r5,r6], so screen everyone after a first sprain.",
+    "Be honest about the evidence: the exercise trials are small and short, so track outcomes with the same measures at each review [r2]."
+  ],
+  related: ["lateral-ankle-sprain", "anterior-ankle-impingement", "osteochondral-lesion-talus", "peroneal-tendon-subluxation", "peroneal-tendinopathy", "high-ankle-sprain"],
+
+  references: [
+    { id: "r1", citation: "Hertel J, Corbett RO. An updated model of chronic ankle instability. J Athl Train. 2019;54(6):572-88.", pmid: "31162943", doi: "10.4085/1062-6050-344-18", type: "narrative-review", year: 2019 },
+    { id: "r2", citation: "de Vries JS, Krips R, Sierevelt IN, et al. Interventions for treating chronic ankle instability. Cochrane Database Syst Rev. 2011;(8):CD004124.", pmid: "21833947", doi: "10.1002/14651858.CD004124.pub3", type: "systematic-review", year: 2011 },
+    { id: "r3", citation: "Hertel J. Functional anatomy, pathomechanics, and pathophysiology of lateral ankle instability. J Athl Train. 2002;37(4):364-75.", pmid: "12937557", type: "narrative-review", year: 2002 },
+    { id: "r4", citation: "Vuurberg G, Hoorntje A, Wink LM, et al. Diagnosis, treatment and prevention of ankle sprains: update of an evidence-based clinical guideline. Br J Sports Med. 2018;52(15):956.", pmid: "29514819", doi: "10.1136/bjsports-2017-098106", type: "clinical-practice-guideline", year: 2018 },
+    { id: "r5", citation: "Konradsen L, Bech L, Ehrenbjerg M, et al. Seven years follow-up after ankle inversion trauma. Scand J Med Sci Sports. 2002;12(3):129-35.", pmid: "12135444", doi: "10.1034/j.1600-0838.2002.02104.x", type: "cohort", year: 2002 },
+    { id: "r6", citation: "Pacheco J, Guerra-Pinto F, Araújo L, et al. Chronic ankle instability has no correlation with the number of ruptured ligaments in severe anterolateral sprain: a systematic review and meta-analysis. Knee Surg Sports Traumatol Arthrosc. 2021;29(11):3512-24.", pmid: "33993320", doi: "10.1007/s00167-021-06610-y", type: "meta-analysis", year: 2021 },
+    { id: "r7", citation: "Gribble PA, Bleakley CM, Caulfield BM, et al. Evidence review for the 2016 International Ankle Consortium consensus statement on the prevalence, impact and long-term consequences of lateral ankle sprains. Br J Sports Med. 2016;50(24):1496-505.", pmid: "27259753", doi: "10.1136/bjsports-2016-096189", type: "narrative-review", year: 2016 },
+    { id: "r8", citation: "Doherty C, Bleakley C, Hertel J, et al. Recovery from a first-time lateral ankle sprain and the predictors of chronic ankle instability: a prospective cohort analysis. Am J Sports Med. 2016;44(4):995-1003.", pmid: "26912285", doi: "10.1177/0363546516628870", type: "cohort", year: 2016 },
+    { id: "r9", citation: "Hubbard TJ, Kramer LC, Denegar CR, et al. Contributing factors to chronic ankle instability. Foot Ankle Int. 2007;28(3):343-54.", pmid: "17371658", doi: "10.3113/FAI.2007.0343", type: "case-control", year: 2007 },
+    { id: "r10", citation: "Hintermann B, Boss A, Schäfer D. Arthroscopic findings in patients with chronic ankle instability. Am J Sports Med. 2002;30(3):402-9.", pmid: "12016082", doi: "10.1177/03635465020300031601", type: "cross-sectional", year: 2002 },
+    { id: "r11", citation: "Doherty C, Bleakley C, Delahunt E, et al. Treatment and prevention of acute and recurrent ankle sprain: an overview of systematic reviews with meta-analysis. Br J Sports Med. 2017;51(2):113-25.", pmid: "28053200", doi: "10.1136/bjsports-2016-096178", type: "systematic-review", year: 2017 },
+    { id: "r12", citation: "Hertel J. Sensorimotor deficits with ankle sprains and chronic ankle instability. Clin Sports Med. 2008;27(3):353-70.", pmid: "18503872", doi: "10.1016/j.csm.2008.03.006", type: "narrative-review", year: 2008 },
+    { id: "r13", citation: "Hass CJ, Bishop MD, Doidge D, et al. Chronic ankle instability alters central organization of movement. Am J Sports Med. 2010;38(4):829-34.", pmid: "20139327", doi: "10.1177/0363546509351562", type: "case-control", year: 2010 },
+    { id: "r14", citation: "McVey ED, Palmieri RM, Docherty CL, et al. Arthrogenic muscle inhibition in the leg muscles of subjects exhibiting functional ankle instability. Foot Ankle Int. 2005;26(12):1055-61.", pmid: "16390639", doi: "10.1177/107110070502601210", type: "case-control", year: 2005 },
+    { id: "r15", citation: "Hiller CE, Nightingale EJ, Lin CC, et al. Characteristics of people with recurrent ankle sprains: a systematic review with meta-analysis. Br J Sports Med. 2011;45(8):660-72.", pmid: "21257670", doi: "10.1136/bjsm.2010.077404", type: "meta-analysis", year: 2011 },
+    { id: "r16", citation: "Cruz-Diaz D, Lomas-Vega R, Osuna-Pérez MC, et al. Effects of 6 weeks of balance training on chronic ankle instability in athletes: a randomized controlled trial. Int J Sports Med. 2015;36(9):754-60.", pmid: "25969966", doi: "10.1055/s-0034-1398645", type: "rct", year: 2015 },
+    { id: "r17", citation: "Hall EA, Docherty CL, Simon J, et al. Strength-training protocols to improve deficits in participants with chronic ankle instability: a randomized controlled trial. J Athl Train. 2015;50(1):36-44.", pmid: "25365134", doi: "10.4085/1062-6050-49.3.71", type: "rct", year: 2015 },
+    { id: "r18", citation: "Gribble PA, Delahunt E, Bleakley C, et al. Selection criteria for patients with chronic ankle instability in controlled research: a position statement of the International Ankle Consortium. Br J Sports Med. 2014;48(13):1014-8.", pmid: "24255768", doi: "10.1136/bjsports-2013-093175", type: "consensus-statement", year: 2014 },
+    { id: "r19", citation: "Janssen KW, van Mechelen W, Verhagen EA. Bracing superior to neuromuscular training for the prevention of self-reported recurrent ankle sprains: a three-arm randomised controlled trial. Br J Sports Med. 2014;48(16):1235-9.", pmid: "24398222", doi: "10.1136/bjsports-2013-092947", type: "rct", year: 2014 },
+    { id: "r20", citation: "Schiftan GS, Ross LA, Hahne AJ. The effectiveness of proprioceptive training in preventing ankle sprains in sporting populations: a systematic review and meta-analysis. J Sci Med Sport. 2015;18(3):238-44.", pmid: "24831756", doi: "10.1016/j.jsams.2014.04.005", type: "meta-analysis", year: 2015 }
+  ],
+
+  animation: {
+    title: "How chronic ankle instability develops",
+    phases: [
+      {
+        type: "moi", label: "Giving way", duration: 6, view: "anterior", environment: "court",
+        actors: [{ id: "athlete", kit: "athlete" }],
+        keyframes: [
+          { t: 0, pose: "run-contact", root: { x: -90 } },
+          { t: 1.3, pose: "cut-plant", root: { x: -20 } },
+          { t: 2.1, pose: "cut-plant", joints: { ankleR: 14 }, root: { x: -12 } },
+          { t: 2.9, pose: "ankle-inversion", root: { x: -8 }, ease: "in" },
+          { t: 3.6, pose: "ankle-inversion", joints: { ankleR: 44, trunk: -10 }, root: { x: -6 } },
+          { t: 5.8, pose: "squat", joints: { ankleR: 12 }, root: { x: 0 } }
+        ],
+        props: [{ id: "ball", type: "ball-basketball", attach: "handL" }],
+        forces: [
+          { t: [2.6, 3.8], at: "ankleR", dir: "medial", label: "Ankle gives way into inversion" },
+          { t: [2.0, 3.2], at: "footR", dir: "up", label: "Ordinary cutting load" }
+        ],
+        highlights: [{ t: [2.4, 6], at: "ankleR" }],
+        impacts: [{ t: 3.1, at: "ankleR" }],
+        slowmo: [{ t: [2.2, 3.6], rate: 0.3 }],
+        captions: [
+          { t: 0, text: "A netball player who sprained her right ankle a year ago runs on to a cut." },
+          { t: 1.3, text: "The foot plants with an ordinary load, as it has many times since the injury." },
+          { t: 2.4, text: "The ankle is slightly inverted and the protective response is late or weak." },
+          { t: 3.1, text: "The ankle gives way into inversion with little force." },
+          { t: 4.5, text: "She recovers without a fall, but the ankle is now sore and swollen." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "ankleR",
+        captions: [{ t: 0, text: "Zooming into the right ankle, viewed from the lateral side." }]
+      },
+      {
+        type: "closeup", label: "Inside the ankle", duration: 10, scene: "ankle-lateral",
+        actions: [
+          { t: 0, do: "highlight", target: "atfl" },
+          { t: 0.2, do: "degenerate", target: "atfl" },
+          { t: 0.4, do: "label", target: "atfl", text: "ATFL healed lax and scarred" },
+          { t: 1.2, do: "arrow", at: "anteriorTalarNeck", dir: "anterior", label: "Excess anterior talar shift" },
+          { t: 1.4, do: "arrow", at: "sinusTarsiOpening", dir: "medial", label: "Excess inversion", size: "l" },
+          { t: 1.6, do: "stretch", target: "atfl", amount: 0.5, dur: 1.2 },
+          { t: 2.4, do: "highlight", target: "cfl" },
+          { t: 2.6, do: "thicken", target: "cfl", amount: 0.4 },
+          { t: 2.8, do: "label", target: "cfl", text: "CFL: lax, scarred" },
+          { t: 3.6, do: "pulse", target: "peronealBrevisTendon" },
+          { t: 3.8, do: "label", target: "peronealBrevisTendon", text: "Weak, late peroneal response" },
+          { t: 4.8, do: "impact", at: "atflMid" },
+          { t: 5.2, do: "lesion", target: "tibiotalarCartilage", at: 0.3, depth: "partial" },
+          { t: 5.5, do: "label", target: "tibiotalarCartilage", text: "Cartilage damage with repeated giving way" },
+          { t: 6.4, do: "swell", target: "anteriorJointRecess", amount: 0.5 },
+          { t: 6.6, do: "effuse", target: "jointSpace", amount: 0.5 },
+          { t: 7.2, do: "pain", at: "atflMid" },
+          { t: 7.8, do: "camera", at: "atflMid", zoom: 1.6, dur: 1 },
+          { t: 9.2, do: "camera", zoom: 1, dur: 0.7 }
+        ],
+        captions: [
+          { t: 0, text: "After the first sprain the ATFL healed with scar tissue, but it stayed lengthened and lax." },
+          { t: 1.3, text: "The talus now shifts forward and tilts further into inversion than it should." },
+          { t: 2.5, text: "The CFL is often elongated as well, which adds to the looseness." },
+          { t: 3.6, text: "Reduced sensory input and muscle inhibition make the peroneal response late and weak." },
+          { t: 4.8, text: "Each giving-way event loads the lateral structures again with little force." },
+          { t: 5.4, text: "Repeated events can damage the talar dome cartilage." },
+          { t: 6.4, text: "The joint lining becomes irritated, with swelling and an effusion." },
+          { t: 7.8, text: "Mechanical laxity and sensorimotor deficits together make CAI. Treatment must address both." }
+        ]
+      },
+      {
+        type: "micro", label: "Scar & laxity", duration: 10, tissue: "ligament",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.0, stage: "loaded" }, { t: 2.0, stage: "overload" }, { t: 3.0, stage: "failure" },
+          { t: 4.0, stage: "haemorrhage" }, { t: 5.3, stage: "inflammation" }, { t: 6.8, stage: "proliferation" }, { t: 8.4, stage: "remodelling" }
+        ],
+        timeLabels: [{ t: 5.3, text: "0–5 days" }, { t: 6.8, text: "5 days – 6 weeks" }, { t: 8.4, text: "6 weeks – 12+ months" }],
+        captions: [
+          { t: 0, text: "Healthy lateral ligament: crimped type I collagen aligned along the line of load." },
+          { t: 1.0, text: "In the first sprain, the fibres are loaded far beyond normal." },
+          { t: 2.0, text: "Fibrils slide and begin to fail." },
+          { t: 3.0, text: "Fibre failure leaves a partial or complete tear." },
+          { t: 4.0, text: "Bleeding fills the gap, which forms the scaffold for repair." },
+          { t: 5.3, text: "Inflammatory cells clear debris over the first days." },
+          { t: 6.8, text: "Fibroblasts lay down disorganised collagen, and the scar forms in a lengthened position." },
+          { t: 8.4, text: "Remodelling gives a stronger scar, but the ligament can stay more compliant than before, so laxity can persist." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "LL9" }
+};
