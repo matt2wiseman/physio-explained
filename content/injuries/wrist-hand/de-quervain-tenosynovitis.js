@@ -48,7 +48,7 @@ export default {
       "Repeated loading irritates the tendons and their synovial sheath, and friction rises where the tendons are angulated (clinical).",
       "The retinaculum that forms the roof thickens, with degenerative change rather than simple inflammation, which narrows the canal [r3].",
       "Tendon excursion is limited. Pain appears over the radial styloid with thumb use, and swelling or crepitus may develop (clinical).",
-      "If a separate EPB subcompartment or septum is present, one tendon may be more restricted, and injections may miss it [r2,r4,r7].",
+      "If a separate EPB subcompartment or septum is present, one tendon may be more restricted, and a single-point injection may miss it (clinical reasoning; ultrasound can show the septum [r4]). A separate EPB sheath was found in every post-fracture patient needing release [r7].",
       "Rest and offloading, injection or release reduce the mismatch between the tendons and the canal."
     ],
     variants: [
@@ -60,7 +60,7 @@ export default {
   },
 
   anatomy: {
-    text: "The first dorsal extensor compartment is a fibro-osseous tunnel on the radial side of the wrist, over the radial styloid. It contains the abductor pollicis longus and extensor pollicis brevis tendons, and its roof is part of the extensor retinaculum. The tendons change direction here as they pass from the forearm to the thumb, and the canal is narrow, so the tendons are loaded against the retinaculum and the styloid when the thumb abducts or extends and the wrist moves to the ulnar side [r1]. The APL often has several slips, and the EPB may lie in a separate subcompartment divided by a septum. Such variation is associated with the disease and with failure of injection [r2,r7]. Branches of the superficial radial nerve cross the compartment (clinical anatomy).",
+    text: "The first dorsal extensor compartment is a fibro-osseous tunnel on the radial side of the wrist, over the radial styloid. It contains the abductor pollicis longus and extensor pollicis brevis tendons, and its roof is part of the extensor retinaculum. The tendons change direction here as they pass from the forearm to the thumb, and the canal is narrow, so the tendons are loaded against the retinaculum and the styloid when the thumb abducts or extends and the wrist moves to the ulnar side [r1]. The APL often has several slips, and the EPB may lie in a separate subcompartment divided by a septum. Such variation is associated with the disease, and a separate EPB sheath was found in every post-fracture patient who needed surgical release [r2,r7]. Branches of the superficial radial nerve cross the compartment (clinical anatomy).",
     structures: [
       { name: "First dorsal compartment (retinaculum and sheath)", role: "Holds the APL and EPB tendons against the radial styloid and directs their pull; its roof thickens in de Quervain's disease [r3]" },
       { name: "Abductor pollicis longus (APL) tendon", role: "Abducts the thumb at the carpometacarpal joint and helps radially deviate the wrist; usually several slips (clinical)" },
@@ -72,12 +72,12 @@ export default {
   },
 
   pathophysiology: {
-    tissueDamage: "De Quervain's disease is a problem of the compartment roof and sheath more than of the tendons. Mechanical friction in a narrow canal, with or without anatomical variation, leads to thickening of the first dorsal retinaculum. Histological studies report that this thickening is characterised by degeneration rather than inflammation [r3]. Whether the primary driver is inflammatory or degenerative remains debated, and the literature supports both pathways [r2]. In severe disease, TNF-alpha was up-regulated, and IL-20 was positively correlated with TNF-alpha and with disease severity, which suggests that inflammatory mediators contribute in advanced cases [r3].\n\nThe tendons themselves are secondarily affected: their sheath becomes irritated, and their excursion is restricted. Because the tendons are not primarily torn or degenerate, they are not usually the target of treatment. Instead, treatment offloads the compartment, reduces sheath irritation, or enlarges the canal by releasing the roof [r1,r5].",
+    tissueDamage: "De Quervain's disease is a problem of the compartment roof and sheath more than of the tendons. Mechanical friction in a narrow canal, with or without anatomical variation, leads to thickening of the first dorsal retinaculum. Histological studies report that this thickening is characterised by degeneration rather than inflammation [r3]. Whether the primary driver is inflammatory or degenerative remains debated, and the literature supports both pathways [r2]. In severe disease, TNF-alpha was up-regulated, and IL-20 was positively correlated with TNF-alpha and with disease severity, which suggests that inflammatory mediators contribute in advanced cases [r3].\n\nIn this model the tendons are secondarily affected: their sheath becomes irritated and their excursion is restricted (clinical model). Treatment therefore offloads the compartment, reduces sheath irritation, or enlarges the canal by releasing the roof [r1,r5].",
     structures: [
       { name: "First dorsal compartment retinaculum (roof)", effect: "Thickening with degenerative change; narrows the canal [r3]" },
       { name: "APL and EPB tendon sheaths (synovium)", effect: "Irritation and thickening; swelling over the radial styloid (clinical)" },
       { name: "APL and EPB tendons", effect: "Restricted gliding with pain on resisted use; usually intact and not the primary lesion [r1]" },
-      { name: "EPB subcompartment or septum", effect: "When present, one tendon may be more constricted and can be missed by a single-point injection [r4,r7]" },
+      { name: "EPB subcompartment or septum", effect: "When present, one tendon may be more constricted and a single-point injection may miss it (clinical reasoning); ultrasound can show the septum [r4,r7]" },
       { name: "Superficial radial nerve branches", effect: "May be irritated by swelling, causing radial-sided tingling (clinical)" }
     ],
     muscles: [
@@ -194,7 +194,7 @@ export default {
     "Radial wrist or snuffbox pain after a fall or direct trauma: do not assume de Quervain's. Exclude scaphoid and distal radius fracture with imaging.",
     "New numbness or burning over the dorsum of the thumb and hand after injection or surgery: suspect superficial radial nerve injury. Arrange urgent surgical review.",
     "Multiple swollen joints, morning stiffness longer than 30 minutes or systemic symptoms: suspect inflammatory arthritis. Arrange medical review.",
-    "Persisting or recurrent symptoms after two injections, or a post-fracture presentation not responding to injection: refer to hand surgery, as a separate EPB subcompartment may be present [r4,r7].",
+    "Persisting or recurrent symptoms after repeated injections (a common convention is two), or a post-fracture presentation not responding to injection: refer to hand surgery, as a separate EPB subcompartment may be present [r4,r7].",
     "Pregnant or breastfeeding women: check medication and injection decisions with the prescriber, because trial evidence in this group is a single small study [r8]."
   ],
 
@@ -393,7 +393,7 @@ export default {
           { t: 0, text: "Healthy connective tissue: aligned collagen and a smooth gliding surface." },
           { t: 1.6, text: "Repeated friction irritates the cells and swells the matrix (a generic tendon-matrix model of the sheath response)." },
           { t: 3.4, text: "With continued load the matrix becomes disorganised and thickened." },
-          { t: 5.2, text: "In chronic disease the thickened retinaculum shows degeneration, not mainly inflammation." },
+          { t: 5.2, text: "Chronic change: disorganised, degenerative matrix, as reported in the thickened retinaculum." },
           { t: 7.0, text: "Graded loading and offloading help the tissue adapt, but the thickened canal may need injection or release." }
         ]
       }
