@@ -19,207 +19,207 @@ export default {
     { label: "Peak age", value: "Middle-aged and older adults: mean age 53 in a loading pilot and 59 in a biomechanics study" },
     { label: "Incidence", value: "About 6% of people report Achilles pain in their lifetime, and roughly one-third of that is insertional" }
   ],
-  overview: "Insertional Achilles tendinopathy (IAT) is pain, thickening and degeneration of the Achilles tendon within about 2 cm of its attachment to the calcaneus. It often occurs with a retrocalcaneal bursitis, an enthesophyte (spur) or a posterosuperior calcaneal prominence (Haglund deformity) [@chimenti17]. About 6% of people report Achilles pain during their lifetime, and roughly one-third of that is insertional [@chimenti17]. Patients report pain with activity, stiffness after rest and difficulty with shoes that press on the back of the heel [@chimenti17].\n\nIAT behaves differently from mid-portion tendinopathy. The insertion is loaded in compression as well as tension, and end-range ankle dorsiflexion increases both [@chimenti17,@cp12]. Traditional eccentric heel drops below a step, which suit mid-portion disease, satisfied only 28% to 33% of people with IAT. A modified program that avoids dorsiflexion past neutral and extracorporeal shockwave therapy (ESWT) have the best, though limited, support [@chimenti17,@jonsson08,@rompe08].",
+  overview: "Insertional Achilles tendinopathy (IAT) is pain, thickening and degeneration of the Achilles tendon within about 2 cm of its attachment to the calcaneus. It often occurs with a retrocalcaneal bursitis, an enthesophyte (spur) or a posterosuperior calcaneal prominence (Haglund deformity) [r1]. About 6% of people report Achilles pain during their lifetime, and roughly one-third of that is insertional [r1]. Patients report pain with activity, stiffness after rest and difficulty with shoes that press on the back of the heel [r1].\n\nIAT behaves differently from mid-portion tendinopathy. The insertion is loaded in compression as well as tension, and end-range ankle dorsiflexion increases both [r1,r2]. Traditional eccentric heel drops below a step, which suit mid-portion disease, satisfied only 28% to 33% of people with IAT. A modified program that avoids dorsiflexion past neutral and extracorporeal shockwave therapy (ESWT) have the best, though limited, support [r1,r3,r4].",
 
   epidemiology: {
-    text: "About 6% of the general population reports Achilles tendon pain during their lifetime, and roughly one-third of those people have IAT [@chimenti17]. The loading and shockwave trials enrolled adults in mid-to-late life with long symptom duration: mean age 53 and mean pain duration of 26 months in the modified-loading pilot [@jonsson08], and mean age 59 in a biomechanics study [@chimenti16]. Good population incidence data specific to IAT were not found in the sources reviewed.",
+    text: "About 6% of the general population reports Achilles tendon pain during their lifetime, and roughly one-third of those people have IAT [r1]. The loading and shockwave trials enrolled adults in mid-to-late life with long symptom duration: mean age 53 and mean pain duration of 26 months in the modified-loading pilot [r3], and mean age 59 in a biomechanics study [r5]. Good population incidence data specific to IAT were not found in the sources reviewed.",
     riskFactors: {
       intrinsic: [
-        "Larger heel spurs: spurs were longer on the symptomatic side (12.9 mm) than the asymptomatic side (8.9 mm) or in controls (3.5 mm), although spurs were common on the symptomatic (65%) and asymptomatic (55%) sides [@chimenti17]",
-        "Altered ankle mechanics: greater end-range dorsiflexion, less plantarflexion and lower peak plantarflexor power on stair ascent (cross-sectional; cause or effect is not established) [@chimenti16]",
-        "Haglund deformity may compress the tendon and retrocalcaneal bursa in theory, but calcaneal shape angles were not associated with IAT in recent studies [@chimenti17]",
-        "Gastrocnemius contracture should be tested for, although non-weight-bearing dorsiflexion range did not differ from controls in one study [@chimenti17,@chimenti16]",
-        "Inflammatory disease such as ankylosing spondylitis, in which the entheses are the primary lesion [@wang15]"
+        "Larger heel spurs: spurs were longer on the symptomatic side (12.9 mm) than the asymptomatic side (8.9 mm) or in controls (3.5 mm), although spurs were common on the symptomatic (65%) and asymptomatic (55%) sides [r1]",
+        "Altered ankle mechanics: greater end-range dorsiflexion, less plantarflexion and lower peak plantarflexor power on stair ascent (cross-sectional; cause or effect is not established) [r5]",
+        "Haglund deformity may compress the tendon and retrocalcaneal bursa in theory, but calcaneal shape angles were not associated with IAT in recent studies [r1]",
+        "Gastrocnemius contracture should be tested for, although non-weight-bearing dorsiflexion range did not differ from controls in one study [r1,r5]",
+        "Inflammatory disease such as ankylosing spondylitis, in which the entheses are the primary lesion [r6]"
       ],
       extrinsic: [
-        "Repetitive loading with end-range dorsiflexion, such as hills, stairs and deep heel-drop exercises (mechanistic plausibility) [@chimenti17,@cp12]",
-        "Footwear with a rigid heel counter that presses on the posterior heel (patients report shoe sensitivity) [@chimenti17]",
-        "Fluoroquinolone antibiotics, linked with Achilles tendinopathy and rupture [@tsai11]",
-        "Corticosteroid injection around the heel, which has been linked with rupture [@turmo14]"
+        "Repetitive loading with end-range dorsiflexion, such as hills, stairs and deep heel-drop exercises (mechanistic plausibility) [r1,r2]",
+        "Footwear with a rigid heel counter that presses on the posterior heel (patients report shoe sensitivity) [r1]",
+        "Fluoroquinolone antibiotics, linked with Achilles tendinopathy and rupture [r7]",
+        "Corticosteroid injection around the heel, which has been linked with rupture [r8]"
       ]
     }
   },
 
   mechanism: {
-    summary: "IAT results from combined tensile and compressive overload at the insertion. As the calf pulls, the superficial fibres take high axial tensile strain. As the ankle dorsiflexes, the posterosuperior calcaneus presses into the deep fibres and the retrocalcaneal bursa, causing high transverse compressive strain [@chimenti17]. Running loads the Achilles 4 to 6 times body weight [@chimenti17]. Compression is thought to drive fibrocartilaginous change and proteoglycan build-up in the tendon [@cp12].",
+    summary: "IAT results from combined tensile and compressive overload at the insertion. As the calf pulls, the superficial fibres take high axial tensile strain. As the ankle dorsiflexes, the posterosuperior calcaneus presses into the deep fibres and the retrocalcaneal bursa, causing high transverse compressive strain [r1]. Running loads the Achilles 4 to 6 times body weight [r1]. Compression is thought to drive fibrocartilaginous change and proteoglycan build-up in the tendon [r2].",
     sequence: [
       "Repeated running, hill work, stair climbing or calf loading brings the ankle repeatedly toward end-range dorsiflexion.",
-      "The calf pulls on the tendon, so the superficial fibres see high tensile strain [@chimenti17].",
-      "In dorsiflexion the tendon wraps over the posterosuperior calcaneal prominence, which presses on the deep fibres and squeezes the retrocalcaneal bursa [@chimenti17,@cp12].",
-      "When the combined load exceeds capacity, the insertion becomes reactive, then disorganised with collagen loss, fatty infiltration and capillary proliferation [@chimenti17].",
-      "The retrocalcaneal bursa becomes inflamed and tender, and the enthesis may develop a spur or calcification [@chimenti17].",
+      "The calf pulls on the tendon, so the superficial fibres see high tensile strain [r1].",
+      "In dorsiflexion the tendon wraps over the posterosuperior calcaneal prominence, which presses on the deep fibres and squeezes the retrocalcaneal bursa [r1,r2].",
+      "When the combined load exceeds capacity, the insertion becomes reactive, then disorganised with collagen loss, fatty infiltration and capillary proliferation [r1].",
+      "The retrocalcaneal bursa becomes inflamed and tender, and the enthesis may develop a spur or calcification [r1].",
       "The tendon thickens and the back of the heel becomes swollen, stiff after rest and painful in shoes.",
-      "Pain changes mechanics: patients used more end-range dorsiflexion and less plantarflexor power on stairs, which can sustain the problem [@chimenti16]."
+      "Pain changes mechanics: patients used more end-range dorsiflexion and less plantarflexor power on stairs, which can sustain the problem [r5]."
     ],
     variants: [
-      { name: "Haglund deformity with retrocalcaneal bursitis", description: "A prominent posterosuperior calcaneus that may compress the tendon and bursa; its causal role is not clearly supported by shape measurements [@chimenti17]." },
-      { name: "Calcific insertional tendinopathy", description: "Intratendinous calcification or an enthesophyte at the insertion. Spurs are common even without symptoms, but longer spurs were seen on the symptomatic side [@chimenti17]. ESWT may be less effective with enthesophytes [@chimenti17,@wiegerinck13]." },
-      { name: "Isolated retrocalcaneal bursitis", description: "Tenderness anterior to the tendon, with swelling on both sides above the heel; may coexist with IAT [@chimenti17]." },
-      { name: "Inflammatory enthesitis", description: "In ankylosing spondylitis and related disease the enthesis is the primary lesion, and Achilles enthesitis or retrocalcaneal bursitis can be found, sometimes only on ultrasound [@wang15]." },
+      { name: "Haglund deformity with retrocalcaneal bursitis", description: "A prominent posterosuperior calcaneus that may compress the tendon and bursa; its causal role is not clearly supported by shape measurements [r1]." },
+      { name: "Calcific insertional tendinopathy", description: "Intratendinous calcification or an enthesophyte at the insertion. Spurs are common even without symptoms, but longer spurs were seen on the symptomatic side [r1]. ESWT may be less effective with enthesophytes [r1,r9]." },
+      { name: "Isolated retrocalcaneal bursitis", description: "Tenderness anterior to the tendon, with swelling on both sides above the heel; may coexist with IAT [r1]." },
+      { name: "Inflammatory enthesitis", description: "In ankylosing spondylitis and related disease the enthesis is the primary lesion, and Achilles enthesitis or retrocalcaneal bursitis can be found, sometimes only on ultrasound [r6]." },
       { name: "Combined insertional and mid-portion disease", description: "Both regions can be involved; assess and load the whole tendon (clinical observation; not quantified in the sources reviewed)." }
     ]
   },
 
   anatomy: {
-    text: "The Achilles inserts on the posterior calcaneal tuberosity about 2 cm distal to the posterosuperior calcaneal prominence. At this point the tendon is about 5–6 mm thick (anteroposterior) and has medial and lateral projections that form a crescent to spread stress. As the tendon descends it twists, so gastrocnemius fibres insert posterolaterally and soleus fibres anteromedially. A retrocalcaneal bursa lies between the tendon and the calcaneus, and a subcutaneous bursa lies behind the tendon. The insertion is supplied mainly by an arterial plexus on the calcaneus. The sural nerve lies close to the tendon and is relevant to the differential diagnosis and to surgery [@chimenti17].",
+    text: "The Achilles inserts on the posterior calcaneal tuberosity about 2 cm distal to the posterosuperior calcaneal prominence. At this point the tendon is about 5–6 mm thick (anteroposterior) and has medial and lateral projections that form a crescent to spread stress. As the tendon descends it twists, so gastrocnemius fibres insert posterolaterally and soleus fibres anteromedially. A retrocalcaneal bursa lies between the tendon and the calcaneus, and a subcutaneous bursa lies behind the tendon. The insertion is supplied mainly by an arterial plexus on the calcaneus. The sural nerve lies close to the tendon and is relevant to the differential diagnosis and to surgery [r1].",
     structures: [
-      { name: "Achilles tendon insertion (enthesis)", role: "Anchors the triceps surae to the calcaneus; superficial fibres take tension and deep fibres take compression in dorsiflexion [@chimenti17]" },
-      { name: "Retrocalcaneal bursa", role: "Reduces friction between the anterior tendon and the posterosuperior calcaneus [@chimenti17]" },
-      { name: "Posterosuperior calcaneal prominence", role: "Bony prominence above the insertion; when enlarged (Haglund deformity), it may compress the tendon and bursa [@chimenti17]" },
+      { name: "Achilles tendon insertion (enthesis)", role: "Anchors the triceps surae to the calcaneus; superficial fibres take tension and deep fibres take compression in dorsiflexion [r1]" },
+      { name: "Retrocalcaneal bursa", role: "Reduces friction between the anterior tendon and the posterosuperior calcaneus [r1]" },
+      { name: "Posterosuperior calcaneal prominence", role: "Bony prominence above the insertion; when enlarged (Haglund deformity), it may compress the tendon and bursa [r1]" },
       { name: "Kager's fat pad", role: "Fat pad anterior to the tendon that fills the space between the tendon, bursa and flexor hallucis longus" },
-      { name: "Subcutaneous (superficial) bursa and skin", role: "Pad over the posterior heel that can be irritated by shoe pressure [@chimenti17]" },
-      { name: "Gastrocnemius–soleus complex", role: "Generates the tensile load on the insertion; gastrocnemius contracture is assessed with the Silfverskiöld test [@chimenti17]" }
+      { name: "Subcutaneous (superficial) bursa and skin", role: "Pad over the posterior heel that can be irritated by shoe pressure [r1]" },
+      { name: "Gastrocnemius–soleus complex", role: "Generates the tensile load on the insertion; gastrocnemius contracture is assessed with the Silfverskiöld test [r1]" }
     ]
   },
 
   pathophysiology: {
-    tissueDamage: "Degeneration at the Achilles insertion is the hallmark of IAT. The tendon loses parallel collagen structure and fibre integrity, shows fatty infiltration and capillary proliferation, and becomes thicker and abnormal on imaging; a thickness above 6 mm has been used as a diagnostic criterion [@chimenti17]. Compressive load adds a distinct mechanism: it is thought to promote areas of fibrocartilaginous metaplasia and proteoglycan accumulation in the tendon [@cp12]. The continuum model (reactive, disrepair, degenerative) describes the usual progression in load-induced tendinopathy [@cp09].\n\nStructure and symptoms correlate poorly. Imaging signs of tendinopathy were present in 0% to 35% of asymptomatic tendons, and absent in 0% to 19% of symptomatic tendons. Enthesophytes were nearly as common on the asymptomatic side (55%) as the symptomatic side (65%) [@chimenti17].",
+    tissueDamage: "Degeneration at the Achilles insertion is the hallmark of IAT. The tendon loses parallel collagen structure and fibre integrity, shows fatty infiltration and capillary proliferation, and becomes thicker and abnormal on imaging; a thickness above 6 mm has been used as a diagnostic criterion [r1]. Compressive load adds a distinct mechanism: it is thought to promote areas of fibrocartilaginous metaplasia and proteoglycan accumulation in the tendon [r2]. The continuum model (reactive, disrepair, degenerative) describes the usual progression in load-induced tendinopathy [r10].\n\nStructure and symptoms correlate poorly. Imaging signs of tendinopathy were present in 0% to 35% of asymptomatic tendons, and absent in 0% to 19% of symptomatic tendons. Enthesophytes were nearly as common on the asymptomatic side (55%) as the symptomatic side (65%) [r1].",
     structures: [
-      { name: "Achilles insertion", effect: "Thickening, disorganised collagen, fatty infiltration and capillary proliferation [@chimenti17]" },
-      { name: "Retrocalcaneal bursa", effect: "Inflammation and effusion from compression between the tendon and calcaneus; bursitis may coexist with IAT [@chimenti17]" },
-      { name: "Posterosuperior calcaneus and enthesis", effect: "Enthesophytes and intratendinous calcification are common; longer spurs were found on the symptomatic side [@chimenti17]" },
-      { name: "Paratenon and subcutaneous tissues", effect: "Paratendinitis and local swelling or redness at the back of the heel [@chimenti17]" }
+      { name: "Achilles insertion", effect: "Thickening, disorganised collagen, fatty infiltration and capillary proliferation [r1]" },
+      { name: "Retrocalcaneal bursa", effect: "Inflammation and effusion from compression between the tendon and calcaneus; bursitis may coexist with IAT [r1]" },
+      { name: "Posterosuperior calcaneus and enthesis", effect: "Enthesophytes and intratendinous calcification are common; longer spurs were found on the symptomatic side [r1]" },
+      { name: "Paratenon and subcutaneous tissues", effect: "Paratendinitis and local swelling or redness at the back of the heel [r1]" }
     ],
     muscles: [
-      { name: "Triceps surae", effect: "Isometric plantarflexor strength and non-weight-bearing dorsiflexion did not differ from controls in one study, but peak plantarflexor power on stairs was lower [@chimenti16]." },
-      { name: "Gastrocnemius", effect: "Gastrocnemius contracture or tightness should be screened, but the extent to which it contributes to IAT is not established [@chimenti17]." },
+      { name: "Triceps surae", effect: "Isometric plantarflexor strength and non-weight-bearing dorsiflexion did not differ from controls in one study, but peak plantarflexor power on stairs was lower [r5]." },
+      { name: "Gastrocnemius", effect: "Gastrocnemius contracture or tightness should be screened, but the extent to which it contributes to IAT is not established [r1]." },
       { name: "Hip and knee musculature", effect: "Load-sharing across the limb matters for stair and hill work; trial evidence that treating the proximal chain changes IAT outcomes was not found." }
     ],
     cellular: [
-      { phase: "Reactive and early tendinopathy", timing: "Days to weeks", description: "Tenocyte activation and matrix swelling after a load spike, especially with dorsiflexion exposure; can reverse with load reduction [@cp09]." },
-      { phase: "Disrepair and degeneration", timing: "Months", description: "Collagen disorganisation, fatty infiltration and capillary proliferation; compressive load adds fibrocartilaginous change [@chimenti17,@cp12]." },
-      { phase: "Bursal and bony change", timing: "Months to years", description: "Retrocalcaneal bursitis and enthesophyte formation. Osteophytes appear to be a normal response to cumulative loading with age and activity, and larger spurs may relate to symptoms [@chimenti17]." }
+      { phase: "Reactive and early tendinopathy", timing: "Days to weeks", description: "Tenocyte activation and matrix swelling after a load spike, especially with dorsiflexion exposure; can reverse with load reduction [r10]." },
+      { phase: "Disrepair and degeneration", timing: "Months", description: "Collagen disorganisation, fatty infiltration and capillary proliferation; compressive load adds fibrocartilaginous change [r1,r2]." },
+      { phase: "Bursal and bony change", timing: "Months to years", description: "Retrocalcaneal bursitis and enthesophyte formation. Osteophytes appear to be a normal response to cumulative loading with age and activity, and larger spurs may relate to symptoms [r1]." }
     ],
     systems: [
-      { system: "Nervous system and pain processing", effect: "Painful tendinopathy shows nerve ingrowth, altered mediators and heightened nociceptor sensitivity, and evidence for central sensitisation exists in chronic Achilles tendinopathy, although studies specific to IAT are lacking [@chimenti17]." },
-      { system: "Musculoskeletal chain", effect: "Altered ankle mechanics on stairs (more end-range dorsiflexion, less plantarflexor power) are linked with greater symptom severity [@chimenti16]." },
-      { system: "Inflammatory and systemic", effect: "Ankylosing spondylitis and related disease cause Achilles enthesitis and retrocalcaneal bursitis, sometimes only visible on ultrasound [@wang15]." },
-      { system: "Medication", effect: "Fluoroquinolone antibiotics are associated with Achilles tendinopathy and rupture [@tsai11]." },
-      { system: "Psychosocial and functional", effect: "Pain limits work and sport and makes footwear difficult [@chimenti17]." }
+      { system: "Nervous system and pain processing", effect: "Painful tendinopathy shows nerve ingrowth, altered mediators and heightened nociceptor sensitivity, and evidence for central sensitisation exists in chronic Achilles tendinopathy, although studies specific to IAT are lacking [r1]." },
+      { system: "Musculoskeletal chain", effect: "Altered ankle mechanics on stairs (more end-range dorsiflexion, less plantarflexor power) are linked with greater symptom severity [r5]." },
+      { system: "Inflammatory and systemic", effect: "Ankylosing spondylitis and related disease cause Achilles enthesitis and retrocalcaneal bursitis, sometimes only visible on ultrasound [r6]." },
+      { system: "Medication", effect: "Fluoroquinolone antibiotics are associated with Achilles tendinopathy and rupture [r7]." },
+      { system: "Psychosocial and functional", effect: "Pain limits work and sport and makes footwear difficult [r1]." }
     ]
   },
 
   grading: {
-    system: "MRI grading (Nicholson and colleagues, 2007, as reported by Chimenti and colleagues) with the tendinopathy continuum for load-based staging [@chimenti17,@cp09]",
+    system: "MRI grading (Nicholson and colleagues, 2007, as reported by Chimenti and colleagues) with the tendinopathy continuum for load-based staging [r1,r10]",
     grades: [
-      { grade: "MRI grade I", description: "Anteroposterior tendon diameter 6–8 mm with non-uniform degeneration [@chimenti17].", prognosis: "Least likely to need surgery (13% in the reported series) [@chimenti17]" },
-      { grade: "MRI grade II", description: "Diameter above 8 mm with uniform degeneration of less than 50% of the tendon width [@chimenti17].", prognosis: "91% needed surgery in the reported series; treat as higher risk of failing conservative care [@chimenti17]" },
-      { grade: "MRI grade III", description: "Diameter above 8 mm with uniform degeneration of more than 50% of the tendon width [@chimenti17].", prognosis: "70% needed surgery in the reported series [@chimenti17]" },
-      { grade: "Clinical continuum", description: "Reactive, disrepair and degenerative stages describe load-based pathology and complement pain and function [@cp09].", prognosis: "Early reactive change settles with load adjustment; established degeneration needs long-term loading" }
+      { grade: "MRI grade I", description: "Anteroposterior tendon diameter 6–8 mm with non-uniform degeneration [r1].", prognosis: "Least likely to need surgery (13% in the reported series) [r1]" },
+      { grade: "MRI grade II", description: "Diameter above 8 mm with uniform degeneration of less than 50% of the tendon width [r1].", prognosis: "91% needed surgery in the reported series; treat as higher risk of failing conservative care [r1]" },
+      { grade: "MRI grade III", description: "Diameter above 8 mm with uniform degeneration of more than 50% of the tendon width [r1].", prognosis: "70% needed surgery in the reported series [r1]" },
+      { grade: "Clinical continuum", description: "Reactive, disrepair and degenerative stages describe load-based pathology and complement pain and function [r10].", prognosis: "Early reactive change settles with load adjustment; established degeneration needs long-term loading" }
     ]
   },
 
   timeframes: {
-    summary: "IAT is usually a long-standing problem: participants in the loading and shockwave trials had symptoms for months to years (mean 26 months in one pilot, and at least 6 months in an RCT) [@jonsson08,@rompe08]. The stage durations below are illustrative. Outcomes of conservative care were assessed at about 4 months, and 12-week loading blocks are the usual unit.",
+    summary: "IAT is usually a long-standing problem: participants in the loading and shockwave trials had symptoms for months to years (mean 26 months in one pilot, and at least 6 months in an RCT) [r3,r4]. The stage durations below are illustrative. Outcomes of conservative care were assessed at about 4 months, and 12-week loading blocks are the usual unit.",
     healing: [
-      { phase: "Reactive or early tendinopathy", startDay: 0, endDay: 21, description: "Tenocyte activation and swelling after a load spike or dorsiflexion exposure [@cp09]" },
-      { phase: "Disrepair and bursal irritation", startDay: 14, endDay: 120, description: "Collagen disorganisation with possible retrocalcaneal bursitis [@chimenti17]" },
-      { phase: "Established degeneration with enthesophyte or calcification", startDay: 90, endDay: 730, description: "Chronic degenerative change; slow response to treatment [@chimenti17]" },
-      { phase: "Modified loading block", startDay: 0, endDay: 84, description: "12 weeks of floor-level loading in the pilot protocol [@jonsson08]" }
+      { phase: "Reactive or early tendinopathy", startDay: 0, endDay: 21, description: "Tenocyte activation and swelling after a load spike or dorsiflexion exposure [r10]" },
+      { phase: "Disrepair and bursal irritation", startDay: 14, endDay: 120, description: "Collagen disorganisation with possible retrocalcaneal bursitis [r1]" },
+      { phase: "Established degeneration with enthesophyte or calcification", startDay: 90, endDay: 730, description: "Chronic degenerative change; slow response to treatment [r1]" },
+      { phase: "Modified loading block", startDay: 0, endDay: 84, description: "12 weeks of floor-level loading in the pilot protocol [r3]" }
     ],
     milestones: [
-      { label: "12-week modified loading block complete", day: 84, note: "3 × 15 repetitions, twice a day, 7 days a week for 12 weeks in the pilot protocol [@jonsson08]" },
-      { label: "Pilot follow-up: 67% satisfied", day: 120, note: "At a mean of 4 months, 18 of 27 patients were satisfied and back to loading activity (uncontrolled) [@jonsson08]" },
-      { label: "ESWT vs eccentric loading comparison", day: 120, note: "VISA-A rose from 53 to 80 with ESWT and from 53 to 63 with eccentric loading at 4 months in an RCT of 50 patients [@rompe08]" },
-      { label: "Surgical review if conservative care has failed", day: 180, note: "After months of well-delivered conservative care (a clinical range; the sources reviewed do not set a fixed time) [@chimenti17]" },
-      { label: "ESWT effect stable at one year", day: 365, note: "The favourable results after shockwave therapy were stable at 1 year [@rompe08]" }
+      { label: "12-week modified loading block complete", day: 84, note: "3 × 15 repetitions, twice a day, 7 days a week for 12 weeks in the pilot protocol [r3]" },
+      { label: "Pilot follow-up: 67% satisfied", day: 120, note: "At a mean of 4 months, 18 of 27 patients were satisfied and back to loading activity (uncontrolled) [r3]" },
+      { label: "ESWT vs eccentric loading comparison", day: 120, note: "VISA-A rose from 53 to 80 with ESWT and from 53 to 63 with eccentric loading at 4 months in an RCT of 50 patients [r4]" },
+      { label: "Surgical review if conservative care has failed", day: 180, note: "After months of well-delivered conservative care (a clinical range; the sources reviewed do not set a fixed time) [r1]" },
+      { label: "ESWT effect stable at one year", day: 365, note: "The favourable results after shockwave therapy were stable at 1 year [r4]" }
     ],
-    returnToSport: "Criteria-based and slow. Return to running and sport follows a loading phase that restores calf capacity without provoking the heel; in trials, satisfaction and return to previous loading activity were assessed at about 4 months [@jonsson08,@rompe08]. Plan on months rather than weeks, and longer for calcific or bilateral disease (clinical range)."
+    returnToSport: "Criteria-based and slow. Return to running and sport follows a loading phase that restores calf capacity without provoking the heel; in trials, satisfaction and return to previous loading activity were assessed at about 4 months [r3,r4]. Plan on months rather than weeks, and longer for calcific or bilateral disease (clinical range)."
   },
 
   clinicalPresentation: {
     symptoms: [
       "Pain at the back of the heel where the Achilles inserts, worse with activity and often with hills, stairs or squatting",
-      "Stiffness after prolonged rest, such as the first steps in the morning [@chimenti17]",
-      "Pain or rubbing from shoes that press on the back of the heel [@chimenti17]",
-      "Swelling and sometimes redness over the posterior heel [@chimenti17]",
+      "Stiffness after prolonged rest, such as the first steps in the morning [r1]",
+      "Pain or rubbing from shoes that press on the back of the heel [r1]",
+      "Swelling and sometimes redness over the posterior heel [r1]",
       "Reduced activity and sport participation over months, often bilateral in some people"
     ],
     signs: [
-      "Tenderness to palpation within the distal 2 cm of the Achilles tendon [@chimenti17]",
-      "Thickening at the insertion and a visible or palpable posterior heel prominence or swelling [@chimenti17]",
-      "Tenderness anterior to the tendon on both sides (retrocalcaneal bursitis) [@chimenti17]",
+      "Tenderness to palpation within the distal 2 cm of the Achilles tendon [r1]",
+      "Thickening at the insertion and a visible or palpable posterior heel prominence or swelling [r1]",
+      "Tenderness anterior to the tendon on both sides (retrocalcaneal bursitis) [r1]",
       "Pain on passive dorsiflexion or when the heel is squeezed; pain on single-leg heel raise or hopping",
-      "Possible gastrocnemius tightness on the Silfverskiöld test; plantarflexor weakness can be hard to interpret because of pain [@chimenti17]"
+      "Possible gastrocnemius tightness on the Silfverskiöld test; plantarflexor weakness can be hard to interpret because of pain [r1]"
     ]
   },
 
   assessment: {
     subjective: [
       "Site of pain: the back of the heel at the insertion, versus the mid-tendon or the plantar heel",
-      "Pattern: pain with activity, stiffness after rest, shoe rubbing, and effect of hills, stairs and heel-drop exercises [@chimenti17]",
-      "Duration, previous treatment and injections, and response to previous exercise (especially heel drops below a step) [@rompe08]",
-      "Bilateral symptoms, morning stiffness, other joint, eye, skin or bowel symptoms (inflammatory disease) [@wang15]",
-      "Fluoroquinolone antibiotic or corticosteroid exposure; diabetes; kidney disease [@tsai11,@turmo14]",
+      "Pattern: pain with activity, stiffness after rest, shoe rubbing, and effect of hills, stairs and heel-drop exercises [r1]",
+      "Duration, previous treatment and injections, and response to previous exercise (especially heel drops below a step) [r4]",
+      "Bilateral symptoms, morning stiffness, other joint, eye, skin or bowel symptoms (inflammatory disease) [r6]",
+      "Fluoroquinolone antibiotic or corticosteroid exposure; diabetes; kidney disease [r7,r8]",
       "Footwear, work demands, training load and goals"
     ],
-    observation: ["Swelling, redness or a bump on the back of the heel (Haglund prominence)", "Heel posture and foot alignment, gait and stair strategy (more end-range dorsiflexion was found in IAT) [@chimenti16]", "Skin condition over the heel and shoe wear pattern"],
-    palpation: ["Palpate the insertion and the distal 2 cm of the tendon [@chimenti17]", "Palpate both sides of the tendon just above the heel for retrocalcaneal bursitis", "Palpate the mid-portion to detect combined disease, and the plantar heel to exclude plantar fasciopathy", "Check for a gap (rupture) and for the sural nerve course lateral to the tendon [@chimenti17]"],
-    rangeOfMotion: ["Weight-bearing lunge and passive dorsiflexion with the knee straight and bent, compared with the other side", "Silfverskiöld test for gastrocnemius contracture [@chimenti17]", "Subtalar and first-ray range as part of the kinetic chain screen"],
-    strength: ["Single-leg heel raise: height, repetitions and pain, compared with the other side", "Isometric plantarflexion strength; this may be normal in IAT despite altered stair mechanics [@chimenti16]", "Hip and knee extensor strength"],
-    neuro: ["Sural nerve sensation and Tinel sign lateral to the tendon (differential for lateral heel pain) [@chimenti17]", "Distal pulses and sensation if diabetes or neuropathy is suspected"],
-    functional: ["Stair ascent and descent quality [@chimenti16]", "Single-leg hop and repeated hop pain response", "Running assessment when appropriate"],
+    observation: ["Swelling, redness or a bump on the back of the heel (Haglund prominence)", "Heel posture and foot alignment, gait and stair strategy (more end-range dorsiflexion was found in IAT) [r5]", "Skin condition over the heel and shoe wear pattern"],
+    palpation: ["Palpate the insertion and the distal 2 cm of the tendon [r1]", "Palpate both sides of the tendon just above the heel for retrocalcaneal bursitis", "Palpate the mid-portion to detect combined disease, and the plantar heel to exclude plantar fasciopathy", "Check for a gap (rupture) and for the sural nerve course lateral to the tendon [r1]"],
+    rangeOfMotion: ["Weight-bearing lunge and passive dorsiflexion with the knee straight and bent, compared with the other side", "Silfverskiöld test for gastrocnemius contracture [r1]", "Subtalar and first-ray range as part of the kinetic chain screen"],
+    strength: ["Single-leg heel raise: height, repetitions and pain, compared with the other side", "Isometric plantarflexion strength; this may be normal in IAT despite altered stair mechanics [r5]", "Hip and knee extensor strength"],
+    neuro: ["Sural nerve sensation and Tinel sign lateral to the tendon (differential for lateral heel pain) [r1]", "Distal pulses and sensation if diabetes or neuropathy is suspected"],
+    functional: ["Stair ascent and descent quality [r5]", "Single-leg hop and repeated hop pain response", "Running assessment when appropriate"],
     specialTests: [
       { name: "Palpation of the distal 2 cm of the tendon and retrocalcaneal region", purpose: "Locate tenderness to the insertion versus the mid-portion, bursa or plantar fascia", procedure: "Palpate the Achilles insertion and the distal 2 cm, then the soft tissue on both sides of the tendon above the heel, and compare with the mid-portion.", positive: "Focal tenderness within the distal 2 cm of the tendon, with or without tenderness anterior to the tendon (bursitis).", refs: [] },
       { name: "Silfverskiöld test", purpose: "Identify gastrocnemius contracture as a contributor", procedure: "Measure passive ankle dorsiflexion with the knee extended and again with the knee flexed.", positive: "Dorsiflexion improves with the knee flexed, suggesting gastrocnemius tightness rather than soleus or joint restriction.", refs: [] },
       { name: "Single-leg heel raise and hop provocation", purpose: "Reproduce loading pain and measure calf capacity", procedure: "Repeated single-leg heel raises from the floor and single-leg hops, comparing pain and repetitions with the other side.", positive: "Pain at the insertion, fewer repetitions or lower height than the other side.", refs: [] },
-      { name: "Thompson (calf squeeze) test", purpose: "Exclude complete rupture before loading or injecting", procedure: "Patient prone with the feet over the end of the couch. Squeeze the calf and observe the foot.", positive: "No plantarflexion on squeeze suggests rupture.", sensitivity: "96% (for Achilles rupture)", specificity: "93% (for Achilles rupture)", refs: ["@maffulli98","@reiman14"] }
+      { name: "Thompson (calf squeeze) test", purpose: "Exclude complete rupture before loading or injecting", procedure: "Patient prone with the feet over the end of the couch. Squeeze the calf and observe the foot.", positive: "No plantarflexion on squeeze suggests rupture.", sensitivity: "96% (for Achilles rupture)", specificity: "93% (for Achilles rupture)", refs: ["r11","r12"] }
     ],
     clinicalRules: [],
     outcomeMeasures: [
-      { name: "VISA-A questionnaire", use: "Eight-item severity score (pain, function, sport; 0–100) validated in Achilles tendinopathy and used as the outcome in the IAT shockwave trial [@robinson01,@rompe08]. It is not designed to be diagnostic [@robinson01]" },
-      { name: "Pain during Achilles-loading activity (VAS or NPRS)", use: "Used to monitor response; the pilot reported VAS 69.9 falling to 21 in satisfied patients [@jonsson08]" },
-      { name: "Patient satisfaction and return to previous loading activity", use: "Used as a main outcome in IAT studies [@jonsson08,@rompe08]" },
-      { name: "Single-leg heel-rise capacity and stair-ascent performance", use: "Calf capacity and stair mechanics, in which IAT patients differed from controls [@chimenti16]" }
+      { name: "VISA-A questionnaire", use: "Eight-item severity score (pain, function, sport; 0–100) validated in Achilles tendinopathy and used as the outcome in the IAT shockwave trial [r13,r4]. It is not designed to be diagnostic [r13]" },
+      { name: "Pain during Achilles-loading activity (VAS or NPRS)", use: "Used to monitor response; the pilot reported VAS 69.9 falling to 21 in satisfied patients [r3]" },
+      { name: "Patient satisfaction and return to previous loading activity", use: "Used as a main outcome in IAT studies [r3,r4]" },
+      { name: "Single-leg heel-rise capacity and stair-ascent performance", use: "Calf capacity and stair mechanics, in which IAT patients differed from controls [r5]" }
     ],
     imaging: [
-      { modality: "Lateral weight-bearing radiograph", indication: "Posterior heel pain with a suspected spur, calcification or Haglund prominence, or before surgery", findings: "Enthesophyte, intratendinous calcification, posterosuperior prominence and Kager's triangle changes suggesting bursitis; spurs are common in people without symptoms [@chimenti17]" },
-      { modality: "Ultrasound", indication: "Uncertain diagnosis, suspected tear or bursitis, or failed conservative care", findings: "Tendon thickening (a thickness over 6 mm has been used as a criterion), low echogenicity, neovascularisation, retrocalcaneal bursitis [@chimenti17]" },
-      { modality: "MRI", indication: "Refractory cases and surgical planning", findings: "Tendon thickness and degeneration (Nicholson grades I–III), bursitis and bone marrow change [@chimenti17]. Imaging signs and symptoms correlate poorly [@chimenti17]" }
+      { modality: "Lateral weight-bearing radiograph", indication: "Posterior heel pain with a suspected spur, calcification or Haglund prominence, or before surgery", findings: "Enthesophyte, intratendinous calcification, posterosuperior prominence and Kager's triangle changes suggesting bursitis; spurs are common in people without symptoms [r1]" },
+      { modality: "Ultrasound", indication: "Uncertain diagnosis, suspected tear or bursitis, or failed conservative care", findings: "Tendon thickening (a thickness over 6 mm has been used as a criterion), low echogenicity, neovascularisation, retrocalcaneal bursitis [r1]" },
+      { modality: "MRI", indication: "Refractory cases and surgical planning", findings: "Tendon thickness and degeneration (Nicholson grades I–III), bursitis and bone marrow change [r1]. Imaging signs and symptoms correlate poorly [r1]" }
     ]
   },
 
   differentials: [
-    { name: "Mid-portion Achilles tendinopathy", id: "midportion-achilles-tendinopathy", distinguishing: "Pain and thickening 2–6 cm above the heel, with a positive arc sign, rather than within the distal 2 cm at the insertion [@chimenti17]." },
-    { name: "Achilles partial tear or rupture", id: "achilles-rupture", distinguishing: "Sudden pop, weak push-off, palpable gap and positive Thompson test, often after injection or fluoroquinolone use [@turmo14,@maffulli98]." },
-    { name: "Retrocalcaneal bursitis and Haglund deformity", distinguishing: "Tenderness anterior to the tendon on both sides above the heel with a posterosuperior prominence. It often coexists with IAT and may not be separable clinically [@chimenti17]." },
+    { name: "Mid-portion Achilles tendinopathy", id: "midportion-achilles-tendinopathy", distinguishing: "Pain and thickening 2–6 cm above the heel, with a positive arc sign, rather than within the distal 2 cm at the insertion [r1]." },
+    { name: "Achilles partial tear or rupture", id: "achilles-rupture", distinguishing: "Sudden pop, weak push-off, palpable gap and positive Thompson test, often after injection or fluoroquinolone use [r8,r11]." },
+    { name: "Retrocalcaneal bursitis and Haglund deformity", distinguishing: "Tenderness anterior to the tendon on both sides above the heel with a posterosuperior prominence. It often coexists with IAT and may not be separable clinically [r1]." },
     { name: "Calcaneal apophysitis (Sever's disease)", id: "calcaneal-apophysitis", distinguishing: "Heel pain in an active child or adolescent with tenderness at the growth plate, not a degenerative Achilles insertion." },
     { name: "Plantar fasciopathy", id: "plantar-heel-pain", distinguishing: "Plantar medial heel pain, worse on the first steps in the morning, with tenderness at the plantar fascia origin rather than the posterior heel." },
     { name: "Posterior ankle impingement", id: "posterior-ankle-impingement", distinguishing: "Deep posterior ankle pain on forced plantarflexion, without tendon thickening at the insertion." },
-    { name: "Sural nerve irritation or neuroma", distinguishing: "Burning or tingling along the lateral heel with a positive Tinel sign over the nerve near the lateral tendon border [@chimenti17]." },
-    { name: "Spondyloarthropathy enthesitis", distinguishing: "Bilateral heel pain with inflammatory back or joint features and morning stiffness; ultrasound may show enthesitis or bursitis [@wang15]." }
+    { name: "Sural nerve irritation or neuroma", distinguishing: "Burning or tingling along the lateral heel with a positive Tinel sign over the nerve near the lateral tendon border [r1]." },
+    { name: "Spondyloarthropathy enthesitis", distinguishing: "Bilateral heel pain with inflammatory back or joint features and morning stiffness; ultrasound may show enthesitis or bursitis [r6]." }
   ],
   redFlags: [
-    "Sudden pop, loss of push-off, a palpable gap or a positive Thompson test: suspect Achilles rupture. Protect the ankle and arrange urgent orthopaedic review [@maffulli98].",
-    "Recent corticosteroid injection near the tendon or retrocalcaneal bursa, especially with new sudden pain or weakness: avoid heavy loading and arrange urgent assessment because rupture risk has been described [@turmo14].",
-    "Current or recent fluoroquinolone antibiotic use with new Achilles pain: advise the patient to contact the prescriber the same day and avoid heavy loading until the drug is reviewed [@tsai11].",
-    "Bilateral heel pain with morning stiffness, other joint pain, back pain, psoriasis, bowel or eye symptoms: suspect inflammatory arthritis or spondyloarthropathy and refer for medical review [@wang15].",
+    "Sudden pop, loss of push-off, a palpable gap or a positive Thompson test: suspect Achilles rupture. Protect the ankle and arrange urgent orthopaedic review [r11].",
+    "Recent corticosteroid injection near the tendon or retrocalcaneal bursa, especially with new sudden pain or weakness: avoid heavy loading and arrange urgent assessment because rupture risk has been described [r8].",
+    "Current or recent fluoroquinolone antibiotic use with new Achilles pain: advise the patient to contact the prescriber the same day and avoid heavy loading until the drug is reviewed [r7].",
+    "Bilateral heel pain with morning stiffness, other joint pain, back pain, psoriasis, bowel or eye symptoms: suspect inflammatory arthritis or spondyloarthropathy and refer for medical review [r6].",
     "Hot, red, swollen heel, fever, night pain or an open wound over the heel (especially in diabetes): suspect infection of the bursa or calcaneus and arrange urgent medical review.",
     "Calf pain, swelling or warmth: consider deep vein thrombosis and arrange same-day medical assessment.",
     "Persistent severe heel pain after trauma or sudden increase in running, with bony tenderness or pain on squeezing the heel: consider calcaneal stress fracture and arrange imaging."
   ],
 
   management: {
-    principles: "Treat IAT as a load-capacity problem in which compression is a major driver. The core is education, a shift in load away from end-range dorsiflexion, and progressive calf loading that stays within a restricted dorsiflexion range, which has the best support among the loading approaches [@chimenti17,@jonsson08]. Add ESWT if progress stalls, and consider surgery only after failed conservative care [@chimenti17,@wiegerinck13]. The evidence base is thin: most data are from small case series and a few RCTs, and a systematic review of 14 trials could not name a best surgical technique [@wiegerinck13]. Clinical practice also draws on trials in mid-portion disease, which may not transfer [@beyer15].",
+    principles: "Treat IAT as a load-capacity problem in which compression is a major driver. The core is education, a shift in load away from end-range dorsiflexion, and progressive calf loading that stays within a restricted dorsiflexion range, which has the best support among the loading approaches [r1,r3]. Add ESWT if progress stalls, and consider surgery only after failed conservative care [r1,r9]. The evidence base is thin: most data are from small case series and a few RCTs, and a systematic review of 14 trials could not name a best surgical technique [r9]. Clinical practice also draws on trials in mid-portion disease, which may not transfer [r14].",
     medical: [
-      { name: "Corticosteroid injection into or around the tendon", description: "Largely out of favour for tendinopathy at any site, with particular concern around the Achilles for further degeneration and tear. Isolated retrocalcaneal bursitis might be considered only with great care to avoid the tendon, because a cadaver and case study showed a connection between the bursa and the anterior Achilles fibres [@chimenti17,@turmo14].", evidence: "very-limited", recommendation: "not-recommended", refs: ["@chimenti17","@turmo14"] },
-      { name: "Other injections (PRP, polidocanol, high-volume saline, prolotherapy)", description: "The review found insufficient high-quality evidence in IAT to support routine use, and several studies were not specific to IAT. If used at all, it should be specialist-led after loading and ESWT have failed [@chimenti17]. The large sham-controlled trial of PRP was in mid-portion disease and was negative [@chimenti17].", evidence: "very-limited", recommendation: "consider", refs: ["@chimenti17"] },
-      { name: "Simple analgesia, short-course NSAIDs and ice", description: "May help when inflammation is prominent, such as retrocalcaneal bursitis or paratendinitis. Further research is needed [@chimenti17].", evidence: "expert-opinion", recommendation: "consider", refs: ["@chimenti17"] },
-      { name: "Review of fluoroquinolone antibiotic use", description: "Management of fluoroquinolone-associated tendinopathy includes stopping the drug [@tsai11].", evidence: "limited", recommendation: "recommended", refs: ["@tsai11"] },
-      { name: "Surgical debridement, decompression and calcaneal exostectomy (with or without bursectomy)", description: "For patients who fail conservative care. Open debridement and decompression is supported by many studies reporting good function and satisfaction (generally above 87%), but complications ranged from 6% to over 30%, mainly wound problems, painful scar and sural nerve injury [@chimenti17]. In a systematic review, five surgical techniques all had good satisfaction (average 89%), but the best technique could not be named [@wiegerinck13].", evidence: "limited", recommendation: "consider", refs: ["@chimenti17","@wiegerinck13"] },
-      { name: "FHL transfer, gastrocnemius recession and endoscopic procedures", description: "The review found insufficient evidence to recommend routine use. Flexor hallucis longus transfer did not improve pain or function in a randomised trial of 39 older patients, though it improved plantarflexor strength. Isolated gastrocnemius recession had conflicting low-level evidence [@chimenti17].", evidence: "very-limited", recommendation: "consider", refs: ["@chimenti17"] }
+      { name: "Corticosteroid injection into or around the tendon", description: "Largely out of favour for tendinopathy at any site, with particular concern around the Achilles for further degeneration and tear. Isolated retrocalcaneal bursitis might be considered only with great care to avoid the tendon, because a cadaver and case study showed a connection between the bursa and the anterior Achilles fibres [r1,r8].", evidence: "very-limited", recommendation: "not-recommended", refs: ["r1","r8"] },
+      { name: "Other injections (PRP, polidocanol, high-volume saline, prolotherapy)", description: "The review found insufficient high-quality evidence in IAT to support routine use, and several studies were not specific to IAT. If used at all, it should be specialist-led after loading and ESWT have failed [r1]. The large sham-controlled trial of PRP was in mid-portion disease and was negative [r1].", evidence: "very-limited", recommendation: "consider", refs: ["r1"] },
+      { name: "Simple analgesia, short-course NSAIDs and ice", description: "May help when inflammation is prominent, such as retrocalcaneal bursitis or paratendinitis. Further research is needed [r1].", evidence: "expert-opinion", recommendation: "consider", refs: ["r1"] },
+      { name: "Review of fluoroquinolone antibiotic use", description: "Management of fluoroquinolone-associated tendinopathy includes stopping the drug [r7].", evidence: "limited", recommendation: "recommended", refs: ["r7"] },
+      { name: "Surgical debridement, decompression and calcaneal exostectomy (with or without bursectomy)", description: "For patients who fail conservative care. Open debridement and decompression is supported by many studies reporting good function and satisfaction (generally above 87%), but complications ranged from 6% to over 30%, mainly wound problems, painful scar and sural nerve injury [r1]. In a systematic review, five surgical techniques all had good satisfaction (average 89%), but the best technique could not be named [r9].", evidence: "limited", recommendation: "consider", refs: ["r1","r9"] },
+      { name: "FHL transfer, gastrocnemius recession and endoscopic procedures", description: "The review found insufficient evidence to recommend routine use. Flexor hallucis longus transfer did not improve pain or function in a randomised trial of 39 older patients, though it improved plantarflexor strength. Isolated gastrocnemius recession had conflicting low-level evidence [r1].", evidence: "very-limited", recommendation: "consider", refs: ["r1"] }
     ],
     physio: [
-      { name: "Education and load management", description: "Explain that compression and end-range dorsiflexion aggravate the insertion. Modify hills, stairs, deep squats and heel drops below a step, while keeping the patient active. This is a mechanistic approach, supported by the load patterns described in IAT rather than by trials of the education itself [@chimenti17,@cp12].", evidence: "expert-opinion", recommendation: "recommended", refs: ["@chimenti17","@cp12"] },
-      { name: "Eccentric or slow loading restricted to floor level (no dorsiflexion past neutral)", description: "In a pilot of 27 patients (34 tendons) with a mean pain duration of 26 months, a floor-level eccentric regimen (3 × 15, twice daily, 7 days a week for 12 weeks) left 67% satisfied at a mean of 4 months, with VAS falling from 69.9 to 21 in those who were satisfied [@jonsson08]. A review rated limited-range eccentric exercise Grade B and noted that floor-level exercise gave better satisfaction than full-range [@chimenti17,@wiegerinck13]. There was no control group in the pilot.", evidence: "limited", recommendation: "recommended", refs: ["@jonsson08","@chimenti17","@wiegerinck13"] },
-      { name: "Traditional eccentric heel drops below step level as first-line", description: "Satisfaction was only 28% to 33% in IAT (Level IV), and about 32% had a good result in the earlier series cited in the pilot, although level I trials show a modest pain reduction of about 1.8 to 2.2 on the VAS [@chimenti17,@jonsson08]. In an RCT, 28% of the eccentric group were completely recovered or much improved at 4 months compared with 64% after ESWT [@rompe08]. Avoid it as the starting point because dorsiflexion adds compression.", evidence: "conflicting", recommendation: "not-recommended", refs: ["@chimenti17","@jonsson08","@rompe08"] },
-      { name: "Isometric and heavy slow resistance loading within a restricted range", description: "Restricting dorsiflexion and using isometric or slow heavy contractions may help to maximise tendon loading, but evidence specific to IAT is lacking [@chimenti17]. In mid-portion disease heavy slow resistance and eccentric training gave equally good results at 12 weeks and at 52 weeks, with better compliance for the heavy slow protocol (92% vs 78%) [@beyer15]. This is extrapolated evidence.", evidence: "expert-opinion", recommendation: "consider", refs: ["@chimenti17","@beyer15"] },
-      { name: "Extracorporeal shockwave therapy (ESWT)", description: "In an RCT of 50 patients with chronic recalcitrant IAT who had failed at least 3 months of other treatment, VISA-A rose from 53 to 80 with ESWT and from 53 to 63 with eccentric loading at 4 months, and the ESWT result was stable at 1 year [@rompe08]. A systematic review found ESWT superior to wait-and-see and to eccentric training and effective in non-calcified IAT [@wiegerinck13]. There is no standard protocol, treatment can be painful, and effectiveness may be limited with enthesophytes [@chimenti17].", evidence: "limited", recommendation: "consider", refs: ["@rompe08","@wiegerinck13","@chimenti17"] },
-      { name: "Heel lift or shoe with a slight heel", description: "Biomechanical evidence suggests heel lifts reduce the tendon elongation and compressive strain at the insertion during dorsiflexion tasks. Clinical trial evidence is lacking [@chimenti17].", evidence: "limited", recommendation: "consider", refs: ["@chimenti17"] },
-      { name: "Footwear changes to relieve heel counter pressure", description: "Soft or open-back shoes can relieve rubbing over the posterior heel. This is practical advice rather than trial-tested [@chimenti17].", evidence: "expert-opinion", recommendation: "consider", refs: ["@chimenti17"] },
-      { name: "Night splints", description: "A review found insufficient evidence for night splints in IAT (Grade I). If a patient can do weight-bearing loading, splints may add nothing [@chimenti17].", evidence: "very-limited", recommendation: "consider", refs: ["@chimenti17"] },
-      { name: "Retraining ankle mechanics on stairs and hills", description: "IAT patients used more end-range dorsiflexion and less plantarflexor power on stairs, and these differences were linked with symptom severity; whether retraining helps is untested [@chimenti16].", evidence: "very-limited", recommendation: "consider", refs: ["@chimenti16"] },
-      { name: "Aggressive calf stretching into dorsiflexion", description: "Stretching into end-range dorsiflexion increases compressive strain at the insertion and is avoided early. A night splint or gentle stretching with the knee bent are lower-load alternatives [@chimenti17,@cp12].", evidence: "expert-opinion", recommendation: "not-recommended", refs: ["@chimenti17","@cp12"] }
+      { name: "Education and load management", description: "Explain that compression and end-range dorsiflexion aggravate the insertion. Modify hills, stairs, deep squats and heel drops below a step, while keeping the patient active. This is a mechanistic approach, supported by the load patterns described in IAT rather than by trials of the education itself [r1,r2].", evidence: "expert-opinion", recommendation: "recommended", refs: ["r1","r2"] },
+      { name: "Eccentric or slow loading restricted to floor level (no dorsiflexion past neutral)", description: "In a pilot of 27 patients (34 tendons) with a mean pain duration of 26 months, a floor-level eccentric regimen (3 × 15, twice daily, 7 days a week for 12 weeks) left 67% satisfied at a mean of 4 months, with VAS falling from 69.9 to 21 in those who were satisfied [r3]. A review rated limited-range eccentric exercise Grade B and noted that floor-level exercise gave better satisfaction than full-range [r1,r9]. There was no control group in the pilot.", evidence: "limited", recommendation: "recommended", refs: ["r3","r1","r9"] },
+      { name: "Traditional eccentric heel drops below step level as first-line", description: "Satisfaction was only 28% to 33% in IAT (Level IV), and about 32% had a good result in the earlier series cited in the pilot, although level I trials show a modest pain reduction of about 1.8 to 2.2 on the VAS [r1,r3]. In an RCT, 28% of the eccentric group were completely recovered or much improved at 4 months compared with 64% after ESWT [r4]. Avoid it as the starting point because dorsiflexion adds compression.", evidence: "conflicting", recommendation: "not-recommended", refs: ["r1","r3","r4"] },
+      { name: "Isometric and heavy slow resistance loading within a restricted range", description: "Restricting dorsiflexion and using isometric or slow heavy contractions may help to maximise tendon loading, but evidence specific to IAT is lacking [r1]. In mid-portion disease heavy slow resistance and eccentric training gave equally good results at 12 weeks and at 52 weeks, with better compliance for the heavy slow protocol (92% vs 78%) [r14]. This is extrapolated evidence.", evidence: "expert-opinion", recommendation: "consider", refs: ["r1","r14"] },
+      { name: "Extracorporeal shockwave therapy (ESWT)", description: "In an RCT of 50 patients with chronic recalcitrant IAT who had failed at least 3 months of other treatment, VISA-A rose from 53 to 80 with ESWT and from 53 to 63 with eccentric loading at 4 months, and the ESWT result was stable at 1 year [r4]. A systematic review found ESWT superior to wait-and-see and to eccentric training and effective in non-calcified IAT [r9]. There is no standard protocol, treatment can be painful, and effectiveness may be limited with enthesophytes [r1].", evidence: "limited", recommendation: "consider", refs: ["r4","r9","r1"] },
+      { name: "Heel lift or shoe with a slight heel", description: "Biomechanical evidence suggests heel lifts reduce the tendon elongation and compressive strain at the insertion during dorsiflexion tasks. Clinical trial evidence is lacking [r1].", evidence: "limited", recommendation: "consider", refs: ["r1"] },
+      { name: "Footwear changes to relieve heel counter pressure", description: "Soft or open-back shoes can relieve rubbing over the posterior heel. This is practical advice rather than trial-tested [r1].", evidence: "expert-opinion", recommendation: "consider", refs: ["r1"] },
+      { name: "Night splints", description: "A review found insufficient evidence for night splints in IAT (Grade I). If a patient can do weight-bearing loading, splints may add nothing [r1].", evidence: "very-limited", recommendation: "consider", refs: ["r1"] },
+      { name: "Retraining ankle mechanics on stairs and hills", description: "IAT patients used more end-range dorsiflexion and less plantarflexor power on stairs, and these differences were linked with symptom severity; whether retraining helps is untested [r5].", evidence: "very-limited", recommendation: "consider", refs: ["r5"] },
+      { name: "Aggressive calf stretching into dorsiflexion", description: "Stretching into end-range dorsiflexion increases compressive strain at the insertion and is avoided early. A night splint or gentle stretching with the knee bent are lower-load alternatives [r1,r2].", evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r1","r2"] }
     ],
     education: [
       "The pain is where the tendon meets the heel bone. It is made worse by being squeezed against the bone, which happens when your foot pulls up toward your shin.",
@@ -232,17 +232,17 @@ export default {
   },
 
   rehab: {
-    overview: "Progression is criteria-based and keeps the ankle out of end-range dorsiflexion during the early loading phases, because dorsiflexion increases compression at the insertion [@chimenti17,@cp12]. The program mirrors the pilot of floor-level eccentric loading and the principles of progressive calf loading from mid-portion disease [@jonsson08,@beyer15]. Dosages are typical clinical ranges, not prescriptions from a single trial. A common clinical convention is to accept pain up to about 4–5/10 during exercise provided it settles by the next morning. Plan on months, and review at 12 weeks: if progress has stalled, discuss ESWT [@rompe08].",
+    overview: "Progression is criteria-based and keeps the ankle out of end-range dorsiflexion during the early loading phases, because dorsiflexion increases compression at the insertion [r1,r2]. The program mirrors the pilot of floor-level eccentric loading and the principles of progressive calf loading from mid-portion disease [r3,r14]. Dosages are typical clinical ranges, not prescriptions from a single trial. A common clinical convention is to accept pain up to about 4–5/10 during exercise provided it settles by the next morning. Plan on months, and review at 12 weeks: if progress has stalled, discuss ESWT [r4].",
     stages: [
       {
         name: "Settle & reduce compression",
         timeframe: "Weeks 0–2",
         goals: ["Reduce load-related heel pain and stiffness", "Remove aggravating positions (end-range dorsiflexion, tight shoes)", "Keep the calf working in a pain-free range", "Teach the load-capacity model and pain monitoring"],
-        precautions: ["Exclude rupture (Thompson) before loading", "Avoid heel drops below a step, deep squats, aggressive calf stretches and steep hills at first [@chimenti17]", "Avoid steroid injection into or around the tendon [@turmo14]", "Keep exercise pain at or below about 4/10 and settled by the next morning (clinical convention)"],
+        precautions: ["Exclude rupture (Thompson) before loading", "Avoid heel drops below a step, deep squats, aggressive calf stretches and steep hills at first [r1]", "Avoid steroid injection into or around the tendon [r8]", "Keep exercise pain at or below about 4/10 and settled by the next morning (clinical convention)"],
         exercises: [
           { name: "Isometric standing calf hold on flat ground", dosage: "5 × 30–45 s at moderate effort, 1–2 times daily (typical clinical dosage)", cues: "Lift to mid-range only and stay off the end-range of dorsiflexion", figure: { pose: "ex-calf-raise", view: "lateral" } },
           { name: "Isometric seated calf hold (knee bent)", dosage: "5 × 30–45 s at moderate effort, 1–2 times daily", cues: "Press through the forefoot and hold steady", figure: { pose: "ex-seated-calf-raise", view: "lateral", props: ["chair"] } },
-          { name: "Heel lift in the shoe and soft-heel-counter footwear", dosage: "All day while symptoms are irritable", cues: "Reduces dorsiflexion and compression at the insertion [@chimenti17]" },
+          { name: "Heel lift in the shoe and soft-heel-counter footwear", dosage: "All day while symptoms are irritable", cues: "Reduces dorsiflexion and compression at the insertion [r1]" },
           { name: "Glute bridge", dosage: "3 × 12–15, daily", cues: "Drive through the heels and keep the ribs down", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } },
           { name: "Low-impact conditioning (cycling or pool)", dosage: "20–30 min, 3 times per week, below the pain threshold", cues: "Keep fitness while the heel settles" }
         ],
@@ -252,15 +252,15 @@ export default {
         name: "Floor-level strength (no dorsiflexion)",
         timeframe: "Weeks 2–12",
         goals: ["Build calf capacity without end-range dorsiflexion", "Restore single-leg heel raise capacity from the floor", "Add hip and thigh strength", "Maintain gentle conditioning"],
-        precautions: ["Lower the heel only to a level, flat-foot (neutral) position, never below it [@jonsson08]", "Increase load only when next-morning pain is stable", "Stop and review if pain at the insertion rises above about 5/10 or lingers into the next day (clinical convention)"],
+        precautions: ["Lower the heel only to a level, flat-foot (neutral) position, never below it [r3]", "Increase load only when next-morning pain is stable", "Stop and review if pain at the insertion rises above about 5/10 or lingers into the next day (clinical convention)"],
         exercises: [
-          { name: "Floor-level heel lowering (eccentric, no dorsiflexion)", dosage: "3 × 15, once or twice daily; the pilot used twice daily, 7 days a week for 12 weeks [@jonsson08]", cues: "Rise on both feet, lower slowly on the painful leg, stop at flat foot", figure: { pose: "ex-calf-raise", view: "lateral" } },
+          { name: "Floor-level heel lowering (eccentric, no dorsiflexion)", dosage: "3 × 15, once or twice daily; the pilot used twice daily, 7 days a week for 12 weeks [r3]", cues: "Rise on both feet, lower slowly on the painful leg, stop at flat foot", figure: { pose: "ex-calf-raise", view: "lateral" } },
           { name: "Single-leg calf raise from the floor (heavy, slow)", dosage: "3–4 × 6–15, 3 s up and 3 s down, 3 times per week; add load as it becomes easy (typical clinical protocol)", cues: "Full range from flat foot up, no dropping below flat", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
           { name: "Seated calf raise with load (soleus)", dosage: "3–4 × 8–15, slow tempo, 3 times per week", cues: "Use a load on the thighs", figure: { pose: "ex-seated-calf-raise", view: "lateral", props: ["chair", "dumbbell"] } },
           { name: "Romanian deadlift", dosage: "3 × 8–10, 2 times per week", cues: "Hinge at the hips with a long spine", figure: { pose: "ex-rdl", view: "lateral", props: ["dumbbell"] } },
           { name: "Low step-up", dosage: "3 × 10 each side, 2 times per week", cues: "Use a low box and avoid dropping the heel below it", figure: { pose: "ex-step-up", view: "lateral", props: ["step"] } }
         ],
-        progressionCriteria: ["Single-leg floor-level calf raises with load, no more than mild next-day symptoms", "Morning stiffness mild and short", "Pain during activity usually 3/10 or less", "Reassess at 12 weeks; if no progress, discuss ESWT [@rompe08]"]
+        progressionCriteria: ["Single-leg floor-level calf raises with load, no more than mild next-day symptoms", "Morning stiffness mild and short", "Pain during activity usually 3/10 or less", "Reassess at 12 weeks; if no progress, discuss ESWT [r4]"]
       },
       {
         name: "Graded range, power & plyometrics",
@@ -273,7 +273,7 @@ export default {
           { name: "Single-leg hop in place", dosage: "3 × 8–10 each side, 2 times per week", cues: "Land softly and keep the heel quiet", figure: { pose: "ex-hop", view: "lateral" } },
           { name: "Heavy single-leg calf raise (maintenance)", dosage: "3 × 6–10, 2 times per week", cues: "Slow tempo", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } }
         ],
-        progressionCriteria: ["Pain-free double-leg then single-leg hopping", "No increase in heel pain or morning stiffness after plyometrics", "Single-leg heel-rise capacity near the other side (clinical convention)", "VISA-A improving [@robinson01]"]
+        progressionCriteria: ["Pain-free double-leg then single-leg hopping", "No increase in heel pain or morning stiffness after plyometrics", "Single-leg heel-rise capacity near the other side (clinical convention)", "VISA-A improving [r13]"]
       },
       {
         name: "Return to running & sport",
@@ -286,7 +286,7 @@ export default {
           { name: "Sport-specific jumping and change of direction", dosage: "2–3 sessions per week, from controlled to unplanned", cues: "Control the landing and push-off" },
           { name: "Heavy calf strength maintenance", dosage: "2 times per week, 3–4 × 6–10", cues: "Keep this in the program long term", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } }
         ],
-        progressionCriteria: ["Completes the running program without a next-day increase in heel pain or stiffness", "Single-leg heel-rise endurance and hop tests near symmetrical (clinical convention)", "Tolerates sport training at full intensity for a week", "Understands pain monitoring and load management [@sc15]"]
+        progressionCriteria: ["Completes the running program without a next-day increase in heel pain or stiffness", "Single-leg heel-rise endurance and hop tests near symmetrical (clinical convention)", "Tolerates sport training at full intensity for a week", "Understands pain monitoring and load management [r15]"]
       }
     ]
   },
@@ -295,46 +295,46 @@ export default {
     criteria: [
       "Heel pain with daily activity and load tests minimal, and no next-day flare after running or jumping (clinical convention)",
       "Single-leg heel-rise endurance and hop tests near symmetrical with the other side (clinical convention)",
-      "Completed a graded running and jumping program without a flare [@sc15]",
-      "VISA-A score improving toward healthy-control levels (mean above 96 in the original validation study) [@robinson01]",
+      "Completed a graded running and jumping program without a flare [r15]",
+      "VISA-A score improving toward healthy-control levels (mean above 96 in the original validation study) [r13]",
       "Footwear and load plan agreed, with continued calf strength work"
     ],
-    tests: ["Single-leg heel-rise endurance or work, compared with the other side", "Single and repeated hop tests", "VISA-A questionnaire [@robinson01]", "Pain response to loading and the next morning"]
+    tests: ["Single-leg heel-rise endurance or work, compared with the other side", "Single and repeated hop tests", "VISA-A questionnaire [r13]", "Pain response to loading and the next morning"]
   },
-  prognosis: "IAT is often persistent. In a pilot of modified floor-level loading, 67% of 27 patients were satisfied at a mean of 4 months, and 9 patients were not satisfied despite lower pain scores [@jonsson08]. In an RCT of 50 patients with chronic recalcitrant IAT, 64% in the ESWT group and 28% in the eccentric group were recovered or much improved at 4 months, and the ESWT results were stable at 1 year [@rompe08]. After surgery, satisfaction is generally above 87%, but complications ranged from 6% to over 30% [@chimenti17]. On MRI, 13% of grade I, 91% of grade II and 70% of grade III tendons needed surgery in one reported series, so imaging grade may help to predict surgical need [@chimenti17].",
+  prognosis: "IAT is often persistent. In a pilot of modified floor-level loading, 67% of 27 patients were satisfied at a mean of 4 months, and 9 patients were not satisfied despite lower pain scores [r3]. In an RCT of 50 patients with chronic recalcitrant IAT, 64% in the ESWT group and 28% in the eccentric group were recovered or much improved at 4 months, and the ESWT results were stable at 1 year [r4]. After surgery, satisfaction is generally above 87%, but complications ranged from 6% to over 30% [r1]. On MRI, 13% of grade I, 91% of grade II and 70% of grade III tendons needed surgery in one reported series, so imaging grade may help to predict surgical need [r1].",
   prevention: [
-    "No prevention trials specific to IAT were found. Build running and hill volume gradually and avoid repeated end-range dorsiflexion overload (mechanistic reasoning) [@chimenti17,@cp12].",
-    "Choose footwear that does not press on the posterior heel, and use a heel lift if symptoms start (practical advice) [@chimenti17].",
+    "No prevention trials specific to IAT were found. Build running and hill volume gradually and avoid repeated end-range dorsiflexion overload (mechanistic reasoning) [r1,r2].",
+    "Choose footwear that does not press on the posterior heel, and use a heel lift if symptoms start (practical advice) [r1].",
     "Maintain calf strength and capacity with regular heavy calf work (clinical practice).",
-    "Review fluoroquinolone antibiotic use in people with Achilles symptoms and avoid corticosteroid injections near the tendon [@tsai11,@turmo14].",
-    "Screen for inflammatory arthritis in people with bilateral or recurrent heel pain [@wang15]."
+    "Review fluoroquinolone antibiotic use in people with Achilles symptoms and avoid corticosteroid injections near the tendon [r7,r8].",
+    "Screen for inflammatory arthritis in people with bilateral or recurrent heel pain [r6]."
   ],
   clinicalPearls: [
-    "Insertional pain lies within about 2 cm of the heel. Mid-portion tendinopathy is higher, and the loading advice differs [@chimenti17].",
-    "Do not default to the Alfredson heel-drop. Full-range eccentric exercise satisfied only 28–33% of people with IAT, whereas floor-level loading satisfied 67% in a pilot (uncontrolled) [@chimenti17,@jonsson08].",
-    "Spurs and calcification are common and do not prove the diagnosis. Spurs were present on the asymptomatic side in 55%, though longer spurs were seen on the symptomatic side [@chimenti17].",
-    "Imaging tracks symptoms poorly (signs in up to 35% of asymptomatic tendons). Use it to plan surgery or exclude other pathology, not to name the cause [@chimenti17].",
-    "ESWT outperformed eccentric loading at 4 months in the only RCT, but may be less helpful with a calcified enthesis or a large spur [@rompe08,@chimenti17,@wiegerinck13].",
-    "Ask about injections and antibiotics, and consider spondyloarthropathy when pain is bilateral or has inflammatory features [@turmo14,@tsai11,@wang15]."
+    "Insertional pain lies within about 2 cm of the heel. Mid-portion tendinopathy is higher, and the loading advice differs [r1].",
+    "Do not default to the Alfredson heel-drop. Full-range eccentric exercise satisfied only 28–33% of people with IAT, whereas floor-level loading satisfied 67% in a pilot (uncontrolled) [r1,r3].",
+    "Spurs and calcification are common and do not prove the diagnosis. Spurs were present on the asymptomatic side in 55%, though longer spurs were seen on the symptomatic side [r1].",
+    "Imaging tracks symptoms poorly (signs in up to 35% of asymptomatic tendons). Use it to plan surgery or exclude other pathology, not to name the cause [r1].",
+    "ESWT outperformed eccentric loading at 4 months in the only RCT, but may be less helpful with a calcified enthesis or a large spur [r4,r1,r9].",
+    "Ask about injections and antibiotics, and consider spondyloarthropathy when pain is bilateral or has inflammatory features [r8,r7,r6]."
   ],
   related: ["midportion-achilles-tendinopathy", "achilles-rupture", "plantar-heel-pain", "calcaneal-apophysitis", "posterior-ankle-impingement", "calf-strain"],
 
   references: [
-    { id: "@chimenti17", citation: "Chimenti RL, Cychosz CC, Hall MM, et al. Current concepts review update: insertional Achilles tendinopathy. Foot Ankle Int. 2017;38(10):1160-9.", pmid: "28789557", doi: "10.1177/1071100717723127", type: "narrative-review", year: 2017 },
-    { id: "@cp12", citation: "Cook JL, Purdam C. Is compressive load a factor in the development of tendinopathy? Br J Sports Med. 2012;46(3):163-8.", pmid: "22113234", doi: "10.1136/bjsports-2011-090414", type: "narrative-review", year: 2012 },
-    { id: "@jonsson08", citation: "Jonsson P, Alfredson H, Sunding K, et al. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. Br J Sports Med. 2008;42(9):746-9.", pmid: "18184750", doi: "10.1136/bjsm.2007.039545", type: "cohort", year: 2008 },
-    { id: "@rompe08", citation: "Rompe JD, Furia J, Maffulli N. Eccentric loading compared with shock wave treatment for chronic insertional Achilles tendinopathy. A randomized, controlled trial. J Bone Joint Surg Am. 2008;90(1):52-61.", pmid: "18171957", doi: "10.2106/JBJS.F.01494", type: "rct", year: 2008 },
-    { id: "@wiegerinck13", citation: "Wiegerinck JI, Kerkhoffs GM, van Sterkenburg MN, et al. Treatment for insertional Achilles tendinopathy: a systematic review. Knee Surg Sports Traumatol Arthrosc. 2013;21(6):1345-55.", pmid: "23052113", doi: "10.1007/s00167-012-2219-8", type: "systematic-review", year: 2013 },
-    { id: "@chimenti16", citation: "Chimenti RL, Flemister AS, Tome J, et al. Patients with insertional Achilles tendinopathy exhibit differences in ankle biomechanics as opposed to strength and range of motion. J Orthop Sports Phys Ther. 2016;46(12):1051-60.", pmid: "27796197", doi: "10.2519/jospt.2016.6462", type: "cross-sectional", year: 2016 },
-    { id: "@cp09", citation: "Cook JL, Purdam CR. Is tendon pathology a continuum? A pathology model to explain the clinical presentation of load-induced tendinopathy. Br J Sports Med. 2009;43(6):409-16.", pmid: "18812414", doi: "10.1136/bjsm.2008.051193", type: "narrative-review", year: 2009 },
-    { id: "@wang15", citation: "Wang CH, Feng Y, Ren Z, et al. Performance of ultrasound to monitor Achilles enthesitis in patients with ankylosing spondylitis during TNF-a antagonist therapy. Clin Rheumatol. 2015;34(6):1073-8.", pmid: "25896532", doi: "10.1007/s10067-015-2939-5", type: "cohort", year: 2015 },
-    { id: "@tsai11", citation: "Tsai WC, Yang YM. Fluoroquinolone-associated tendinopathy. Chang Gung Med J. 2011;34(5):461-7.", pmid: "22035890", type: "narrative-review", year: 2011 },
-    { id: "@turmo14", citation: "Turmo-Garuz A, Rodas G, Balius R, et al. Can local corticosteroid injection in the retrocalcaneal bursa lead to rupture of the Achilles tendon and the medial head of the gastrocnemius muscle? Musculoskelet Surg. 2014;98(2):121-6.", pmid: "24222527", doi: "10.1007/s12306-013-0305-9", type: "other", year: 2014 },
-    { id: "@robinson01", citation: "Robinson JM, Cook JL, Purdam C, et al. The VISA-A questionnaire: a valid and reliable index of the clinical severity of Achilles tendinopathy. Br J Sports Med. 2001;35(5):335-41.", pmid: "11579069", doi: "10.1136/bjsm.35.5.335", type: "other", year: 2001 },
-    { id: "@beyer15", citation: "Beyer R, Kongsgaard M, Hougs Kjaer B, et al. Heavy slow resistance versus eccentric training as treatment for Achilles tendinopathy: a randomized controlled trial. Am J Sports Med. 2015;43(7):1704-11.", pmid: "26018970", doi: "10.1177/0363546515584760", type: "rct", year: 2015 },
-    { id: "@maffulli98", citation: "Maffulli N. The clinical diagnosis of subcutaneous tear of the Achilles tendon. A prospective study in 174 patients. Am J Sports Med. 1998;26(2):266-70.", pmid: "9548122", doi: "10.1177/03635465980260021801", type: "diagnostic-accuracy", year: 1998 },
-    { id: "@reiman14", citation: "Reiman M, Burgi C, Strube E, et al. The utility of clinical measures for the diagnosis of Achilles tendon injuries: a systematic review with meta-analysis. J Athl Train. 2014;49(6):820-9.", pmid: "25243736", doi: "10.4085/1062-6050-49.3.36", type: "diagnostic-accuracy", year: 2014 },
-    { id: "@sc15", citation: "Silbernagel KG, Crossley KM. A proposed return-to-sport program for patients with midportion Achilles tendinopathy: rationale and implementation. J Orthop Sports Phys Ther. 2015;45(11):876-86.", pmid: "26390272", doi: "10.2519/jospt.2015.5885", type: "narrative-review", year: 2015 },
+    { id: "r1", citation: "Chimenti RL, Cychosz CC, Hall MM, et al. Current concepts review update: insertional Achilles tendinopathy. Foot Ankle Int. 2017;38(10):1160-9.", pmid: "28789557", doi: "10.1177/1071100717723127", type: "narrative-review", year: 2017 },
+    { id: "r2", citation: "Cook JL, Purdam C. Is compressive load a factor in the development of tendinopathy? Br J Sports Med. 2012;46(3):163-8.", pmid: "22113234", doi: "10.1136/bjsports-2011-090414", type: "narrative-review", year: 2012 },
+    { id: "r3", citation: "Jonsson P, Alfredson H, Sunding K, et al. New regimen for eccentric calf-muscle training in patients with chronic insertional Achilles tendinopathy: results of a pilot study. Br J Sports Med. 2008;42(9):746-9.", pmid: "18184750", doi: "10.1136/bjsm.2007.039545", type: "cohort", year: 2008 },
+    { id: "r4", citation: "Rompe JD, Furia J, Maffulli N. Eccentric loading compared with shock wave treatment for chronic insertional Achilles tendinopathy. A randomized, controlled trial. J Bone Joint Surg Am. 2008;90(1):52-61.", pmid: "18171957", doi: "10.2106/JBJS.F.01494", type: "rct", year: 2008 },
+    { id: "r5", citation: "Chimenti RL, Flemister AS, Tome J, et al. Patients with insertional Achilles tendinopathy exhibit differences in ankle biomechanics as opposed to strength and range of motion. J Orthop Sports Phys Ther. 2016;46(12):1051-60.", pmid: "27796197", doi: "10.2519/jospt.2016.6462", type: "cross-sectional", year: 2016 },
+    { id: "r6", citation: "Wang CH, Feng Y, Ren Z, et al. Performance of ultrasound to monitor Achilles enthesitis in patients with ankylosing spondylitis during TNF-a antagonist therapy. Clin Rheumatol. 2015;34(6):1073-8.", pmid: "25896532", doi: "10.1007/s10067-015-2939-5", type: "cohort", year: 2015 },
+    { id: "r7", citation: "Tsai WC, Yang YM. Fluoroquinolone-associated tendinopathy. Chang Gung Med J. 2011;34(5):461-7.", pmid: "22035890", type: "narrative-review", year: 2011 },
+    { id: "r8", citation: "Turmo-Garuz A, Rodas G, Balius R, et al. Can local corticosteroid injection in the retrocalcaneal bursa lead to rupture of the Achilles tendon and the medial head of the gastrocnemius muscle? Musculoskelet Surg. 2014;98(2):121-6.", pmid: "24222527", doi: "10.1007/s12306-013-0305-9", type: "other", year: 2014 },
+    { id: "r9", citation: "Wiegerinck JI, Kerkhoffs GM, van Sterkenburg MN, et al. Treatment for insertional Achilles tendinopathy: a systematic review. Knee Surg Sports Traumatol Arthrosc. 2013;21(6):1345-55.", pmid: "23052113", doi: "10.1007/s00167-012-2219-8", type: "systematic-review", year: 2013 },
+    { id: "r10", citation: "Cook JL, Purdam CR. Is tendon pathology a continuum? A pathology model to explain the clinical presentation of load-induced tendinopathy. Br J Sports Med. 2009;43(6):409-16.", pmid: "18812414", doi: "10.1136/bjsm.2008.051193", type: "narrative-review", year: 2009 },
+    { id: "r11", citation: "Maffulli N. The clinical diagnosis of subcutaneous tear of the Achilles tendon. A prospective study in 174 patients. Am J Sports Med. 1998;26(2):266-70.", pmid: "9548122", doi: "10.1177/03635465980260021801", type: "diagnostic-accuracy", year: 1998 },
+    { id: "r12", citation: "Reiman M, Burgi C, Strube E, et al. The utility of clinical measures for the diagnosis of Achilles tendon injuries: a systematic review with meta-analysis. J Athl Train. 2014;49(6):820-9.", pmid: "25243736", doi: "10.4085/1062-6050-49.3.36", type: "diagnostic-accuracy", year: 2014 },
+    { id: "r13", citation: "Robinson JM, Cook JL, Purdam C, et al. The VISA-A questionnaire: a valid and reliable index of the clinical severity of Achilles tendinopathy. Br J Sports Med. 2001;35(5):335-41.", pmid: "11579069", doi: "10.1136/bjsm.35.5.335", type: "other", year: 2001 },
+    { id: "r14", citation: "Beyer R, Kongsgaard M, Hougs Kjaer B, et al. Heavy slow resistance versus eccentric training as treatment for Achilles tendinopathy: a randomized controlled trial. Am J Sports Med. 2015;43(7):1704-11.", pmid: "26018970", doi: "10.1177/0363546515584760", type: "rct", year: 2015 },
+    { id: "r15", citation: "Silbernagel KG, Crossley KM. A proposed return-to-sport program for patients with midportion Achilles tendinopathy: rationale and implementation. J Orthop Sports Phys Ther. 2015;45(11):876-86.", pmid: "26390272", doi: "10.2519/jospt.2015.5885", type: "narrative-review", year: 2015 },
   ],
 
   animation: {
