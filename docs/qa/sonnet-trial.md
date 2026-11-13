@@ -13,3 +13,9 @@ Result (QC, 30 Oct): PASS. Sonnet pages are equal to the Opus baseline on every 
 - Animations: both read correctly end to end.
 Limits: n = 2. No fabricated figure in 72 cited numbers gives a 95% upper bound near 4%. The number screen checks that a number exists in the source, not that the sentence means what the source means. Clinical-meaning review of every claim stays with the Opus review pass.
 Decision: remaining injuries are written by Sonnet; scenes and the final review stay on Opus.
+
+## Full reference audit (QC, 13 Nov 2026), 56 pages
+Every PMID on the site was fetched from PubMed and compared field by field with the page's citation (first author, title words, volume, first page, DOI, year with an allowance for online-versus-print year).
+- 854 references across 56 pages. 854 of 854 exist in PubMed and match: author, title, journal, volume and pages.
+- Three automatic flags were false positives (PubMed stores a forename in the surname field for two authors).
+- Number screen: 1564 sentences with a number and a citation, 389 flagged (25%) because the number is not in the cited abstract. Spot review of the highest-flag pages shows the same benign causes as the trial: numbers spelled as words in the abstract ("twenty-eight elbows"), CIs written "x to y", details only in full text or a trial protocol, ranges the writer synthesised, and clinical-convention dosages. No fabricated figure found. A systematic full-text audit of the flagged statistics is the remaining QA task.

@@ -1,0 +1,454 @@
+// Proximal hamstring tendinopathy — LL3.
+export default {
+  id: "proximal-hamstring-tendinopathy",
+  name: "Proximal hamstring tendinopathy",
+  shortName: "Prox. hamstring tendinopathy",
+  aka: ["PHT", "high hamstring tendinopathy", "hamstring origin tendinopathy", "hamstring tendinosis", "ischial tuberosity tendon pain", "ischial pain", "hamstring insertional tendinopathy", "deep buttock pain"],
+  region: "thigh",
+  tissues: ["tendon"],
+  onset: "gradual",
+  mechanismType: ["overuse", "compression"],
+  populations: ["distance and middle-distance runners", "field-sport athletes", "active middle-aged adults", "people who sit for long periods on hard seats"],
+  sports: ["running", "athletics", "soccer", "australian football", "rugby", "tennis", "hockey", "cycling"],
+  urgency: "routine",
+  summary: "A persistent, load-related pain at the hamstring origin on the ischial tuberosity. Running, hard-surface sitting and deep hip flexion provoke it, and management is education plus progressive tendon loading.",
+  keyFacts: [
+    { label: "Typical recovery", value: "Months rather than weeks. Strength recovery can take 3–6 months or more in long-standing cases" },
+    { label: "Return to sport", value: "Criteria-based: pain-monitoring rules, strength at least equal to the other side, and graded running and hip-flexion exposure" },
+    { label: "Key test", value: "Localised ischial pain with pain-provocation tests (Puranen-Orava, bent-knee stretch, modified bent-knee stretch); good inter-examiner reliability, validity moderate to high" },
+    { label: "Imaging", value: "Not needed to make the diagnosis. MRI or ultrasound can support it or exclude a tear, avulsion or bone injury" },
+    { label: "Peak age", value: "No reliable data. It affects athletic and non-athletic adults" },
+    { label: "Incidence", value: "Not well established. Prevalence data are sparse, although it is reported as common in runners" }
+  ],
+  overview: "Proximal hamstring tendinopathy (PHT) is a persistent, load-related pain condition of the hamstring common origin at the ischial tuberosity. It typically presents as deep, localised lower-buttock pain that is provoked by running, prolonged sitting on hard surfaces, squatting and lunging [r1,r2]. It affects both athletic and non-athletic people, and by the time it is recognised the pain is often long-standing [r1]. It is a tendinopathy, not a tear: the tendon stays attached to the bone.\n\nThe tendinopathy continuum explains how repeated overload can move a tendon from a reactive state through disrepair to degeneration, although structure and pain do not map neatly onto each other [r3,r4]. At the ischial tuberosity, compression of the tendon against bone in higher ranges of hip flexion is thought to add to tensile load, which is why stretching, deep flexion and sitting often provoke symptoms [r2]. The evidence base is thin. A systematic review found only two RCTs and ten case series, all at very low certainty, and concluded that there was insufficient evidence to recommend one intervention over another [r5]. In a 2025 RCT of 100 people, individualised physiotherapy and shockwave therapy produced no difference in global effect or function over 12 months [r6]. Education plus progressive loading with compression managed is the approach most often recommended by experts [r2].",
+
+  epidemiology: {
+    text: "There are sparse prevalence data for PHT, although it is reported to be a common and disabling condition in athletes [r2]. A systematic review describes it as common in track and field, long-distance running and field-based sports [r5]. It makes up a small but significant proportion of hamstring injuries in athletes, especially runners [r15], and it also occurs in sedentary people [r2]. In a surgical case series of 90 athletes (103 operated tendons), 58 were men and 32 were women [r13]. Surgical series are a selected group, so this does not describe the sex split of PHT in general. No incidence figures or prospective risk-factor studies were found in the sources reviewed. The factors below come mainly from clinical reasoning and expert reviews, so treat them as plausible rather than proven.",
+    riskFactors: {
+      intrinsic: [
+        "Reduced hamstring strength and hamstring muscle atrophy, which are commonly seen in PHT (whether they are cause or effect is unclear) [r2]",
+        "Deficits in gluteus maximus, triceps surae and adductor strength, which may increase the demand on the hamstring complex [r2]",
+        "Excessive anterior pelvic tilt or reduced lateral pelvic control, for example a positive Trendelenburg sign, proposed to raise load on the tendon [r2]",
+        "Previous low back pain or ankle injury that has left a kinetic-chain deficit (clinical reasoning, for example reduced hip extension or triceps surae function) [r2]"
+      ],
+      extrinsic: [
+        "Running, especially faster or uphill running, in track and field, distance running and field sports [r2,r5]",
+        "Activities with high hip flexion that compress the tendon against the ischium: lunging, kicking, deep squatting and hamstring stretching [r2]",
+        "Prolonged sitting, particularly on hard surfaces [r2]",
+        "Overloading or underloading of the tendon, including a sudden rise in running or hill volume (modifiable) [r2,r3]"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "PHT has no single injury event. It develops when the demands on the common hamstring tendon exceed its capacity. Two kinds of load act at the ischial tuberosity: tensile load from hamstring contraction, mainly in running, and compressive load from higher ranges of hip flexion or from direct pressure in sitting [r2,r3]. On surgical and imaging studies the tendinopathic change lies next to the tendon's insertion on the ischial tuberosity, which supports compression as a contributing factor [r2]. Tendinopathic tendons are thought to tolerate compression poorly because the tendon swells and its matrix changes [r2].",
+    sequence: [
+      "The person repeats a task that loads the hamstring origin: running (especially faster or uphill), kicking, lunging or deep squatting [r2].",
+      "In running the hamstrings contract hard to extend the hip and control the swinging leg, so the common tendon carries high tensile load [r2].",
+      "In lunging, kicking, squatting, stretching and sitting the hip flexes further, and the tendon is pressed against the ischial tuberosity, which adds compressive load [r2].",
+      "If load accumulates faster than the tendon can adapt, tenocytes respond and the matrix swells with proteoglycan, which gives a reactive tendon [r2,r3].",
+      "With continued overload the tendon attempts repair and the collagen becomes disorganised (disrepair). In some people degenerative change develops [r3].",
+      "The tendon becomes painful and tolerates compression less well, so sitting and hip flexion provoke symptoms at lower thresholds [r2].",
+      "Pain often follows exercise by 12–24 hours. This latent pain is the best guide to how well a load was tolerated [r2]."
+    ],
+    variants: [
+      { name: "Compression-dominant presentation", description: "Pain is mainly provoked by hard-surface sitting, deep squatting, lunging, kicking or hamstring stretching. These tasks compress the tendon at the ischial tuberosity [r2]." },
+      { name: "Tension-dominant (running-related) presentation", description: "Pain is mainly provoked by running, particularly fast or uphill running, because the hamstrings load the tendon in tension [r2]." },
+      { name: "Reactive tendinopathy after a load spike", description: "A sudden rise in running volume, hills or hip-flexion loading can produce a reactive response on top of a tendon with low capacity [r3]." },
+      { name: "Tendinopathy with partial-thickness tear", description: "Tendinopathy and partial-thickness tears often coexist on imaging. Both can often be managed non-operatively, with surgery reserved for refractory cases [r12]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The hamstring common origin sits on the ischial tuberosity. Biceps femoris long head and semitendinosus share a conjoint tendon on the inferomedial facet, and semimembranosus arises by its own broad tendon from a more anterolateral footprint. The ischial bursa overlies the tuberosity and the sciatic nerve passes lateral to it, close to the origin. Gluteus maximus covers the area, and the ischial tuberosity bears the person's weight in sitting. The tendon is therefore loaded in tension by the muscles and also pressed against bone when the hip is flexed or when the person sits. The adductor magnus ischiocondylar part also arises from the tuberosity and shares hip extension with the hamstrings.",
+    structures: [
+      { name: "Proximal (conjoint) hamstring tendon", role: "Transmits hamstring force to the ischium. The site of tendinopathic change in PHT lies next to its insertion [r2]" },
+      { name: "Ischial tuberosity (enthesis)", role: "Bony attachment and weight-bearing surface in sitting. The tendon is compressed against it in deep hip flexion [r2]" },
+      { name: "Semimembranosus tendon", role: "Separate, broad proximal tendon. It was the target of tenotomy in one surgical series for PHT [r13]" },
+      { name: "Biceps femoris long head and semitendinosus", role: "Hip extensors and knee flexors. Their strength and atrophy status are part of the assessment [r2]" },
+      { name: "Sciatic nerve", role: "Lies lateral to the origin. Screen for neural symptoms, and note that nerve exploration was part of the surgical technique in one series [r13]" },
+      { name: "Gluteus maximus, adductor magnus and triceps surae", role: "Kinetic-chain muscles whose strength deficits are common in PHT and are targeted in rehabilitation [r2]" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "PHT is a failure of the tendon to adapt to load, not a rupture. In the continuum model, repeated overload of a tendon that lacks capacity produces a reactive response with swelling from increased proteoglycan, then a disrepair state with disorganised collagen and matrix, and in some people a degenerative state [r3]. The stages overlap and can move in either direction. Later work cautions that staging by structure alone is too simple in what is mainly a pain condition, so pain, function and structure should be considered together [r4].\n\nCompressive load adds to tensile load at the enthesis. In PHT it occurs at the ischial tuberosity in higher ranges of hip flexion or with direct pressure in sitting, and a tendon that has swollen is thought to tolerate it poorly [r2]. Biopsies taken during surgery for PHT in athletes showed typical morphological findings of tendinosis in all 15 specimens, which confirms the degenerative end of the continuum in surgical cases [r13]. A MRI or ultrasound abnormality has not shown a relationship with return to play, so structure alone does not guide management [r19].",
+    structures: [
+      { name: "Proximal hamstring tendon", effect: "Reactive swelling, then disorganised collagen and matrix, and in some people degenerative tendinosis [r3,r13]" },
+      { name: "Ischial tuberosity enthesis", effect: "Site of tendinopathic change and of compression against bone in hip flexion [r2]" },
+      { name: "Semimembranosus tendon", effect: "May be the main focus in some cases (it was the target of tenotomy in a surgical series) [r13]" },
+      { name: "Ischial bursa and adjacent tissue", effect: "May be irritated alongside the tendon in imaging and clinical practice (clinical reasoning; no PHT-specific evidence was identified)" },
+      { name: "Sciatic nerve", effect: "Lies close to the origin. Neural irritation is a differential and should be screened (clinical reasoning) [r13]" }
+    ],
+    muscles: [
+      { name: "Hamstrings", effect: "Reduced strength and hamstring muscle atrophy are commonly seen in PHT. Hamstring voluntary activation may be reduced, and isometric exercise is proposed to improve it through enhanced corticospinal excitability and reduced cortical inhibition (not yet measured in PHT) [r2,r17]." },
+      { name: "Gluteus maximus and adductor magnus", effect: "Strength deficits in agonist muscles are common and may reduce power and load distribution at the hip, which passes load to the hamstring complex [r2]." },
+      { name: "Triceps surae", effect: "Reduced calf strength is common in PHT and is addressed as part of kinetic-chain rehabilitation [r2]." },
+      { name: "Lumbopelvic muscles", effect: "Excessive anterior pelvic tilt or poor lateral pelvic control may raise tendon load and is retrained using a motor-control approach [r2]." }
+    ],
+    cellular: [
+      { phase: "Reactive response", timing: "Days to weeks after overload", description: "Tenocytes activate and produce large proteoglycans. The tendon swells but its collagen structure stays intact [r2,r3]." },
+      { phase: "Tendon disrepair", timing: "Weeks to months", description: "Cell number and matrix production rise as the tendon attempts repair. The collagen and matrix become disrupted [r3]." },
+      { phase: "Degenerative tendinosis", timing: "Months to years", description: "Areas of disorganised matrix with typical morphological features of tendinosis, as found in surgical biopsies [r3,r13]." },
+      { phase: "Load adaptation", timing: "Weeks to months of progressive loading", description: "Progressive loading is intended to restore capacity through improved hamstring activation, muscle-tendon stiffness and tendon matrix adaptation. In PHT these mechanisms are proposed rather than measured [r2]." }
+    ],
+    systems: [
+      { system: "Nervous system and pain processing", effect: "Motor and sensory deficits are present on both sides in unilateral tendinopathy, which suggests a central nervous system influence. This is the basis for training both legs [r2]." },
+      { system: "Musculoskeletal chain", effect: "The hip, pelvis and lower-limb muscles determine how much load reaches the common tendon. Deficits in the triceps surae and hip extensors, or poor lumbopelvic control, can increase it [r2]." },
+      { system: "Local neural tissue", effect: "The sciatic nerve is lateral to the tendon origin. Posterior thigh symptoms with neural features need separate assessment, and sciatic nerve exploration was part of a surgical series [r13]." },
+      { system: "Psychological", effect: "Fear-avoidance beliefs are associated with greater disability and poorer outcome in other tendinopathy trials. A \"hurt versus harm\" message and a screening tool such as the ÖMPSQ-SF can help [r2]." }
+    ]
+  },
+
+  grading: {
+    system: "Tendinopathy continuum (Cook and Purdam): a structural staging model, to be read alongside pain and function [r3,r4]",
+    grades: [
+      { grade: "Reactive tendinopathy", description: "Short-term adaptive response to acute overload. The tendon swells because of increased proteoglycan, but the collagen structure is intact [r2,r3].", prognosis: "Settles with load adjustment and graded re-exposure" },
+      { grade: "Tendon disrepair", description: "Attempted repair with disrupted collagen and matrix if overload continues [r3].", prognosis: "Responds to progressive loading, and some change can partly reverse" },
+      { grade: "Degenerative tendinopathy", description: "Disorganised matrix with typical features of tendinosis, as found on biopsy in surgical cases [r3,r13].", prognosis: "Structure rarely normalises, but capacity can be rebuilt. Recovery is usually slower" }
+    ]
+  },
+
+  timeframes: {
+    summary: "The continuum describes load history, not a calendar, so the stage durations below are illustrative and overlap. PHT is often long-standing at presentation [r1]. Rehabilitation takes months: strength equal to the other side may take 3 to 6 months or more in long-standing cases [r2]. The 2025 RCT followed participants for 52 weeks [r6].",
+    healing: [
+      { phase: "Reactive response to overload", startDay: 0, endDay: 21, description: "Tenocyte activation and matrix swelling after a load spike; settles with load adjustment [r3]" },
+      { phase: "Tendon disrepair", startDay: 14, endDay: 90, description: "Attempted repair with disrupted collagen and matrix if overload continues [r3]" },
+      { phase: "Degenerative change", startDay: 60, endDay: 365, description: "Disorganised matrix with typical tendinosis features in chronic overload [r3,r13]" },
+      { phase: "Load adaptation with progressive loading", startDay: 0, endDay: 180, description: "Staged strengthening and graded compression over months. Strength at least equal to the other side may take 3–6 months or more in long-standing cases [r2]" }
+    ],
+    milestones: [
+      { label: "Isometric holds started", day: 1, note: "Used first for pain relief and to show that loading is safe. Not measured in PHT [r2]" },
+      { label: "Isotonic strength and kinetic-chain work", day: 14, note: "Commonly begun in the first two to three sessions [r2]" },
+      { label: "Graded compression stage", day: 56, note: "Generally after 1–2 months of intervention, once Stage 2 loading has been tolerated for at least 2 weeks [r2]" },
+      { label: "Hamstring strength at least equal to the other side", day: 120, note: "May take 3–6 months or more in long-standing cases [r2]" },
+      { label: "Primary outcome point of the 2025 RCT", day: 182, note: "Outcomes were measured at 4, 12, 26 and 52 weeks [r6]" }
+    ],
+    returnToSport: "Criteria-based. Running often returns in a graded plan within the programme [r2]. In a surgical series, 80 of 90 patients returned to the same level of sport after a mean of 5 months from surgery (range 2–12), which applies only to people who needed surgery [r13]."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Localised lower-buttock pain at the ischial tuberosity, often described as deep buttock pain [r1,r2]",
+      "Pain provoked by running (especially fast or uphill), prolonged sitting on hard surfaces, squatting, lunging and walking uphill [r2]",
+      "Gradual onset with no specific injury event; the pain is often long-standing by the time it is recognised [r1,r19]",
+      "Pain that may radiate into the posterior thigh along the hamstrings [r15]",
+      "Pain that appears hours after activity (latent pain), and difficulty sitting through a meeting, a car trip or a long flight [r2]"
+    ],
+    signs: [
+      "Tenderness over the ischial tuberosity and the hamstring origin",
+      "Pain reproduced by a pain-provocation test: Puranen-Orava, bent-knee stretch or modified bent-knee stretch [r8]",
+      "Pain on loaded hamstring contraction, such as a single-leg bridge hold or a resisted knee curl",
+      "Reduced hamstring strength and hamstring muscle atrophy in long-standing cases [r2]",
+      "No bruising, no palpable defect and no sudden loss of power: these point to a tear or avulsion instead"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Pain location (ischial tuberosity, lower buttock), onset (gradual) and any specific injury event, which would point to a strain or avulsion [r1,r19]",
+      "Aggravating tasks: running (speed and hills), sitting (duration and surface), squatting, lunging, kicking, stretching [r2]",
+      "Running and training load history, including recent spikes, and also periods of reduced loading [r2]",
+      "Latent pain response: how long after activity the pain peaks and how long it takes to settle [r2]",
+      "Neural symptoms (pins and needles, pain below the knee), back pain and any red flags",
+      "Fear-avoidance beliefs and psychosocial factors, for example the ÖMPSQ-SF [r2]",
+      "Previous treatment, including injections, and the exercise programme actually done"
+    ],
+    observation: [
+      "Posture and pelvic position, including excessive anterior pelvic tilt and increased lumbar lordosis [r2]",
+      "Hamstring muscle bulk compared with the other side [r2]",
+      "Gait and running technique: lumbopelvic control, excessive trunk flexion, overstriding and landing noise [r2]",
+      "Single-leg stance and squat: lateral pelvic control (Trendelenburg) [r2]"
+    ],
+    palpation: [
+      "Ischial tuberosity and hamstring origin: tenderness that reproduces the familiar pain",
+      "Distance of tenderness below the tuberosity: tenderness further down the muscle belly suggests a strain",
+      "Gap or defect at the origin (avulsion), which is not found in tendinopathy",
+      "Sciatic nerve region lateral to the tuberosity (deep gluteal syndrome and neural irritation)"
+    ],
+    rangeOfMotion: [
+      "Hip flexion and passive straight-leg raise: pain at end range can come from compression of the tendon, not only from muscle tightness [r2]",
+      "Lumbar and hip screening to exclude referred pain and hip joint pathology"
+    ],
+    strength: [
+      "Isometric hamstring strength, with pain, at several hip and knee angles (hand-held dynamometry if available) [r2]",
+      "Single-leg bridge hold: pain and endurance",
+      "Gluteus maximus, adductor, triceps surae and quadriceps strength, because deficits are common [r2]"
+    ],
+    neuro: [
+      "Slump test and straight-leg raise with sensitisers to screen for neural mechanosensitivity",
+      "Lower-limb neurological examination if neural symptoms are reported or lumbar referral is suspected"
+    ],
+    functional: [
+      "Sitting tolerance on a firm surface",
+      "Deadlift or lunge to the hip flexion angle needed for sport or work: pain and control [r2]",
+      "Single-leg calf raise and hip thrust capacity [r2]",
+      "Running: pain and mechanics at easy speed, faster speed and uphill [r2]"
+    ],
+    specialTests: [
+      { name: "Puranen-Orava test", purpose: "Reproduce ischial pain by loading the hamstring origin in a stretched position", procedure: "Standing, the patient places the heel of the affected leg on a support with the hip flexed to about 90° and the knee extended, then leans forward with a straight back to stretch the hamstrings.", positive: "Reproduction of the familiar pain at the ischial tuberosity. In 92 athletes (46 with PHT), inter-examiner reliability for the three pain-provocation tests was high (ICC 0.82–0.88) and intra-examiner reliability high to very high (ICC 0.87–0.93). Validity was moderate to high, and sensitivity and specificity figures were not available in the abstract that was reviewed.", refs: ["r8"] },
+      { name: "Bent-knee stretch test", purpose: "Reproduce ischial pain with the hip and knee flexed and the knee then extended", procedure: "Supine, the examiner flexes the patient's hip and knee fully, then extends the knee while the hip stays flexed.", positive: "Familiar pain at the ischial tuberosity during the knee extension. Reliability is as given for the Puranen-Orava test. The authors advised using these tests together with other objective measures such as MRI [r8].", refs: ["r8"] },
+      { name: "Modified bent-knee stretch test", purpose: "A variant of the bent-knee stretch test with the highest validity of the three tests studied", procedure: "A modified version of the bent-knee stretch test; use the protocol described by Cacchio and colleagues [r8]. The exact protocol was not available in the abstract that was reviewed.", positive: "Familiar pain at the ischial tuberosity. It had the highest validity of the three tests, and sensitivity and specificity figures were not available in the abstract reviewed [r8].", refs: ["r8"] },
+      { name: "Isometric single-leg bridge hold", purpose: "Check pain on a hamstring contraction and the tendon's loading tolerance", procedure: "Supine with the heel on a support, lift into a single-leg bridge and hold. Rate the pain on a 0–10 scale.", positive: "Reproduction of the familiar ischial pain, which can then be used as a baseline for load monitoring. No accuracy data were identified.", refs: [] },
+      { name: "Slump test", purpose: "Distinguish neural mechanosensitivity or referral from tendon pain", procedure: "Seated slump with knee extension and ankle dorsiflexion, then release neck flexion.", positive: "Reproduction of posterior thigh or buttock symptoms that changes with neck movement.", refs: [] }
+    ],
+    clinicalRules: [
+      { name: "Pain-monitoring rules during loading", description: "In the programme described by Rich and colleagues, some pain is accepted, with less than 4/10 the most commonly used threshold in tendinopathy. An increase of 2/10 or less within 24 hours is acceptable, and an increase of 3/10 or more persisting beyond 24 hours means the load should be modified. Stage 5 (energy storage and release) uses a lower threshold of 2/10 or less [r2]. These are expert conventions, not validated rules." },
+      { name: "No validated diagnostic rule", description: "No validated clinical prediction rule for PHT was identified. The diagnosis rests on localised pain, aggravating tasks, tenderness at the tuberosity, provocation tests and exclusion of other causes [r1,r8]." }
+    ],
+    outcomeMeasures: [
+      { name: "VISA-H (Victorian Institute of Sport Assessment, proximal hamstring tendons)", use: "Eight-item questionnaire of pain, function and sport. In its development study it had a Cronbach alpha of 0.84, test-retest ICC 0.90–0.95 and a minimum clinically important difference of 22 points (small sample, 20 non-surgical and 10 surgical patients) [r9]. A systematic review found very low-quality evidence of insufficient content validity and low-quality evidence of insufficient unidimensionality for the VISA-H, so interpret with care [r10]." },
+      { name: "Global rating of change (7-point scale)", use: "A primary outcome in the 2025 RCT, measured at 4, 12, 26 and 52 weeks [r6]" },
+      { name: "Pain numerical rating scale during and after loading", use: "Used to apply pain-monitoring rules, including pain during exercise and the 24-hour latent pain response [r2]" },
+      { name: "Isometric hamstring strength and single-leg capacity tests", use: "Strength at least equal to the other side is a stage goal in the programme [r2]" },
+      { name: "ÖMPSQ-SF (Örebro Musculoskeletal Pain Screening Questionnaire, short form)", use: "Psychosocial screen, including a fear-avoidance item. The programme places greater emphasis on the 'hurt versus harm' message when the fear-avoidance score is high [r2]" }
+    ],
+    imaging: [
+      { modality: "Ultrasound", indication: "To support the diagnosis or exclude a tear when the picture is unclear, or to guide an injection", findings: "Tendon thickening and heterogeneity at the origin. Imaging has not demonstrated a correlation with return to play [r19]." },
+      { modality: "MRI", indication: "Atypical presentation, suspected partial tear or avulsion, refractory symptoms or planning surgery", findings: "Tendinopathic change next to the tendon insertion at the ischial tuberosity [r2]. MRI can also identify tears, bone oedema at the tuberosity and an irritated ischial bursa. The authors of the provocation-test study advised using MRI alongside clinical tests [r8]." },
+      { modality: "Plain radiograph", indication: "Adolescents with ischial pain after sprinting or stretching, to look for an apophyseal avulsion; also to exclude bony causes", findings: "Usually normal in tendinopathy. An avulsed apophyseal fragment points to a different diagnosis." }
+    ]
+  },
+
+  differentials: [
+    { name: "Acute hamstring strain", id: "hamstring-strain", distinguishing: "A sudden event during sprinting or stretching, tenderness further down the muscle belly and often bruising. PHT is gradual, with pain at the ischial tuberosity." },
+    { name: "Proximal hamstring tendon avulsion", id: "proximal-hamstring-avulsion", distinguishing: "Sudden forced hip flexion with the knee extended, often a pop, extensive bruising, a gap at the tuberosity and marked weakness. Needs urgent MRI and a surgical opinion." },
+    { name: "Pelvic apophyseal avulsion (ischial tuberosity)", id: "pelvic-apophyseal-avulsion", distinguishing: "Adolescent with an open apophysis, sudden pain after sprinting or stretching, and a fragment on radiograph." },
+    { name: "Deep gluteal syndrome", id: "deep-gluteal-syndrome", distinguishing: "Buttock pain with sciatic-type symptoms, worse sitting; tenderness in the sciatic notch region rather than at the tuberosity itself, and neural symptoms may predominate." },
+    { name: "Lumbar radicular or referred pain", id: "lumbar-disc-herniation", distinguishing: "Back pain, neural symptoms below the knee, positive slump or straight-leg raise, and no focal tenderness at the tuberosity." },
+    { name: "Sacroiliac joint pain", id: "sacroiliac-joint-pain", distinguishing: "Pain over the posterior sacroiliac region, provoked by pelvic provocation tests, with no focal tenderness at the ischial tuberosity." },
+    { name: "Ischial bursitis", distinguishing: "Localised tenderness directly over the tuberosity with sitting pain; it can coexist with tendinopathy, and it is hard to separate clinically." },
+    { name: "Stress reaction or fracture of the ischium or pubic ramus", id: "bone-stress-injury", distinguishing: "Bony tenderness, pain at rest or at night, and a rapid rise in running volume. MRI shows bone oedema or a fracture line." }
+  ],
+  redFlags: [
+    "Sudden pain with a pop during forced hip flexion with the knee extended, extensive bruising, a gap at the tuberosity or marked weakness: suspect proximal hamstring tendon avulsion. Arrange urgent MRI and an orthopaedic opinion.",
+    "Adolescent with ischial pain after a sprint or forceful stretch: radiograph to look for an apophyseal avulsion fracture.",
+    "Saddle anaesthesia, bladder or bowel change, or bilateral or progressive neurological symptoms: suspect cauda equina syndrome and refer to emergency immediately.",
+    "Constant or night pain unrelated to load, with weight loss, fever, a history of cancer or being generally unwell: suspect bone tumour, infection or stress fracture. Arrange urgent imaging and medical review.",
+    "Calf swelling or breathlessness after injury or immobility: suspect DVT or pulmonary embolism and arrange same-day medical review.",
+    "A recent course of fluoroquinolone antibiotics or corticosteroid injection near the tendon, with sudden new pain or weakness: discuss with a doctor, as tendon rupture risk is raised."
+  ],
+
+  management: {
+    principles: "Education and exercise are the most commonly recommended treatment for PHT [r2]. Trial evidence is limited. A systematic review of 12 studies (2 RCTs and 10 case series) found very low certainty evidence and insufficient evidence to recommend any one intervention over another, and suggested trying approaches that have worked in other tendinopathies [r5]. No RCT had investigated rehabilitation of PHT when it was reviewed in 2016 [r1]. A 2025 RCT of 100 people found that six sessions of individualised physiotherapy and six sessions of shockwave therapy produced no difference in global effect or function at 4, 12, 26 or 52 weeks, with both groups receiving the same advice and education [r6]. The practical approach is to explain the condition, manage compression, monitor the latent pain response, and progress loading through isometric, isotonic, kinetic-chain, graded compression and energy-storage stages [r2]. Reviews differ on hip angle in exercise. One suggested progressive loading with the hip at about 110° of flexion and the knee flexed 45–90° [r11], whereas the individualised programme first minimises compression and adds hip flexion in a dedicated later stage [r2]. Neither approach has been tested against the other. Injection and surgery are options for refractory cases after a trial of loading [r12].",
+    medical: [
+      { name: "Corticosteroid injection", description: "Evidence is limited to two case series [r5], and results of corticosteroid and platelet-rich plasma injections for hamstring tendinopathy are mixed [r19]. A 2023 international consensus on hamstring injuries did not support corticosteroids without further evidence [r20]. Routine use is not supported.", evidence: "very-limited", recommendation: "not-recommended", refs: ["r5", "r19", "r20"] },
+      { name: "Platelet-rich plasma (PRP) or autologous blood injection", description: "Doctor-led option after a failed trial of loading. A systematic review found one RCT of PRP and one of autologous whole blood, with very low-level evidence of no difference between them [r5]. Results across studies are mixed [r19].", evidence: "very-limited", recommendation: "consider", refs: ["r5", "r19"] },
+      { name: "Surgery (for example tenotomy or debridement of the tendon origin)", description: "Reserved for refractory cases that have failed conservative care [r12]. In a case series of 103 operated tendons in athletes, outcomes were excellent in 62, good in 30, fair in 5 and poor in 6, and 80 of 90 patients returned to the same level of sport after a mean of 5 months (case series, level 4) [r13]. A systematic review judged the evidence for surgery to be of very low quality [r5].", evidence: "limited", recommendation: "consider", refs: ["r12", "r13", "r5"] },
+      { name: "Simple analgesia or short courses of anti-inflammatory medication", description: "May ease pain enough to allow exercise. Evidence that anti-inflammatory drugs change the course of PHT was not identified in the sources reviewed.", evidence: "expert-opinion", recommendation: "consider", refs: [] }
+    ],
+    physio: [
+      { name: "Education, load management and compression management", description: "Explain the diagnosis and the load-capacity model, give a 'hurt versus harm' message, and teach the latent pain rule. Reduce compression by limiting prolonged and hard-surface sitting, using a soft or pressure-dispersing cushion, and avoiding hamstring stretching and deep hip-flexion positions at first [r2]. Education is the most commonly recommended element and was given to both groups in the 2025 RCT [r2,r6].", evidence: "expert-opinion", recommendation: "recommended", refs: ["r2", "r6"] },
+      { name: "Staged progressive loading programme (isometric, isotonic, kinetic chain, graded compression, energy storage)", description: "The programme in [r2] has five stages, with pain monitoring throughout. It was one arm of the 2025 RCT, where it did not differ from shockwave therapy [r6]. The evidence for any single PHT loading programme is limited, and the recommendation rests on expert opinion and principles from other tendinopathies [r1,r2,r5].", evidence: "limited", recommendation: "recommended", refs: ["r2", "r6", "r1", "r5"] },
+      { name: "Isometric holds for pain relief", description: "Five holds of 30–45 seconds, up to four times a day for pain relief [r2]. The analgesic effect was shown in patellar tendinopathy in a six-player crossover study, but it has not been measured in PHT [r2,r17].", evidence: "very-limited", recommendation: "consider", refs: ["r2", "r17"] },
+      { name: "Heavy isotonic strengthening of the hamstrings", description: "Hamstring bridge or curl, starting at 2–3 sets of 10–15 repetitions and progressing to 4–5 sets of 6–8 repetitions with a slow tempo [r2]. Graded strengthening has helped other lower-limb tendinopathies, but PHT-specific trials are lacking [r2,r18].", evidence: "limited", recommendation: "recommended", refs: ["r2", "r18"] },
+      { name: "Kinetic-chain strengthening and lumbopelvic control", description: "Gluteus maximus, adductor, triceps surae and quadriceps work, plus lumbopelvic control retraining for excessive anterior tilt or poor lateral pelvic control. It is recommended for lower-limb tendinopathies but has not been tested in a PHT RCT [r2].", evidence: "expert-opinion", recommendation: "consider", refs: ["r2"] },
+      { name: "Graded reintroduction of compressive load", description: "A deadlift, lunge or elevated bridge with progressive hip flexion, begun once Stage 2 has been tolerated for at least two weeks and stopped when sport or work demands are met [r2]. It reflects clinical expert opinion.", evidence: "expert-opinion", recommendation: "consider", refs: ["r2"] },
+      { name: "Extracorporeal shockwave therapy (ESWT)", description: "In a small RCT of 40 professional athletes, 2500 impulses per session at 0.18 mJ/mm² for 4 weeks produced a 50% or greater pain reduction at 3 months in 85% versus 10% with a traditional conservative programme (NSAIDs, physiotherapy and hamstring exercises) [r7]. That comparison exercise programme did not match expert recommendations [r2]. In the 2025 RCT, physiotherapy and shockwave did not differ, although shockwave had greater satisfaction at some time points [r6]. A systematic review rated the evidence as very low [r5].", evidence: "limited", recommendation: "consider", refs: ["r7", "r6", "r5", "r2"] },
+      { name: "Eccentric hamstring loading as the sole programme", description: "Eccentric strengthening is widely used for PHT [r12,r15]. Evidence from Achilles and patellar tendinopathy shows little support for isolating the eccentric phase [r18], and high-strain lengthening exercises can provoke symptoms early. Use eccentric work as part of a progression, not as the whole programme.", evidence: "limited", recommendation: "consider", refs: ["r12", "r15", "r18"] },
+      { name: "Hamstring stretching as a treatment", description: "Hamstring stretching compresses the tendon against the ischial tuberosity and is a recognised aggravating activity, so participants are advised to avoid it early on [r2]. No trial supports stretching as a treatment for PHT.", evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r2"] },
+      { name: "Passive modalities alone (massage, therapeutic ultrasound, laser, manual therapy)", description: "No PHT-specific evidence was identified. Passive treatment does not build tendon capacity (clinical reasoning). Use it only to make loading possible.", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] },
+      { name: "Complete rest or prolonged load avoidance", description: "Underloading as well as overloading can produce tendinopathy. Reduce provocative loads but keep the tendon exercised, and substitute low-compression aerobic work such as swimming or cross-trainer [r2].", evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r2"] }
+    ],
+    education: [
+      "PHT is a load-related tendon problem at the bottom of the buttock. The tendon is not torn, and its capacity can be rebuilt with progressive loading.",
+      "Expect months, not weeks. Strength recovery can take three to six months or more when the problem is long-standing.",
+      "Sitting on hard seats, deep squatting, lunging and hamstring stretching press the tendon against the bone. Reduce them early on, and add them back gradually.",
+      "Some pain during exercise is acceptable. Pain that rises by 3/10 or more and lasts beyond the next day means the load was too high. Mild, short-lived pain is not a sign of damage.",
+      "Do not stretch the hamstring to treat the problem. Stretching tends to make it worse.",
+      "Keep training the rest of the body and keep running within your symptom limits if possible. Complete rest does not rebuild the tendon."
+    ]
+  },
+
+  rehab: {
+    overview: "Progression follows the staged, individualised programme of Rich and colleagues, which applies tendinopathy principles to the proximal hamstring complex: isometric, isotonic strength, kinetic chain, graded compressive load and energy storage [r2]. The programme comes from a clinical commentary (level 5 evidence) that was also the physiotherapy arm of a 2025 RCT [r2,r6]. Dosages below are taken from that programme and from clinical practice, and the evidence that any single PHT programme is superior is limited [r5]. Move to the next stage when the objective criteria are met, not when a set number of weeks has passed. Stage timeframes are typical, and a long-standing or irritable tendon will take longer. As a working rule, pain during exercise should stay below 4/10, and a rise of 2/10 or less is acceptable within 24 hours. A rise of 3/10 or more beyond 24 hours means the load should be reduced [r2]. Exercise both legs, because bilateral motor deficits are present in unilateral tendinopathy [r2]. Avoid hamstring stretching, deep hip flexion and hard-surface sitting at first, then reintroduce compression deliberately in Stage 3 [r2].",
+    stages: [
+      {
+        name: "Settle pain & isometric loading",
+        timeframe: "Weeks 0–2 (continued as needed)",
+        goals: ["Reduce pain if it is high and allow a warm-up for later exercise", "Show the person that controlled hamstring loading is safe", "Improve voluntary hamstring activation", "Minimise compression and teach pain monitoring"],
+        precautions: ["Avoid hamstring stretching, deep hip flexion and prolonged hard-surface sitting at first [r2]", "Allow pain of up to 4/10 on the first two repetitions of a hold if it eases, and modify the load if it stays above 4/10 [r2]", "Do not rest completely: keep other training going [r2]"],
+        exercises: [
+          { name: "Isometric hamstring bridge (double-leg, progressing to single-leg)", dosage: "5 × 30–45 s holds with 90 s rest, up to 4 times a day for pain relief, or about 3 times a week as the first exercise of a session [r2]", cues: "Keep the pelvis level, the leg still and the lumbar spine from over-arching. Progress by reducing leg support.", figure: { pose: "ex-hamstring-bridge", view: "lateral", props: ["box"] } },
+          { name: "Isometric prone or standing hamstring curl (alternative)", dosage: "5 × 30–45 s holds with 90 s rest, as for the bridge [r2]", cues: "Use this if the bridge is limited, for example by back pain" },
+          { name: "Compression-minimising sitting set-up", dosage: "Every day: shorten the time spent sitting on hard seats and use a soft or pressure-dispersing cushion [r2]", cues: "Stand up regularly and avoid sitting on the tuberosity for long periods" },
+          { name: "Low-compression aerobic conditioning (swimming, cross-trainer or easy cycling as tolerated)", dosage: "20–30 minutes, 3–4 times a week, within symptom limits (clinical convention)", cues: "Stay below the pain threshold; stop cycling if the saddle provokes symptoms" }
+        ],
+        progressionCriteria: ["Pain at or below 4/10 by the end of the second hold [r2]", "Completes five holds of up to 45 s with a high-quality contraction (no shaking, pelvis level) [r2]", "No latent pain increase of 3/10 or more beyond 24 hours [r2]"]
+      },
+      {
+        name: "Strength & kinetic chain",
+        timeframe: "Weeks 2–12 and beyond",
+        goals: ["Increase hamstring strength and endurance", "Reach hamstring strength at least equal to the other side", "Correct calf and hip-extensor deficits", "Improve lumbopelvic control"],
+        precautions: ["Increase load only when the previous session settles within 24 hours [r2]", "Start at lower load and higher repetitions if deconditioned or if pain is high [r2]", "Use a slow tempo and avoid deep hip flexion in this stage [r2]"],
+        exercises: [
+          { name: "Isotonic hamstring bridge (double-leg to single-leg, progress by reducing leg support)", dosage: "Start at 2–3 × 10–15, progressing to 4–5 × 6–8 (2 s up, 3 s down, 1 s rest, 1 min between sets), 3 times a week or every second day [r2]", cues: "Choose a load where you could not complete another set with good technique", figure: { pose: "ex-hamstring-bridge", view: "lateral", props: ["box"] } },
+          { name: "Prone or standing hamstring curl (isotonic)", dosage: "As for the isotonic bridge [r2]", cues: "Slow and controlled; exercise both legs, varying the load between them" },
+          { name: "Hip thrust (double-leg, then weighted, then single-leg)", dosage: "2 × up to 20, progressing to 3 × 6–10 (2 s up, 2 s down), 3 times a week or every second day [r2]", cues: "Drive through the heel to full hip extension and keep the ribs down", figure: { pose: "ex-hip-thrust", view: "lateral", props: ["bench"] } },
+          { name: "Calf raise (double-leg, then single-leg, then weighted)", dosage: "2 × up to 20, progressing to 3 × 6–10 (2 s up, 2 s down) [r2]", cues: "Full range with a pause at the top", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
+          { name: "Standing resistance-band hip abduction (lumbopelvic control)", dosage: "Up to 60 repetitions in sets of 3–10, with a motor-control focus, 3 times a week [r2]", cues: "Keep the pelvis level and avoid leaning the trunk", figure: { pose: "ex-hip-abduction-standing", view: "anterior", props: ["resistance-band"] } },
+          { name: "Step-up and seated knee extension (if the quadriceps are weak)", dosage: "3 × 6–10 each side [r2]", cues: "Control the pelvis and knee", figure: { pose: "ex-step-up", view: "lateral", props: ["step"] } }
+        ],
+        progressionCriteria: ["Hamstring strength at least equal to the unaffected side (this may take 3–6 months or more in long-standing cases) [r2]", "About 22–25 single-leg calf raises and 3 × 10 single-leg hip thrusts with good lumbopelvic control [r2]", "Pain at or below 4/10 on all repetitions and no latent pain increase of 3/10 or more beyond 24 hours [r2]", "Stage 2 loading tolerated for at least 2 weeks before compression is added [r2]"]
+      },
+      {
+        name: "Graded compression",
+        timeframe: "From about weeks 4–8, individualised",
+        goals: ["Reintroduce hip flexion under load, matched to the person's sport and work", "Build tolerance to the hip flexion angle that the person needs", "Stop this stage once the required angle is met"],
+        precautions: ["Add hip flexion angle gradually, and load first near the weight the person needs functionally [r2]", "Stop progressing if symptoms rise for more than 24 hours [r2]", "Heavy, full-depth deadlifts may be avoided long term in some people [r2]"],
+        exercises: [
+          { name: "Double-leg deadlift with progressive hip flexion", dosage: "2 × 4–6, progressing to 3 × 6–8 (2 s up, 2 s down, 1 s rest, 2 min between sets), 3 times a week or every second day; add hip flexion first [r2]", cues: "Neutral spine and a hip hinge; increase the depth only if the previous session settled", figure: { pose: "ex-rdl", view: "lateral", props: ["dumbbell"] } },
+          { name: "Single-leg deadlift with progressive hip flexion", dosage: "As for the double-leg version [r2]", cues: "Keep the pelvis level and the standing knee soft", figure: { pose: "ex-rdl", view: "lateral", props: ["dumbbell"] } },
+          { name: "Lunge with modified depth", dosage: "2 × 4–6, progressing to 3 × 6–8, as above [r2]", cues: "Control depth and start shallow", figure: { pose: "ex-lunge", view: "lateral" } },
+          { name: "Single-leg bridge with the foot on a step (elevated bridge)", dosage: "As for the deadlift if a deadlift cannot be done, for example because of back pain [r2]", cues: "Increase the height of the step to increase hip flexion", figure: { pose: "ex-single-leg-bridge", view: "lateral", props: ["mat"] } }
+        ],
+        progressionCriteria: ["2–3 sessions completed at the hip flexion angle needed for sport or work with no significant symptom increase [r2]", "No latent pain increase of 3/10 or more beyond 24 hours [r2]", "Sitting on a firm surface tolerated for the time the person needs (clinical convention)"]
+      },
+      {
+        name: "Energy storage & return to running and sport",
+        timeframe: "From about weeks 10–12, individualised",
+        goals: ["Restore energy storage and release in the hamstring and lower limb", "Return to running and to sport-specific demands", "Set a long-term maintenance plan"],
+        precautions: ["Use a lower pain limit in this stage (2/10 or less) because energy storage and release are more provocative [r2]", "Keep consecutive high-load days to a minimum and avoid sudden spikes in volume [r2]", "Only people with high energy storage and release demands need the full stage. Runners usually move to a graded running plan [r2]"],
+        exercises: [
+          { name: "Split squat (progressing load and speed)", dosage: "3 × 8–20, 2–3 days a week [r2]", cues: "Torso upright and a quiet landing; add speed only if the tendon tolerates it", figure: { pose: "ex-split-squat", view: "lateral", props: ["dumbbell"] } },
+          { name: "Sport-specific drills (for example a modified lunge for a racquet sport, or a 'hamstring scoop' to simulate picking up a ball)", dosage: "3 × 8–20 repetitions of 1–2 drills, 2–3 days a week [r2]", cues: "Add the storage phase first and the release phase later" },
+          { name: "Graded return to running", dosage: "First run: 2 minutes of running in 1-minute intervals within a longer walk. Add 1–3 minutes per run, then distance or speed once 20 minutes is reached, then hills; intense runs about twice a week (3 times for elite or high-volume runners) [r2]", cues: "Watch the latent response; run on easy terrain first" },
+          { name: "Maintenance strength", dosage: "2–3 exercises from stages 1–3, twice a week indefinitely [r2]", cues: "Keep the loads heavy and the tempo slow", figure: { pose: "ex-hamstring-bridge", view: "lateral", props: ["box"] } }
+        ],
+        progressionCriteria: ["Pain at or below 2/10 during stage exercises and no latent increase beyond 24 hours [r2]", "Training drills that simulate sport demands tolerated with no significant symptom increase [r2]", "Full training, including intensity and hills, tolerated for at least 2 weeks (clinical convention)", "Participant confidence and a maintenance plan agreed with the coach and clinician"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "No validated return-to-sport (RTS) criteria for PHT were identified in the sources reviewed. The criteria below come from the programme in [r2] and from clinical convention",
+      "Pain at or below the stage limit (2/10 or less in the energy-storage stage) with no latent pain increase beyond 24 hours [r2]",
+      "Hamstring strength at least equal to the other side, with the required kinetic-chain capacity, for example about 22–25 single-leg calf raises and 3 × 10 single-leg hip thrusts [r2]",
+      "Tolerates the hip flexion angle needed for the sport or work in loaded exercise with no significant symptom increase [r2]",
+      "Tolerates graded running, including speed and hills, with no rise in symptoms (a first run of 2 minutes, building to 20 minutes before adding speed or hills) [r2]",
+      "Sustained VISA-H improvement; the minimum clinically important difference reported in its development study was 22 points [r9]"
+    ],
+    tests: ["VISA-H questionnaire", "Isometric hamstring strength (limb symmetry)", "Single-leg calf raise count and single-leg hip thrust capacity", "Loaded deadlift or lunge at the sport-required hip angle", "Graded running tolerance and next-day pain response"]
+  },
+  prognosis: "PHT is often long-standing by the time it is recognised [r1], and strength recovery can take 3–6 months or more [r2]. In the 2025 RCT of 100 people, 88% were followed up at 12 months and both groups did similarly, with no significant difference in global effect or function at any time point [r6]. No natural-history, long-term recurrence or prognostic-factor studies were identified in the sources reviewed. Among people who needed surgery after failed conservative care, 80 of 90 returned to the same level of sport after a mean of 5 months [r13]. High fear-avoidance has been associated with poorer outcomes in other tendinopathies [r2].",
+  prevention: [
+    "No PHT-specific prevention trials were identified. The suggestions below are clinical reasoning drawn from the programme in [r2] and from tendinopathy principles.",
+    "Build running and hill volume gradually and avoid sudden spikes. Avoid consecutive days of high tendon load [r2].",
+    "Keep up strength training of the hamstrings, gluteus maximus, adductors and calves; a maintenance programme of 2–3 exercises twice a week is suggested [r2].",
+    "Reduce long periods of sitting on hard surfaces and use a cushion if symptoms recur [r2].",
+    "Address lumbopelvic control and running technique if overstriding, excessive trunk flexion or excessive anterior pelvic tilt is present [r2]."
+  ],
+  clinicalPearls: [
+    "A gradual lower-buttock pain with sitting and running, with no injury event and a tender ischial tuberosity, is PHT until proven otherwise. A sudden event with bruising and weakness is a strain or avulsion [r1,r19].",
+    "Stretching is the trap. Hamstring stretching compresses the tendon against the ischial tuberosity, so it often makes PHT worse [r2]. Load the tendon instead.",
+    "Compression is as important as strength. Check sitting and sport-specific hip flexion, then reintroduce compression deliberately and only to the angle the person needs [r2].",
+    "Latent pain is the best guide to tolerance. Ask how the tendon felt 12–24 hours after the session, not just during it [r2].",
+    "Do not rely on imaging. Scan findings have not been shown to relate to return to play, and the diagnosis is clinical [r19,r8].",
+    "Be honest about the evidence. Physiotherapy and shockwave did equally well in the largest RCT, and a very low certainty review could not recommend one treatment over another [r5,r6]."
+  ],
+  related: ["hamstring-strain", "proximal-hamstring-avulsion", "pelvic-apophyseal-avulsion", "deep-gluteal-syndrome", "gluteal-tendinopathy", "sacroiliac-joint-pain"],
+
+  references: [
+    { id: "r1", citation: "Goom TSH, Malliaras P, Reiman MP, et al. Proximal hamstring tendinopathy: clinical aspects of assessment and management. J Orthop Sports Phys Ther. 2016;46(6):483-93.", pmid: "27084841", doi: "10.2519/jospt.2016.5986", type: "narrative-review", year: 2016 },
+    { id: "r2", citation: "Rich A, Cook J, Hahne A, et al. Treatment of proximal hamstring tendinopathy with individualized physiotherapy: a clinical commentary. Int J Sports Phys Ther. 2025;20(6):892-910.", pmid: "40469642", doi: "10.26603/001c.138308", type: "narrative-review", year: 2025 },
+    { id: "r3", citation: "Cook JL, Purdam CR. Is tendon pathology a continuum? A pathology model to explain the clinical presentation of load-induced tendinopathy. Br J Sports Med. 2009;43(6):409-16.", pmid: "18812414", doi: "10.1136/bjsm.2008.051193", type: "narrative-review", year: 2009 },
+    { id: "r4", citation: "Cook JL, Rio E, Purdam CR, et al. Revisiting the continuum model of tendon pathology: what is its merit in clinical practice and research? Br J Sports Med. 2016;50(19):1187-91.", pmid: "27127294", doi: "10.1136/bjsports-2015-095422", type: "narrative-review", year: 2016 },
+    { id: "r5", citation: "Nasser AM, Vicenzino B, Grimaldi A, et al. Proximal hamstring tendinopathy: a systematic review of interventions. Int J Sports Phys Ther. 2021;16(2):288-305.", pmid: "33842025", doi: "10.26603/001c.21250", type: "systematic-review", year: 2021 },
+    { id: "r6", citation: "Rich A, Ford J, Cook J, et al. Physiotherapy compared with shockwave therapy for the treatment of proximal hamstring tendinopathy: a randomized controlled trial. Am J Sports Med. 2025;53(14):3396-407.", pmid: "41243328", doi: "10.1177/03635465251391134", type: "rct", year: 2025 },
+    { id: "r7", citation: "Cacchio A, Rompe JD, Furia JP, et al. Shockwave therapy for the treatment of chronic proximal hamstring tendinopathy in professional athletes. Am J Sports Med. 2011;39(1):146-53.", pmid: "20855554", doi: "10.1177/0363546510379324", type: "rct", year: 2011 },
+    { id: "r8", citation: "Cacchio A, Borra F, Severini G, et al. Reliability and validity of three pain provocation tests used for the diagnosis of chronic proximal hamstring tendinopathy. Br J Sports Med. 2012;46(12):883-7.", pmid: "22219215", doi: "10.1136/bjsports-2011-090325", type: "diagnostic-accuracy", year: 2012 },
+    { id: "r9", citation: "Cacchio A, De Paulis F, Maffulli N. Development and validation of a new VISA questionnaire (VISA-H) for patients with proximal hamstring tendinopathy. Br J Sports Med. 2014;48(6):448-52.", pmid: "23470447", doi: "10.1136/bjsports-2012-091552", type: "cohort", year: 2014 },
+    { id: "r10", citation: "Korakakis V, Kotsifaki A, Stefanakis M, et al. Evaluating lower limb tendinopathy with Victorian Institute of Sport Assessment (VISA) questionnaires: a systematic review shows very-low-quality evidence for their content and structural validity-part I. Knee Surg Sports Traumatol Arthrosc. 2021;29(9):2749-64.", pmid: "34019117", doi: "10.1007/s00167-021-06598-5", type: "systematic-review", year: 2021 },
+    { id: "r11", citation: "Dizon P, Jeanfavre M, Leff G, et al. Comparison of conservative interventions for proximal hamstring tendinopathy: a systematic review and recommendations for rehabilitation. Sports (Basel). 2023;11(3):53.", pmid: "36976939", doi: "10.3390/sports11030053", type: "systematic-review", year: 2023 },
+    { id: "r12", citation: "Degen RM. Proximal hamstring injuries: management of tendinopathy and avulsion injuries. Curr Rev Musculoskelet Med. 2019;12(2):138-46.", pmid: "30806898", doi: "10.1007/s12178-019-09541-x", type: "narrative-review", year: 2019 },
+    { id: "r13", citation: "Lempainen L, Sarimo J, Mattila K, et al. Proximal hamstring tendinopathy: results of surgical management and histopathologic findings. Am J Sports Med. 2009;37(4):727-34.", pmid: "19218559", doi: "10.1177/0363546508330129", type: "cohort", year: 2009 },
+    { id: "r14", citation: "Grimaldi A, Mellor R, Nasser A, et al. Current and future advances in practice: tendinopathies of the hip. Rheumatol Adv Pract. 2024;8(2):rkae022.", pmid: "38601140", doi: "10.1093/rap/rkae022", type: "narrative-review", year: 2024 },
+    { id: "r15", citation: "Beatty NR, Félix I, Hettler J, et al. Rehabilitation and prevention of proximal hamstring tendinopathy. Curr Sports Med Rep. 2017;16(3):162-71.", pmid: "28498225", doi: "10.1249/JSR.0000000000000355", type: "narrative-review", year: 2017 },
+    { id: "r17", citation: "Rio E, Kidgell D, Purdam C, et al. Isometric exercise induces analgesia and reduces inhibition in patellar tendinopathy. Br J Sports Med. 2015;49(19):1277-83.", pmid: "25979840", doi: "10.1136/bjsports-2014-094386", type: "rct", year: 2015 },
+    { id: "r18", citation: "Malliaras P, Barton CJ, Reeves ND, et al. Achilles and patellar tendinopathy loading programmes: a systematic review comparing clinical outcomes and identifying potential mechanisms for effectiveness. Sports Med. 2013;43(4):267-86.", pmid: "23494258", doi: "10.1007/s40279-013-0019-z", type: "systematic-review", year: 2013 },
+    { id: "r19", citation: "Chu SK, Rho ME. Hamstring injuries in the athlete: diagnosis, treatment, and return to play. Curr Sports Med Rep. 2016;15(3):184-90.", pmid: "27172083", doi: "10.1249/JSR.0000000000000264", type: "narrative-review", year: 2016 },
+    { id: "r20", citation: "Plastow R, Kerkhoffs GMMJ, Wood D, et al. London International Consensus and Delphi study on hamstring injuries part 2: operative management. Br J Sports Med. 2023;57(5):266-77.", pmid: "36650033", doi: "10.1136/bjsports-2021-105383", type: "consensus-statement", year: 2023 }
+  ],
+
+  animation: {
+    title: "How proximal hamstring tendinopathy develops",
+    phases: [
+      {
+        type: "moi", label: "Repeated loading", duration: 7.5, view: "lateral", environment: "track",
+        actors: [{ id: "athlete", kit: "athlete" }],
+        keyframes: [
+          { t: 0, pose: "run-midstance", root: { x: -150 } },
+          { t: 0.8, pose: "run-toe-off", root: { x: -105 } },
+          { t: 1.6, pose: "run-swing-late", root: { x: -60 } },
+          { t: 2.4, pose: "run-contact", root: { x: -25 } },
+          { t: 3.4, pose: "lunge", root: { x: 0 }, ease: "out" },
+          { t: 5.0, pose: "lunge", root: { x: 5 } },
+          { t: 6.2, pose: "sit", root: { x: 10 } },
+          { t: 7.4, pose: "sit", root: { x: 10 } }
+        ],
+        forces: [
+          { t: [1.5, 2.6], at: "thighR", dir: "backward", label: "Tensile load: hamstrings drive and brake the leg" },
+          { t: [3.5, 5.2], at: "hipR", dir: "down", label: "Compression at the ischial tuberosity in deep hip flexion" },
+          { t: [6.3, 7.4], at: "hipR", dir: "up", label: "Direct pressure in sitting" }
+        ],
+        highlights: [{ t: [3.2, 7.5], at: "hipR" }],
+        slowmo: [{ t: [3.2, 4.4], rate: 0.5 }],
+        captions: [
+          { t: 0, text: "A runner trains hard. Running loads the common hamstring tendon in tension." },
+          { t: 1.5, text: "The hamstrings drive the leg and brake it in late swing, so the tendon at the ischium is stretched." },
+          { t: 3.3, text: "In a lunge or deep squat the hip flexes and the tendon is pressed against the ischial tuberosity." },
+          { t: 5.0, text: "Hamstring stretching and deep hip flexion add compression to the same spot." },
+          { t: 6.2, text: "Sitting on a hard surface presses on the tendon too. There is no single injury moment." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "thighR",
+        captions: [{ t: 0, text: "Zooming into the back of the right thigh, viewed from behind." }]
+      },
+      {
+        type: "closeup", label: "Inside the hip", duration: 10, scene: "thigh-posterior",
+        actions: [
+          { t: 0, do: "highlight", target: "proximalHamstringTendon" },
+          { t: 0.3, do: "label", target: "proximalHamstringTendon", text: "Common hamstring tendon at the ischial tuberosity" },
+          { t: 1.0, do: "arrow", at: "proximalTendonInsertion", dir: "distal", label: "Tensile pull from the hamstrings" },
+          { t: 1.1, do: "stretch", target: "proximalHamstringTendon", amount: 0.2, dur: 1.0 },
+          { t: 2.4, do: "reset", target: "proximalHamstringTendon" },
+          { t: 2.6, do: "arrow", at: "ischialTuberosity", dir: "anterior", label: "Compression against bone in hip flexion" },
+          { t: 3.8, do: "thicken", target: "proximalHamstringTendon", amount: 0.5, dur: 1.4 },
+          { t: 4.4, do: "pain", at: "proximalTendonInsertion", hold: 3 },
+          { t: 5.4, do: "degenerate", target: "proximalHamstringTendon", at: "proximalTendonInsertion", dur: 1.6 },
+          { t: 5.8, do: "label", target: "proximalHamstringTendon", text: "Thickened, disorganised tendon (tendinopathy), still attached" },
+          { t: 7.0, do: "camera", at: "proximalTendonInsertion", zoom: 1.7, dur: 1.0 },
+          { t: 9.2, do: "camera", zoom: 1, dur: 0.8 }
+        ],
+        captions: [
+          { t: 0, text: "The hamstrings share a common tendon that attaches to the ischial tuberosity." },
+          { t: 1.0, text: "In running, the hamstrings pull on the tendon, which carries high tensile load." },
+          { t: 2.6, text: "In deep hip flexion and sitting, the tendon is also pressed against the bone." },
+          { t: 3.8, text: "If the load exceeds capacity, the tendon swells and becomes painful near the bone." },
+          { t: 5.4, text: "With continued overload the collagen is disorganised. The tendon degenerates; it does not tear." },
+          { t: 7.0, text: "Pain sits at the tuberosity, and it is provoked by sitting, hip flexion and running." },
+          { t: 8.4, text: "Scans show change, but they do not guide return to play, so diagnosis is clinical." }
+        ]
+      },
+      {
+        type: "micro", label: "Tendon continuum", duration: 10, tissue: "tendon-continuum",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.6, stage: "reactive" }, { t: 3.4, stage: "disrepair" },
+          { t: 5.2, stage: "degenerative" }, { t: 7.2, stage: "load-adaptation" }
+        ],
+        timeLabels: [{ t: 1.6, text: "Days to weeks" }, { t: 3.4, text: "Weeks to months" }, { t: 5.2, text: "Months to years" }, { t: 7.2, text: "Months of loading" }],
+        captions: [
+          { t: 0, text: "Healthy tendon: tightly packed, aligned type I collagen with a few resident tenocytes." },
+          { t: 1.6, text: "Reactive: after overload, tenocytes activate and the matrix swells. This can reverse." },
+          { t: 3.4, text: "Disrepair: cells try to repair the tendon, and the collagen becomes disorganised." },
+          { t: 5.2, text: "Degenerative: areas of disorganised matrix remain, with limited capacity to reverse." },
+          { t: 7.2, text: "Progressive loading builds capacity. Pain settles as the tendon adapts over months." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "LL3" }
+};

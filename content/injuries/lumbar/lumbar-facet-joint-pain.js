@@ -1,0 +1,414 @@
+export default {
+  id: "lumbar-facet-joint-pain",
+  name: "Lumbar facet joint pain",
+  shortName: "Lumbar facet joint pain",
+  aka: ["lumbar zygapophyseal joint pain", "facet syndrome", "facet joint arthropathy", "facet arthritis", "lumbar facet osteoarthritis", "posterior element pain", "zygapophysial joint pain"],
+  region: "lumbar",
+  tissues: ["joint-capsule", "cartilage"],
+  onset: "gradual",
+  mechanismType: ["degenerative", "overuse", "compression"],
+  populations: ["older adults", "adults over 50 years", "people with degenerative disc disease", "people with spondylolisthesis"],
+  sports: [],
+  urgency: "routine",
+  summary: "Back pain thought to arise from the lumbar facet joints, typically with degeneration in older adults. It cannot be diagnosed reliably from history, examination or imaging; only controlled blocks can confirm it.",
+  keyFacts: [
+    { label: "Prevalence", value: "Up to 15% of chronic low back pain on controlled blocks; 15% had at least 50% relief after a confirmatory block in one cohort of 176" },
+    { label: "Key test", value: "No history or examination finding is diagnostic; none of the tests for facet pain was informative in a systematic review" },
+    { label: "Imaging", value: "Facet osteoarthritis on CT in 59.6% of men and 66.7% of women in a community sample, with no association with back pain" },
+    { label: "Diagnostic standard", value: "Controlled blocks; single uncontrolled blocks had a 38% false-positive rate and a positive predictive value of 31%" },
+    { label: "Radiofrequency denervation", value: "Conflicting: moderate evidence of short-term benefit in a Cochrane review, but no clinically important benefit in the facet joint MINT trial" },
+    { label: "Peak age", value: "Older adults; prevalence of facet-mediated pain rises with age" }
+  ],
+  overview: "The facet (zygapophyseal) joints are the only true synovial joints between adjacent spinal levels [r1]. Lumbar facet joint arthropathy is reported in up to 15% of patients with chronic low back pain (LBP) when controlled blocks are used as the standard; onset is usually insidious, and recognised predisposing factors are spondylolisthesis, degenerative disc pathology and older age [r2]. Biomechanically the facets resist most of the intervertebral shear force and share compressive load in lordotic postures [r3].\n\nThe diagnosis is where the evidence is weakest. Despite long-standing use of the term 'facet syndrome', the literature does not support using history or physical examination to diagnose lumbar zygapophyseal joint pain [r2]. A systematic review of 41 diagnostic studies found none of the tests for facet joint pain informative [r4]. The best-known clinical cluster was derived to select patients for injection trials and, in the authors' words, should not be considered definite diagnostic criteria [r5]. Imaging does not settle it either: in a community sample, facet osteoarthritis on CT was common and showed no association with LBP [r6]. Only controlled intra-articular or medial branch blocks can identify the joints as a pain source, and even a single uncontrolled block had a 38% false-positive rate [r7,r2].\n\nBecause facet pain cannot be separated reliably from other non-specific LBP in the clinic, physiotherapy follows guidelines for chronic LBP: education, exercise and activity, with selected manual therapy and psychological strategies [r8,r9,r10]. Medial branch radiofrequency denervation remains contested: a Cochrane review found moderate-quality evidence of short-term benefit over placebo [r11], but in the facet joint MINT trial, adding denervation to exercise gave no clinically important improvement [r12], and a consensus group concluded it may help well-selected individuals [r13].",
+
+  epidemiology: {
+    text: "Prevalence depends heavily on the diagnostic standard. Facet joint arthropathy is reported in up to 15% of patients with chronic LBP [r2]. In 176 people with chronic LBP, 47% had definite relief after a first diagnostic block, but only 15% had at least 50% relief after a confirmatory block [r7]. In 120 chronic LBP patients screened with zygapophyseal joint blocks, 24.5% responded at a 75% pain-reduction threshold and 10.8% at a 95% threshold [r14]. Imaging prevalence is far higher: in 188 Framingham participants, facet osteoarthritis on CT was present in 59.6% of men and 66.7% of women, increasing from 24.0% in those under 40 to 89.2% at 60 to 69 years, and most prevalent at L4–5 (45.1%) and L5–S1 (38.2%), but it was not associated with LBP [r6]. The prevalence of facet-mediated pain in clinical populations increases with age [r1].",
+    riskFactors: {
+      intrinsic: [
+        "Older age [r2,r1]",
+        "Spondylolisthesis [r2]",
+        "Degenerative disc pathology [r2]",
+        "Female sex for facet osteoarthritis at the lower lumbar levels (imaging prevalence only; not shown to relate to pain) [r6]"
+      ],
+      extrinsic: [
+        "Sustained or repeated lumbar extension and rotation, biomechanically plausible because the facets share compressive load in lordotic postures [r3]",
+        "Physically demanding work and other general risk factors for LBP, including obesity and smoking [r15]",
+        "Previous episodes of LBP (general LBP risk factor; not specific to facet pain)"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "Facet joint pain is usually an insidious, degenerative problem and not the result of a single injury [r2]. Ageing, disc degeneration and spondylolisthesis alter how load is shared across the segment, so the facet joints bear more compressive and shear load, especially in extension and rotation [r3]. The joint capsule and synovium become irritated and the cartilage degenerates, and the innervated capsule can generate pain, although how much any given joint contributes to pain is unreliable to judge clinically [r2,r4].",
+    sequence: [
+      "Ageing and disc degeneration alter segmental load sharing, so more load passes through the posterior elements.",
+      "The facets resist most intervertebral shear and share compressive load in lordotic postures, so sustained or repeated extension and rotation increase joint loading [r3].",
+      "The joint surfaces, capsule and synovium are overloaded; cartilage degenerates and the joint changes shape (facet osteoarthritis), most often at L4–5 and L5–S1 [r6].",
+      "Capsular nociceptors, supplied via the medial branches, fire and may sensitise during flares [r2].",
+      "Pain is felt in the low back and may refer to the buttock or thigh, but no history or examination pattern identifies the joint reliably [r2,r4].",
+      "Pain intensity does not follow imaging change: facet osteoarthritis is common in people with no back pain [r6], and central and psychosocial factors influence persistence [r15]."
+    ],
+    variants: [
+      { name: "Degenerative facet arthropathy in older adults", description: "The most typical presentation: insidious pain in older age, often with disc degeneration, in a clinical population where facet-mediated pain increases with age [r1,r2]." },
+      { name: "Facet pain with spondylolisthesis", description: "Spondylolisthesis is a recognised predisposing factor for facet joint pain [r2]. Assess the slip and consider the page on spondylolisthesis." },
+      { name: "Flare after a sudden movement", description: "Some people describe a sudden onset after a twist or reach. Capsular or intra-articular mechanisms have been proposed, but the sources reviewed provide no reliable way to confirm this clinically, so treat as acute non-specific LBP." },
+      { name: "Facet pain as part of mixed degenerative back pain", description: "In practice disc, facet and sacroiliac contributions overlap and tests for any single source are weak [r4]; a working label is acceptable if it does not drive over-treatment." }
+    ]
+  },
+
+  anatomy: {
+    text: "Each lumbar segment has two facet joints formed by the inferior articular process of the vertebra above and the superior articular process of the vertebra below. They are true synovial joints with cartilage, a synovial lining and a capsule [r1]. In the lumbar spine the joint surfaces are oriented close to the sagittal plane, allowing flexion and extension and restricting axial rotation and anterior shear. The capsule is innervated via the medial branches of the dorsal rami, which are the target of diagnostic blocks and radiofrequency denervation [r2]. The facets resist most of the intervertebral shear force and, in lordotic postures, share compressive load; they protect the posterior annulus from torsion and, through the capsular ligaments, from flexion [r3].",
+    structures: [
+      { name: "Facet (zygapophyseal) joints", role: "Synovial joints that guide motion, resist shear and share compression in lordosis [r1,r3]" },
+      { name: "Joint capsule and synovium", role: "Contain and lubricate the joint and resist flexion; innervated via the medial branches and a plausible source of nociception [r2]" },
+      { name: "Articular cartilage", role: "Distributes load across the joint surfaces; degeneration is the basis of facet osteoarthritis [r1]" },
+      { name: "Medial branch of the dorsal ramus", role: "Supplies each joint (from two levels) and the multifidus; the target of diagnostic blocks and denervation [r2]" },
+      { name: "Intervertebral disc", role: "Shares segmental load with the facets; degeneration shifts load to the posterior elements" },
+      { name: "Multifidus", role: "Segmental extensor and stabiliser supplied by the same medial branches" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "Facet joint osteoarthritis involves the whole joint and not only the cartilage, and it is widely prevalent in older adults [r1]. It is thought to be a common cause of back pain, and the prevalence of facet-mediated pain in clinical populations rises with age [r1]. Cartilage degeneration, capsular and synovial irritation, subchondral change and osteophyte formation are the usual structural features, although their relationship to pain is weak: facet osteoarthritis on CT was present in most adults over 50 years and showed no association with LBP in a community-based sample [r6].\n\nPain probably arises when a mechanically overloaded or inflamed capsule and synovium activate nociceptors that travel in the medial branches [r2]. The clinical picture is non-specific, with no history or examination pattern that identifies the joint [r2,r4], and the cluster of features that predicted a response to anaesthetic block (including relief on lying down and no worsening on extension, forward flexion or extension-rotation) was not intended as a diagnostic rule [r5]. Persistent facet-region pain, like other persistent LBP, is shaped by central pain-modulating mechanisms and pain cognitions [r15].",
+    structures: [
+      { name: "Facet joint cartilage", effect: "Degeneration and loss of joint space with ageing and altered load sharing; changes are common and often painless [r6]" },
+      { name: "Synovium and capsule", effect: "Irritation and inflammation during flares can sensitise capsular nociceptors; the capsule is innervated via the medial branches [r2]" },
+      { name: "Subchondral bone and joint margins", effect: "Typical osteoarthritic remodelling and osteophytes, visible on CT as facet osteoarthritis [r6]" },
+      { name: "Medial branch of the dorsal ramus", effect: "Carries nociceptive input from the joint; blocked or ablated in interventional treatment [r2,r13]" }
+    ],
+    muscles: [
+      { name: "Multifidus", effect: "Shares the medial branch supply; reflex guarding in painful episodes is common. Whether multifidus atrophy is a cause or a consequence of facet pain was not tested in the sources reviewed" },
+      { name: "Erector spinae and lumbar paraspinals", effect: "Guarding and tenderness with painful movements; non-specific" },
+      { name: "Hip flexors and trunk extensors", effect: "Tightness or fatigue may increase lumbar lordosis and facet loading in some people (clinical hypothesis; not tested in the sources reviewed)" },
+      { name: "Trunk and gluteal muscles", effect: "Deconditioning from avoidance of movement reduces capacity and is a rehabilitation target in chronic LBP [r8]" }
+    ],
+    cellular: [
+      { phase: "Mechanical overload and cartilage stress", timing: "Months to years", description: "Altered load sharing with ageing and disc degeneration stresses the facet cartilage and capsule [r3,r2]." },
+      { phase: "Synovitis and capsular irritation (flares)", timing: "Days to weeks", description: "Local inflammatory change in the synovium and capsule is thought to sensitise nociceptors during painful flares (inferred; direct data were not identified in the sources reviewed)." },
+      { phase: "Chronic degenerative remodelling", timing: "Years", description: "Cartilage loss, subchondral sclerosis and osteophytes accumulate with age; prevalence rises from 24.0% of those under 40 to 89.2% at 60–69 years on CT [r6]." },
+      { phase: "Pain sensitisation and persistence", timing: "Months", description: "Central pain modulation, pain beliefs and psychological factors increasingly determine pain and disability in persistent LBP [r15]." }
+    ],
+    systems: [
+      { system: "Nervous system (peripheral)", effect: "Capsular nociceptors travel in the medial branches; selective blocks or ablation of these nerves are the basis of diagnosis and interventional treatment [r2]" },
+      { system: "Nervous system (central)", effect: "Central pain-modulating mechanisms and pain cognitions have important roles in persistent disabling LBP [r15]" },
+      { system: "Musculoskeletal", effect: "Disc degeneration, spondylolisthesis and ageing change segmental mechanics and facet loading [r2,r3]" },
+      { system: "Inflammatory", effect: "Synovial and capsular inflammation is plausible during flares but was not directly examined in the sources reviewed" },
+      { system: "Psychological and social", effect: "Distress, fear of movement and expectations of treatment influence outcome; guidelines advise a biopsychosocial framework [r9,r15]" },
+      { system: "Ageing and metabolic", effect: "Age is the main correlate of facet joint osteoarthritis and of facet-mediated pain; obesity and smoking are general LBP risk factors [r1,r6,r15]" }
+    ]
+  },
+
+  grading: {
+    system: "Diagnostic certainty (there is no accepted clinical grading)",
+    grades: [
+      { grade: "Clinical suspicion only", description: "History and examination suggest a posterior-element source. No clinical findings or tests have shown reliable diagnostic value [r2,r4].", prognosis: "Use as a working label only; manage as non-specific chronic LBP" },
+      { grade: "Single (uncontrolled) block positive", description: "Relief after one diagnostic block.", prognosis: "In 176 patients, 47% had definite relief on a first block but the false-positive rate was 38% and the positive predictive value 31% [r7]" },
+      { grade: "Confirmed by controlled blocks (50% or greater relief)", description: "A positive response to a confirmatory block, regarded as the best accepted standard [r2].", prognosis: "15% of 176 patients with chronic LBP met this standard [r7]" },
+      { grade: "Stringent block criteria (75–95% relief)", description: "Higher thresholds make the diagnosis more specific but exclude more people.", prognosis: "24.5% responded at 75% relief and 10.8% at 95% relief in 120 patients [r14]; stricter selection may improve denervation outcomes at the cost of more false negatives [r13]" }
+    ]
+  },
+
+  timeframes: {
+    summary: "No natural-history data specific to facet joint pain were identified in the sources reviewed. Pain in people with persistent LBP changes slowly: in persistent LBP cohorts the mean pain score was 33 out of 100 at 6 weeks and 23 at 52 weeks [r16]. Episodes often fluctuate, and interventional procedures are considered only after conservative care has failed.",
+    healing: [
+      { phase: "Flare (capsular and synovial irritation)", startDay: 0, endDay: 14, description: "Symptoms are at their worst; guarded movement and reduced activity tolerance (clinical expectation)" },
+      { phase: "Settling with graded activity", startDay: 7, endDay: 84, description: "Education, exercise and a return to usual activity as pain allows; many flares settle (clinical expectation)" },
+      { phase: "Persistent or recurrent course", startDay: 84, endDay: 365, description: "In persistent LBP cohorts, mean pain remained about 23 out of 100 at 52 weeks [r16]" }
+    ],
+    milestones: [
+      { label: "Reassess the diagnosis if pain is not improving", day: 28, note: "Clinical convention; consider other pain sources and psychosocial barriers" },
+      { label: "Persistent LBP threshold (12 weeks)", day: 84, note: "Conventional definition; consider psychologically informed care for persistent symptoms [r9]" },
+      { label: "Interventional pathway considered only after conservative care has failed", day: 90, note: "Clinical convention; results of any block must change management [r13]" },
+      { label: "Response to radiofrequency denervation assessed", day: 90, note: "The MINT trial's primary outcome was pain at 3 months [r12]" }
+    ],
+    returnToSport: "Return to normal activity, work and exercise as pain allows; there are no tissue-healing criteria. There are no validated return-to-activity criteria specific to facet joint pain, so those below are clinical convention."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Insidious low back pain in an older adult, often with a history of degenerative disc disease or spondylolisthesis [r2]",
+      "Pain that may refer to the buttock or thigh above the knee",
+      "Pain variably related to posture: extension and rotation provocation is classic teaching, but features vary, and the features that predicted block response included pain not worsened by hyperextension or extension-rotation and well relieved by lying down [r5]",
+      "Stiffness and discomfort after prolonged standing or walking, or on transitions (clinical description; not diagnostic)",
+      "No leg symptoms below the knee, neurological symptoms or bladder or bowel disturbance"
+    ],
+    signs: [
+      "Paraspinal tenderness and guarded movement (non-specific)",
+      "Pain on lumbar extension or extension-rotation in some patients; a negative extension-rotation test helps argue against a positive response to a screening block [r14]",
+      "Normal neurological examination and negative neural tension tests",
+      "No sign or cluster that reliably identifies the facet joint as the pain source [r2,r4]"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Age, onset (insidious or sudden), duration and course, including flares",
+      "Pain location, referral pattern and what makes it better or worse: extension, rotation, flexion, standing, walking, lying",
+      "Previous diagnoses such as degenerative disc disease or spondylolisthesis [r2]",
+      "Leg symptoms below the knee, numbness, weakness, bladder and bowel function (to exclude radiculopathy and cauda equina syndrome)",
+      "Red flag screen: previous cancer, steroid use, trauma, fever, weight loss, night or constant pain [r17]",
+      "Yellow flags: distress, low mood, fear of movement, expectations of a scan or injection, work factors [r15]",
+      "Previous treatments and injections, and their response (percentage relief and duration)"
+    ],
+    observation: ["Posture, lumbar lordosis and movement quality", "Gait and sit-to-stand", "Guarding or fear-avoidant behaviour"],
+    palpation: ["Paraspinal and segmental tenderness, which is non-specific and does not localise the pain source [r4]", "Palpation to exclude other sources (sacroiliac joint, greater trochanter)"],
+    rangeOfMotion: ["Active lumbar flexion, extension, side flexion and rotation, with symptom response", "Repeated movements to check for a directional preference", "Hip range of motion to exclude hip pathology"],
+    strength: ["Trunk endurance and hip and gluteal strength as baseline", "Lower limb myotomes L2–S1 to exclude radiculopathy"],
+    neuro: ["Dermatomes, myotomes and reflexes: normal in facet-related pain", "Straight leg raise and slump to exclude radicular involvement"],
+    functional: ["Sit-to-stand, standing and walking tolerance", "Lifting and bending tasks relevant to the patient", "Patient-chosen provocative activities"],
+    specialTests: [
+      { name: "Extension–rotation (Kemp) test", purpose: "Provocation test traditionally linked to facet pain; its value is in ruling out, not ruling in", procedure: "Standing or sitting, guide the trunk into extension, rotation and side flexion to each side.", positive: "Reproduction of familiar local low back pain. A negative test helped rule out a positive response to a screening block in one study [r14]; a positive test does not confirm a facet source.", refs: ["r14"] },
+      { name: "Revel clinical cluster (7 criteria)", purpose: "Select patients likely to respond to facet anaesthesia in research; not a diagnostic rule", procedure: "Record seven features: age over 65 years, and pain not worsened by coughing, hyperextension, forward flexion, rising from flexion or extension-rotation, and well relieved by lying down.", positive: "Five of seven, always including relief on recumbency, distinguished 92% of responders and 80% of non-responders to lidocaine in 80 patients; the authors state these should not be considered definite diagnostic criteria [r5].", refs: ["r5"] },
+      { name: "Laslett clinical prediction rules for a screening block", purpose: "Predict response to a screening block; strongest value for ruling out", procedure: "Apply the published cluster of history and examination variables for the rule used.", positive: "Five rules had 100% sensitivity for ruling out a 95% pain reduction, and one rule had a positive likelihood ratio of 9.7; no variables were useful predictors of pain reduction of less than 90% [r14].", sensitivity: "100% (five rules, for ruling out a 95% pain reduction)", lrPositive: "9.7 (one rule, for a 95% pain reduction)", refs: ["r14"] },
+      { name: "Neurological screen and straight leg raise or slump", purpose: "Exclude radiculopathy and other causes of leg symptoms", procedure: "Test L2–S1 myotomes, dermatomes and reflexes, then neural tension tests if leg symptoms are present.", positive: "Neurological deficit or neural tension signs argue for a radicular or other diagnosis rather than facet pain.", refs: [] }
+    ],
+    clinicalRules: [
+      { name: "No test identifies the facet joint", description: "A systematic review of 41 diagnostic studies found no informative test for facet joint pain (positive likelihood ratio above 2 or negative likelihood ratio below 0.5), although some tests changed the probability of a disc or sacroiliac source [r4]. Manage as non-specific chronic LBP." },
+      { name: "Controlled blocks are the reference standard, but are not a clinical test", description: "Low-volume intra-articular or medial branch blocks are the most accepted diagnostic method but have high false-positive rates; single blocks had a 38% false-positive rate [r2,r7]. A consensus group found medial branch blocks more predictive than intra-articular injections [r13]." }
+    ],
+    outcomeMeasures: [
+      { name: "Numeric Pain Rating Scale (0–10)", use: "Pain intensity; the primary outcome in the MINT trials was pain at 3 months, with a minimal clinically important difference of 2 points [r12]" },
+      { name: "Oswestry Disability Index or Roland Morris Disability Questionnaire", use: "Back-specific disability" },
+      { name: "Patient-Specific Functional Scale", use: "Individual goals such as walking or standing tolerance" },
+      { name: "Percentage pain relief and duration after a block or procedure", use: "Used to judge diagnostic blocks and denervation; relief thresholds of 75% to 95% were used in prediction studies [r14]" }
+    ],
+    imaging: [
+      { modality: "Plain radiographs, CT or MRI", indication: "Not for diagnosing facet pain. Use only if red flags or neurological findings suggest another diagnosis, or to plan an intervention.", findings: "Facet joint osteoarthritis (joint space narrowing, hypertrophy, osteophytes) is common: 59.6% of men and 66.7% of women in a community CT sample, rising with age and not associated with LBP [r6]." },
+      { modality: "Controlled diagnostic blocks (medial branch or intra-articular, image-guided)", indication: "Only when the result would change management, after failed conservative care and in people who are candidates for denervation [r13]", findings: "Pain relief after a controlled block (for example 50% or more, or a stricter threshold); single blocks have a 38% false-positive rate [r7]." }
+    ]
+  },
+
+  differentials: [
+    { name: "Acute non-specific low back pain", id: "acute-low-back-pain", distinguishing: "Most episodes of LBP have no identifiable tissue source, and facet joint pain cannot be separated from them clinically [r4]." },
+    { name: "Lumbar disc herniation with radiculopathy", id: "lumbar-disc-herniation", distinguishing: "Leg-dominant pain below the knee with positive neural tension signs and possible neurological deficit." },
+    { name: "Sacroiliac joint pain", id: "sacroiliac-joint-pain", distinguishing: "Pain below L5 near the posterior superior iliac spine; a combination of provocation tests is informative where single tests are not [r4]." },
+    { name: "Spondylolysis", id: "spondylolysis", distinguishing: "Adolescent athlete with extension-provoked pain; imaging is needed to separate from facet pain." },
+    { name: "Spondylolisthesis", id: "spondylolisthesis", distinguishing: "Radiographic slip, often with a palpable step; a predisposing factor for facet joint pain [r2]." },
+    { name: "Lumbar spinal stenosis", id: "lumbar-spinal-stenosis", distinguishing: "Bilateral leg symptoms on walking, relieved by sitting or flexion; facet hypertrophy may contribute." },
+    { name: "Discogenic pain", distinguishing: "Flexion and sitting provoked axial pain; MRI changes such as disc degeneration or high-intensity zones had some informative likelihood ratios for a disc source, unlike tests for the facet joint [r4]." },
+    { name: "Osteoporotic vertebral fracture, infection or malignancy", id: "osteoporotic-vertebral-fracture", distinguishing: "Older age, steroid use, trauma, constant or night pain and systemic features [r17]." }
+  ],
+  redFlags: [
+    "EMERGENCY: new bladder retention or incontinence, faecal incontinence, saddle numbness, sexual dysfunction, or bilateral leg weakness: possible cauda equina syndrome. Send to an emergency department the same day.",
+    "Fever, severe back pain, new neurological deficit or wound problems after a spinal injection or radiofrequency procedure: suspect infection or haematoma and send to an emergency department the same day (clinical convention).",
+    "Fracture risk: older age, prolonged corticosteroid use, significant trauma or osteoporosis. Multiple flags together raised the probability of fracture in a systematic review [r17]. Arrange imaging and medical review.",
+    "Malignancy or infection: a history of cancer had the highest post-test probability for spinal malignancy (33%) in a systematic review [r17]; add unexplained weight loss, fever and constant or night pain. Arrange urgent medical review.",
+    "Progressive neurological deficit or leg pain below the knee in a dermatomal pattern: reclassify (radiculopathy or stenosis) and refer as needed.",
+    "Pain that does not respond to appropriate conservative care: reassess the diagnosis and psychosocial factors before considering diagnostic blocks, and do not escalate to procedures without a clear plan [r13,r8]."
+  ],
+
+  management: {
+    principles: "Facet joint pain cannot be separated reliably from other non-specific chronic LBP in the clinic, so management follows chronic LBP guidelines: education and reassurance, exercise and activity, psychological strategies for persistent symptoms, and prudent use of medication, imaging and procedures [r9,r8,r10]. Interventional options (diagnostic medial branch blocks and radiofrequency denervation) are considered for people with persistent pain who have failed conservative care and who are well selected, and the evidence for their benefit is conflicting [r13,r11,r12]. Shared decision-making should include the limits of the diagnosis, the false-positive rate of blocks and the uncertain benefit of denervation.",
+    medical: [
+      { name: "Analgesics and NSAIDs", description: "For chronic LBP with an inadequate response to non-pharmacological treatment, the ACP guideline recommends NSAIDs as first-line pharmacological therapy, and tramadol or duloxetine as second-line; opioids only if other treatments have failed and benefits outweigh risks [r10]. Not specific to facet pain.", evidence: "moderate", recommendation: "consider", refs: ["r10"] },
+      { name: "Diagnostic medial branch blocks or intra-articular blocks", description: "The most accepted method of diagnosing facet joint pain, but with high false-positive rates; a single block had a false-positive rate of 38% and positive predictive value of 31% [r2,r7]. A consensus group found medial branch blocks more predictive than intra-articular injections and that stricter criteria give fewer false positives but more false negatives [r13]. Perform only when the result will change management.", evidence: "limited", recommendation: "consider", refs: ["r2", "r7", "r13"] },
+      { name: "Medial branch radiofrequency denervation", description: "Conflicting evidence. A Cochrane review (23 trials, 1309 participants) found moderate-quality evidence that facet joint RF denervation reduced pain more than placebo in the short term (mean difference −1.47 on a 0–10 scale, 95% CI −2.28 to −0.67) and low-quality evidence for function; overall the evidence was very low to moderate, with no high-quality evidence [r11]. In the facet joint MINT trial (251 participants with a positive diagnostic block), adding RF denervation to a standardised exercise programme changed pain at 3 months by −0.18 points (95% CI −0.76 to 0.40), below the 2-point minimal clinically important difference [r12]. A multispecialty consensus concluded it may benefit well-selected individuals, with medial branch blocks more predictive than intra-articular injections [r13].", evidence: "conflicting", recommendation: "consider", refs: ["r11", "r12", "r13"] },
+      { name: "Intra-articular facet corticosteroid injection", description: "Evidence is conflicting [r2]. In the Cochrane review, RF denervation reduced pain more than steroid injections over the short, intermediate and long term, although that evidence was of very low to low quality [r11]. Not preferred as stand-alone treatment.", evidence: "conflicting", recommendation: "consider", refs: ["r2", "r11"] }
+    ],
+    physio: [
+      { name: "Education, reassurance and a biopsychosocial approach", description: "Explain that imaging changes are common and do not map to pain, that the pain source cannot be pinpointed and that movement is safe. Guidelines recommend a biopsychosocial framework, education that supports self-management and a return to normal activities [r9]. For chronic LBP the 2021 JOSPT guideline says physical therapists should deliver pain neuroscience education alongside exercise or manual therapy [r8].", evidence: "moderate", recommendation: "recommended", refs: ["r9", "r8"] },
+      { name: "Exercise therapy and graded activity", description: "The JOSPT guideline says physical therapists should use exercise for chronic LBP, including trunk strengthening and endurance, multimodal, specific trunk muscle activation, aerobic, aquatic and general exercise [r8]. The ACP guideline recommends exercise as initial treatment for chronic LBP on moderate-quality evidence [r10].", evidence: "moderate", recommendation: "recommended", refs: ["r8", "r10"] },
+      { name: "Joint mobilisation or manipulation", description: "The JOSPT guideline says physical therapists should use thrust or non-thrust joint mobilisation to reduce pain and disability in chronic LBP [r8]; the ACP rated the evidence for spinal manipulation in chronic LBP as low quality [r10]. Use to enable movement; no technique is specific to the facet joint.", evidence: "limited", recommendation: "recommended", refs: ["r8", "r10"] },
+      { name: "Psychological strategies for persistent pain", description: "Guidelines recommend psychological programmes for people with persistent symptoms [r9]; the ACP lists cognitive behavioural therapy and mindfulness-based stress reduction among initial options for chronic LBP [r10].", evidence: "moderate", recommendation: "consider", refs: ["r9", "r10"] },
+      { name: "Facet-targeted passive techniques as stand-alone treatment", description: "No evidence was identified in the sources reviewed that techniques aimed at the facet joint outperform general chronic LBP treatment, and the joint cannot be identified reliably as the pain source [r4].", evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r4"] }
+    ],
+    education: [
+      "Wear-and-tear changes in the facet joints are very common with age, and are often found in people with no back pain at all.",
+      "We can't tell exactly which tissue in your back is painful, and that is true for most people with back pain. It does not mean your pain is not real, and it does not mean it can't improve.",
+      "Moving, strengthening and staying active help most people with long-standing back pain, even when the pain flares.",
+      "Injections and nerve ablation (radiofrequency) are options for some people with persistent pain after other treatments, but the evidence is mixed and they may not help.",
+      "Go to an emergency department the same day if you develop numbness around the genitals, trouble passing urine or controlling your bowels, or leg weakness. Seek urgent help for fever, severe pain or new weakness after any spinal injection."
+    ]
+  },
+
+  rehab: {
+    overview: "Because facet joint pain cannot be separated reliably from other chronic low back pain, rehabilitation follows the guideline-supported approach for chronic LBP: education, graded exercise and activity, with manual therapy and psychological strategies where useful [r8,r9,r10]. Progress is criteria-based and driven by function, confidence and symptom response, not by a structural diagnosis. Stage lengths and dosages below are clinical conventions and not trial-derived; guidelines support exercise for chronic LBP without specifying a regimen for facet pain [r8]. Use pain flares as information about load, not as damage, and adjust volume instead of stopping.",
+    stages: [
+      {
+        name: "Calm & keep moving",
+        timeframe: "Weeks 0–2 (typical; criteria override time)",
+        goals: ["Understand that facet changes are common and pain does not equal damage", "Walk daily and keep usual activities going", "Find positions and movements that ease symptoms", "Reduce guarding and fear of movement"],
+        precautions: ["Screen for red flags and neurological change at the first visit and if the pattern changes [r17]", "Discomfort up to about 4/10 that settles within 24 hours is acceptable (clinical convention)", "Avoid long static postures; vary position often"],
+        exercises: [
+          { name: "Short, frequent walks", dosage: "10–20 minutes, 2–4 times a day, building by about 10% every few days (clinical convention)", cues: "Tall posture, relaxed arm swing", figure: { pose: "walk-heel-strike", view: "lateral" } },
+          { name: "Cat–camel in comfortable range", dosage: "10 slow repetitions, 3 times a day (clinical convention)", cues: "Smooth, small range; breathe throughout", figure: { pose: "ex-cat-camel", view: "lateral", props: ["mat"] } },
+          { name: "Supine knee to chest (position of ease)", dosage: "3 holds of 20–30 seconds per side, 2–3 times a day (clinical convention)", cues: "Relax the low back into the floor", figure: { pose: "ex-knee-to-chest", view: "lateral", props: ["mat"] } },
+          { name: "Glute bridge", dosage: "2 sets of 10 repetitions, daily (clinical convention)", cues: "Drive through the heels; ribs down, avoid arching", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } },
+          { name: "Relaxed breathing and positions of ease", dosage: "2–5 minutes, 2–3 times a day (clinical convention)", cues: "Let the belly and ribs move; soften the jaw and shoulders" }
+        ],
+        progressionCriteria: ["Resting pain 5/10 or lower and improving", "Walking 20 minutes without a flare", "Moving between sitting, standing and lying without guarding", "Patient can explain the plan and what to do in a flare"]
+      },
+      {
+        name: "Restore control & mobility",
+        timeframe: "Weeks 2–6",
+        goals: ["Segmental and global trunk control in neutral and light loading", "Hip and thoracic mobility to offload the lumbar spine", "Build tolerance of standing and walking"],
+        precautions: ["Progress a new load only if symptoms are no worse after 24 hours (clinical convention)", "Do not force end-range extension or rotation if they provoke a flare"],
+        exercises: [
+          { name: "Dead bug", dosage: "3 sets of 8 repetitions per side, daily (clinical convention)", cues: "Keep the low back gently flat as the limbs move", figure: { pose: "ex-dead-bug", view: "lateral", props: ["mat"] } },
+          { name: "Bird-dog", dosage: "3 sets of 8 repetitions per side with 5-second holds (clinical convention)", cues: "Level pelvis; reach long, not high", figure: { pose: "ex-bird-dog", view: "lateral", props: ["mat"] } },
+          { name: "Side plank (knees, then feet)", dosage: "3 holds of 15–30 seconds per side (clinical convention)", cues: "Stack the hips; lift the waist", figure: { pose: "ex-side-plank", view: "lateral", props: ["mat"] } },
+          { name: "Thoracic extension over a foam roller", dosage: "2 sets of 8–10 repetitions, daily (clinical convention)", cues: "Extend through the upper back; keep the ribs down so the low back does not arch", figure: { pose: "ex-thoracic-extension", view: "lateral", props: ["foam-roller"] } },
+          { name: "Hip hinge pattern", dosage: "3 sets of 10 repetitions, 3 times a week (clinical convention)", cues: "Push the hips back, keep the trunk long", figure: { pose: "ex-rdl", view: "lateral" } }
+        ],
+        progressionCriteria: ["Pain 3/10 or lower in daily activities", "Plank or side plank 30 seconds with good form (clinical convention)", "Standing and walking tolerance of 30 minutes or more", "Reduced fear of bending and extension, self-rated"]
+      },
+      {
+        name: "Build capacity",
+        timeframe: "Weeks 6–12",
+        goals: ["Increase hip and trunk strength and endurance", "Lift and carry at the level of work and home demands", "Develop aerobic fitness"],
+        precautions: ["Increase load or repetitions by about 5–10% a week, one variable at a time (clinical convention)", "A short flare is a signal to reduce volume by one step for a few days, not to stop"],
+        exercises: [
+          { name: "Forearm plank", dosage: "3 holds of 30–45 seconds, 3 times a week (clinical convention)", cues: "Straight line from head to heels", figure: { pose: "ex-plank", view: "lateral", props: ["mat"] } },
+          { name: "Bodyweight or goblet squat", dosage: "3 sets of 10 repetitions, 2–3 times a week (clinical convention)", cues: "Knees track over toes; trunk upright", figure: { pose: "ex-squat", view: "lateral" } },
+          { name: "Step-up", dosage: "3 sets of 8–10 repetitions per leg (clinical convention)", cues: "Control the descent; level pelvis", figure: { pose: "ex-step-up", view: "lateral", props: ["box"] } },
+          { name: "Romanian deadlift", dosage: "3 sets of 6–10 repetitions with progressive load, 2 times a week (clinical convention)", cues: "Hinge from the hips; keep the bar close", figure: { pose: "ex-rdl", view: "lateral", props: ["barbell"] } },
+          { name: "Hip thrust", dosage: "3 sets of 8–12 repetitions, 2–3 times a week (clinical convention)", cues: "Pelvic tilt at the top; avoid lumbar hyperextension", figure: { pose: "ex-hip-thrust", view: "lateral", props: ["bench"] } },
+          { name: "Farmer carry", dosage: "3 carries of 20–30 metres, 2 times a week (clinical convention)", cues: "Walk tall; resist leaning to one side", figure: { pose: "ex-farmer-carry", view: "lateral", props: ["kettlebell"] } }
+        ],
+        progressionCriteria: ["Pain 2/10 or lower with training loads (clinical convention)", "Squat, hinge and carry at loads relevant to the person's life", "Aerobic activity of 30 minutes tolerated", "Flares settle quickly with load adjustment"]
+      },
+      {
+        name: "Maintain & self-manage",
+        timeframe: "Week 12 onward",
+        goals: ["Return to chosen work, recreation and sport", "Graded exposure to extension and rotation tasks that the person avoids", "Sustained exercise habit and a flare-up plan"],
+        precautions: ["Return to demanding activity through graded steps", "Reassess the diagnosis and psychosocial factors if pain does not improve by about 12 weeks, before escalating to procedures [r13,r9]"],
+        exercises: [
+          { name: "Graded prone press-up or standing extension exposure", dosage: "2–3 sets of 8–10 repetitions if the person avoids extension and it is tolerated (clinical convention)", cues: "Relax the buttocks; progress range gradually", figure: { pose: "ex-prone-press-up", view: "lateral", props: ["mat"] } },
+          { name: "Squat lift from the floor", dosage: "4 sets of 6 repetitions at work-simulation loads (clinical convention)", cues: "Keep the load close; exhale on the effort", figure: { pose: "lift-squat", view: "lateral", props: ["box"] } },
+          { name: "Rotation and anti-rotation drills", dosage: "3 sets of 8 per side, building speed progressively (clinical convention)", cues: "Rotate through the hips and thoracic spine; keep the lumbar spine controlled" },
+          { name: "Aerobic base (walking, cycling or swimming)", dosage: "30–45 minutes, 3–5 times a week (clinical convention)", cues: "Moderate effort", figure: { pose: "run-midstance", view: "lateral" } },
+          { name: "Recreation-specific practice (for example golf swing or gardening tasks)", dosage: "Start at a fraction of usual volume and build by about 10–20% a week (clinical convention)", cues: "Rest breaks and varied positions during long sessions", figure: { pose: "swing-golf-impact", view: "lateral", props: ["golf-club"] } }
+        ],
+        progressionCriteria: ["Usual work and recreation completed with only minor symptoms", "Written self-management and flare-up plan", "Regular exercise habit (for example 2–3 sessions a week)"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "No validated return-to-activity criteria specific to facet joint pain were identified in the sources reviewed; the criteria below are clinical convention",
+      "Pain does not limit the target activity (for example 2/10 or lower)",
+      "Back confidence restored: low fear of bending, lifting and extension",
+      "Strength and endurance adequate for the work or activity, with symmetry across sides",
+      "No neurological symptoms or signs and no red flags",
+      "A plan for flare-ups and ongoing exercise"
+    ],
+    tests: [
+      "Patient-Specific Functional Scale against the person's goal task",
+      "Oswestry Disability Index or Roland Morris Disability Questionnaire",
+      "Side plank and plank endurance, both sides",
+      "Repeated sit-to-stand, floor lift and carry at activity-relevant loads"
+    ]
+  },
+
+  prognosis: "No natural-history data specific to facet joint pain were identified in the sources reviewed. For persistent LBP in general, mean pain scores in a meta-analysis of cohorts were 51 out of 100 at baseline, 33 at 6 weeks, 26 at 26 weeks and 23 at 52 weeks [r16]. Persistence is predicted by high initial pain intensity, psychological distress and pain at multiple body sites, and central pain-modulating mechanisms and pain cognitions have important roles [r15]. Imaging severity does not predict pain, since facet osteoarthritis was common in people without LBP [r6]. Response to interventional treatment is uncertain: in the facet joint MINT trial the mean difference in pain at 3 months was −0.18 (95% CI −0.76 to 0.40) when denervation was added to exercise [r12], although a Cochrane review found moderate-quality evidence of short-term benefit versus placebo [r11] and a consensus group considered denervation helpful in well-selected people [r13].",
+  prevention: [
+    "No intervention is known to prevent facet joint pain specifically; the points below are extrapolated from general LBP evidence.",
+    "Exercise combined with education reduced the risk of a new LBP episode (relative risk 0.55, 95% CI 0.41–0.74; moderate-quality evidence); exercise alone may also reduce risk (relative risk 0.65, 95% CI 0.50–0.86; low- to very low-quality evidence) [r18].",
+    "Address general modifiable risk factors for LBP, including smoking, obesity and physical inactivity, and vary postures during long periods of sitting or standing [r15].",
+    "Do not rely on back belts or education alone, which did not reduce LBP episodes in a prevention meta-analysis [r18]."
+  ],
+  clinicalPearls: [
+    "Do not diagnose 'facet syndrome' in the clinic. The literature does not support diagnosing lumbar zygapophyseal joint pain from history or examination, and none of the facet tests in a systematic review of 41 studies were informative [r2,r4].",
+    "A positive single block is often a false positive: in 176 patients the false-positive rate was 38% and the positive predictive value 31%. Prevalence also falls as the criteria tighten, from 24.5% responding at 75% relief to 10.8% at 95% relief [r7,r14].",
+    "Do not blame the scan. Facet osteoarthritis on CT was found in 59.6% of men and 66.7% of women in a community sample, rising to 89.2% at 60 to 69 years, and was not associated with back pain [r6].",
+    "Radiofrequency denervation is a selective, contested option: a Cochrane review found moderate-quality evidence of short-term benefit (mean difference −1.47 on a 0–10 scale) but the facet MINT trial found −0.18 and no clinically important benefit [r11,r12]. Reserve it for people who have failed conservative care and been selected carefully [r13].",
+    "A negative extension-rotation test is more useful than a positive one: it helped rule out a positive response to a screening block [r14]. Use it to question the label, not to confirm it.",
+    "Exercise, education and graded activity remain the foundation of care for chronic LBP, whichever tissue is involved [r8,r10]."
+  ],
+  related: ["acute-low-back-pain", "lumbar-disc-herniation", "spondylolisthesis", "lumbar-spinal-stenosis", "sacroiliac-joint-pain", "spondylolysis"],
+
+  references: [
+    { id: "r1", citation: "Gellhorn AC, Katz JN, Suri P. Osteoarthritis of the spine: the facet joints. Nat Rev Rheumatol. 2013;9(4):216-24.", pmid: "23147891", doi: "10.1038/nrrheum.2012.199", type: "narrative-review", year: 2013 },
+    { id: "r2", citation: "Cohen SP, Raja SN. Pathogenesis, diagnosis, and treatment of lumbar zygapophysial (facet) joint pain. Anesthesiology. 2007;106(3):591-614.", pmid: "17325518", doi: "10.1097/00000542-200703000-00024", type: "narrative-review", year: 2007 },
+    { id: "r3", citation: "Adams MA, Hutton WC. The mechanical function of the lumbar apophyseal joints. Spine (Phila Pa 1976). 1983;8(3):327-30.", pmid: "6623200", doi: "10.1097/00007632-198304000-00017", type: "biomechanical", year: 1983 },
+    { id: "r4", citation: "Hancock MJ, Maher CG, Latimer J, et al. Systematic review of tests to identify the disc, SIJ or facet joint as the source of low back pain. Eur Spine J. 2007;16(10):1539-50.", pmid: "17566796", doi: "10.1007/s00586-007-0391-1", type: "systematic-review", year: 2007 },
+    { id: "r5", citation: "Revel M, Poiraudeau S, Auleley GR, et al. Capacity of the clinical picture to characterize low back pain relieved by facet joint anesthesia. Proposed criteria to identify patients with painful facet joints. Spine (Phila Pa 1976). 1998;23(18):1972-6.", pmid: "9779530", doi: "10.1097/00007632-199809150-00011", type: "rct", year: 1998 },
+    { id: "r6", citation: "Kalichman L, Li L, Kim DH, et al. Facet joint osteoarthritis and low back pain in the community-based population. Spine (Phila Pa 1976). 2008;33(23):2560-5.", pmid: "18923337", doi: "10.1097/BRS.0b013e318184ef95", type: "cross-sectional", year: 2008 },
+    { id: "r7", citation: "Schwarzer AC, Aprill CN, Derby R, et al. The false-positive rate of uncontrolled diagnostic blocks of the lumbar zygapophysial joints. Pain. 1994;58(2):195-200.", pmid: "7816487", doi: "10.1016/0304-3959(94)90199-6", type: "diagnostic-accuracy", year: 1994 },
+    { id: "r8", citation: "George SZ, Fritz JM, Silfies SP, et al. Interventions for the management of acute and chronic low back pain: revision 2021. J Orthop Sports Phys Ther. 2021;51(11):CPG1-60.", pmid: "34719942", doi: "10.2519/jospt.2021.0304", type: "clinical-practice-guideline", year: 2021 },
+    { id: "r9", citation: "Foster NE, Anema JR, Cherkin D, et al. Prevention and treatment of low back pain: evidence, challenges, and promising directions. Lancet. 2018;391(10137):2368-83.", pmid: "29573872", doi: "10.1016/S0140-6736(18)30489-6", type: "narrative-review", year: 2018 },
+    { id: "r10", citation: "Qaseem A, Wilt TJ, McLean RM, et al. Noninvasive treatments for acute, subacute, and chronic low back pain: a clinical practice guideline from the American College of Physicians. Ann Intern Med. 2017;166(7):514-30.", pmid: "28192789", doi: "10.7326/M16-2367", type: "clinical-practice-guideline", year: 2017 },
+    { id: "r11", citation: "Maas ET, Ostelo RW, Niemisto L, et al. Radiofrequency denervation for chronic low back pain. Cochrane Database Syst Rev. 2015;(10):CD008572.", pmid: "26495910", doi: "10.1002/14651858.CD008572.pub2", type: "meta-analysis", year: 2015 },
+    { id: "r12", citation: "Juch JNS, Maas ET, Ostelo RWJG, et al. Effect of radiofrequency denervation on pain intensity among patients with chronic low back pain: the Mint randomized clinical trials. JAMA. 2017;318(1):68-81.", pmid: "28672319", doi: "10.1001/jama.2017.7918", type: "rct", year: 2017 },
+    { id: "r13", citation: "Cohen SP, Bhaskar A, Bhatia A, et al. Consensus practice guidelines on interventions for lumbar facet joint pain from a multispecialty, international working group. Reg Anesth Pain Med. 2020;45(6):424-67.", pmid: "32245841", doi: "10.1136/rapm-2019-101243", type: "consensus-statement", year: 2020 },
+    { id: "r14", citation: "Laslett M, McDonald B, Aprill CN, et al. Clinical predictors of screening lumbar zygapophyseal joint blocks: development of clinical prediction rules. Spine J. 2006;6(4):370-9.", pmid: "16825041", doi: "10.1016/j.spinee.2006.01.004", type: "diagnostic-accuracy", year: 2006 },
+    { id: "r15", citation: "Hartvigsen J, Hancock MJ, Kongsted A, et al. What low back pain is and why we need to pay attention. Lancet. 2018;391(10137):2356-67.", pmid: "29573870", doi: "10.1016/S0140-6736(18)30480-X", type: "narrative-review", year: 2018 },
+    { id: "r16", citation: "da C Menezes Costa L, Maher CG, Hancock MJ, et al. The prognosis of acute and persistent low-back pain: a meta-analysis. CMAJ. 2012;184(11):E613-24.", pmid: "22586331", doi: "10.1503/cmaj.111271", type: "meta-analysis", year: 2012 },
+    { id: "r17", citation: "Downie A, Williams CM, Henschke N, et al. Red flags to screen for malignancy and fracture in patients with low back pain: systematic review. BMJ. 2013;347:f7095.", pmid: "24335669", doi: "10.1136/bmj.f7095", type: "systematic-review", year: 2013 },
+    { id: "r18", citation: "Steffens D, Maher CG, Pereira LS, et al. Prevention of low back pain: a systematic review and meta-analysis. JAMA Intern Med. 2016;176(2):199-208.", pmid: "26752509", doi: "10.1001/jamainternmed.2015.7431", type: "meta-analysis", year: 2016 }
+  ],
+
+  animation: {
+    title: "How lumbar facet joint pain develops",
+    phases: [
+      {
+        type: "moi", label: "Loading", duration: 6.5, view: "lateral", environment: "home",
+        actors: [{ id: "person", kit: "older-adult" }],
+        keyframes: [
+          { t: 0, actor: "person", pose: "stand" },
+          { t: 1.2, actor: "person", pose: "overhead-reach" },
+          { t: 2.6, actor: "person", pose: "overhead-reach", joints: { trunk: -18, pelvis: 12 } },
+          { t: 4.0, actor: "person", pose: "overhead-reach", joints: { trunk: -18, pelvis: 12 } },
+          { t: 5.2, actor: "person", pose: "overhead-reach", joints: { trunk: -22, pelvis: 14 }, ease: "in" }
+        ],
+        forces: [
+          { t: [2.6, 6.2], at: "lowBack", dir: "backward", label: "Extension loads the facet joints" }
+        ],
+        highlights: [{ t: [3.0, 6.5], at: "lowBack" }],
+        captions: [
+          { t: 0, text: "An older adult, with some disc and joint degeneration in the lower back, starts a household task." },
+          { t: 1.2, text: "Reaching overhead and arching the back increases lumbar extension." },
+          { t: 2.8, text: "In lordotic postures the facet joints share compressive load and resist shear." },
+          { t: 4.4, text: "With disc degeneration, the facets carry more of that load and the joint capsule is repeatedly stressed." },
+          { t: 5.4, text: "A dull, achy back pain follows. No single movement or test proves the facet joints are the source." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "lowBack",
+        captions: [{ t: 0, text: "Zooming into the lumbar spine from the side to see the facet joints behind the discs.", }]
+      },
+      {
+        type: "closeup", label: "Facet joints", duration: 10, scene: "lumbar-sagittal",
+        actions: [
+          { t: 0, do: "highlight", target: "facetL4L5" },
+          { t: 0.2, do: "label", target: "facetL4L5", text: "L4–5 facet joint" },
+          { t: 0.8, do: "highlight", target: "facetL5S1" },
+          { t: 1.0, do: "label", target: "facetL5S1", text: "L5–S1 facet joint" },
+          { t: 2.2, do: "degenerate", target: "discL4L5" },
+          { t: 2.2, do: "degenerate", target: "discL5S1" },
+          { t: 3.8, do: "stretch", target: "facetL4L5", amount: 0.35 },
+          { t: 3.8, do: "stretch", target: "facetL5S1", amount: 0.3 },
+          { t: 5.4, do: "inflame", target: "facetL4L5", amount: 0.6 },
+          { t: 5.6, do: "inflame", target: "facetL5S1", amount: 0.4 },
+          { t: 6.6, do: "swell", target: "facetL4L5", amount: 0.4 },
+          { t: 7.6, do: "camera", target: "facetL4L5", zoom: 1.7, dur: 1 },
+          { t: 9.2, do: "camera", zoom: 1, dur: 0.7 }
+        ],
+        captions: [
+          { t: 0, text: "The facet joints are paired synovial joints at the back of each segment, behind the discs." },
+          { t: 2.2, text: "Ageing and disc degeneration change how load is shared, so more passes through the facets." },
+          { t: 3.8, text: "Extension and rotation stress the joint surfaces and the capsule around them." },
+          { t: 5.4, text: "The capsule and synovium can become irritated and inflamed, and the cartilage wears over the years." },
+          { t: 6.8, text: "Scans often show this wear in people with no back pain, so it does not prove the joint is the source." },
+          { t: 8.4, text: "Only controlled nerve or joint blocks can test whether a joint is the pain source, and they often give false positives." }
+        ]
+      },
+      {
+        type: "micro", label: "Joint tissue", duration: 10, tissue: "capsule",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 2.2, stage: "inflammation" }, { t: 4.8, stage: "fibrosis" }, { t: 7.4, stage: "remodelling" }
+        ],
+        timeLabels: [{ t: 2.2, text: "Flares: days–weeks" }, { t: 4.8, text: "Chronic: months–years" }, { t: 7.4, text: "Years" }],
+        captions: [
+          { t: 0, text: "Healthy joint capsule and synovium: a thin lining over smooth cartilage." },
+          { t: 2.2, text: "Overload and degeneration can inflame the synovium and capsule, sensitising nerve endings." },
+          { t: 4.8, text: "With persistent irritation the capsule can thicken and stiffen." },
+          { t: 7.4, text: "The joint remodels over years, but the extent of change on imaging does not predict how much it hurts." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "SP3" }
+};
