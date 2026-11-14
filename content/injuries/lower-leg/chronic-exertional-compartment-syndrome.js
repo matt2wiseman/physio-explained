@@ -428,15 +428,14 @@ export default {
       {
         type: "micro", label: "Compartment", duration: 10, tissue: "compartment",
         stages: [
-          { t: 0, stage: "healthy" }, { t: 1.4, stage: "swelling" }, { t: 3.0, stage: "pressure-rise" },
-          { t: 4.8, stage: "venous-occlusion" }, { t: 7.0, stage: "decompression" }
+          { t: 0, stage: "healthy" }, { t: 1.8, stage: "swelling" }, { t: 4.0, stage: "pressure-rise" }, { t: 6.0, stage: "venous-occlusion" }
         ],
         captions: [
           { t: 0, text: "Resting compartment: muscle fibres and capillaries sit inside a tight fascial sleeve." },
-          { t: 1.4, text: "With exercise, muscle blood flow and volume rise and the compartment swells." },
-          { t: 3.0, text: "Pressure rises because the fascia cannot stretch." },
-          { t: 4.8, text: "Higher pressure impairs venous outflow and perfusion, a proposed cause of pain and tightness." },
-          { t: 7.0, text: "On stopping, or after fasciotomy, pressure falls and circulation recovers." }
+          { t: 1.8, text: "With exercise, muscle blood flow and volume rise and the compartment swells." },
+          { t: 4.0, text: "Pressure rises because the fascia cannot stretch." },
+          { t: 6.0, text: "Higher pressure impairs venous outflow and perfusion, a proposed cause of pain and tightness." },
+          { t: 8.2, text: "At rest, pressure falls and symptoms settle quickly; this is not the sustained ischaemia of acute compartment syndrome." }
         ]
       }
     ]

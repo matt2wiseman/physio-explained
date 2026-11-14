@@ -1,0 +1,394 @@
+export default {
+  id: "acute-wry-neck",
+  name: "Acute wry neck (acute torticollis)",
+  shortName: "Acute wry neck",
+  aka: ["wry neck", "acute torticollis", "acute neck lock", "locked neck", "crick in the neck", "stiff neck on waking", "acute cervical locking", "acute facet joint lock", "acute non-traumatic neck pain"],
+  region: "cervical",
+  tissues: ["muscle", "joint-capsule"],
+  onset: "acute",
+  mechanismType: ["insidious", "non-contact"],
+  populations: ["adults", "people who wake with a stiff neck", "people after an awkward movement or sustained posture"],
+  sports: [],
+  urgency: "routine",
+  summary: "A sudden painful loss of neck rotation with the head held to one side and protective muscle spasm. The cause is often unclear, and it usually settles over days to weeks.",
+  keyFacts: [
+    { label: "Typical recovery", value: "Commonly days to a couple of weeks (clinical experience). For acute idiopathic neck pain in general, mean pain fell from 64 to 35 out of 100 by 6.5 weeks but was still 42 at 12 months" },
+    { label: "Return to sport", value: "Criteria-based; no validated criteria. Needs near-symmetrical pain-free rotation, normal neurological findings and no guarding" },
+    { label: "Key test", value: "Observation of the head posture and active and passive range of motion, with a neurological screen and a trauma screen (Canadian C-spine rule if any injury)" },
+    { label: "Imaging", value: "Not needed for a typical non-traumatic episode; used when there is trauma, neurological signs, fever or a failure to improve" },
+    { label: "Peak age", value: "Adults; wry neck is described as common in adults, but age-specific data were not identified" },
+    { label: "Incidence", value: "Not established in the sources reviewed" }
+  ],
+  overview: "Acute wry neck (acute torticollis) is a sudden onset of neck pain with the head held in a tilted or rotated posture and a marked loss of movement, often noticed on waking or after an awkward movement. It is described as common among adults and is mainly managed with medication and physiotherapy [r1]. The cause is often unclear. Proposed sources include a painful facet joint (sometimes called acute facet joint lock), protective spasm of the neck muscles, or a minor disc or ligament strain, but none has been confirmed, so avoid attributing it to one structure [r1].\n\nMost episodes are said to settle over days to a couple of weeks, but controlled natural-history data specific to wry neck were not identified. For acute idiopathic neck pain in general, a meta-analysis found that pain fell from a mean of 64 to 35 (0–100) by 6.5 weeks, yet remained at 42 at 12 months, so the prognosis is worse than often assumed [r2]. Management is reassurance, analgesia, early gentle movement and, in selected cases, manual therapy. Serious causes are uncommon but are the reason to ask about trauma, fever and neurological symptoms every time, because they can present as torticollis [r3,r4,r5].",
+
+  epidemiology: {
+    text: "No incidence or prevalence figures specific to adult acute wry neck were identified in the sources reviewed. It is described as common among adults and is typically managed with medications and physiotherapy [r1]. It is a recognised emergency department presentation: one trial enrolled adults aged 16 to 65 years with acute non-traumatic wry neck [r6]. For acute idiopathic neck pain in general, seven inception cohorts showed a mean pain score of 64 (0–100) at onset, 35 at 6.5 weeks and 42 at 12 months [r2].",
+    riskFactors: {
+      intrinsic: [
+        "Adult age: described as common among adults, but age-specific data were not identified [r1]",
+        "Previous episodes of neck pain or wry neck (clinical observation; not quantified in the sources reviewed)",
+        "Degenerative or hypermobile segments (a clinical hypothesis, not established)"
+      ],
+      extrinsic: [
+        "Awkward sleeping posture or a sustained posture, such as prolonged desk work or reading in bed (clinical observation)",
+        "A sudden, unguarded rotation or flexion of the neck (clinical observation)",
+        "Recent minor trauma: ask about it, because atlantoaxial rotatory subluxation can present as acute torticollis after mild trauma [r3]",
+        "Medicines that provoke dystonia, such as some antiemetics and antipsychotics, are a different cause (acute dystonic reaction) and trials exclude them [r6]"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "Acute wry neck has no single, proven mechanism. It often begins on waking or after an awkward movement, with sudden pain and a head held tilted or rotated to one side. The proposed pathway is that a painful tissue, possibly a facet joint capsule (an 'acute facet joint lock') or a muscle, triggers reflex protective spasm of the neck muscles on one side. Spasm holds the head in a fixed position and makes movement painful [r1]. The tissue source is rarely identified, so treat the label as descriptive.",
+    sequence: [
+      "The person wakes with a stiff, painful neck, or the pain begins during an awkward movement or sustained posture. Many have no clear trigger.",
+      "A sensitive tissue is irritated. Candidates include a facet joint capsule (acute facet joint lock) or neck muscles, but the source is unclear [r1].",
+      "Nociceptive input drives reflex spasm of the neck muscles on one side, such as the upper trapezius, levator scapulae, splenius and sternocleidomastoid (clinical observation).",
+      "The head is held in a tilted or rotated posture, sometimes called the 'cock-robin' position, and attempts to move out of it are painful [r3].",
+      "Pain, guarding and fear of moving keep the neck rigid. Movement in some directions is almost lost.",
+      "Over days the spasm and pain ease, and range of motion returns, in most people (clinical experience). Some have residual pain for months [r2]."
+    ],
+    variants: [
+      { name: "Acute facet joint lock type", description: "Sudden onset with a lateral flexion or rotation posture and painful, asymmetric restriction. This is the picture described as 'acute facet joint lock induced wry neck', though the lock itself is a hypothesis [r1]." },
+      { name: "Muscular spasm type", description: "Painful spasm after prolonged posture or strain, with tender, tight neck and shoulder muscles and little joint-specific restriction (clinical observation)." },
+      { name: "Post-traumatic torticollis", description: "Torticollis after trauma, even minor, needs exclusion of fracture and atlantoaxial rotatory subluxation before treatment [r3,r7]." },
+      { name: "Drug-induced or dystonic torticollis", description: "Acute dystonic reaction to a dopamine-blocking drug, or cervical dystonia, causes involuntary sustained contraction. Anticholinergic treatment did not help typical non-traumatic wry neck in a small trial [r6]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The neck is moved and held by many muscles. The sternocleidomastoid turns the head to the opposite side and flexes it. The upper trapezius, levator scapulae, splenius and semispinalis extend, side-flex and rotate the neck and head. The deep neck flexors (longus colli) and the suboccipital muscles control the upper cervical spine. The facet (zygapophysial) joints, with their capsules, guide rotation and side-flexion, and are one proposed source of sudden painful locking [r1]. Discs, ligaments and muscle attachments can also generate acute pain. The nerve roots and spinal cord lie behind these structures and are expected to be unaffected in a typical case.",
+    structures: [
+      { name: "Facet (zygapophysial) joints and capsules", role: "Guide neck rotation and side-flexion. A painful capsule is a proposed trigger for acute locking [r1]." },
+      { name: "Upper trapezius and levator scapulae", role: "Elevate the scapula and side-flex and extend the neck. They commonly show protective spasm and tenderness (clinical observation)." },
+      { name: "Sternocleidomastoid", role: "Rotates the head to the opposite side and flexes the neck. Spasm contributes to the fixed head posture (clinical observation)." },
+      { name: "Splenius, semispinalis and suboccipital muscles", role: "Extend and rotate the head and upper neck, and control upper cervical position" },
+      { name: "Deep neck flexors (longus colli)", role: "Stabilise the cervical lordosis and control segmental motion" },
+      { name: "Intervertebral discs and ligaments", role: "Provide stability. Minor strain is a proposed but unproven source." },
+      { name: "Atlantoaxial joint", role: "Provides about half of axial rotation. Rotatory subluxation can mimic wry neck after trauma [r3]." }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "No consistent structural lesion has been demonstrated in acute wry neck. Imaging is not usually done, and when it is, it is typically normal. Proposed mechanisms are an irritated facet joint capsule or intra-articular tissue (often called acute facet joint lock), muscle strain, or a minor disc or ligament strain. These are inferred from the clinical picture, and one study that treated 'acute facet joint lock induced wry neck' with dry needling was uncontrolled and had only 21 patients [r1]. The honest position is that the source is unknown in most people.\n\nThe defining feature is protective muscle spasm. Nociceptive input from the irritated tissue produces reflex contraction of the neck muscles on one side, which holds the head in a fixed posture and restricts movement. This does not imply tissue damage in the muscle itself. A trial of intramuscular benztropine, an anticholinergic that would be expected to help a dystonic mechanism, did not reduce pain or improve range of motion in 30 patients with wry neck, although its confidence interval did not exclude a clinically important effect [r6].",
+    structures: [
+      { name: "Facet joint capsule or intra-articular tissue (proposed)", effect: "Sudden painful restriction of motion. Described as 'acute facet joint lock', but the lock is a hypothesis [r1]." },
+      { name: "Neck muscles (upper trapezius, levator scapulae, sternocleidomastoid, splenius)", effect: "Protective spasm, tenderness and shortening on one side, holding the head tilted (clinical observation)" },
+      { name: "Disc and ligaments (proposed)", effect: "Minor strain may contribute in some people, but is not proven" },
+      { name: "Atlantoaxial joint (rare)", effect: "Rotatory subluxation can present as acute torticollis after mild trauma and needs CT [r3]" }
+    ],
+    muscles: [
+      { name: "Upper trapezius, levator scapulae, splenius", effect: "Protective spasm and tenderness, with reduced length and stiffness on the side of the posture (clinical observation)" },
+      { name: "Sternocleidomastoid", effect: "Contracted on the side that turns the head away. Tenderness along the muscle (clinical observation)." },
+      { name: "Deep neck flexors and scapular stabilisers", effect: "May show reduced endurance after the episode. Addressed in rehabilitation to reduce recurrence (clinical convention)." }
+    ],
+    cellular: [
+      { phase: "Nociceptor activation and reflex spasm", timing: "Minutes to hours", description: "Irritation of a joint capsule or muscle activates nociceptors and drives reflex contraction of nearby muscles (clinical understanding)." },
+      { phase: "Guarding and pain-spasm cycle", timing: "Days 1–3", description: "Sustained contraction and fear of moving keep the neck rigid, with local metabolite accumulation and tenderness. The 'pain-spasm-pain' cycle is a hypothesis." },
+      { phase: "Resolution", timing: "Days to weeks", description: "As the irritated tissue settles, spasm eases and motion returns in most people (clinical experience). Pain at 6.5 weeks averaged 35/100 in acute idiopathic neck pain [r2]." },
+      { phase: "Persistence in some people", timing: "Months", description: "A proportion have lingering pain: mean pain was 42/100 at 12 months in acute idiopathic neck pain [r2]." }
+    ],
+    systems: [
+      { system: "Nervous system", effect: "Nociceptive input drives reflex muscle spasm. In some people, sensitisation may prolong symptoms (clinical understanding)." },
+      { system: "Musculoskeletal chain", effect: "Fixed head and neck posture loads the shoulder girdle and thoracic spine, which can add pain (clinical observation)." },
+      { system: "Psychological", effect: "Fear of moving the neck and worry about a serious cause are common and can prolong guarding (clinical observation)." },
+      { system: "Sleep and daily function", effect: "Pain disturbs sleep and driving. Disability in acute idiopathic neck pain fell from a mean of 30 to 17 (0–100) by 6.5 weeks [r2]." }
+    ]
+  },
+
+  grading: null,
+
+  timeframes: {
+    summary: "Most episodes of acute wry neck are said to settle within days to a couple of weeks, but wry-neck-specific natural-history data were not identified. In acute idiopathic neck pain more broadly, pain and disability improved over about 6.5 weeks with little further gain by 12 months [r2]. The phases below are typical clinical timeframes.",
+    healing: [
+      { phase: "Acute guarding", startDay: 0, endDay: 3, description: "Peak pain and spasm with the head held in a fixed posture. Reassure, relieve pain and encourage gentle movement." },
+      { phase: "Settling", startDay: 2, endDay: 14, description: "Spasm eases, and rotation and side-flexion return. Progress active range of motion and daily activity." },
+      { phase: "Restoring control", startDay: 14, endDay: 42, description: "Residual stiffness and endurance deficits are addressed with exercise. Pain averaged 35/100 at 6.5 weeks in acute idiopathic neck pain [r2]." },
+      { phase: "Persisting symptoms", startDay: 42, endDay: 365, description: "A subgroup have continued pain: mean 42/100 at 12 months in acute idiopathic neck pain [r2]. Re-examine, screen for other causes and review management." }
+    ],
+    milestones: [
+      { label: "Serious causes screened out", day: 0, note: "Trauma, fever, neurological signs and medicines asked about at the first visit [r3,r4]" },
+      { label: "Pain relief assessed at 30 minutes in the ED", day: 0, note: "In the benztropine trial pain at 30 min was not significantly lower than with placebo (difference 0.6 points) [r6]" },
+      { label: "Rotation visibly improving", day: 7, note: "Typical clinical expectation; not quantified in the sources reviewed" },
+      { label: "Review point for slow recovery", day: 14, note: "If not clearly improving by about 2 weeks, re-examine for other causes (clinical convention)" },
+      { label: "Pain average 35/100 in acute idiopathic neck pain", day: 46, note: "At 6.5 weeks, pooled across seven cohorts [r2]" },
+      { label: "Mean pain 42/100 at 12 months", day: 365, note: "Acute idiopathic neck pain in general, not wry neck specifically [r2]" }
+    ],
+    returnToSport: "Criteria-based, not time-based. No validated criteria exist for wry neck. Return to training when rotation is near-symmetrical and pain-free, there is no guarding, and neck endurance is adequate. Contact and collision sport need full recovery first (clinical convention)."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Sudden onset of unilateral neck pain, often noticed on waking or after an awkward movement",
+      "Inability to turn the head fully, with the head held tilted or rotated to one side",
+      "Pain and tightness over the upper trapezius, side of the neck or scapular border, sometimes with referral to the head",
+      "Pain on trying to move out of the fixed posture, and difficulty sleeping or driving",
+      "No arm weakness, numbness, fever or clear injury in a typical case (clinical observation)"
+    ],
+    signs: [
+      "Head held in lateral flexion and rotation (the 'cock-robin' position) [r3]",
+      "Marked, asymmetric loss of active and passive cervical range of motion, with a guarded end-feel",
+      "Palpable spasm and tenderness in the upper trapezius, levator scapulae, sternocleidomastoid or paraspinal muscles",
+      "Local tenderness over one facet joint or segment in some people",
+      "Normal neurological examination, with normal reflexes, strength and sensation in the arms"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Onset: sudden or on waking, and what the person was doing. Any trauma, even mild, changes the plan [r3,r7]",
+      "Fever, sore throat, difficulty swallowing or neck swelling (deep neck infection can cause torticollis) [r4]",
+      "Neurological symptoms: arm weakness, numbness, clumsy hands, gait change [r5]",
+      "Medicines: recent antiemetics or antipsychotics (acute dystonic reaction) [r6]",
+      "Previous episodes, headache, systemic illness, cancer history and current stress or sleep disturbance",
+      "Pain behaviour and what eases or provokes it. Fear of moving the neck."
+    ],
+    observation: ["Resting head and neck posture (tilt and rotation) and visible muscle spasm [r3]", "Spontaneous movements and facial grimacing with movement", "Shoulder height and thoracic posture"],
+    palpation: ["Spasm and tenderness in the upper trapezius, levator scapulae, sternocleidomastoid and splenius", "Segmental tenderness over the facet joints", "Midline bony tenderness: if present after any trauma, image before further assessment [r7]"],
+    rangeOfMotion: ["Active and passive cervical rotation, side-flexion, flexion and extension, with end-feel and which direction is limited", "Gentle active range within pain limits; avoid forcing against guarding", "After any trauma, the Canadian C-spine rule requires 45° of active rotation each way to proceed without radiography [r7]"],
+    strength: ["Shoulder and arm myotomes C5–T1 to screen for root involvement", "Deep neck flexor endurance once pain allows"],
+    neuro: ["Reflexes, dermatomal sensation and myotomes in the arms", "Upper motor neuron signs and gait if there is hand clumsiness or imbalance", "Cranial nerves and signs of cervical arterial dysfunction if there is dizziness or sudden severe pain"],
+    functional: ["Turning the head to check traffic and driving", "Sleep position tolerance", "Work posture and screen use"],
+    specialTests: [
+      { name: "Observation and palpation for protective spasm", purpose: "Confirm the typical acute torticollis picture", procedure: "Observe the resting head posture, then palpate the neck and upper trapezius for spasm and tenderness, comparing sides.", positive: "Head held tilted or rotated with unilateral muscle spasm and tenderness. No accuracy data were identified.", refs: [] },
+      { name: "Active and passive cervical range of motion", purpose: "Quantify the restriction and track recovery", procedure: "Measure rotation and side-flexion with an inclinometer or goniometer, noting the limiting direction and end-feel. A goniometer was used in the dry needling study [r1].", positive: "Marked, asymmetric restriction with a guarded end-feel. No accuracy data were identified.", refs: ["r1"] },
+      { name: "Canadian C-spine rule (if any trauma)", purpose: "Decide whether radiography is required after neck trauma, even minor", procedure: "Check high-risk factors (age 65 or older, dangerous mechanism, paraesthesia), low-risk factors permitting range-of-motion testing, and ability to actively rotate 45° each way.", positive: "Any high-risk factor, no low-risk factor, or inability to rotate 45° each way means radiography is indicated.", sensitivity: "100% (95% CI 98–100) in the derivation cohort", specificity: "42.5% in the derivation cohort", refs: ["r7"] },
+      { name: "Neurological screen of the upper limbs", purpose: "Exclude radiculopathy, myelopathy and other neurological causes", procedure: "Test myotomes, dermatomes and reflexes C5–T1, and upper motor neuron signs (Hoffmann, hyperreflexia, gait).", positive: "Any weakness, sensory loss, reflex change or upper motor neuron sign is not typical of wry neck and needs further assessment. No accuracy data were quoted.", refs: [] }
+    ],
+    clinicalRules: [
+      { name: "Canadian C-spine rule", description: "Apply to any alert, stable patient with neck trauma, including mild trauma, before manual assessment. It was 100% sensitive (95% CI 98–100) in a derivation cohort of 8924 patients [r7]." },
+      { name: "OPTIMa guideline sequence for acute neck pain", description: "Rule out major structural or other pathology, classify the disorder, assess prognostic factors, then educate and reassure patients about the benign, self-limited course of typical neck pain and the importance of maintaining movement. Refer worsening symptoms and new physical or psychological symptoms [r8]." }
+    ],
+    outcomeMeasures: [
+      { name: "Numerical or visual analogue pain scale", use: "Track pain at rest and with movement; a 0–100 mm visual analogue scale was used in a wry neck study [r1]" },
+      { name: "Cervical range of motion (goniometer or inclinometer)", use: "Record rotation and side-flexion each visit [r1]" },
+      { name: "Neck Disability Index", use: "Self-reported disability; used in an acute neck pain trial [r9]" },
+      { name: "Fear-Avoidance Beliefs Questionnaire", use: "Identify fear of movement, which can prolong guarding [r9]" }
+    ],
+    imaging: [
+      { modality: "None for a typical non-traumatic episode", indication: "Typical acute wry neck with normal neurology and no red flags", findings: "Imaging is not required. Management is clinical." },
+      { modality: "Plain radiograph or CT", indication: "Any trauma where the Canadian C-spine rule indicates imaging [r7], or suspected atlantoaxial rotatory subluxation (CT) [r3]", findings: "Fracture, malalignment or atlantoaxial rotatory subluxation (reducible in the emergency department in one case) [r3]" },
+      { modality: "MRI", indication: "Neurological signs, suspected infection or haematoma, or no improvement with a persistent fixed posture", findings: "Epidural haematoma was shown on MRI in an infant who presented with a wry neck and limb weakness [r5]. Deep neck infection can present with torticollis even without fever [r4]." }
+    ]
+  },
+
+  differentials: [
+    { name: "Cervical spine fracture or instability", id: "cervical-spine-fracture", distinguishing: "Trauma, midline bony tenderness, or inability to rotate 45°. Excluded first with the Canadian C-spine rule [r7]." },
+    { name: "Atlantoaxial rotatory subluxation", distinguishing: "Torticollis after mild trauma, with a 'cock-robin' posture and rotation fixed in an abnormal position. Diagnosed by CT and reduced in the emergency department [r3]." },
+    { name: "Whiplash-associated disorder", id: "whiplash-associated-disorder", distinguishing: "Follows a collision with acceleration-deceleration, usually with more widespread neck pain than a fixed unilateral posture." },
+    { name: "Cervical radiculopathy", id: "cervical-radiculopathy", distinguishing: "Arm pain, paraesthesia or weakness in a root distribution, with positive Spurling's test. Pain in the arm exceeds neck pain." },
+    { name: "Cervicogenic headache", id: "cervicogenic-headache", distinguishing: "Headache provoked by neck movement or posture, with restricted upper cervical rotation. It can accompany wry neck." },
+    { name: "Degenerative cervical myelopathy", id: "degenerative-cervical-myelopathy", distinguishing: "Hand clumsiness, gait imbalance and upper motor neuron signs, without a fixed unilateral posture." },
+    { name: "Cervical arterial dysfunction (dissection)", id: "cervical-arterial-dysfunction", distinguishing: "Sudden, severe, unusual neck pain or headache with neurological signs. Emergency." },
+    { name: "Deep neck infection or retropharyngeal abscess", distinguishing: "Fever or sore throat, painful swallowing, neck swelling or trismus. In a child, deep neck infection presented as acute torticollis even without fever [r4]." },
+    { name: "Cervical dystonia or acute dystonic drug reaction", distinguishing: "Involuntary, sustained or intermittent head posture, with a history of dopamine-blocking medicines or a longer course. Not responsive to anticholinergic injection in a typical non-traumatic wry neck trial [r6]." },
+    { name: "Spinal epidural haematoma or abscess", distinguishing: "Wry neck with progressive limb weakness. In an infant, MRI showed an extensive epidural haematoma presenting as wry neck [r5]. Emergency." }
+  ],
+  redFlags: [
+    "Any trauma, even mild, with torticollis: apply the Canadian C-spine rule before treatment [r7]. Atlantoaxial rotatory subluxation can present as acute torticollis after mild trauma and needs CT [r3].",
+    "New arm weakness, numbness, hand clumsiness, gait disturbance or bladder or bowel change: suspect cord or root compression, spinal epidural haematoma or abscess. Arrange emergency MRI [r5].",
+    "Fever, sore throat, painful swallowing, drooling, trismus or anterior neck swelling: suspect deep neck infection or retropharyngeal abscess. Refer to emergency the same day [r4].",
+    "Sudden, severe, unusual neck pain or headache with dizziness, visual change, speech or swallowing change, or other neurological signs: suspect cervical artery dissection or stroke. Call an ambulance and do not manipulate the neck.",
+    "Recent use of an antiemetic or antipsychotic with a sustained involuntary head posture: suspect acute dystonic reaction. Arrange urgent medical review.",
+    "No clear improvement within about 2 weeks, worsening symptoms, night pain, unexplained weight loss or a history of cancer: re-examine and refer for medical review and imaging.",
+    "A child or adolescent with acute torticollis: refer for medical assessment, as infection and spinal bleeding have presented this way [r4,r5]."
+  ],
+
+  management: {
+    principles: "Begin with a safety screen for trauma, neurological signs, fever and dystonic medicines [r7,r8]. For a typical episode, reassure the person that it is common and usually settles, and encourage gentle movement within pain limits. The evidence is thin and mostly from general neck pain rather than wry neck specifically. A clinical practice guideline for neck pain and associated disorders advises that clinicians educate and reassure, and may consider education in combination with range-of-motion exercise, multimodal care (range-of-motion exercise with manipulation or mobilisation) or muscle relaxants for grade I–II disorders of up to 3 months. It advises against offering education alone, a collar, electrotherapy, clinic-based heat, relaxation massage or strain-counterstrain [r8]. A second guideline suggests manipulation or mobilisation and range-of-motion home exercise for recent-onset neck pain [r10]. In wry neck itself, intramuscular benztropine did not help in a randomised trial of 30 people [r6]. Review progress at about 2 weeks and re-examine if there is no clear improvement.",
+    medical: [
+      { name: "Simple analgesia and short-course NSAIDs", description: "Paracetamol and short courses of oral NSAIDs, as directed by a doctor, to allow movement. Wry-neck-specific trials were not identified.", evidence: "expert-opinion", recommendation: "consider", refs: [] },
+      { name: "Muscle relaxants (short course)", description: "The OPTIMa guideline says clinicians may consider muscle relaxants for neck pain of up to 3 months (grade I–II), alongside education and exercise. Sedation and misuse risk apply, so prescribe cautiously [r8].", evidence: "limited", recommendation: "consider", refs: ["r8"] },
+      { name: "Intramuscular benztropine (anticholinergic)", description: "In a double-blind randomised trial in 30 emergency department patients with acute non-traumatic wry neck, benztropine 2 mg did not significantly reduce pain at 30 minutes (difference 0.6 points, 95% CI −0.8 to 1.8) or improve range of motion, and adverse events were more common. The confidence interval did not exclude a clinically important effect, but there is no basis to use it routinely [r6].", evidence: "limited", recommendation: "not-recommended", refs: ["r6"] },
+      { name: "Cervical collar", description: "The OPTIMa guideline advises that clinicians should not offer a cervical collar for neck pain of up to 3 months (grade I–II), based on evidence of no effectiveness. Wry-neck-specific trials were not identified [r8].", evidence: "limited", recommendation: "not-recommended", refs: ["r8"] }
+    ],
+    physio: [
+      { name: "Education and reassurance with advice to keep moving", description: "Explain that wry neck is common and usually settles, that movement is safe, and what to watch for. The guideline advises educating and reassuring patients about the benign, self-limited nature of typical neck pain and the importance of maintaining activity and movement [r8].", evidence: "moderate", recommendation: "recommended", refs: ["r8"] },
+      { name: "Early range-of-motion exercise (home program) combined with education", description: "Gentle active rotation, side-flexion, flexion and extension within pain limits, several times daily. The guideline says clinicians may consider education in combination with range-of-motion exercise for grade I–II neck pain of up to 3 months, and another guideline suggests range-of-motion home exercise for recent-onset neck pain [r8,r10].", evidence: "moderate", recommendation: "consider", refs: ["r8", "r10"] },
+      { name: "Manual therapy (mobilisation or manipulation) as part of multimodal care", description: "Guidelines suggest manipulation or mobilisation for recent-onset neck pain [r10], and multimodal care including range-of-motion exercise with manipulation or mobilisation [r8]. In 24 people with acute neck pain, cervical thrust manipulation gave greater improvement in the Neck Disability Index and pain than thoracic thrust manipulation [r9]. Evidence specific to wry neck is lacking. Screen for red flags first, avoid forceful end-range techniques, and avoid manipulation if cervical arterial dysfunction is suspected.", evidence: "limited", recommendation: "consider", refs: ["r10", "r8", "r9"] },
+      { name: "Paraspinal dry needling", description: "In an uncontrolled study of 21 people with acute facet joint lock induced wry neck, a single 12–15 minute session reduced pain and improved range of motion immediately, with sustained improvement at 24 hours and 1 week. There was no control group, so the effect cannot be separated from natural recovery [r1].", evidence: "very-limited", recommendation: "consider", refs: ["r1"] },
+      { name: "Self-applied heat for comfort", description: "Warmth can ease guarding and help movement (clinical practice). The OPTIMa guideline advises against clinic-based heat as a treatment, so use it only as a comfort measure that enables exercise [r8].", evidence: "expert-opinion", recommendation: "consider", refs: ["r8"] },
+      { name: "Passive modalities as stand-alone care (electrotherapy, clinic-based heat, relaxation massage, strain-counterstrain)", description: "The OPTIMa guideline advises that clinicians should not offer these for neck pain of up to 3 months (grade I–II), based on evidence of no effectiveness [r8].", evidence: "limited", recommendation: "not-recommended", refs: ["r8"] },
+      { name: "Prolonged rest or immobilisation", description: "Rest does not hasten recovery, and the guideline stresses maintaining activity and movement [r8]. Brief rest in a comfortable position is fine, but avoid prolonged bed rest or collar use.", evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r8"] }
+    ],
+    education: [
+      "Wry neck is common and almost always settles. Most people improve over days to a couple of weeks, but a few have lingering neck pain, so keep up your exercises.",
+      "The neck is not damaged or out of place. Muscles guard the painful area, which is why it feels locked.",
+      "Keep gently moving the neck within comfort several times a day. Resting it completely or wearing a collar can slow recovery.",
+      "Heat, a supportive pillow and short-term pain relief can help you move more easily.",
+      "Get urgent help for fever, a sore throat with trouble swallowing, new arm weakness, severe headache, dizziness or vision or speech changes, or if it follows an injury."
+    ]
+  },
+
+  rehab: {
+    overview: "Progression is criteria-based and pain-guided. The first stage calms the neck and keeps it moving within comfort. The second restores range. The third restores control and endurance of the deep neck flexors and scapular stabilisers. The fourth returns the person to full activity and puts a prevention plan in place. Dosages are typical clinical ranges, not prescriptions from a single trial, because trial evidence in wry neck is limited [r8]. If the person is not clearly improving by about 2 weeks, re-examine for another cause.",
+    stages: [
+      {
+        name: "Calm and keep moving",
+        timeframe: "Days 0–3",
+        goals: ["Reassure and screen out serious causes", "Reduce pain and guarding", "Keep the neck gently moving", "Support comfortable sleep and daily activity"],
+        precautions: ["Exclude trauma, fever, neurological signs and dystonic medicines first [r3,r4]", "Do not force the neck against guarding", "Stop and reassess if arm symptoms, dizziness or neurological symptoms appear"],
+        exercises: [
+          { name: "Supported rest in a comfortable position", dosage: "10–20 min, several times per day, then back to activity", cues: "Use pillows to support the neck in a position of ease. Avoid long periods of rest." },
+          { name: "Gentle active neck range (rotation, side-flexion, flexion, extension)", dosage: "5–10 slow repetitions each direction, every 1–2 hours while awake", cues: "Move to the first definite pain and return. Breathe normally." },
+          { name: "Craniocervical flexion (chin nod), supine", dosage: "10 repetitions with 5 s holds, 1–2 times daily", cues: "A small, gentle nod with the large neck muscles relaxed", figure: { pose: "ex-chin-tuck", view: "lateral", props: ["mat"] } },
+          { name: "Shoulder rolls and scapular setting", dosage: "10 repetitions, every 1–2 hours", cues: "Slow, relaxed; let the shoulders drop away from the ears" },
+          { name: "Short walks", dosage: "5–15 min, 2–3 times per day", cues: "Keep the head relaxed and the arms swinging" }
+        ],
+        progressionCriteria: ["Pain at rest at or below 5/10 and easing", "Able to turn the head partly out of the fixed posture", "No new neurological symptoms", "Sleeping and basic activities tolerated"]
+      },
+      {
+        name: "Restore range",
+        timeframe: "Days 3–14",
+        goals: ["Near-symmetrical rotation and side-flexion", "Reduce muscle guarding", "Restore thoracic and shoulder mobility", "Return to normal activities and work"],
+        precautions: ["Avoid forceful end-range stretching of guarded muscles", "Progress only as pain allows"],
+        exercises: [
+          { name: "Active rotation and side-flexion to end of comfortable range", dosage: "10 slow repetitions each way, 4–6 times daily", cues: "Add a gentle hold of 2–3 s at the end of range" },
+          { name: "Gentle upper trapezius and levator scapulae stretches", dosage: "3 × 20–30 s each side, 2 times daily", cues: "Stay below pain. Hold lightly; no bouncing." },
+          { name: "Thoracic extension over a foam roller", dosage: "2 × 10, daily", cues: "Support the head. Move through the upper back, not the neck.", figure: { pose: "ex-thoracic-extension", view: "lateral", props: ["foam-roller"] } },
+          { name: "Submaximal neck isometrics", dosage: "5 holds of 5 s in each direction, 2 times daily", cues: "Press gently into the hand without moving the head", figure: { pose: "ex-neck-isometric", view: "lateral", props: ["chair"] } },
+          { name: "Cat–camel", dosage: "2 × 10 slow cycles, daily", cues: "Let the head follow the spine and move smoothly", figure: { pose: "ex-cat-camel", view: "lateral", props: ["mat"] } }
+        ],
+        progressionCriteria: ["Rotation within a few degrees of the other side (clinical convention)", "Pain at or below 3/10 with daily activities", "Guarding and visible head tilt resolved", "Neck Disability Index falling [r9]"]
+      },
+      {
+        name: "Restore control and endurance",
+        timeframe: "Weeks 2–6",
+        goals: ["Deep neck flexor endurance", "Scapular and thoracic strength", "Sustained posture tolerance at work and in sleep", "Reduce the risk of recurrence"],
+        precautions: ["Increase load only if symptoms settle within 24 hours", "Review if pain plateaus or worsens"],
+        exercises: [
+          { name: "Craniocervical flexion with progressive holds", dosage: "10 repetitions with 10 s holds, once daily", cues: "Smooth nod, without poking the chin or clenching the jaw", figure: { pose: "ex-chin-tuck", view: "lateral", props: ["mat"] } },
+          { name: "Band row", dosage: "3 × 10–12, 3 times per week", cues: "Squeeze the shoulder blades back and down; keep the neck long", figure: { pose: "ex-row", view: "lateral", props: ["resistance-band"] } },
+          { name: "Wall slide", dosage: "3 × 10, 3 times per week", cues: "Ribs down; neck relaxed", figure: { pose: "ex-wall-slide", view: "lateral", props: ["wall"] } },
+          { name: "Prone Y raise", dosage: "2–3 × 8–10 body weight, 2–3 times per week", cues: "Lift the arms with the neck neutral", figure: { pose: "ex-prone-y", view: "lateral", props: ["mat"] } },
+          { name: "Workstation and sleep set-up review", dosage: "One session, then review", cues: "Screen at eye level, regular breaks, supportive pillow that keeps the neck in neutral" }
+        ],
+        progressionCriteria: ["Rotation and side-flexion symmetrical and pain-free", "Pain at or below 2/10 with loaded exercise", "Craniocervical flexion held for 10 s with minimal substitution", "Neck Disability Index near normal"]
+      },
+      {
+        name: "Full activity and prevention",
+        timeframe: "Weeks 6+",
+        goals: ["Return to all work, sport and recreation", "Long-term strength and mobility habits", "Flare-up plan"],
+        precautions: ["If symptoms persist or recur, re-examine for other causes", "Review any new neurological signs promptly"],
+        exercises: [
+          { name: "General strength training (upper body and trunk)", dosage: "2–3 sessions per week", cues: "Choose activities the person enjoys and will continue" },
+          { name: "Aerobic exercise", dosage: "20–30 min, 3–5 times per week", cues: "Moderate effort. It also helps sleep and mood." },
+          { name: "Short daily neck mobility and posture-break routine", dosage: "2–3 min every 1–2 hours at a desk", cues: "Gentle rotation and side-flexion, shoulder rolls, stand and walk" },
+          { name: "Flare-up plan", dosage: "As needed", cues: "At the first stiffness: heat for comfort, gentle movement, keep active, and seek review if it is not improving in about 2 weeks" }
+        ],
+        progressionCriteria: ["Full, pain-free neck range of motion", "Normal sleep and work function", "Confidence with a flare-up plan", "No red flags or neurological signs"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "No validated return-to-sport criteria were identified in the sources reviewed; the criteria below are clinical convention",
+      "No red flags and a normal neurological examination",
+      "Near-symmetrical, pain-free active neck rotation and side-flexion",
+      "No visible head tilt, guarding or muscle spasm",
+      "Neck flexor and extensor endurance and scapular strength adequate for the sport",
+      "Pain at or below 1–2/10 during sport-specific loading with no next-day flare",
+      "Confidence moving the neck freely, and agreement with coach and clinician"
+    ],
+    tests: ["Active cervical range of motion with an inclinometer or goniometer", "Neck flexor and extensor endurance tests", "Neck Disability Index", "Sport-specific head and neck movement drills"]
+  },
+  prognosis: "Controlled natural-history data specific to acute wry neck were not identified, although it is commonly described as settling over days to a couple of weeks (clinical experience). For acute idiopathic neck pain in general, a meta-analysis of seven inception cohorts found a pooled mean pain score of 64 (0–100) at onset, 35 at 6.5 weeks and 42 at 12 months, and disability fell from 30 to 17 by 6.5 weeks without further improvement at 12 months [r2]. The prognosis is therefore worse than often assumed for a proportion of people, and persistent symptoms warrant re-examination. Recurrence rates for wry neck were not identified in the sources reviewed.",
+  prevention: [
+    "No trials of wry neck prevention were identified in the sources reviewed.",
+    "Maintain regular neck and scapular strength, mobility and general activity (clinical convention, supported by guideline emphasis on maintaining movement) [r8].",
+    "Use a supportive pillow that keeps the neck near neutral during sleep, and avoid prolonged awkward postures (clinical convention).",
+    "Take regular posture breaks during screen or desk work (clinical convention).",
+    "Act early on a stiff neck: gentle movement and reassurance rather than rest [r8]."
+  ],
+  clinicalPearls: [
+    "Do not over-attribute. Wry neck is a clinical picture, not a diagnosis of a specific lesion. Say 'a painful, guarded neck, probably from a joint or muscle', and avoid promising to 'put a joint back in' [r1].",
+    "Always ask about trauma, even minor. Atlantoaxial rotatory subluxation can present as acute torticollis after mild trauma, and the Canadian C-spine rule applies [r3,r7].",
+    "A new fixed head posture with fever, a sore throat or limb weakness is not a muscle spasm until proven otherwise. Infection and spinal bleeding have presented as torticollis [r4,r5].",
+    "Anticholinergic injection did not help typical wry neck in a randomised trial and caused side effects, so do not reach for it [r6].",
+    "Be honest about prognosis. For acute idiopathic neck pain in general, pain was still 42/100 at 12 months, so keep the person active, review at 2 weeks and screen for persistent drivers [r2].",
+    "Skip passive extras. The guideline advises against collars, electrotherapy, clinic-based heat, relaxation massage and strain-counterstrain, and favours education with movement [r8]."
+  ],
+  related: ["cervical-spine-fracture", "whiplash-associated-disorder", "cervical-radiculopathy", "cervicogenic-headache", "cervical-arterial-dysfunction", "degenerative-cervical-myelopathy"],
+
+  references: [
+    { id: "r1", citation: "Shanmugam S, Mathias L. Immediate effects of paraspinal dry needling in patients with acute facet joint lock induced wry neck. J Clin Diagn Res. 2017;11(6):YM01-3.", pmid: "28764281", doi: "10.7860/JCDR/2017/26407.10079", type: "other", year: 2017 },
+    { id: "r2", citation: "Hush JM, Lin CC, Michaleff ZA, et al. Prognosis of acute idiopathic neck pain is poor: a systematic review and meta-analysis. Arch Phys Med Rehabil. 2011;92(5):824-9.", pmid: "21458776", doi: "10.1016/j.apmr.2010.12.025", type: "meta-analysis", year: 2011 },
+    { id: "r3", citation: "Greenberg MR, Forgeon JL, Kurth LM, et al. Atlantoaxial rotatory subluxation presenting as acute torticollis after mild trauma. Radiol Case Rep. 2020;15(11):2112-5.", pmid: "32952749", doi: "10.1016/j.radcr.2020.08.028", type: "other", year: 2020 },
+    { id: "r4", citation: "Guri A, Scheier E. A 10-year-old child with acute torticollis due to polymicrobial deep neck infection. BMJ Case Rep. 2022;15(1):e244331.", pmid: "34992062", doi: "10.1136/bcr-2021-244331", type: "other", year: 2022 },
+    { id: "r5", citation: "Fok WM, Sun LK, Wong NM, et al. Spontaneous spinal epidural haematoma in a 15-month-old boy presenting with a wry neck: a case report. J Orthop Surg (Hong Kong). 2007;15(3):373-5.", pmid: "18162690", doi: "10.1177/230949900701500327", type: "other", year: 2007 },
+    { id: "r6", citation: "Asha SE, Kerr A, Jones K, et al. Benztropine for the relief of acute non-traumatic neck pain (wry neck): a randomised trial. Emerg Med J. 2015;32(8):616-9.", pmid: "25414475", doi: "10.1136/emermed-2014-204317", type: "rct", year: 2015 },
+    { id: "r7", citation: "Stiell IG, Wells GA, Vandemheen KL, et al. The Canadian C-spine rule for radiography in alert and stable trauma patients. JAMA. 2001;286(15):1841-8.", pmid: "11597285", doi: "10.1001/jama.286.15.1841", type: "cohort", year: 2001 },
+    { id: "r8", citation: "Côté P, Wong JJ, Sutton D, et al. Management of neck pain and associated disorders: a clinical practice guideline from the Ontario Protocol for Traffic Injury Management (OPTIMa) Collaboration. Eur Spine J. 2016;25(7):2000-22.", pmid: "26984876", doi: "10.1007/s00586-016-4467-7", type: "clinical-practice-guideline", year: 2016 },
+    { id: "r9", citation: "Puentedura EJ, Landers MR, Cleland JA, et al. Thoracic spine thrust manipulation versus cervical spine thrust manipulation in patients with acute neck pain: a randomized clinical trial. J Orthop Sports Phys Ther. 2011;41(4):208-20.", pmid: "21335931", doi: "10.2519/jospt.2011.3640", type: "rct", year: 2011 },
+    { id: "r10", citation: "Bussières AE, Stewart G, Al-Zoubi F, et al. The treatment of neck pain-associated disorders and whiplash-associated disorders: a clinical practice guideline. J Manipulative Physiol Ther. 2016;39(8):523-64.e27.", pmid: "27836071", doi: "10.1016/j.jmpt.2016.08.007", type: "clinical-practice-guideline", year: 2016 }
+  ],
+
+  animation: {
+    title: "How an acute wry neck presents",
+    phases: [
+      {
+        type: "moi", label: "Onset", duration: 6, view: "anterior", environment: "home",
+        actors: [{ id: "adult", kit: "worker" }],
+        keyframes: [
+          { t: 0, pose: "stand", root: { x: 0 } },
+          { t: 1.2, pose: "stand", joints: { neck: 3 }, root: { x: 0 } },
+          { t: 2.3, pose: "stand", joints: { neck: 24, trunk: 3 }, root: { x: 0 }, ease: "in" },
+          { t: 3.2, pose: "stand", joints: { neck: 42, trunk: 5 }, root: { x: 0 } },
+          { t: 5.5, pose: "stand", joints: { neck: 40, trunk: 5 }, root: { x: 0 } }
+        ],
+        forces: [
+          { t: [2.2, 3.4], at: "neck", dir: "lateral", label: "Sudden painful catch" },
+          { t: [3.4, 5.6], at: "neck", dir: "medial", label: "Muscle spasm holds the head tilted" }
+        ],
+        highlights: [{ t: [2.3, 6], at: "neck" }],
+        captions: [
+          { t: 0, text: "A person gets up in the morning, or turns suddenly, with no obvious injury." },
+          { t: 1.3, text: "Often there is no clear trigger. A sudden catch in the neck can start it." },
+          { t: 2.4, text: "The neck becomes painful and will not move freely." },
+          { t: 3.4, text: "Protective muscle spasm holds the head tilted to one side." },
+          { t: 5.0, text: "Trying to turn out of the posture hurts, so the head stays fixed." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "neck",
+        captions: [{ t: 0, text: "Zooming into the neck to see what may be involved." }]
+      },
+      {
+        type: "closeup", label: "Inside the neck", duration: 10, scene: "cervical-sagittal",
+        actions: [
+          { t: 0, do: "highlight", target: "facetC5C6" },
+          { t: 0.3, do: "label", target: "facetC5C6", text: "Facet joint capsule (a proposed source)" },
+          { t: 1.6, do: "inflame", target: "facetC5C6", amount: 0.4 },
+          { t: 2.6, do: "pain", at: "c5c6Facet", hold: 4 },
+          { t: 3.4, do: "spasm", target: "upperTrapezius" },
+          { t: 3.6, do: "spasm", target: "splenius" },
+          { t: 3.8, do: "spasm", target: "suboccipitals" },
+          { t: 4.2, do: "label", target: "splenius", text: "Protective muscle spasm" },
+          { t: 6.0, do: "label", target: "spinalCord", text: "Cord and nerve roots spared" },
+          { t: 7.0, do: "camera", at: "c5c6Facet", zoom: 1.5, dur: 1.0 },
+          { t: 9.0, do: "camera", zoom: 1, dur: 0.8 }
+        ],
+        captions: [
+          { t: 0, text: "In acute wry neck the source is often unclear. A facet joint capsule is one proposed candidate." },
+          { t: 1.6, text: "An irritated joint becomes inflamed and painful." },
+          { t: 3.3, text: "The muscles on one side contract protectively and hold the head in a fixed position." },
+          { t: 4.8, text: "No structural lesion is usually visible, and the spinal cord and nerve roots are not involved." },
+          { t: 6.2, text: "Neurological signs, fever or trauma point to a different cause and need urgent assessment." },
+          { t: 7.4, text: "In most people the pain and spasm ease over days to weeks." }
+        ]
+      },
+      {
+        type: "micro", label: "Muscle spasm", duration: 6, tissue: "muscle",
+        stages: [{ t: 0, stage: "healthy" }, { t: 2.5, stage: "contracting" }],
+        timeLabels: [{ t: 2.5, text: "Minutes to days" }],
+        captions: [
+          { t: 0, text: "Healthy muscle fibres: sarcomeres at rest, relaxed along the line of the neck." },
+          { t: 2.5, text: "Protective spasm is sustained contraction. It is painful but is not expected to damage the fibres. Schematic only." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "SP1" }
+};
