@@ -1,0 +1,468 @@
+export default {
+  id: "tibial-stress-fracture",
+  name: "Tibial stress fracture",
+  shortName: "Tibial stress fracture",
+  aka: ["tibial stress injury", "tibial bone stress injury", "stress fracture of the shin", "shin stress fracture", "tibial fatigue fracture", "anterior tibial stress fracture", "tibial stress reaction"],
+  region: "lower-leg",
+  tissues: ["bone"],
+  onset: "gradual",
+  mechanismType: ["overuse"],
+  populations: ["distance runners", "track and field athletes", "military recruits", "female athletes with low energy availability"],
+  sports: ["running", "athletics", "soccer", "australian football", "basketball", "netball", "dance", "military training"],
+  urgency: "urgent",
+  summary: "A fatigue crack in the tibia from cumulative loading beyond the bone's remodelling capacity. Posteromedial lesions usually heal with load management; the anterior mid-shaft is a high-risk site.",
+  keyFacts: [
+    { label: "Typical recovery", value: "Low-risk sites: roughly 6–14 weeks (MRI-graded means 42–99 days across sites). High-risk anterior cortex: months, sometimes surgery" },
+    { label: "Return to sport", value: "Criteria-based: bony tenderness resolved, pain-free walking, strength and loading tests passed, and radiological healing at high-risk sites" },
+    { label: "Key test", value: "Focal bony tenderness with pain on single-leg hop; percussion pain suggests a more severe lesion" },
+    { label: "Imaging", value: "MRI is the mainstay. Radiographs were abnormal in only 9.8% of athletes imaged at presentation in a 320-case series" },
+    { label: "Incidence", value: "The tibia accounted for 49.1% of 320 bone-scan-positive stress fractures in athletes" },
+    { label: "Risk status", value: "Anterior mid-shaft cortex is high risk (tension side, relatively avascular): delayed union and non-union can occur" }
+  ],
+  overview: "A tibial stress fracture is a fatigue failure of the tibia. It arises when repetitive loads exceed the bone's ability to remove microdamage and remodel, in a generally normal skeleton [r1]. Bone stress injury runs along a continuum from stress reaction, through stress fracture, to complete fracture [r2]. The tibia is the most commonly affected bone in athletes: it accounted for 49.1% of 320 bone-scan-positive stress fractures in one series [r3], and 21.1% of track and field athletes in a 12-month cohort developed a stress fracture, most in the tibia [r4].\n\nSite determines management. Low-risk bone stress injuries typically heal with activity modification followed by progressive loading. Non-weight-bearing immobilisation, medications or surgery are usually reserved for high-risk sites [r1]. The anterior cortex of the tibia is a recognised high-risk site, because tensile forces and relative avascularity predispose to delayed union, non-union and complete fracture [r5]. Contributors include training-load errors and, in athletes, low energy availability and poor bone health [r2,r6]. Recurrence is common, so the cause must be treated as well as the crack [r2]. Return-to-running guidance rests on level IV evidence, so decisions should be shared among clinician, coach and athlete [r7].",
+
+  epidemiology: {
+    text: "In 320 athletes with bone-scan-positive stress fractures, the tibia was the most common site (49.1%), followed by the tarsals (25.3%), metatarsals (8.8%), femur (7.2%) and fibula (6.6%); 16.6% of cases were bilateral, and the average time to diagnosis was 13.4 weeks (range 1–78) [r3]. In a 12-month prospective study of 111 track and field athletes aged 17 to 26, the stress fracture incidence was 21.1%, most commonly in the tibia. No measured risk factor predicted stress fractures in men, whereas in women lower bone density, menstrual disturbance, less lean mass in the lower limb, a leg length discrepancy and a lower fat diet were significant, and age at menarche and calf girth were the best independent predictors [r4]. In a case-control study of tibial stress injuries (48 cases, 36 controls), cases had more fat mass, less muscle mass, a tendency for smaller bones, more foot anomalies (56.3% versus 27.8%) and more orthotic use (25% versus 5.6%), with normal bone mineral density in both groups [r8]. In 259 exercising girls and women, 10.8% had a bone stress injury, and the risk rose from about 15–20% with single female athlete triad-related risk factors to 30–50% with combined factors [r9].",
+    riskFactors: {
+      intrinsic: [
+        "Female sex with menstrual disturbance and lower bone density (in female athletes) [r4]",
+        "Low energy availability (relative energy deficiency in sport, REDs), including in male athletes [r6]",
+        "Combined triad-related factors: BMI below 21.0 kg/m2, oligo- or amenorrhoea, dietary restraint, leanness sport, 12 or more hours of exercise a week and low bone mass; 46.2% of those with 12+ h/week plus leanness sport plus dietary restraint had a bone stress injury [r9]",
+        "Less lean mass, more fat mass, a tendency for smaller bones and foot anomalies [r8]",
+        "Less lean mass in the lower limb and a leg length discrepancy in female athletes; calf girth and age at menarche were the best independent predictors in women [r4]",
+        "Previous bone stress injury, because recurrence is common [r2]"
+      ],
+      extrinsic: [
+        "Abrupt increases in training volume or intensity (modifiable); bone load is more amenable to change than bone strength [r2]",
+        "High exercise volume: 12 or more hours a week of purposeful exercise in girls and women [r9]",
+        "Running-based sports and training; running was the most common sport at the time of stress fracture in athletes [r3]",
+        "High impact loading features (tibial acceleration and loading rates) that gait retraining can reduce [r10]"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "A tibial stress fracture develops over weeks, not in one moment. Repetitive running load produces microdamage faster than targeted remodelling can remove it [r1]. Each stride sends an impact load up the tibia at foot contact [r10], and through stance and push-off the shaft bends under ground reaction and calf muscle forces. The anterior mid-shaft is a tension-side site where tensile forces and relative avascularity lead to poor healing [r5].",
+    sequence: [
+      "Training load climbs quickly, or recovery and energy intake are inadequate [r2,r6].",
+      "At each foot contact the ground reaction force sends an impact load up the tibia; higher tibial acceleration and loading rates are linked with tibial stress fracture [r10].",
+      "Through midstance and push-off the tibial shaft bends. The anterior mid-shaft is on the tension side, with relatively poor blood supply [r5].",
+      "Microdamage accumulates and resorption outpaces formation, so the cortex weakens locally [r1].",
+      "A stress reaction follows: periosteal and then marrow oedema on MRI, with pain on loading [r11].",
+      "Continued loading produces a cortical fracture line, a stress fracture; at the anterior cortex the crack may not heal [r12,r5].",
+      "If loading persists, the fracture can progress to a complete fracture or non-union [r2,r5]."
+    ],
+    variants: [
+      { name: "Posteromedial or distal tibial lesion (usually low risk)", description: "Posteromedial and distal tibial lesions are generally treated as low risk (clinical convention; the anterior cortex and medial malleolus are the named high-risk tibial sites [r5]). Low-risk sites typically heal with activity modification and progressive loading [r1]. Diffuse border pain at the milder end overlaps with medial tibial stress syndrome [r11]." },
+      { name: "Anterior mid-shaft cortex (high risk)", description: "A named high-risk site: tensile forces and relative avascularity predispose to delayed union and non-union, so it needs aggressive management [r5]. Outcomes of conservative and operative treatment are less successful than at low-risk sites [r13]." },
+      { name: "Medial malleolus", description: "The medial malleolus is also a high-risk tibial site and should be considered with distal medial tibial pain [r5]." },
+      { name: "Bilateral or multiple stress fractures", description: "Bilateral involvement occurred in 16.6% of athletes in a large series, which should prompt a search for a systemic cause such as low energy availability [r3,r6]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The tibia is the main weight-bearing bone of the lower leg. Its anterior border (crest) lies directly under the skin and the anterior mid-shaft cortex is a tension-side site in bending, with relatively poor blood supply, which helps to explain its poor healing [r5]. The calf muscles (soleus and gastrocnemius) share the load that the tibia carries, so their strength and endurance matter for tibial bone stress injuries [r2]. The fibula lies lateral to the tibia and accounted for 6.6% of stress fractures in one series [r3].",
+    structures: [
+      { name: "Anterior mid-shaft cortex", role: "Tension-side cortex in bending; relatively avascular, which makes it a high-risk site [r5]" },
+      { name: "Posteromedial cortex", role: "Common site for tibial bone stress injuries, usually low risk and managed with load modification [r1]" },
+      { name: "Periosteum and marrow", role: "Respond to bone stress with periosteal and marrow oedema before a cortical line forms [r11]" },
+      { name: "Soleus and gastrocnemius", role: "Plantarflex the ankle and share load with the tibia; calf strengthening is advised for tibial bone stress injuries [r2]" },
+      { name: "Fibula and interosseous membrane", role: "Share load and stabilise the tibia; fibular stress fractures can coexist [r3]" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "Bone stress injury occurs when excessive repetitive loads are applied to a generally normal skeleton, and an imbalance in bone metabolism favours microdamage accumulation over its removal and replacement through targeted remodelling [r1]. The risk of microdamage accumulation depends on the load applied and on the bone's ability to resist it; of the two, load is the more amenable to intervention [r2]. The injury moves along a continuum from stress reaction to stress fracture to complete fracture [r2]. On MRI, tibial stress lesions progress from periosteal oedema, through marrow involvement, to a frank cortical fracture line, and MRI relates more closely to symptoms than bone scan [r11]. A five-grade classification describes the injury as asymptomatic stress reaction on imaging (I), pain without a fracture line (II), non-displaced fracture (III), displaced fracture (IV) or non-union (V) [r12].\n\nHealing potential depends on location. Sites under tension, such as the anterior tibial cortex, have a relatively poor blood supply, and tensile forces oppose healing, so they carry a higher risk of delayed union, non-union and progression to complete fracture [r5]. Systemic factors set the threshold: in athletes with low energy availability, bone stress injury rates rise as risk factors accumulate [r9,r6].",
+    structures: [
+      { name: "Tibial cortex at the injury site", effect: "Microdamage accumulation, a cortical fracture line, then healing by remodelling if load is managed [r1,r12]" },
+      { name: "Periosteum and marrow", effect: "Periosteal oedema and then marrow oedema on MRI [r11]" },
+      { name: "Anterior mid-shaft cortex", effect: "High-risk site with tensile loading and relative avascularity; delayed union or non-union may follow [r5]" },
+      { name: "Fibula and adjacent bones", effect: "Can be affected at the same time; bilateral lesions occurred in 16.6% of athletes [r3]" }
+    ],
+    muscles: [
+      { name: "Calf complex (soleus, gastrocnemius)", effect: "Lower lean mass is associated with tibial stress injury, and calf girth was an independent predictor in women; strengthening the calf is advised to reduce bone load [r8,r4,r2]" },
+      { name: "Hip abductors and trunk", effect: "A higher step rate reduced peak hip adduction as well as tibial loading in a trial of healthy runners, so proximal control influences loading [r14]" },
+      { name: "Foot intrinsic muscles", effect: "Foot anomalies were more common in cases than in controls; foot intrinsic strengthening is advised for metatarsal rather than tibial injuries [r8,r2]" },
+      { name: "Pain-related changes", effect: "MTSS-type and stress fracture-specific data on muscle inhibition, spasm or atrophy were not found in the sources reviewed." }
+    ],
+    cellular: [
+      { phase: "Microdamage accumulation", timing: "Days to weeks of overload", description: "Repeated submaximal loading creates microcracks in the cortex faster than they are removed [r1]." },
+      { phase: "Remodelling imbalance", timing: "Weeks", description: "Targeted remodelling is outpaced: resorption exceeds formation locally, which weakens the cortex [r1,r2]." },
+      { phase: "Stress reaction", timing: "Weeks", description: "Periosteal and marrow oedema appear on MRI as the bone responds to the damage [r11]." },
+      { phase: "Stress fracture and repair", timing: "Weeks to months", description: "A cortical fracture line forms; with load reduced and then progressed, remodelling repairs it. In 320 athletes the mean time to recovery was 12.8 weeks (range 2–96) [r3]." }
+    ],
+    systems: [
+      { system: "Endocrine and energy availability", effect: "Low energy availability produces deleterious health and performance outcomes in female and male athletes, and bone stress injury rates rose from about 15–20% with single triad-related risk factors to 30–50% with combined factors [r6,r9]." },
+      { system: "Body composition and skeletal structure", effect: "A tendency for smaller bones, less lean mass and more fat mass were found in tibial stress injury cases, with normal bone mineral density [r8]." },
+      { system: "Biomechanical chain", effect: "Impact loading rates and tibial acceleration relate to tibial stress fracture; gait retraining lowers them [r10,r14]." },
+      { system: "Psychological and behavioural", effect: "Long periods out of training, fear of reinjury and under-fuelling to maintain body composition can drive recurrence; screen and address these with the athlete and coach." }
+    ]
+  },
+
+  grading: {
+    system: "Kaeding and Miller stress fracture classification (grade, location, imaging modality) with site risk [r12,r5]",
+    grades: [
+      { grade: "Grade I", description: "Asymptomatic stress reaction seen on imaging only [r12].", prognosis: "Usually settles with load adjustment; imaging finding only" },
+      { grade: "Grade II", description: "Pain with no fracture line on imaging [r12].", prognosis: "Low-risk sites usually heal with activity modification and progressive loading [r1]" },
+      { grade: "Grade III", description: "Non-displaced fracture line [r12].", prognosis: "Longer healing; at high-risk sites such as the anterior cortex, protected weight-bearing or surgery may be needed [r1,r5]" },
+      { grade: "Grade IV", description: "Displaced fracture [r12].", prognosis: "Orthopaedic management is usually required (clinical practice)" },
+      { grade: "Grade V", description: "Non-union [r12].", prognosis: "Surgical review; non-union is a recognised complication at high-risk sites [r5]" }
+    ]
+  },
+
+  timeframes: {
+    summary: "Healing time depends on site and severity. In a meta-analysis of non-operatively treated bone stress injuries graded by MRI, mean time to return to sport was 41.7, 70.1, 84.3 and 98.5 days for grades 1–4 across all sites, and cortical-rich sites such as the tibia healed faster than trabecular-rich sites [r15]. The anterior cortex is high risk and may take much longer [r5].",
+    healing: [
+      { phase: "Offloading and symptom settling", startDay: 0, endDay: 28, description: "Remove impact load; walking pain settles and bony tenderness starts to fall" },
+      { phase: "Bone repair and remodelling", startDay: 14, endDay: 112, description: "Cortical repair under protected, then progressive, loading [r15]" },
+      { phase: "Capacity building and walk–run", startDay: 42, endDay: 126, description: "Calf, hip and trunk strength; graded running after criteria are met [r7]" },
+      { phase: "Return to full training and sport", startDay: 70, endDay: 150, description: "Intensity, speed and sport-specific load reintroduced; monitor for recurrence [r2]" },
+      { phase: "Prolonged protection at a high-risk site", startDay: 0, endDay: 150, description: "Anterior cortex lesions may need months of protection, imaging follow-up and sometimes surgery [r5,r1]" }
+    ],
+    milestones: [
+      { label: "Pain-free walking", day: 21, note: "Typical clinical target; criteria, not the calendar, decide" },
+      { label: "Bony tenderness resolved", day: 49, note: "One of the five components to check before running [r7]" },
+      { label: "Start walk–run intervals", day: 63, note: "After strength, functional and loading tests are passed [r7]" },
+      { label: "Mean return to sport, MRI grade 2–3 (all sites)", day: 77, note: "70.1 to 84.3 days across sites [r15]" },
+      { label: "Radiological healing at a high-risk site", day: 120, note: "Needed before running for high-risk lesions [r7]" }
+    ],
+    returnToSport: "Low-risk lesions: typically 6–14 weeks (MRI-graded means 42–99 days across sites). High-risk anterior cortex lesions: months, with radiological healing required. Return is criteria-based [r15,r7]."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Insidious, localised shin pain that comes on with running and eases with rest in the early stage [r11]",
+      "Progression over days to weeks to pain on walking and, in severe cases, at rest and at night [r11]",
+      "Pain that builds with each session and no longer settles within hours of stopping",
+      "A recent rise in running volume or intensity, a change of surface, or a period of low energy intake",
+      "Occasionally both legs affected (16.6% bilateral in a 320-case series) [r3]"
+    ],
+    signs: [
+      "Focal bony tenderness over the fracture site, on the anterior crest or posteromedial border",
+      "Pain on single-leg hop or on direct or indirect percussion, which correlated with more severe tibial stress lesions on MRI [r11]",
+      "Localised swelling, warmth or thickening of the cortex in longer-standing cases",
+      "Antalgic gait if severe",
+      "Normal neurovascular examination in uncomplicated cases"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Pain pattern: localised, load-related pain versus diffuse medial shin pain; night pain or pain on walking suggests more advanced bone stress [r11]",
+      "Training load: weekly volume, intensity, surfaces, footwear and any block of increased training in the previous 2–6 weeks",
+      "Energy availability and menstrual history: dietary restriction, missed periods, previous fractures, and screening with the REDs Clinical Assessment Tool [r6]",
+      "Previous bone stress injuries, because recurrence is common [r2]",
+      "Medications, vitamin D and calcium intake, family history of osteoporosis or fractures",
+      "Sport, level, upcoming events and what the athlete is willing to change"
+    ],
+    observation: [
+      "Gait, running mechanics and foot posture; leg length and alignment [r4]",
+      "Calf and thigh bulk compared with the other side [r8]",
+      "Local swelling, skin changes and limp"
+    ],
+    palpation: [
+      "Map focal bony tenderness along the tibia, separating the anterior crest from the posteromedial border",
+      "Check for periosteal thickening or a palpable step at the site in long-standing cases",
+      "Compare with diffuse border tenderness over 5 cm or more, which fits MTSS instead [r11]"
+    ],
+    rangeOfMotion: [
+      "Ankle dorsiflexion and plantarflexion, subtalar and hip rotation, as contributing factors",
+      "Painful end-range loading of the tibia is unusual; pain on ankle range alone suggests another cause"
+    ],
+    strength: [
+      "Single-leg calf raise endurance on both sides; weakness is common after weeks off running",
+      "Hip abductor and external rotator strength",
+      "Trunk control during single-leg tasks"
+    ],
+    neuro: [],
+    functional: [
+      "Single-leg hop on the spot or for distance: reproduction of focal tibial pain suggests a bone stress injury [r16]",
+      "Walking tolerance and a short jog on a treadmill with pain rating (only when walking is pain-free)",
+      "Single-leg squat or step-down quality"
+    ],
+    specialTests: [
+      {
+        name: "Single-leg hop test (pain provocation)", purpose: "Provoke focal pain from a bone stress injury",
+        procedure: "The athlete hops repeatedly on the symptomatic leg. Ask about the location and severity of pain and compare with the pain experienced when running.",
+        positive: "Reproduction of focal tibial pain. Pain with single-leg hop is used as a clinical parameter in bone stress injury trials, but accuracy figures were not found in the sources reviewed [r16].",
+        refs: ["r16"]
+      },
+      {
+        name: "Percussion test (direct or indirect)", purpose: "Identify more severe tibial stress lesions",
+        procedure: "Tap over the tender tibial segment, or percuss the heel or tibial tuberosity to transmit force along the shaft.",
+        positive: "Pain on direct or indirect percussion, which correlated with more severe tibial stress injuries on MRI. Accuracy figures were not stated [r11].",
+        refs: ["r11"]
+      },
+      {
+        name: "Focal palpation of the tibia", purpose: "Localise the injury and separate it from diffuse border pain",
+        procedure: "Palpate the whole shaft with firm thumb pressure, mapping the extent of tenderness and noting any pinpoint site.",
+        positive: "Localised bony tenderness, together with pain on daily walking, correlated with more severe tibial lesions on MRI [r11]. Diffuse tenderness of 5 cm or more points to MTSS.",
+        refs: ["r11"]
+      },
+      {
+        name: "Fulcrum test", purpose: "Stress the tibial shaft to reproduce pain",
+        procedure: "Place the forearm under the mid-shaft of the supported leg and apply gentle downward pressure at the knee and ankle ends, as a lever.",
+        positive: "Reproduction of focal pain at the fracture site. Accuracy was not found in the sources reviewed; use it as a provocation test only.",
+        refs: []
+      }
+    ],
+    clinicalRules: [
+      { name: "High-risk versus low-risk site", description: "Classify the lesion by location. The anterior tibial cortex and the medial malleolus are high-risk tibial sites that need aggressive management; posteromedial lesions are usually low risk [r5,r1]." },
+      { name: "REDs Clinical Assessment Tool (version 2)", description: "A tool to help detect and diagnose REDs from accumulated severity and risk stratification, with associated training and competition recommendations [r6]." },
+      { name: "Return-to-running components", description: "Five components before running after a tibial bone stress injury: resolution of bony tenderness, pain-free walking, radiological healing in high-risk lesions, strength, functional and loading tests, and identification of contributing factors. This is level IV evidence [r7]." }
+    ],
+    outcomeMeasures: [
+      { name: "Numeric pain rating scale (0–10) at hop and run", use: "Track load tolerance and response to progression" },
+      { name: "Lower Extremity Functional Scale (LEFS)", use: "Patient-reported function through rehabilitation" },
+      { name: "Single-leg calf raise endurance and hop symmetry", use: "Strength and loading capacity before running [r7]" },
+      { name: "REDs Clinical Assessment Tool", use: "Risk stratification of energy availability and bone health [r6]" }
+    ],
+    imaging: [
+      { modality: "Plain radiograph", indication: "First-line for focal pain, though often normal early; useful to look for a cortical line or periosteal reaction", findings: "In 320 athletes, radiographs were taken in 43.4% at presentation and were abnormal in only 9.8%, so a normal film does not exclude a stress fracture [r3]. At the anterior cortex a transverse lucent line signals a high-risk fracture." },
+      { modality: "MRI", indication: "The mainstay for diagnosing and grading bone stress injury; use when focal tenderness, hop pain or night pain suggests a stress lesion [r17,r11]", findings: "Periosteal oedema, then marrow oedema, then a cortical fracture line. Higher MRI grade was associated with a longer time to return to sport [r11,r15]." },
+      { modality: "CT", indication: "Define the fracture line and monitor healing at high-risk sites", findings: "Cortical lucent line, sclerosis and bridging; radiological healing is expected before running for high-risk lesions [r7]" },
+      { modality: "Bone scintigraphy", indication: "Rarely needed now that MRI is available", findings: "Sensitive but less specific, and MRI relates more closely to symptoms in runners [r11]" }
+    ]
+  },
+
+  differentials: [
+    { name: "Medial tibial stress syndrome", id: "medial-tibial-stress-syndrome", distinguishing: "Diffuse tenderness over 5 cm or more of the posteromedial border, no focal point tenderness, hop test usually negative; the milder end of the same continuum [r11]." },
+    { name: "Chronic exertional compartment syndrome", id: "chronic-exertional-compartment-syndrome", distinguishing: "Pain and tightness build at a predictable point in exercise and settle within minutes of rest; no bony tenderness [r17]." },
+    { name: "Tibia and fibula shaft fracture", id: "tibia-fibula-shaft-fracture", distinguishing: "Acute traumatic onset, deformity, inability to weight-bear." },
+    { name: "Fibular stress fracture", distinguishing: "Lateral shin pain with tenderness over the fibula; 6.6% of stress fractures in one series [r3]." },
+    { name: "Soleus strain", id: "soleus-strain", distinguishing: "Muscle belly pain with resisted plantarflexion in knee flexion; no bony tenderness." },
+    { name: "Bone tumour or infection", distinguishing: "Constant pain unrelated to load, night pain, systemic features, or a mass; refer for urgent imaging." }
+  ],
+  redFlags: [
+    "Focal tenderness on the anterior mid-shaft or a transverse lucent line on imaging: a high-risk lesion. Stop impact loading and refer urgently to a sports physician or orthopaedic surgeon [r5].",
+    "Sudden severe pain, inability to weight-bear or deformity: possible complete fracture. Send to the emergency department.",
+    "Constant pain at rest or night, fever, unexplained weight loss or a mass: consider tumour or infection and arrange urgent imaging and medical review.",
+    "No improvement or worsening after 6–12 weeks of correct offloading: repeat imaging for delayed union or non-union and refer [r5].",
+    "Severe, escalating pain with a tense swollen leg after a fracture or direct injury: possible acute compartment syndrome. This is an emergency; refer to the emergency department immediately.",
+    "Amenorrhoea or oligomenorrhoea, disordered eating, multiple or recurrent bone stress injuries: screen for REDs and refer to a sports physician and dietitian [r6]."
+  ],
+
+  management: {
+    principles: "Management is guided by the site and the risk of healing complications. Low-risk bone stress injuries typically heal with activity modification followed by progressive loading, while non-weight-bearing immobilisation, medications or surgery are usually limited to high-risk sites [r1]. Address the causes (training load, energy availability, bone health, mechanics), because recurrence is common [r2]. Evidence for specific treatments is limited, and return to running rests on level IV evidence; decisions should be shared among clinician, coach and athlete [r7].",
+    medical: [
+      { name: "Activity modification with symptom-guided relative rest (low-risk sites)", description: "Stop impact loading that provokes pain, keep non-impact fitness, then progress loading in stages. Most low-risk bone stress injuries heal this way [r1], and more than 90% of athletes returned to sport after non-operative treatment in a meta-analysis of MRI-graded injuries [r15].", evidence: "moderate", recommendation: "recommended", refs: ["r1", "r15"] },
+      { name: "Protected or non-weight-bearing immobilisation (high-risk sites)", description: "Prolonged protection, a boot or crutches, and imaging follow-up for the anterior cortex or other high-risk lesions, under specialist guidance [r1,r5].", evidence: "limited", recommendation: "consider", refs: ["r1", "r5"] },
+      { name: "Pneumatic leg brace", description: "In a randomised trial of 18 athletes with tibial stress fractures, those fitted with an Aircast pneumatic brace returned to full activity in 21 ± 2 days versus 77 ± 7 days with rest and gradual return [r18]. The trial was small and the comparison was with rest alone.", evidence: "limited", recommendation: "consider", refs: ["r18"] },
+      { name: "Surgery (for example intramedullary nailing)", description: "Reserved for high-risk lesions when conservative treatment fails, or for complete fracture or non-union [r1,r13]. No comparative trials of surgical technique were identified in the sources reviewed.", evidence: "very-limited", recommendation: "consider", refs: ["r1", "r13"] },
+      { name: "Nutrition and endocrine review", description: "Correct low energy availability, review menstrual function and vitamin D and calcium status, and refer to a sports physician and dietitian when REDs is suspected [r6,r2].", evidence: "limited", recommendation: "recommended", refs: ["r6", "r2"] },
+      { name: "Low-intensity pulsed ultrasound (LIPUS)", description: "No effect on MRI grade, marrow oedema or clinical measures at 4 weeks in a double-blind placebo-controlled trial of 23 people with lower limb bone stress injuries [r16].", evidence: "limited", recommendation: "not-recommended", refs: ["r16"] },
+      { name: "Simple analgesia", description: "Paracetamol for night or rest pain. Avoid using analgesia to push through training, because pain is the guide to loading (clinical convention).", evidence: "expert-opinion", recommendation: "consider", refs: [] }
+    ],
+    physio: [
+      { name: "Criteria-based progressive loading and graded return to running", description: "Resolve bony tenderness and walking pain, build calf and trunk capacity, then add walk–run intervals, progressing distance before speed with symptom provocation as the main guide [r7,r2].", evidence: "limited", recommendation: "recommended", refs: ["r7", "r2"] },
+      { name: "Calf strengthening", description: "Strengthening the calf is advised for tibial bone stress injuries to reduce the load carried by the bone [r2]. Lean mass was lower in cases than in controls [r8].", evidence: "limited", recommendation: "consider", refs: ["r2", "r8"] },
+      { name: "Gait retraining", description: "A cue to raise step rate by 7.5% produced an 8.6% increase, cut vertical loading rates by about 18–19% and reduced peak hip adduction in 30 at-risk healthy runners [r14]. Real-time tibial accelerometer feedback lowered tibial acceleration by nearly 50% in 10 runners [r10]. Effects on stress fracture recurrence have not been shown.", evidence: "very-limited", recommendation: "consider", refs: ["r14", "r10"] },
+      { name: "Cross-training with non-impact exercise", description: "Cycling, pool running and upper body or core work to keep fitness during offloading.", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
+      { name: "Education on load, fuelling and recurrence", description: "Explain the bone-loading model, review training plans and energy intake, and agree pain rules before running resumes. Recurrence is common without addressing causes [r2].", evidence: "expert-opinion", recommendation: "recommended", refs: ["r2"] }
+    ],
+    education: [
+      "A stress fracture is a crack from repeated load. It heals when load is managed, but it will not heal if you keep running through pain.",
+      "Pain is the guide: if focal pain returns or worsens, stop and be reviewed.",
+      "The location matters. Some sites heal reliably; the front of the shin is a high-risk site and needs closer follow-up.",
+      "Eat enough for the training you do. Low energy intake, missed periods and repeated stress fractures are linked [r6].",
+      "Return to running is gradual and passes through checkpoints for tenderness, walking, strength and hopping [r7].",
+      "Fix the causes, not just the crack, because stress fractures often recur [r2]."
+    ]
+  },
+
+  rehab: {
+    overview: "Progression is criteria-based. Protect the bone while the fracture heals, rebuild strength and capacity without impact, then reintroduce running in graded steps and finally full training. Return to running after a tibial bone stress injury is guided by five components: resolution of bony tenderness, pain-free walking, radiological healing for high-risk lesions, strength, functional and loading tests, and identification of contributing factors; this guidance is level IV evidence [r7]. Timeframes below apply to low-risk lesions; high-risk lesions take longer and follow specialist instructions. Dosages are typical clinical ranges. As a working rule, keep pain at 3/10 or less during exercise and settled by the next morning (clinical convention).",
+    stages: [
+      {
+        name: "Protect and unload",
+        timeframe: "Weeks 0–4 (high-risk: until cleared)",
+        goals: ["No rest or night pain", "Pain-free walking in daily life", "Keep fitness and strength without impact", "Start addressing energy intake and training plan"],
+        precautions: ["No running, jumping or hopping", "Follow imaging and specialist advice for high-risk lesions [r5]", "Use crutches or a boot if walking is painful", "Stop and review if focal pain at rest or night pain develops"],
+        exercises: [
+          { name: "Cycling or aqua-jogging", dosage: "30–45 min, 4–5 days a week at a pain-free effort", cues: "Match the intensity of a normal run to keep fitness" },
+          { name: "Glute bridge", dosage: "3 × 12, daily", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } },
+          { name: "Side-lying clamshell", dosage: "3 × 12–15 each side", cues: "Keep the pelvis still", figure: { pose: "ex-clamshell", view: "lateral", props: ["mat"] } },
+          { name: "Forearm plank", dosage: "3 × 20–30 s, daily", figure: { pose: "ex-plank", view: "lateral", props: ["mat"] } },
+          { name: "Seated calf raise (light, only if pain-free)", dosage: "3 × 15, slow tempo, daily", figure: { pose: "ex-seated-calf-raise", view: "lateral", props: ["chair"] } }
+        ],
+        progressionCriteria: ["Pain-free walking in daily life", "No rest or night pain", "Marked reduction in bony tenderness on palpation", "For high-risk lesions: clinician clearance with imaging showing healing [r7]"]
+      },
+      {
+        name: "Restore strength and capacity",
+        timeframe: "Weeks 4–10",
+        goals: ["Single-leg calf raise endurance close to the other side", "Tolerate weight-bearing loading without symptoms", "Hip and trunk control on one leg", "Brisk walking for 45 min pain-free"],
+        precautions: ["Increase load only when symptoms are 3/10 or less and settle by the next morning", "No running until the tenderness criteria are met [r7]"],
+        exercises: [
+          { name: "Double-leg calf raise", dosage: "3 × 12–15, slow tempo, daily", figure: { pose: "ex-calf-raise", view: "lateral" } },
+          { name: "Single-leg calf raise", dosage: "3 × 8–15, 3 s up and 3 s down, 3 days a week; progress with load", cues: "Full height, controlled lowering", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
+          { name: "Bodyweight squat", dosage: "3 × 12–15, 3 days a week", figure: { pose: "ex-squat", view: "lateral" } },
+          { name: "Step-up", dosage: "3 × 10 each leg", cues: "Control the pelvis and knee", figure: { pose: "ex-step-up", view: "lateral", props: ["step"] } },
+          { name: "Single-leg Romanian deadlift", dosage: "3 × 8 each leg", figure: { pose: "ex-rdl", view: "lateral", props: ["dumbbell"] } },
+          { name: "Single-leg balance", dosage: "3 × 30 s each leg", figure: { pose: "ex-single-leg-balance", view: "anterior" } }
+        ],
+        progressionCriteria: ["Bony tenderness resolved on palpation [r7]", "Pain-free walking for 45 min", "Single-leg calf raise endurance within about 90% of the other side (clinical convention)", "Pain-free double-leg hopping on the spot"]
+      },
+      {
+        name: "Graded return to running",
+        timeframe: "Weeks 8–16",
+        goals: ["Build to 30 min of continuous running", "Raise step rate and run softly", "Maintain strength training", "Increase running frequency in steps"],
+        precautions: ["Alternate-day running at first", "Progress distance before speed, hills or intervals [r7]", "Step back if pain exceeds 3/10 or persists into the next morning", "High-risk lesions need imaging evidence of healing before running [r7]"],
+        exercises: [
+          { name: "Walk–run intervals", dosage: "Alternate days, for example 1 min run and 2 min walk × 8, increasing the run share when criteria are met", cues: "Easy effort on flat, even ground", figure: { pose: "run-midstance", view: "lateral" } },
+          { name: "Step-rate cue", dosage: "Raise cadence by about 5–10% with a metronome during runs initially [r14]", cues: "Shorter, quicker, quieter steps" },
+          { name: "Loaded single-leg calf raise", dosage: "3 × 8–12, twice a week", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
+          { name: "Step-down", dosage: "3 × 10 each leg", figure: { pose: "ex-step-down", view: "lateral", props: ["step"] } },
+          { name: "Single-leg hop on the spot", dosage: "3 × 10 each leg once criteria are met", figure: { pose: "ex-hop", view: "lateral" } }
+        ],
+        progressionCriteria: ["Run 30 min continuously with pain 3/10 or less on two consecutive runs and no pain the next morning", "Single-leg hopping pain-free", "No bony tenderness on palpation", "Strength and functional tests passed [r7]"]
+      },
+      {
+        name: "Return to training and sport",
+        timeframe: "Months 3–6 (high-risk: longer)",
+        goals: ["Full training volume and intensity", "Sport-specific work", "Maintain calf and hip strength", "Prevent recurrence through load monitoring and fuelling"],
+        precautions: ["Increase volume or intensity, not both, in one week; gradual steps, for example about 10% a week (a common clinical convention that is not well validated)", "Review symptoms and tenderness weekly", "Repeat REDs screening if training load rises sharply"],
+        exercises: [
+          { name: "Progressive running volume, then speed and hills", dosage: "Add distance first, then strides, hills and intervals over several weeks", cues: "Record distance, intensity and symptoms" },
+          { name: "Jump squats and hops", dosage: "3 × 5–8, twice a week with full recovery", figure: { pose: "ex-jump-squat", view: "lateral" } },
+          { name: "Heavy single-leg calf raise and split squat", dosage: "3–4 × 5–8, twice a week, long term", figure: { pose: "ex-split-squat", view: "lateral", props: ["dumbbell"] } },
+          { name: "Sport-specific drills", dosage: "Cutting, acceleration and sport drills added in steps", cues: "Quality over volume" },
+          { name: "Weekly load and fuelling review", dosage: "Once a week with athlete and coach" }
+        ],
+        progressionCriteria: ["Full training week without next-day tenderness", "Calf raise endurance and hop symmetry about 90% (clinical convention)", "No bony tenderness on palpation", "Contributing factors addressed and a prevention plan in place [r7]"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "Resolution of bony tenderness on palpation [r7]",
+      "Pain-free walking [r7]",
+      "Evidence of radiological healing in high-risk lesions [r7]",
+      "Strength, functional and loading tests passed, for example single-leg calf raise and hop symmetry about 90% (clinical convention) [r7]",
+      "Contributing factors identified and addressed (training load, energy availability, mechanics) [r7,r2]",
+      "Shared decision between clinician, coach and athlete [r7]"
+    ],
+    tests: ["Palpation mapping of the tibia", "Single-leg hop for pain and symmetry", "Single-leg calf raise endurance", "30 min graded running test with pain rating", "Radiograph, CT or MRI follow-up for high-risk lesions", "REDs Clinical Assessment Tool [r6]"]
+  },
+  prognosis: "Most athletes return to sport after non-operative treatment: more than 90% in a meta-analysis of 16 MRI-graded studies (560 bone stress injuries), with mean times to return of 41.7 to 98.5 days across grades 1–4 and faster healing at cortical-rich sites such as the tibia [r15]. In an earlier series the mean recovery time was 12.8 weeks (range 2–96) [r3]. Bone stress injuries tend to recur, which is why causes must be addressed [r2]. High-risk anterior cortex lesions can progress to delayed union, non-union or complete fracture, and the outcomes of both conservative and operative treatment are described as less successful than for low-risk sites [r5,r13].",
+  prevention: [
+    "Increase running load gradually and monitor symptoms; load is more amenable to modification than bone strength [r2].",
+    "Screen for low energy availability and bone health in athletes, including men, and treat it early [r6,r9].",
+    "Strengthen the calf and build lean mass; both are associated with tibial stress injury [r2,r8].",
+    "Consider gait retraining (a step-rate increase of about 7.5%) for runners with high impact loading; it lowers loading rates but has not been shown to prevent stress fractures [r14,r10].",
+    "Review risk in female runners with menstrual disturbance or low bone density [r4]."
+  ],
+  clinicalPearls: [
+    "Focal bony tenderness with pain on hopping is a bone stress injury until proven otherwise. Diffuse border tenderness over 5 cm points to MTSS [r11].",
+    "Site decides the plan. The anterior mid-shaft tibia is a high-risk site; do not manage it like shin splints [r5].",
+    "A normal radiograph does not exclude a stress fracture: films were abnormal in only 9.8% of athletes imaged at presentation [r3]. Use MRI when suspicion is high [r17].",
+    "Ask about periods, eating and energy availability in every athlete with a bone stress injury, including men [r6].",
+    "Recurrence is common. Fix the cause, not just the crack [r2].",
+    "Delay to diagnosis averaged 13.4 weeks in a classic series; earlier recognition shortens time off running [r3]."
+  ],
+  related: ["medial-tibial-stress-syndrome", "chronic-exertional-compartment-syndrome", "bone-stress-injury", "tibia-fibula-shaft-fracture", "metatarsal-stress-fracture", "navicular-stress-fracture"],
+
+  references: [
+    { id: "r1", citation: "Hoenig T, Ackerman KE, Beck BR, et al. Bone stress injuries. Nat Rev Dis Primers. 2022;8(1):26.", pmid: "35484131", doi: "10.1038/s41572-022-00352-y", type: "narrative-review", year: 2022 },
+    { id: "r2", citation: "Warden SJ, Davis IS, Fredericson M. Management and prevention of bone stress injuries in long-distance runners. J Orthop Sports Phys Ther. 2014;44(10):749-65.", pmid: "25103133", doi: "10.2519/jospt.2014.5334", type: "narrative-review", year: 2014 },
+    { id: "r3", citation: "Matheson GO, Clement DB, McKenzie DC, et al. Stress fractures in athletes. A study of 320 cases. Am J Sports Med. 1987;15(1):46-58.", pmid: "3812860", doi: "10.1177/036354658701500107", type: "cross-sectional", year: 1987 },
+    { id: "r4", citation: "Bennell KL, Malcolm SA, Thomas SA, et al. Risk factors for stress fractures in track and field athletes. A twelve-month prospective study. Am J Sports Med. 1996;24(6):810-8.", pmid: "8947404", doi: "10.1177/036354659602400617", type: "cohort", year: 1996 },
+    { id: "r5", citation: "Boden BP, Osbahr DC. High-risk stress fractures: evaluation and treatment. J Am Acad Orthop Surg. 2000;8(6):344-53.", pmid: "11104398", doi: "10.5435/00124635-200011000-00002", type: "narrative-review", year: 2000 },
+    { id: "r6", citation: "Mountjoy M, Ackerman KE, Bailey DM, et al. 2023 International Olympic Committee's (IOC) consensus statement on Relative Energy Deficiency in Sport (REDs). Br J Sports Med. 2023;57(17):1073-97.", pmid: "37752011", doi: "10.1136/bjsports-2023-106994", type: "consensus-statement", year: 2023 },
+    { id: "r7", citation: "George ERM, Sheerin KR, Reid D. Criteria and guidelines for returning to running following a tibial bone stress injury: a scoping review. Sports Med. 2024;54(9):2247-65.", pmid: "39141251", doi: "10.1007/s40279-024-02051-y", type: "other", year: 2024 },
+    { id: "r8", citation: "Beck BR, Rudolph K, Matheson GO, et al. Risk factors for tibial stress injuries: a case-control study. Clin J Sport Med. 2015;25(3):230-6.", pmid: "24977954", doi: "10.1097/JSM.0000000000000126", type: "case-control", year: 2015 },
+    { id: "r9", citation: "Barrack MT, Gibbs JC, De Souza MJ, et al. Higher incidence of bone stress injuries with increasing female athlete triad-related risk factors: a prospective multisite study of exercising girls and women. Am J Sports Med. 2014;42(4):949-58.", pmid: "24567250", doi: "10.1177/0363546513520295", type: "cohort", year: 2014 },
+    { id: "r10", citation: "Crowell HP, Davis IS. Gait retraining to reduce lower extremity loading in runners. Clin Biomech (Bristol). 2011;26(1):78-83.", pmid: "20888675", doi: "10.1016/j.clinbiomech.2010.09.003", type: "cohort", year: 2011 },
+    { id: "r11", citation: "Fredericson M, Bergman AG, Hoffman KL, et al. Tibial stress reaction in runners. Correlation of clinical symptoms and scintigraphy with a new magnetic resonance imaging grading system. Am J Sports Med. 1995;23(4):472-81.", pmid: "7573660", doi: "10.1177/036354659502300418", type: "cohort", year: 1995 },
+    { id: "r12", citation: "Kaeding CC, Miller T. The comprehensive description of stress fractures: a new classification system. J Bone Joint Surg Am. 2013;95(13):1214-20.", pmid: "23824390", doi: "10.2106/JBJS.L.00890", type: "other", year: 2013 },
+    { id: "r13", citation: "Lohrer H. [High-risk stress fractures in competitive athletes]. Unfallchirurgie (Heidelb). 2023;126(11):848-55.", pmid: "37341736", doi: "10.1007/s00113-023-01339-4", type: "narrative-review", year: 2023 },
+    { id: "r14", citation: "Willy RW, Buchenic L, Rogacki K, et al. In-field gait retraining and mobile monitoring to address running biomechanics associated with tibial stress fracture. Scand J Med Sci Sports. 2016;26(2):197-205.", pmid: "25652871", doi: "10.1111/sms.12413", type: "rct", year: 2016 },
+    { id: "r15", citation: "Hoenig T, Tenforde AS, Strahl A, et al. Does magnetic resonance imaging grading correlate with return to sports after bone stress injuries? A systematic review and meta-analysis. Am J Sports Med. 2022;50(3):834-44.", pmid: "33720786", doi: "10.1177/0363546521993807", type: "meta-analysis", year: 2022 },
+    { id: "r16", citation: "Gan TY, Kuah DE, Graham KS, et al. Low-intensity pulsed ultrasound in lower limb bone stress injuries: a randomized controlled trial. Clin J Sport Med. 2014;24(6):457-60.", pmid: "24667169", doi: "10.1097/JSM.0000000000000084", type: "rct", year: 2014 },
+    { id: "r17", citation: "Lohrer H, Malliaropoulos N, Korakakis V, et al. Exercise-induced leg pain in athletes: diagnostic, assessment, and management strategies. Phys Sportsmed. 2019;47(1):47-59.", pmid: "30345867", doi: "10.1080/00913847.2018.1537861", type: "systematic-review", year: 2019 },
+    { id: "r18", citation: "Swenson EJ Jr, DeHaven KE, Sebastianelli WJ, et al. The effect of a pneumatic leg brace on return to play in athletes with tibial stress fractures. Am J Sports Med. 1997;25(3):322-8.", pmid: "9167811", doi: "10.1177/036354659702500309", type: "rct", year: 1997 }
+  ],
+
+  animation: {
+    title: "How a tibial stress fracture develops",
+    phases: [
+      {
+        type: "moi", label: "Mechanism", duration: 6, view: "lateral", environment: "track",
+        actors: [{ id: "athlete", kit: "athlete" }],
+        keyframes: [
+          { t: 0, pose: "run-contact", root: { x: -80 } },
+          { t: 0.9, pose: "run-midstance", root: { x: -55 } },
+          { t: 1.8, pose: "run-toe-off", root: { x: -30 } },
+          { t: 2.7, pose: "run-contact", root: { x: 0 } },
+          { t: 3.6, pose: "run-midstance", root: { x: 25 } },
+          { t: 4.5, pose: "run-toe-off", root: { x: 50 } },
+          { t: 5.4, pose: "heel-strike-hard", root: { x: 75 } }
+        ],
+        forces: [
+          { t: [0.1, 1.0], at: "footR", dir: "up", label: "Impact load" },
+          { t: [0.9, 2.4], at: "shinR", dir: "backward", label: "Tibial bending" },
+          { t: [2.8, 3.7], at: "footR", dir: "up", label: "Repeated impact" },
+          { t: [3.6, 5.0], at: "shinR", dir: "backward", label: "Anterior cortex in tension" }
+        ],
+        highlights: [{ t: [0.9, 6], at: "shinR" }],
+        slowmo: [{ t: [0.5, 1.8], rate: 0.5 }],
+        captions: [
+          { t: 0, text: "A distance runner is deep into a high-mileage block with little recovery." },
+          { t: 1.2, text: "At every foot strike an impact load travels up the tibia." },
+          { t: 2.4, text: "Through stance and push-off the shaft bends under ground reaction and calf forces." },
+          { t: 3.6, text: "The anterior mid-shaft takes the tension, and its blood supply is relatively poor." },
+          { t: 4.8, text: "Over weeks, microdamage outpaces repair and localised shin pain builds." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "shinR",
+        captions: [{ t: 0, text: "Zooming into the right shin, viewed from the front." }]
+      },
+      {
+        type: "closeup", label: "Inside the tibia", duration: 10, scene: "lower-leg-anterior",
+        actions: [
+          { t: 0, do: "highlight", target: "tibia" },
+          { t: 0.3, do: "label", target: "tibia", text: "Tibia: anterior mid-shaft cortex" },
+          { t: 1.2, do: "arrow", at: "anteriorTibialCortexMid", dir: "posterior", label: "Bending load" },
+          { t: 2.4, do: "stress", target: "tibia", at: "anteriorTibialCortexMid" },
+          { t: 3.4, do: "swell", target: "tibialPeriosteum", amount: 0.3 },
+          { t: 3.6, do: "label", target: "tibialPeriosteum", text: "Periosteal and marrow oedema" },
+          { t: 4.8, do: "fracture", target: "tibia", pattern: "stress", at: "anteriorTibialCortexMid", displaced: false },
+          { t: 5.0, do: "label", target: "tibia", text: "Cortical stress fracture line" },
+          { t: 5.8, do: "pain", at: "anteriorTibialCortexMid" },
+          { t: 6.4, do: "camera", at: "anteriorTibialCortexMid", zoom: 1.8, dur: 1 },
+          { t: 8.2, do: "camera", zoom: 1, dur: 0.8 },
+          { t: 8.6, do: "reset", target: "tibia", label: "Heals with offloading, then progressive load" }
+        ],
+        captions: [
+          { t: 0, text: "From the front, the anterior mid-shaft of the tibia is the high-risk site." },
+          { t: 1.2, text: "Repeated bending loads the anterior cortex in tension." },
+          { t: 2.4, text: "The bone shows a stress reaction as microdamage accumulates." },
+          { t: 3.6, text: "The periosteum and marrow become inflamed, and loading hurts." },
+          { t: 4.8, text: "A crack crosses the cortex: a stress fracture." },
+          { t: 6.4, text: "At this site healing can stall, so delayed union and complete fracture are risks." },
+          { t: 8.6, text: "With offloading then progressive loading, the bone can heal." }
+        ]
+      },
+      {
+        type: "micro", label: "Bone response", duration: 10, tissue: "bone-stress",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.0, stage: "loading" }, { t: 2.0, stage: "microdamage" },
+          { t: 3.2, stage: "resorption-exceeds-formation" }, { t: 4.5, stage: "stress-reaction" },
+          { t: 6.0, stage: "stress-fracture" }, { t: 7.6, stage: "healing" }
+        ],
+        captions: [
+          { t: 0, text: "Healthy cortical bone: microdamage is removed and replaced as it forms." },
+          { t: 1.0, text: "Repetitive running load strains the cortex." },
+          { t: 2.0, text: "Microcracks accumulate faster than the bone can repair them." },
+          { t: 3.2, text: "Osteoclast resorption outpaces osteoblast formation locally." },
+          { t: 4.5, text: "A stress reaction: periosteal and marrow oedema, with pain on loading." },
+          { t: 6.0, text: "A crack crosses the cortex: a stress fracture." },
+          { t: 7.6, text: "With load reduced, then progressed, remodelling repairs the crack." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "LL8" }
+};

@@ -1,0 +1,428 @@
+export default {
+  id: "cauda-equina-syndrome",
+  name: "Cauda equina syndrome",
+  shortName: "Cauda equina syndrome",
+  aka: ["CES", "cauda equina compression", "acute cauda equina syndrome", "saddle anaesthesia syndrome", "incomplete cauda equina syndrome (CES-I)", "cauda equina syndrome with retention (CES-R)", "cauda equina"],
+  region: "lumbar",
+  tissues: ["nerve", "disc"],
+  onset: "acute-or-gradual",
+  mechanismType: ["compression"],
+  populations: ["adults aged 30–49 years", "women (higher population incidence)", "people with a large central disc herniation or severe canal stenosis"],
+  sports: [],
+  urgency: "emergency",
+  summary: "SURGICAL EMERGENCY. Compression of the cauda equina, most often by a large central disc herniation, causes bladder, bowel, saddle sensory and sexual dysfunction. No single sign rules it out; refer the same day.",
+  keyFacts: [
+    { label: "Red flag", value: "EMERGENCY: any new bladder, bowel, saddle sensory or sexual change with back or leg pain needs same-day emergency MRI and spinal surgical review" },
+    { label: "Key test", value: "No single sign or test rules CES in or out. In 57 suspected cases only 13 (23%) had CES on MRI, and rectal examination did not discriminate (accuracy 51%)" },
+    { label: "Imaging", value: "Emergency MRI is the diagnostic test; at least 70% of patients with suspected CES have no cauda equina compression on imaging" },
+    { label: "Incidence", value: "About 2.7 per 100,000 per year among people needing emergency decompression in Scotland, peaking at 7.2 per 100,000 in women aged 30–39 years" },
+    { label: "Typical recovery", value: "Variable. In a 621-patient UK cohort 31% needed a catheter before surgery and 13% at discharge; 65% needed additional health services in the first year" },
+    { label: "Peak age", value: "30–49 years, and more common in women" }
+  ],
+  overview: "EMERGENCY. Cauda equina syndrome (CES) is compression of the lumbosacral nerve roots below the end of the spinal cord. It is a surgical emergency: it threatens permanent loss of bladder, bowel and sexual function and perineal sensation. It occurs most frequently after a large central lumbar disc herniation, prolapse or sequestration [r1]. Any person with back or leg pain and new bladder, bowel, saddle sensory or sexual symptoms needs same-day emergency assessment, with urgent MRI and a spinal surgical opinion, not a wait-and-see plan.\n\nDiagnosis is difficult and no single feature settles it. In 57 patients with suspected CES, 13 (23%) had CES on MRI, and neither digital rectal examination (accuracy 51%) nor the number of positive clinical findings predicted the scan result [r2]. In an Edinburgh prospective series of 198 patients, 47 had scan-positive CES, and most patients (at least 70% in a later review) with the clinical picture have no cauda equina compression on imaging [r3,r4]. The working rule is therefore low-threshold referral for emergency MRI, because a normal examination does not rule CES out and waiting for urinary retention or incontinence means waiting for late, often irreversible disease [r5,r1].\n\nEarly diagnosis matters because the incomplete syndrome (CES-I) has a more favourable outlook than CES with urinary retention (CES-R), and every effort should be made to prevent CES-I progressing to CES-R [r1]. The evidence on exact surgical timing is observational and conflicting: meta-analyses of observational studies favour early surgery [r6,r7], one UK cohort found no association between time to surgery and outcome [r8], and a systematic review found no strong basis for treating 48 hours as a safe window [r9]. The physiotherapist's role is to recognise it, refer the same day, document, and support recovery afterwards.",
+
+  epidemiology: {
+    text: "In Scotland, 149 people needing emergency surgical decompression for disc-related CES were identified in one year from a population of 5.4 million, a crude incidence of 2.7 per 100,000 per year (95% CI 2.3–3.2). It was more common in females and in those aged 30–49 years, with an incidence of 7.2 per 100,000 (95% CI 4.7–10.6) in females aged 30–39. CES needing catheterisation had an incidence of 1.1 per 100,000 adults per year. The authors judged this at least four times higher than earlier European estimates of 0.3–0.6 per 100,000, and incidence varies with the diagnostic criteria used [r10]. Using ICD-10 codes alone was inaccurate: 55% (117 of 211) of patients with a new CES code did not have CES on notes review [r10]. Around 50–70% of patients have urinary retention at presentation (CES-R) and 30–50% have an incomplete syndrome (CES-I) [r1]. In a UK cohort of 621 participants, 31% (191 of 615) needed catheterisation for urinary retention before surgery [r8].",
+    riskFactors: {
+      intrinsic: [
+        "Age 30–49 years: the peak incidence band in a national incidence study [r10]",
+        "Female sex: higher incidence, peaking at 7.2 per 100,000 in females aged 30–39 [r10]",
+        "A large central lumbar disc herniation, prolapse or sequestration, the most frequent cause [r1]",
+        "A narrow canal (lumbar spinal stenosis), which leaves less reserve for a disc herniation (clinical reasoning; not tested in the sources reviewed)"
+      ],
+      extrinsic: [
+        "No modifiable extrinsic risk factor for CES was identified in the sources reviewed. The risk factors for the underlying disc herniation, such as repetitive loaded flexion, are described on the lumbar disc herniation page.",
+        "Delayed recognition and referral: delays in diagnosis can have devastating, life-changing consequences [r11]"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "A large herniation of disc material, usually central and posterior, fills the spinal canal at the lumbar levels where the thecal sac contains the cauda equina and compresses all of the lumbosacral roots together. The sacral roots supply the bladder detrusor, the anal sphincters, the pelvic floor and the genital and perineal skin, so compression causes bladder, bowel, sexual and saddle sensory dysfunction. Removing the compression early removes the mechanical and perhaps chemical factors thought to cause progressive neurological damage [r1].",
+    sequence: [
+      "Years of disc loading and degeneration, often with a history of back pain or sciatica, weaken the posterior annulus (the typical background; not always present).",
+      "Loaded flexion, a lift or even a minor event, or no clear event, allows a large amount of nucleus to herniate posteriorly through the annulus [r1].",
+      "The herniation is large and central, so it fills the canal rather than pressing on one lateral recess, and may be a sequestrated fragment.",
+      "The cauda equina is compressed, its blood supply and conduction are impaired, and the sacral roots fail first or most conspicuously (clinical teaching).",
+      "Incomplete CES (CES-I): altered urinary sensation or flow, reduced sensation of bowel function, saddle sensory change, but the bladder can still empty [r1].",
+      "Without decompression the syndrome can progress to CES with retention (CES-R): painless urinary retention with overflow, loss of anal tone and sensation [r1].",
+      "Surgery relieves the compression; recovery of neurological function varies and can continue for months [r8]."
+    ],
+    variants: [
+      { name: "Disc herniation (most common)", description: "A large central herniation, prolapse or sequestration is the usual cause and is the cause in most surgical series [r1,r10]." },
+      { name: "Lumbar spinal stenosis with an acute event", description: "A narrow canal can decompensate with a smaller disc herniation or swelling, so people with known stenosis need the same screen (clinical reasoning; not tested in the sources reviewed)." },
+      { name: "Non-disc causes", description: "Tumour, epidural haematoma or abscess, trauma and post-surgical collections can compress the cauda equina. These need the same emergency pathway, and the alternative neurological causes that emerged in a minority of patients are described in the differentials [r3]." },
+      { name: "Incomplete CES (CES-I) versus CES with retention (CES-R)", description: "CES-I is the early stage in which the bladder still empties; CES-R has painless retention with overflow. CES-I is the group in whom prompt decompression is most likely to preserve function, and the two should not be analysed together [r1,r6]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The spinal cord ends in the conus medullaris near the upper lumbar spine. Below it, the thecal sac contains the cauda equina, the bundle of lumbar, sacral and coccygeal roots descending to their exit foramina. In the lumbar canal these roots lie within the sac, bounded in front by the posterior vertebral body, disc and posterior longitudinal ligament, and behind by the ligamentum flavum and laminae. Roots S2 to S4 supply the detrusor muscle, the internal and external anal sphincters, the pelvic floor and the sensation of the perineum, genitals and saddle area. A central disc herniation lies immediately in front of the sac, which is why it can compress the whole bundle rather than a single root.",
+    structures: [
+      { name: "Cauda equina", role: "The bundle of lumbar and sacral roots below the conus; the sacral roots control bladder, bowel and sexual function and perineal sensation" },
+      { name: "Thecal sac", role: "The dural sleeve containing the roots in cerebrospinal fluid; its cross-section is the 'space' that the roots need" },
+      { name: "Intervertebral disc and posterior longitudinal ligament", role: "The disc forms the anterior boundary of the canal; the ligament is strongest centrally, yet a large central herniation can still extrude" },
+      { name: "Lumbar nerve roots (L4, L5) and sacral roots (S1–S4)", role: "Supply the lower limb (motor and sensory) and the pelvic organs; a bilateral deficit points toward cauda equina compression" },
+      { name: "Ligamentum flavum and laminae", role: "The posterior boundary of the canal; with a narrow canal these structures reduce the reserve for a disc herniation" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "CES is a compressive neuropathy of many roots at once. Mechanical compression deforms the roots and impairs their blood supply and conduction, and the chemical environment of extruded disc material may contribute [r1]. Recovery depends on the degree and duration of compression: the level of neurological dysfunction at the time of surgery (incomplete CES versus CES with retention) is probably the most important determinant of outcome, and onset and duration of symptoms probably affect at least the time course of recovery [r9]. The mechanism is thought to deteriorate continuously rather than at a fixed deadline [r9].\n\nBladder dysfunction is the sentinel problem. In a series of 200 patients treated for CES, bladder dysfunction at follow-up was found in 11.1% (4 of 36) of those with incomplete CES operated within 24 hours of onset of autonomic symptoms compared with 46.6% (48 of 103) of those operated later; in those with retention, timing made no obvious difference to bladder outcome [r12]. Observational evidence on timing is conflicting, which is covered in the prognosis section.",
+    structures: [
+      { name: "Cauda equina roots (S2–S4 especially)", effect: "Compression, impaired blood supply and conduction block; the sacral roots to the bladder, anal sphincters and perineum fail first or most noticeably (clinical teaching)" },
+      { name: "Intervertebral disc", effect: "Large central extrusion or sequestration into the canal, usually at the lower lumbar levels [r1]" },
+      { name: "Bladder detrusor and sphincters", effect: "Loss of normal sensation of fullness, then inability to initiate voiding, retention with overflow; in the UK cohort 31% needed catheterisation before surgery [r8]" },
+      { name: "Anal sphincters and pelvic floor", effect: "Loss of anal sensation and tone, constipation or faecal incontinence, and sexual dysfunction (clinical teaching)" },
+      { name: "Lower limb motor and sensory roots", effect: "Bilateral or unilateral weakness and sensory change, often with reduced or absent ankle jerks: reduced or absent bilateral ankle jerks were found in 78% of scan-positive patients versus 12% of scan-negative patients [r3]" }
+    ],
+    muscles: [
+      { name: "Detrusor, internal and external anal sphincters, pelvic floor", effect: "Weakness or paralysis from sacral root dysfunction; the clinical result is retention, incontinence or loss of control (clinical teaching)" },
+      { name: "Ankle plantarflexors and dorsiflexors, hip abductors and extensors", effect: "Progressive weakness from lumbar and S1 root compression, with foot drop or an unstable gait in more advanced disease (clinical teaching)" },
+      { name: "Multifidus and erector spinae", effect: "Reflex guarding in the acute phase and later disuse; not tested in the sources reviewed" },
+      { name: "Lower limb and trunk global muscle", effect: "Disuse and deconditioning after prolonged bed rest or hospital stay (clinical observation)" }
+    ],
+    cellular: [
+      { phase: "Compression and conduction block", timing: "Minutes to hours", description: "Mechanical deformation and impaired microcirculation block conduction in the compressed roots (proposed; mostly animal and surgical evidence, not tested in the sources reviewed)." },
+      { phase: "Ischaemia and oedema", timing: "Hours to days", description: "Venous congestion and reduced perfusion cause intraneural oedema and progressive loss of conduction. The decline is thought to be continuous rather than stepwise [r9]." },
+      { phase: "Demyelination", timing: "Days to weeks", description: "Prolonged compression thins the myelin sheaths and slows or blocks conduction (proposed; not tested in the sources reviewed)." },
+      { phase: "Axonal injury", timing: "Weeks, with prolonged severe compression", description: "Severe or prolonged compression damages axons and is the likely cause of permanent deficit (proposed; not tested in the sources reviewed)." },
+      { phase: "Recovery after decompression", timing: "Weeks to a year", description: "Function can improve after surgery, including in patients who presented with retention, and the Woodfield cohort measured improvement up to one year [r8]." }
+    ],
+    systems: [
+      { system: "Nervous system (peripheral)", effect: "Multiple lumbosacral roots are compressed; bilateral radiculopathy features in guidance for people at risk, a stage at which treatment usually leads to favourable outcomes [r5]" },
+      { system: "Urogenital and bowel", effect: "Bladder retention, overflow incontinence, constipation or faecal incontinence, and sexual dysfunction; the outcome people value most and the hardest to recover [r8]" },
+      { system: "Nervous system (central)", effect: "Acute pain and the stress of a suspected emergency can cause bladder symptoms with no cauda equina compression ('scan-negative' CES), with features of functional neurological disorder in many [r3,r4]" },
+      { system: "Psychological and social", effect: "Fear, anxiety, depression and loss of confidence follow bladder, bowel and sexual dysfunction, and patients often need long-term support (clinical observation; 65% of the UK cohort needed additional healthcare services over one year [r8])" },
+      { system: "Musculoskeletal and functional", effect: "Reduced mobility and deconditioning in hospital; walking and gait may be impaired by weakness or sensory loss (clinical observation)" }
+    ]
+  },
+
+  grading: {
+    system: "Clinical classification by sphincter status",
+    grades: [
+      { grade: "Suspected CES (CES-S)", description: "Bilateral or unilateral radiculopathy with possible early sphincter, saddle or sexual symptoms but no objective retention. Emergency MRI is indicated, and a normal examination does not rule out compression [r5,r2].", prognosis: "Most patients with suspected CES do not have cauda equina compression on imaging (at least 70% in one review), yet a positive scan needs urgent surgery [r4]" },
+      { grade: "Incomplete CES (CES-I)", description: "Reduced urinary sensation or altered flow, but the bladder can still empty. Saddle sensory change and reduced anal tone or sensation may be present. This is the stage at which prompt decompression has the greatest chance of preserving function [r1].", prognosis: "In a retrospective cohort, bladder dysfunction at follow-up occurred in 11.1% of CES-I patients operated within 24 hours versus 46.6% of those operated later [r12]" },
+      { grade: "CES with retention (CES-R)", description: "Painless urinary retention with overflow, with loss of bladder control or sensation. Around 50–70% of patients present at this stage [r1].", prognosis: "Worse functional outlook than CES-I (relative risk of fair or poor urinary outcome 2.58, 95% CI 0.59–11.31, in a small comparison); timing evidence is conflicting [r6]" }
+    ]
+  },
+
+  timeframes: {
+    summary: "The clinical emergency is hours to days: the decision for emergency MRI and decompression is made within the day. Recovery after surgery continues over months, with measurable improvement up to one year in a UK cohort [r8]. The 48-hour figure often quoted is not a validated safe window [r9].",
+    healing: [
+      { phase: "Emergency window: recognition, MRI and decompression", startDay: 0, endDay: 2, description: "Same-day referral, emergency MRI, surgical decision and decompression. The median time from symptom onset to surgery was 3 days (IQR 1–8) in a UK cohort, with 32% operated within 48 hours [r8]; earlier is better (clinical consensus)." },
+      { phase: "Early post-operative recovery", startDay: 0, endDay: 42, description: "Catheter and bladder management, early mobilisation, pain control; only 13% still needed a catheter at discharge [r8]" },
+      { phase: "Neurological recovery", startDay: 14, endDay: 365, description: "Bladder, bowel, sexual and motor function can improve over months; patient-reported improvement was measured out to one year [r8]" },
+      { phase: "Long-term adaptation and support", startDay: 90, endDay: 730, description: "Continence, sexual health, pain, psychological and return-to-work needs; 65% needed extra healthcare services in the first year [r8]" }
+    ],
+    milestones: [
+      { label: "Same-day referral and emergency MRI", day: 0, note: "Do not wait for retention or incontinence; they are late features [r5]" },
+      { label: "Decompression", day: 1, note: "As early as the surgical team can safely achieve; no validated safe delay [r9]" },
+      { label: "Catheter-free or on a bladder routine at discharge", day: 7, note: "13% still needed a catheter at discharge in a UK cohort [r8]" },
+      { label: "Walking independently (typical)", day: 21, note: "Clinical expectation; depends on motor deficit" },
+      { label: "One-year review of bladder, bowel, sexual function and disability", day: 365, note: "Improvement continued to one year, even after retention [r8]" }
+    ],
+    returnToSport: "Not a sport diagnosis. Return to work and activity is individual and depends on residual bladder, bowel, sexual and motor function, usually over 3–6 months or longer. No validated criteria were identified; the stages below are clinical convention and the surgeon's protocol takes priority."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Low back pain, often with unilateral or bilateral sciatica; bilateral leg pain is a feature that guidelines list for people at risk of CES [r5]",
+      "Bladder change: difficulty starting or stopping urination, reduced sensation of bladder fullness or flow, incontinence or retention [r1]",
+      "Bowel change: loss of sensation of the rectum, constipation or faecal incontinence [r1]",
+      "Saddle (perineal) numbness or altered sensation: genitals, perineum, buttocks and inner thighs",
+      "Sexual dysfunction: erectile dysfunction, loss of genital sensation or inability to reach orgasm",
+      "Leg weakness, a foot that catches or slaps, or an unstable gait"
+    ],
+    signs: [
+      "Altered or absent perineal (saddle) sensation to light touch or pinprick",
+      "Reduced or absent bilateral ankle jerks (78% in scan-positive patients versus 12% in scan-negative patients) [r3]",
+      "Reduced anal tone or voluntary contraction on rectal examination, a finding that did not discriminate scan-positive from scan-negative patients [r2,r3]",
+      "Bilateral or multilevel lower limb weakness and sensory loss",
+      "A palpable bladder or large post-void residual on bladder scan",
+      "A normal neurological examination can still occur early; no single sign rules CES out [r2]"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Ask every patient with back or leg pain about bladder function: any change in urinary stream, sensation of fullness, urgency, incontinence or retention [r11]",
+      "Ask about bowel function and sensation, faecal incontinence, and the ability to feel the passage of stool or wiping",
+      "Ask about saddle numbness or altered sensation in the genitals, perineum, buttocks and inner thighs",
+      "Ask about sexual function changes, including erectile function and genital sensation, and ask sensitively",
+      "Ask about bilateral leg pain, weakness, gait change or falls, and the speed of progression",
+      "Ask about the cause: lifting event, history of disc herniation or stenosis, cancer, infection risk, anticoagulants, recent spinal procedure or trauma",
+      "Ask about medications that affect the bladder (opioids, anticholinergics), pain severity and distress, because they can confound the picture [r4]"
+    ],
+    observation: ["Antalgic posture, difficulty rising or walking, foot drop or unstable gait", "Visible distress, pain behaviour and guarding", "Signs of urinary retention (suprapubic fullness) or leaking"],
+    palpation: ["Spinal tenderness and step (nonspecific)", "Suprapubic fullness for retention", "Do not rely on rectal examination to decide on referral [r2]"],
+    rangeOfMotion: ["Lumbar movement is usually painful and guarded; do not provoke symptoms, because the examination should not delay referral", "Hip range of motion only if it does not delay referral"],
+    strength: ["Myotomes L2–S1 bilaterally, including hip flexion and abduction, knee extension, ankle dorsiflexion, great toe extension and plantarflexion", "Compare sides and record power on a 0–5 scale", "Re-test after any change in symptoms to document progression"],
+    neuro: ["Perineal and saddle sensation to light touch and pinprick, including S2–S4 dermatomes", "Dermatomes and myotomes L2–S1, bilaterally, and the knee and ankle jerks (bilateral reduced or absent ankle jerks were more frequent in scan-positive CES) [r3]", "Straight leg raise or slump (unilateral or bilateral), a mechanosensitivity marker only", "Anal tone and voluntary contraction by digital rectal examination where competent and appropriate, understanding its limits [r2]", "Post-void residual by bladder scan if available, where retention is suspected (a residual above about 200 mL is a common clinical convention)"],
+    functional: ["Gait: heel walk and toe walk if safe, to document foot drop or weakness", "Transfers and sit-to-stand safety", "Ability to void normally; document what was asked and what the patient reported"],
+    specialTests: [
+      { name: "Perineal (saddle) sensation testing", purpose: "Identify sacral dermatome sensory loss, a core feature of CES", procedure: "Test light touch and pinprick over the perianal region, genitals, buttocks and inner thighs, comparing sides. Explain and obtain consent and offer a chaperone.", positive: "Reduced or absent sensation in S2–S4 dermatomes. A normal result does not exclude CES, and no accuracy figures were identified in the sources reviewed.", refs: [] },
+      { name: "Digital rectal examination (anal tone and sensation)", purpose: "Assess anal sphincter tone and voluntary contraction", procedure: "Where within scope and competent, examine with consent, privacy and a chaperone, and document the findings. Do not delay referral to perform it.", positive: "Reduced tone or absent voluntary contraction. In 57 patients with suspected CES it did not discriminate for MRI-confirmed CES (p = 0.897, test accuracy 51%, diagnostic odds ratio 1.42), and reduced anal tone did not differ between scan-positive and scan-negative groups in another series [r2,r3].", refs: ["r2", "r3"] },
+      { name: "Ankle reflexes", purpose: "Identify bilateral S1 root involvement", procedure: "Test both ankle jerks with the patient relaxed and the foot dorsiflexed.", positive: "Bilaterally reduced or absent jerks were found in 78% of scan-positive CES patients, 30% of a mixed group and 12% of scan-negative patients. No sensitivity or specificity figures were identified in the sources reviewed.", refs: ["r3"] },
+      { name: "Post-void residual (bladder scan)", purpose: "Identify urinary retention, the marker of CES-R", procedure: "Ask the patient to void and then scan the bladder; where scanning is not available, refer without waiting.", positive: "A raised residual (above about 200 mL is a common clinical convention). No diagnostic accuracy figures were identified in the sources reviewed.", refs: [] },
+      { name: "Total of positive clinical findings", purpose: "Whether a count of positive findings can predict a positive MRI", procedure: "Count the bilateral, bladder, bowel, saddle and motor findings recorded.", positive: "There was no correlation between the cumulative number of positive findings and the likelihood of MRI-confirmed CES, and no individual feature was significantly linked to the MRI result [r2].", refs: ["r2"] }
+    ],
+    clinicalRules: [
+      { name: "Urgent referral pathway (same day)", description: "Any new bladder, bowel, saddle sensory or sexual symptoms with back or leg pain, or bilateral progressive leg symptoms, means a same-day referral to an emergency department or on-call spinal service for emergency MRI and surgical opinion. Telephone ahead, state 'suspected cauda equina syndrome', document the history, findings, time and who was told, and do not wait for retention or incontinence [r8,r11]." },
+      { name: "No single sign rules it out", description: "No individual symptom, sign or test, including rectal examination, reliably confirms or excludes CES, and there is little high-quality evidence for the diagnostic accuracy of most red flags [r2,r13]. Use clinical reasoning across the whole picture, keep a low threshold for MRI, and safety-net those not sent in." },
+      { name: "Early rather than late features", description: "Of 37 recommendations in seven sources (national guidelines), 32% described bilateral radiculopathy, 35% were imprecise and 32% described late, often irreversible features ('white flags') such as urinary incontinence or absent perineal sensation. Aim to refer at the early or at-risk stage [r5]." },
+      { name: "Safety-netting", description: "For anyone with back and leg pain who is not referred, give clear verbal and written advice on the symptoms that need same-day attention, and document that advice [r8]." }
+    ],
+    outcomeMeasures: [
+      { name: "Bladder, bowel and sexual function (patient-reported and clinician-recorded)", use: "Core outcome domains in the UK prospective cohort, with catheter requirement as a urinary outcome [r8]" },
+      { name: "Oswestry Disability Index (ODI)", use: "Disability measure used up to one year after surgery in the UK cohort [r8]" },
+      { name: "Lower limb myotome and sensory chart", use: "Serial documentation of deficit and recovery" },
+      { name: "Post-void residual volume and catheter status", use: "Track bladder recovery (catheter requirement at discharge was 13% in a UK cohort) [r8]" },
+      { name: "Patient-Specific Functional Scale and gait measures", use: "Individual goals such as walking, returning to work or caring for a family" }
+    ],
+    imaging: [
+      { modality: "Emergency MRI of the lumbar spine (whole spine if the level is unclear)", indication: "Suspected CES: any new bladder, bowel, saddle or sexual symptoms with back or leg pain, or progressive bilateral deficit. The gold standard and the test that decides surgery [r2,r1].", findings: "Compression of the cauda equina, most often by a large central disc herniation, with obliteration of cerebrospinal fluid around the roots. At least 70% of patients with suspected CES have no cauda equina compression, and a minority have another neurological cause [r4,r3]." },
+      { modality: "CT or CT myelography", indication: "When MRI is contraindicated or unavailable and urgent imaging is needed", findings: "Canal compromise and bone detail; less sensitive for soft tissue than MRI" },
+      { modality: "Bladder scan (ultrasound)", indication: "Bedside screening for retention while arranging MRI; do not delay referral", findings: "Post-void residual volume" },
+      { modality: "Plain radiographs", indication: "Not useful for diagnosis; may be done for trauma or alignment", findings: "Cannot show the cauda equina or a disc herniation" }
+    ]
+  },
+
+  differentials: [
+    { name: "Lumbar disc herniation with radiculopathy", id: "lumbar-disc-herniation", distinguishing: "Unilateral dermatomal leg pain without sphincter, saddle or sexual changes. A large central herniation can be the cause of CES, so re-ask about sphincter symptoms at each visit." },
+    { name: "Lumbar spinal stenosis", id: "lumbar-spinal-stenosis", distinguishing: "Gradual, posture-dependent bilateral buttock and leg symptoms over months to years, without new sphincter or saddle changes; CES can still occur in stenosis." },
+    { name: "Acute low back pain with referred leg pain", id: "acute-low-back-pain", distinguishing: "Somatic referral without neurological deficit or sphincter change; red flag screen is negative." },
+    { name: "Scan-negative CES (functional or other neurological cause)", distinguishing: "Bladder, bowel or saddle symptoms with no cauda equina compression on MRI, often with acute severe pain, panic or functional neurological features (68% had positive functional signs versus 11% in scan-positive CES). Still send for emergency MRI to find out [r3,r4]." },
+    { name: "Conus medullaris lesion or spinal cord compression (myelopathy)", distinguishing: "Upper motor neuron signs (hyper-reflexia, clonus, extensor plantar), a sensory level and early sphincter change; needs the same emergency pathway." },
+    { name: "Spinal tumour, infection (epidural abscess), or haematoma", distinguishing: "Constant or night pain, systemic features, fever, cancer history, anticoagulation or injecting drug use; emergency MRI and the same pathway." },
+    { name: "Urinary tract infection, retention from drugs, or constipation", distinguishing: "Bladder symptoms without saddle numbness or bilateral neurological signs; opioids and anticholinergics can cause retention, but if there is back or leg pain, consider CES first [r4]." },
+    { name: "Guillain–Barré syndrome and other polyradiculopathies", distinguishing: "Progressive ascending weakness, areflexia, and often autonomic features without a compressive lesion on MRI." }
+  ],
+  redFlags: [
+    "EMERGENCY, SAME DAY: Any back or leg pain with new bladder dysfunction (difficulty starting or stopping urination, reduced bladder sensation, incontinence or retention), bowel dysfunction (loss of rectal sensation, constipation or faecal incontinence), saddle (perineal) numbness or altered sensation, or new sexual dysfunction. Send to an emergency department or on-call spinal service for emergency MRI and surgical opinion. Telephone ahead and document.",
+    "Bilateral radicular leg pain or progressive bilateral leg weakness, even without sphincter symptoms: this is the at-risk stage, and a review of guidelines argued that referral should be emphasised at this point, before late, often irreversible features appear [r5].",
+    "No single sign rules CES out, and a normal rectal examination or a normal-seeming examination does not reassure. In 57 suspected cases only 23% were confirmed and no individual finding discriminated [r2]. Keep a low threshold, and do not use rectal examination to ration MRI.",
+    "Do not wait for urinary retention, incontinence or absent perineal sensation. These are late features, often irreversible, that signal CES-R [r1,r5].",
+    "Rapidly progressive or severe motor deficit, foot drop, or unstable gait: arrange emergency spinal surgical review.",
+    "Patients with known disc herniation, stenosis, previous spinal surgery or cancer who develop any of the above are at high risk; refer without delay."
+  ],
+
+  management: {
+    principles: "CES is managed as a surgical emergency by a spinal surgical team. The diagnosis is made by emergency MRI, and urgent decompression is the treatment. Prompt decompression is the accepted standard and recommended in reviews [r1], but the evidence on exact timing is observational and conflicting. Meta-analyses of observational studies favour earlier surgery [r6,r7], a retrospective cohort found less bladder dysfunction with surgery within 24 hours in incomplete CES [r12], one multi-centre UK cohort found no association between time to surgery and outcome [r8], and a systematic review concluded there is no strong basis for 48 hours as a safe window [r9]. The practical conclusion is to treat every hour of delay as a risk, especially for CES-I. The physiotherapist's tasks are to screen every patient with back or leg pain, refer the same day, document, safety-net and support rehabilitation after surgery [r11,r8].",
+    medical: [
+      { name: "Emergency MRI", description: "The diagnostic test for suspected CES. Most patients with suspected CES have no compression on imaging, and a normal scan avoids unnecessary surgery [r4,r3].", evidence: "moderate", recommendation: "recommended", refs: ["r4", "r3", "r1"] },
+      { name: "Emergency surgical decompression (usually discectomy or laminectomy)", description: "Removes the compressive lesion and is the standard treatment. Meta-analyses of observational studies found better outcomes with earlier surgery: significant advantage within 48 hours versus later (42 studies, 322 patients) [r7], and a relative risk of 1.77–2.19 of a fair or poor urinary outcome with later surgery in CES with retention [r6]. In incomplete CES, bladder dysfunction at follow-up was 11.1% with surgery within 24 hours versus 46.6% after 24 hours [r12]. A 621-patient UK cohort found no association between time to surgery and outcome [r8]. All are observational, and a systematic review found no strong basis for a blanket 48-hour safe window [r9].", evidence: "limited", recommendation: "recommended", refs: ["r1", "r7", "r6", "r12", "r8", "r9"] },
+      { name: "Urological and bowel care (catheterisation, bladder training, bowel routine)", description: "Catheterisation is needed in many: 31% before surgery and 13% at discharge in a UK cohort. Catheter at discharge was strongly associated with pre-operative catheterisation (OR 10.6) [r8].", evidence: "limited", recommendation: "recommended", refs: ["r8"] },
+      { name: "Waiting for retention or incontinence before referring", description: "These are late features of CES, and waiting risks CES-I progressing to CES-R, which has a poorer outlook [r1,r5].", evidence: "limited", recommendation: "not-recommended", refs: ["r1", "r5"] },
+      { name: "Using rectal examination or a single sign to decide whether to image", description: "No individual clinical feature, including rectal examination, discriminated MRI-confirmed CES in 57 suspected cases [r2], and there is little high-quality evidence for most red flags [r13].", evidence: "limited", recommendation: "not-recommended", refs: ["r2", "r13"] }
+    ],
+    physio: [
+      { name: "Recognition, same-day referral, documentation and safety-netting", description: "Screen every patient with back or leg pain for bladder, bowel, saddle and sexual symptoms and bilateral signs; refer the same day if present; document questions, answers, findings, time and who was told; give written safety-net advice to others. This is the core physiotherapy role, supported by a clinical-reasoning framework and a practice masterclass [r13,r11].", evidence: "expert-opinion", recommendation: "recommended", refs: ["r13", "r11"] },
+      { name: "Aim to refer at the early or at-risk stage", description: "A review of national guidelines found that about a third of recommended red flags were late, irreversible features; refer people with bilateral radiculopathy or early sphincter symptoms before late signs appear [r5].", evidence: "expert-opinion", recommendation: "recommended", refs: ["r5"] },
+      { name: "Manual therapy, traction or loaded exercise testing in suspected CES", description: "These add no benefit and delay emergency referral. Do not treat or test suspected CES in clinic before referral (clinical consensus).", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] },
+      { name: "Multidisciplinary post-operative rehabilitation", description: "Early mobilisation, gait and strength re-training, bladder and bowel retraining with continence specialists, sexual health support, pain management and psychological support. 65% of the UK cohort needed additional healthcare services in the first year [r8]. No CES-specific rehabilitation trial was identified; follow the surgeon's protocol.", evidence: "expert-opinion", recommendation: "recommended", refs: ["r8"] },
+      { name: "Education and ongoing safety-netting after surgery", description: "Explain expected recovery, that improvement can continue for months and was seen even after retention [r8], and when to seek urgent help for new symptoms.", evidence: "limited", recommendation: "recommended", refs: ["r8"] }
+    ],
+    education: [
+      "If you notice numbness around your genitals, buttocks or inner thighs, trouble starting or controlling urination, loss of bowel control or feeling, new sexual problems, or leg weakness that is spreading or getting worse, go to an emergency department the same day.",
+      "Do not wait to see if it settles, and do not wait for a scheduled appointment. These symptoms can come on with back pain, and the sooner the pressure on the nerves is checked, the better.",
+      "A normal examination does not rule it out. The scan is the test that decides, and most people with these symptoms turn out not to have nerve compression, which is good news.",
+      "If surgery is needed, recovery can continue for months, including bladder, bowel and sexual function, and many people improve even when symptoms were advanced.",
+      "Ask for help with bladder, bowel, sexual and emotional recovery. This is common after CES, and specialist continence, pelvic health and psychological teams can help."
+    ]
+  },
+
+  rehab: {
+    overview: "This is post-operative rehabilitation after urgent decompression. No CES-specific rehabilitation trial was identified in the sources reviewed, so the stages below are clinical convention and the surgeon's protocol takes priority. Recovery is multidisciplinary and driven by neurological status: bladder, bowel and sexual function with specialist teams, plus gait, strength, pain and psychological support. Improvement occurred up to one year, including in patients who presented with retention, and 65% needed additional healthcare services in the first year [r8]. Progress by function and neurology rather than the calendar, and re-check neurology at each visit; any new or worsening deficit or sphincter symptoms means same-day medical review.",
+    stages: [
+      {
+        name: "Early post-operative: safe mobilisation & bladder routine",
+        timeframe: "Days 0–14 (typical; criteria override time)",
+        goals: ["Safe independent transfers and short walks", "Bladder and bowel routine established with the ward and continence team", "Pain controlled enough to mobilise", "Understand the recovery path and warning signs"],
+        precautions: ["Follow the surgeon's precautions and wound care", "Re-check neurology each session; new or worsening deficit or sphincter symptoms mean same-day medical review", "Check skin and pressure areas if sensation is impaired"],
+        exercises: [
+          { name: "Bed mobility and supported sit-to-stand", dosage: "Several times a day as tolerated, with assistance if needed (clinical convention)", cues: "Log-roll if instructed; stand with the hips back and chest up" },
+          { name: "Short assisted walks", dosage: "5–10 minutes, 3–5 times a day, building as tolerated (clinical convention)", cues: "Upright, relaxed; stop for new neurological symptoms", figure: { pose: "walk-heel-strike", view: "lateral" } },
+          { name: "Ankle pumps and heel slides", dosage: "10–20 repetitions each, hourly while awake in bed (clinical convention)", cues: "Circulation and gentle strengthening", figure: { pose: "ex-heel-slide", view: "lateral", props: ["mat"] } },
+          { name: "Gentle diaphragmatic breathing with pelvic floor awareness", dosage: "5–10 breaths, 3 times a day, if cleared by the continence team (clinical convention)", cues: "Relax; no strong pelvic floor squeezing unless instructed" },
+          { name: "Supine knee to chest (only if cleared)", dosage: "Only as the surgeon allows; 3 holds of 20 seconds (clinical convention)", cues: "Gentle; stop if leg symptoms increase", figure: { pose: "ex-knee-to-chest", view: "lateral", props: ["mat"] } }
+        ],
+        progressionCriteria: ["Independent transfers and walking 10 minutes with or without an aid", "Bladder and bowel plan established and understood", "Neurological signs stable or improving", "Pain controlled enough to move without guarding"]
+      },
+      {
+        name: "Restore walking & foundation strength",
+        timeframe: "Weeks 2–6",
+        goals: ["Walking 20–30 minutes with a normal pattern", "Foundation lower limb and trunk activation", "Foot drop managed (for example an ankle-foot orthosis)", "Continence retraining continuing with specialists"],
+        precautions: ["Follow the surgeon's restrictions on lifting and flexion", "Do not progress a load if neurological signs worsen", "Safety-net for any new bladder, bowel, saddle or neurological change"],
+        exercises: [
+          { name: "Progressive walking program", dosage: "20–30 minutes, daily, adding about 10% a week (clinical convention)", cues: "Heel-toe pattern; use an aid if foot drop", figure: { pose: "walk-push-off", view: "lateral" } },
+          { name: "Glute bridge", dosage: "3 sets of 10 repetitions, once daily (clinical convention)", cues: "Drive through the heels; ribs down", figure: { pose: "ex-bridge", view: "lateral", props: ["mat"] } },
+          { name: "Dead bug (neutral spine)", dosage: "3 sets of 6–8 repetitions per side, daily (clinical convention)", cues: "Low back flat on the floor; slow", figure: { pose: "ex-dead-bug", view: "lateral", props: ["mat"] } },
+          { name: "Bird-dog", dosage: "3 sets of 6–8 repetitions per side with 5-second holds (clinical convention)", cues: "Reach long, keep the pelvis level", figure: { pose: "ex-bird-dog", view: "lateral", props: ["mat"] } },
+          { name: "Supported calf raise or toe-lift work for affected myotomes", dosage: "2–3 sets of 8–12 repetitions as strength allows (clinical convention)", cues: "Hold a rail; go as far as control allows", figure: { pose: "ex-calf-raise", view: "lateral" } }
+        ],
+        progressionCriteria: ["Walking 30 minutes with a safe pattern", "Able to complete the foundation exercises with good control", "Neurological signs stable or improving on repeat examination", "Bladder and bowel plan working with specialist support"]
+      },
+      {
+        name: "Build strength, balance & capacity",
+        timeframe: "Weeks 6–12",
+        goals: ["Hip, trunk and ankle strength", "Balance and confidence", "Lifting and carrying tolerance for daily life", "Return-to-work planning"],
+        precautions: ["Increase load or duration by about 5–10% a week, one variable at a time (clinical convention)", "Stop and review if sphincter symptoms or neurological signs change"],
+        exercises: [
+          { name: "Hip thrust", dosage: "3 sets of 8–10 repetitions, 2–3 times a week (clinical convention)", cues: "Tuck the pelvis at the top", figure: { pose: "ex-hip-thrust", view: "lateral", props: ["bench"] } },
+          { name: "Bodyweight squat", dosage: "3 sets of 10 repetitions (clinical convention)", cues: "Knees follow the toes; chest up", figure: { pose: "ex-squat", view: "lateral" } },
+          { name: "Step-up", dosage: "3 sets of 8–10 repetitions per leg (clinical convention)", cues: "Lead with the hip; control the descent", figure: { pose: "ex-step-up", view: "lateral", props: ["step"] } },
+          { name: "Single-leg balance", dosage: "3 holds of 30 seconds per leg, daily (clinical convention)", cues: "Level pelvis; may need hand support if S1 weakness", figure: { pose: "ex-single-leg-balance", view: "lateral" } },
+          { name: "Farmer carry", dosage: "3 carries of 20–30 metres, 2 times a week (clinical convention)", cues: "Walk tall; avoid leaning", figure: { pose: "ex-farmer-carry", view: "lateral", props: ["kettlebell"] } }
+        ],
+        progressionCriteria: ["Squat and step-up with good control and no new symptoms", "Single-leg balance 30 seconds each side or the best the deficit allows", "Walking 45 minutes", "Surgeon agrees to progress to heavier loading"]
+      },
+      {
+        name: "Return to work & activity; long-term support",
+        timeframe: "Month 3 onward",
+        goals: ["Meet the demands of work and home", "Graded return to sport or recreation if appropriate", "Ongoing bladder, bowel and sexual health support", "Psychological adjustment and self-management"],
+        precautions: ["Residual bladder, bowel or sexual dysfunction may persist; keep specialist follow-up", "Return to full duties in steps, agreed with the surgeon and occupational health", "Maintain safety-net advice for new symptoms"],
+        exercises: [
+          { name: "Graded lifting from the floor", dosage: "3 sets of 5–8 repetitions, starting at half the work load and increasing weekly (clinical convention)", cues: "Choose the technique that suits the person; load close to the body", figure: { pose: "lift-squat", view: "lateral", props: ["box"] } },
+          { name: "Romanian deadlift", dosage: "3 sets of 6–8 repetitions, progressive load, 2 times a week (clinical convention)", cues: "Hinge from the hips; keep the bar close", figure: { pose: "ex-rdl", view: "lateral", props: ["barbell"] } },
+          { name: "Walking or cycling fitness", dosage: "30–45 minutes, 4–5 days a week (clinical convention)", cues: "Build gradually", figure: { pose: "walk-heel-strike", view: "lateral" } },
+          { name: "Forearm plank", dosage: "3 holds of 30–45 seconds (clinical convention)", cues: "Straight line from head to heels", figure: { pose: "ex-plank", view: "lateral", props: ["mat"] } },
+          { name: "Work-simulation tasks", dosage: "Match the person's job, building over 4–8 weeks (clinical convention)", cues: "Pace; take recovery breaks" }
+        ],
+        progressionCriteria: ["Full work duties completed without new symptoms", "Return-to-activity criteria below met", "A self-management and warning-sign plan agreed", "Continued specialist support arranged for any residual bladder, bowel or sexual dysfunction"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "No validated return-to-sport or return-to-work criteria for CES were identified in the sources reviewed; the following reflect clinical convention and the surgeon's advice",
+      "Neurological examination stable or improved, with any residual weakness compensated safely",
+      "Bladder and bowel function stable, with a management plan the person can use during work and activity",
+      "Walking tolerance, gait and balance adequate for the demands of work and sport",
+      "Strength and lifting capacity adequate for the job or activity, with no new symptoms",
+      "Surgeon and treating team agree, and a self-management and warning-sign plan is in place"
+    ],
+    tests: [
+      "Myotome and sensory chart compared with the post-operative baseline",
+      "Walking test and single-leg balance",
+      "Repeated lifts at 50–75% of work load for 10 repetitions (clinical convention)",
+      "Oswestry Disability Index or the person's goal measure",
+      "Bladder and bowel function review with the specialist team"
+    ]
+  },
+
+  prognosis: "Outcomes vary widely. In 621 UK participants, 31% needed a catheter before surgery and only 13% at discharge, and function continued to improve to one year, even in those who presented with retention. Catheter requirement at discharge was strongly associated with pre-operative catheterisation (OR 10.6, 95% CI 5.8–20.4), and 65% needed additional healthcare services in the first year [r8]. Timing evidence is conflicting. Meta-analyses of observational studies found better outcomes with surgery within 48 hours (42 studies, 322 patients) [r7], and a later surgery relative risk of a fair or poor urinary outcome of 1.77–2.19 in CES with retention, significant at the 24- and 72-hour breakpoints [r6]. In a retrospective cohort of 200 patients, bladder dysfunction at follow-up was 11.1% after surgery within 24 hours versus 46.6% later in incomplete CES, with no obvious timing effect in CES with retention [r12]. In contrast, the UK cohort found no association between time to surgery and outcome [r8], and a systematic review found no strong basis for 48 hours as a safe window; the level of neurological dysfunction at surgery (CES-I versus CES-R) is probably the strongest prognostic factor [r9]. Preoperative chronic back pain and rectal dysfunction predicted poorer outcomes in an older meta-analysis [r7]. CES-I has a more favourable prognosis than CES-R [r1].",
+  prevention: [
+    "No intervention has been shown to prevent CES. The strategy is early recognition, rather than primary prevention.",
+    "Screen every patient with back or leg pain for bladder, bowel, saddle and sexual symptoms, and record the answers [r11].",
+    "Give clear safety-net advice to patients with disc herniation, stenosis and acute back pain with leg pain, verbally and in writing [r11].",
+    "Treat disc herniation risk factors as for lumbar disc herniation: graded loading, activity and general fitness (extrapolated; not CES-specific)."
+  ],
+  clinicalPearls: [
+    "No single sign rules CES out. In 57 suspected cases only 13 had CES on MRI, rectal examination did not discriminate (accuracy 51%), and neither did the number of positive findings [r2]. Refer on the story and the risk, not on a reassuring examination.",
+    "Do not wait for the bladder to fail. Retention, incontinence and absent perineal sensation are late features; about a third of the red flags in national guidelines described late, irreversible CES and another third were imprecise [r5]. Bilateral radiculopathy is a feature of the at-risk stage.",
+    "Most suspected cases are scan-negative: at least 70% have no cauda equina compression, and 'scan-negative' CES is often linked to acute severe pain, panic and functional neurological features. Send them anyway, because you cannot tell which patient is which clinically [r4,r3].",
+    "Ask every back-and-leg-pain patient the same bladder, bowel, saddle and sexual questions, in plain words, and write down the answers. The documentation is part of the care [r11].",
+    "Preserve the favourable stage. CES-I has a better outlook than CES-R, and the aim is to prevent progression to retention under medical supervision [r1].",
+    "Be honest about timing. The 48-hour rule is not a validated safe window, evidence is observational and conflicting, and earlier decompression is still the standard [r9,r8,r7]."
+  ],
+  related: ["lumbar-disc-herniation", "lumbar-spinal-stenosis", "acute-low-back-pain", "spondylolisthesis"],
+
+  references: [
+    { id: "r1", citation: "Gardner A, Gardner E, Morley T. Cauda equina syndrome: a review of the current clinical and medico-legal position. Eur Spine J. 2011;20(5):690-7.", pmid: "21193933", doi: "10.1007/s00586-010-1668-3", type: "narrative-review", year: 2011 },
+    { id: "r2", citation: "Gooding BWT, Higgins MA, Calthorpe DAD. Does rectal examination have any value in the clinical diagnosis of cauda equina syndrome? Br J Neurosurg. 2013;27(2):156-9.", pmid: "23113877", doi: "10.3109/02688697.2012.732715", type: "diagnostic-accuracy", year: 2013 },
+    { id: "r3", citation: "Hoeritzauer I, Carson A, Statham P, et al. Scan-negative cauda equina syndrome: a prospective cohort study. Neurology. 2021;96(3):e433-47.", pmid: "33177221", doi: "10.1212/WNL.0000000000011154", type: "cohort", year: 2021 },
+    { id: "r4", citation: "Hoeritzauer I, Stanton B, Carson A, et al. 'Scan-negative' cauda equina syndrome: what to do when there is no neurosurgical cause. Pract Neurol. 2022;22(1):6-13.", pmid: "34389643", doi: "10.1136/practneurol-2020-002830", type: "narrative-review", year: 2022 },
+    { id: "r5", citation: "Todd NV. Guidelines for cauda equina syndrome. Red flags and white flags. Systematic review and implications for triage. Br J Neurosurg. 2017;31(3):336-9.", pmid: "28637110", doi: "10.1080/02688697.2017.1297364", type: "systematic-review", year: 2017 },
+    { id: "r6", citation: "DeLong WB, Polissar N, Neradilek B. Timing of surgery in cauda equina syndrome with urinary retention: meta-analysis of observational studies. J Neurosurg Spine. 2008;8(4):305-20.", pmid: "18377315", doi: "10.3171/SPI/2008/8/4/305", type: "meta-analysis", year: 2008 },
+    { id: "r7", citation: "Ahn UM, Ahn NU, Buchowski JM, et al. Cauda equina syndrome secondary to lumbar disc herniation: a meta-analysis of surgical outcomes. Spine (Phila Pa 1976). 2000;25(12):1515-22.", pmid: "10851100", doi: "10.1097/00007632-200006150-00010", type: "meta-analysis", year: 2000 },
+    { id: "r8", citation: "Woodfield J, Hoeritzauer I, Jamjoom AAB, et al. Presentation, management, and outcomes of cauda equina syndrome up to one year after surgery, using clinician and participant reporting: a multi-centre prospective cohort study. Lancet Reg Health Eur. 2022;24:100545.", pmid: "36426378", doi: "10.1016/j.lanepe.2022.100545", type: "cohort", year: 2022 },
+    { id: "r9", citation: "Chau AMT, Xu LL, Pelzer NR, et al. Timing of surgical intervention in cauda equina syndrome: a systematic critical review. World Neurosurg. 2014;81(3-4):640-50.", pmid: "24240024", doi: "10.1016/j.wneu.2013.11.007", type: "systematic-review", year: 2014 },
+    { id: "r10", citation: "Woodfield J, Lammy S, Jamjoom AAB, et al. Demographics of cauda equina syndrome: a population-based incidence study. Neuroepidemiology. 2022;56(6):460-8.", pmid: "36315989", doi: "10.1159/000527727", type: "cohort", year: 2022 },
+    { id: "r11", citation: "Greenhalgh S, Finucane L, Mercer C, et al. Assessment and management of cauda equina syndrome. Musculoskelet Sci Pract. 2018;37:69-74.", pmid: "29935940", doi: "10.1016/j.msksp.2018.06.002", type: "narrative-review", year: 2018 },
+    { id: "r12", citation: "Srikandarajah N, Boissaud-Cooke MA, Clark S, et al. Does early surgical decompression in cauda equina syndrome improve bladder outcome? Spine (Phila Pa 1976). 2015;40(8):580-3.", pmid: "25646751", doi: "10.1097/BRS.0000000000000813", type: "cohort", year: 2015 },
+    { id: "r13", citation: "Finucane LM, Downie A, Mercer C, et al. International framework for red flags for potential serious spinal pathologies. J Orthop Sports Phys Ther. 2020;50(7):350-72.", pmid: "32438853", doi: "10.2519/jospt.2020.9971", type: "clinical-practice-guideline", year: 2020 }
+  ],
+
+  animation: {
+    title: "How cauda equina syndrome develops",
+    phases: [
+      {
+        type: "moi", label: "Mechanism", duration: 6.5, view: "lateral", environment: "home",
+        actors: [{ id: "worker", kit: "worker" }],
+        keyframes: [
+          { t: 0, actor: "worker", pose: "stand" },
+          { t: 1.0, actor: "worker", pose: "lift-stoop" },
+          { t: 2.2, actor: "worker", pose: "stand" },
+          { t: 3.2, actor: "worker", pose: "lift-stoop", joints: { trunk: 58, pelvis: 56 }, ease: "in" },
+          { t: 4.4, actor: "worker", pose: "stand", joints: { trunk: 14, pelvis: 4 } },
+          { t: 5.6, actor: "worker", pose: "stand", joints: { trunk: 14, pelvis: 4 } }
+        ],
+        props: [{ id: "box", type: "box", attach: "handR" }],
+        forces: [
+          { t: [3.0, 4.4], at: "lowBack", dir: "down", label: "Compression + flexion" }
+        ],
+        highlights: [{ t: [3.2, 6.5], at: "lowBack" }],
+        impacts: [{ t: 3.8, at: "lowBack" }],
+        slowmo: [{ t: [3.4, 4.2], rate: 0.4 }],
+        captions: [
+          { t: 0, text: "A person with a history of back pain bends to lift a heavy object." },
+          { t: 3.0, text: "Loaded flexion can push a large piece of disc backwards into the canal." },
+          { t: 4.4, text: "Back pain, often with leg pain, follows. A large central herniation can compress every root at once." },
+          { t: 5.6, text: "Bladder, bowel, saddle or sexual change is a same-day emergency. No single sign rules it out." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "lowBack",
+        captions: [{ t: 0, text: "Zooming into the L4–5 disc, viewed as a horizontal slice from below." }]
+      },
+      {
+        type: "closeup", label: "Inside the canal", duration: 11, scene: "lumbar-axial",
+        actions: [
+          { t: 0, do: "highlight", target: "disc" },
+          { t: 0.3, do: "label", target: "disc", text: "L4–5 disc" },
+          { t: 0.6, do: "label", target: "caudaEquina", text: "Cauda equina in the thecal sac" },
+          { t: 1.4, do: "arrow", at: "nucleusCentre", dir: "posterior", label: "Flexion pushes nucleus back", size: "m" },
+          { t: 1.8, do: "compress", target: "disc" },
+          { t: 2.6, do: "fissure", target: "disc" },
+          { t: 3.4, do: "herniate", target: "disc", grade: "extrusion", dir: "posterior", dur: 1.6 },
+          { t: 4.2, do: "label", target: "disc", text: "Large central extrusion" },
+          { t: 5.0, do: "compress", target: "caudaEquina", at: "central" },
+          { t: 5.4, do: "label", target: "caudaEquina", text: "All roots compressed together" },
+          { t: 6.2, do: "irritate", target: "caudaEquina" },
+          { t: 6.4, do: "pain", at: "central" },
+          { t: 7.0, do: "inflame", target: "caudaEquina", amount: 0.6 },
+          { t: 8.2, do: "camera", at: "central", zoom: 1.6, dur: 1 },
+          { t: 10.2, do: "camera", zoom: 1, dur: 0.6 }
+        ],
+        captions: [
+          { t: 0, text: "In this slice the cauda equina, the bundle of lower roots, sits behind the disc in the thecal sac." },
+          { t: 1.4, text: "With the spine flexed under load, the nucleus is pushed toward the back of the disc." },
+          { t: 2.6, text: "A fissure in the posterior annulus gives the nucleus a path." },
+          { t: 3.4, text: "A large central extrusion fills the canal instead of pressing on one side." },
+          { t: 5.0, text: "The roots to the bladder, bowel and perineum are squeezed along with the leg roots." },
+          { t: 6.4, text: "Bladder, bowel, saddle and sexual function are at risk. This is a surgical emergency." },
+          { t: 8.6, text: "Most suspected cases are scan-negative, but you cannot tell which from the examination alone." }
+        ]
+      },
+      {
+        type: "micro", label: "Nerve roots", duration: 11, tissue: "nerve",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.4, stage: "compression" }, { t: 3.0, stage: "ischaemia" }, { t: 4.8, stage: "demyelination" }, { t: 6.4, stage: "axonal-injury" }, { t: 8.4, stage: "regeneration" }
+        ],
+        timeLabels: [{ t: 1.4, text: "Minutes–hours" }, { t: 3.0, text: "Hours–days" }, { t: 4.8, text: "Days–weeks" }, { t: 6.4, text: "Prolonged compression" }, { t: 8.4, text: "After decompression: months" }],
+        captions: [
+          { t: 0, text: "Healthy nerve roots: myelinated axons with a good blood supply." },
+          { t: 1.4, text: "Compression deforms the roots and reduces blood flow." },
+          { t: 3.0, text: "Impaired blood flow causes oedema and conduction loss. The decline is continuous, not stepwise." },
+          { t: 4.8, text: "Prolonged compression thins the myelin and slows conduction." },
+          { t: 6.4, text: "Severe, prolonged compression damages axons, the likely cause of lasting deficit." },
+          { t: 8.4, text: "After decompression, function can recover over months. The time labels are schematic, not a cut-off." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "SP3" }
+};

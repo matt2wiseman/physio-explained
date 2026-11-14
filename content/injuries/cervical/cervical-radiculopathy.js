@@ -1,0 +1,410 @@
+export default {
+  id: "cervical-radiculopathy",
+  name: "Cervical radiculopathy",
+  shortName: "Cervical radiculopathy",
+  aka: ["pinched nerve in the neck", "cervical nerve root compression", "cervical radicular pain", "neck and arm pain with nerve root involvement", "cervical disc herniation with radiculopathy", "cervical spondylotic radiculopathy", "C6 radiculopathy", "C7 radiculopathy", "brachialgia"],
+  region: "cervical",
+  tissues: ["nerve", "disc"],
+  onset: "acute-or-gradual",
+  mechanismType: ["degenerative", "compression"],
+  populations: ["adults in their 40s to 60s", "men (higher incidence than women)", "younger adults with acute disc herniation", "older adults with spondylotic foraminal narrowing"],
+  sports: [],
+  urgency: "routine",
+  summary: "Arm pain, paraesthesia or weakness from compression or irritation of a cervical nerve root, usually C7 or C6, by disc or foraminal change. Most people improve with conservative care.",
+  keyFacts: [
+    { label: "Typical recovery", value: "Most improve: substantial gains in the first 4–6 months; complete recovery took 24–36 months in about 83% of patients in low risk-of-bias studies" },
+    { label: "Return to sport", value: "Criteria-based; no validated criteria. Needs pain-free neck and arm movement, normal neurological findings and good neck and scapular endurance" },
+    { label: "Key test", value: "Spurling's test (specificity 0.89–1.00, sensitivity 0.38–0.97 across studies); a negative upper limb tension test helps rule it out. Findings cluster better than any single test" },
+    { label: "Imaging", value: "MRI only for red flags, progressive deficit or when surgery is considered; disc bulging is seen in 87.6% of asymptomatic adults" },
+    { label: "Peak age", value: "Mean age about 48 years; incidence peaks at 50–54 years" },
+    { label: "Incidence", value: "83.2 per 100,000 per year in a population study (107.3 in men, 63.5 in women)" }
+  ],
+  overview: "Cervical radiculopathy is dysfunction of a cervical nerve root, causing arm pain with or without paraesthesia, sensory loss, weakness or reflex change in the distribution of that root. In a population-based study of 561 patients, the C7 root was the most frequently affected, followed by C6, and in about two thirds the cause was spondylosis, disc disease or both; a confirmed disc protrusion was found in 21.9% [r1]. Compression typically occurs at the entrance zone of the intervertebral foramen, from a protruding disc or uncovertebral osteophytes anteriorly, and the superior articular process or ligamentum flavum posteriorly [r2].\n\nThe natural history is favourable. Most people with symptomatic cervical disc herniation and radiculopathy recover, with substantial improvement in the first 4 to 6 months [r3], and patients improve over time whatever conservative treatment they receive [r4]. Management is therefore conservative first: education, activity advice, exercise and, for selected people, a short course of a collar or traction. In randomised trials, surgery gave faster relief but long-term outcomes did not clearly differ from structured physiotherapy [r5,r6]. The task for the physiotherapist is to confirm the diagnosis, exclude myelopathy and other serious causes, and watch for progressive neurological deficit.",
+
+  epidemiology: {
+    text: "In Rochester, Minnesota (1976–1990), 561 patients were identified (332 men, 229 women), with a mean age of 47.6 years in men and 48.2 years in women. The average annual age-adjusted incidence was 83.2 per 100,000 (107.3 in men, 63.5 in women), peaking at 202.9 per 100,000 at 50–54 years. Physical exertion or trauma preceded onset in only 14.8% of cases, and 41% had a past history of lumbar radiculopathy. The median duration of symptoms before diagnosis was 15 days [r1]. Imaging findings are poor markers of symptoms: in 1211 asymptomatic volunteers, disc bulging was found in 87.6%, including 73.3% of men and 78.0% of women in their 20s [r7].",
+    riskFactors: {
+      intrinsic: [
+        "Age 40–60 years: incidence peaks at 50–54 years [r1]",
+        "Male sex: higher incidence than females (107.3 versus 63.5 per 100,000) [r1]",
+        "Degenerative disc and spondylotic change: spondylosis, disc or both accounted for 68.4% of cases [r1]",
+        "A past history of lumbar radiculopathy was present in 41% of cases (association only) [r1]"
+      ],
+      extrinsic: [
+        "Physical exertion or trauma preceded onset in only 14.8%, so most cases have no clear triggering event [r1]",
+        "Workers' compensation claims are associated with a poorer prognosis [r3]",
+        "Modifiable occupational and lifestyle risk factors were not clearly established in the sources reviewed"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "Cervical radiculopathy usually has no single injury moment. A nerve root is compressed or irritated as it passes through the intervertebral foramen. The foramen is funnel-shaped and narrowest at its entrance zone, where the root is compressed by a protruding disc or osteophytes of the uncovertebral region in front, and by the superior articular process, ligamentum flavum and periradicular fibrous tissue behind [r2]. In older adults the cause is usually foraminal narrowing from spondylosis; in younger adults it is more often an acute disc herniation [r1].",
+    sequence: [
+      "Years of loading and age-related change reduce disc height and produce uncovertebral osteophytes and facet hypertrophy (spondylosis) [r2].",
+      "The foramen narrows. Cervical extension and side-flexion or rotation toward the symptomatic side narrow it further, which is the basis of the Spurling position.",
+      "A disc bulge, protrusion or extrusion posterolaterally, or an osteophyte, encroaches on the root at the foraminal entrance [r2].",
+      "The compressed root becomes ischaemic and inflamed, so it generates arm pain and paraesthesia in its dermatome (clinical understanding).",
+      "Pain is usually unilateral, in the arm more than the neck, and may be provoked by looking up or turning toward the symptomatic side.",
+      "A confirmed disc protrusion was responsible in 21.9% of cases; most are related to spondylosis, disc disease or both [r1].",
+      "Many root symptoms settle spontaneously over months [r3]. Motor or sensory deficit may persist or progress in a minority."
+    ],
+    variants: [
+      { name: "Acute disc herniation", description: "More often in younger adults. Posterolateral herniation at C5–6 or C6–7 compresses the root as it crosses the proximal part of the disc, especially at C6 and C7 [r2]." },
+      { name: "Spondylotic foraminal stenosis", description: "Gradual onset in older adults from uncovertebral osteophytes and facet hypertrophy. Symptoms are provoked by extension and rotation toward the affected side [r2,r1]." },
+      { name: "Traumatic onset", description: "Physical exertion or trauma preceded onset in only 14.8% of cases [r1]. After significant trauma, exclude fracture first." },
+      { name: "Multilevel or bilateral root involvement", description: "More than one root may be involved, and the C6 and C7 rootlets traverse two disc levels in the dural sac, which may explain varied symptom patterns [r2]." }
+    ]
+  },
+
+  anatomy: {
+    text: "Each cervical nerve root forms from dorsal (sensory) and ventral (motor) rootlets and leaves the spinal canal through an intervertebral foramen. The cervical nerve roots exit above the vertebra of the same number from C1 to C7 (C6 through the C5–6 foramen, C7 through the C6–7 foramen), and C8 exits at C7–T1. The foramen is funnel-shaped, with the entrance zone as its narrowest part. The roots take off from the dural sac at the widest part of the root sleeve, so compression occurs at the entrance zone. Anteriorly the root lies against the disc and the uncovertebral (Luschka) joint, and posteriorly against the superior articular process, the ligamentum flavum and periradicular fibrous tissue. The C5 root exits over the middle of the disc, whereas the C6 and C7 roots traverse the proximal part of the disc, and the C8 root has little overlap with the C7–T1 disc [r2].",
+    structures: [
+      { name: "Nerve roots (C5–C8)", role: "Carry motor fibres to the arm muscles and sensory fibres from the dermatomes. The C7 root is the one most often affected, followed by C6 [r1]." },
+      { name: "Intervertebral foramen", role: "A funnel-shaped passage, narrowest at the entrance zone. It narrows with extension and ipsilateral side-flexion [r2]." },
+      { name: "Intervertebral discs (C4–5, C5–6, C6–7)", role: "Absorb load and separate the vertebrae. A posterolateral protrusion compresses the root anteriorly [r2]." },
+      { name: "Uncovertebral joints and facet joints", role: "Guide motion. Osteophytes and hypertrophy narrow the foramen in spondylosis [r2]." },
+      { name: "Ligamentum flavum and superior articular process", role: "Compress the root from behind when hypertrophied or buckled [r2]." },
+      { name: "Deep neck flexors, scapular stabilisers and thoracic spine", role: "Support the neck and shoulder girdle. Targets of rehabilitation (clinical convention)." }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "Radiculopathy is caused by mechanical compression and local inflammation of a nerve root. The compression is at the entrance zone of the foramen, where the root is squeezed by a posterolateral disc protrusion or uncovertebral osteophyte in front and by the superior articular process, ligamentum flavum and fibrous tissue behind [r2]. Sustained compression impairs the root's blood supply and axonal transport, and contact with disc material provokes an inflammatory response; these effects explain why pain, paraesthesia and later weakness occur in the root's distribution (widely accepted mechanism).\n\nStructural findings and symptoms correlate poorly. In 1211 asymptomatic adults, disc bulging was present in 87.6% and was frequent even in people in their 20s, while spinal cord compression was found in 5.3% [r7]. This is why imaging must be interpreted with the clinical picture. Many roots recover: most patients with symptomatic cervical disc herniation and radiculopathy recover, with substantial improvement in the first 4 to 6 months [r3].",
+    structures: [
+      { name: "Cervical nerve root (usually C7 or C6)", effect: "Compression and irritation at the foraminal entrance zone, causing radicular pain, paraesthesia, and in some people weakness and reflex loss [r1,r2]" },
+      { name: "Intervertebral disc", effect: "Posterolateral bulge or protrusion; confirmed disc protrusion in 21.9% of cases [r1]" },
+      { name: "Uncovertebral joints and facets", effect: "Osteophyte formation and hypertrophy that narrow the foramen in spondylosis (68.4% of cases were spondylosis, disc or both) [r1,r2]" },
+      { name: "Dorsal root ganglion", effect: "Lies in the foramen and is sensitive to compression and inflammation, which probably contributes to severe arm pain (clinical understanding)" },
+      { name: "Spinal cord", effect: "Not involved in pure radiculopathy. Cord compression with upper motor neuron signs is myelopathy, a different and more urgent condition (see red flags)." }
+    ],
+    muscles: [
+      { name: "Myotome muscles of the affected root", effect: "Weakness when the motor root is involved. Typical patterns: C5 deltoid and biceps, C6 biceps and wrist extensors, C7 triceps and wrist flexors, C8 finger flexors (standard neurological anatomy)." },
+      { name: "Neck extensors and upper trapezius", effect: "Protective guarding and tenderness (clinical observation)" },
+      { name: "Deep neck flexors and scapular stabilisers", effect: "Reduced endurance and altered recruitment with pain and disuse; targets of exercise therapy (clinical convention)" }
+    ],
+    cellular: [
+      { phase: "Compression and local ischaemia", timing: "Days to weeks", description: "Mechanical compression reduces blood flow to the root and impairs axonal transport, so the root becomes hypersensitive and may fire spontaneously (widely accepted mechanism)." },
+      { phase: "Inflammation and demyelination", timing: "Weeks", description: "Inflammatory mediators from the disc and from the root itself sensitise the root and dorsal root ganglion. Focal demyelination slows conduction (widely accepted mechanism)." },
+      { phase: "Spontaneous improvement", timing: "First 4–6 months", description: "Most patients improve substantially, which suggests the compression and inflammation settle in most [r3]." },
+      { phase: "Late recovery or persistence", timing: "Up to 24–36 months", description: "Time to complete recovery ranged from 24 to 36 months in about 83% of patients in low risk-of-bias studies. Some have persistent symptoms and recurrence (31.7% in one cohort) [r3,r1]." }
+    ],
+    systems: [
+      { system: "Nervous system", effect: "Root irritation causes dermatomal pain, paraesthesia and sensory loss, and weakness if the motor fibres are affected. Persistent pain may involve central sensitisation (clinical understanding)." },
+      { system: "Immune / inflammatory", effect: "Disc material and the compressed root provoke a local inflammatory response (widely accepted mechanism)." },
+      { system: "Musculoskeletal chain", effect: "Protective neck posture and guarding alter thoracic and scapular mechanics, which can aggravate symptoms (clinical observation)." },
+      { system: "Psychological and social", effect: "A workers' compensation claim is associated with poorer prognosis [r3]. Fear of movement and worry about surgery are common and modifiable (clinical observation)." },
+      { system: "Natural history", effect: "In a population cohort, 90% of patients were asymptomatic or only mildly incapacitated at last follow-up (median 4.9 years), although recurrence occurred in 31.7% and 26% had surgery [r1]." }
+    ]
+  },
+
+  grading: {
+    system: "Root-level clinical patterns (descriptive, not a validated grading; patterns overlap)",
+    grades: [
+      { grade: "C5 root (C4–5)", description: "Pain in the shoulder and lateral upper arm, deltoid and biceps weakness, reduced biceps reflex. Reported less often than C7 and C6 in the population study [r1]." },
+      { grade: "C6 root (C5–6)", description: "Pain to the thumb and index finger, biceps and wrist extensor weakness, reduced biceps or brachioradialis reflex. Second most frequent [r1].", prognosis: "Favourable for most [r3]" },
+      { grade: "C7 root (C6–7)", description: "Pain and paraesthesia to the middle finger, triceps and wrist flexor weakness, reduced triceps reflex. The most frequently affected root [r1].", prognosis: "Favourable for most [r3]" },
+      { grade: "C8 root (C7–T1)", description: "Pain and numbness in the ring and little fingers, weakness of finger flexors and hand intrinsics. Differentiate from ulnar neuropathy and lower trunk lesions." }
+    ]
+  },
+
+  timeframes: {
+    summary: "Most people improve substantially within 4 to 6 months, and complete recovery took 24–36 months in about 83% of patients in low risk-of-bias studies [r3]. Pain often falls fastest in the first 6 weeks. The phases below are typical clinical ranges.",
+    healing: [
+      { phase: "Acute painful phase", startDay: 0, endDay: 42, description: "Severe arm pain, guarding and sleep disturbance. In the wait-and-see group of a trial, arm pain fell by 19 mm on a 100 mm scale over 6 weeks [r8]." },
+      { phase: "Subacute improvement", startDay: 42, endDay: 180, description: "Substantial improvement tends to occur within the first 4 to 6 months after onset [r3]. Exercise and graded activity are the main treatments." },
+      { phase: "Late recovery", startDay: 180, endDay: 1095, description: "Time to complete recovery ranged from 24 to 36 months in about 83% of patients [r3]. Persisting or progressive deficit prompts a surgical opinion." }
+    ],
+    milestones: [
+      { label: "Diagnosis made (median symptom duration)", day: 15, note: "Median duration of symptoms before diagnosis was 15 days in a population study [r1]" },
+      { label: "Arm pain falling in wait-and-see", day: 42, note: "Arm pain fell by 19 mm over 6 weeks without specific treatment; collar or physiotherapy gave 12 mm extra reduction [r8]" },
+      { label: "Substantial improvement for most", day: 150, note: "Within the first 4 to 6 months [r3]" },
+      { label: "Early advantage of surgery has faded", day: 730, note: "At 24 months, 81% (surgery) and 69% (physiotherapy) rated symptoms better or much better, not significantly different [r6]" },
+      { label: "Complete recovery for most", day: 900, note: "24 to 36 months in about 83% of patients [r3]" }
+    ],
+    returnToSport: "Criteria-based, not time-based. No validated return-to-sport criteria exist for cervical radiculopathy. Return to contact or collision sport only when pain-free, with full strength and normal neurological findings, and with the surgeon's agreement if surgery occurred (clinical convention)."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Unilateral arm pain, usually greater than neck pain, in a dermatomal distribution [r1]",
+      "Paraesthesia, numbness or tingling in the hand or fingers",
+      "Neck pain, scapular or interscapular ache and reduced neck movement",
+      "Relief when the hand is placed on the head (shoulder abduction relief), and aggravation with neck extension or rotation toward the affected side",
+      "Arm weakness, clumsiness or dropping things when the motor root is involved",
+      "Night pain and disturbed sleep in the acute phase"
+    ],
+    signs: [
+      "Reduced and painful cervical range of motion, especially extension and rotation toward the affected side",
+      "Positive Spurling's and distraction tests [r9,r10]",
+      "Myotomal weakness, reduced reflex or dermatomal sensory loss in the affected root. These neurological findings have not been evaluated for accuracy [r9]",
+      "Positive upper limb tension test; a negative test makes radiculopathy less likely [r10,r11]",
+      "Paraspinal and upper trapezius tenderness; normal upper motor neuron signs"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Arm pain versus neck pain, its distribution (dermatome), and any paraesthesia or weakness [r1]",
+      "Aggravating factors (extension, rotation toward the symptomatic side) and easing positions (shoulder abduction relief)",
+      "Onset: gradual or acute, and any trauma or exertion (present in only 14.8%) [r1]",
+      "Duration and trajectory; progression of weakness or numbness",
+      "Upper motor neuron symptoms: gait disturbance, bilateral hand clumsiness, bladder or bowel change (myelopathy screen)",
+      "Red flags: fever, weight loss, cancer history, severe constant pain, trauma, chest pain or breathlessness",
+      "Psychosocial context, work and compensation status, sleep and expectations of surgery [r3]"
+    ],
+    observation: ["Posture and head position; arm resting on the head for relief", "Muscle wasting in chronic or severe motor involvement", "Guarded neck movement"],
+    palpation: ["Paraspinal and facet tenderness (non-specific)", "Upper trapezius and scapular muscle tenderness", "Supraclavicular and brachial plexus tenderness, for differential diagnosis"],
+    rangeOfMotion: ["Active cervical flexion, extension, lateral flexion and rotation, comparing sides", "Reduced rotation toward the affected side is part of the Wainner cluster", "Quadrant (Spurling) position provocation", "Shoulder range, to exclude shoulder causes of arm pain"],
+    strength: ["Myotomes C5–T1: shoulder abduction (C5), elbow flexion and wrist extension (C6), elbow extension and wrist flexion (C7), finger flexion (C8), finger abduction (T1)", "Grip strength and deep neck flexor endurance", "Grade strength 0–5 and repeat over time to detect progression"],
+    neuro: ["Deep tendon reflexes: biceps (C5–6), brachioradialis (C6), triceps (C7)", "Dermatomal light touch and pinprick sensation", "Upper motor neuron signs (Hoffmann, hyperreflexia, clonus, Babinski, tandem gait) to exclude myelopathy", "No studies evaluated the diagnostic accuracy of key muscle strength, tendon reflexes or sensory testing [r9]"],
+    functional: ["Overhead reaching, desk work and driving tolerance", "Sleep positions", "Lifting and carrying tolerance"],
+    specialTests: [
+      { name: "Spurling's test", purpose: "Provoke root compression by narrowing the foramen", procedure: "Seated patient extends the neck and side-flexes and rotates toward the symptomatic side. If this does not provoke symptoms, the examiner adds gentle axial compression.", positive: "Reproduction of the familiar arm pain or paraesthesia in the root distribution (neck pain alone is not positive).", sensitivity: "0.38–0.97 across studies (95% CI 0.21–0.99); low to moderate in a previous review", specificity: "0.89–1.00 across studies (95% CI 0.59–1.00)", refs: ["r9", "r10"] },
+      { name: "Distraction (axial traction) test", purpose: "Relieve root compression by lifting the head", procedure: "With the patient supine or seated, the examiner gently applies axial traction by lifting the head.", positive: "Reduction or abolition of the arm symptoms.", sensitivity: "Low to moderate", specificity: "High (in a review of provocative tests; no pooled figures)", refs: ["r10"] },
+      { name: "Upper limb tension test A (median nerve neurodynamic test)", purpose: "Neural mechanosensitivity; best used to help rule out radiculopathy", procedure: "Sequentially depress the shoulder girdle, abduct the arm to about 90° with the elbow flexed, then extend the wrist, supinate and extend the elbow, adding contralateral cervical side-flexion to sensitise.", positive: "Reproduces the familiar arm symptoms, or contralateral side-flexion increases them. A negative test makes radiculopathy less likely.", sensitivity: "High (no pooled figure)", specificity: "Low", refs: ["r10", "r11"] },
+      { name: "Shoulder abduction (relief) test", purpose: "Check for relief of arm symptoms when the hand is placed on the head", procedure: "The seated patient abducts the symptomatic arm and places the hand on the head.", positive: "Relief or reduction of the arm symptoms.", sensitivity: "Low to moderate", specificity: "Moderate to high", refs: ["r10"] }
+    ],
+    clinicalRules: [
+      { name: "Wainner test-item cluster", description: "A cluster of four variables (Spurling's, distraction and upper limb tension test A positive, plus reduced rotation toward the affected side) gave a positive likelihood ratio of 30.3 against an electrophysiological reference in 82 patients. The confidence intervals were wide, and the cluster needs validation, so use it to support, not replace, clinical reasoning. Upper limb tension test A was the most useful single test for ruling radiculopathy out [r11]." },
+      { name: "Combined test strategy (Thoomes review)", description: "When consistent with the history, a combination of Spurling's, axial traction and the Arm Squeeze test increases the likelihood of cervical radiculopathy, and four negative neurodynamic tests with a negative Arm Squeeze test can be used to rule it out. Evidence for physical tests is limited (five studies) [r9]." }
+    ],
+    outcomeMeasures: [
+      { name: "Neck Disability Index (NDI)", use: "Primary disability outcome in trials of radiculopathy, scored 0–100 [r12,r6]" },
+      { name: "Arm pain and neck pain (VAS 0–100 mm or NRS 0–10)", use: "Track radicular pain, which responds earlier than neck pain; used in the collar and physiotherapy trial [r8]" },
+      { name: "Patient's global assessment of change", use: "Used to compare surgery and physiotherapy at 12 and 24 months [r6]" },
+      { name: "Myotomal strength and reflex grading", use: "Serial neurological examination to detect progression or recovery" }
+    ],
+    imaging: [
+      { modality: "MRI", indication: "Progressive or severe neurological deficit, suspected myelopathy, red flags, or planning for surgery or injection after failed conservative care", findings: "Disc herniation or foraminal stenosis matching the clinical root. Disc bulging occurred in 87.6% of asymptomatic adults and cord compression in 5.3%, so correlate with the clinical picture [r7]." },
+      { modality: "Plain radiograph", indication: "Trauma (apply the Canadian C-spine rule), suspected instability or older patients with red flags", findings: "Disc space narrowing, osteophytes and foraminal narrowing on oblique views; poor correlation with symptoms." },
+      { modality: "Nerve conduction studies and EMG", indication: "Unclear diagnosis, differentiation from peripheral neuropathy such as carpal tunnel or cubital tunnel syndrome, or when surgery is planned", findings: "Denervation in the myotome and reduced H-reflex or sensory preservation distinguishing root from peripheral lesions. Used as the reference criterion in the Wainner study [r11]." }
+    ]
+  },
+
+  differentials: [
+    { name: "Degenerative cervical myelopathy", id: "degenerative-cervical-myelopathy", distinguishing: "Bilateral hand clumsiness, gait imbalance, hyperreflexia and upper motor neuron signs. Urgent referral." },
+    { name: "Thoracic outlet syndrome", id: "thoracic-outlet-syndrome", distinguishing: "Arm symptoms provoked by overhead positions or carrying, often in the C8–T1 or lower trunk pattern, with supraclavicular tenderness and no root signs." },
+    { name: "Carpal tunnel syndrome", id: "carpal-tunnel-syndrome", distinguishing: "Night paraesthesia in the median distribution of the hand, positive Phalen and Tinel signs, no neck pain or neck movement provocation. Can coexist." },
+    { name: "Cubital tunnel syndrome", id: "cubital-tunnel-syndrome", distinguishing: "Ulnar paraesthesia aggravated by elbow flexion, Tinel at the cubital tunnel, sparing of triceps and C8 root signs." },
+    { name: "Rotator cuff-related shoulder pain", id: "rotator-cuff-related-shoulder-pain", distinguishing: "Shoulder pain with painful arc and resisted tests, no dermatomal sensory loss or neck provocation." },
+    { name: "Stinger / burner (brachial plexus traction injury)", id: "stinger-burner", distinguishing: "Transient burning arm pain and weakness after a contact sport traction or compression injury, usually resolving within minutes." },
+    { name: "Cervical arterial dysfunction", id: "cervical-arterial-dysfunction", distinguishing: "Sudden severe neck pain or headache with neurological signs. Emergency." },
+    { name: "Cardiac referred arm pain", distinguishing: "Left arm or neck pain with exertion, chest pain, breathlessness or sweating, unchanged by neck movement. Emergency." }
+  ],
+  redFlags: [
+    "Gait disturbance, bilateral hand clumsiness or numbness, hyperreflexia, Hoffmann or Babinski signs, bladder or bowel disturbance: suspect degenerative cervical myelopathy or cord compression. Arrange urgent MRI and spinal referral.",
+    "Progressive or severe motor weakness (for example worsening weakness over days or marked loss of strength): urgent surgical opinion. Persisting neurological signs beyond 3 months need physician review [r13].",
+    "Recent significant trauma, or age 65 or older with a dangerous mechanism: apply the Canadian C-spine rule and image before manual assessment [r14].",
+    "Sudden severe neck pain or headache with dizziness, visual disturbance, speech or swallowing change, or other neurological signs: suspect cervical artery dissection. Emergency, and do not manipulate the neck.",
+    "Fever, immunosuppression, injecting drug use, severe constant pain or night pain with weight loss, or a history of cancer: suspect infection (discitis, epidural abscess) or malignancy. Arrange urgent medical review and imaging.",
+    "Arm pain with chest pain, breathlessness, sweating or exertional onset: exclude cardiac causes. Call an ambulance.",
+    "Intractable disabling radicular pain despite several weeks of well-delivered conservative care: consider referral for specialist review (clinical convention)."
+  ],
+
+  management: {
+    principles: "Treat conservatively first, because the natural history is favourable and most people improve [r3,r4]. Explain that the nerve root is irritated, that improvement is expected, and that the scan does not predict recovery [r7]. In the first weeks, settle pain with positions of ease, activity modification, analgesia and, where chosen, a short course of a collar or physiotherapy. In a 205-person trial of recent-onset radiculopathy, a semi-hard collar with rest for 3–6 weeks and 12 sessions of physiotherapy with home exercises each gave a greater reduction in neck and arm pain over 6 weeks than a wait-and-see policy [r8]. A systematic review found low to very low level evidence that no single conservative intervention was superior [r4]. A clinical practice guideline for neck pain with neurological signs advises supervised strengthening exercise with education, and advises against education alone, a collar or traction in the first 3 months [r13]. Add exercise therapy and consider neural mobilisation and traction as adjuncts. Surgery is reserved for progressive or severe deficit and persistent disabling pain, since in randomised trials surgery sped recovery but the long-term difference was small [r5,r6]. Monitor neurological status at each visit.",
+    medical: [
+      { name: "Simple analgesia, NSAIDs and neuropathic pain agents", description: "Prescribed by a doctor to allow sleep and activity in the painful phase. Randomised evidence for individual drugs and for oral corticosteroids was not reviewed here.", evidence: "expert-opinion", recommendation: "consider", refs: [] },
+      { name: "Short course of a semi-hard cervical collar", description: "In 205 patients with radiculopathy of under 1 month, a semi-hard collar with rest for 3–6 weeks reduced arm pain more than wait-and-see (extra 12 mm on a 100 mm scale at 6 weeks) [r8]. However, a systematic review found only low-level evidence that a collar is no more effective than physiotherapy [r4], and the OPTIMa guideline advises against collars for neck pain with neurological signs [r13]. Use briefly, if at all, by shared decision, and combine with movement.", evidence: "conflicting", recommendation: "consider", refs: ["r8", "r4", "r13"] },
+      { name: "Epidural or nerve root corticosteroid injection", description: "Performed by a specialist for severe radicular pain not controlled by other measures. Evidence was not reviewed in the abstracts read, and serious complications are rare but possible; refer to a pain specialist.", evidence: "expert-opinion", recommendation: "consider", refs: [] },
+      { name: "Surgical decompression (anterior cervical discectomy and fusion or foraminotomy)", description: "Reserved for progressive or severe deficit, or persistent disabling pain despite structured conservative care. In 63 patients, surgery plus physiotherapy gave better neck pain and global assessment at 12 months than physiotherapy alone, but the difference was not significant by 24 months, and the authors advised that structured physiotherapy be tried first [r6]. In 81 patients with long-lasting radicular pain, surgery, physiotherapy and a collar were equally effective at 12 months [r5].", evidence: "moderate", recommendation: "consider", refs: ["r6", "r5"] }
+    ],
+    physio: [
+      { name: "Education, reassurance and staying active", description: "Explain the favourable natural history, pain-relieving positions, work and sleep modifications, and warning signs. In the wait-and-see group arm pain fell by 19 mm over 6 weeks without specific treatment [r8]. Patients improve over time with any conservative treatment [r4,r3].", evidence: "moderate", recommendation: "recommended", refs: ["r8", "r4", "r3"] },
+      { name: "Supervised exercise therapy (deep neck flexor, scapular and general strengthening, with pain-coping strategies)", description: "In the collar trial, 12 twice-weekly sessions of physiotherapy with home exercises for 6 weeks gave extra arm pain reduction of 12 mm over wait-and-see [r8]. In the surgery trial, a structured program of general and specific exercises plus pain-coping strategies reduced Neck Disability Index, neck pain and arm pain significantly from baseline [r6]. A guideline advises supervised strengthening exercise with education for neck pain with neurological signs [r13].", evidence: "moderate", recommendation: "recommended", refs: ["r8", "r6", "r13"] },
+      { name: "Mechanical cervical traction added to exercise", description: "In 86 patients with radiculopathy signs, 4 weeks of exercise with mechanical traction gave lower Neck Disability Index at 6 months than exercise alone (mean difference 13.3, 95% CI 5.6–21.0) and at 12 months (9.8, 95% CI 0.2–19.4) [r12]. However, a systematic review found low-level evidence that traction is no more effective than placebo traction [r4], and the OPTIMa guideline advises against traction in the first 3 months [r13].", evidence: "conflicting", recommendation: "consider", refs: ["r12", "r4", "r13"] },
+      { name: "Neural mobilisation (sliders, then tensioners)", description: "A meta-analysis found that neural mobilisation improved pain in chronic neck-arm pain (mean difference −1.89 on a 0–10 scale, 95% CI −3.14 to −0.64), with limited evidence and varying quality [r15]. Start with gentle, symptom-free sliders and progress only if irritability is low.", evidence: "limited", recommendation: "consider", refs: ["r15"] },
+      { name: "Manual therapy (thoracic mobilisation, gentle cervical mobilisation)", description: "Not examined in the abstracts reviewed for radiculopathy. Reasonable as a pain-relieving adjunct to exercise when no red flag is present. Avoid forceful end-range extension or rotation manipulation toward the affected side, and avoid manipulation if cervical arterial dysfunction is suspected.", evidence: "expert-opinion", recommendation: "consider", refs: [] },
+      { name: "Education alone, or a collar or traction as stand-alone treatment in the first 3 months", description: "The OPTIMa guideline advises that clinicians should not offer structured education alone, a cervical collar, or traction in the first 3 months for neck pain with neurological signs, and should not offer a collar beyond 3 months [r13].", evidence: "moderate", recommendation: "not-recommended", refs: ["r13"] }
+    ],
+    education: [
+      "A cervical nerve root is irritated, usually by a disc or by narrowing of its exit. This is common, and most people improve, with the biggest gains in the first 4 to 6 months.",
+      "A scan with disc bulges or arthritis does not mean you will not recover. These findings are common in people without pain.",
+      "Find positions that ease the arm, such as resting the hand on the head, and avoid sustained looking up or turning toward the painful side while it is irritable.",
+      "Keep moving and stay at work and active as pain allows. Exercises for the neck and shoulder blades help recovery.",
+      "Surgery is for progressive weakness or pain that does not settle despite good conservative care. It speeds recovery for some, but long-term results are similar.",
+      "Tell us urgently if you get new weakness, clumsy hands, trouble walking or bladder or bowel changes."
+    ]
+  },
+
+  rehab: {
+    overview: "Progression is criteria-based and irritability-led. First settle the root with positions of ease, activity modification and low-load movement. Then restore neck motion and the endurance of the deep neck flexors and scapular stabilisers, add graded neural mobilisation, and finish with strength and work-specific loading. Dosages are typical clinical ranges, not prescriptions from a single trial; the trial programs combined general and specific exercises with pain-coping strategies [r6]. Check neurological status (strength, reflexes, sensation) at every visit. Progressive weakness at any stage needs urgent referral.",
+    stages: [
+      {
+        name: "Settle the root and keep moving",
+        timeframe: "Weeks 0–6",
+        goals: ["Reduce arm pain and paraesthesia", "Maintain neck mobility and daily activity", "Reassure and teach self-management", "Establish neurological baseline"],
+        precautions: ["Monitor for progressive weakness or upper motor neuron signs", "Avoid sustained or repeated end-range extension and rotation toward the symptomatic side", "Stop any exercise that increases arm symptoms and does not settle"],
+        exercises: [
+          { name: "Positions of ease (hand on head, supported neutral sitting or semi-reclined lying)", dosage: "As needed, 2–5 min, several times per day", cues: "Find the position that eases the arm; avoid prolonged neck extension" },
+          { name: "Active cervical range within comfort (flexion, side-flexion, gentle rotation away from the painful side)", dosage: "10 slow repetitions, every 2 hours while awake", cues: "Stay below the pain that spreads into the arm" },
+          { name: "Craniocervical flexion (chin nod), supine", dosage: "10 repetitions with 5–10 s holds, 1–2 times daily", cues: "Gentle nod; keep the larger neck muscles relaxed", figure: { pose: "ex-chin-tuck", view: "lateral", props: ["mat"] } },
+          { name: "Gentle neural sliders (median nerve), symptom-free", dosage: "10 slow repetitions, once or twice daily", cues: "Move the neck and wrist in opposite directions; stay symptom-free", figure: { pose: "ex-median-nerve-glide", view: "lateral" } },
+          { name: "Walking and general activity", dosage: "15–30 min daily, building as tolerated", cues: "Relax the shoulders and swing the arms" }
+        ],
+        progressionCriteria: ["Arm pain settling, at or below 4/10 at rest", "No progression of neurological deficit", "Can sleep and perform daily activities with only mild symptoms", "Active neck movement improving"]
+      },
+      {
+        name: "Restore control and mobility",
+        timeframe: "Weeks 6–12",
+        goals: ["Deep neck flexor control and endurance", "Thoracic and scapular mobility", "Restore functional neck range", "Progress neural mobilisation"],
+        precautions: ["Progress load only if arm symptoms settle within 24 hours", "Avoid provoking repeated extension plus rotation toward the symptomatic side"],
+        exercises: [
+          { name: "Craniocervical flexion with progressive holds", dosage: "10 repetitions with 10 s holds, once daily", cues: "Smooth nod, no jaw clenching or chin poking", figure: { pose: "ex-chin-tuck", view: "lateral", props: ["mat"] } },
+          { name: "Neck isometrics (all directions)", dosage: "5 holds of 5–10 s at 30–50% effort, 3 times per week", cues: "Press into the hand without head movement", figure: { pose: "ex-neck-isometric", view: "lateral", props: ["chair"] } },
+          { name: "Thoracic extension over a foam roller", dosage: "2 × 10, daily", cues: "Support the head and move through the upper back", figure: { pose: "ex-thoracic-extension", view: "lateral", props: ["foam-roller"] } },
+          { name: "Wall slides and scapular setting", dosage: "2 × 10, daily", cues: "Lengthen the neck, keep the shoulders away from the ears", figure: { pose: "ex-wall-slide", view: "lateral", props: ["wall"] } },
+          { name: "Median nerve sliders progressing to tensioners", dosage: "2 × 10, once daily, progress only if no latent symptoms", cues: "Stay mild; a stretch is acceptable, pain or tingling is not", figure: { pose: "ex-median-nerve-glide", view: "lateral" } }
+        ],
+        progressionCriteria: ["Arm pain at or below 3/10 with daily activity", "Spurling's test negative or markedly reduced", "Neck Disability Index falling over time", "Neck flexor endurance improving"]
+      },
+      {
+        name: "Strength and endurance",
+        timeframe: "Weeks 12–24",
+        goals: ["Neck and scapular strength", "Work and lifting capacity", "Return to full range", "Prevent recurrence"],
+        precautions: ["Monitor for return of arm symptoms with overhead loading", "Increase load stepwise"],
+        exercises: [
+          { name: "Band or dumbbell row", dosage: "3 × 10–12, 3 times per week", cues: "Squeeze the shoulder blades back and down; neck long", figure: { pose: "ex-row", view: "lateral", props: ["resistance-band"] } },
+          { name: "Prone Y raise", dosage: "3 × 8–10, 3 times per week", cues: "Lift the arms with the neck neutral", figure: { pose: "ex-prone-y", view: "lateral", props: ["mat"] } },
+          { name: "Overhead press", dosage: "3 × 8–10 with a light load, 2–3 times per week", cues: "Ribs down; do not extend the neck to compensate", figure: { pose: "ex-overhead-press", view: "lateral", props: ["dumbbell"] } },
+          { name: "Farmer carry", dosage: "3 × 20–30 m, 2 times per week", cues: "Stand tall; neck neutral; shoulders level", figure: { pose: "ex-farmer-carry", view: "lateral", props: ["dumbbell"] } },
+          { name: "Resisted neck exercise (band) or progressive isometrics", dosage: "3 × 8–10, 2 times per week", cues: "Controlled; avoid end-range loading in extension and rotation" }
+        ],
+        progressionCriteria: ["Pain at or below 2/10 with loaded exercise and no next-day flare", "Strength of the affected myotomes equal to the other side", "Neck Disability Index approaching normal", "Able to meet work and lifting demands"]
+      },
+      {
+        name: "Return to full function and maintenance",
+        timeframe: "Months 6+",
+        goals: ["Full work, sport and recreation", "Long-term self-management", "Flare-up plan"],
+        precautions: ["Return of arm pain, weakness or new neurological signs needs reassessment", "Persisting deficit beyond 3 months needs physician review [r13]"],
+        exercises: [
+          { name: "Graded return to work and sport tasks", dosage: "Stepwise, tracking arm symptoms the next day", cues: "Increase one variable at a time" },
+          { name: "General strength training (upper limb, trunk and legs)", dosage: "2–3 sessions per week", cues: "Choose activities that the person enjoys" },
+          { name: "Maintenance neck and scapular program", dosage: "2–3 times per week, 15 min", cues: "Use as a flare-up plan and return to activity quickly", figure: { pose: "ex-neck-isometric", view: "lateral", props: ["chair"] } },
+          { name: "Aerobic exercise", dosage: "20–30 min, 3–5 times per week", cues: "Moderate effort; supports sleep and mood" }
+        ],
+        progressionCriteria: ["No arm symptoms with usual activity", "Normal neurological examination", "Neck Disability Index at or near the person's baseline", "Confident with a flare-up plan"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "No validated return-to-sport criteria were identified in the sources reviewed; the criteria below are clinical convention",
+      "No red flags and a normal or stable neurological examination",
+      "Pain-free active neck range of motion, including extension and rotation toward the affected side",
+      "Spurling's test negative and no arm symptoms on loaded neck and arm tasks",
+      "Strength of the affected myotomes within about 90% of the other side",
+      "Neck flexor and extensor endurance and scapular strength near normal",
+      "Neck Disability Index near normal and agreement with coach and clinician; for contact sport, surgeon's agreement after surgery"
+    ],
+    tests: ["Active cervical range of motion", "Spurling's and upper limb tension tests", "Myotomal strength testing or hand-held dynamometry and reflexes", "Neck flexor endurance test", "Neck Disability Index"]
+  },
+  prognosis: "The prognosis is favourable. In a systematic review, most patients with symptomatic cervical disc herniation with radiculopathy presented with intense pain and moderate disability, but substantial improvement tended to occur within the first 4 to 6 months, and time to complete recovery ranged from 24 to 36 months in about 83% [r3]. Workers' compensation claims were associated with poorer prognosis [r3]. In a population cohort with median follow-up of 4.9 years, 90% were asymptomatic or only mildly incapacitated at last follow-up, but recurrence occurred in 31.7% and 26% underwent surgery. A combination of radicular pain with sensory deficit and objective muscle weakness predicted the decision to operate [r1]. Regardless of the conservative intervention, patients improved over time [r4]. Surgery gave a more rapid improvement in the first year, but the difference had faded by 2 years [r6].",
+  prevention: [
+    "No intervention has been proven to prevent first-episode cervical radiculopathy in the sources reviewed.",
+    "Because recurrence occurred in 31.7% of one cohort [r1], keep up a maintenance neck, scapular and general strengthening program (clinical convention).",
+    "Pace occupational and recreational neck-loading tasks, vary sustained postures and manage workstation set-up (clinical convention).",
+    "Act early on new arm symptoms: reassure, stay active and seek review if weakness develops [r3]."
+  ],
+  clinicalPearls: [
+    "Take the arm pain seriously and the scan lightly. Disc bulging occurred in 87.6% of asymptomatic adults, so only treat findings that match the root pattern [r7].",
+    "Cluster your findings. No single test is definitive, and Spurling's sensitivity ranged from 0.38 to 0.97 across studies, but a cluster of four findings gave a positive likelihood ratio of 30.3 (wide confidence interval) [r9,r11].",
+    "A negative upper limb tension test helps rule radiculopathy out, and a positive Spurling's or distraction test helps rule it in [r10,r11].",
+    "C7 is the root most often involved, then C6. Test the triceps reflex and strength early [r1].",
+    "Reassure with the natural history: most improve in 4 to 6 months, with full recovery taking up to 24–36 months in most [r3].",
+    "Re-examine neurology at each visit. Progressive weakness or upper motor neuron signs change the plan to urgent referral [r13]."
+  ],
+  related: ["degenerative-cervical-myelopathy", "thoracic-outlet-syndrome", "whiplash-associated-disorder", "acute-wry-neck", "carpal-tunnel-syndrome", "stinger-burner"],
+
+  references: [
+    { id: "r1", citation: "Radhakrishnan K, Litchy WJ, O'Fallon WM, et al. Epidemiology of cervical radiculopathy: a population-based study from Rochester, Minnesota, 1976 through 1990. Brain. 1994;117(Pt 2):325-35.", pmid: "8186959", doi: "10.1093/brain/117.2.325", type: "cohort", year: 1994 },
+    { id: "r2", citation: "Tanaka N, Fujimoto Y, An HS, et al. The anatomic relation among the nerve roots, intervertebral foramina, and intervertebral discs of the cervical spine. Spine. 2000;25(3):286-91.", pmid: "10703098", doi: "10.1097/00007632-200002010-00005", type: "basic-science", year: 2000 },
+    { id: "r3", citation: "Wong JJ, Côté P, Quesnele JJ, et al. The course and prognostic factors of symptomatic cervical disc herniation with radiculopathy: a systematic review of the literature. Spine J. 2014;14(8):1781-9.", pmid: "24614255", doi: "10.1016/j.spinee.2014.02.032", type: "systematic-review", year: 2014 },
+    { id: "r4", citation: "Thoomes EJ, Scholten-Peeters W, Koes B, et al. The effectiveness of conservative treatment for patients with cervical radiculopathy: a systematic review. Clin J Pain. 2013;29(12):1073-86.", pmid: "23446070", doi: "10.1097/AJP.0b013e31828441fb", type: "systematic-review", year: 2013 },
+    { id: "r5", citation: "Persson LC, Carlsson CA, Carlsson JY. Long-lasting cervical radicular pain managed with surgery, physiotherapy, or a cervical collar: a prospective, randomized study. Spine. 1997;22(7):751-8.", pmid: "9106315", doi: "10.1097/00007632-199704010-00007", type: "rct", year: 1997 },
+    { id: "r6", citation: "Engquist M, Löfgren H, Öberg B, et al. Surgery versus nonsurgical treatment of cervical radiculopathy: a prospective, randomized study comparing surgery plus physiotherapy with physiotherapy alone with a 2-year follow-up. Spine. 2013;38(20):1715-22.", pmid: "23778373", doi: "10.1097/BRS.0b013e31829ff095", type: "rct", year: 2013 },
+    { id: "r7", citation: "Nakashima H, Yukawa Y, Suda K, et al. Abnormal findings on magnetic resonance images of the cervical spines in 1211 asymptomatic subjects. Spine. 2015;40(6):392-8.", pmid: "25584950", doi: "10.1097/BRS.0000000000000775", type: "cross-sectional", year: 2015 },
+    { id: "r8", citation: "Kuijper B, Tans JTJ, Beelen A, et al. Cervical collar or physiotherapy versus wait and see policy for recent onset cervical radiculopathy: randomised trial. BMJ. 2009;339:b3883.", pmid: "19812130", doi: "10.1136/bmj.b3883", type: "rct", year: 2009 },
+    { id: "r9", citation: "Thoomes EJ, van Geest S, van der Windt DA, et al. Value of physical tests in diagnosing cervical radiculopathy: a systematic review. Spine J. 2018;18(1):179-89.", pmid: "28838857", doi: "10.1016/j.spinee.2017.08.241", type: "systematic-review", year: 2018 },
+    { id: "r10", citation: "Rubinstein SM, Pool JJM, van Tulder MW, et al. A systematic review of the diagnostic accuracy of provocative tests of the neck for diagnosing cervical radiculopathy. Eur Spine J. 2007;16(3):307-19.", pmid: "17013656", doi: "10.1007/s00586-006-0225-6", type: "systematic-review", year: 2007 },
+    { id: "r11", citation: "Wainner RS, Fritz JM, Irrgang JJ, et al. Reliability and diagnostic accuracy of the clinical examination and patient self-report measures for cervical radiculopathy. Spine. 2003;28(1):52-62.", pmid: "12544957", doi: "10.1097/00007632-200301010-00014", type: "diagnostic-accuracy", year: 2003 },
+    { id: "r12", citation: "Fritz JM, Thackeray A, Brennan GP, et al. Exercise only, exercise with mechanical traction, or exercise with over-door traction for patients with cervical radiculopathy, with or without consideration of status on a previously described subgrouping rule: a randomized clinical trial. J Orthop Sports Phys Ther. 2014;44(2):45-57.", pmid: "24405257", doi: "10.2519/jospt.2014.5065", type: "rct", year: 2014 },
+    { id: "r13", citation: "Côté P, Wong JJ, Sutton D, et al. Management of neck pain and associated disorders: a clinical practice guideline from the Ontario Protocol for Traffic Injury Management (OPTIMa) Collaboration. Eur Spine J. 2016;25(7):2000-22.", pmid: "26984876", doi: "10.1007/s00586-016-4467-7", type: "clinical-practice-guideline", year: 2016 },
+    { id: "r14", citation: "Stiell IG, Wells GA, Vandemheen KL, et al. The Canadian C-spine rule for radiography in alert and stable trauma patients. JAMA. 2001;286(15):1841-8.", pmid: "11597285", doi: "10.1001/jama.286.15.1841", type: "cohort", year: 2001 },
+    { id: "r15", citation: "Basson A, Olivier B, Ellis R, et al. The effectiveness of neural mobilization for neuromusculoskeletal conditions: a systematic review and meta-analysis. J Orthop Sports Phys Ther. 2017;47(9):593-615.", pmid: "28704626", doi: "10.2519/jospt.2017.7117", type: "meta-analysis", year: 2017 }
+  ],
+
+  animation: {
+    title: "How cervical radiculopathy develops",
+    phases: [
+      {
+        type: "moi", label: "Loading the neck", duration: 6, view: "lateral", environment: "office",
+        actors: [{ id: "worker", kit: "worker" }],
+        keyframes: [
+          { t: 0, pose: "sit-desk", root: { x: 0 } },
+          { t: 1.5, pose: "sit-desk", joints: { neck: 28 }, root: { x: 0 } },
+          { t: 3.0, pose: "sit-desk", joints: { neck: 38, trunk: 20 }, root: { x: 0 } },
+          { t: 4.4, pose: "sit", joints: { neck: -22 }, root: { x: 0 } },
+          { t: 5.5, pose: "sit", joints: { neck: -32 }, root: { x: 0 } }
+        ],
+        forces: [
+          { t: [1.4, 3.4], at: "neck", dir: "down", label: "Sustained load on the neck" },
+          { t: [4.3, 5.8], at: "head", dir: "backward", label: "Extension narrows the exit for the nerve" }
+        ],
+        highlights: [{ t: [4, 6], at: "neck" }],
+        captions: [
+          { t: 0, text: "An office worker sits at a desk for hours, with the neck flexed and the head forward." },
+          { t: 1.6, text: "Years of loading wear the discs and the joints of the lower neck." },
+          { t: 3.0, text: "Most cases have no single injury moment or clear trigger." },
+          { t: 4.4, text: "Looking up or turning toward one side narrows the exit for a nerve root." },
+          { t: 5.4, text: "A compressed root sends pain and tingling down the arm." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "neck",
+        captions: [{ t: 0, text: "Zooming into the lower neck, viewed from the side." }]
+      },
+      {
+        type: "closeup", label: "Inside the neck", duration: 10, scene: "cervical-sagittal",
+        actions: [
+          { t: 0, do: "highlight", target: "nerveRootC7" },
+          { t: 0.3, do: "label", target: "nerveRootC7", text: "C7 root: exits the C6–7 foramen" },
+          { t: 1.2, do: "degenerate", target: "discC6C7" },
+          { t: 2.4, do: "herniate", target: "discC6C7", grade: "protrusion", dir: "posterior" },
+          { t: 2.6, do: "arrow", at: "posteriorDiscC6C7", dir: "posterior", label: "Disc protrusion" },
+          { t: 3.6, do: "compress", target: "nerveRootC7", at: 0.35 },
+          { t: 3.8, do: "irritate", target: "nerveRootC7" },
+          { t: 4.4, do: "pain", at: "c6c7Foramen", hold: 4 },
+          { t: 4.8, do: "label", target: "nerveRootC7", text: "Root compressed at the foramen (radiculopathy)" },
+          { t: 5.8, do: "label", target: "spinalCord", text: "Cord not compressed" },
+          { t: 6.8, do: "camera", at: "c6c7Foramen", zoom: 1.7, dur: 1.0 },
+          { t: 9.0, do: "camera", zoom: 1, dur: 0.8 }
+        ],
+        captions: [
+          { t: 0, text: "The C7 root leaves the spinal canal through the C6–7 foramen, the most common level." },
+          { t: 1.2, text: "With wear, the disc loses height and bulges backward toward the root." },
+          { t: 2.5, text: "A posterolateral protrusion pushes into the entrance of the foramen." },
+          { t: 3.6, text: "The root is squeezed and inflamed, so it fires pain and tingling into the arm." },
+          { t: 5.4, text: "The spinal cord itself is spared. Cord compression would be myelopathy, a different problem." },
+          { t: 6.9, text: "Many roots recover over months, even when the scan still shows a disc bulge." }
+        ]
+      },
+      {
+        type: "micro", label: "Nerve response", duration: 9, tissue: "nerve",
+        stages: [{ t: 0, stage: "healthy" }, { t: 1.6, stage: "compression" }, { t: 3.2, stage: "ischaemia" }, { t: 4.8, stage: "demyelination" }, { t: 6.6, stage: "regeneration" }],
+        timeLabels: [{ t: 1.6, text: "Days" }, { t: 3.2, text: "Days to weeks" }, { t: 4.8, text: "Weeks" }, { t: 6.6, text: "Months" }],
+        captions: [
+          { t: 0, text: "A healthy nerve root: myelinated axons with a good blood supply." },
+          { t: 1.6, text: "Compression at the foramen squeezes the root and its blood vessels." },
+          { t: 3.2, text: "Blood flow falls and the root becomes hypersensitive." },
+          { t: 4.8, text: "The myelin sheath thins, which slows conduction and causes numbness or weakness." },
+          { t: 6.6, text: "When compression settles, the root recovers, as it does in most people over months." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "SP1" }
+};

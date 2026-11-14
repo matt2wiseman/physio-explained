@@ -147,8 +147,8 @@ export default {
   assessment: {
     subjective: [
       "Mechanism: inversion, landing, cut, direct blow or an insidious onset with preceding lateral foot pain",
-      "Prodromal lateral foot pain in the weeks before the injury (suggests a stress fracture) [r7]",
-      "Sport, level and position, season timing and the athlete's goals and preference regarding surgery [r7]",
+      "Prodromal lateral foot pain in the weeks before the injury (suggests a stress-type fracture; clinical observation)",
+      "Sport, level and position, season timing and the athlete's goals and preference regarding surgery",
       "Previous fifth metatarsal fracture, nonunion or refracture [r12]",
       "Training load changes, footwear and surface; menstrual history, diet, bone health and energy availability (stress-type fractures)",
       "Ability to weight-bear and the Ottawa foot rule features",
@@ -156,7 +156,7 @@ export default {
     ],
     observation: ["Swelling and bruising along the lateral foot", "Gait: protective gait, reduced push-off", "Foot posture: cavovarus alignment and heel position", "Skin integrity and any tenting over the base"],
     palpation: [
-      "Base and tuberosity of the fifth metatarsal (zone 1), and the metaphyseal–diaphyseal junction about 1.5–2 cm distal to the tuberosity (zone 2)",
+      "Base and tuberosity of the fifth metatarsal (zone 1), and the metaphyseal–diaphyseal junction just distal to the tuberosity (zone 2)",
       "Peroneus brevis tendon behind the lateral malleolus (differential: peroneal tendinopathy)",
       "Cuboid, the fourth metatarsal base, the lateral malleolus and the anterior talofibular ligament for associated injuries"
     ],
@@ -165,7 +165,7 @@ export default {
     neuro: ["Sensation over the lateral foot and the sural nerve distribution (important after surgery) [r5]", "Distal pulses and capillary refill"],
     functional: ["Gait with a boot or shoe: weight-bearing tolerance", "Single-leg stance and balance", "Single-leg heel raise, then hop and landing tests only once union is confirmed", "Sport-specific tasks: cutting, sprinting and jumping (late)"],
     specialTests: [
-      { name: "Palpation of the base and the Jones zone", purpose: "Localise bony tenderness to zone 1 or zone 2", procedure: "Press over the tuberosity, then along the lateral border of the metatarsal about 1.5–2 cm distally. Compare with the other foot.", positive: "Focal bony tenderness. No accuracy figures were identified in the sources reviewed.", refs: [] },
+      { name: "Palpation of the base and the Jones zone", purpose: "Localise bony tenderness to zone 1 or zone 2", procedure: "Press over the tuberosity, then along the lateral border of the metatarsal just distal to it. Compare with the other foot.", positive: "Focal bony tenderness. No accuracy figures were identified in the sources reviewed.", refs: [] },
       { name: "Resisted eversion and passive inversion", purpose: "Provoke pain through the peroneus brevis attachment", procedure: "With the foot in slight plantarflexion, resist eversion, then passively invert and plantarflex.", positive: "Reproduction of lateral foot pain. A positive test is not specific for fracture.", refs: [] },
       { name: "Ottawa foot rules", purpose: "Decide whether foot radiographs are needed after an acute midfoot injury", procedure: "Check for bony tenderness at the base of the fifth metatarsal or the navicular, and inability to take four steps both immediately and in the clinic.", positive: "Either tenderness site or inability to take four steps: arrange foot radiographs. No accuracy figures were quoted in the sources reviewed.", refs: [] },
       { name: "Hop test (late stage only)", purpose: "Check readiness to load the lateral foot at the end of rehabilitation", procedure: "Single-leg hop in place and forward, once union and full pain-free weight-bearing are confirmed.", positive: "Pain at the base or a failure to match the other side. No accuracy data were identified.", refs: [] }
@@ -200,7 +200,7 @@ export default {
   redFlags: [
     "Open fracture, skin tenting over the base, or a displaced fracture with neurovascular compromise: refer to emergency immediately.",
     "Severe, escalating pain, a tense foot or pain out of proportion to the injury: suspect compartment syndrome and arrange emergency review.",
-    "Athlete with a prodrome of lateral foot pain and a positive radiograph or MRI: do not treat as a simple sprain. Refer early for orthopaedic review because of the risk of delayed union, nonunion and refracture [r7,r3].",
+    "Athlete with a prodrome of lateral foot pain and a positive radiograph or MRI: do not treat as a simple sprain. Refer early for orthopaedic review because of the risk of delayed union, nonunion and refracture [r3].",
     "Persistent pain or tenderness at the fracture site beyond about 8–12 weeks, or widening of the fracture line and sclerosis on radiographs: suspect delayed union or nonunion and refer to orthopaedics [r1].",
     "After surgery: fever, wound redness or discharge, calf pain or breathlessness (infection, DVT or PE) or numbness over the lateral foot (sural nerve): arrange urgent review [r5].",
     "Diabetes, peripheral neuropathy or poor circulation with a foot fracture: refer for specialist review because of the risk of poor healing and Charcot change."
@@ -312,7 +312,7 @@ export default {
   prognosis: "Zone 1 avulsions have an excellent prognosis with functional treatment [r3], although in a trial of 37 patients two in each group had no clear union at 12 weeks and one needed surgery [r14]. Jones fractures have worse and more variable outcomes. In a meta-analysis of athletes, return to play was 98.4% overall, 98.8% after screw fixation and 71.6% non-operatively. Union was 97.3% with operative and 71.4% with non-operative treatment, and the overall refracture rate was 10.2% [r1]. In elite athletes, union was 96.7%, mean return to play was 11.15 weeks, the complication rate was 22.5% and refracture was 8.6% [r15]. Among 25 NFL players, 100% returned to play and 12% refractured [r9]. After refracture or nonunion, revision with bone grafting returned 21 elite athletes to their prior level at a mean of 12.3 weeks [r12]. In a UK pathway of 663 fifth metatarsal fractures, 8 Jones fractures (7%) went to asymptomatic nonunion after conservative treatment [r4].",
   prevention: [
     "Build training load gradually and avoid sudden jumps in cutting, jumping or running volume (clinical convention; no prevention trial identified).",
-    "Take lateral foot pain in athletes seriously and image early, because a stress reaction can become a complete Jones fracture [r7].",
+    "Take lateral foot pain in athletes seriously and image early, because a stress reaction can progress to a complete Jones fracture (clinical observation).",
     "Monitor load in young professional players in their first seasons, when many Jones fractures occurred in one NFL series [r9].",
     "Review footwear and surfaces, and consider orthoses for athletes with a high-arched, laterally loaded foot (clinical observation).",
     "Screen for low energy availability, low bone density and nutritional factors in athletes with stress-type or recurrent fractures (see the metatarsal stress fracture page).",
@@ -322,7 +322,7 @@ export default {
     "Zone matters more than the label 'fifth metatarsal fracture': a zone 1 avulsion is usually benign, while a zone 2 or zone 3 fracture in an athlete may need fixation [r3,r2].",
     "Reliability of the three-zone scheme is poor, so do not rely on the zone alone. A two-part avulsion versus indirect scheme based on the peroneus brevis footprint (about 15 mm from the tuberosity) had κ = 0.92 [r13].",
     "In athletes, discuss screw fixation early: in the RCT, casting failed in 44% and screw fixation shortened return to sport from about 15 to 8 weeks [r6]. Offer non-operative care as a legitimate choice for lower-demand patients [r4].",
-    "Prodromal lateral foot pain before the 'injury' means a stress fracture is likely. In the elite consensus, nondisplaced fractures should have MRI and comminuted or displaced fractures CT [r7].",
+    "Prodromal lateral foot pain before the 'injury' suggests a stress-type fracture (clinical observation). In the elite-athlete consensus, nondisplaced fractures should have MRI and comminuted or displaced fractures CT [r7].",
     "Beware of rushing: refracture was 10.2% overall and 12% in NFL players despite fixation, so use clinical and radiographic union plus graded loading [r1,r9,r12].",
     "Not every lucency is a fracture. Os vesalianum pedis (0.15%) and the normal apophysis in adolescents can mimic one, so compare with the other foot [r17]."
   ],

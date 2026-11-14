@@ -91,7 +91,7 @@ export default {
       { phase: "Reactive", timing: "Days to weeks", description: "After a load spike, tenocytes activate, proteoglycans increase and the tendon swells. The change can be reversible [r4]." },
       { phase: "Disrepair", timing: "Weeks to months", description: "Increased cell activity and matrix breakdown disorganise collagen, with new vessels and nerve ingrowth [r4]." },
       { phase: "Degenerative", timing: "Months to years", description: "Areas of cell death and disorganised matrix with limited capacity to reverse; splits and tears can develop [r4]." },
-      { phase: "Load adaptation", timing: "About 12 weeks or more of progressive loading", description: "Progressive loading builds tendon capacity and neuromuscular performance. The timescale comes from other tendons and has not been shown in the peroneals [r5]." }
+      { phase: "Load adaptation", timing: "About 12 weeks or more of progressive loading", description: "Progressive loading builds tendon capacity and neuromuscular performance. The timescale comes from other tendons and has not been shown in the peroneals [r8]." }
     ],
     systems: [
       { system: "Nervous system", effect: "Pain from the tendon, sheath and sensitised nerves limits activity. Peroneal reaction to a sudden inversion may be delayed after ankle sprain, but studies conflict [r1]." },
@@ -105,9 +105,9 @@ export default {
   grading: {
     system: "Anatomical classification of peroneal tendon disorders (no validated clinical grading)",
     grades: [
-      { grade: "Tendinopathy and tenosynovitis", description: "Pain, swelling and thickening of the tendons and sheath without a tear. The most common problem in athletes and the focus of this page [r1,r2].", prognosis: "Responds to non-operative treatment in many cases; refractory cases may need surgery [r1,r8]" },
-      { grade: "Subluxation and dislocation (SPR injury)", description: "Tendons displace out of the retromalleolar groove; separate pathology covered on another page [r1,r2].", prognosis: "Non-operative treatment often fails in the acute and chronic stages; surgery is common [r1,r9]" },
-      { grade: "Splits and tears (Brandes–Smith zones A, B, C)", description: "Zone A is under the superior retinaculum (subluxation, low-lying brevis or quartus), zone B is the inferior retinaculum and peroneal tubercle, and zone C is the cuboid notch [r1].", prognosis: "Surgery is based on how much viable tendon remains: tubularisation if under half the tendon is torn, and tenodesis if more [r8]" }
+      { grade: "Tendinopathy and tenosynovitis", description: "Pain, swelling and thickening of the tendons and sheath without a tear. The most common problem in athletes and the focus of this page [r1,r2].", prognosis: "Responds to non-operative treatment in many cases; refractory cases may need surgery [r1,r9]" },
+      { grade: "Subluxation and dislocation (SPR injury)", description: "Tendons displace out of the retromalleolar groove; separate pathology covered on another page [r1,r2].", prognosis: "Non-operative treatment often fails in the acute and chronic stages; surgery is common [r1,r10]" },
+      { grade: "Splits and tears (Brandes–Smith zones A, B, C)", description: "Zone A is under the superior retinaculum (subluxation, low-lying brevis or quartus), zone B is the inferior retinaculum and peroneal tubercle, and zone C is the cuboid notch [r1].", prognosis: "Surgery is based on how much viable tendon remains: tubularisation if under half the tendon is torn, and tenodesis if more [r9]" }
     ]
   },
 
@@ -125,7 +125,7 @@ export default {
       { label: "Return to running programme", day: 70, note: "Needs pain-free hopping and single-leg capacity (clinical convention)" },
       { label: "Return to full sport", day: 112, note: "Often 3 to 6 months or longer for chronic cases (clinical convention); no validated criteria" }
     ],
-    returnToSport: "Criteria-based, with no validated criteria and no published time frame specific to non-operative treatment. After surgery for peroneal tendon tears, only 46% of 30 patients had returned to sport at an average of 31 months in one series [r10], while a review reports success rates of about 70–80% after tenodesis, with a return to activity at about 12 weeks [r1]. Expect a gradual return over months."
+    returnToSport: "Criteria-based, with no validated criteria and no published time frame specific to non-operative treatment. After surgery for peroneal tendon tears, only 46% of 30 patients had returned to sport at an average of 31 months in one series [r11], while a review reports success rates of about 70–80% after tenodesis, with a return to activity at about 12 weeks [r1]. Expect a gradual return over months."
   },
 
   clinicalPresentation: {
@@ -237,7 +237,7 @@ export default {
     imaging: [
       { modality: "Weight-bearing radiographs of the ankle and foot", indication: "Persistent lateral hindfoot pain or foot deformity", findings: "Foot shape such as pes cavus, an enlarged peroneal tubercle, an os peroneum, bony spurs, and the 'fleck' sign of SPR avulsion [r1]" },
       { modality: "Ultrasound", indication: "Dynamic assessment of tendon thickness, splits and subluxation", findings: "Real-time movement of tendons over the fibula, tendon thickening and sheath fluid. Accuracy for tendon tears was reported as 90% in one study cited in a review [r1]." },
-      { modality: "MRI", indication: "Suspected tear, persistent pain, or planning for surgery. It is the standard method of radiographic evaluation [r8].", findings: "Tendinosis and tenosynovitis (increased signal and sheath fluid, with circumferential fluid wider than 3 mm highly specific), tears, a low-lying brevis or peroneus quartus, talar dome defects and subtalar disease. The 'magic angle' artefact reduces sensitivity and specificity to about 80% and 75% [r1]." },
+      { modality: "MRI", indication: "Suspected tear, persistent pain, or planning for surgery. It is the standard method of radiographic evaluation [r9].", findings: "Tendinosis and tenosynovitis (increased signal and sheath fluid, with circumferential fluid wider than 3 mm highly specific), tears, a low-lying brevis or peroneus quartus, talar dome defects and subtalar disease. The 'magic angle' artefact reduces sensitivity and specificity to about 80% and 75% [r1]." },
       { modality: "CT", indication: "Bony anatomy", findings: "Retromalleolar groove shape, a hypertrophied peroneal tubercle and lateral wall impingement after calcaneal fracture [r1]" }
     ]
   },
@@ -254,15 +254,15 @@ export default {
   ],
   redFlags: [
     "A sudden pop with weakness of eversion or a palpable gap or loss of tendon contour: suspect a tendon rupture or an acute dislocation and arrange imaging and orthopaedic review [r1].",
-    "Recurrent snapping or tendons visibly displacing over the fibula: suspect subluxation. Non-operative treatment has high failure rates and surgery is often needed [r1,r9].",
+    "Recurrent snapping or tendons visibly displacing over the fibula: suspect subluxation. Non-operative treatment has high failure rates and surgery is often needed [r1,r10].",
     "A recent inversion injury with bone tenderness at the malleoli or the fifth metatarsal base, or inability to take four steps: arrange radiographs to exclude fracture.",
     "A rigid or bilateral varus heel, wasting of the intrinsic foot muscles, clawing of the toes or foot drop: screen for a neuromuscular disorder and refer for neurological assessment [r1].",
     "Corticosteroid injection into the sheath carries a risk of tendon rupture, and some surgeons do not use it. If it is considered, it should be ultrasound-guided and decided by a specialist [r1,r7].",
-    "Failure to improve after about 3 months of properly loaded, supervised treatment (a clinical convention): refer for MRI and an orthopaedic opinion, because a split tear or other pathology may be present [r8]."
+    "Failure to improve after about 3 months of properly loaded, supervised treatment (a clinical convention): refer for MRI and an orthopaedic opinion, because a split tear or other pathology may be present [r9]."
   ],
 
   management: {
-    principles: "Treatment begins non-operatively. Recommendations rest on case series and expert opinion [r1], and no randomised trial of exercise for peroneal tendinopathy was found. The plan combines (1) load management of the reactive tendon, (2) progressive loading of the evertors and calf, and (3) correction of contributing factors such as a varus heel, lateral instability or training errors [r1,r4,r5]. The loading dosage is borrowed from patellar and Achilles tendinopathy, where eccentric loading has limited or conflicting advantage over other loading programmes and eccentric–concentric loading should be considered [r5]. Refractory cases, tears and subluxation need orthopaedic review [r1,r8].",
+    principles: "Treatment begins non-operatively. Recommendations rest on case series and expert opinion [r1], and no randomised trial of exercise for peroneal tendinopathy was found. The plan combines (1) load management of the reactive tendon, (2) progressive loading of the evertors and calf, and (3) correction of contributing factors such as a varus heel, lateral instability or training errors [r1,r4,r5]. The loading dosage is borrowed from patellar and Achilles tendinopathy, where eccentric loading has limited or conflicting advantage over other loading programmes and eccentric–concentric loading should be considered [r8]. Refractory cases, tears and subluxation need orthopaedic review [r1,r9].",
     medical: [
       {
         name: "NSAIDs, relative rest and activity modification",
@@ -281,20 +281,20 @@ export default {
       },
       {
         name: "Ultrasound-guided corticosteroid injection into the tendon sheath",
-        description: "In a retrospective case series of 96 patients (109 injections), 25% progressed to surgery, and 36.8% of 87 reporting had more than 12 weeks of relief while 43.7% had 0–1 weeks. There were 2 complications (1.8%), including one progression of a longus tear [r7]. A systematic review of tendon-sheath injections found low-quality studies and no placebo comparisons, and short-term pain improvement [r11]. Some surgeons avoid injection because of the risk of rupture [r1]. The evidence is conflicting and weak.",
-        evidence: "very-limited", recommendation: "consider", refs: ["r7", "r11", "r1"]
+        description: "In a retrospective case series of 96 patients (109 injections), 25% progressed to surgery, and 36.8% of 87 reporting had more than 12 weeks of relief while 43.7% had 0–1 weeks. There were 2 complications (1.8%), including one progression of a longus tear [r7]. A systematic review of tendon-sheath injections found low-quality studies and no placebo comparisons, and short-term pain improvement [r12]. Some surgeons avoid injection because of the risk of rupture [r1]. The evidence is conflicting and weak.",
+        evidence: "very-limited", recommendation: "consider", refs: ["r7", "r12", "r1"]
       },
       {
         name: "Surgery (synovectomy, debridement, tubularisation or tenodesis)",
-        description: "Operative treatment is reserved for failed non-operative care [r8]. Repair and tubularisation are used if less than half the tendon is torn, and tenodesis if more [r8]. Reported results vary: a review reports success of about 70–80% after tenodesis [r1], while one series found that only 46% of 30 patients returned to sport at an average of 31 months, with scar tenderness in 58% [r10].",
-        evidence: "limited", recommendation: "consider", refs: ["r8", "r1", "r10", "r6"]
+        description: "Operative treatment is reserved for failed non-operative care [r9]. Repair and tubularisation are used if less than half the tendon is torn, and tenodesis if more [r9]. Reported results vary: a review reports success of about 70–80% after tenodesis [r1], while one series found that only 46% of 30 patients returned to sport at an average of 31 months, with scar tenderness in 58% [r11].",
+        evidence: "limited", recommendation: "consider", refs: ["r9", "r1", "r11", "r6"]
       }
     ],
     physio: [
       {
         name: "Load management and progressive tendon loading",
-        description: "Reduce the aggravating load, keep the tendon moving, and then build load in stages by pain response, from isometric to isotonic to heavy slow and then energy-storage work. The model comes from other tendinopathies, where eccentric-only loading is not clearly better than other programmes [r5,r4]. There is no peroneal-specific trial.",
-        evidence: "expert-opinion", recommendation: "recommended", refs: ["r4", "r5", "r1"]
+        description: "Reduce the aggravating load, keep the tendon moving, and then build load in stages by pain response, from isometric to isotonic to heavy slow and then energy-storage work. The model comes from other tendinopathies, where eccentric-only loading is not clearly better than other programmes [r8,r4]. There is no peroneal-specific trial.",
+        evidence: "expert-opinion", recommendation: "recommended", refs: ["r4", "r8", "r1"]
       },
       {
         name: "Evertor and calf strengthening with single-leg and balance progression",
@@ -400,7 +400,7 @@ export default {
     ],
     tests: ["Single-leg heel raise to fatigue", "Resisted eversion strength (dynamometer or isometric)", "Single, triple and side hop tests", "Planned and reactive change-of-direction drills", "Weight-bearing dorsiflexion lunge", "FAAM sport subscale"]
   },
-  prognosis: "No natural-history data or controlled trials of non-operative care were found, so the outlook is uncertain. Reviews state that these conditions generally respond to non-operative treatment such as physiotherapy, NSAIDs and immobilisation, and that untreated disorders can lead to persistent lateral ankle pain and substantial functional problems [r1]. Tenosynovitis typically responds to conservative therapy, with surgery reserved for refractory cases [r8]. After surgery, outcomes vary: a review reports success rates of about 70–80% after tenodesis, with return to activity at about 12 weeks [r1], while one series of 30 patients found that nine of 10 returned to work but only 46% returned to sport at an average of 31 months, with residual scar tenderness in 58% and lateral swelling in 54% [r10]. A common underlying cause (cavovarus foot or lateral instability) that is not treated may lead to recurrence (clinical reasoning).",
+  prognosis: "No natural-history data or controlled trials of non-operative care were found, so the outlook is uncertain. Reviews state that these conditions generally respond to non-operative treatment such as physiotherapy, NSAIDs and immobilisation, and that untreated disorders can lead to persistent lateral ankle pain and substantial functional problems [r1]. Tenosynovitis typically responds to conservative therapy, with surgery reserved for refractory cases [r9]. After surgery, outcomes vary: a review reports success rates of about 70–80% after tenodesis, with return to activity at about 12 weeks [r1], while one series of 30 patients found that nine of 10 returned to work but only 46% returned to sport at an average of 31 months, with residual scar tenderness in 58% and lateral swelling in 54% [r11]. A common underlying cause (cavovarus foot or lateral instability) that is not treated may lead to recurrence (clinical reasoning).",
   prevention: [
     "There is no peroneal-specific prevention trial. The recommendations below come from tendon load principles and clinical reasoning [r4,r5].",
     "Increase running, jumping and hill volume gradually, and allow recovery between hard sessions (clinical convention).",
@@ -413,7 +413,7 @@ export default {
     "Look at the foot as well as the tendon. Most atraumatic cases have a varus heel, and 82% of operatively treated tears occurred in cavovarus feet in one cited series [r1].",
     "Test the lateral ligaments. Instability and peroneal tendon pain often coexist [r1,r3].",
     "Ask about snapping. Snapping or popping behind the malleolus points to subluxation or a split tear and changes the plan [r1].",
-    "Be honest about the evidence: there are no peroneal exercise trials, and the loading programme is borrowed from other tendons [r5].",
+    "Be honest about the evidence: there are no peroneal exercise trials, and the loading programme is borrowed from other tendons [r8].",
     "Be cautious about corticosteroid injection: the case-series data are weak, some surgeons avoid it, and rupture is a recognised risk [r1,r7]."
   ],
   related: ["peroneal-tendon-subluxation", "lateral-ankle-sprain", "chronic-ankle-instability", "fifth-metatarsal-fracture", "posterior-tibial-tendon-dysfunction", "osteochondral-lesion-talus"],
@@ -426,11 +426,11 @@ export default {
     { id: "r5", citation: "Cook JL, Rio E, Purdam CR, et al. Revisiting the continuum model of tendon pathology: what is its merit in clinical practice and research? Br J Sports Med. 2016;50(19):1187-91.", pmid: "27127294", doi: "10.1136/bjsports-2015-095422", type: "narrative-review", year: 2016 },
     { id: "r6", citation: "Roster B, Michelier P, Giza E. Peroneal tendon disorders. Clin Sports Med. 2015;34(4):625-41.", pmid: "26409587", doi: "10.1016/j.csm.2015.06.003", type: "narrative-review", year: 2015 },
     { id: "r7", citation: "Fram BR, Rogero R, Fuchs D, et al. Clinical outcomes and complications of peroneal tendon sheath ultrasound-guided corticosteroid injection. Foot Ankle Int. 2019;40(8):888-94.", pmid: "31068007", doi: "10.1177/1071100719847629", type: "cohort", year: 2019 },
-    { id: "r8", citation: "Heckman DS, Reddy S, Pedowitz D, et al. Operative treatment for peroneal tendon disorders. J Bone Joint Surg Am. 2008;90(2):404-18.", pmid: "18245603", doi: "10.2106/JBJS.G.00965", type: "narrative-review", year: 2008 },
-    { id: "r9", citation: "Espinosa N, Maurer MA. Peroneal tendon dislocation. Eur J Trauma Emerg Surg. 2015;41(6):631-7.", pmid: "26564205", doi: "10.1007/s00068-015-0590-0", type: "narrative-review", year: 2015 },
-    { id: "r10", citation: "Steel MW, DeOrio JK. Peroneal tendon tears: return to sports after operative treatment. Foot Ankle Int. 2007;28(1):49-54.", pmid: "17257538", doi: "10.3113/FAI.2007.0009", type: "cohort", year: 2007 },
-    { id: "r11", citation: "Cushman DM, Carefoot A, Lisenby S, et al. A systematic review of the efficacy of corticosteroid injections of tendon sheaths, excluding stenosing tenosynovitis of the wrist and hand. Am J Phys Med Rehabil. 2021;100(7):683-8.", pmid: "33017344", doi: "10.1097/PHM.0000000000001609", type: "systematic-review", year: 2021 },
-    { id: "r12", citation: "Malliaras P, Barton CJ, Reeves ND, et al. Achilles and patellar tendinopathy loading programmes: a systematic review comparing clinical outcomes and identifying potential mechanisms for effectiveness. Sports Med. 2013;43(4):267-86.", pmid: "23494258", doi: "10.1007/s40279-013-0019-z", type: "systematic-review", year: 2013 }
+    { id: "r8", citation: "Malliaras P, Barton CJ, Reeves ND, et al. Achilles and patellar tendinopathy loading programmes: a systematic review comparing clinical outcomes and identifying potential mechanisms for effectiveness. Sports Med. 2013;43(4):267-86.", pmid: "23494258", doi: "10.1007/s40279-013-0019-z", type: "systematic-review", year: 2013 },
+    { id: "r9", citation: "Heckman DS, Reddy S, Pedowitz D, et al. Operative treatment for peroneal tendon disorders. J Bone Joint Surg Am. 2008;90(2):404-18.", pmid: "18245603", doi: "10.2106/JBJS.G.00965", type: "narrative-review", year: 2008 },
+    { id: "r10", citation: "Espinosa N, Maurer MA. Peroneal tendon dislocation. Eur J Trauma Emerg Surg. 2015;41(6):631-7.", pmid: "26564205", doi: "10.1007/s00068-015-0590-0", type: "narrative-review", year: 2015 },
+    { id: "r11", citation: "Steel MW, DeOrio JK. Peroneal tendon tears: return to sports after operative treatment. Foot Ankle Int. 2007;28(1):49-54.", pmid: "17257538", doi: "10.3113/FAI.2007.0009", type: "cohort", year: 2007 },
+    { id: "r12", citation: "Cushman DM, Carefoot A, Lisenby S, et al. A systematic review of the efficacy of corticosteroid injections of tendon sheaths, excluding stenosing tenosynovitis of the wrist and hand. Am J Phys Med Rehabil. 2021;100(7):683-8.", pmid: "33017344", doi: "10.1097/PHM.0000000000001609", type: "systematic-review", year: 2021 }
   ],
 
   animation: {
