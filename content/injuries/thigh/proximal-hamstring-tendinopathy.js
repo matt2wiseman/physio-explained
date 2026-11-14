@@ -375,7 +375,7 @@ export default {
     title: "How proximal hamstring tendinopathy develops",
     phases: [
       {
-        type: "moi", label: "Repeated loading", duration: 7.5, view: "lateral", environment: "track",
+        type: "moi", label: "Repeated loading", duration: 6.5, view: "lateral", environment: "track",
         actors: [{ id: "athlete", kit: "athlete" }],
         keyframes: [
           { t: 0, pose: "run-midstance", root: { x: -150 } },
@@ -384,22 +384,19 @@ export default {
           { t: 2.4, pose: "run-contact", root: { x: -25 } },
           { t: 3.4, pose: "lunge", root: { x: 0 }, ease: "out" },
           { t: 5.0, pose: "lunge", root: { x: 5 } },
-          { t: 6.2, pose: "sit", root: { x: 10 } },
-          { t: 7.4, pose: "sit", root: { x: 10 } }
+          { t: 6.3, pose: "lunge", root: { x: 5 } }
         ],
         forces: [
           { t: [1.5, 2.6], at: "thighR", dir: "backward", label: "Tensile load: hamstrings drive and brake the leg" },
-          { t: [3.5, 5.2], at: "hipR", dir: "down", label: "Compression at the ischial tuberosity in deep hip flexion" },
-          { t: [6.3, 7.4], at: "hipR", dir: "up", label: "Direct pressure in sitting" }
+          { t: [3.5, 6.3], at: "hipR", dir: "down", label: "Compression at the ischial tuberosity in deep hip flexion" }
         ],
-        highlights: [{ t: [3.2, 7.5], at: "hipR" }],
+        highlights: [{ t: [3.2, 6.5], at: "hipR" }],
         slowmo: [{ t: [3.2, 4.4], rate: 0.5 }],
         captions: [
           { t: 0, text: "A runner trains hard. Running loads the common hamstring tendon in tension." },
           { t: 1.5, text: "The hamstrings drive the leg and brake it in late swing, so the tendon at the ischium is stretched." },
           { t: 3.3, text: "In a lunge or deep squat the hip flexes and the tendon is pressed against the ischial tuberosity." },
-          { t: 5.0, text: "Hamstring stretching and deep hip flexion add compression to the same spot." },
-          { t: 6.2, text: "Sitting on a hard surface presses on the tendon too. There is no single injury moment." }
+          { t: 5.0, text: "Stretching, deep flexion and hard sitting add compression. There is no single injury moment." }
         ]
       },
       {
@@ -409,9 +406,10 @@ export default {
       {
         type: "closeup", label: "Inside the hip", duration: 10, scene: "thigh-posterior",
         actions: [
+          { t: 0, do: "camera", at: "proximalTendonInsertion", zoom: 1.35, dur: 0.1 },
           { t: 0, do: "highlight", target: "proximalHamstringTendon" },
           { t: 0.3, do: "label", target: "proximalHamstringTendon", text: "Common hamstring tendon at the ischial tuberosity" },
-          { t: 1.0, do: "arrow", at: "proximalTendonInsertion", dir: "distal", label: "Tensile pull from the hamstrings" },
+          { t: 1.0, do: "arrow", at: "bflhProximalMTJ", dir: "distal", label: "Tensile pull from the hamstrings" },
           { t: 1.1, do: "stretch", target: "proximalHamstringTendon", amount: 0.2, dur: 1.0 },
           { t: 2.4, do: "reset", target: "proximalHamstringTendon" },
           { t: 2.6, do: "arrow", at: "ischialTuberosity", dir: "anterior", label: "Compression against bone in hip flexion" },
@@ -419,8 +417,8 @@ export default {
           { t: 4.4, do: "pain", at: "proximalTendonInsertion", hold: 3 },
           { t: 5.4, do: "degenerate", target: "proximalHamstringTendon", at: "proximalTendonInsertion", dur: 1.6 },
           { t: 5.8, do: "label", target: "proximalHamstringTendon", text: "Thickened, disorganised tendon (tendinopathy), still attached" },
-          { t: 7.0, do: "camera", at: "proximalTendonInsertion", zoom: 1.7, dur: 1.0 },
-          { t: 9.2, do: "camera", zoom: 1, dur: 0.8 }
+          { t: 7.0, do: "camera", at: "proximalTendonInsertion", zoom: 1.8, dur: 1.0 },
+          { t: 9.2, do: "camera", at: "proximalTendonInsertion", zoom: 1.35, dur: 0.8 }
         ],
         captions: [
           { t: 0, text: "The hamstrings share a common tendon that attaches to the ischial tuberosity." },
