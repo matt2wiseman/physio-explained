@@ -22,7 +22,8 @@ const fg = (() => {
   return { rows, cells, extra, myx, fat, entCells };
 })();
 
-function render(g, { stage, progress: p }) {
+function render(g, { stage, progress: p, variant }) {
+  const gen = variant === "generic";            // non-plantar fascia/aponeurosis: no heel-specific labels, no calcaneal spur
   const k = ease(p);
   const order = ["healthy", "microtears", "degeneration", "thickening", "remodelling"];
   const si = Math.max(0, order.indexOf(stage));
@@ -35,7 +36,7 @@ function render(g, { stage, progress: p }) {
   const myxK = si === 2 ? k : si === 3 ? 1 : si === 4 ? 1 - 0.8 * k : 0;
   const disorder = si === 2 ? 0.6 * k : si === 3 ? 0.6 + 0.1 * k : si === 4 ? 0.7 * (1 - k) : 0;
   const vessK = si === 2 ? fade(0.3, 1, p) : si === 3 ? 1 : si === 4 ? 1 - 0.7 * k : 0;
-  const spur = si === 3 ? fade(0.4, 1, p) : si === 4 ? 1 : 0;
+  const spur = gen ? 0 : si === 3 ? fade(0.4, 1, p) : si === 4 ? 1 : 0;
   // ---- surroundings: muscle above, fat pad below
   el("rect", { x: 0, y: 56, width: 800, height: FT - 56, fill: mix("anat-muscle", "stage-bg", 0.68) }, g);
   let st = ""; for (let y = 64; y < FT - 6; y += 9) st += `M${BX + 4},${y} L800,${y + 2} `;
@@ -91,18 +92,18 @@ function render(g, { stage, progress: p }) {
     case "microtears": {
       loadA(wave(p, 4), "Repetitive tensile load");
       const r1 = fg.rows.find((r) => r.tearRow) || fg.rows[0];
-      label(g, 632, 412, "Microtears near the calcaneal origin", { to: [r1.tear, yAt(r1.u)], anchor: "end", opacity: fade(0.15, 0.45, p) });
+      label(g, 632, 412, gen ? "Microtears near the attachment" : "Microtears near the calcaneal origin", { to: [r1.tear, yAt(r1.u)], anchor: "end", opacity: fade(0.15, 0.45, p) });
       break;
     }
     case "degeneration":
       label(g, 632, 412, "Myxoid change & disorganised collagen;\nneovessels; few inflammatory cells", { to: [fg.myx[2].x, yAt(fg.myx[2].u)], anchor: "end" });
-      label(g, 400, 76, "Fasciosis — degeneration, not '-itis'", { anchor: "middle", size: 13, color: col("fx-inflame"), opacity: fade(0.3, 0.6, p) });
+      label(g, 400, 76, gen ? "Degeneration rather than inflammation" : "Fasciosis — degeneration, not '-itis'", { anchor: "middle", size: 13, color: col("fx-inflame"), opacity: fade(0.3, 0.6, p) });
       break;
     case "thickening":
       el("path", { d: `M600,${FT} L600,${FB} M592,${FT} L608,${FT} M592,${FB} L608,${FB}`, stroke: col("fx-force"), "stroke-width": 2 }, g);
       label(g, 614, (FT + FB) / 2 + 5, "Thicker", { size: 13, color: col("fx-force"), weight: 600 });
-      label(g, 632, 412, "Fascia thickens near its origin\n(seen on ultrasound)", { to: [520, FB], anchor: "end" });
-      label(g, 380, 76, "Calcaneal spur may form (often incidental)", { to: [BX + 40, FT - 8], anchor: "start", size: 13, opacity: fade(0.4, 0.7, p) });
+      label(g, 632, 412, gen ? "Fascia thickens near its attachment" : "Fascia thickens near its origin\n(seen on ultrasound)", { to: [520, FB], anchor: "end" });
+      if (!gen) label(g, 380, 76, "Calcaneal spur may form (often incidental)", { to: [BX + 40, FT - 8], anchor: "start", size: 13, opacity: fade(0.4, 0.7, p) });
       break;
     case "remodelling": {
       const lvl = Math.min(2, Math.floor(p * 3));
@@ -111,12 +112,12 @@ function render(g, { stage, progress: p }) {
       break;
     }
     default:
-      label(g, 90, 412, "Calcaneus", { anchor: "middle", size: 14, weight: 600 });
+      label(g, 90, 412, gen ? "Bone" : "Calcaneus", { anchor: "middle", size: 14, weight: 600 });
       label(g, 250, 76, "Fibrocartilaginous enthesis", { to: [BX + 24, FT + 10], anchor: "middle" });
       label(g, 632, 412, "Aligned type I collagen, sparse fibroblasts", { to: [560, yAt(0.65)], anchor: "end" });
-      label(g, 600, 76, "Muscle (flexor digitorum brevis)", { anchor: "middle", size: 13, color: col("stage-ink-2") });
+      label(g, 600, 76, gen ? "Muscle" : "Muscle (flexor digitorum brevis)", { anchor: "middle", size: 13, color: col("stage-ink-2") });
   }
-  label(g, 790, FB + 22, "Heel fat pad", { anchor: "end", size: 12, color: col("stage-ink-2"), opacity: stage === "healthy" ? 1 : 0 });
+  label(g, 790, FB + 22, gen ? "Fat" : "Heel fat pad", { anchor: "end", size: 12, color: col("stage-ink-2"), opacity: stage === "healthy" ? 1 : 0 });
 }
 
 export default { id: "fascia", scale: "≈ 200 µm", render };

@@ -327,7 +327,7 @@ export default {
         captions: [{ t: 0, text: "Zooming into the right knee, seen from the side as a sagittal slice." }]
       },
       {
-        type: "closeup", label: "In front of the knee", duration: 9, scene: "knee-sagittal",
+        type: "closeup", label: "Front of the knee", duration: 9, scene: "knee-sagittal",
         actions: [
           { t: 0, do: "highlight", target: "prepatellarBursa" },
           { t: 0.3, do: "label", target: "prepatellarBursa", text: "Prepatellar bursa: between skin and kneecap" },

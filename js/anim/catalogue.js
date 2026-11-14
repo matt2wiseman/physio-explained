@@ -663,7 +663,7 @@ export const MICRO_TISSUES = {
 /** Optional micro-phase `variant` values per tissue (passed to the tissue module).
  *  "intra-articular" (ligament/tendon inside a synovial joint, e.g. ACL/PCL): synovial fluid dilutes the clot,
  *  a synovial layer caps each stump, NO bridging scar forms and the stumps retract. */
-export const MICRO_VARIANTS = { ligament: ["intra-articular"], tendon: ["intra-articular"] };
+export const MICRO_VARIANTS = { ligament: ["intra-articular"], tendon: ["intra-articular"], fascia: ["generic"] };
 
 /** Helper used by the validator and engine. */
 export function listStructureActions(type) {

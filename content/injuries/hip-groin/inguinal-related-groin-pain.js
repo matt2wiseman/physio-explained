@@ -418,7 +418,7 @@ export default {
         ]
       },
       {
-        type: "micro", label: "Fascial overload", duration: 8, tissue: "fascia",
+        type: "micro", label: "Fascial overload", duration: 8, tissue: "fascia", variant: "generic",
         stages: [
           { t: 0, stage: "healthy" }, { t: 1.6, stage: "microtears" }, { t: 3.4, stage: "degeneration" },
           { t: 5.0, stage: "thickening" }, { t: 6.5, stage: "remodelling" }

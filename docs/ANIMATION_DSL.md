@@ -173,7 +173,7 @@ Every phase may have `captions: [{ t, text }]` — each caption shows from its `
 }
 ```
 `tissue` ∈ MICRO_TISSUES and every `stage` must be in that tissue's list (any subset, in order).
-Optional `variant` (see MICRO_VARIANTS): `variant: "intra-articular"` for ligament/tendon inside a synovial joint (ACL, PCL, LHB) — the clot is diluted by synovial fluid, a synovial cap forms on each stump and **no bridging scar forms**; use it whenever your captions say the tissue does not heal across the gap. Each stage shows a clearly different, labelled microscopic state (e.g. *inflammation*: platelets → neutrophils → macrophages; *proliferation*: fibroblasts laying down disorganised type III collagen + new capillaries; *remodelling*: aligned type I collagen along the line of load). The engine shows the stage name as a small chip.
+Optional `variant` (see MICRO_VARIANTS): `variant: "intra-articular"` for ligament/tendon inside a synovial joint (ACL, PCL, LHB) — the clot is diluted by synovial fluid, a synovial cap forms on each stump and **no bridging scar forms**; use it whenever your captions say the tissue does not heal across the gap. `variant: "generic"` on `fascia` swaps the plantar-fascia labels ("Calcaneus", "Heel fat pad", flexor digitorum brevis, calcaneal spur) for neutral ones ("Bone", "Fat", "Muscle", no spur); use it for any fascia or aponeurosis that is not the plantar fascia (e.g. the abdominal wall in groin pain). Each stage shows a clearly different, labelled microscopic state (e.g. *inflammation*: platelets → neutrophils → macrophages; *proliferation*: fibroblasts laying down disorganised type III collagen + new capillaries; *remodelling*: aligned type I collagen along the line of load). The engine shows the stage name as a small chip.
 
 ---
 

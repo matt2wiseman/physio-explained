@@ -395,7 +395,7 @@ export default {
           { t: 3.4, do: "fracture", target: "vertebraL5", pattern: "stress", at: "parsL5", displaced: false },
           { t: 3.8, do: "label", target: "vertebraL5", text: "Pars defect" },
           { t: 4.8, do: "degenerate", target: "discL5S1" },
-          { t: 5.4, do: "move", target: "vertebraL5", dir: "anterior", amount: 0.3, dur: 1.6 },
+          { t: 5.4, do: "move", target: "vertebraL5", dir: "anterior", amount: 0.22, dur: 1.6 },
           { t: 5.8, do: "label", target: "vertebraL5", text: "L5 slips forward on S1" },
           { t: 7.0, do: "compress", target: "nerveRootL5", at: "l5S1Foramen" },
           { t: 7.4, do: "label", target: "nerveRootL5", text: "L5 root in the foramen" },
