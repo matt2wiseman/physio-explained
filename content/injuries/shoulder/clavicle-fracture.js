@@ -22,17 +22,17 @@ export default {
   overview: "Clavicle fractures are common. In a hospital series of 535 isolated clavicle fractures they accounted for 2.6% of all fractures and 44% of fractures of the shoulder girdle; 68% of patients were men, 81% of fractures were in the middle third (displaced in 48% and comminuted in 19%), and only 2% were in the medial third [r1]. A Cochrane review reports a similar share: clavicle fractures account for 2.6% to 4% of all fractures, and about 80% involve the middle third [r2]. Most undisplaced fractures heal without surgery. The debate concerns completely displaced or shortened midshaft fractures in active adults, which carry a higher risk of nonunion and symptomatic malunion with non-operative care.\n\nThe evidence on surgery is mixed. The Canadian Orthopaedic Trauma Society trial of 132 patients with displaced midshaft fractures found better Constant and DASH scores, faster union (16.4 versus 28.4 weeks), fewer nonunions (2 versus 7) and no symptomatic malunions (versus 9) after plate fixation, with hardware complications in the operative group [r3]. A later multicentre trial of 200 patients aged 16 to 60 found one nonunion after plating versus 16 with non-operative care, and better one-year scores with plating (Constant 92.0 versus 87.8), but no differences once nonunions were excluded, higher cost and implant-related complications, and concluded that routine plating was not supported [r4]. A meta-analysis of six randomised trials (614 patients) found that plate fixation lowered the nonunion risk (relative risk 0.14), that Constant and DASH scores were somewhat better (4.4 and 5.1 points) but not clinically relevant, that secondary operations were similar once plate removal was counted (17.6% versus 16.6%), and that there was not enough evidence to support routine operative treatment for all displaced fractures [r5]. A larger meta-analysis of 14 trials (1546 patients) reported lower nonunion, 5.1 weeks faster union and better long-term Constant (5.3 points) and DASH (4.3 points) scores with surgery, at the cost of more complications (31.3% versus 20.5%) [r6].\n\nIn practice, treatment is a shared decision. For fully displaced or more than 2 cm shortened fractures, surgery reduces nonunion (relative risk 0.17) and symptomatic malunion (0.13), but functional scores and secondary operation rates were similar in one meta-analysis [r7]. Non-operative care with a sling remains appropriate for undisplaced fractures, most adolescents and lower-demand adults, with a low threshold to refer if displacement, shortening or skin or neurovascular compromise is present.",
 
   epidemiology: {
-    text: "In 535 isolated clavicle fractures, 68% of patients were men, the left side was involved in 61%, and 81% of fractures were in the middle third (displaced in 48%, comminuted in 19%); the medial third accounted for 2%. In the first decade of life, midclavicular fractures represented 88.2% of clavicle fractures and 55.5% were undisplaced, and in adults displaced fractures were more frequent than undisplaced ones. Traffic accidents were the most common cause in that series, with no seasonal variation [r1]. Across ten studies in a systematic review, falls were the most dominant cause of clavicle fracture in adults, followed by road traffic collisions, and the review quoted an annual incidence of 37 per 10,000 [r9]. Clavicle fractures were among the common severe injuries in elite cyclists (13 clavicle fractures among 237 injuries), and occurred predominantly during competition [r8].",
+    text: "In 535 isolated clavicle fractures, 68% of patients were men, the left side was involved in 61%, and 81% of fractures were in the middle third (displaced in 48%, comminuted in 19%); the medial third accounted for 2%. In the first decade of life, midclavicular fractures represented 88.2% of clavicle fractures and 55.5% were undisplaced, and in adults displaced fractures were more frequent than undisplaced ones. Traffic accidents were the most common cause in that series, with no seasonal variation [r1]. Across ten studies in a systematic review, falls were the most dominant cause of clavicle fracture in adults, followed by road traffic collisions, and the review quoted an annual incidence of 37 per 10,000 [r8]. Clavicle fractures were among the common severe injuries in elite cyclists (13 clavicle fractures among 237 injuries), and occurred predominantly during competition [r9].",
     riskFactors: {
       intrinsic: [
         "Male sex (68% of 535 patients) and young adult age [r1]",
         "Childhood and adolescence, when midshaft fractures dominate [r1]",
-        "Reduced bone strength in older adults (clinical reasoning; falls were the dominant cause in adults [r9])"
+        "Reduced bone strength in older adults (clinical reasoning; falls were the dominant cause in adults [r8])"
       ],
       extrinsic: [
-        "Falls onto the shoulder, including from bicycles, skis, snowboards and horses [r9]",
-        "Road traffic collisions and other high-energy trauma [r1,r9]",
-        "Contact and collision sport, and competitive cycling [r8]",
+        "Falls onto the shoulder, including from bicycles, skis, snowboards and horses [r8]",
+        "Road traffic collisions and other high-energy trauma [r1,r8]",
+        "Contact and collision sport, and competitive cycling [r9]",
         "Direct blows to the clavicle in collision sport"
       ]
     }
@@ -54,7 +54,7 @@ export default {
       { name: "Comminuted or butterfly-fragment fracture", description: "19% of middle-third fractures in one series [r1]; displacement was the most likely predictor of nonunion [r10]." },
       { name: "Lateral (distal) third fracture", description: "Often involves the coracoclavicular ligaments and the AC joint; displaced fractures are usually treated operatively in athletes [r11]." },
       { name: "Medial third fracture", description: "Uncommon (2% of clavicle fractures) [r1]; posterior displacement can compress mediastinal structures." },
-      { name: "Paediatric and adolescent fracture", description: "Greater remodelling potential; non-operative treatment is often preferred [r14]." }
+      { name: "Paediatric and adolescent fracture", description: "Greater remodelling potential; non-operative treatment is often preferred [r12]." }
     ]
   },
 
@@ -71,7 +71,7 @@ export default {
   },
 
   pathophysiology: {
-    tissueDamage: "A clavicle fracture is a break in the cortex of the bone under a load that exceeds its strength, with disruption of the periosteum, bleeding from the bone ends and surrounding soft tissue, and displacement driven by muscle pull and the weight of the arm. In a series of 535 fractures, 48% of middle-third fractures were displaced and 19% were comminuted [r1]. Healing depends on how far the fragments are apart and how stable they are. In non-operatively treated displaced fractures, a systematic review of eight publications (2117 fractures) identified displacement, comminution, shortening, age, gender and smoking as reported predictors of nonunion, with displacement the most likely [r10]. Another review of ten studies reported associations of nonunion with advancing age, female gender, high-energy trauma, smoking, fracture displacement, shortening, callus on radiography and fracture movement, and found the midshaft was the most common site of nonunion [r9]. In the Canadian trial, nonunion occurred in seven patients managed non-operatively versus two managed with plates, and symptomatic malunion occurred in nine non-operatively managed patients and none in the operative group [r3].\n\nWhen a displaced fracture heals shortened and angulated, the scapula protracts and drops, which alters scapulothoracic rhythm and may reduce strength and endurance (proposed). Patients were less dissatisfied with symptoms of shoulder droop, a local bump and shoulder asymmetry after plating in one trial [r4].",
+    tissueDamage: "A clavicle fracture is a break in the cortex of the bone under a load that exceeds its strength, with disruption of the periosteum, bleeding from the bone ends and surrounding soft tissue, and displacement driven by muscle pull and the weight of the arm. In a series of 535 fractures, 48% of middle-third fractures were displaced and 19% were comminuted [r1]. Healing depends on how far the fragments are apart and how stable they are. In non-operatively treated displaced fractures, a systematic review of eight publications (2117 fractures) identified displacement, comminution, shortening, age, gender and smoking as reported predictors of nonunion, with displacement the most likely [r10]. Another review of ten studies reported associations of nonunion with advancing age, female gender, high-energy trauma, smoking, fracture displacement, shortening, callus on radiography and fracture movement, and found the midshaft was the most common site of nonunion [r8]. In the Canadian trial, nonunion occurred in seven patients managed non-operatively versus two managed with plates, and symptomatic malunion occurred in nine non-operatively managed patients and none in the operative group [r3].\n\nWhen a displaced fracture heals shortened and angulated, the scapula protracts and drops, which alters scapulothoracic rhythm and may reduce strength and endurance (proposed). Patients were less dissatisfied with symptoms of shoulder droop, a local bump and shoulder asymmetry after plating in one trial [r4].",
     structures: [
       { name: "Clavicle (middle third)", effect: "Transverse, oblique or comminuted fracture with displacement and shortening [r1]" },
       { name: "Periosteum and surrounding soft tissues", effect: "Torn periosteum and haematoma; sharp fragments can tent or perforate the skin" },
@@ -93,7 +93,7 @@ export default {
       { phase: "Nonunion or malunion", timing: "Beyond about 6 months", description: "Failed bridging (nonunion) or healing in a shortened or angulated position (symptomatic malunion); symptomatic nonunion occurred in 11.6% of conservatively treated patients and symptomatic malunion in 11.3% in a Cochrane review [r2]." }
     ],
     systems: [
-      { system: "Nervous system", effect: "Acute nociceptive pain; brachial plexus or supraclavicular nerve injury (numbness below the clavicle) is possible, and plexus palsy was reported rarely in the sling group of one trial [r12]" },
+      { system: "Nervous system", effect: "Acute nociceptive pain; brachial plexus or supraclavicular nerve injury (numbness below the clavicle) is possible, and plexus palsy leading to surgery was reported in one sling-group patient in a conservative-treatment review [r13]" },
       { system: "Vascular", effect: "Subclavian vessel injury is rare but needs a pulse and perfusion check; swelling and haematoma are common" },
       { system: "Respiratory", effect: "High-energy fractures can be accompanied by rib fractures and pneumothorax; breathlessness or chest pain needs emergency assessment" },
       { system: "Musculoskeletal chain", effect: "Shoulder droop, scapular protraction and altered scapulohumeral rhythm; neck and upper back guarding" },
@@ -153,7 +153,7 @@ export default {
       "Mechanism and energy: fall onto the shoulder, bicycle or snow-sport crash, road collision, or direct blow",
       "Location of pain (clavicle, AC joint, sternoclavicular joint) and ability to move the arm",
       "Numbness, weakness, hand colour or temperature, breathlessness or chest pain",
-      "Smoking, bone health, medications and previous clavicle or shoulder surgery (nonunion predictors) [r9,r10]",
+      "Smoking, bone health, medications and previous clavicle or shoulder surgery (nonunion predictors) [r8,r10]",
       "Hand dominance, sport and work demands, and goals regarding function and appearance"
     ],
     observation: [
@@ -196,7 +196,7 @@ export default {
       { name: "Observation for skin tenting and shortening", purpose: "To identify fractures that need urgent surgical review", procedure: "Inspect the skin over the fracture at rest and with gentle shoulder movement, and compare the shoulder and clavicle position with the other side.", positive: "Skin blanching or tenting over a fragment, an open wound, or marked shoulder droop and shortening.", refs: [] }
     ],
     clinicalRules: [
-      { name: "Which displaced fractures are at higher risk of nonunion?", description: "Displacement was the most likely predictor in a systematic review, with comminution, shortening, age, gender and smoking also reported [r10]; another review also listed high-energy trauma and clavicular shortening [r9]. Treating all displaced fractures surgically would lead to overtreatment [r10]." },
+      { name: "Which displaced fractures are at higher risk of nonunion?", description: "Displacement was the most likely predictor in a systematic review, with comminution, shortening, age, gender and smoking also reported [r10]; another review also listed high-energy trauma and clavicular shortening [r8]. Treating all displaced fractures surgically would lead to overtreatment [r10]." },
       { name: "The group in which surgery is studied", description: "Meta-analyses have focused on fractures that are fully (100%) displaced or have more than 2 cm of shortening [r7]." },
       { name: "Always exclude associated injuries", description: "After high-energy trauma, check the chest, ribs, scapula (floating shoulder), cervical spine and neurovascular status." }
     ],
@@ -237,12 +237,12 @@ export default {
   ],
 
   management: {
-    principles: "Assess the fracture (location, displacement, shortening, comminution, skin and neurovascular status) and the patient (age, demand, smoking, hand dominance, preferences). Undisplaced fractures and most paediatric and adolescent fractures are treated non-operatively with a sling for comfort and early movement. For completely displaced or shortened midshaft fractures in active adults the choice between sling and plate or nail is a live debate. Plate fixation consistently reduces nonunion and symptomatic malunion [r2,r5,r7,r12], and some trials and meta-analyses report better short- and long-term function and quicker union [r3,r6], but other trials and a Cochrane review found no clinically important functional benefit once nonunion is accounted for, with implant-related complications and plate removal common and secondary operations broadly similar [r2,r4,r5]. Surgery reduces the risk of nonunion at the price of operative complications, so the decision should be shared, with the patient's work, sport, smoking status and views on appearance and recovery time included.",
+    principles: "Assess the fracture (location, displacement, shortening, comminution, skin and neurovascular status) and the patient (age, demand, smoking, hand dominance, preferences). Undisplaced fractures and most paediatric and adolescent fractures are treated non-operatively with a sling for comfort and early movement. For completely displaced or shortened midshaft fractures in active adults the choice between sling and plate or nail is a live debate. Plate fixation consistently reduces nonunion and symptomatic malunion [r2,r5,r7,r14], and some trials and meta-analyses report better short- and long-term function and quicker union [r3,r6], but other trials and a Cochrane review found no clinically important functional benefit once nonunion is accounted for, with implant-related complications and plate removal common and secondary operations broadly similar [r2,r4,r5]. Surgery reduces the risk of nonunion at the price of operative complications, so the decision should be shared, with the patient's work, sport, smoking status and views on appearance and recovery time included.",
     medical: [
       {
         name: "Sling for comfort and analgesia (non-operative treatment)",
         description: "A sling is used for comfort for about 2–4 weeks (clinical convention) with paracetamol and short courses of NSAIDs as needed, and early pain-free movement of the elbow, wrist and hand. A Cochrane review of conservative treatments found very low-quality evidence of similar shoulder function with a figure-of-eight bandage and an arm sling [r13], and the surgical Cochrane review found low-quality evidence of no clinically important function difference between conservative and surgical treatment (Constant 2.3 points in favour of surgery) [r2]. NSAIDs have been questioned for fracture healing in general, but no source reviewed here tested them for clavicle fractures.",
-        evidence: "limited", recommendation: "recommended", refs: ["r13", "r2"]
+        evidence: "limited", recommendation: "recommended", refs: ["r2", "r13"]
       },
       {
         name: "Plate fixation of completely displaced or shortened midshaft fractures (shared decision)",
@@ -251,8 +251,8 @@ export default {
       },
       {
         name: "Intramedullary nailing",
-        description: "A network meta-analysis of 19 randomised trials (1783 fractures) found that compression plating, reconstruction plating and intramedullary nailing all had significantly lower odds of nonunion than non-operative treatment (odds ratios 0.07 to 0.08), and that only compression plating had significantly lower DASH scores at six weeks [r12]. A separate meta-analysis found that plate fixation reduced nonunion but intramedullary nail fixation did not [r7], so the evidence for nailing is inconsistent.",
-        evidence: "conflicting", recommendation: "consider", refs: ["r12", "r7"]
+        description: "A network meta-analysis of 19 randomised trials (1783 fractures) found that compression plating, reconstruction plating and intramedullary nailing all had significantly lower odds of nonunion than non-operative treatment (odds ratios 0.07 to 0.08), and that only compression plating had significantly lower DASH scores at six weeks [r14]. A separate meta-analysis found that plate fixation reduced nonunion but intramedullary nail fixation did not [r7], so the evidence for nailing is inconsistent.",
+        evidence: "conflicting", recommendation: "consider", refs: ["r7", "r14"]
       },
       {
         name: "Operative fixation of displaced lateral (distal) third fractures",
@@ -261,8 +261,8 @@ export default {
       },
       {
         name: "Non-operative treatment for displaced midshaft fractures in adolescents",
-        description: "A meta-analysis of seven comparative studies (578 adolescents) found similar functional outcomes (DASH), with non-operative treatment associated with fewer revision operations (relative risk 0.15) and fewer complications (relative risk 0.31); the risks of nonunion and malunion were higher with non-operative treatment but imprecisely estimated [r14]. Non-operative treatment may be preferred in adolescents.",
-        evidence: "limited", recommendation: "consider", refs: ["r14"]
+        description: "A meta-analysis of seven comparative studies (578 adolescents) found similar functional outcomes (DASH), with non-operative treatment associated with fewer revision operations (relative risk 0.15) and fewer complications (relative risk 0.31); the risks of nonunion and malunion were higher with non-operative treatment but imprecisely estimated [r12]. Non-operative treatment may be preferred in adolescents.",
+        evidence: "limited", recommendation: "consider", refs: ["r12"]
       },
       {
         name: "Low-intensity pulsed ultrasound for fracture healing",
@@ -295,7 +295,7 @@ export default {
     education: [
       "A broken collarbone often heals well in a sling. Even a visible bump usually settles into a firm ridge and a good shoulder.",
       "Surgery lowers the chance that the bone does not join (nonunion) and can speed healing, but it brings its own risks such as hardware irritation, infection and sometimes a second operation to remove the plate [r2,r5,r6].",
-      "Smoking and a large displacement raise the chance that the bone will not heal, so stopping smoking helps [r9,r10].",
+      "Smoking and a large displacement raise the chance that the bone will not heal, so stopping smoking helps [r8,r10].",
       "Keep moving the elbow, wrist and hand from day one, and work on shoulder movement as soon as pain allows.",
       "Contact sport and heavy lifting must wait until the bone is united on an X-ray and your strength is back.",
       "Seek urgent help for a cold or pale hand, numbness, breathlessness, a pointed bone threatening the skin, or fever after surgery."
@@ -380,12 +380,12 @@ export default {
     ]
   },
 
-  prognosis: "Most clavicle fractures unite and most people regain good function. In the multicentre trial, 12-month Constant scores were 92.0 after plating and 87.8 with non-operative care, and DASH scores 3.4 versus 6.1, but there were no significant differences once patients with nonunion were excluded, which suggests that the benefit of surgery came from preventing nonunion [r4]. A Cochrane review found low-quality evidence that surgery has no additional benefit in function, pain or quality of life but may reduce treatment failure (relative risk 0.32); the main cause of treatment failure was symptomatic nonunion (11.6%) with non-operative care and mechanical failure (3.4%) with surgery, and hardware removal for discomfort occurred in 10.2% and infection in 3.2% of surgical patients [r2]. A meta-analysis reported secondary operations in 17.6% of operative and 16.6% of non-operative patients when plate removal was counted [r5]. Time to union for displaced fractures averaged 16.4 weeks with plating and 28.4 weeks without in the Canadian trial [r3]. For athletes, a systematic review concluded that operative management of displaced midshaft fractures offered improved return rates and times to sport [r11]. In adolescents, outcomes were similar with either approach and non-operative care had fewer revisions [r14]. Long-term data beyond the trials reviewed here were limited, so the long-term risk of shoulder dysfunction after non-operative healing with malunion was not established.",
+  prognosis: "Most clavicle fractures unite and most people regain good function. In the multicentre trial, 12-month Constant scores were 92.0 after plating and 87.8 with non-operative care, and DASH scores 3.4 versus 6.1, but there were no significant differences once patients with nonunion were excluded, which suggests that the benefit of surgery came from preventing nonunion [r4]. A Cochrane review found low-quality evidence that surgery has no additional benefit in function, pain or quality of life but may reduce treatment failure (relative risk 0.32); the main cause of treatment failure was symptomatic nonunion (11.6%) with non-operative care and mechanical failure (3.4%) with surgery, and hardware removal for discomfort occurred in 10.2% and infection in 3.2% of surgical patients [r2]. A meta-analysis reported secondary operations in 17.6% of operative and 16.6% of non-operative patients when plate removal was counted [r5]. Time to union for displaced fractures averaged 16.4 weeks with plating and 28.4 weeks without in the Canadian trial [r3]. For athletes, a systematic review concluded that operative management of displaced midshaft fractures offered improved return rates and times to sport [r11]. In adolescents, outcomes were similar with either approach and non-operative care had fewer revisions [r12]. Long-term data beyond the trials reviewed here were limited, so the long-term risk of shoulder dysfunction after non-operative healing with malunion was not established.",
   prevention: [
     "No intervention has been shown to prevent clavicle fractures; avoid falls onto the shoulder by improving falling technique in contact, cycling and snow sports (limited evidence)",
     "Wear appropriate protective equipment and follow safety practices in cycling, snow sports and contact sport (reasonable principle; unproven effect on clavicle fracture)",
-    "Support smoking cessation, because smoking is associated with nonunion [r9,r10]",
-    "Optimise bone health and reduce falls risk in older adults (reasonable principle; falls were the dominant cause in adults [r9])",
+    "Support smoking cessation, because smoking is associated with nonunion [r8,r10]",
+    "Optimise bone health and reduce falls risk in older adults (reasonable principle; falls were the dominant cause in adults [r8])",
     "After a fracture, restore shoulder strength and control fully before returning to contact sport (clinical reasoning)"
   ],
   clinicalPearls: [
@@ -393,7 +393,7 @@ export default {
     "Displacement is the key prognostic feature. Fully displaced or more than 2 cm shortened fractures have lower nonunion and malunion risk with surgery (relative risk 0.17 and 0.13), but functional scores were similar [r7], and displacement was the most likely predictor of nonunion in non-operative care [r10].",
     "The evidence is truly mixed. The Canadian trial favoured plating [r3], the Edinburgh-led multicentre trial did not support routine plating [r4], and meta-analyses disagree on function but agree that surgery reduces nonunion [r5,r6,r7]. Present both options.",
     "Count the cost of surgery as well as the benefit. Implant irritation, infection and removal are common (hardware removal 10.2% in the Cochrane review) and secondary operations are similar between groups once removal is included [r2,r5].",
-    "In adolescents, non-operative treatment is usually preferred: outcomes were similar and revisions were fewer [r14]. In athletes with displaced midshaft fractures, surgery gave better return rates and times in one review [r11].",
+    "In adolescents, non-operative treatment is usually preferred: outcomes were similar and revisions were fewer [r12]. In athletes with displaced midshaft fractures, surgery gave better return rates and times in one review [r11].",
     "A sling is as good as a figure-of-eight bandage, and the sling is more comfortable [r13]. Do not insist on bracing the shoulders back."
   ],
   related: ["ac-joint-injury", "sc-joint-injury", "proximal-humerus-fracture", "anterior-shoulder-dislocation", "rib-fracture"],
@@ -406,13 +406,13 @@ export default {
     { id: "r5", citation: "Woltz S, Krijnen P, Schipper IB. Plate fixation versus nonoperative treatment for displaced midshaft clavicular fractures: a meta-analysis of randomized controlled trials. J Bone Joint Surg Am. 2017;99(12):1051-7.", pmid: "28632595", doi: "10.2106/JBJS.16.01068", type: "meta-analysis", year: 2017 },
     { id: "r6", citation: "Guerra E, Previtali D, Tamborini S, et al. Midshaft clavicle fractures: surgery provides better results as compared with nonoperative treatment: a meta-analysis. Am J Sports Med. 2019;47(14):3541-51.", pmid: "30835150", doi: "10.1177/0363546519826961", type: "meta-analysis", year: 2019 },
     { id: "r7", citation: "Amer K, Smith B, Thomson JE, et al. Operative versus nonoperative outcomes of middle-third clavicle fractures: a systematic review and meta-analysis. J Orthop Trauma. 2020;34(1):e6-13.", pmid: "31851115", doi: "10.1097/BOT.0000000000001602", type: "meta-analysis", year: 2020 },
-    { id: "r8", citation: "Lambert C, Lambert M, Galandi M, et al. Severe injuries in competitive cycling during an Olympic cycle: injury patterns, time loss, and return-to-performance outcomes. BMC Sports Sci Med Rehabil. 2026;18(1).", pmid: "42983465", doi: "10.1186/s13102-026-02201-x", type: "cohort", year: 2026 },
-    { id: "r9", citation: "Irfan SA, Ali AA, Ashkar A, et al. Predictors requiring special attention to prevent clavicle fracture nonunion: a systematic review of literature. Trauma Surg Acute Care Open. 2023;8(1):e001188.", pmid: "38020862", doi: "10.1136/tsaco-2023-001188", type: "systematic-review", year: 2023 },
+    { id: "r8", citation: "Irfan SA, Ali AA, Ashkar A, et al. Predictors requiring special attention to prevent clavicle fracture nonunion: a systematic review of literature. Trauma Surg Acute Care Open. 2023;8(1):e001188.", pmid: "38020862", doi: "10.1136/tsaco-2023-001188", type: "systematic-review", year: 2023 },
+    { id: "r9", citation: "Lambert C, Lambert M, Galandi M, et al. Severe injuries in competitive cycling during an Olympic cycle: injury patterns, time loss, and return-to-performance outcomes. BMC Sports Sci Med Rehabil. 2026;18(1).", pmid: "42983465", doi: "10.1186/s13102-026-02201-x", type: "cohort", year: 2026 },
     { id: "r10", citation: "Jørgensen A, Troelsen A, Ban I. Predictors associated with nonunion and symptomatic malunion following non-operative treatment of displaced midshaft clavicle fractures: a systematic review of the literature. Int Orthop. 2014;38(12):2543-9.", pmid: "25027978", doi: "10.1007/s00264-014-2450-7", type: "systematic-review", year: 2014 },
     { id: "r11", citation: "Robertson GAJ, Wood AM. Return to sport following clavicle fractures: a systematic review. Br Med Bull. 2016;119(1):111-28.", pmid: "27554280", doi: "10.1093/bmb/ldw029", type: "systematic-review", year: 2016 },
-    { id: "r12", citation: "Martin JR, Saunders PE, Phillips M, et al. Comparative effectiveness of treatment options for displaced midshaft clavicle fractures: a systematic review and network meta-analysis. Bone Jt Open. 2021;2(8):646-54.", pmid: "34402306", doi: "10.1302/2633-1462.28.BJO-2021-0112.R1", type: "meta-analysis", year: 2021 },
+    { id: "r12", citation: "Galán-Olleros M, Stitzman-Wengrowicz ML, Martínez-Álvarez S, et al. Nonoperative versus surgical treatment of displaced midshaft clavicle fractures in adolescents: a systematic review and meta-analysis of comparative studies. Int Orthop. 2025;49(9):2227-38.", pmid: "40560219", doi: "10.1007/s00264-025-06589-y", type: "meta-analysis", year: 2025 },
     { id: "r13", citation: "Lenza M, Faloppa F. Conservative interventions for treating middle third clavicle fractures in adolescents and adults. Cochrane Database Syst Rev. 2016;12(12):CD007121.", pmid: "27977849", doi: "10.1002/14651858.CD007121.pub4", type: "systematic-review", year: 2016 },
-    { id: "r14", citation: "Galán-Olleros M, Stitzman-Wengrowicz ML, Martínez-Álvarez S, et al. Nonoperative versus surgical treatment of displaced midshaft clavicle fractures in adolescents: a systematic review and meta-analysis of comparative studies. Int Orthop. 2025;49(9):2227-38.", pmid: "40560219", doi: "10.1007/s00264-025-06589-y", type: "meta-analysis", year: 2025 }
+    { id: "r14", citation: "Martin JR, Saunders PE, Phillips M, et al. Comparative effectiveness of treatment options for displaced midshaft clavicle fractures: a systematic review and network meta-analysis. Bone Jt Open. 2021;2(8):646-54.", pmid: "34402306", doi: "10.1302/2633-1462.28.BJO-2021-0112.R1", type: "meta-analysis", year: 2021 }
   ],
 
   animation: {

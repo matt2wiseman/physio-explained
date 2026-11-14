@@ -51,7 +51,7 @@ export default {
     variants: [
       { name: "Acute painful resorptive episode", description: "Sudden severe pain, often at night, with marked loss of active movement, corresponding to the resorptive phase [r2]." },
       { name: "Chronic persistent calcific tendinopathy", description: "Symptoms lasting three months or more, the population in recent trials; many needed further treatment after four months [r6]." },
-      { name: "Calcific tendinopathy with stiffness", description: "Can resemble adhesive capsulitis, with painful loss of movement [r9]." },
+      { name: "Calcific tendinopathy with stiffness", description: "Can resemble adhesive capsulitis, with painful loss of movement [r8]." },
       { name: "Greater tuberosity osteolysis", description: "An uncommon, distinctive form associated with significantly poorer clinical and functional outcomes before and after surgery [r2]." },
       { name: "Asymptomatic deposit", description: "Deposits were present in 7.8% of asymptomatic adults [r1]; they do not need treatment." },
       { name: "Calcific deposit with associated cuff pathology", description: "Calcific deposits may worsen tendinopathy, with a higher rupture rate, slower recovery and more post-operative complications [r2]." }
@@ -65,7 +65,7 @@ export default {
       { name: "Subacromial–subdeltoid bursa", role: "Gliding surface over the cuff; inflamed in painful phases" },
       { name: "Infraspinatus and subscapularis tendons", role: "Less commonly involved; external and internal rotation and stability" },
       { name: "Greater tuberosity and footprint", role: "Insertion of the cuff; uncommon osteolysis here predicts a poorer outcome [r2]" },
-      { name: "Coracoacromial arch", role: "The roof over the tendon; relevant to pain on elevation and the rationale for (non-recommended) acromioplasty alone [r13]" }
+      { name: "Coracoacromial arch", role: "The roof over the tendon; relevant to pain on elevation and the rationale for (non-recommended) acromioplasty alone [r9]" }
     ]
   },
 
@@ -76,7 +76,7 @@ export default {
       { name: "Subacromial–subdeltoid bursa", effect: "Inflammation and swelling during painful phases; deposits can rupture into the bursa (clinical observation)" },
       { name: "Rotator cuff tendon structure", effect: "Calcific deposits may worsen tendinopathy, with a higher rupture rate and more post-operative complications [r2]" },
       { name: "Greater tuberosity", effect: "Uncommon osteolysis is associated with poorer outcomes [r2]" },
-      { name: "Glenohumeral capsule", effect: "Painful loss of movement can mimic adhesive capsulitis in some patients [r9]" }
+      { name: "Glenohumeral capsule", effect: "Painful loss of movement can mimic adhesive capsulitis in some patients [r8]" }
     ],
     muscles: [
       { name: "Supraspinatus and other cuff muscles", effect: "Pain inhibition limits active elevation and external rotation, with a decrease in strength in painful phases [r5]" },
@@ -111,7 +111,7 @@ export default {
   },
 
   timeframes: {
-    summary: "Calcific tendinopathy has a self-limiting course in many people, with spontaneous resorption of the deposit common [r2,r8], but the timing varies widely and is not well quantified in the literature reviewed here. Recovery may take up to several months [r3]. The phase durations below are illustrative clinical ranges, not derived from a source.",
+    summary: "Calcific tendinopathy has a self-limiting course in many people, with spontaneous resorption of the deposit common [r2,r10], but the timing varies widely and is not well quantified in the literature reviewed here. Recovery may take up to several months [r3]. The phase durations below are illustrative clinical ranges, not derived from a source.",
     healing: [
       { phase: "Formative and resting phases", startDay: 0, endDay: 180, description: "Mild to moderate, often activity-related pain, or none. Education, activity modification and range of motion (clinical convention) [r2]." },
       { phase: "Resorptive (painful) phase", startDay: 30, endDay: 150, description: "Severe, often night, pain, with loss of active range. Analgesia, protection from provocative loading and a decision about minimally invasive treatment if pain persists [r2,r3]." },
@@ -133,13 +133,13 @@ export default {
       "Pain radiating to the lateral proximal forearm, with tenderness even at rest [r3]",
       "Pain with movement and reduced active range of motion; weakness from pain [r5]",
       "Difficulty sleeping on the affected side",
-      "Sometimes a presentation like adhesive capsulitis, with painful stiffness [r9]",
+      "Sometimes a presentation like adhesive capsulitis, with painful stiffness [r8]",
       "A previous shoulder history, or no symptoms at all if the deposit is incidental [r1]"
     ],
     signs: [
       "Tenderness over the greater tuberosity and subacromial region",
       "Painful, restricted active elevation and external rotation, with a painful arc in some people",
-      "Passive range often painful at end range in the resorptive phase; true stiffness suggests capsular involvement [r9]",
+      "Passive range often painful at end range in the resorptive phase; true stiffness suggests capsular involvement [r8]",
       "Pain-limited resisted abduction and external rotation, without a lag sign unless the cuff is torn",
       "Warmth or swelling is uncommon; if marked, consider infection or other crystal disease",
       "Shoulder hitching and guarding of the arm when the shoulder is acutely painful"
@@ -168,7 +168,7 @@ export default {
     ],
     rangeOfMotion: [
       "Active elevation and external rotation, commonly pain-limited in the resorptive phase",
-      "Passive elevation and external rotation: compare with active range; a global loss of passive external rotation suggests capsular involvement [r9]",
+      "Passive elevation and external rotation: compare with active range; a global loss of passive external rotation suggests capsular involvement [r8]",
       "Hand-behind-back reach"
     ],
     strength: [
@@ -188,15 +188,15 @@ export default {
       "Patient-reported disability (see outcome measures)"
     ],
     specialTests: [
-      { name: "Painful arc test", purpose: "Cuff disease in general; it does not identify calcification", procedure: "Active elevation through abduction or the scapular plane, observing for pain in the middle of the range.", positive: "Pain through the middle range of elevation that eases above and below.", lrPositive: "3.7 (95% CI 1.9–7.0)", lrNegative: "0.36 (95% CI 0.23–0.54) for a normal result", refs: ["r10"] },
-      { name: "Resisted external rotation and abduction", purpose: "Pain and weakness of cuff muscle contraction; a positive external rotation resistance test was among the most accurate findings for cuff disease in general", procedure: "With the elbow at the side, resist isometric external rotation and abduction in the scapular plane and compare sides.", positive: "Pain or weakness compared with the other side. Accuracy for calcific tendinopathy has not been established; the figure in the cited review applies to rotator cuff disease generally.", refs: ["r10"] },
-      { name: "Drop-arm test and lag signs", purpose: "To screen for a coexisting full-thickness cuff tear", procedure: "Passively abduct the arm to 90° and ask the patient to lower it slowly; test external and internal rotation lag.", positive: "The arm drops or lags. In the cited review the external rotation lag sign (LR+ 7.2) and the internal rotation lag sign (LR+ 5.6) were most accurate for full-thickness tears; these were not studied in calcific tendinopathy specifically.", lrPositive: "3.3 (95% CI 1.0–11) for drop-arm in cuff disease", refs: ["r10"] },
+      { name: "Painful arc test", purpose: "Cuff disease in general; it does not identify calcification", procedure: "Active elevation through abduction or the scapular plane, observing for pain in the middle of the range.", positive: "Pain through the middle range of elevation that eases above and below.", lrPositive: "3.7 (95% CI 1.9–7.0)", lrNegative: "0.36 (95% CI 0.23–0.54) for a normal result", refs: ["r11"] },
+      { name: "Resisted external rotation and abduction", purpose: "Pain and weakness of cuff muscle contraction; a positive external rotation resistance test was among the most accurate findings for cuff disease in general", procedure: "With the elbow at the side, resist isometric external rotation and abduction in the scapular plane and compare sides.", positive: "Pain or weakness compared with the other side. Accuracy for calcific tendinopathy has not been established; the figure in the cited review applies to rotator cuff disease generally.", refs: ["r11"] },
+      { name: "Drop-arm test and lag signs", purpose: "To screen for a coexisting full-thickness cuff tear", procedure: "Passively abduct the arm to 90° and ask the patient to lower it slowly; test external and internal rotation lag.", positive: "The arm drops or lags. In the cited review the external rotation lag sign (LR+ 7.2) and the internal rotation lag sign (LR+ 5.6) were most accurate for full-thickness tears; these were not studied in calcific tendinopathy specifically.", lrPositive: "3.3 (95% CI 1.0–11) for drop-arm in cuff disease", refs: ["r11"] },
       { name: "Passive external rotation range", purpose: "To separate calcific tendinopathy from frozen shoulder", procedure: "Measure passive external rotation at the side and compare sides.", positive: "A marked, global loss of passive external rotation points to capsular restriction. No accuracy statistic was found in the sources reviewed.", refs: [] }
     ],
     clinicalRules: [
       { name: "A deposit is not the diagnosis", description: "Calcific deposits were present in 7.8% of asymptomatic adults [r1], so the deposit should be matched to the pain pattern, the stage and the examination before attributing symptoms to it." },
       { name: "Phase guides the plan", description: "Severe night pain and loss of active range suggest the resorptive phase, in which symptoms often settle spontaneously and in which analgesia and protection are priorities [r2]." },
-      { name: "Always screen for a cuff tear", description: "Calcific deposits can coexist with cuff pathology and may worsen tendinopathy [r2]. A lag sign or marked weakness after the pain settles warrants imaging [r10]." }
+      { name: "Always screen for a cuff tear", description: "Calcific deposits can coexist with cuff pathology and may worsen tendinopathy [r2]. A lag sign or marked weakness after the pain settles warrants imaging [r11]." }
     ],
     outcomeMeasures: [
       { name: "Constant–Murley score", use: "Used in treatment trials and reviews of calcific tendinopathy [r4,r7]" },
@@ -216,7 +216,7 @@ export default {
     { name: "Rotator cuff related shoulder pain", id: "rotator-cuff-related-shoulder-pain", distinguishing: "Gradual load-related pain without a calcific deposit on radiograph or ultrasound; calcification is a distinct, cell-mediated process [r2]." },
     { name: "Degenerative (atraumatic) rotator cuff tear", id: "degenerative-rotator-cuff-tear", distinguishing: "Older patient, gradual weakness, lag signs and a tear on imaging; may coexist with a deposit." },
     { name: "Traumatic rotator cuff tear", id: "traumatic-rotator-cuff-tear", distinguishing: "A clear injury with sudden weakness rather than sudden pain without trauma." },
-    { name: "Frozen shoulder", id: "frozen-shoulder", distinguishing: "Global loss of passive range, especially external rotation; calcific tendinopathy can resemble adhesive capsulitis [r9]." },
+    { name: "Frozen shoulder", id: "frozen-shoulder", distinguishing: "Global loss of passive range, especially external rotation; calcific tendinopathy can resemble adhesive capsulitis [r8]." },
     { name: "Long head of biceps tendinopathy", id: "long-head-biceps-tendinopathy", distinguishing: "Anterior pain over the bicipital groove with positive biceps loading tests." },
     { name: "Septic arthritis or septic bursitis", distinguishing: "Fever, hot red swollen shoulder and systemic illness; needs same-day review." },
     { name: "Cervical radiculopathy", id: "cervical-radiculopathy", distinguishing: "Neck-related pain with dermatomal symptoms and neck movements that reproduce arm pain." },
@@ -225,7 +225,7 @@ export default {
   redFlags: [
     "Fever, hot red swollen shoulder, systemic illness or recent injection or surgery: possible septic arthritis or bursitis, which can mimic an acute resorptive episode. Same-day medical review.",
     "Chest pain or pressure, breathlessness or sweating with shoulder pain: possible cardiac cause. Seek emergency assessment.",
-    "Sudden loss of strength with a lag or drop-arm sign: possible cuff tear [r10]. Arrange early imaging and an orthopaedic opinion.",
+    "Sudden loss of strength with a lag or drop-arm sign: possible cuff tear [r11]. Arrange early imaging and an orthopaedic opinion.",
     "Unremitting night pain, weight loss or a history of cancer: consider malignancy or referred pain. Refer for medical assessment.",
     "Arm weakness with dermatomal loss, bilateral symptoms or marked neck pain: consider cervical radiculopathy or myelopathy; refer for spinal assessment.",
     "Greater tuberosity osteolysis on imaging: an uncommon variant associated with poorer outcomes, so refer for specialist review [r2].",
@@ -233,42 +233,42 @@ export default {
   ],
 
   management: {
-    principles: "Calcific tendinopathy is usually self-limiting, so management aims to control pain, protect function and keep the shoulder moving while the deposit runs its course [r2,r3]. The treatment evidence is mixed. High-energy shockwave therapy has moderate-quality GRADE evidence in one meta-analysis [r5], and a pooled analysis of randomised trials judged ESWT and ultrasound-guided needling reasonable as first-line options with surgery for refractory cases [r4]. In a large sham-controlled trial, however, ultrasound-guided lavage with corticosteroid and a corticosteroid injection alone were no better than sham at four or 24 months [r6], and a network meta-analysis found no gold standard for conservative treatment [r9]. Because most trials lack placebo controls and results improve over time in all groups, the best approach is shared decision-making based on the phase, pain severity, function and preferences. Start with education, analgesia and progressive movement and strengthening, consider minimally invasive treatment for persistent disabling pain, and reserve surgery for refractory cases [r3,r4,r7].",
+    principles: "Calcific tendinopathy is usually self-limiting, so management aims to control pain, protect function and keep the shoulder moving while the deposit runs its course [r2,r3]. The treatment evidence is mixed. High-energy shockwave therapy has moderate-quality GRADE evidence in one meta-analysis [r5], and a pooled analysis of randomised trials judged ESWT and ultrasound-guided needling reasonable as first-line options with surgery for refractory cases [r4]. In a large sham-controlled trial, however, ultrasound-guided lavage with corticosteroid and a corticosteroid injection alone were no better than sham at four or 24 months [r6], and a network meta-analysis found no gold standard for conservative treatment [r8]. Because most trials lack placebo controls and results improve over time in all groups, the best approach is shared decision-making based on the phase, pain severity, function and preferences. Start with education, analgesia and progressive movement and strengthening, consider minimally invasive treatment for persistent disabling pain, and reserve surgery for refractory cases [r3,r4,r7].",
     medical: [
       {
         name: "Analgesia (paracetamol, NSAIDs) and relative rest in the painful phase",
         description: "A review lists rest, NSAIDs, subacromial corticosteroid injections and shockwave therapy as the non-operative options, with non-operative treatment successful in up to 90% of patients [r3]. In vitro work suggests that NSAIDs and corticosteroids may influence tendon cell behaviour, but the clinical significance is unknown [r2]. Use the lowest effective dose and short courses.",
-        evidence: "limited", recommendation: "consider", refs: ["r3", "r2"]
+        evidence: "limited", recommendation: "consider", refs: ["r2", "r3"]
       },
       {
         name: "Subacromial corticosteroid injection",
         description: "In the BMJ trial, sham lavage plus 20 mg triamcinolone and lidocaine did not differ significantly from sham on the Oxford Shoulder Score at four months (difference 2.0, 95% CI −0.5 to 4.6), and no procedure was superior to sham at 24 months [r6]. A meta-analysis found that needling had not been shown to be better than ultrasound-guided subacromial corticosteroid injection [r5]. Corticosteroids can induce a fibrocartilaginous phenotype in tendon cells in vitro [r2]. It may give short-term pain relief to allow movement, but should not be repeated or relied on.",
-        evidence: "conflicting", recommendation: "consider", refs: ["r6", "r5", "r2"]
+        evidence: "conflicting", recommendation: "consider", refs: ["r2", "r5", "r6"]
       },
       {
         name: "High-energy extracorporeal shockwave therapy (ESWT)",
-        description: "A meta-analysis of 20 studies (1544 participants) found moderate-quality GRADE evidence that high-energy ESWT improves pain and function compared with other interventions [r5]. A review of ESWT across tendinopathies concluded that it is effective for calcific tendinitis but not better than other options for non-calcific upper limb tendinopathy [r12]. In a pooled analysis of randomised trials the mean pain (VAS) difference was −3.83 with ESWT [r4], and Constant score improvement after one year ranged from 26.3 to 41.5 points across ESWT, needling and arthroscopy [r7]. A prospective series of 115 patients found disintegration or disappearance of deposits in 47% after one session and 77% after two at six months [r8]. Treatment protocols and equipment vary and trials had methodological flaws [r5].",
-        evidence: "moderate", recommendation: "consider", refs: ["r5", "r12", "r4", "r7", "r8"]
+        description: "A meta-analysis of 20 studies (1544 participants) found moderate-quality GRADE evidence that high-energy ESWT improves pain and function compared with other interventions [r5]. A review of ESWT across tendinopathies concluded that it is effective for calcific tendinitis but not better than other options for non-calcific upper limb tendinopathy [r12]. In a pooled analysis of randomised trials the mean pain (VAS) difference was −3.83 with ESWT [r4], and Constant score improvement after one year ranged from 26.3 to 41.5 points across ESWT, needling and arthroscopy [r7]. A prospective series of 115 patients found disintegration or disappearance of deposits in 47% after one session and 77% after two at six months [r10]. Treatment protocols and equipment vary and trials had methodological flaws [r5].",
+        evidence: "moderate", recommendation: "consider", refs: ["r4", "r5", "r7", "r10", "r12"]
       },
       {
         name: "Ultrasound-guided needling or lavage (barbotage)",
-        description: "A pooled analysis reported a mean VAS difference of −4.83 and 67% complete radiographic resolution of the deposit after ultrasound-guided needling [r4]. A network meta-analysis of seven RCTs suggested that combined needling plus subacromial corticosteroid was superior to ESWT or injection alone [r11]. A separate network meta-analysis ranked needle aspiration among several options but found no gold standard [r9]. In contrast, the sham-controlled BMJ trial of 220 adults found no benefit of lavage plus steroid over sham at 24 months, and 143 of 218 patients needed supplementary treatment after four months [r6]. The balance of evidence is uncertain, and the procedure is usually offered after conservative care has failed.",
-        evidence: "conflicting", recommendation: "consider", refs: ["r4", "r11", "r9", "r6"]
+        description: "A pooled analysis reported a mean VAS difference of −4.83 and 67% complete radiographic resolution of the deposit after ultrasound-guided needling [r4]. A network meta-analysis of seven RCTs suggested that combined needling plus subacromial corticosteroid was superior to ESWT or injection alone [r13]. A separate network meta-analysis ranked needle aspiration among several options but found no gold standard [r8]. In contrast, the sham-controlled BMJ trial of 220 adults found no benefit of lavage plus steroid over sham at 24 months, and 143 of 218 patients needed supplementary treatment after four months [r6]. The balance of evidence is uncertain, and the procedure is usually offered after conservative care has failed.",
+        evidence: "conflicting", recommendation: "consider", refs: ["r4", "r6", "r8", "r13"]
       },
       {
         name: "Arthroscopic removal of the deposit for refractory cases",
-        description: "A meta-analysis of randomised trials found pooled Constant score differences of 38.35 for operative treatment compared with 22.01 for needling and 18.30 for ESWT, and complete radiographic resolution in 85% after surgery [r4]. A systematic review judged arthroscopy a very effective but more invasive secondary option, with the benefit of removing the deposit and adding subacromial decompression remaining unclear [r7]. A clinical guideline advises that patients with chronic calcific tendinitis should not be treated by subacromial decompression alone [r13]. Arthroscopic treatment is reported to give excellent results in more than 90% of people in a narrative review [r3], but trials directly comparing surgery with conservative care before failure are lacking [r4].",
-        evidence: "limited", recommendation: "consider", refs: ["r4", "r7", "r13", "r3"]
+        description: "A meta-analysis of randomised trials found pooled Constant score differences of 38.35 for operative treatment compared with 22.01 for needling and 18.30 for ESWT, and complete radiographic resolution in 85% after surgery [r4]. A systematic review judged arthroscopy a very effective but more invasive secondary option, with the benefit of removing the deposit and adding subacromial decompression remaining unclear [r7]. A clinical guideline advises that patients with chronic calcific tendinitis should not be treated by subacromial decompression alone [r9]. Arthroscopic treatment is reported to give excellent results in more than 90% of people in a narrative review [r3], but trials directly comparing surgery with conservative care before failure are lacking [r4].",
+        evidence: "limited", recommendation: "consider", refs: ["r3", "r4", "r7", "r9"]
       },
       {
         name: "Subacromial decompression (acromioplasty) alone",
-        description: "A level V clinical guideline states that patients with chronic calcific tendinitis, workers' compensation cases and partial-thickness tears should not be treated by subacromial decompression alone, and lists calcific tendinopathy among the factors for failure of the procedure [r13]. Any surgery should address the deposit.",
-        evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r13"]
+        description: "A level V clinical guideline states that patients with chronic calcific tendinitis, workers' compensation cases and partial-thickness tears should not be treated by subacromial decompression alone, and lists calcific tendinopathy among the factors for failure of the procedure [r9]. Any surgery should address the deposit.",
+        evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r9"]
       },
       {
         name: "Platelet-rich plasma and EDTA injections",
-        description: "A network meta-analysis ranked platelet-rich plasma and EDTA highest by probability for function and pain respectively, but concluded that evidence on conservative approaches is lacking and no gold standard is established [r9]. These are not established treatments, and the ranking comes from a small number of trials.",
-        evidence: "very-limited", recommendation: "consider", refs: ["r9"]
+        description: "A network meta-analysis ranked platelet-rich plasma and EDTA highest by probability for function and pain respectively, but concluded that evidence on conservative approaches is lacking and no gold standard is established [r8]. These are not established treatments, and the ranking comes from a small number of trials.",
+        evidence: "very-limited", recommendation: "consider", refs: ["r8"]
       }
     ],
     physio: [
@@ -284,7 +284,7 @@ export default {
       },
       {
         name: "Pain-guided loading and activity modification",
-        description: "Avoid forcing painful overhead or end-range positions in the resorptive phase, and maintain gentle movement to limit stiffness. Calcific tendinopathy can resemble adhesive capsulitis with painful stiffness [r9].",
+        description: "Avoid forcing painful overhead or end-range positions in the resorptive phase, and maintain gentle movement to limit stiffness. Calcific tendinopathy can resemble adhesive capsulitis with painful stiffness [r8].",
         evidence: "expert-opinion", recommendation: "recommended", refs: []
       },
       {
@@ -387,7 +387,7 @@ export default {
     ]
   },
 
-  prognosis: "The natural history is generally favourable. The deposit tends to be resorbed spontaneously and symptoms often resolve, although some people have persistent pain and reduced range at long follow-up [r2]. A review states that non-operative treatment is successful in up to 90% of patients, and that recovery may take up to several months [r3]. In a sham-controlled trial of adults with symptoms for at least three months, no procedure was superior to sham at 24 months, and 143 of 218 patients needed supplementary treatment after four months [r6]. In a 4-year prospective series of 115 patients treated with high-energy ESWT, 20% had undergone surgery and 59% of the remainder were followed up; 93% of those showed complete or partial resorption of the deposit and the Constant score rose from 45 to 85–88 [r8]. After one year, the Constant score improved by 26.3 to 41.5 points across ESWT, ultrasound-guided needling and arthroscopy in a systematic review [r7]. Recurrence rates were not reported in the sources reviewed here.",
+  prognosis: "The natural history is generally favourable. The deposit tends to be resorbed spontaneously and symptoms often resolve, although some people have persistent pain and reduced range at long follow-up [r2]. A review states that non-operative treatment is successful in up to 90% of patients, and that recovery may take up to several months [r3]. In a sham-controlled trial of adults with symptoms for at least three months, no procedure was superior to sham at 24 months, and 143 of 218 patients needed supplementary treatment after four months [r6]. In a 4-year prospective series of 115 patients treated with high-energy ESWT, 20% had undergone surgery and 59% of the remainder were followed up; 93% of those showed complete or partial resorption of the deposit and the Constant score rose from 45 to 85–88 [r10]. After one year, the Constant score improved by 26.3 to 41.5 points across ESWT, ultrasound-guided needling and arthroscopy in a systematic review [r7]. Recurrence rates were not reported in the sources reviewed here.",
   prevention: [
     "No established way to prevent calcific tendinopathy: the trigger is unknown [r2]",
     "Manage diabetes and thyroid disease with the usual medical care, since they are associated with calcification [r2]",
@@ -399,8 +399,8 @@ export default {
     "The painful phase is the resorptive phase: cystic, toothpaste-like deposits under pressure are associated with severe pain, whereas arc-shaped or fragmented deposits are associated with mild pain [r2]. A visible deposit on a radiograph does not by itself mean the shoulder is painful, since 7.8% of asymptomatic adults had one [r1].",
     "Reassure. Many cases settle with conservative care, with non-operative treatment reported as successful in up to 90% of patients, and the deposit often resorbs spontaneously [r2,r3].",
     "Be honest about the evidence for procedures. A sham-controlled trial found no benefit of lavage with corticosteroid at 24 months [r6], whereas pooled analyses of mostly uncontrolled or active-comparator studies show good outcomes [r4,r7].",
-    "Calcific tendinopathy can look like frozen shoulder: check passive external rotation and monitor stiffness [r9].",
-    "Do not offer subacromial decompression alone for chronic calcific tendinitis; surgery should address the deposit [r13]."
+    "Calcific tendinopathy can look like frozen shoulder: check passive external rotation and monitor stiffness [r8].",
+    "Do not offer subacromial decompression alone for chronic calcific tendinitis; surgery should address the deposit [r9]."
   ],
   related: ["degenerative-rotator-cuff-tear", "rotator-cuff-related-shoulder-pain", "frozen-shoulder", "traumatic-rotator-cuff-tear", "long-head-biceps-tendinopathy"],
 
@@ -412,12 +412,12 @@ export default {
     { id: "r5", citation: "Louwerens JK, Sierevelt IN, van Noort A, et al. Evidence for minimally invasive therapies in the management of chronic calcific tendinopathy of the rotator cuff: a systematic review and meta-analysis. J Shoulder Elbow Surg. 2014;23(8):1240-9.", pmid: "24774621", doi: "10.1016/j.jse.2014.02.002", type: "meta-analysis", year: 2014 },
     { id: "r6", citation: "Moosmayer S, Ekeberg OM, Hallgren HB, et al. Ultrasound guided lavage with corticosteroid injection versus sham lavage with and without corticosteroid injection for calcific tendinopathy of shoulder: randomised double blinded multi-arm study. BMJ. 2023;383:e076447.", pmid: "37821122", doi: "10.1136/bmj-2023-076447", type: "rct", year: 2023 },
     { id: "r7", citation: "Louwerens JK, Veltman ES, van Noort A, et al. The effectiveness of high-energy extracorporeal shockwave therapy versus ultrasound-guided needling versus arthroscopic surgery in the management of chronic calcific rotator cuff tendinopathy: a systematic review. Arthroscopy. 2016;32(1):165-75.", pmid: "26382637", doi: "10.1016/j.arthro.2015.06.049", type: "systematic-review", year: 2016 },
-    { id: "r8", citation: "Daecke W, Kusnierczak D, Loew M. Extracorporeal shockwave therapy (ESWT) in tendinosis calcarea of the rotator cuff: long-term results and efficacy [in German]. Orthopade. 2002;31(7):645-51.", pmid: "12219662", doi: "10.1007/s00132-002-0324-y", type: "cohort", year: 2002 },
-    { id: "r9", citation: "Moggio L, Marotta N, de Sire A, et al. Efficacy of conservative approaches on pain relief and function in patients with rotator cuff calcific tendinopathy: which is the best option? A systematic review and network meta-analysis. Orthop Surg. 2025;17(11):3048-66.", pmid: "41002287", doi: "10.1111/os.70175", type: "meta-analysis", year: 2025 },
-    { id: "r10", citation: "Hermans J, Luime JJ, Meuffels DE, et al. Does this patient with shoulder pain have rotator cuff disease? The Rational Clinical Examination systematic review. JAMA. 2013;310(8):837-47.", pmid: "23982370", doi: "10.1001/jama.2013.276187", type: "systematic-review", year: 2013 },
-    { id: "r11", citation: "Arirachakaran A, Boonard M, Yamaphai S, et al. Extracorporeal shock wave therapy, ultrasound-guided percutaneous lavage, corticosteroid injection and combined treatment for the treatment of rotator cuff calcific tendinopathy: a network meta-analysis of RCTs. Eur J Orthop Surg Traumatol. 2017;27(3):381-90.", pmid: "27554465", doi: "10.1007/s00590-016-1839-y", type: "meta-analysis", year: 2017 },
+    { id: "r8", citation: "Moggio L, Marotta N, de Sire A, et al. Efficacy of conservative approaches on pain relief and function in patients with rotator cuff calcific tendinopathy: which is the best option? A systematic review and network meta-analysis. Orthop Surg. 2025;17(11):3048-66.", pmid: "41002287", doi: "10.1111/os.70175", type: "meta-analysis", year: 2025 },
+    { id: "r9", citation: "Hohmann E, Shea K, Scheiderer B, et al. Indications for arthroscopic subacromial decompression: a level V evidence clinical guideline. Arthroscopy. 2020;36(3):913-22.", pmid: "31882271", doi: "10.1016/j.arthro.2019.06.012", type: "clinical-practice-guideline", year: 2020 },
+    { id: "r10", citation: "Daecke W, Kusnierczak D, Loew M. Extracorporeal shockwave therapy (ESWT) in tendinosis calcarea of the rotator cuff: long-term results and efficacy [in German]. Orthopade. 2002;31(7):645-51.", pmid: "12219662", doi: "10.1007/s00132-002-0324-y", type: "cohort", year: 2002 },
+    { id: "r11", citation: "Hermans J, Luime JJ, Meuffels DE, et al. Does this patient with shoulder pain have rotator cuff disease? The Rational Clinical Examination systematic review. JAMA. 2013;310(8):837-47.", pmid: "23982370", doi: "10.1001/jama.2013.276187", type: "systematic-review", year: 2013 },
     { id: "r12", citation: "Elgendy MH, Khalil SE, ElMeligie MM, et al. Effectiveness of extracorporeal shockwave therapy in treatment of upper and lower limb tendinopathies: a systematic review and meta-analysis. Physiother Res Int. 2024;29(1):e2042.", pmid: "37493215", doi: "10.1002/pri.2042", type: "meta-analysis", year: 2024 },
-    { id: "r13", citation: "Hohmann E, Shea K, Scheiderer B, et al. Indications for arthroscopic subacromial decompression: a level V evidence clinical guideline. Arthroscopy. 2020;36(3):913-22.", pmid: "31882271", doi: "10.1016/j.arthro.2019.06.012", type: "clinical-practice-guideline", year: 2020 }
+    { id: "r13", citation: "Arirachakaran A, Boonard M, Yamaphai S, et al. Extracorporeal shock wave therapy, ultrasound-guided percutaneous lavage, corticosteroid injection and combined treatment for the treatment of rotator cuff calcific tendinopathy: a network meta-analysis of RCTs. Eur J Orthop Surg Traumatol. 2017;27(3):381-90.", pmid: "27554465", doi: "10.1007/s00590-016-1839-y", type: "meta-analysis", year: 2017 }
   ],
 
   animation: {

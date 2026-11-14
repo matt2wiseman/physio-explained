@@ -66,7 +66,7 @@ export default {
       { name: "Medial malleolus and deltoid ligament", role: "The medial column. Its integrity is essential for stability in fibular fractures [r2]." },
       { name: "Syndesmosis (AITFL, interosseous ligament, PITFL)", role: "Holds the fibula against the tibia. Its disruption makes a Weber B or C fracture unstable and is under-recognised on plain radiographs [r7]." },
       { name: "Posterior malleolus", role: "Posterior tibial lip, with the PITFL attachment. Involved in trimalleolar fractures [r2]." },
-      { name: "Talar dome and plafond cartilage", role: "Weight-bearing surfaces that can be injured with the fracture. Osteochondral lesions and syndesmosis diastasis were the main prognostic factors in one arthroscopic series (clinical reasoning)." },
+      { name: "Talar dome and plafond cartilage", role: "Weight-bearing surfaces that can be bruised or damaged with the fracture. Osteochondral injury is a recognised cause of persistent pain (clinical reasoning)." },
       { name: "Tibialis posterior, peroneal and flexor tendons, and neurovascular bundle", role: "Pass close to the malleoli and can be injured or trapped; the posterior tibial neurovascular bundle runs behind the medial malleolus (standard anatomy)." }
     ]
   },
@@ -78,7 +78,7 @@ export default {
       { name: "Medial malleolus and deltoid ligament", effect: "Fracture or tear makes the injury unstable. An intact medial column allows non-operative care [r2]." },
       { name: "Syndesmosis", effect: "Injured in many Weber B and C fractures. Arthroscopy found diastasis in 66.0% of 53 fractures, more than stress radiographs (30.2%) [r7]." },
       { name: "Posterior malleolus", effect: "Fractured in trimalleolar injuries with PITFL attachment; affects joint congruity [r2]." },
-      { name: "Articular cartilage", effect: "Contusion or osteochondral injury can accompany the fracture. In a Chinese arthroscopic series of 42 patients, osteochondral lesions and syndesmosis diastasis were the most important prognostic factors for poor function (clinical reasoning; abstract read, small series)." },
+      { name: "Articular cartilage", effect: "Contusion or osteochondral injury can accompany the fracture and may explain persistent pain (clinical reasoning)." },
       { name: "Soft tissues and skin", effect: "Swelling, blisters and wound breakdown affect timing of surgery and infection risk; infection and wound breakdown occurred in 10% after surgery in older adults [r8]." },
       { name: "Neurovascular bundle", effect: "Can be compromised by displacement or dislocation (clinical reasoning)." }
     ],
@@ -124,8 +124,8 @@ export default {
     ],
     milestones: [
       { label: "Protected weight-bearing in cast or brace", day: 42, note: "Six weeks of cast or brace and protected weight-bearing in a randomised trial of non-operative Weber B fractures [r10]" },
-      { label: "Brace or cast comparison endpoint", day: 112, note: "Primary outcome at 16 weeks in the AIR trial [r12]" },
       { label: "Walking without aids in normal shoes", day: 84, note: "Typical for uncomplicated fractures (clinical convention)" },
+      { label: "Brace or cast comparison endpoint", day: 112, note: "Primary outcome at 16 weeks in the AIR trial [r12]" },
       { label: "Return to running", day: 120, note: "After union, with pain-free hopping (clinical convention)" },
       { label: "Return to sport or heavy work", day: 180, note: "Often 4–6 months or longer (clinical convention); at 6 months older adults averaged about 65/100 on the OMAS [r8]" }
     ],
@@ -221,7 +221,7 @@ export default {
         refs: ["r2", "r9"]
       },
       {
-        name: "Calf squeeze and Wells clinical screen for deep vein thrombosis",
+        name: "Calf examination for deep vein thrombosis",
         purpose: "Screen for DVT in patients immobilised after an ankle fracture",
         procedure: "Palpate the calf for tenderness, measure calf circumference difference and ask about leg pain, swelling, chest pain or breathlessness.",
         positive: "Unilateral calf swelling, tenderness or any symptom of pulmonary embolism: refer urgently",
@@ -293,7 +293,7 @@ export default {
       },
       {
         name: "Syndesmotic assessment and fixation during fracture surgery",
-        description: "Syndesmotic injury is common in Weber B and C fractures: arthroscopy found diastasis in 66.0% of 53 cases, versus 30.2% on intraoperative stress radiographs, and 31 of 34 patients with screws had healed ligaments at second-look arthroscopy [r7]. In 236 patients with syndesmotic screws, 16 complications occurred in 15 patients (synostosis 11, screw breakage 4, late diastasis 1), and the authors suggest a screw be placed when in doubt [r6b]. The evidence is from case series.",
+        description: "Syndesmotic injury is common in Weber B and C fractures: arthroscopy found diastasis in 66.0% of 53 cases, versus 30.2% on intraoperative stress radiographs, and 31 of 34 patients with screws had healed ligaments at second-look arthroscopy [r7]. In 236 patients with syndesmotic screws, 16 complications occurred in 15 patients (synostosis 11, screw breakage 4, late diastasis 1), and the authors suggest a screw be placed when in doubt [r17]. The evidence is from case series.",
         evidence: "limited", recommendation: "consider", refs: ["r7", "r17"]
       }
     ],
@@ -421,8 +421,7 @@ export default {
     "Stress radiograph thresholds differ (5 mm on external rotation stress, above 4 mm on gravity stress), so rely on the surgeon's judgement, not a single number [r5,r10].",
     "The syndesmosis is easy to miss: arthroscopy found diastasis in 66.0% of Weber B or C fractures, versus 30.2% on intraoperative stress radiographs [r7].",
     "Older adults may do as well with casting as with surgery, but check reduction closely: 19% converted to surgery and malunion was more common [r8].",
-    "Early weight-bearing helped function at 6–9 weeks and was safe in trials, but the benefit faded by 6 months; always work to the surgeon's protocol [r11,r13].",
-    "Expect stiffness: dorsiflexion was about half the other side in one fracture-dislocation series, so put range work early in the plan [r4]."
+    "Early weight-bearing helped function at 6–9 weeks and was safe in trials, but the benefit faded by 6 months; always work to the surgeon's protocol [r11,r13]."
   ],
   related: ["high-ankle-sprain", "lateral-ankle-sprain", "medial-ankle-sprain", "osteochondral-lesion-talus", "fifth-metatarsal-fracture", "lisfranc-injury"],
 

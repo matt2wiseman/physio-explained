@@ -19,10 +19,10 @@ export default {
     { label: "Peak age", value: "Young adults, mean age about 40 years in randomised trials, mostly men" },
     { label: "Incidence", value: "About 9% of injuries to the shoulder girdle; one of the most common shoulder injuries in sport-active people" }
   ],
-  overview: "An acromioclavicular (AC) joint injury is a sprain or dislocation of the joint between the acromion and the lateral end of the clavicle. It accounts for about 9% of injuries to the shoulder girdle and is one of the most common shoulder injuries in sporting populations [r1,r5]. Injuries are graded by severity from grade I (a mild sprain) to grade VI (severe dislocation with displacement) [r2], following the Rockwood classification. A Rockwood grade III injury is defined by disruption of both the coracoclavicular (CC) and AC ligaments, and the ISAKOS Upper Extremity Committee suggested splitting it into IIIA (a stable AC joint with no overriding of the clavicle on a cross-body adduction view and no significant scapular dysfunction) and IIIB (an unstable joint with therapy-resistant scapular dysfunction and an overriding clavicle) [r3]. A European Delphi consensus judged the Rockwood classification, as modified by ISAKOS, to be valid [r4].\n\nGrades I and II respond favourably to non-operative care, whereas grades IV to VI often require surgical reconstruction [r1,r2]. Grade III is the controversial group. A Cochrane review of five randomised and one quasi-randomised trial (357 mainly young, male adults with acute dislocation) found low-quality evidence that surgery gave no additional benefit in function, return to former activities (57 of 67 versus 62 of 70) or quality of life at one year, and that function was better at six weeks with conservative treatment; surgery caused more adverse events (45 of 168 versus 16 of 174), mostly in older studies using now-outdated devices [r5]. A meta-analysis of 10 studies of grade III injuries found no significant differences in pain or functional scores, more coracoclavicular ligament ossification and lateral clavicle osteolysis after surgery, but better maintenance of anatomical reduction with surgery [r6]. In a randomised trial of 124 patients with grade III or V dislocations, hook plate surgery and physiotherapy gave similar results at 6, 12 and 24 months, non-operative treatment was better at 3 months, and 11 patients (18%) in the non-operative arm had surgery within 19 months [r7].\n\nThe evidence is not as certain as these results suggest. A fragility analysis of seven randomised trials (362 patients) found that the conclusion that non-operative care is non-inferior is statistically fragile: four trials favoured operative treatment and losses to follow-up exceeded the fragility threshold in three of seven trials [r8]. Few trials included grade IV or V injuries, and the trials analysed did not include grade VI. The practical approach is to grade the injury accurately, start with a supervised non-operative program for grades I to III, and refer early when the injury is high grade, skin is threatened, there is neurovascular compromise, or the shoulder remains unstable and dysfunctional despite rehabilitation.",
+  overview: "An acromioclavicular (AC) joint injury is a sprain or dislocation of the joint between the acromion and the lateral end of the clavicle. It accounts for about 9% of injuries to the shoulder girdle and is one of the most common shoulder injuries in sporting populations [r1,r2]. Injuries are graded by severity from grade I (a mild sprain) to grade VI (severe dislocation with displacement) [r3], following the Rockwood classification. A Rockwood grade III injury is defined by disruption of both the coracoclavicular (CC) and AC ligaments, and the ISAKOS Upper Extremity Committee suggested splitting it into IIIA (a stable AC joint with no overriding of the clavicle on a cross-body adduction view and no significant scapular dysfunction) and IIIB (an unstable joint with therapy-resistant scapular dysfunction and an overriding clavicle) [r4]. A European Delphi consensus judged the Rockwood classification, as modified by ISAKOS, to be valid [r5].\n\nGrades I and II respond favourably to non-operative care, whereas grades IV to VI often require surgical reconstruction [r1,r3]. Grade III is the controversial group. A Cochrane review of five randomised and one quasi-randomised trial (357 mainly young, male adults with acute dislocation) found low-quality evidence that surgery gave no additional benefit in function, return to former activities (57 of 67 versus 62 of 70) or quality of life at one year, and that function was better at six weeks with conservative treatment; surgery caused more adverse events (45 of 168 versus 16 of 174), mostly in older studies using now-outdated devices [r2]. A meta-analysis of 10 studies of grade III injuries found no significant differences in pain or functional scores, more coracoclavicular ligament ossification and lateral clavicle osteolysis after surgery, but better maintenance of anatomical reduction with surgery [r6]. In a randomised trial of 124 patients with grade III or V dislocations, hook plate surgery and physiotherapy gave similar results at 6, 12 and 24 months, non-operative treatment was better at 3 months, and 11 patients (18%) in the non-operative arm had surgery within 19 months [r7].\n\nThe evidence is not as certain as these results suggest. A fragility analysis of seven randomised trials (362 patients) found that the conclusion that non-operative care is non-inferior is statistically fragile: four trials favoured operative treatment and losses to follow-up exceeded the fragility threshold in three of seven trials [r8]. Few trials included grade IV or V injuries, and the trials analysed did not include grade VI. The practical approach is to grade the injury accurately, start with a supervised non-operative program for grades I to III, and refer early when the injury is high grade, skin is threatened, there is neurovascular compromise, or the shoulder remains unstable and dysfunctional despite rehabilitation.",
 
   epidemiology: {
-    text: "AC joint injuries account for about 9% of injuries to the shoulder girdle [r1] and are among the most common shoulder injuries in sport-active people [r5]. Participants in randomised trials were mainly young men: 91% of 124 patients (mean age 40 years) in a hook plate trial [r7], and 92.3% (mean age 39.2 years) across seven randomised trials analysed for fragility [r8]. Most trials included acute Rockwood grade III injuries, fewer included grade IV or V [r8]. In a retrospective study of severe injuries in elite cyclists, AC joint separations were among the injuries analysed, but it was a small subgroup [r13]. Population incidence rates by age, sex and sport were not obtained in the sources reviewed here.",
+    text: "AC joint injuries account for about 9% of injuries to the shoulder girdle [r1] and are among the most common shoulder injuries in sport-active people [r2]. Participants in randomised trials were mainly young men: 91% of 124 patients (mean age 40 years) in a hook plate trial [r7], and 92.3% (mean age 39.2 years) across seven randomised trials analysed for fragility [r8]. Most trials included acute Rockwood grade III injuries, fewer included grade IV or V [r8]. In a retrospective study of severe injuries in elite cyclists, AC joint separations were among the injuries analysed, but it was a small subgroup [r9]. Population incidence rates by age, sex and sport were not obtained in the sources reviewed here.",
     riskFactors: {
       intrinsic: [
         "Male sex and young adult age: trial populations were 91–92% male with a mean age of about 40 years [r7,r8]",
@@ -30,8 +30,8 @@ export default {
         "Individual variation in ligament anatomy and stiffness, which affects the stability of the joint [r10]"
       ],
       extrinsic: [
-        "Contact and collision sports, where falls and blows to the shoulder are common [r5]",
-        "Cycling and other sports with falls onto the shoulder [r13]",
+        "Contact and collision sports, where falls and blows to the shoulder are common [r2]",
+        "Cycling and other sports with falls onto the shoulder [r9]",
         "Falls onto the point of the shoulder with the arm adducted, including falls from height and road traffic crashes (high-energy for grades IV–VI)",
         "Absence of protective padding (unproven benefit)"
       ]
@@ -43,45 +43,45 @@ export default {
     sequence: [
       "A fall or collision lands directly on the point of the shoulder (the acromion) with the arm held by the side.",
       "The impact drives the acromion and scapula downwards and medially, while the clavicle is held by the sternoclavicular joint and its muscles.",
-      "The AC joint capsule and AC ligaments stretch and then tear: a grade I or II injury, the capsuloligamentous structures that statically stabilise the joint [r9].",
-      "If the force continues, the coracoclavicular (conoid and trapezoid) ligaments fail: a grade III injury, with the scapula dropping away from the clavicle so that the clavicle looks elevated [r3].",
+      "The AC joint capsule and AC ligaments stretch and then tear: a grade I or II injury, the capsuloligamentous structures that statically stabilise the joint [r11].",
+      "If the force continues, the coracoclavicular (conoid and trapezoid) ligaments fail: a grade III injury, with the scapula dropping away from the clavicle so that the clavicle looks elevated [r4].",
       "With higher energy, the deltotrapezial fascia is stripped from the clavicle (grade V), or the clavicle is displaced posteriorly (grade IV) or inferiorly (grade VI).",
-      "Instability becomes multidirectional, affecting inferior and anteroposterior translation and rotation, so scapular control and the dynamic stabilisers (trapezius and deltoid) become critical [r9,r10]."
+      "Instability becomes multidirectional, affecting inferior and anteroposterior translation and rotation, so scapular control and the dynamic stabilisers (trapezius and deltoid) become critical [r10,r11]."
     ],
     variants: [
       { name: "Direct fall onto the point of the shoulder", description: "The classic mechanism in contact sport and cycling; the acromion is driven downwards." },
       { name: "Indirect injury via the outstretched arm", description: "Force transmitted up the arm drives the humeral head into the acromion; less common." },
       { name: "High-energy trauma (grades IV–VI)", description: "Posterior, markedly superior or inferior displacement, sometimes with skin compromise and associated injuries such as coracoid or clavicle fractures and rib injuries." },
-      { name: "Horizontal (posterior) instability", description: "Instability in the anteroposterior plane is assessed by clinical override during cross-body adduction; 93% of the ESSKA panel agreed on this test [r4]." },
-      { name: "Chronic or re-injury (more than 3 weeks)", description: "The consensus line between acute and chronic injury is 3 weeks, with different surgical approaches in chronic cases [r4]." }
+      { name: "Horizontal (posterior) instability", description: "Instability in the anteroposterior plane is assessed by clinical override during cross-body adduction; 93% of the ESSKA panel agreed on this test [r5]." },
+      { name: "Chronic or re-injury (more than 3 weeks)", description: "The consensus line between acute and chronic injury is 3 weeks, with different surgical approaches in chronic cases [r5]." }
     ]
   },
 
   anatomy: {
-    text: "The shoulder girdle consists of three joints and two mobile regions [r9]. The AC joint is statically stabilised by the AC and coracoclavicular capsuloligamentous structures and dynamically stabilised by the trapezius, deltoid and deltotrapezial fascia. During arm elevation, the clavicle elevates, protracts and rotates posteriorly through the sternoclavicular joint while the scapula tilts posteriorly and rotates upward [r9]. The AC capsule and ligaments control mainly horizontal (anteroposterior) stability, while the conoid and trapezoid ligaments from the coracoid to the clavicle control vertical stability. The subclavian vessels and brachial plexus pass behind the clavicle and over the first rib, which is why high-energy injuries need a neurovascular check.",
+    text: "The shoulder girdle consists of three joints and two mobile regions [r11]. The AC joint is statically stabilised by the AC and coracoclavicular capsuloligamentous structures and dynamically stabilised by the trapezius, deltoid and deltotrapezial fascia. During arm elevation, the clavicle elevates, protracts and rotates posteriorly through the sternoclavicular joint while the scapula tilts posteriorly and rotates upward [r11]. The AC capsule and ligaments control mainly horizontal (anteroposterior) stability, while the conoid and trapezoid ligaments from the coracoid to the clavicle control vertical stability. The subclavian vessels and brachial plexus pass behind the clavicle and over the first rib, which is why high-energy injuries need a neurovascular check.",
     structures: [
-      { name: "AC joint capsule and AC ligaments", role: "Static stabilisers, mainly of horizontal (anteroposterior) translation; they fail first [r9]" },
+      { name: "AC joint capsule and AC ligaments", role: "Static stabilisers, mainly of horizontal (anteroposterior) translation; they fail first [r11]" },
       { name: "Conoid and trapezoid (coracoclavicular) ligaments", role: "Suspend the scapula from the clavicle and control vertical stability; conoid and trapezoid stiffness in a cadaveric model were about 34 and 28 N/mm [r10]" },
-      { name: "Trapezius, deltoid and deltotrapezial fascia", role: "Dynamic stabilisers of the AC joint and shoulder girdle [r9]" },
-      { name: "Clavicle (distal end)", role: "Strut that holds the scapula and arm away from the chest; elevates with arm elevation [r9]" },
+      { name: "Trapezius, deltoid and deltotrapezial fascia", role: "Dynamic stabilisers of the AC joint and shoulder girdle [r11]" },
+      { name: "Clavicle (distal end)", role: "Strut that holds the scapula and arm away from the chest; elevates with arm elevation [r11]" },
       { name: "Acromion and coracoid process", role: "Scapular attachments of the AC and coracoclavicular ligaments" },
       { name: "Sternoclavicular joint and subclavian vessels and brachial plexus", role: "Proximal pivot of the clavicle and the neurovascular bundle behind it; screened in high-energy injuries" }
     ]
   },
 
   pathophysiology: {
-    tissueDamage: "The injury is ligament failure under a sudden load that exceeds the capacity of the AC joint capsule and then the coracoclavicular ligaments, graded by how many structures fail and by the direction and amount of displacement [r2,r3]. In a cadaveric and computational model, the conoid, trapezoid and AC ligaments had free lengths of about 13.5, 11.8 and 11.0 mm and stiffnesses of about 34.3, 28.4 and 33.8 N/mm; sequential cutting of the coracoclavicular and AC ligaments produced multidirectional instability, and individual anatomy changed the stability of the joint [r10].\n\nOnce the coracoclavicular and AC ligaments fail, the scapula and arm sag away from the clavicle, which alters the scapulohumeral rhythm. The static stabilisers do not heal back to their original length reliably, so the dynamic stabilisers (trapezius, deltoid and the deltotrapezial fascia) take on the role of controlling the joint [r9]. Non-operative treatment tends to leave some loss of anatomical reduction, whereas surgical treatment was better at maintaining reduction but with more coracoclavicular ligament ossification and lateral clavicle osteolysis in a meta-analysis [r6]. The recurrence rate in a systematic review of surgery was 14% [r11].",
+    tissueDamage: "The injury is ligament failure under a sudden load that exceeds the capacity of the AC joint capsule and then the coracoclavicular ligaments, graded by how many structures fail and by the direction and amount of displacement [r3,r4]. In a cadaveric and computational model, the conoid, trapezoid and AC ligaments had free lengths of about 13.5, 11.8 and 11.0 mm and stiffnesses of about 34.3, 28.4 and 33.8 N/mm; sequential cutting of the coracoclavicular and AC ligaments produced multidirectional instability, and individual anatomy changed the stability of the joint [r10].\n\nOnce the coracoclavicular and AC ligaments fail, the scapula and arm sag away from the clavicle, which alters the scapulohumeral rhythm. The static stabilisers do not heal back to their original length reliably, so the dynamic stabilisers (trapezius, deltoid and the deltotrapezial fascia) take on the role of controlling the joint [r11]. Non-operative treatment tends to leave some loss of anatomical reduction, whereas surgical treatment was better at maintaining reduction but with more coracoclavicular ligament ossification and lateral clavicle osteolysis in a meta-analysis [r6]. The recurrence rate in a systematic review of surgery was 14% [r12].",
     structures: [
       { name: "AC joint capsule and AC ligaments", effect: "Stretch (grade I) then tear (grade II onwards), with loss of horizontal restraint [r10]" },
-      { name: "Conoid and trapezoid ligaments", effect: "Sprain (grade II) then rupture (grade III onwards), allowing the scapula to drop away from the clavicle [r3]" },
-      { name: "Deltotrapezial fascia", effect: "Stripped from the distal clavicle in higher-grade injuries (grade V), reducing dynamic support [r9]" },
+      { name: "Conoid and trapezoid ligaments", effect: "Sprain (grade II) then rupture (grade III onwards), allowing the scapula to drop away from the clavicle [r4]" },
+      { name: "Deltotrapezial fascia", effect: "Stripped from the distal clavicle in higher-grade injuries (grade V), reducing dynamic support [r11]" },
       { name: "Distal clavicle and acromion", effect: "Bone bruising or fracture can occur; later osteolysis of the lateral clavicle was more common after surgery [r6]" },
       { name: "Sternoclavicular joint, brachial plexus and subclavian vessels", effect: "Occasionally injured in high-energy trauma; screen neurovascular status" }
     ],
     muscles: [
-      { name: "Upper trapezius", effect: "Dynamic stabiliser of the clavicle and scapula; pain inhibition and altered recruitment after injury [r9]" },
-      { name: "Deltoid", effect: "Dynamic stabiliser; its anterior and middle fibres attach near the AC joint and are disrupted in severe injuries [r9]" },
-      { name: "Scapular stabilisers (serratus anterior, lower trapezius, rhomboids)", effect: "Altered scapular control; therapy-resistant scapular dysfunction defines the IIIB subtype [r3]" },
+      { name: "Upper trapezius", effect: "Dynamic stabiliser of the clavicle and scapula; pain inhibition and altered recruitment after injury [r11]" },
+      { name: "Deltoid", effect: "Dynamic stabiliser; its anterior and middle fibres attach near the AC joint and are disrupted in severe injuries [r11]" },
+      { name: "Scapular stabilisers (serratus anterior, lower trapezius, rhomboids)", effect: "Altered scapular control; therapy-resistant scapular dysfunction defines the IIIB subtype [r4]" },
       { name: "Rotator cuff", effect: "Pain-related inhibition and reduced elevation; maintained strength matters for return to overhead activity (clinical observation)" }
     ],
     cellular: [
@@ -93,8 +93,8 @@ export default {
     systems: [
       { system: "Nervous system", effect: "Acute nociceptive pain at the AC joint and radiating to the trapezius and neck; brachial plexus traction is uncommon but should be screened in high-energy injuries" },
       { system: "Vascular", effect: "Bleeding and swelling over the joint; subclavian vessel injury is rare but possible in high-energy trauma" },
-      { system: "Musculoskeletal chain", effect: "Altered scapular position (drooping shoulder) and rhythm, with the cervical spine and sternoclavicular joint compensating [r9]" },
-      { system: "Psychological", effect: "Athletes may be anxious about re-injury and the visible bump; cosmetic dissatisfaction is uncertain [r5]" },
+      { system: "Musculoskeletal chain", effect: "Altered scapular position (drooping shoulder) and rhythm, with the cervical spine and sternoclavicular joint compensating [r11]" },
+      { system: "Psychological", effect: "Athletes may be anxious about re-injury and the visible bump; cosmetic dissatisfaction is uncertain [r2]" },
       { system: "Inflammatory", effect: "Acute synovitis of the AC joint and soft-tissue oedema, which settle over weeks" }
     ]
   },
@@ -103,30 +103,30 @@ export default {
     system: "Rockwood classification (I–VI), as modified by ISAKOS (type III divided into IIIA and IIIB). Descriptions are the classic Rockwood definitions and were not all re-verified in the abstracts reviewed here.",
     grades: [
       { grade: "Type I", description: "Sprain of the AC ligaments; the coracoclavicular ligaments and deltotrapezial fascia are intact; no displacement.", prognosis: "Grades I and II respond favourably to non-operative management [r1]." },
-      { grade: "Type II", description: "AC ligaments torn and the coracoclavicular ligaments sprained or partially torn; the distal clavicle is slightly elevated.", prognosis: "Non-operative management is the consensus [r1,r2]." },
-      { grade: "Type IIIA", description: "Both AC and coracoclavicular ligaments are disrupted, but the joint is stable (no overriding of the clavicle on a cross-body adduction view) and there is no significant scapular dysfunction [r3].", prognosis: "Usually managed non-operatively [r3]." },
-      { grade: "Type IIIB", description: "Disruption of both ligament groups with an unstable joint: therapy-resistant scapular dysfunction and an overriding clavicle on a cross-body adduction view [r3].", prognosis: "More likely to need surgery if rehabilitation fails; the best treatment is debated [r3,r5]." },
-      { grade: "Type IV", description: "As for type III, with posterior displacement of the clavicle (best seen on an axillary view), sometimes tenting the trapezius.", prognosis: "Often surgical reconstruction [r1,r2]; few randomised trials included type IV [r8]." },
-      { grade: "Type V", description: "As for type III, with marked superior displacement of the clavicle and detachment of the deltotrapezial fascia.", prognosis: "Often surgical reconstruction [r1,r2], but a randomised trial in type V found no difference between hook plate surgery and non-operative care at 24 months (Constant score 91 versus 90) [r7]." },
-      { grade: "Type VI", description: "Inferior displacement of the clavicle below the acromion or coracoid; rare and high energy.", prognosis: "Surgical reconstruction; neurovascular injury is possible [r1,r2]." }
+      { grade: "Type II", description: "AC ligaments torn and the coracoclavicular ligaments sprained or partially torn; the distal clavicle is slightly elevated.", prognosis: "Non-operative management is the consensus [r1,r3]." },
+      { grade: "Type IIIA", description: "Both AC and coracoclavicular ligaments are disrupted, but the joint is stable (no overriding of the clavicle on a cross-body adduction view) and there is no significant scapular dysfunction [r4].", prognosis: "Usually managed non-operatively [r4]." },
+      { grade: "Type IIIB", description: "Disruption of both ligament groups with an unstable joint: therapy-resistant scapular dysfunction and an overriding clavicle on a cross-body adduction view [r4].", prognosis: "More likely to need surgery if rehabilitation fails; the best treatment is debated [r2,r4]." },
+      { grade: "Type IV", description: "As for type III, with posterior displacement of the clavicle (best seen on an axillary view), sometimes tenting the trapezius.", prognosis: "Often surgical reconstruction [r1,r3]; few randomised trials included type IV [r8]." },
+      { grade: "Type V", description: "As for type III, with marked superior displacement of the clavicle and detachment of the deltotrapezial fascia.", prognosis: "Often surgical reconstruction [r1,r3], but a randomised trial in type V found no difference between hook plate surgery and non-operative care at 24 months (Constant score 91 versus 90) [r7]." },
+      { grade: "Type VI", description: "Inferior displacement of the clavicle below the acromion or coracoid; rare and high energy.", prognosis: "Surgical reconstruction; neurovascular injury is possible [r1,r3]." }
     ]
   },
 
   timeframes: {
-    summary: "Ligament healing follows the usual sequence of inflammation, proliferation and remodelling, but the clinical recovery of function is faster than structural healing. In randomised trials, function was better with non-operative care than with surgery at 6 weeks to 3 months and similar thereafter [r5,r7]. The ranges below are typical clinical ranges, not trial-derived.",
+    summary: "Ligament healing follows the usual sequence of inflammation, proliferation and remodelling, but the clinical recovery of function is faster than structural healing. In randomised trials, function was better with non-operative care than with surgery at 6 weeks to 3 months and similar thereafter [r2,r7]. The ranges below are typical clinical ranges, not trial-derived.",
     healing: [
-      { phase: "Inflammation and protection", startDay: 0, endDay: 14, description: "Pain and swelling settle; a sling for comfort for a few days to 2 weeks (clinical convention) with early pain-free movement [r5]." },
+      { phase: "Inflammation and protection", startDay: 0, endDay: 14, description: "Pain and swelling settle; a sling for comfort for a few days to 2 weeks (clinical convention) with early pain-free movement [r2]." },
       { phase: "Proliferation and range of motion", startDay: 5, endDay: 42, description: "Active motion and scapular control are restored; collagen is laid down but is still weak." },
       { phase: "Remodelling and strengthening", startDay: 42, endDay: 365, description: "Progressive strengthening of trapezius, deltoid and the scapular muscles; collagen remodels over months, and a visible bump can persist [r6]." }
     ],
     milestones: [
       { label: "Sling weaned (comfort)", day: 14, note: "Typical for grades I–III; follow clinician advice" },
-      { label: "Function better with non-operative care than surgery at 6 weeks", day: 42, note: "Low-quality evidence [r5]" },
+      { label: "Function better with non-operative care than surgery at 6 weeks", day: 42, note: "Low-quality evidence [r2]" },
       { label: "Non-operative better than surgery at 3 months, similar from 6 months", day: 90, note: "Constant score, SSV and QuickDASH in a randomised trial of grade III and V injuries [r7]" },
       { label: "Return to non-contact training", day: 84, note: "Clinical convention for grades I–II; longer for III" },
       { label: "Return to contact sport (grade III)", day: 120, note: "Criteria-based; commonly about 3–4 months" }
     ],
-    returnToSport: "Criteria-based, not time-based. Commonly 2–6 weeks for grade I, 6–12 weeks for grade II and about 3–4 months for grade III before contact or collision sport (clinical conventions); after surgery, follow the surgeon's protocol. Return to pre-injury performance can take longer than return to sport [r13]."
+    returnToSport: "Criteria-based, not time-based. Commonly 2–6 weeks for grade I, 6–12 weeks for grade II and about 3–4 months for grade III before contact or collision sport (clinical conventions); after surgery, follow the surgeon's protocol. Return to pre-injury performance can take longer than return to sport [r9]."
   },
 
   clinicalPresentation: {
@@ -143,8 +143,8 @@ export default {
       "Prominent distal clavicle with a step deformity and a drooping shoulder (grade III and above)",
       "Pain on cross-body adduction and on overhead elevation",
       "Piano-key sign: the distal clavicle springs back after pressure (unstable injuries)",
-      "Clavicular override on cross-body adduction in the IIIB subtype and horizontal instability [r3,r4]",
-      "Altered scapular position or dyskinesis, which is therapy-resistant in IIIB [r3]"
+      "Clavicular override on cross-body adduction in the IIIB subtype and horizontal instability [r4,r5]",
+      "Altered scapular position or dyskinesis, which is therapy-resistant in IIIB [r4]"
     ]
   },
 
@@ -191,26 +191,26 @@ export default {
       "Sport-specific tasks such as tackling, throwing and falling"
     ],
     specialTests: [
-      { name: "Cross-body adduction test with override", purpose: "AC joint pain and horizontal instability", procedure: "Elevate the arm to 90° and horizontally adduct it across the chest while observing the distal clavicle, or assess the clinical override of the clavicle on the acromion.", positive: "Pain at the AC joint and clinical override of the clavicle indicate horizontal instability. A consensus panel agreed (93%) on clinical override testing during the cross-body test, but accuracy figures were not established.", refs: ["r4"] },
+      { name: "Cross-body adduction test with override", purpose: "AC joint pain and horizontal instability", procedure: "Elevate the arm to 90° and horizontally adduct it across the chest while observing the distal clavicle, or assess the clinical override of the clavicle on the acromion.", positive: "Pain at the AC joint and clinical override of the clavicle indicate horizontal instability. A consensus panel agreed (93%) on clinical override testing during the cross-body test, but accuracy figures were not established.", refs: ["r5"] },
       { name: "Piano-key sign", purpose: "Vertical instability of the distal clavicle", procedure: "With the patient seated and the arm supported, press down on the distal clavicle and observe it spring back.", positive: "The distal clavicle depresses and springs back up, indicating coracoclavicular disruption. Diagnostic accuracy was not established in the sources reviewed.", refs: [] },
-      { name: "Bilateral comparison of the distal clavicle height and the scapular position", purpose: "To grade vertical displacement and scapular dysfunction", procedure: "Compare both shoulders in standing from the front and behind, at rest and during elevation.", positive: "An elevated distal clavicle or scapular dyskinesis that does not correct with therapy suggests a IIIB injury [r3].", refs: ["r3"] }
+      { name: "Bilateral comparison of the distal clavicle height and the scapular position", purpose: "To grade vertical displacement and scapular dysfunction", procedure: "Compare both shoulders in standing from the front and behind, at rest and during elevation.", positive: "An elevated distal clavicle or scapular dyskinesis that does not correct with therapy suggests a IIIB injury [r4].", refs: ["r4"] }
     ],
     clinicalRules: [
-      { name: "ISAKOS modification of Rockwood III", description: "IIIA is a stable joint without clavicular override on a cross-body adduction view and without significant scapular dysfunction; IIIB is unstable with therapy-resistant scapular dysfunction and an overriding clavicle [r3]. This subdivision is intended to guide which grade III injuries are more likely to need surgery." },
-      { name: "Acute versus chronic", description: "The consensus line between acute and chronic cases is 3 weeks [r4]." },
+      { name: "ISAKOS modification of Rockwood III", description: "IIIA is a stable joint without clavicular override on a cross-body adduction view and without significant scapular dysfunction; IIIB is unstable with therapy-resistant scapular dysfunction and an overriding clavicle [r4]. This subdivision is intended to guide which grade III injuries are more likely to need surgery." },
+      { name: "Acute versus chronic", description: "The consensus line between acute and chronic cases is 3 weeks [r5]." },
       { name: "Always exclude an associated injury", description: "Examine the whole clavicle, sternoclavicular joint, coracoid, ribs and neurovascular status after high-energy falls; an apparent AC injury can coexist with a distal clavicle or coracoid fracture." }
     ],
     outcomeMeasures: [
       { name: "Constant–Murley score", use: "Primary outcome in the hook plate versus physiotherapy trial [r7]" },
-      { name: "Subjective Shoulder Value (SSV) and QuickDASH", use: "Patient-reported function in randomised trials [r7,r12]" },
-      { name: "American Shoulder and Elbow Surgeons (ASES) score", use: "Used in the sling versus brace trial [r12]" },
-      { name: "Disabilities of the Arm, Shoulder and Hand (DASH) questionnaire", use: "Function at one year in the Cochrane meta-analysis [r5]" },
-      { name: "Coracoclavicular index (CC distance ratio)", use: "Vertical displacement on bilateral AP radiographs [r12]" }
+      { name: "Subjective Shoulder Value (SSV) and QuickDASH", use: "Patient-reported function in randomised trials [r7,r13]" },
+      { name: "American Shoulder and Elbow Surgeons (ASES) score", use: "Used in the sling versus brace trial [r13]" },
+      { name: "Disabilities of the Arm, Shoulder and Hand (DASH) questionnaire", use: "Function at one year in the Cochrane meta-analysis [r2]" },
+      { name: "Coracoclavicular index (CC distance ratio)", use: "Vertical displacement on bilateral AP radiographs [r13]" }
     ],
     imaging: [
-      { modality: "Plain radiographs: true AP (or bilateral Zanca) view", indication: "All suspected AC injuries to grade the injury and exclude fracture", findings: "AC joint widening, distal clavicle elevation and coracoclavicular distance compared with the other side; a true AP or bilateral Zanca view is sufficient for diagnosis [r4]; the CC index was calculated from bilateral non-weighted AP radiographs in a trial [r12]" },
+      { modality: "Plain radiographs: true AP (or bilateral Zanca) view", indication: "All suspected AC injuries to grade the injury and exclude fracture", findings: "AC joint widening, distal clavicle elevation and coracoclavicular distance compared with the other side; a true AP or bilateral Zanca view is sufficient for diagnosis [r5]; the CC index was calculated from bilateral non-weighted AP radiographs in a trial [r13]" },
       { modality: "Axillary view", indication: "Suspected posterior displacement (grade IV)", findings: "Posterior displacement of the clavicle relative to the acromion (clinical convention)" },
-      { modality: "Cross-body adduction view or clinical override", indication: "To distinguish IIIA from IIIB and detect horizontal instability", findings: "Overriding of the clavicle on the cross-body adduction view indicates IIIB [r3,r4]" },
+      { modality: "Cross-body adduction view or clinical override", indication: "To distinguish IIIA from IIIB and detect horizontal instability", findings: "Overriding of the clavicle on the cross-body adduction view indicates IIIB [r4,r5]" },
       { modality: "Ultrasound or MRI", indication: "Associated injuries (cuff, labrum, coracoid) or an unclear diagnosis", findings: "Ligament disruption and associated lesions (not routine; clinical convention)" }
     ]
   },
@@ -232,74 +232,74 @@ export default {
     "Chest pain, breathlessness, a thoracic injury or rib fractures after a high-energy fall: emergency department assessment for pneumothorax or other injury.",
     "High-energy mechanism with neck pain or head injury: protect the cervical spine and refer to the emergency department.",
     "Posterior sternoclavicular displacement or signs of airway or vascular compromise (see SC joint injury): emergency.",
-    "Persistent instability with therapy-resistant scapular dysfunction after about 3 months of rehabilitation (IIIB-type): refer to an orthopaedic shoulder specialist [r3].",
+    "Persistent instability with therapy-resistant scapular dysfunction after about 3 months of rehabilitation (IIIB-type): refer to an orthopaedic shoulder specialist [r4].",
     "Fever, a hot swollen joint or wound drainage after surgery: infection; same-day review."
   ],
 
   management: {
-    principles: "Grade the injury, exclude associated injuries and start with a supervised non-operative program for grades I to III, with early return of movement and progressive strengthening. Grades I and II respond favourably to conservative care, and grades IV to VI often need surgical reconstruction [r1,r2]. Grade III is the contested area. Randomised trials and meta-analyses found no clear functional advantage of surgery at one to two years, a faster early recovery with non-operative care, and more complications with surgery, mostly with older devices [r5,r6,r7]; yet 18% of the non-operative group in one trial needed surgery within 19 months [r7], a fragility analysis suggests the evidence is less certain than it appears [r8], and surgery maintained anatomical reduction better [r6]. Decisions should be shared and based on grade (including IIIA versus IIIB [r3]), scapular function, occupation or sport, and patient priorities (function versus the visible bump). Acute and chronic cases are separated at 3 weeks, and chronic cases may need biological reconstruction [r4].",
+    principles: "Grade the injury, exclude associated injuries and start with a supervised non-operative program for grades I to III, with early return of movement and progressive strengthening. Grades I and II respond favourably to conservative care, and grades IV to VI often need surgical reconstruction [r1,r3]. Grade III is the contested area. Randomised trials and meta-analyses found no clear functional advantage of surgery at one to two years, a faster early recovery with non-operative care, and more complications with surgery, mostly with older devices [r2,r6,r7]; yet 18% of the non-operative group in one trial needed surgery within 19 months [r7], a fragility analysis suggests the evidence is less certain than it appears [r8], and surgery maintained anatomical reduction better [r6]. Decisions should be shared and based on grade (including IIIA versus IIIB [r4]), scapular function, occupation or sport, and patient priorities (function versus the visible bump). Acute and chronic cases are separated at 3 weeks, and chronic cases may need biological reconstruction [r5].",
     medical: [
       {
         name: "Sling for comfort and analgesia",
-        description: "In the trials, non-operative groups used a sling or similar device, with exercise-based rehabilitation [r5]. In a randomised trial of 35 patients with grade III injuries, a brace and a sling gave similar results (Constant score at 12 weeks 81 versus 82; ASES 83 versus 82), with no difference in radiological coracoclavicular index [r12]. Use a sling for comfort for days to about 2 weeks only, with early pain-free movement, plus paracetamol or NSAIDs as needed.",
-        evidence: "limited", recommendation: "consider", refs: ["r5", "r12"]
+        description: "In the trials, non-operative groups used a sling or similar device, with exercise-based rehabilitation [r2]. In a randomised trial of 35 patients with grade III injuries, a brace and a sling gave similar results (Constant score at 12 weeks 81 versus 82; ASES 83 versus 82), with no difference in radiological coracoclavicular index [r13]. Use a sling for comfort for days to about 2 weeks only, with early pain-free movement, plus paracetamol or NSAIDs as needed.",
+        evidence: "limited", recommendation: "consider", refs: ["r2", "r13"]
       },
       {
         name: "Initial non-operative management for grades I and II",
-        description: "Grade I and II separations respond favourably to conservative management [r1]. There is consensus that grades I–III are managed conservatively, although no randomised trials of conservative treatment for grades I–III were found in one review and little evidence defines what conservative care should contain [r2].",
-        evidence: "limited", recommendation: "recommended", refs: ["r1", "r2"]
+        description: "Grade I and II separations respond favourably to conservative management [r1]. There is consensus that grades I–III are managed conservatively, although no randomised trials of conservative treatment for grades I–III were found in one review and little evidence defines what conservative care should contain [r3].",
+        evidence: "limited", recommendation: "recommended", refs: ["r1", "r3"]
       },
       {
         name: "Initial non-operative management for grade III",
-        description: "A Cochrane review found low-quality evidence that surgery gave no additional benefit in function, return to activities or quality of life at one year, and that function was better at six weeks with conservative care [r5]. A meta-analysis of 10 studies found no significant differences in pain or function scores [r6], and a randomised trial found no difference in the Constant score at 24 months (88 versus 91 for grade III) [r7]. Against this, 18% of non-operative patients in that trial had surgery within 19 months [r7], a systematic review reported that persistence of pain seemed less frequent after surgery [r11], and a fragility analysis found the non-inferiority conclusion fragile [r8].",
-        evidence: "limited", recommendation: "consider", refs: ["r5", "r6", "r7", "r11", "r8"]
+        description: "A Cochrane review found low-quality evidence that surgery gave no additional benefit in function, return to activities or quality of life at one year, and that function was better at six weeks with conservative care [r2]. A meta-analysis of 10 studies found no significant differences in pain or function scores [r6], and a randomised trial found no difference in the Constant score at 24 months (88 versus 91 for grade III) [r7]. Against this, 18% of non-operative patients in that trial had surgery within 19 months [r7], a systematic review reported that persistence of pain seemed less frequent after surgery [r12], and a fragility analysis found the non-inferiority conclusion fragile [r8].",
+        evidence: "limited", recommendation: "consider", refs: ["r2", "r6", "r7", "r8", "r12"]
       },
       {
         name: "Surgical stabilisation for grade III (selected patients)",
-        description: "Surgery is a reasonable option for IIIB injuries with therapy-resistant scapular dysfunction and clavicular override [r3], for people who remain symptomatic after rehabilitation, and for heavy overhead or manual workers (clinical judgement). The recurrence rate after surgery was 14% in a systematic review [r11], and adverse events were more frequent (45 of 168 versus 16 of 174), mostly with older devices such as K-wires and hook plates [r5]. In acute cases, the consensus favoured arthroscopically assisted anatomic reconstruction with a suspensory device, without biological augmentation (86.2% and 82.8% agreement) [r4].",
-        evidence: "conflicting", recommendation: "consider", refs: ["r3", "r5", "r11", "r4"]
+        description: "Surgery is a reasonable option for IIIB injuries with therapy-resistant scapular dysfunction and clavicular override [r4], for people who remain symptomatic after rehabilitation, and for heavy overhead or manual workers (clinical judgement). The recurrence rate after surgery was 14% in a systematic review [r12], and adverse events were more frequent (45 of 168 versus 16 of 174), mostly with older devices such as K-wires and hook plates [r2]. In acute cases, the consensus favoured arthroscopically assisted anatomic reconstruction with a suspensory device, without biological augmentation (86.2% and 82.8% agreement) [r5].",
+        evidence: "conflicting", recommendation: "consider", refs: ["r2", "r4", "r5", "r12"]
       },
       {
         name: "Surgical reconstruction for grades IV to VI",
-        description: "Grades IV to VI often require surgical reconstruction [r1,r2]. The evidence is mostly consensus and observational: few randomised trials included grade IV or V injuries [r8], and one randomised trial in grade V found no difference between hook plate surgery and non-operative treatment at 24 months [r7]. Refer early, particularly for posterior displacement, skin compromise or neurovascular signs.",
-        evidence: "limited", recommendation: "consider", refs: ["r1", "r2", "r8", "r7"]
+        description: "Grades IV to VI often require surgical reconstruction [r1,r3]. The evidence is mostly consensus and observational: few randomised trials included grade IV or V injuries [r8], and one randomised trial in grade V found no difference between hook plate surgery and non-operative treatment at 24 months [r7]. Refer early, particularly for posterior displacement, skin compromise or neurovascular signs.",
+        evidence: "limited", recommendation: "consider", refs: ["r1", "r3", "r7", "r8"]
       },
       {
         name: "Chronic AC instability (more than 3 weeks): biological reconstruction",
-        description: "For chronic cases, the ESSKA consensus suggested biological reconstruction of the coracoclavicular and AC ligaments with a tendon graft [r4]. Consensus (Delphi) evidence only.",
-        evidence: "expert-opinion", recommendation: "consider", refs: ["r4"]
+        description: "For chronic cases, the ESSKA consensus suggested biological reconstruction of the coracoclavicular and AC ligaments with a tendon graft [r5]. Consensus (Delphi) evidence only.",
+        evidence: "expert-opinion", recommendation: "consider", refs: ["r5"]
       },
       {
         name: "Routine hook plate fixation of acute grade III or V injuries",
-        description: "A randomised trial of 124 patients concluded that it did not support surgery with a hook plate in acute grade III or V dislocations, because function was no better than with non-operative treatment at 24 months [r7]. The Cochrane review noted more hardware complications with older devices [r5].",
-        evidence: "limited", recommendation: "not-recommended", refs: ["r7", "r5"]
+        description: "A randomised trial of 124 patients concluded that it did not support surgery with a hook plate in acute grade III or V dislocations, because function was no better than with non-operative treatment at 24 months [r7]. The Cochrane review noted more hardware complications with older devices [r2].",
+        evidence: "limited", recommendation: "not-recommended", refs: ["r2", "r7"]
       }
     ],
     physio: [
       {
         name: "Supervised progressive rehabilitation (range of motion, scapular control, strengthening)",
-        description: "Both groups in the trials had exercise-based rehabilitation [r5], and in the hook plate trial all patients followed the same standardised outpatient program, with function restored at 24 months [r7]. A review found no randomised trials of conservative treatment for grades I–III and developed a best-practice guideline to guide care until trials are available [r2]. Dosages and progressions are expert opinion.",
-        evidence: "expert-opinion", recommendation: "recommended", refs: ["r2", "r5", "r7"]
+        description: "Both groups in the trials had exercise-based rehabilitation [r2], and in the hook plate trial all patients followed the same standardised outpatient program, with function restored at 24 months [r7]. A review found no randomised trials of conservative treatment for grades I–III and developed a best-practice guideline to guide care until trials are available [r3]. Dosages and progressions are expert opinion.",
+        evidence: "expert-opinion", recommendation: "recommended", refs: ["r2", "r3", "r7"]
       },
       {
         name: "Training of the dynamic stabilisers (trapezius, deltoid, scapular muscles)",
-        description: "The trapezius, deltoid and deltotrapezial fascia dynamically stabilise the AC joint [r9], and therapy-resistant scapular dysfunction is a defining feature of IIIB injuries [r3], so rehabilitation targets scapular control and trapezius and deltoid strength. This is based on anatomy and expert opinion.",
-        evidence: "expert-opinion", recommendation: "recommended", refs: ["r9", "r3"]
+        description: "The trapezius, deltoid and deltotrapezial fascia dynamically stabilise the AC joint [r11], and therapy-resistant scapular dysfunction is a defining feature of IIIB injuries [r4], so rehabilitation targets scapular control and trapezius and deltoid strength. This is based on anatomy and expert opinion.",
+        evidence: "expert-opinion", recommendation: "recommended", refs: ["r4", "r11"]
       },
       {
         name: "Education about the visible bump, expected course and warning signs",
-        description: "Explain that function usually returns whether or not the clavicle returns to its original position, that a visible bump may persist, and that cosmetic dissatisfaction was uncertain in the evidence [r5].",
-        evidence: "expert-opinion", recommendation: "recommended", refs: ["r5"]
+        description: "Explain that function usually returns whether or not the clavicle returns to its original position, that a visible bump may persist, and that cosmetic dissatisfaction was uncertain in the evidence [r2].",
+        evidence: "expert-opinion", recommendation: "recommended", refs: ["r2"]
       },
       {
         name: "Brace or strapping to hold the clavicle down",
-        description: "In a randomised trial of grade III injuries, a brace that applied a reduction force to the distal clavicle gave no better clinical or radiological outcomes than a sling [r12]. It is not necessary and has a small evidence base.",
-        evidence: "limited", recommendation: "not-recommended", refs: ["r12"]
+        description: "In a randomised trial of grade III injuries, a brace that applied a reduction force to the distal clavicle gave no better clinical or radiological outcomes than a sling [r13]. It is not necessary and has a small evidence base.",
+        evidence: "limited", recommendation: "not-recommended", refs: ["r13"]
       },
       {
         name: "Prolonged immobilisation and forced return to contact before function is restored",
-        description: "Early recovery was better with non-operative care, which relies on early movement [r5,r7]. Prolonged immobilisation delays recovery, and early return to collision sport risks re-injury (clinical reasoning).",
-        evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r5", "r7"]
+        description: "Early recovery was better with non-operative care, which relies on early movement [r2,r7]. Prolonged immobilisation delays recovery, and early return to collision sport risks re-injury (clinical reasoning).",
+        evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r2", "r7"]
       }
     ],
     education: [
@@ -312,7 +312,7 @@ export default {
   },
 
   rehab: {
-    overview: "Criteria-based and graded by injury type. The program below is for non-operative care or for rehabilitation after surgery once the surgeon allows it. Because no randomised trials of conservative treatment for grades I to III were found in one review [r2], the dosages are clinical conventions, not trial-derived prescriptions. After surgery, follow the surgeon's protocol, which restricts movement and loading for longer.",
+    overview: "Criteria-based and graded by injury type. The program below is for non-operative care or for rehabilitation after surgery once the surgeon allows it. Because no randomised trials of conservative treatment for grades I to III were found in one review [r3], the dosages are clinical conventions, not trial-derived prescriptions. After surgery, follow the surgeon's protocol, which restricts movement and loading for longer.",
     stages: [
       {
         name: "Protect and settle",
@@ -375,7 +375,7 @@ export default {
       "No resting or night pain, and pain ≤ 2/10 with sport tasks",
       "Full pain-free active range of motion equal to the other side",
       "Strength about 90% or more of the other side for elevation, external rotation and horizontal adduction (clinical convention)",
-      "Normal scapular control under load, with no therapy-resistant scapular dysfunction [r3]",
+      "Normal scapular control under load, with no therapy-resistant scapular dysfunction [r4]",
       "Pain-free tolerance of push-ups, carrying and overhead loading",
       "Completes sport-specific drills and controlled contact progression without symptoms",
       "Time: commonly 2–6 weeks (grade I), 6–12 weeks (grade II) and about 3–4 months (grade III) before contact sport (clinical conventions); after surgery, the surgeon's protocol"
@@ -389,38 +389,38 @@ export default {
     ]
   },
 
-  prognosis: "Most people regain good function. In the hook plate trial, patients regained 97% of the Constant score of the uninjured shoulder at 24 months, and 86% rated the result as excellent or good [r7]. In the Cochrane review, return to former activities (sport or work) was similar after surgery and conservative care (57 of 67 versus 62 of 70), and treatment failure was similar (14 of 168 versus 15 of 174), although the evidence was low to very low quality [r5]. Persistent symptoms, mainly discomfort, were the main reason for failure of conservative care, whereas implant complications dominated failures after surgery [r5]. The meta-analysis of type III dislocations found more coracoclavicular ligament ossification and lateral clavicle osteolysis after surgery but better maintenance of reduction [r6], and a systematic review found a 14% recurrence rate after surgery [r11]. Return to the same level of performance is not guaranteed: in a small subgroup of elite cyclists with AC joint separations, only 28.6% returned fully to pre-injury performance, which emphasises the difference between return to sport and return to performance, although the figure comes from a retrospective questionnaire in one sport [r13]. Long-term osteoarthritis rates were not clearly different between surgical and conservative care in a systematic review [r11].",
+  prognosis: "Most people regain good function. In the hook plate trial, patients regained 97% of the Constant score of the uninjured shoulder at 24 months, and 86% rated the result as excellent or good [r7]. In the Cochrane review, return to former activities (sport or work) was similar after surgery and conservative care (57 of 67 versus 62 of 70), and treatment failure was similar (14 of 168 versus 15 of 174), although the evidence was low to very low quality [r2]. Persistent symptoms, mainly discomfort, were the main reason for failure of conservative care, whereas implant complications dominated failures after surgery [r2]. The meta-analysis of type III dislocations found more coracoclavicular ligament ossification and lateral clavicle osteolysis after surgery but better maintenance of reduction [r6], and a systematic review found a 14% recurrence rate after surgery [r12]. Return to the same level of performance is not guaranteed: in a small subgroup of elite cyclists with AC joint separations, only 28.6% returned fully to pre-injury performance, which emphasises the difference between return to sport and return to performance, although the figure comes from a retrospective questionnaire in one sport [r9]. Long-term osteoarthritis rates were not clearly different between surgical and conservative care in a systematic review [r12].",
   prevention: [
     "No intervention has been shown to prevent AC joint injury; evidence for protective padding is limited",
     "Teach falling technique in contact sport, cycling and snow sports (reasonable principle; limited evidence)",
-    "Maintain shoulder girdle strength, particularly the trapezius, deltoid and scapular stabilisers, which dynamically support the joint [r9]",
+    "Maintain shoulder girdle strength, particularly the trapezius, deltoid and scapular stabilisers, which dynamically support the joint [r11]",
     "After injury, restore strength and scapular control fully before contact to reduce the risk of re-injury (clinical reasoning)",
     "Wear helmets and appropriate protective equipment in cycling and contact sport, which may reduce overall injury severity"
   ],
   clinicalPearls: [
-    "Grade III is not one entity. The ISAKOS IIIA/IIIB split uses clavicular override on a cross-body adduction view and therapy-resistant scapular dysfunction to find the minority who may benefit from surgery [r3,r4].",
-    "For most grade I to III injuries, start with supervised rehabilitation: trials found no functional advantage of surgery at one to two years, a faster early recovery without it, and more adverse events with surgery [r5,r6,r7].",
+    "Grade III is not one entity. The ISAKOS IIIA/IIIB split uses clavicular override on a cross-body adduction view and therapy-resistant scapular dysfunction to find the minority who may benefit from surgery [r4,r5].",
+    "For most grade I to III injuries, start with supervised rehabilitation: trials found no functional advantage of surgery at one to two years, a faster early recovery without it, and more adverse events with surgery [r2,r6,r7].",
     "Be honest about the uncertainty: 18% of non-operative patients in one trial had surgery within 19 months [r7], and a fragility analysis found the non-inferiority finding statistically fragile [r8].",
-    "Do not promise a normal-looking shoulder. A prominent distal clavicle often persists, and cosmetic dissatisfaction was uncertain in the evidence [r5].",
-    "Train the dynamic stabilisers. Trapezius, deltoid and scapular control compensate for ligament laxity, so progress strength before contact [r9].",
+    "Do not promise a normal-looking shoulder. A prominent distal clavicle often persists, and cosmetic dissatisfaction was uncertain in the evidence [r2].",
+    "Train the dynamic stabilisers. Trapezius, deltoid and scapular control compensate for ligament laxity, so progress strength before contact [r11].",
     "Always check the rest of the shoulder girdle after a fall on the shoulder: clavicle, SC joint, coracoid, ribs and neurovascular status."
   ],
   related: ["clavicle-fracture", "sc-joint-injury", "anterior-shoulder-dislocation", "proximal-humerus-fracture", "traumatic-rotator-cuff-tear"],
 
   references: [
     { id: "r1", citation: "Cote MP, Wojcik KE, Gomlinski G, et al. Rehabilitation of acromioclavicular joint separations: operative and nonoperative considerations. Clin Sports Med. 2010;29(2):213-28.", pmid: "20226315", doi: "10.1016/j.csm.2009.12.002", type: "narrative-review", year: 2010 },
-    { id: "r2", citation: "Reid D, Polson K, Johnson L. Acromioclavicular joint separations grades I-III: a review of the literature and development of best practice guidelines. Sports Med. 2012;42(8):681-96.", pmid: "22784232", doi: "10.2165/11633460-000000000-00000", type: "narrative-review", year: 2012 },
-    { id: "r3", citation: "Beitzel K, Mazzocca AD, Bak K, et al. ISAKOS upper extremity committee consensus statement on the need for diversification of the Rockwood classification for acromioclavicular joint injuries. Arthroscopy. 2014;30(2):271-8.", pmid: "24485119", doi: "10.1016/j.arthro.2013.11.005", type: "consensus-statement", year: 2014 },
-    { id: "r4", citation: "Rosso C, Martetschläger F, Saccomanno MF, et al. High degree of consensus achieved regarding diagnosis and treatment of acromioclavicular joint instability among ESA-ESSKA members. Knee Surg Sports Traumatol Arthrosc. 2021;29(7):2325-32.", pmid: "32980887", doi: "10.1007/s00167-020-06286-w", type: "consensus-statement", year: 2021 },
-    { id: "r5", citation: "Tamaoki MJ, Lenza M, Matsunaga FT, et al. Surgical versus conservative interventions for treating acromioclavicular dislocation of the shoulder in adults. Cochrane Database Syst Rev. 2019;10(10):CD007429.", pmid: "31604007", doi: "10.1002/14651858.CD007429.pub3", type: "systematic-review", year: 2019 },
+    { id: "r2", citation: "Tamaoki MJ, Lenza M, Matsunaga FT, et al. Surgical versus conservative interventions for treating acromioclavicular dislocation of the shoulder in adults. Cochrane Database Syst Rev. 2019;10(10):CD007429.", pmid: "31604007", doi: "10.1002/14651858.CD007429.pub3", type: "systematic-review", year: 2019 },
+    { id: "r3", citation: "Reid D, Polson K, Johnson L. Acromioclavicular joint separations grades I-III: a review of the literature and development of best practice guidelines. Sports Med. 2012;42(8):681-96.", pmid: "22784232", doi: "10.2165/11633460-000000000-00000", type: "narrative-review", year: 2012 },
+    { id: "r4", citation: "Beitzel K, Mazzocca AD, Bak K, et al. ISAKOS upper extremity committee consensus statement on the need for diversification of the Rockwood classification for acromioclavicular joint injuries. Arthroscopy. 2014;30(2):271-8.", pmid: "24485119", doi: "10.1016/j.arthro.2013.11.005", type: "consensus-statement", year: 2014 },
+    { id: "r5", citation: "Rosso C, Martetschläger F, Saccomanno MF, et al. High degree of consensus achieved regarding diagnosis and treatment of acromioclavicular joint instability among ESA-ESSKA members. Knee Surg Sports Traumatol Arthrosc. 2021;29(7):2325-32.", pmid: "32980887", doi: "10.1007/s00167-020-06286-w", type: "consensus-statement", year: 2021 },
     { id: "r6", citation: "Tang G, Zhang Y, Liu Y, et al. Comparison of surgical and conservative treatment of Rockwood type-III acromioclavicular dislocation: a meta-analysis. Medicine (Baltimore). 2018;97(4):e9690.", pmid: "29369191", doi: "10.1097/MD.0000000000009690", type: "meta-analysis", year: 2018 },
     { id: "r7", citation: "Boström Windhamre H, von Heideken J, Une-Larsson V, et al. No difference in clinical outcome at 2-year follow-up in patients with type III and V acromioclavicular joint dislocation treated with hook plate or physiotherapy: a randomized controlled trial. J Shoulder Elbow Surg. 2022;31(6):1122-36.", pmid: "35007749", doi: "10.1016/j.jse.2021.12.003", type: "rct", year: 2022 },
     { id: "r8", citation: "Althoff AD, Dave U, Cervantes JE, et al. Examining the statistical fragility of randomized trials on operative versus nonoperative treatment of acromioclavicular joint separation using the reverse continuous fragility index. Orthopedics. 2026;49(4):e269-74.", pmid: "42412074", doi: "10.3928/01477447-20260611-01", type: "systematic-review", year: 2026 },
-    { id: "r9", citation: "Perry NPJ, Omonullaeva NK, Bacevich BM, et al. Acromioclavicular joint anatomy and biomechanics: the significance of posterior rotational and translational stability. Clin Sports Med. 2023;42(4):557-71.", pmid: "37716721", doi: "10.1016/j.csm.2023.05.002", type: "narrative-review", year: 2023 },
+    { id: "r9", citation: "Lambert C, Lambert M, Galandi M, et al. Severe injuries in competitive cycling during an Olympic cycle: injury patterns, time loss, and return-to-performance outcomes. BMC Sports Sci Med Rehabil. 2026;18(1).", pmid: "42983465", doi: "10.1186/s13102-026-02201-x", type: "cohort", year: 2026 },
     { id: "r10", citation: "Flores C, Celik H, Hoenecke H, et al. Subject-specific computational modeling of acromioclavicular and coracoclavicular ligaments. J Shoulder Elbow Surg. 2023;32(3):526-32.", pmid: "36243298", doi: "10.1016/j.jse.2022.09.004", type: "biomechanical", year: 2023 },
-    { id: "r11", citation: "Longo UG, Ciuffreda M, Rizzello G, et al. Surgical versus conservative management of type III acromioclavicular dislocation: a systematic review. Br Med Bull. 2017;122(1):31-49.", pmid: "28334148", doi: "10.1093/bmb/ldx003", type: "systematic-review", year: 2017 },
-    { id: "r12", citation: "Finsterwald M, Dao Trong ML, Hollo D, et al. Conservative treatment of Rockwood type III acromioclavicular joint separation: a randomized controlled trial sling vs. brace. JSES Int. 2023;7(4):527-31.", pmid: "37426936", doi: "10.1016/j.jseint.2023.02.017", type: "rct", year: 2023 },
-    { id: "r13", citation: "Lambert C, Lambert M, Galandi M, et al. Severe injuries in competitive cycling during an Olympic cycle: injury patterns, time loss, and return-to-performance outcomes. BMC Sports Sci Med Rehabil. 2026;18(1).", pmid: "42983465", doi: "10.1186/s13102-026-02201-x", type: "cohort", year: 2026 }
+    { id: "r11", citation: "Perry NPJ, Omonullaeva NK, Bacevich BM, et al. Acromioclavicular joint anatomy and biomechanics: the significance of posterior rotational and translational stability. Clin Sports Med. 2023;42(4):557-71.", pmid: "37716721", doi: "10.1016/j.csm.2023.05.002", type: "narrative-review", year: 2023 },
+    { id: "r12", citation: "Longo UG, Ciuffreda M, Rizzello G, et al. Surgical versus conservative management of type III acromioclavicular dislocation: a systematic review. Br Med Bull. 2017;122(1):31-49.", pmid: "28334148", doi: "10.1093/bmb/ldx003", type: "systematic-review", year: 2017 },
+    { id: "r13", citation: "Finsterwald M, Dao Trong ML, Hollo D, et al. Conservative treatment of Rockwood type III acromioclavicular joint separation: a randomized controlled trial sling vs. brace. JSES Int. 2023;7(4):527-31.", pmid: "37426936", doi: "10.1016/j.jseint.2023.02.017", type: "rct", year: 2023 }
   ],
 
   animation: {
