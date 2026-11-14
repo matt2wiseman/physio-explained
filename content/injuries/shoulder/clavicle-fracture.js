@@ -1,0 +1,497 @@
+export default {
+  id: "clavicle-fracture",
+  name: "Clavicle fracture",
+  shortName: "Clavicle fracture",
+  aka: ["broken collarbone", "collarbone fracture", "midshaft clavicle fracture", "fractured clavicle", "distal clavicle fracture", "lateral clavicle fracture", "clavicular fracture"],
+  region: "shoulder",
+  tissues: ["bone"],
+  onset: "acute",
+  mechanismType: ["fall", "contact", "collision"],
+  populations: ["children, adolescents and young adults", "men (68% in one large series)", "cyclists, contact-sport athletes and snow-sport participants", "older adults after a fall"],
+  sports: ["cycling", "mountain biking", "rugby union", "australian football", "skiing", "snowboarding", "judo", "ice hockey"],
+  urgency: "urgent",
+  summary: "A fracture of the collarbone, most often the middle third after a fall or blow to the shoulder. Many heal in a sling, but displaced fractures carry a higher nonunion risk, and the value of surgery is debated.",
+  keyFacts: [
+    { label: "Typical recovery", value: "Union takes months: in one trial of displaced fractures mean radiographic union took 16.4 weeks after plating and 28.4 weeks without surgery" },
+    { label: "Return to sport", value: "Criteria-based after radiographic union; commonly 6–12 weeks for non-contact and about 3–4 months for contact sport (clinical conventions)" },
+    { label: "Key test", value: "Bony tenderness, step or crepitus with a neurovascular check, confirmed on AP radiograph" },
+    { label: "Imaging", value: "AP radiograph of the clavicle to grade displacement and shortening; CT for complex fractures or suspected nonunion" },
+    { label: "Peak age", value: "Common from childhood to young adulthood; 68% of 535 patients were men" },
+    { label: "Incidence", value: "2.6% of all fractures and 44% of shoulder girdle fractures; 81% involve the middle third" }
+  ],
+  overview: "Clavicle fractures are common. In a hospital series of 535 isolated clavicle fractures they accounted for 2.6% of all fractures and 44% of fractures of the shoulder girdle; 68% of patients were men, 81% of fractures were in the middle third (displaced in 48% and comminuted in 19%), and only 2% were in the medial third [r1]. A Cochrane review reports a similar share: clavicle fractures account for 2.6% to 4% of all fractures, and about 80% involve the middle third [r2]. Most undisplaced fractures heal without surgery. The debate concerns completely displaced or shortened midshaft fractures in active adults, which carry a higher risk of nonunion and symptomatic malunion with non-operative care.\n\nThe evidence on surgery is mixed. The Canadian Orthopaedic Trauma Society trial of 132 patients with displaced midshaft fractures found better Constant and DASH scores, faster union (16.4 versus 28.4 weeks), fewer nonunions (2 versus 7) and no symptomatic malunions (versus 9) after plate fixation, with hardware complications in the operative group [r3]. A later multicentre trial of 200 patients aged 16 to 60 found one nonunion after plating versus 16 with non-operative care, and better one-year scores with plating (Constant 92.0 versus 87.8), but no differences once nonunions were excluded, higher cost and implant-related complications, and concluded that routine plating was not supported [r4]. A meta-analysis of six randomised trials (614 patients) found that plate fixation lowered the nonunion risk (relative risk 0.14), that Constant and DASH scores were somewhat better (4.4 and 5.1 points) but not clinically relevant, that secondary operations were similar once plate removal was counted (17.6% versus 16.6%), and that there was not enough evidence to support routine operative treatment for all displaced fractures [r5]. A larger meta-analysis of 14 trials (1546 patients) reported lower nonunion, 5.1 weeks faster union and better long-term Constant (5.3 points) and DASH (4.3 points) scores with surgery, at the cost of more complications (31.3% versus 20.5%) [r6].\n\nIn practice, treatment is a shared decision. For fully displaced or more than 2 cm shortened fractures, surgery reduces nonunion (relative risk 0.17) and symptomatic malunion (0.13), but functional scores and secondary operation rates were similar in one meta-analysis [r7]. Non-operative care with a sling remains appropriate for undisplaced fractures, most adolescents and lower-demand adults, with a low threshold to refer if displacement, shortening or skin or neurovascular compromise is present.",
+
+  epidemiology: {
+    text: "In 535 isolated clavicle fractures, 68% of patients were men, the left side was involved in 61%, and 81% of fractures were in the middle third (displaced in 48%, comminuted in 19%); the medial third accounted for 2%. In the first decade of life, midclavicular fractures represented 88.2% of clavicle fractures and 55.5% were undisplaced, and in adults displaced fractures were more frequent than undisplaced ones. Traffic accidents were the most common cause in that series, with no seasonal variation [r1]. Across ten studies in a systematic review, falls were the most dominant cause of clavicle fracture in adults, followed by road traffic collisions, and the review quoted an annual incidence of 37 per 10,000 [r9]. Clavicle fractures were among the common severe injuries in elite cyclists (13 clavicle fractures among 237 injuries), and occurred predominantly during competition [r8].",
+    riskFactors: {
+      intrinsic: [
+        "Male sex (68% of 535 patients) and young adult age [r1]",
+        "Childhood and adolescence, when midshaft fractures dominate [r1]",
+        "Reduced bone strength in older adults (clinical reasoning; falls were the dominant cause in adults [r9])"
+      ],
+      extrinsic: [
+        "Falls onto the shoulder, including from bicycles, skis, snowboards and horses [r9]",
+        "Road traffic collisions and other high-energy trauma [r1,r9]",
+        "Contact and collision sport, and competitive cycling [r8]",
+        "Direct blows to the clavicle in collision sport"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "Most clavicle fractures follow a fall or blow onto the point of the shoulder, which loads the clavicle with a lateral compressive and bending force until the middle third fails. Less commonly, the cause is a direct blow to the bone or a fall onto the outstretched arm. After a displaced midshaft fracture, the sternocleidomastoid pulls the medial fragment upward and the weight of the arm pulls the lateral fragment downward, producing shortening and a drooped shoulder. These muscle forces are classic textbook descriptions.",
+    sequence: [
+      "A fall or collision lands on the point of the shoulder (or, less often, directly on the clavicle) with the arm by the side.",
+      "The force is transmitted medially along the clavicle, a thin S-shaped strut, which fails in bending and compression, most often in the middle third [r1].",
+      "The bone breaks in a transverse, oblique or comminuted pattern, and the periosteum tears with local bleeding.",
+      "The sternocleidomastoid elevates the medial fragment, while the weight of the arm (and pectoralis major) drags the lateral fragment down and forward, so the fragments override and the clavicle shortens.",
+      "The shoulder droops and rolls forward, and sharp fragment ends can tent the skin in displaced fractures.",
+      "The subclavian vessels, brachial plexus and lung apex lie directly behind and below the bone, so high-energy fractures need a neurovascular and chest check."
+    ],
+    variants: [
+      { name: "Undisplaced or minimally displaced midshaft fracture", description: "Common in children and adolescents; 55.5% of midclavicular fractures in the first decade were undisplaced [r1]." },
+      { name: "Completely displaced or shortened midshaft fracture", description: "More common in adults, 48% of middle-third fractures in one series [r1]; higher risk of nonunion and symptomatic malunion with non-operative care [r7]." },
+      { name: "Comminuted or butterfly-fragment fracture", description: "19% of middle-third fractures in one series [r1]; displacement was the most likely predictor of nonunion [r10]." },
+      { name: "Lateral (distal) third fracture", description: "Often involves the coracoclavicular ligaments and the AC joint; displaced fractures are usually treated operatively in athletes [r11]." },
+      { name: "Medial third fracture", description: "Uncommon (2% of clavicle fractures) [r1]; posterior displacement can compress mediastinal structures." },
+      { name: "Paediatric and adolescent fracture", description: "Greater remodelling potential; non-operative treatment is often preferred [r14]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The clavicle is an S-shaped strut that links the sternum and the scapula, holding the shoulder out from the chest. It is the only bony connection between the upper limb and the axial skeleton. Its medial end articulates at the sternoclavicular joint, and its lateral end at the AC joint, with the conoid and trapezoid ligaments suspending the scapula from its undersurface. The sternocleidomastoid and trapezius attach to its upper surface, and the deltoid and pectoralis major attach to its anterior surface. The subclavian vessels and brachial plexus pass beneath it over the first rib, which is why displaced fractures can compromise them. The middle third is the thinnest part and has the least soft-tissue cover.",
+    structures: [
+      { name: "Middle third of the clavicle", role: "The most commonly fractured region (81%) [r1]" },
+      { name: "Sternocleidomastoid", role: "Elevates the medial fragment when the clavicle is fractured (classic textbook description)" },
+      { name: "Deltoid, pectoralis major and the weight of the arm", role: "Pull the lateral fragment down and forward, producing shortening and a drooped shoulder" },
+      { name: "Coracoclavicular and AC ligaments", role: "Suspend the scapula and stabilise the lateral end; relevant to lateral third fractures" },
+      { name: "Subclavian vessels and brachial plexus", role: "Run behind and below the clavicle; at risk with displaced, high-energy fractures" },
+      { name: "Sternoclavicular joint and medial clavicular physis", role: "Proximal pivot; the medial physis closes late (about the third decade) and can be injured in young adults (clinical convention)" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "A clavicle fracture is a break in the cortex of the bone under a load that exceeds its strength, with disruption of the periosteum, bleeding from the bone ends and surrounding soft tissue, and displacement driven by muscle pull and the weight of the arm. In a series of 535 fractures, 48% of middle-third fractures were displaced and 19% were comminuted [r1]. Healing depends on how far the fragments are apart and how stable they are. In non-operatively treated displaced fractures, a systematic review of eight publications (2117 fractures) identified displacement, comminution, shortening, age, gender and smoking as reported predictors of nonunion, with displacement the most likely [r10]. Another review of ten studies reported associations of nonunion with advancing age, female gender, high-energy trauma, smoking, fracture displacement, shortening, callus on radiography and fracture movement, and found the midshaft was the most common site of nonunion [r9]. In the Canadian trial, nonunion occurred in seven patients managed non-operatively versus two managed with plates, and symptomatic malunion occurred in nine non-operatively managed patients and none in the operative group [r3].\n\nWhen a displaced fracture heals shortened and angulated, the scapula protracts and drops, which alters scapulothoracic rhythm and may reduce strength and endurance (proposed). Patients were less dissatisfied with symptoms of shoulder droop, a local bump and shoulder asymmetry after plating in one trial [r4].",
+    structures: [
+      { name: "Clavicle (middle third)", effect: "Transverse, oblique or comminuted fracture with displacement and shortening [r1]" },
+      { name: "Periosteum and surrounding soft tissues", effect: "Torn periosteum and haematoma; sharp fragments can tent or perforate the skin" },
+      { name: "Subclavian vessels and brachial plexus", effect: "Can be contused or compressed by displaced fragments; rare but important to check" },
+      { name: "Lung apex and ribs", effect: "Pneumothorax or rib fractures in high-energy trauma; screen with a chest examination" },
+      { name: "AC joint and coracoclavicular ligaments", effect: "Disrupted in lateral third fractures, affecting stability" }
+    ],
+    muscles: [
+      { name: "Sternocleidomastoid", effect: "Elevates the medial fragment and causes pain with neck rotation (classic textbook description)" },
+      { name: "Upper trapezius and deltoid", effect: "Pain-related inhibition and guarding; the deltoid and trapezius attach to the clavicle and lose their stable lever when the fragments displace" },
+      { name: "Pectoralis major and the weight of the arm", effect: "Pull the lateral fragment inferomedially and anteriorly (classic textbook description)" },
+      { name: "Scapular stabilisers", effect: "Altered scapular position (protraction and drooping) if the clavicle heals shortened; weakness and endurance loss in the days after injury (clinical observation)" }
+    ],
+    cellular: [
+      { phase: "Haematoma and inflammation", timing: "Days 0–7", description: "Bleeding from the bone ends forms a haematoma; platelets, neutrophils and macrophages clear debris and release growth factors." },
+      { phase: "Soft callus", timing: "Weeks 1–3", description: "Chondrocytes and fibroblasts form a cartilaginous and fibrous callus that bridges the fracture." },
+      { phase: "Hard callus", timing: "Weeks 3–12", description: "Osteoblasts lay down woven bone in the callus, and the fracture becomes radiographically united; mean union time in the Canadian trial was 28.4 weeks without surgery and 16.4 weeks with plate fixation [r3]." },
+      { phase: "Remodelling", timing: "Months to years", description: "Woven bone is replaced by lamellar bone and the callus is reshaped along lines of load; a visible bump can persist." },
+      { phase: "Nonunion or malunion", timing: "Beyond about 6 months", description: "Failed bridging (nonunion) or healing in a shortened or angulated position (symptomatic malunion); symptomatic nonunion occurred in 11.6% of conservatively treated patients and symptomatic malunion in 11.3% in a Cochrane review [r2]." }
+    ],
+    systems: [
+      { system: "Nervous system", effect: "Acute nociceptive pain; brachial plexus or supraclavicular nerve injury (numbness below the clavicle) is possible, and plexus palsy was reported rarely in the sling group of one trial [r12]" },
+      { system: "Vascular", effect: "Subclavian vessel injury is rare but needs a pulse and perfusion check; swelling and haematoma are common" },
+      { system: "Respiratory", effect: "High-energy fractures can be accompanied by rib fractures and pneumothorax; breathlessness or chest pain needs emergency assessment" },
+      { system: "Musculoskeletal chain", effect: "Shoulder droop, scapular protraction and altered scapulohumeral rhythm; neck and upper back guarding" },
+      { system: "Psychological", effect: "Concern about the visible bump and the choice between a sling and surgery; patients were more satisfied with appearance after plating in one trial [r3]" }
+    ]
+  },
+
+  grading: {
+    system: "Allman classification by location, with descriptive modifiers for displacement, comminution and shortening",
+    grades: [
+      { grade: "Group I: middle third (midshaft)", description: "The most common type, 81% of clavicle fractures in one series; may be undisplaced, displaced, comminuted or shortened [r1].", prognosis: "Undisplaced fractures usually heal without surgery; completely displaced or shortened (more than 2 cm) fractures have a higher risk of nonunion and symptomatic malunion with non-operative care [r7]." },
+      { grade: "Group II: lateral (distal) third", description: "Includes fractures that involve the coracoclavicular ligaments and can destabilise the lateral fragment (Neer subtypes; conventional description).", prognosis: "Management principles for athletes: non-operative for undisplaced fractures and operative treatment for displaced lateral fractures; suture fixation and non-AC-joint-spanning plate fixation showed promising results [r11]." },
+      { grade: "Group III: medial third", description: "The least common (2% of clavicle fractures) [r1]; posterior displacement can affect the mediastinum.", prognosis: "Usually non-operative; refer urgently for posterior displacement with airway, vascular or swallowing symptoms (clinical convention)." },
+      { grade: "Modifier: displacement and shortening", description: "Completely displaced (100%) fractures or more than 2 cm of shortening define the group in which surgery has been studied most [r7].", prognosis: "Displacement is the most likely predictor of nonunion in non-operatively treated midshaft fractures [r10]." },
+      { grade: "Modifier: comminution", description: "Butterfly fragment or comminution of the middle third; 19% of middle-third fractures in one series [r1].", prognosis: "In 31 conservatively treated fractures with a butterfly fragment, displacement was the only significant radiographic predictor of impaired healing [r10]." }
+    ]
+  },
+
+  timeframes: {
+    summary: "Clavicle fractures usually unite within weeks to months, and the time depends on displacement and treatment. In the Canadian trial, mean radiographic union in displaced fractures was 16.4 weeks with plate fixation and 28.4 weeks without [r3]. Pain and the need for a sling settle faster than bone union. The ranges below are typical clinical ranges, not all trial-derived.",
+    healing: [
+      { phase: "Haematoma, inflammation and protection", startDay: 0, endDay: 14, description: "Sling for comfort, analgesia, early elbow, wrist and hand movement and pendulum exercises (clinical convention)." },
+      { phase: "Soft and hard callus formation", startDay: 7, endDay: 84, description: "Callus bridges the fracture; early pain-free shoulder movement progresses to active movement. Radiographic union is usually seen between about 12 and 28 weeks in displaced fractures, depending on treatment [r3]." },
+      { phase: "Remodelling and strengthening", startDay: 42, endDay: 365, description: "Progressive strengthening once the fracture is clinically and radiographically united; the callus continues to remodel for months and a bump can persist." }
+    ],
+    milestones: [
+      { label: "Sling weaned for comfort", day: 21, note: "Typical clinical range 2–4 weeks; follow the treating clinician" },
+      { label: "Active elevation to 90°", day: 28, note: "Pain-free range; earlier after plating if the surgeon allows" },
+      { label: "Radiographic union (operative, displaced fractures in the Canadian trial)", day: 115, note: "Mean 16.4 weeks [r3]" },
+      { label: "Radiographic union (non-operative, displaced fractures in the Canadian trial)", day: 199, note: "Mean 28.4 weeks [r3]" },
+      { label: "Return to contact sport", day: 120, note: "Criteria-based, after radiographic union; commonly about 3–4 months" }
+    ],
+    returnToSport: "Criteria-based, not time-based, and only after clinical and radiographic union. Commonly 6–12 weeks for non-contact activity and about 3–4 months for contact or collision sport (clinical conventions). In a systematic review of return to sport (23 studies), operative management of displaced midshaft fractures offered improved return rates and times compared with non-operative management [r11]."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Immediate pain over the collarbone after a fall or blow, worse with any arm movement",
+      "Inability to lift the arm, and supporting the elbow with the other hand",
+      "A lump, deformity or swelling over the clavicle",
+      "Pain on deep breathing, neck rotation or lying on the injured side",
+      "Numbness or tingling in the arm if the brachial plexus or supraclavicular nerves are affected",
+      "Clicking or grinding with movement (crepitus)"
+    ],
+    signs: [
+      "Localised bony tenderness, swelling and bruising along the clavicle",
+      "A visible step or deformity, with a drooped and protracted shoulder and a shortened clavicle in displaced fractures",
+      "Crepitus or abnormal movement at the fracture site",
+      "Skin tenting over a fragment end (threatened skin) or an open wound",
+      "Painful, guarded active shoulder elevation with passive range reduced by pain",
+      "Altered scapular position and reduced neck rotation if painful"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Mechanism and energy: fall onto the shoulder, bicycle or snow-sport crash, road collision, or direct blow",
+      "Location of pain (clavicle, AC joint, sternoclavicular joint) and ability to move the arm",
+      "Numbness, weakness, hand colour or temperature, breathlessness or chest pain",
+      "Smoking, bone health, medications and previous clavicle or shoulder surgery (nonunion predictors) [r9,r10]",
+      "Hand dominance, sport and work demands, and goals regarding function and appearance"
+    ],
+    observation: [
+      "Shoulder droop, protraction and shortening compared with the other side, viewed from the front and above",
+      "Bruising and swelling along the clavicle",
+      "Skin tenting, abrasion or an open wound over the bone",
+      "Arm posture, supported by the other hand"
+    ],
+    palpation: [
+      "The full length of the clavicle for tenderness, step, crepitus and mobility",
+      "The AC joint and coracoclavicular interval (lateral fractures and AC injuries)",
+      "The sternoclavicular joint and the upper ribs",
+      "The scapula, proximal humerus and cervical spine to exclude associated injuries"
+    ],
+    rangeOfMotion: [
+      "Gentle active and passive shoulder elevation within pain tolerance",
+      "Cervical rotation and lateral flexion",
+      "Elbow, wrist and hand movement"
+    ],
+    strength: [
+      "Grip strength and elbow flexion and extension",
+      "Resisted shoulder movements only when pain allows; defer until fracture stability is known",
+      "Assess scapular control once fracture healing allows"
+    ],
+    neuro: [
+      "Brachial plexus screen: myotomes, dermatomes and reflexes of the upper limb",
+      "Supraclavicular nerve sensation below the clavicle",
+      "Radial pulse, capillary refill, hand colour and temperature",
+      "Cervical spine screen after high-energy mechanisms"
+    ],
+    functional: [
+      "Dressing, eating and desk tasks with the arm in a sling",
+      "Sleep position tolerance (often sleeping upright)",
+      "Driving and work restrictions",
+      "Sport-specific demands before return"
+    ],
+    specialTests: [
+      { name: "Palpation of the clavicle for bony tenderness, step and crepitus", purpose: "To localise and grade the fracture before imaging", procedure: "Palpate gently along the clavicle from the sternoclavicular joint to the AC joint and compare with the other side; avoid repeated provocation of crepitus.", positive: "Focal bony tenderness, step, crepitus or abnormal movement. Accuracy statistics were not found in the sources reviewed here; diagnosis is confirmed by radiograph.", refs: [] },
+      { name: "Upper limb neurovascular examination", purpose: "To detect brachial plexus or subclavian vessel compromise, which is a red flag", procedure: "Check radial pulse and capillary refill, then myotomes, dermatomes and reflexes C5–T1 and sensation below the clavicle.", positive: "Absent or reduced pulse, a cool pale hand, or new motor or sensory deficit requires emergency assessment.", refs: [] },
+      { name: "Observation for skin tenting and shortening", purpose: "To identify fractures that need urgent surgical review", procedure: "Inspect the skin over the fracture at rest and with gentle shoulder movement, and compare the shoulder and clavicle position with the other side.", positive: "Skin blanching or tenting over a fragment, an open wound, or marked shoulder droop and shortening.", refs: [] }
+    ],
+    clinicalRules: [
+      { name: "Which displaced fractures are at higher risk of nonunion?", description: "Displacement was the most likely predictor in a systematic review, with comminution, shortening, age, gender and smoking also reported [r10]; another review also listed high-energy trauma and clavicular shortening [r9]. Treating all displaced fractures surgically would lead to overtreatment [r10]." },
+      { name: "The group in which surgery is studied", description: "Meta-analyses have focused on fractures that are fully (100%) displaced or have more than 2 cm of shortening [r7]." },
+      { name: "Always exclude associated injuries", description: "After high-energy trauma, check the chest, ribs, scapula (floating shoulder), cervical spine and neurovascular status." }
+    ],
+    outcomeMeasures: [
+      { name: "Constant–Murley score", use: "Primary outcome in the major trials and meta-analyses [r3,r4,r5]" },
+      { name: "Disabilities of the Arm, Shoulder and Hand (DASH) or QuickDASH", use: "Function and disability, used in the trials [r3,r4]" },
+      { name: "Radiographic union and shortening", use: "Time to union, nonunion and malunion [r3]; three-dimensional CT was used to assess union in one trial [r4]" },
+      { name: "Patient satisfaction with appearance and symptoms of droop or bump", use: "Satisfaction was better after plating in two trials [r3,r4]" },
+      { name: "Visual analogue or numeric pain scale", use: "Pain at rest and with activity [r2]" }
+    ],
+    imaging: [
+      { modality: "AP radiograph of the clavicle (with a 20–30° cephalic tilt view)", indication: "All suspected clavicle fractures", findings: "Fracture location, displacement, shortening and comminution; fully displaced (100%) or more than 2 cm of shortening defines the group studied for surgery [r7]; the Allman system was used to classify location [r1]" },
+      { modality: "CT (including three-dimensional reconstruction)", indication: "Complex or medial fractures, suspected nonunion, or surgical planning", findings: "Fragment position and union; three-dimensional CT was used to evaluate union in a randomised trial [r4]" },
+      { modality: "Chest radiograph", indication: "High-energy trauma, breathlessness or chest pain", findings: "Pneumothorax, haemothorax or rib fractures" },
+      { modality: "Ultrasound", indication: "Children and adolescents or when radiography is not immediately available", findings: "Cortical break and haematoma (clinical convention)" }
+    ]
+  },
+
+  differentials: [
+    { name: "Acromioclavicular joint injury", id: "ac-joint-injury", distinguishing: "Tenderness and step at the AC joint rather than the shaft, with normal clavicle on radiograph; a lateral clavicle fracture can mimic an AC injury." },
+    { name: "Sternoclavicular joint injury", id: "sc-joint-injury", distinguishing: "Pain and swelling at the medial end of the clavicle; posterior displacement is an emergency." },
+    { name: "Proximal humerus fracture", id: "proximal-humerus-fracture", distinguishing: "Extensive bruising and tenderness over the upper arm rather than the clavicle; confirmed on radiograph." },
+    { name: "Anterior shoulder dislocation", id: "anterior-shoulder-dislocation", distinguishing: "Loss of the round shoulder contour with fixed external rotation; clavicle intact." },
+    { name: "Rib fracture", id: "rib-fracture", distinguishing: "Pain on deep breathing and focal rib tenderness; can coexist after high-energy falls." },
+    { name: "Brachial plexus injury or stinger", id: "stinger-burner", distinguishing: "Burning pain and numbness with transient weakness without a bony deformity; can coexist with a fracture." },
+    { name: "Scapular fracture or floating shoulder", distinguishing: "Posterior shoulder pain and tenderness with a clavicle fracture in high-energy trauma; needs CT." },
+    { name: "Pathological fracture or bone lesion", distinguishing: "Fracture after minimal trauma or with night pain, weight loss or a known cancer; needs imaging and medical review." }
+  ],
+  redFlags: [
+    "Open fracture, skin tenting with blanching, or a fragment threatening the skin: urgent orthopaedic review, since the skin can perforate.",
+    "Absent radial pulse, a cold pale hand, expanding swelling or neurological deficit: possible subclavian vessel or brachial plexus injury. Emergency assessment.",
+    "Breathlessness, chest pain or reduced breath sounds: possible pneumothorax or haemothorax; emergency assessment.",
+    "Medial clavicle or sternoclavicular injury with dysphagia, dyspnoea or stridor: posterior displacement compressing the mediastinum. Emergency.",
+    "High-energy trauma with neck pain, head injury or multiple fractures: protect the cervical spine and refer to the emergency department.",
+    "Marked displacement with shortening of more than 2 cm in an active adult, or a floating shoulder: early orthopaedic opinion, because nonunion and symptomatic malunion are more likely [r7].",
+    "Fracture with minimal trauma, night pain or weight loss: consider a pathological fracture; refer for imaging and medical review.",
+    "Increasing pain, fever or wound problems after surgery, or persistent pain and movement at the fracture site after 3 to 6 months: infection or nonunion; refer to the treating surgeon [r2]."
+  ],
+
+  management: {
+    principles: "Assess the fracture (location, displacement, shortening, comminution, skin and neurovascular status) and the patient (age, demand, smoking, hand dominance, preferences). Undisplaced fractures and most paediatric and adolescent fractures are treated non-operatively with a sling for comfort and early movement. For completely displaced or shortened midshaft fractures in active adults the choice between sling and plate or nail is a live debate. Plate fixation consistently reduces nonunion and symptomatic malunion [r2,r5,r7,r12], and some trials and meta-analyses report better short- and long-term function and quicker union [r3,r6], but other trials and a Cochrane review found no clinically important functional benefit once nonunion is accounted for, with implant-related complications and plate removal common and secondary operations broadly similar [r2,r4,r5]. Surgery reduces the risk of nonunion at the price of operative complications, so the decision should be shared, with the patient's work, sport, smoking status and views on appearance and recovery time included.",
+    medical: [
+      {
+        name: "Sling for comfort and analgesia (non-operative treatment)",
+        description: "A sling is used for comfort for about 2–4 weeks (clinical convention) with paracetamol and short courses of NSAIDs as needed, and early pain-free movement of the elbow, wrist and hand. A Cochrane review of conservative treatments found very low-quality evidence of similar shoulder function with a figure-of-eight bandage and an arm sling [r13], and the surgical Cochrane review found low-quality evidence of no clinically important function difference between conservative and surgical treatment (Constant 2.3 points in favour of surgery) [r2]. NSAIDs have been questioned for fracture healing in general, but no source reviewed here tested them for clavicle fractures.",
+        evidence: "limited", recommendation: "recommended", refs: ["r13", "r2"]
+      },
+      {
+        name: "Plate fixation of completely displaced or shortened midshaft fractures (shared decision)",
+        description: "The Canadian trial (132 patients) found better Constant and DASH scores, faster union, fewer nonunions (2 versus 7) and no symptomatic malunions (versus 9) with plating, and supported primary plate fixation of completely displaced midshaft fractures in active adults, with hardware irritation, infection (3 patients) and one mechanical failure in the operative group [r3]. The multicentre trial of 200 patients found one nonunion after plating versus 16 non-operatively, and better one-year scores (DASH 3.4 versus 6.1; Constant 92.0 versus 87.8), but no differences after excluding nonunions, with higher cost, and concluded that routine plating was not supported [r4]. Meta-analyses: nonunion relative risk 0.14 with plating and 17.6% versus 16.6% secondary operations including removal [r5]; surgery reduced nonunion, shortened union by 5.1 weeks and improved long-term Constant (5.3 points) and DASH (4.3) with more complications (31.3% versus 20.5%) [r6]; for fully displaced or more than 2 cm shortened fractures, nonunion relative risk 0.17 and symptomatic malunion 0.13, with no difference in Constant, DASH or secondary operations [r7]. The Cochrane review found treatment failure (non-routine secondary surgery) was less likely with surgery (relative risk 0.32), with hardware removal for discomfort in 10.2% and infection in 3.2% of surgical patients [r2].",
+        evidence: "conflicting", recommendation: "consider", refs: ["r2", "r3", "r4", "r5", "r6", "r7"]
+      },
+      {
+        name: "Intramedullary nailing",
+        description: "A network meta-analysis of 19 randomised trials (1783 fractures) found that compression plating, reconstruction plating and intramedullary nailing all had significantly lower odds of nonunion than non-operative treatment (odds ratios 0.07 to 0.08), and that only compression plating had significantly lower DASH scores at six weeks [r12]. A separate meta-analysis found that plate fixation reduced nonunion but intramedullary nail fixation did not [r7], so the evidence for nailing is inconsistent.",
+        evidence: "conflicting", recommendation: "consider", refs: ["r12", "r7"]
+      },
+      {
+        name: "Operative fixation of displaced lateral (distal) third fractures",
+        description: "A systematic review of return to sport (23 studies, 14 on lateral fractures) reported that athletes with displaced lateral fractures were treated operatively, and that suture fixation and non-AC-joint-spanning plate fixation showed promising results [r11]. The evidence is mainly observational.",
+        evidence: "limited", recommendation: "consider", refs: ["r11"]
+      },
+      {
+        name: "Non-operative treatment for displaced midshaft fractures in adolescents",
+        description: "A meta-analysis of seven comparative studies (578 adolescents) found similar functional outcomes (DASH), with non-operative treatment associated with fewer revision operations (relative risk 0.15) and fewer complications (relative risk 0.31); the risks of nonunion and malunion were higher with non-operative treatment but imprecisely estimated [r14]. Non-operative treatment may be preferred in adolescents.",
+        evidence: "limited", recommendation: "consider", refs: ["r14"]
+      },
+      {
+        name: "Low-intensity pulsed ultrasound for fracture healing",
+        description: "In a single, underpowered, low-risk-of-bias trial, low-intensity pulsed ultrasound did not differ from placebo in pain, treatment failure (6 of 52 versus 5 of 49), time to clinical healing or return to activity [r13].",
+        evidence: "limited", recommendation: "not-recommended", refs: ["r13"]
+      }
+    ],
+    physio: [
+      {
+        name: "Early movement and graded rehabilitation of the shoulder girdle",
+        description: "Start with elbow, wrist and hand movement and pendulum exercises, then progress to active range and scapular control as pain and fracture stability allow, and strengthen after clinical and radiographic union. If the fracture was plated, follow the surgeon's restrictions. No randomised trial of rehabilitation after clavicle fracture was found in the sources reviewed, so dosage and timing are expert opinion.",
+        evidence: "expert-opinion", recommendation: "recommended", refs: []
+      },
+      {
+        name: "Education and shared decision support",
+        description: "Explain the fracture, the expected course, the realistic trade-off between surgery and a sling (union, bump and complications), and warning signs. Because the evidence is mixed [r2,r4,r5,r6], decision aids help patients balance appearance, return to sport and operative risk.",
+        evidence: "expert-opinion", recommendation: "recommended", refs: ["r2"]
+      },
+      {
+        name: "Figure-of-eight bandage as routine treatment",
+        description: "Three underpowered trials (296 participants) provided very low-quality evidence of similar shoulder function with a figure-of-eight bandage and an arm sling, and one trial reported more pain and discomfort in the figure-of-eight group [r13]. A sling is preferred for comfort.",
+        evidence: "very-limited", recommendation: "not-recommended", refs: ["r13"]
+      },
+      {
+        name: "Heavy loading, pushing or contact before union",
+        description: "Loading across an un-united displaced fracture risks displacement and nonunion; restrict loading and contact until clinical and radiographic union (clinical reasoning).",
+        evidence: "expert-opinion", recommendation: "not-recommended", refs: []
+      }
+    ],
+    education: [
+      "A broken collarbone often heals well in a sling. Even a visible bump usually settles into a firm ridge and a good shoulder.",
+      "Surgery lowers the chance that the bone does not join (nonunion) and can speed healing, but it brings its own risks such as hardware irritation, infection and sometimes a second operation to remove the plate [r2,r5,r6].",
+      "Smoking and a large displacement raise the chance that the bone will not heal, so stopping smoking helps [r9,r10].",
+      "Keep moving the elbow, wrist and hand from day one, and work on shoulder movement as soon as pain allows.",
+      "Contact sport and heavy lifting must wait until the bone is united on an X-ray and your strength is back.",
+      "Seek urgent help for a cold or pale hand, numbness, breathlessness, a pointed bone threatening the skin, or fever after surgery."
+    ]
+  },
+
+  rehab: {
+    overview: "Criteria-based and graded by fracture type and treatment. The program below is for non-operative care or for rehabilitation after plating once the surgeon allows it. Dosages are clinical conventions because no trial of rehabilitation after clavicle fracture was found in the sources reviewed. If the fracture was plated or nailed, the surgeon's range and loading restrictions take priority.",
+    stages: [
+      {
+        name: "Protect and keep moving",
+        timeframe: "Weeks 0–3",
+        goals: ["Control pain and swelling", "Maintain elbow, wrist and hand movement", "Begin gentle pain-free shoulder movement", "Educate about the fracture and warning signs"],
+        precautions: ["No lifting, pushing or pulling with the injured arm, and no contact", "Avoid sleeping on the injured side", "Sling for comfort only, weaned over 2–4 weeks", "Report numbness, a cold hand or skin tightening over the bone"],
+        exercises: [
+          { name: "Elbow, wrist and hand range of motion and grip", dosage: "3 × 15, hourly while awake", cues: "Keep the shoulder relaxed", figure: { pose: "ex-grip", view: "lateral" } },
+          { name: "Pendulum swings", dosage: "3 × 30–60 s, 3 times daily", cues: "Let the arm hang and swing from the trunk", figure: { pose: "ex-pendulum", view: "lateral" } },
+          { name: "Scapular setting (gentle)", dosage: "10 × 5 s, 3–4 times daily", cues: "Draw the shoulder blades gently back and down within comfort" },
+          { name: "Supported assisted elevation (supine or with the other hand)", dosage: "2 × 10, 2 times daily, to about 90° within comfort", cues: "Stop at pain; do not push through the fracture", figure: { pose: "ex-shoulder-flexion", view: "lateral" } }
+        ],
+        progressionCriteria: ["Pain ≤ 3/10 at rest", "Pain-free active elevation to about 90°", "Fracture stable on clinical examination (and on radiograph at the surgeon's or doctor's review)"]
+      },
+      {
+        name: "Restore range and scapular control",
+        timeframe: "Weeks 3–8",
+        goals: ["Full active range of motion", "Restore scapulohumeral rhythm", "Begin isometric and light resistance exercise once callus is forming"],
+        precautions: ["No heavy lifting, pushing or contact", "Respect surgeon limits if the fracture was plated", "Pain ≤ 3–4/10 during exercise, settling within 24 hours (clinical convention)"],
+        exercises: [
+          { name: "Wall slide", dosage: "3 × 8–10, 2 times daily", cues: "Keep the forearms on the wall and the shoulder blade moving", figure: { pose: "ex-wall-slide", view: "lateral", props: ["wall"] } },
+          { name: "Active elevation in the scapular plane", dosage: "2 × 10, 2 times daily, no load", cues: "Thumb up, raise to full range if pain-free", figure: { pose: "ex-scaption", view: "lateral" } },
+          { name: "Isometric external rotation at the side", dosage: "5 × 10–20 s at about 30–50% effort, daily", cues: "Elbow bent and tucked, press into a wall", figure: { pose: "ex-shoulder-er-band", view: "lateral", props: ["wall"] } },
+          { name: "Light row (band)", dosage: "3 × 10–12, 3 times per week, once callus is evident", cues: "Draw the shoulder blades back and down", figure: { pose: "ex-row", view: "lateral", props: ["resistance-band"] } }
+        ],
+        progressionCriteria: ["Full or near-full active elevation without hitching", "Pain ≤ 2/10 with daily tasks", "Callus bridging on radiograph and no movement at the fracture site (clinician confirmation)"]
+      },
+      {
+        name: "Progressive strengthening",
+        timeframe: "Weeks 8–14 (after clinical and radiographic union is evident)",
+        goals: ["Restore shoulder girdle strength and endurance", "Improve scapular control under load", "Return to daily and work tasks"],
+        precautions: ["Progress load gradually (about 5–10% per week; clinical convention)", "No direct impact or contact until union is confirmed"],
+        exercises: [
+          { name: "Scaption raise", dosage: "3 × 10–12 with a light dumbbell, 3 times per week", cues: "No shrug, control the lowering", figure: { pose: "ex-scaption", view: "lateral", props: ["dumbbell"] } },
+          { name: "Row progression", dosage: "3–4 × 8–12, 3 times per week", cues: "Pause at the end of the pull", figure: { pose: "ex-row", view: "lateral", props: ["resistance-band"] } },
+          { name: "Incline or wall push-up plus", dosage: "3 × 8–12, 3 times per week", cues: "Push through the hands and protract at the top", figure: { pose: "ex-press-up", view: "lateral", props: ["wall"] } },
+          { name: "Band external rotation at the side", dosage: "3 × 10–15, 3 times per week", cues: "Keep the shoulder blade set", figure: { pose: "ex-shoulder-er-band", view: "lateral", props: ["resistance-band"] } },
+          { name: "Prone Y raise", dosage: "3 × 10–12, 2–3 times per week", cues: "Lift with the lower trapezius, not the neck", figure: { pose: "ex-prone-y", view: "lateral", props: ["bench"] } }
+        ],
+        progressionCriteria: ["Radiographic union and no tenderness at the fracture site", "Strength about 80% or more of the other side (dynamometry)", "Pain ≤ 2/10 with push-ups and carrying"]
+      },
+      {
+        name: "Return to sport and work",
+        timeframe: "Months 3–6",
+        goals: ["Restore full strength and endurance", "Prepare for contact, falls and overhead tasks", "Return to sport with criteria met"],
+        precautions: ["Contact or collision sport only after radiographic union and criteria are met", "Re-fracture risk is higher before the callus has remodelled; build contact exposure gradually"],
+        exercises: [
+          { name: "Overhead press", dosage: "3–4 × 6–10 at 7–8/10 effort, 2–3 times per week", cues: "Press in the scapular plane, control the lowering", figure: { pose: "ex-overhead-press", view: "lateral", props: ["dumbbell"] } },
+          { name: "Push-up progression", dosage: "3 × 8–15, 2–3 times per week", cues: "Straight trunk, protract at the top", figure: { pose: "ex-press-up", view: "lateral", props: ["mat"] } },
+          { name: "Farmer or suitcase carry", dosage: "3–4 × 20–40 m, 2 times per week", cues: "Tall posture with the shoulder blades set", figure: { pose: "ex-farmer-carry", view: "lateral", props: ["dumbbell"] } },
+          { name: "Sport-specific drills including controlled falling and contact progressions", dosage: "Start at about 25–30% of normal volume and build over 4–8 weeks (clinical convention)", cues: "Quality first, then intensity, then contact", figure: { pose: "serve-trophy", view: "anterior" } }
+        ],
+        progressionCriteria: ["Passes the strength, range and function criteria (see return to sport)", "Completes sport simulation including contact drills at full intensity with pain ≤ 2/10", "Clearance from the treating clinician or surgeon"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "Clinical and radiographic union, with no tenderness or movement at the fracture site",
+      "No resting or night pain, and pain ≤ 2/10 with sport tasks",
+      "Full pain-free active range of motion equal to the other side",
+      "Strength about 90% or more of the other side for elevation, external rotation and pushing (clinical convention)",
+      "Normal scapular control under load, and no persistent drooping or protraction",
+      "Completes sport-specific drills, including controlled contact or falling progressions, without symptoms",
+      "Time: commonly 6–12 weeks for non-contact and about 3–4 months for contact sport, longer in nonunion or after surgery (clinical conventions)"
+    ],
+    tests: [
+      "Hand-held dynamometry for elevation, external rotation and pushing compared with the other side",
+      "Closed Kinetic Chain Upper Extremity Stability Test",
+      "Push-up and carry endurance",
+      "Radiographic review for union before contact",
+      "Constant score, DASH or QuickDASH at baseline and return [r3,r4]"
+    ]
+  },
+
+  prognosis: "Most clavicle fractures unite and most people regain good function. In the multicentre trial, 12-month Constant scores were 92.0 after plating and 87.8 with non-operative care, and DASH scores 3.4 versus 6.1, but there were no significant differences once patients with nonunion were excluded, which suggests that the benefit of surgery came from preventing nonunion [r4]. A Cochrane review found low-quality evidence that surgery has no additional benefit in function, pain or quality of life but may reduce treatment failure (relative risk 0.32); the main cause of treatment failure was symptomatic nonunion (11.6%) with non-operative care and mechanical failure (3.4%) with surgery, and hardware removal for discomfort occurred in 10.2% and infection in 3.2% of surgical patients [r2]. A meta-analysis reported secondary operations in 17.6% of operative and 16.6% of non-operative patients when plate removal was counted [r5]. Time to union for displaced fractures averaged 16.4 weeks with plating and 28.4 weeks without in the Canadian trial [r3]. For athletes, a systematic review concluded that operative management of displaced midshaft fractures offered improved return rates and times to sport [r11]. In adolescents, outcomes were similar with either approach and non-operative care had fewer revisions [r14]. Long-term data beyond the trials reviewed here were limited, so the long-term risk of shoulder dysfunction after non-operative healing with malunion was not established.",
+  prevention: [
+    "No intervention has been shown to prevent clavicle fractures; avoid falls onto the shoulder by improving falling technique in contact, cycling and snow sports (limited evidence)",
+    "Wear appropriate protective equipment and follow safety practices in cycling, snow sports and contact sport (reasonable principle; unproven effect on clavicle fracture)",
+    "Support smoking cessation, because smoking is associated with nonunion [r9,r10]",
+    "Optimise bone health and reduce falls risk in older adults (reasonable principle; falls were the dominant cause in adults [r9])",
+    "After a fracture, restore shoulder strength and control fully before returning to contact sport (clinical reasoning)"
+  ],
+  clinicalPearls: [
+    "Always examine the neurovascular system and chest in high-energy falls. The subclavian vessels, brachial plexus and lung apex lie directly behind and below the clavicle.",
+    "Displacement is the key prognostic feature. Fully displaced or more than 2 cm shortened fractures have lower nonunion and malunion risk with surgery (relative risk 0.17 and 0.13), but functional scores were similar [r7], and displacement was the most likely predictor of nonunion in non-operative care [r10].",
+    "The evidence is truly mixed. The Canadian trial favoured plating [r3], the Edinburgh-led multicentre trial did not support routine plating [r4], and meta-analyses disagree on function but agree that surgery reduces nonunion [r5,r6,r7]. Present both options.",
+    "Count the cost of surgery as well as the benefit. Implant irritation, infection and removal are common (hardware removal 10.2% in the Cochrane review) and secondary operations are similar between groups once removal is included [r2,r5].",
+    "In adolescents, non-operative treatment is usually preferred: outcomes were similar and revisions were fewer [r14]. In athletes with displaced midshaft fractures, surgery gave better return rates and times in one review [r11].",
+    "A sling is as good as a figure-of-eight bandage, and the sling is more comfortable [r13]. Do not insist on bracing the shoulders back."
+  ],
+  related: ["ac-joint-injury", "sc-joint-injury", "proximal-humerus-fracture", "anterior-shoulder-dislocation", "rib-fracture"],
+
+  references: [
+    { id: "r1", citation: "Postacchini F, Gumina S, De Santis P, et al. Epidemiology of clavicle fractures. J Shoulder Elbow Surg. 2002;11(5):452-6.", pmid: "12378163", doi: "10.1067/mse.2002.126613", type: "cross-sectional", year: 2002 },
+    { id: "r2", citation: "Lenza M, Buchbinder R, Johnston RV, et al. Surgical versus conservative interventions for treating fractures of the middle third of the clavicle. Cochrane Database Syst Rev. 2019;1(1):CD009363.", pmid: "30666620", doi: "10.1002/14651858.CD009363.pub3", type: "systematic-review", year: 2019 },
+    { id: "r3", citation: "Canadian Orthopaedic Trauma Society. Nonoperative treatment compared with plate fixation of displaced midshaft clavicular fractures: a multicenter, randomized clinical trial. J Bone Joint Surg Am. 2007;89(1):1-10.", pmid: "17200303", doi: "10.2106/JBJS.F.00020", type: "rct", year: 2007 },
+    { id: "r4", citation: "Robinson CM, Goudie EB, Murray IR, et al. Open reduction and plate fixation versus nonoperative treatment for displaced midshaft clavicular fractures: a multicenter, randomized, controlled trial. J Bone Joint Surg Am. 2013;95(17):1576-84.", pmid: "24005198", doi: "10.2106/JBJS.L.00307", type: "rct", year: 2013 },
+    { id: "r5", citation: "Woltz S, Krijnen P, Schipper IB. Plate fixation versus nonoperative treatment for displaced midshaft clavicular fractures: a meta-analysis of randomized controlled trials. J Bone Joint Surg Am. 2017;99(12):1051-7.", pmid: "28632595", doi: "10.2106/JBJS.16.01068", type: "meta-analysis", year: 2017 },
+    { id: "r6", citation: "Guerra E, Previtali D, Tamborini S, et al. Midshaft clavicle fractures: surgery provides better results as compared with nonoperative treatment: a meta-analysis. Am J Sports Med. 2019;47(14):3541-51.", pmid: "30835150", doi: "10.1177/0363546519826961", type: "meta-analysis", year: 2019 },
+    { id: "r7", citation: "Amer K, Smith B, Thomson JE, et al. Operative versus nonoperative outcomes of middle-third clavicle fractures: a systematic review and meta-analysis. J Orthop Trauma. 2020;34(1):e6-13.", pmid: "31851115", doi: "10.1097/BOT.0000000000001602", type: "meta-analysis", year: 2020 },
+    { id: "r8", citation: "Lambert C, Lambert M, Galandi M, et al. Severe injuries in competitive cycling during an Olympic cycle: injury patterns, time loss, and return-to-performance outcomes. BMC Sports Sci Med Rehabil. 2026;18(1).", pmid: "42983465", doi: "10.1186/s13102-026-02201-x", type: "cohort", year: 2026 },
+    { id: "r9", citation: "Irfan SA, Ali AA, Ashkar A, et al. Predictors requiring special attention to prevent clavicle fracture nonunion: a systematic review of literature. Trauma Surg Acute Care Open. 2023;8(1):e001188.", pmid: "38020862", doi: "10.1136/tsaco-2023-001188", type: "systematic-review", year: 2023 },
+    { id: "r10", citation: "Jørgensen A, Troelsen A, Ban I. Predictors associated with nonunion and symptomatic malunion following non-operative treatment of displaced midshaft clavicle fractures: a systematic review of the literature. Int Orthop. 2014;38(12):2543-9.", pmid: "25027978", doi: "10.1007/s00264-014-2450-7", type: "systematic-review", year: 2014 },
+    { id: "r11", citation: "Robertson GAJ, Wood AM. Return to sport following clavicle fractures: a systematic review. Br Med Bull. 2016;119(1):111-28.", pmid: "27554280", doi: "10.1093/bmb/ldw029", type: "systematic-review", year: 2016 },
+    { id: "r12", citation: "Martin JR, Saunders PE, Phillips M, et al. Comparative effectiveness of treatment options for displaced midshaft clavicle fractures: a systematic review and network meta-analysis. Bone Jt Open. 2021;2(8):646-54.", pmid: "34402306", doi: "10.1302/2633-1462.28.BJO-2021-0112.R1", type: "meta-analysis", year: 2021 },
+    { id: "r13", citation: "Lenza M, Faloppa F. Conservative interventions for treating middle third clavicle fractures in adolescents and adults. Cochrane Database Syst Rev. 2016;12(12):CD007121.", pmid: "27977849", doi: "10.1002/14651858.CD007121.pub4", type: "systematic-review", year: 2016 },
+    { id: "r14", citation: "Galán-Olleros M, Stitzman-Wengrowicz ML, Martínez-Álvarez S, et al. Nonoperative versus surgical treatment of displaced midshaft clavicle fractures in adolescents: a systematic review and meta-analysis of comparative studies. Int Orthop. 2025;49(9):2227-38.", pmid: "40560219", doi: "10.1007/s00264-025-06589-y", type: "meta-analysis", year: 2025 }
+  ],
+
+  animation: {
+    title: "How a clavicle fracture happens",
+    phases: [
+      {
+        type: "moi", label: "Mechanism", duration: 6, view: "anterior", environment: "snow",
+        actors: [{ id: "athlete", kit: "athlete" }],
+        keyframes: [
+          { t: 0, pose: "ski-crouch", root: { x: -70 } },
+          { t: 1.3, pose: "ski-crouch", joints: { shoulderR: 20 }, root: { x: -30 } },
+          { t: 2.3, pose: "fall-sideways", joints: { shoulderR: 15, trunk: 18 }, root: { x: 5 }, ease: "in" },
+          { t: 3.4, pose: "fall-sideways", root: { x: 12 } },
+          { t: 5.2, pose: "fall-sideways", root: { x: 14 } }
+        ],
+        forces: [
+          { t: [2.0, 3.6], at: "shoulderR", dir: "down", label: "Fall onto the point of the shoulder", size: "m" }
+        ],
+        highlights: [{ t: [2.2, 6], at: "shoulderR" }],
+        impacts: [{ t: 2.6, at: "shoulderR" }],
+        slowmo: [{ t: [2.0, 3.1], rate: 0.3 }],
+        captions: [
+          { t: 0, text: "A snowboarder is travelling at speed down a slope." },
+          { t: 1.3, text: "An edge catches, and the athlete is thrown sideways." },
+          { t: 2.3, text: "The athlete lands directly on the point of the right shoulder, with the arm by the side." },
+          { t: 3.4, text: "The force travels along the collarbone, and a sharp pain follows at once." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "shoulderR",
+        captions: [{ t: 0, text: "Zooming into the right shoulder, viewed from the front." }]
+      },
+      {
+        type: "closeup", label: "In the shoulder", duration: 10, scene: "shoulder-girdle",
+        actions: [
+          { t: 0, do: "highlight", target: "clavicle" },
+          { t: 0.3, do: "label", target: "clavicle", text: "Clavicle" },
+          { t: 0.9, do: "label", target: "sternocleidomastoid", text: "Sternocleidomastoid" },
+          { t: 1.5, do: "arrow", at: "shoulderTip", dir: "down", label: "Fall onto the shoulder", size: "m" },
+          { t: 2.4, do: "fracture", target: "clavicle", pattern: "oblique", at: "midshaftClavicle", displaced: true },
+          { t: 2.4, do: "impact", at: "midshaftClavicle" },
+          { t: 3.2, do: "label", target: "clavicle", text: "Displaced midshaft fracture" },
+          { t: 3.8, do: "contract", target: "sternocleidomastoid", amount: 0.4, dur: 0.8 },
+          { t: 4.0, do: "arrow", at: "medialClavicle", dir: "up", label: "Sternocleidomastoid pulls the medial fragment up", size: "s" },
+          { t: 4.8, do: "arrow", at: "distalClavicle", dir: "down", label: "Arm weight pulls the lateral fragment down", size: "s" },
+          { t: 5.8, do: "highlight", target: "brachialPlexus" },
+          { t: 5.8, do: "highlight", target: "subclavianVessels" },
+          { t: 6.1, do: "label", target: "subclavianVessels", text: "Vessels and plexus lie behind the bone" },
+          { t: 7.2, do: "pain", at: "midshaftClavicle" },
+          { t: 8.4, do: "camera", at: "midshaftClavicle", zoom: 1.7, dur: 1 }
+        ],
+        captions: [
+          { t: 0, text: "The clavicle is a thin S-shaped strut between the sternum and the shoulder blade." },
+          { t: 1.5, text: "A fall onto the point of the shoulder loads the bone sideways." },
+          { t: 2.4, text: "The middle third fails, and the fracture ends separate." },
+          { t: 3.8, text: "The sternocleidomastoid pulls the medial end up, and the weight of the arm pulls the outer end down." },
+          { t: 5.8, text: "The vessels and nerves that run behind the bone need checking after any displaced fracture." },
+          { t: 7.2, text: "The shoulder droops and is very painful, and the arm is guarded." }
+        ]
+      },
+      {
+        type: "micro", label: "Bone healing", duration: 9, tissue: "bone-fracture",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.0, stage: "fracture" }, { t: 2.0, stage: "haematoma" }, { t: 3.2, stage: "inflammation" },
+          { t: 4.6, stage: "soft-callus" }, { t: 6.0, stage: "hard-callus" }, { t: 7.5, stage: "remodelling" }
+        ],
+        timeLabels: [{ t: 2.0, text: "Days 0–7" }, { t: 4.6, text: "Weeks 1–3" }, { t: 6.0, text: "Weeks 3–12" }, { t: 7.5, text: "Months to years" }],
+        captions: [
+          { t: 0, text: "Healthy cortical bone: lamellae, osteocytes and a thin periosteum." },
+          { t: 1.0, text: "The cortex breaks, and the periosteum tears." },
+          { t: 2.0, text: "A haematoma forms between the bone ends." },
+          { t: 3.2, text: "Inflammatory cells clear debris and release signals that start repair." },
+          { t: 4.6, text: "A soft callus of cartilage and fibrous tissue bridges the gap." },
+          { t: 6.0, text: "Osteoblasts replace it with woven bone: the hard callus." },
+          { t: 7.5, text: "Remodelling replaces woven bone with lamellar bone over months to years." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "UL3" }
+};
