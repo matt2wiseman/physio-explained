@@ -58,3 +58,9 @@ Items that writers flagged as written from knowledge, cited from metadata only, 
 - mortons-neuroma: injection, radiofrequency and surgery evidence is low certainty; Mulder's click sensitivity 29–94%.
 - sesamoid-injury: evidence is case series.
 - All four: test procedures (piano-key, pronation-abduction, vertical drawer, Mulder), rehab dosages, return-to-sport thresholds, web-space, Lisfranc ligament and sesamoid blood-supply anatomy and bipartite-sesamoid radiograph features are labelled convention or standard anatomy.
+
+## Added from the general batch (delayed-onset-muscle-soreness, bone-stress-injury, physeal-fracture, peripheral-nerve-injury)
+
+- peripheral-nerve-injury: the "about 1 mm a day" regrowth rate rests on a rat study and a single paediatric case report, not a human review; the "8–12 weeks" neurapraxia figure comes from a facial nerve series (QC added that caveat to the key fact and the timeline summary). Cepela 2016 and Sunderland 1951 have no abstract in PubMed (Cepela full text empty) and are cited only for the existence of the classification; Seddon 1943 is not cited. Exercise and electrical-stimulation evidence is mostly preclinical. Referral at about 3 months is convention.
+- physeal-fracture: Salter–Harris I–III and V definitions and "type V diagnosed late" are classical descriptions; only type IV (Cass) and case counts (Deng) are sourced. Physiotherapy after short casting rests on one RCT in supracondylar fractures, extrapolated cautiously. Growth-arrest series are retrospective.
+- bone-stress-injury: RED-S causal evidence is associational and debated; the calcium and vitamin D evidence is in military recruits only.

@@ -12,7 +12,7 @@ export default {
   urgency: "urgent",
   summary: "Injury to a peripheral nerve, graded by Seddon (neurapraxia, axonotmesis, neurotmesis) and Sunderland. Recovery depends on the grade and is slow at about 1 mm a day; no sign of recovery means early referral.",
   keyFacts: [
-    { label: "Typical recovery", value: "Neurapraxia is presumed to recover within about 8–12 weeks; after axonal injury, axons regrow at about 1 mm a day, so recovery takes months and depends on the distance to the target muscle" },
+    { label: "Typical recovery", value: "Neurapraxia is presumed to recover within about 8–12 weeks (a figure from a facial nerve series, so treat it as a rough guide); after axonal injury, axons regrow at about 1 mm a day, so recovery takes months and depends on the distance to the target muscle" },
     { label: "Return to sport", value: "Criteria-based. Protect the denervated limb, track reinnervation, and rebuild strength as muscles recover; return depends on grade, site and muscle recovery" },
     { label: "Key test", value: "Motor and sensory loss in one nerve's territory with a typical mechanism; document a baseline and repeat serially, with an advancing Tinel sign as a clinical sign of regrowth" },
     { label: "Imaging", value: "Electrodiagnostic study (nerve conduction and EMG) localises and grades the injury; useful information can be obtained in the first week, though it is conventionally delayed to about 3 weeks" },
@@ -112,7 +112,7 @@ export default {
   },
 
   timeframes: {
-    summary: "Time depends on the grade and on the distance from the lesion to the target muscle. Neurapraxia is presumed to recover within 8 to 12 weeks [r14]. After axonal injury, regrowth is about 1 mm a day [r11], so a muscle 300 mm below the lesion needs about 300 days for axons to arrive (arithmetic from the 1 mm a day rate), and function lags behind that. Denervated muscle atrophies over weeks, which is why proximal injuries are time-critical [r11,r1].",
+    summary: "Time depends on the grade and on the distance from the lesion to the target muscle. Neurapraxia is presumed to recover within 8 to 12 weeks (a figure stated in a facial nerve series) [r14]. After axonal injury, regrowth is about 1 mm a day [r11], so a muscle 300 mm below the lesion needs about 300 days for axons to arrive (arithmetic from the 1 mm a day rate), and function lags behind that. Denervated muscle atrophies over weeks, which is why proximal injuries are time-critical [r11,r1].",
     healing: [
       { phase: "Injury and conduction block / Wallerian degeneration", startDay: 0, endDay: 14, description: "Wallerian degeneration of the axon beyond the lesion occurs within days in rat studies [r11]; early electrodiagnostic data can be informative in the first week [r1]" },
       { phase: "Neurapraxia recovery", startDay: 0, endDay: 84, description: "Presumed complete recovery within 8 to 12 weeks if the lesion is neurapraxia [r14]" },
