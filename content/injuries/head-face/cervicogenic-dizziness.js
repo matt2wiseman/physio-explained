@@ -1,0 +1,533 @@
+export default {
+  id: "cervicogenic-dizziness",
+  name: "Cervicogenic dizziness",
+  shortName: "Cervicogenic dizziness",
+  aka: ["cervical dizziness", "cervical vertigo", "neck-related dizziness", "proprioceptive dizziness", "CGD", "neck dizziness", "cervical proprioceptive dizziness"],
+  region: "head-face",
+  tissues: ["joint-capsule", "muscle"],
+  onset: "acute-or-gradual",
+  mechanismType: ["insidious", "non-contact", "traction"],
+  populations: ["adults with neck pain", "people after whiplash", "people after concussion", "older adults with chronic neck pain"],
+  sports: [],
+  urgency: "routine",
+  summary: "Dizziness linked to neck pain or neck movement, thought to arise from disturbed cervical proprioception. A contested diagnosis of exclusion with weak criteria: rule out vestibular, central and vascular causes first.",
+  keyFacts: [
+    { label: "Status", value: "A diagnosis of exclusion. The Bárány Society found evidence for a mechanistic link between neck pathology and vertigo lacking and proposed no diagnostic criteria" },
+    { label: "Key test", value: "No validated test. Cervical torsion, joint position error and smooth pursuit neck torsion tests differ between groups, but accuracy is modest and unproven" },
+    { label: "Imaging", value: "Cannot diagnose it. Use imaging only to exclude central, vascular or structural causes when red flags are present" },
+    { label: "Typical recovery", value: "Not well defined. In trials, manual therapy reduced dizziness over 6 weeks to 12 months; a meta-analysis rated certainty low to very low" },
+    { label: "Key treatment", value: "Manual therapy (for example SNAGs) with neck exercise. High-velocity manipulation is not supported and carries serious adverse-event reports" }
+  ],
+  overview: "Cervicogenic dizziness (CGD) is a clinical syndrome characterised by dizziness and associated neck pain. No definitive clinical or laboratory test exists, so it is a diagnosis of exclusion [r1]. The usual proposal is that disturbed proprioceptive input from the neck conflicts with vestibular and visual input and produces unsteadiness, but the syndrome remains contested [r2,r3].\n\nThe Bárány Society reviewed the evidence and took the view that support for a mechanistic link between an illusory sense of self-motion (vertigo) and neck pathology or neck pain is lacking. When a combined head and neck movement triggers vertigo, there is usually a common vestibular condition such as migraine or BPPV, and less often a central or vascular condition, including vertebral artery dissection. Migraine, including vestibular migraine, is by far the commonest cause of the combination of neck pain and vestibular symptoms [r4]. The committee proposed no diagnostic criteria for clinical use.\n\nPhysiotherapists therefore need to be honest with patients: the diagnosis is uncertain, other causes must be excluded first, and treatment is directed at the neck with modest, mostly short-term evidence. Manual therapy trials report benefit over placebo, but a meta-analysis rated the certainty of evidence low to very low, and high-velocity manipulation carries risks [r5,r6,r7].",
+
+  epidemiology: {
+    text: "A reliable population prevalence for cervicogenic dizziness was not identified in the sources reviewed. This reflects the lack of agreed diagnostic criteria: the Bárány Society judged the evidence for a mechanistic link between neck pathology and vertigo to be lacking, and migraine is by far the commonest cause of the combination of neck pain and vestibular symptoms [r4]. The clinical syndrome is described in people with neck pain, persistent whiplash and concussion. Sensorimotor test differences are larger with greater pain intensity and dizziness: in a meta-analysis of 34 studies of people with neck pain, joint position sense, oculomotor function and postural sway were poorer than in controls [r8]. In a randomised trial of people with persisting dizziness, neck pain and headaches after sport-related concussion, a combined cervical and vestibular program shortened time to medical clearance [r9]. Trials of manual therapy in chronic CGD enrolled people with a mean age of about 62 years [r6].",
+    riskFactors: {
+      intrinsic: [
+        "Neck pain: the size of sensorimotor differences (joint position error, smooth pursuit neck torsion, balance) was influenced by pain intensity and the presence of dizziness [r8]",
+        "Migraine, including vestibular migraine, is the commonest cause of neck pain with vestibular symptoms and must be considered first [r4]",
+        "Older age: the manual therapy trials enrolled people with a mean age of about 62 years [r6]"
+      ],
+      extrinsic: [
+        "Whiplash and neck trauma: persistent whiplash is associated with abnormal smooth pursuit neck torsion, whether or not the patient reports dizziness [r10,r11]",
+        "Concussion: persisting dizziness, neck pain and headaches after sport-related concussion respond to cervicovestibular rehabilitation [r9,r12]",
+        "Reduced head movement in people with vestibular problems can raise neck muscle tension, which may be both cause and effect and confound the picture [r4]"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "The leading proposal is a proprioceptive one. The upper cervical facet joints and suboccipital muscles are rich in proprioceptors whose input is integrated in the brainstem with vestibular and visual information. If neck injury, pain or muscle dysfunction alters this afferent signal, the brain may receive conflicting information about head and body position, which is experienced as unsteadiness, lightheadedness or disequilibrium [r2]. This is a hypothesis. The Bárány Society found no demonstrated mechanism linking the neck to true vertigo, and noted that the observed neck muscle tension in vestibular patients may be a consequence of reduced head movement rather than a cause [r4]. The neurovascular theory has been discredited [r3].",
+    sequence: [
+      "Trauma (for example whiplash or concussion), strain or degeneration affects the upper cervical joints and muscles [r9].",
+      "Pain, muscle guarding and reduced range of motion develop in the upper neck.",
+      "Afferent input from the cervical facet joints and suboccipital muscle spindles becomes abnormal [r2].",
+      "The brainstem receives neck signals that do not match vestibular and visual input (a sensory mismatch) [r2].",
+      "Neck movement or sustained neck postures provoke unsteadiness, lightheadedness or a sense of drunkenness [r13].",
+      "Eye movement control and head position sense become less precise, shown by abnormal smooth pursuit neck torsion and joint position error tests [r11,r13].",
+      "The person limits head movement. This reduces range further and raises neck tension, which can reinforce the cycle [r4]."
+    ],
+    variants: [
+      { name: "Proprioceptive cervicogenic dizziness", description: "The main hypothesis: disturbed cervical afferent input causes unsteadiness with neck movement. The cervical torsion test appears the best available diagnostic test, though evidence is limited [r2]." },
+      { name: "Post-whiplash dizziness", description: "Persistent whiplash shows abnormal smooth pursuit neck torsion, whether or not dizziness is reported [r10]. Whiplash and acoustic neuroma groups differed on the same test [r11]." },
+      { name: "Post-concussion neck-related dizziness", description: "Dizziness, neck pain and headaches persisting after sport-related concussion improved with a combined cervical and vestibular program [r9,r12]." },
+      { name: "Migraine-related neck pain with dizziness", description: "Vestibular migraine is by far the commonest cause of neck pain with vestibular symptoms, and it should be sought before attributing symptoms to the neck [r4]." },
+      { name: "Vascular and central look-alikes", description: "Vertebral artery dissection with posterior circulation stroke and, extremely rarely, a vertebral artery compression syndrome can also present with head-movement-related dizziness. These are excluded first [r4,r14]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The upper cervical spine (occiput to C3) carries the densest concentration of proprioceptive receptors in the neck. The suboccipital muscles and the C1–2 and C2–3 facet joints send afferent information that is integrated in the brainstem with vestibular and visual input to coordinate head, eye and body position [r2]. The greater occipital nerve (from C2) supplies the back of the scalp and is a source of occipital headache. The vertebral arteries pass through the transverse foramina of C6 to C1 and wind around the atlas, so they are exposed to rotation and extension at the upper neck, which is why vascular pathology must be considered before neck testing and treatment [r14].",
+    structures: [
+      { name: "C1–2 (atlanto-axial) and C2–3 facet joints", role: "Upper cervical segments with rich mechanoreceptor supply; proposed source of altered afferent input [r2]" },
+      { name: "Suboccipital muscles", role: "Small muscles with dense muscle spindles that contribute to head position sense and eye-head coordination [r2]" },
+      { name: "Atlas and axis", role: "Bony segments that carry the head and give half of neck rotation" },
+      { name: "Greater occipital nerve", role: "Sensory nerve from C2; source of occipital headache that often accompanies neck pain" },
+      { name: "Vertebral artery", role: "Supplies the brainstem and cerebellum; dissection or compression can mimic CGD and must be excluded [r4,r14]" },
+      { name: "Vestibular and visual systems", role: "Provide the head-motion and visual signals that the brain compares with neck input [r2]" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "No structural lesion has been shown to cause cervicogenic dizziness. The proposed problem is functional: disturbed cervical proprioception from facet joints and suboccipital muscles, producing sensorimotor mismatch [r2]. Support comes from tests of neck sensorimotor control. In a meta-analysis of 34 studies of neck pain, people with neck pain had poorer joint position sense, poorer oculomotor function (smooth pursuit neck torsion) and wider postural sway than controls, and the differences depended on pain intensity and dizziness [r8]. In a case-control study, 25 people with clinically diagnosed CGD differed from 25 people with BPPV on cervical joint position error and the cervical torsion test, and the Youden index was 0.60 for the cervical joint position error, smooth pursuit neck torsion and cervical torsion tests [r13].\n\nThe evidence is inconsistent and indirect. The tests do not agree with each other: in persistent whiplash, an abnormal rotation joint position error had a positive predictive value of 88% but low sensitivity (60%) and specificity (54%) for abnormal balance or smooth pursuit neck torsion, so all three are needed [r15]. A review describes four hypotheses (neurovascular, vascular, proprioceptive and migraine-associated), with the neurovascular theory discredited, and concludes that there is no specific diagnostic method or pathognomonic feature [r3]. The Bárány Society takes the view that a mechanistic link between neck pathology and vertigo is not supported [r4].",
+    structures: [
+      { name: "Upper cervical facet joints", effect: "Proposed source of abnormal mechanoreceptor input; pain induced on examination of the upper cervical vertebrae was more common in CGD than in BPPV [r13]" },
+      { name: "Suboccipital muscles", effect: "Altered tone and spindle input; neck muscle tension may be a consequence of reduced head movement rather than a cause [r4]" },
+      { name: "Cervical afferent pathways to the brainstem", effect: "Abnormal head position sense and cervico-ocular control, shown by joint position error and smooth pursuit neck torsion tests [r8,r11]" },
+      { name: "Vertebral artery (exclusion)", effect: "Dissection or compression can present with dizziness on head movement and must be excluded [r4]" }
+    ],
+    muscles: [
+      { name: "Suboccipital and deep neck flexor muscles", effect: "Reduced control and endurance and altered proprioception; trained as part of sensorimotor rehabilitation (clinical rationale) [r2]" },
+      { name: "Upper trapezius and cervical extensors", effect: "Guarding and tension, possibly secondary to reduced head movement [r4]" },
+      { name: "Extraocular muscles", effect: "Eye movements are less accurate when the neck is rotated; shown by abnormal smooth pursuit neck torsion in persistent whiplash [r10]" }
+    ],
+    cellular: [
+      { phase: "Neck injury or dysfunction", timing: "Acute or gradual", description: "Soft-tissue, joint or muscle change in the upper cervical region after trauma or strain. No specific tissue change has been demonstrated for CGD [r4]." },
+      { phase: "Abnormal afferent signalling", timing: "Days to weeks (proposed)", description: "Facet joint mechanoreceptors and suboccipital spindles send altered signals; this is a hypothesis [r2]." },
+      { phase: "Sensorimotor adaptation", timing: "Weeks to months (proposed)", description: "Central integration of neck, vestibular and visual inputs changes, with measurable differences in joint position error, eye movement control and sway [r8]." },
+      { phase: "Response to treatment", timing: "Over 4–6 weeks of manual therapy", description: "Dizziness and neck pain improved with SNAGs over placebo in trials, mostly short-term; mechanisms are unknown [r16,r17]." }
+    ],
+    systems: [
+      { system: "Vestibular and ocular", effect: "Dizziness provoked by neck movement; eye movement control abnormal on smooth pursuit neck torsion [r11]." },
+      { system: "Proprioceptive and musculoskeletal (cervical)", effect: "Poorer joint position sense and wider postural sway in neck pain, more so with greater pain and dizziness [r8]." },
+      { system: "Nervous (central integration)", effect: "Proposed sensory mismatch; central causes must be excluded [r2,r4]." },
+      { system: "Vascular", effect: "Vertebral artery dissection and posterior circulation stroke are the dangerous mimics; the IFOMPT framework guides screening [r14]." },
+      { system: "Psychological", effect: "Not established in the sources reviewed; mood and anxiety commonly coexist with chronic dizziness and affect the symptom picture." }
+    ]
+  },
+
+  grading: null,
+
+  timeframes: {
+    summary: "No natural history is defined for CGD. Trial courses of manual therapy ran 4–6 weeks (six sessions over 4 weeks, or 2–6 sessions over 6 weeks) with follow-up to 12 weeks and 12 months [r17,r6].",
+    healing: [
+      { phase: "Assessment and exclusion of other causes", startDay: 0, endDay: 14, description: "Rule out vestibular, central and vascular causes before attributing dizziness to the neck [r1]" },
+      { phase: "Manual therapy and exercise course", startDay: 7, endDay: 49, description: "Six sessions over 4 weeks, or 2–6 sessions over 6 weeks, in the trials [r17,r6]" },
+      { phase: "Short-term follow-up", startDay: 42, endDay: 84, description: "Benefits over placebo seen at the end of treatment and at 12 weeks [r18]" },
+      { phase: "Long-term follow-up", startDay: 84, endDay: 365, description: "At 12 months, less dizziness frequency and lower Dizziness Handicap Inventory scores than placebo in both manual therapy groups [r6]" }
+    ],
+    milestones: [
+      { label: "Four-week SNAG course complete (Micarelli)", day: 28, note: "Dizziness Handicap Inventory 20.5 versus 26.2 at baseline with SNAGs versus detuned laser placebo [r17]" },
+      { label: "Six-week course complete (Reid)", day: 42, note: "2–6 sessions over 6 weeks in the 86-person trial [r6]" },
+      { label: "12-week follow-up", day: 84, note: "Dizziness intensity lower than placebo: SNAGs MD −18.4, mobilisations MD −14.4 [r18]" },
+      { label: "12-month follow-up", day: 365, note: "DHI lower than placebo (SNAGs −8.9, mobilisations −13.6); dizziness intensity did not differ [r6]" }
+    ],
+    returnToSport: "Criteria-based. Return to sport or work when neck movement and sustained postures no longer provoke dizziness, neck range and control are restored, and balance and eye-head coordination tasks are normal. If dizziness followed a concussion, the concussion return-to-sport pathway applies (see the concussion page)."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Dizziness described as unsteadiness, lightheadedness, disequilibrium or a sense of drunkenness, rather than a true spinning vertigo [r13,r3]",
+      "Neck pain or stiffness, often with occipital headache, accompanying the dizziness [r1]",
+      "Symptoms provoked or eased by neck movement or sustained neck postures, and not by head position relative to gravity as in BPPV",
+      "No hearing loss, tinnitus or new neurological symptoms",
+      "Symptoms lasting minutes to hours, with a history of neck trauma, whiplash or concussion in many cases [r9]"
+    ],
+    signs: [
+      "Pain induced by examination of the upper cervical vertebrae, more common than in BPPV [r13]",
+      "Elevated cervical joint position error (about 4.5° in one case-control study) [r13]",
+      "Eye movement abnormality on neck torsion (nystagmus above 2° per second on the cervical rotation test, or abnormal smooth pursuit neck torsion) [r13,r11]",
+      "Restricted and painful upper cervical movement, with reproduction of dizziness on neck movement",
+      "Normal Dix-Hallpike and normal central examination, since other causes have been excluded [r1]"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Characterise the dizziness: spinning vertigo versus unsteadiness; duration; triggers (neck movement, head position, standing, exertion); associated neck pain, headache, hearing, visual or neurological symptoms [r1]",
+      "History of neck trauma, whiplash, concussion or head injury, and timing of onset [r9]",
+      "Migraine history, photophobia and phonophobia: vestibular migraine is the commonest alternative [r4]",
+      "Vascular risk and red flags: sudden severe neck pain or headache, trauma, hypertension, smoking, connective tissue disease [r14]",
+      "Medications, cardiovascular and orthostatic symptoms, anxiety and mood",
+      "Impact on function with the Dizziness Handicap Inventory and the Neck Disability Index [r17]"
+    ],
+    observation: [
+      "Posture and neck position, including forward head posture and guarded movement",
+      "Spontaneous nystagmus and gaze-evoked nystagmus in upright posture (a central or peripheral clue) [r19]",
+      "Gait and balance with and without head movement",
+      "Quality of eye movements, smooth pursuit and saccades"
+    ],
+    palpation: [
+      "Upper cervical segmental tenderness (C0–C3) and suboccipital muscle tone; pain induced by examination of the upper cervical vertebrae favoured CGD over BPPV in one study [r13]",
+      "Greater occipital nerve tenderness if occipital headache accompanies the dizziness"
+    ],
+    rangeOfMotion: [
+      "Active cervical flexion, extension, rotation and side flexion, noting pain and whether dizziness is provoked [r13]",
+      "Upper cervical rotation (C1–2) and segmental mobility, once vascular red flags have been excluded [r14]",
+      "Cervical torsion movement with the head held and the trunk rotated, to separate neck from head-position triggers [r2]"
+    ],
+    strength: [
+      "Deep neck flexor endurance (craniocervical flexion test) and neck extensor endurance",
+      "Scapular and upper limb control as part of the neck program"
+    ],
+    neuro: [
+      "Cranial nerves, eye movements, and cerebellar tests, to exclude central causes [r1]",
+      "Dix-Hallpike and supine roll tests to exclude BPPV before attributing dizziness to the neck [r20]",
+      "Head impulse, nystagmus and test of skew (HINTS) if vertigo is continuous rather than movement-provoked [r19]",
+      "Limb neurology and cervical myelopathy screen if there are neurological symptoms"
+    ],
+    functional: [
+      "Cervical joint position error (head repositioning accuracy) with a laser or similar target [r13,r15]",
+      "Smooth pursuit neck torsion test, and balance with head turns [r11,r8]",
+      "Walking with head turns and standing balance; the walking test did not discriminate CGD from BPPV in one study [r13]"
+    ],
+    specialTests: [
+      {
+        name: "Cervical torsion test (neck torsion with eyes recorded)",
+        purpose: "Look for neck-induced nystagmus or symptom provocation with the head still and the trunk rotated",
+        procedure: "The seated patient keeps the head still (ideally with video-nystagmography) while the chair or trunk is rotated under the head. Observe the eyes and ask about dizziness.",
+        positive: "Nystagmus above about 2° per second during cervical rotation, or reproduction of the dizziness. In a case-control study of 25 CGD patients versus 25 BPPV patients, the cervical torsion test differed between groups (p = 0.001). A narrative review judged it the best available diagnostic method, but its accuracy for CGD has not been established.",
+        refs: ["r13", "r2"]
+      },
+      {
+        name: "Cervical joint position error (head repositioning accuracy)",
+        purpose: "Measure neck proprioception",
+        procedure: "The blindfolded or laser-wearing patient rotates the head away from neutral and returns to the starting position; measure the error in degrees.",
+        positive: "An elevated error, about 4.5° in one case-control study of CGD. An abnormal rotation error had a positive predictive value of 88% but sensitivity of 60% and specificity of 54% for abnormal balance or smooth pursuit neck torsion in persistent whiplash, so it should not be used alone.",
+        sensitivity: "60% (for abnormal balance or SPNT, whiplash)",
+        specificity: "54% (for abnormal balance or SPNT, whiplash)",
+        refs: ["r13", "r15"]
+      },
+      {
+        name: "Smooth pursuit neck torsion (SPNT) test",
+        purpose: "Test eye movement control influenced by neck afferents",
+        procedure: "Smooth pursuit gain is measured with the head neutral and with the trunk rotated under the stationary head, and the difference between the two is calculated.",
+        positive: "A greater drop in pursuit gain with neck torsion. Persistent whiplash subjects with and without dizziness differed from healthy controls, and the test separated whiplash from acoustic neuroma. It may be influenced by pain and proprioceptive factors, and accuracy for CGD is unproven.",
+        refs: ["r10", "r11"]
+      },
+      {
+        name: "Dix-Hallpike and supine roll tests",
+        purpose: "Exclude BPPV, the commonest peripheral cause of position-provoked dizziness",
+        procedure: "As described on the BPPV page: head turned 45° and neck extended about 20° from sitting to supine, watching for nystagmus. Screen neck tolerance and vascular risk first.",
+        positive: "Torsional upbeating nystagmus with vertigo indicates posterior canal BPPV, not CGD [r20].",
+        refs: ["r20", "r14"]
+      },
+      {
+        name: "Cervical vascular screen before manual therapy (IFOMPT framework)",
+        purpose: "Identify possible vascular pathology of the neck before neck testing and treatment",
+        procedure: "Ask about headache, neck pain, trauma, vascular risk and brainstem symptoms; interpret the history; adapt the physical examination to explore any vascular hypothesis.",
+        positive: "Any history or sign suggesting dissection or posterior circulation ischaemia: do not manipulate or end-range test; refer for urgent medical assessment. Accuracy figures were not identified.",
+        refs: ["r14", "r4"]
+      }
+    ],
+    clinicalRules: [
+      { name: "Systematic exclusion approach", description: "CGD is a diagnosis of exclusion with no definitive test. Rule out central and peripheral vestibular disorders, vestibular migraine, labyrinthine concussion, cervical arterial dysfunction and whiplash-associated disorder using a stepwise assessment [r1]." },
+      { name: "Bárány Society position", description: "The Society concluded that evidence for a mechanistic link between neck pathology and vertigo is lacking, and that migraine, BPPV or central conditions often explain head-movement-triggered symptoms. It did not propose clinical diagnostic criteria [r4]." },
+      { name: "IFOMPT Cervical Framework", description: "A consensus framework for assessing the cervical region for vascular pathology before musculoskeletal intervention [r14]." }
+    ],
+    outcomeMeasures: [
+      { name: "Dizziness Handicap Inventory (DHI)", use: "Primary patient-reported measure in the SNAG trials; DHI fell from 26.2 to 20.5 with SNAGs in a 80-person trial [r17]" },
+      { name: "Dizziness intensity and frequency (visual analogue and 0–5 frequency scales)", use: "Primary outcomes in the 86-person trials, with SNAGs and mobilisations better than placebo [r18,r6]" },
+      { name: "Neck Disability Index and neck pain scale", use: "Neck function in the SNAG trial [r17]" },
+      { name: "Cervical range of motion", use: "At 12 months, SNAGs gave greater range than placebo in all six directions and mobilisation in four [r6]" },
+      { name: "Joint position error and balance", use: "Sensorimotor measures; at 12 months there was no between-group difference in head repositioning accuracy and only small balance gains with SNAGs [r6]" }
+    ],
+    imaging: [
+      { modality: "MRI or CT brain", indication: "Central signs, new neurological deficit, continuous vertigo with abnormal HINTS, or severe headache", findings: "Excludes posterior circulation stroke or other central lesion; early MRI can be falsely negative in acute vestibular syndrome [r19]" },
+      { modality: "Vascular imaging (CT or MR angiography)", indication: "Suspected vertebral artery dissection: neck pain or headache with brainstem symptoms after trauma", findings: "Shows dissection or occlusion [r4,r14]" },
+      { modality: "Cervical spine X-ray or MRI", indication: "Trauma, neurological signs, or suspected instability or myelopathy", findings: "Excludes fracture, instability or cord compression; degenerative changes are common and do not establish CGD" }
+    ]
+  },
+
+  differentials: [
+    { name: "Benign paroxysmal positional vertigo", id: "bppv", distinguishing: "Brief spinning vertigo provoked by head position relative to gravity, with a positive Dix-Hallpike; treated with repositioning [r20]." },
+    { name: "Persisting post-concussion symptoms", id: "persisting-post-concussion-symptoms", distinguishing: "Dizziness after concussion with multiple drivers (neck, vestibular, exertional, mood); CGD is one possible contributor [r9]." },
+    { name: "Whiplash-associated disorder", id: "whiplash-associated-disorder", distinguishing: "Neck pain and stiffness after acceleration-deceleration injury; dizziness is common in persistent WAD [r10]." },
+    { name: "Cervicogenic headache", id: "cervicogenic-headache", distinguishing: "Unilateral headache from cervical structures, reproduced by neck movement; can coexist with dizziness." },
+    { name: "Cervical arterial dysfunction or vertebral artery dissection", id: "cervical-arterial-dysfunction", distinguishing: "Neck pain or headache with brainstem symptoms; urgent medical care [r4,r14]." },
+    { name: "Vestibular migraine", distinguishing: "Recurrent vertigo or dizziness with migraine features; the commonest cause of neck pain with vestibular symptoms [r4]." },
+    { name: "Peripheral vestibular loss or acute vestibular syndrome", distinguishing: "Continuous vertigo with nystagmus; HINTS separates peripheral from central [r19]." },
+    { name: "Central vestibular disorder or posterior circulation stroke", distinguishing: "Atypical nystagmus, ataxia, brainstem signs or abnormal HINTS; imaging [r19]." },
+    { name: "Orthostatic hypotension, cardiac or medication-related dizziness", distinguishing: "Lightheadedness on standing or exertion with abnormal postural blood pressure or rhythm; medication history." }
+  ],
+  redFlags: [
+    "Sudden severe neck pain or headache with dizziness, vertigo, double vision, slurred speech, difficulty swallowing, facial numbness, limb weakness or drop attacks: suspect vertebral artery dissection or posterior circulation stroke. Do not manipulate or end-range test, and arrange emergency assessment [r4,r14].",
+    "Continuous vertigo with spontaneous nystagmus, inability to walk or other neurological signs: screen with HINTS and send for same-day medical assessment, because stroke can mimic a peripheral vestibular disorder [r19].",
+    "Dizziness after significant neck or head trauma (worsening headache, vomiting, drowsiness, focal signs): emergency assessment and, where indicated, cervical spine immobilisation (see the concussion page).",
+    "Signs of cervical myelopathy or instability (gait disturbance, bilateral hand symptoms, upper motor neuron signs, rheumatoid arthritis or Down syndrome with neck symptoms): do not apply end-range techniques; refer for imaging and specialist review.",
+    "Any sharp new neck pain, headache, nausea, vomiting, dizziness or altered sensation during or within 48 hours after neck treatment or testing: stop and arrange medical assessment. Serious events have been reported after manipulation, mobilisation, exercises and other procedures [r7].",
+    "Hearing loss, tinnitus or ear fullness with the dizziness: refer to ENT or audiology; this points to an inner-ear or other non-cervical cause [r1].",
+    "No improvement, or worsening, despite 4–6 weeks of appropriate treatment: re-evaluate the diagnosis, particularly for vestibular migraine, BPPV or a central cause [r1,r4]."
+  ],
+
+  management: {
+    principles: "Treat CGD as a working diagnosis that must be tested against the other possibilities. Rule out central, vascular and peripheral vestibular causes, and screen the neck for vascular risk before any technique [r1,r14]. Explain the uncertainty, then offer a time-limited trial of neck-directed treatment with clear outcome measures. Manual therapy (SNAGs or mobilisation with self-SNAGs) and neck exercise are the best-studied options, with benefits over placebo in small trials, mostly short-term, and meta-analytic certainty low to very low [r18,r6,r5]. A physiotherapy systematic review of 13 studies (785 patients) found 10 at high risk of bias, with limited or conflicting evidence for most outcomes [r21]. Do not use high-velocity manipulation: systematic reviews of manipulation do not show convincing benefit, and serious adverse events, mostly vascular, have been reported [r22,r7]. After a concussion, combine cervical treatment with vestibular rehabilitation [r9,r12]. If there is no response in 4–6 weeks, rethink the diagnosis.",
+    medical: [
+      {
+        name: "Medical and vestibular assessment to exclude other causes",
+        description: "A doctor, ENT or neurologist confirms or excludes vestibular, central and vascular causes, including BPPV, vestibular migraine and posterior circulation stroke [r1,r4,r19].",
+        evidence: "expert-opinion",
+        recommendation: "recommended",
+        refs: ["r1", "r4", "r19"]
+      },
+      {
+        name: "Treatment of vestibular migraine or other primary vestibular conditions when found",
+        description: "Migraine is by far the commonest cause of neck pain with vestibular symptoms, so treatment of the primary condition may resolve the symptoms. Specific drug options were not reviewed for this page [r4].",
+        evidence: "expert-opinion",
+        recommendation: "consider",
+        refs: ["r4"]
+      },
+      {
+        name: "Imaging and specialist referral for red flags",
+        description: "CT or MRI of the brain, vascular imaging or specialist spinal review when central, vascular or neurological features are present [r19,r14].",
+        evidence: "expert-opinion",
+        recommendation: "recommended",
+        refs: ["r19", "r14"]
+      }
+    ],
+    physio: [
+      {
+        name: "Education, reassurance and graded activity",
+        description: "Explain that the diagnosis is uncertain but that the symptoms are common and treatable, that the neck is one possible contributor, and that gentle movement is safe. Encourage normal head movement, since avoidance may increase neck tension [r4].",
+        evidence: "expert-opinion",
+        recommendation: "recommended",
+        refs: ["r4", "r1"]
+      },
+      {
+        name: "Sustained natural apophyseal glides (SNAGs) with self-SNAGs",
+        description: "Mulligan SNAGs to the upper cervical segments, with self-SNAG home exercises. In RCTs, SNAGs reduced dizziness, DHI score and neck pain compared with a detuned laser placebo in 34 people [r16], gave greater cervical range in all six directions than placebo at 12 months in 86 people [r6], and lowered DHI from 26.2 to 20.5 in an 80-person trial [r17]. At 12 months, both SNAGs and mobilisation groups had less dizziness frequency and lower DHI than placebo [r6]. A meta-analysis rated certainty low to very low [r5].",
+        evidence: "limited",
+        recommendation: "consider",
+        refs: ["r16", "r18", "r6", "r17", "r5"]
+      },
+      {
+        name: "Passive joint mobilisation (Maitland) with range-of-motion exercises",
+        description: "In the 86-person trial, mobilisations reduced dizziness intensity and frequency compared with placebo (post-treatment MD −15.2; at 12 weeks MD −14.4), with no difference from SNAGs on dizziness measures [r18]. At 12 months, mobilisation gave greater range than placebo in four directions (SNAGs in all six) [r6].",
+        evidence: "limited",
+        recommendation: "consider",
+        refs: ["r18", "r6"]
+      },
+      {
+        name: "Combined cervical and vestibular rehabilitation (after concussion)",
+        description: "In people with persisting dizziness, neck pain or headaches after sport-related concussion, a combined cervical and vestibular program shortened time to medical clearance (73% versus 7% cleared within 8 weeks) [r9]. A systematic review recommends it for dizziness, neck pain or headaches beyond 10 days [r12].",
+        evidence: "limited",
+        recommendation: "recommended",
+        refs: ["r9", "r12"]
+      },
+      {
+        name: "Sensorimotor retraining: head repositioning, gaze stability, balance",
+        description: "Exercises to improve neck proprioception and eye-head coordination (laser repositioning, gaze stabilisation with neck movement, balance with head turns). At 12 months in the manual therapy trial there was no between-group difference in head repositioning accuracy and only small balance gains with SNAGs [r6], and a physiotherapy review found limited or no evidence for other outcomes [r21]. The rationale is plausible but unproven.",
+        evidence: "very-limited",
+        recommendation: "consider",
+        refs: ["r6", "r21", "r8"]
+      },
+      {
+        name: "Neck strengthening and endurance exercise",
+        description: "Deep neck flexor and extensor endurance and scapular control, as in neck pain care. Evidence specific to CGD was not identified; it follows the neck pain literature [r2].",
+        evidence: "expert-opinion",
+        recommendation: "consider",
+        refs: ["r2"]
+      },
+      {
+        name: "High-velocity thrust cervical manipulation",
+        description: "A systematic review of systematic reviews of spinal manipulation failed to demonstrate that it is effective for any condition [r22]. A review of serious adverse events after neck procedures found 334 cases in 233 studies, 58% vascular and 75% involving manipulation [r7]. Avoid it in dizziness.",
+        evidence: "limited",
+        recommendation: "not-recommended",
+        refs: ["r22", "r7"]
+      },
+      {
+        name: "Treating the neck without first excluding other causes",
+        description: "Because CGD is a diagnosis of exclusion and migraine, BPPV or central causes often explain head-movement-triggered symptoms, neck treatment alone risks missing them [r1,r4].",
+        evidence: "expert-opinion",
+        recommendation: "not-recommended",
+        refs: ["r1", "r4"]
+      }
+    ],
+    education: [
+      "Your dizziness may come from the neck, but doctors are not certain. Other common causes such as migraine and inner-ear problems are checked first.",
+      "The neck is treated with gentle hands-on techniques and exercises. Most trials show improvement over weeks, but results vary and are not guaranteed.",
+      "Keep moving your head and neck normally. Avoiding movement can make the neck stiffer.",
+      "Strong cracking or thrusting techniques are not advised for dizziness.",
+      "Stop and seek urgent help for sudden severe neck pain or headache, double vision, slurred speech, weakness, drop attacks, or new numbness.",
+      "If you do not improve in 4–6 weeks, we will rethink the cause and refer on."
+    ]
+  },
+
+  rehab: {
+    overview: "Treatment is a time-limited, criteria-based trial of neck-directed care after other causes have been excluded. Stage 1 assesses and educates. Stage 2 restores neck movement and reduces pain with manual therapy and self-SNAGs (2–6 sessions over 4–6 weeks in the trials) [r6,r17]. Stage 3 adds sensorimotor and balance retraining, which is plausible but unproven [r21]. Stage 4 returns the person to full function. If there is no clear response after 4–6 weeks, re-evaluate the diagnosis. Dosages are typical clinical practice unless a trial is cited.",
+    stages: [
+      {
+        name: "Assess, exclude and educate",
+        timeframe: "Week 0–1",
+        goals: ["Exclude vestibular, central and vascular causes", "Record baseline DHI, dizziness intensity, neck range and sensorimotor tests", "Explain the diagnosis and the plan"],
+        precautions: ["Screen for cervical arterial dysfunction before neck testing [r14]", "Do not treat if red flags are present", "Avoid end-range positions and thrust techniques"],
+        exercises: [
+          { name: "Gentle active neck rotation in sitting", dosage: "5 slow turns each way, 3 times a day, within a pain- and dizziness-free range", cues: "Move smoothly; stop if dizziness lingers", figure: { pose: "sit", view: "lateral" } },
+          { name: "Craniocervical flexion (chin nod)", dosage: "10 × 5–10 second holds, once or twice a day", cues: "Small nod, no chin poke, relaxed breathing", figure: { pose: "ex-chin-tuck", view: "lateral", props: ["mat"] } },
+          { name: "Walking", dosage: "10–20 minutes daily, at a comfortable pace", cues: "Keep the head moving naturally", figure: { pose: "walk-heel-strike", view: "lateral" } }
+        ],
+        progressionCriteria: ["Other causes excluded and red flags absent", "Baseline outcome measures recorded", "Patient understands the plan and the stopping rules"]
+      },
+      {
+        name: "Restore neck movement and reduce pain",
+        timeframe: "Weeks 1–6",
+        goals: ["Reduce dizziness intensity and frequency", "Improve upper cervical range of motion", "Reduce neck pain and tension"],
+        precautions: ["Keep treatment within pain- and dizziness-free range", "Stop treatment if neurological symptoms, severe headache or neck pain appear", "Review response at each session (2–6 sessions over 6 weeks in the trials) [r6]"],
+        exercises: [
+          { name: "SNAG to the upper cervical segments (clinician-applied)", dosage: "2–6 sessions over 6 weeks, repetitions in the dizziness-free range [r6]", cues: "Maintain the glide while the patient moves actively" },
+          { name: "Self-SNAG with a towel", dosage: "6–10 repetitions, 2–3 times a day", cues: "Same direction as the clinician's glide; pain- and dizziness-free", figure: { pose: "sit", view: "lateral" } },
+          { name: "Cervical range-of-motion exercises (flexion, extension, rotation)", dosage: "10 each, 2–3 times a day", cues: "Smooth movement; do not push into dizziness", figure: { pose: "ex-chin-tuck", view: "lateral", props: ["mat"] } },
+          { name: "Thoracic extension over a roller", dosage: "10 slow extensions, once a day", cues: "Support the head if needed", figure: { pose: "ex-thoracic-extension", view: "lateral", props: ["foam-roller"] } }
+        ],
+        progressionCriteria: ["Dizziness intensity or frequency reduced on repeat measures", "Neck range improved in most directions", "No adverse events during or after treatment"]
+      },
+      {
+        name: "Sensorimotor and balance retraining",
+        timeframe: "Weeks 3–10",
+        goals: ["Improve neck proprioception and head-eye coordination", "Improve balance with head movement", "Reduce neck-movement-provoked dizziness"],
+        precautions: ["Mild dizziness settling within a minute is acceptable", "Progress one variable at a time", "Stop for lingering or increasing symptoms"],
+        exercises: [
+          { name: "Head repositioning to a target (laser pointer)", dosage: "10 repetitions each way, once a day", cues: "Return to the start point with eyes closed, then check the error", figure: { pose: "sit", view: "lateral" } },
+          { name: "Gaze stabilisation with neck movement", dosage: "Fix gaze on a target while turning the head, 3 × 30 seconds, 2 times a day", cues: "Smooth movement; stop if dizziness lingers" },
+          { name: "Single-leg balance with head turns", dosage: "3 × 30 seconds each side, eyes open then closed, then with head turns", cues: "Stand near a wall", figure: { pose: "ex-single-leg-balance", view: "lateral" } },
+          { name: "Neck isometric strengthening", dosage: "3 × 10-second holds in four directions, once a day", cues: "Light effort, no pain or dizziness", figure: { pose: "ex-neck-isometric", view: "lateral", props: ["chair"] } },
+          { name: "Seated row for scapular control", dosage: "3 × 10–12, 3 times a week", cues: "Neutral neck, shoulder blades down and back", figure: { pose: "ex-row", view: "lateral" } }
+        ],
+        progressionCriteria: ["Dizziness on neck movement clearly reduced", "Head repositioning and balance tasks completed with mild or no symptoms", "DHI improved from baseline [r17]"]
+      },
+      {
+        name: "Return to full activity and review",
+        timeframe: "Weeks 6–12",
+        goals: ["Return to work, driving and sport", "Maintain gains with a self-management program", "Decide whether to stop, continue or refer on"],
+        precautions: ["Re-evaluate the diagnosis if there has been no clear improvement by 4–6 weeks", "Concussion pathway applies if dizziness followed a head injury"],
+        exercises: [
+          { name: "Neck strength and endurance program", dosage: "2–3 sessions a week, progressing hold time and load", cues: "Controlled, pain-free", figure: { pose: "ex-neck-isometric", view: "lateral", props: ["chair"] } },
+          { name: "General aerobic exercise", dosage: "20–30 minutes, 3–4 times a week", cues: "Keep dizziness mild and settling", figure: { pose: "run-contact", view: "lateral" } },
+          { name: "Activity-specific head and neck tasks", dosage: "Reproduce work, driving or sport movements, building duration", cues: "Increase one variable at a time" },
+          { name: "Review of outcomes at 12 weeks", dosage: "Repeat DHI, dizziness intensity, neck range and sensorimotor tests", cues: "Long-term follow-up at 12 months showed lower DHI than placebo in the trial [r6]" }
+        ],
+        progressionCriteria: ["Dizziness-free or minimal on daily and sport-specific head and neck movements", "Neck range and strength restored", "Self-management plan in place"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "Dizziness not provoked by neck movement or sustained postures during daily and sport-specific tasks",
+      "Neck range and strength normal or near normal, with pain under control",
+      "Normal balance and eye-head coordination with head turns",
+      "Other causes excluded and no red flags (central, vascular, vestibular migraine, BPPV)",
+      "If dizziness followed a concussion, the concussion return-to-sport criteria are also met (see the concussion page)"
+    ],
+    tests: [
+      "Dizziness Handicap Inventory and dizziness intensity scale [r17,r18]",
+      "Cervical range of motion and strength or endurance tests [r6]",
+      "Joint position error and smooth pursuit neck torsion, if used at baseline [r13,r11]",
+      "Single-leg balance and walking with head turns"
+    ]
+  },
+  prognosis: "The natural history of cervicogenic dizziness is not defined in the sources reviewed. In trials, manual therapy produced short-term improvement in dizziness and neck range, with benefits over placebo still seen at 12 weeks and at 12 months for dizziness frequency and DHI, though dizziness intensity did not differ at 12 months [r18,r6]. A meta-analysis rated certainty low to very low, and a physiotherapy systematic review found most trials at high risk of bias [r5,r21]. In people after concussion with persisting dizziness, neck pain and headaches, a combined cervical and vestibular program shortened time to clearance [r9]. Because the diagnosis is contested, outcomes depend on whether the true cause (migraine, BPPV or central) has been identified [r4].",
+  prevention: [
+    "Address neck pain early, and keep the neck mobile and strong: formal prevention evidence for CGD was not identified, but pain and sensorimotor changes track neck pain severity [r8].",
+    "After whiplash or concussion, screen the neck, vestibular and oculomotor systems early, since persisting dizziness, neck pain and headaches respond to targeted rehabilitation [r9,r12].",
+    "Avoid reducing head movement because of fear. Reduced movement may raise neck muscle tension and perpetuate symptoms [r4].",
+    "Treat migraine and other primary causes early so that neck symptoms are not wrongly blamed [r4]."
+  ],
+  clinicalPearls: [
+    "CGD is a diagnosis of exclusion. There is no definitive test, so earn the diagnosis by ruling out BPPV, vestibular migraine, central causes and cervical arterial dysfunction first [r1].",
+    "Tell the patient the truth: the Bárány Society finds evidence for a mechanical link between neck and vertigo lacking, so treat the neck as a working hypothesis with a defined trial and a review date [r4].",
+    "Treat unsteadiness differently from vertigo. True spinning vertigo triggered by position points to BPPV or migraine rather than CGD [r13,r3].",
+    "The sensorimotor tests are supportive, not diagnostic. Joint position error alone had low sensitivity (60%) and specificity (54%) for abnormal balance or pursuit tests, so combine several tests with the history [r15,r13].",
+    "Avoid thrust manipulation. Trials show benefit from SNAGs and mobilisation, whereas manipulation reviews are unconvincing and serious vascular adverse events have been reported [r6,r22,r7].",
+    "Concussion changes the odds. When persisting dizziness, neck pain and headaches follow a concussion, combine cervical and vestibular rehabilitation, which shortened time to clearance in a randomised trial [r9]."
+  ],
+  related: ["persisting-post-concussion-symptoms", "bppv", "whiplash-associated-disorder", "cervicogenic-headache", "cervical-arterial-dysfunction", "concussion"],
+
+  references: [
+    { id: "r1", citation: "Reiley AS, Vickory FM, Funderburg SE, et al. How to diagnose cervicogenic dizziness. Arch Physiother. 2017;7:12.", pmid: "29340206", doi: "10.1186/s40945-017-0040-x", type: "narrative-review", year: 2017 },
+    { id: "r2", citation: "Li Y, Yang L, Dai C, et al. Proprioceptive cervicogenic dizziness: a narrative review of pathogenesis, diagnosis, and treatment. J Clin Med. 2022;11(21):6293.", pmid: "36362521", doi: "10.3390/jcm11216293", type: "narrative-review", year: 2022 },
+    { id: "r3", citation: "Végh I, Harmat K, Gerlinger I. [Cervical vertigo - reality or fiction?]. Orv Hetil. 2019;160(25):967-72.", pmid: "31203644", doi: "10.1556/650.2019.31409", type: "narrative-review", year: 2019 },
+    { id: "r4", citation: "Seemungal BM, Agrawal Y, Bisdorff A, et al. The Bárány Society position on 'cervical dizziness'. J Vestib Res. 2022;32(6):487-99.", pmid: "36404562", doi: "10.3233/VES-220202", type: "consensus-statement", year: 2022 },
+    { id: "r5", citation: "Carrasco-Uribarren A, Ceballos-Laita L, Pérez-Guillén S, et al. Is manual therapy effective for cervical dizziness? A systematic review and meta-analysis of randomized controlled trials. BMC Musculoskelet Disord. 2025;26(1):659.", pmid: "40618099", doi: "10.1186/s12891-025-08899-z", type: "meta-analysis", year: 2025 },
+    { id: "r6", citation: "Reid SA, Callister R, Snodgrass SJ, et al. Manual therapy for cervicogenic dizziness: long-term outcomes of a randomised trial. Man Ther. 2015;20(1):148-56.", pmid: "25220110", doi: "10.1016/j.math.2014.08.003", type: "rct", year: 2015 },
+    { id: "r7", citation: "Leung B, Treleaven J, Dinsdale A, et al. Serious adverse events associated with conservative physical procedures directed towards the cervical spine: a systematic review. J Bodyw Mov Ther. 2024;41:56-77.", pmid: "39663097", doi: "10.1016/j.jbmt.2024.10.018", type: "systematic-review", year: 2024 },
+    { id: "r8", citation: "Särkilahti N, Hirvonen M, Lavapuro J, et al. Sensorimotor tests in patients with neck pain and its associated disorders: a systematic review and meta-analysis. Sci Rep. 2024;14(1):12764.", pmid: "38834665", doi: "10.1038/s41598-024-63545-3", type: "meta-analysis", year: 2024 },
+    { id: "r9", citation: "Schneider KJ, Meeuwisse WH, Nettel-Aguirre A, et al. Cervicovestibular rehabilitation in sport-related concussion: a randomised controlled trial. Br J Sports Med. 2014;48(17):1294-8.", pmid: "24855132", doi: "10.1136/bjsports-2013-093267", type: "rct", year: 2014 },
+    { id: "r10", citation: "Treleaven J, Jull G, LowChoy N. Smooth pursuit neck torsion test in whiplash-associated disorders: relationship to self-reports of neck pain and disability, dizziness and anxiety. J Rehabil Med. 2005;37(4):219-23.", pmid: "16024477", doi: "10.1080/16501970410024299", type: "cohort", year: 2005 },
+    { id: "r11", citation: "Treleaven J, LowChoy N, Darnell R, et al. Comparison of sensorimotor disturbance between subjects with persistent whiplash-associated disorder and subjects with vestibular pathology associated with acoustic neuroma. Arch Phys Med Rehabil. 2008;89(3):522-30.", pmid: "18295632", doi: "10.1016/j.apmr.2007.11.002", type: "case-control", year: 2008 },
+    { id: "r12", citation: "Schneider KJ, Critchley ML, Anderson V, et al. Targeted interventions and their effect on recovery in children, adolescents and adults who have sustained a sport-related concussion: a systematic review. Br J Sports Med. 2023;57(12):771-9.", pmid: "37316188", doi: "10.1136/bjsports-2022-106685", type: "systematic-review", year: 2023 },
+    { id: "r13", citation: "L'Heureux-Lebeau B, Godbout A, Berbiche D, et al. Evaluation of paraclinical tests in the diagnosis of cervicogenic dizziness. Otol Neurotol. 2014;35(10):1858-65.", pmid: "25058834", doi: "10.1097/MAO.0000000000000506", type: "cross-sectional", year: 2014 },
+    { id: "r14", citation: "Rushton A, Carlesso LC, Flynn T, et al. International framework for examination of the cervical region for potential of vascular pathologies of the neck prior to musculoskeletal intervention: International IFOMPT Cervical Framework. J Orthop Sports Phys Ther. 2023;53(1):7-22.", pmid: "36099171", doi: "10.2519/jospt.2022.11147", type: "consensus-statement", year: 2023 },
+    { id: "r15", citation: "Treleaven J, Jull G, LowChoy N. The relationship of cervical joint position error to balance and eye movement disturbances in persistent whiplash. Man Ther. 2006;11(2):99-106.", pmid: "15919229", doi: "10.1016/j.math.2005.04.003", type: "cross-sectional", year: 2006 },
+    { id: "r16", citation: "Reid SA, Rivett DA, Katekar MG, et al. Sustained natural apophyseal glides (SNAGs) are an effective treatment for cervicogenic dizziness. Man Ther. 2008;13(4):357-66.", pmid: "17951095", doi: "10.1016/j.math.2007.03.006", type: "rct", year: 2008 },
+    { id: "r17", citation: "Micarelli A, Viziano A, Granito I, et al. Postural and clinical outcomes of sustained natural apophyseal glides treatment in cervicogenic dizziness patients: a randomised controlled trial. Clin Rehabil. 2021;35(11):1566-76.", pmid: "33896213", doi: "10.1177/02692155211012413", type: "rct", year: 2021 },
+    { id: "r18", citation: "Reid SA, Rivett DA, Katekar MG, et al. Comparison of Mulligan sustained natural apophyseal glides and Maitland mobilizations for treatment of cervicogenic dizziness: a randomized controlled trial. Phys Ther. 2014;94(4):466-76.", pmid: "24336477", doi: "10.2522/ptj.20120483", type: "rct", year: 2014 },
+    { id: "r19", citation: "Kattah JC, Talkad AV, Wang DZ, et al. HINTS to diagnose stroke in the acute vestibular syndrome: three-step bedside oculomotor examination more sensitive than early MRI diffusion-weighted imaging. Stroke. 2009;40(11):3504-10.", pmid: "19762709", doi: "10.1161/STROKEAHA.109.551234", type: "diagnostic-accuracy", year: 2009 },
+    { id: "r20", citation: "Bhattacharyya N, Gubbels SP, Schwartz SR, et al. Clinical practice guideline: benign paroxysmal positional vertigo (update). Otolaryngol Head Neck Surg. 2017;156(3_suppl):S1-S47.", pmid: "28248609", doi: "10.1177/0194599816689667", type: "clinical-practice-guideline", year: 2017 },
+    { id: "r21", citation: "Canlı K, De Greef I, Van Looveren E, et al. The effects of physiotherapy on neck pain with associated symptoms, including cervicogenic dizziness and tinnitus: a systematic review. BMC Musculoskelet Disord. 2026;27(1).", pmid: "41796312", doi: "10.1186/s12891-026-09664-6", type: "systematic-review", year: 2026 },
+    { id: "r22", citation: "Posadzki P, Ernst E. Spinal manipulation: an update of a systematic review of systematic reviews. N Z Med J. 2011;124(1340):55-71.", pmid: "21952385", type: "systematic-review", year: 2011 }
+  ],
+
+  animation: {
+    title: "How neck-related dizziness is thought to arise",
+    phases: [
+      {
+        type: "moi", label: "Neck posture", duration: 7, view: "lateral", environment: "office",
+        actors: [{ id: "worker", kit: "worker" }],
+        keyframes: [
+          { t: 0, pose: "sit-desk", root: { x: 0 } },
+          { t: 2.0, pose: "sit-desk", joints: { neck: 30 }, root: { x: 0 } },
+          { t: 4.0, pose: "sit-desk", joints: { neck: -28 }, root: { x: 0 }, ease: "inOut" },
+          { t: 5.4, pose: "sit-desk", joints: { neck: -28 }, root: { x: 0 } },
+          { t: 6.6, pose: "sit-desk", joints: { neck: 10 }, root: { x: 0 } }
+        ],
+        forces: [
+          { t: [4.0, 5.6], at: "neck", dir: "backward", label: "Neck extended: dizziness is provoked", size: "m" }
+        ],
+        highlights: [{ t: [2.0, 7], at: "neck" }],
+        captions: [
+          { t: 0, text: "A desk worker with neck pain sits in a forward head posture." },
+          { t: 2.0, text: "Sustained postures load the upper neck." },
+          { t: 4.0, text: "Looking up, the neck extends, and the person feels unsteady and light-headed." },
+          { t: 5.6, text: "The symptoms are linked to neck movement, but they are not true spinning vertigo." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "neck",
+        captions: [{ t: 0, text: "Zooming into the upper neck, viewed from the side." }]
+      },
+      {
+        type: "closeup", label: "Upper neck", duration: 10, scene: "cervical-sagittal",
+        actions: [
+          { t: 0, do: "highlight", target: "facetC2C3" },
+          { t: 0.3, do: "label", target: "facetC2C3", text: "C2–3 facet: rich in sensors" },
+          { t: 1.0, do: "highlight", target: "suboccipitals" },
+          { t: 1.3, do: "label", target: "suboccipitals", text: "Suboccipitals: head position sense" },
+          { t: 2.2, do: "spasm", target: "suboccipitals" },
+          { t: 2.6, do: "irritate", target: "greaterOccipitalNerve" },
+          { t: 3.4, do: "pain", at: "occiputBase", hold: 4 },
+          { t: 3.6, do: "arrow", at: "c2c3Facet", dir: "posterior", label: "Altered signals to the brainstem", size: "m" },
+          { t: 5.4, do: "unhighlight", target: "facetC2C3" },
+          { t: 5.4, do: "unhighlight", target: "suboccipitals" },
+          { t: 5.6, do: "highlight", target: "vertebralArtery" },
+          { t: 5.8, do: "label", target: "vertebralArtery", text: "Vertebral artery: exclude first" },
+          { t: 7.6, do: "camera", at: "c1c2", zoom: 1.5, dur: 1.0 }
+        ],
+        captions: [
+          { t: 0, text: "The upper neck joints and suboccipital muscles are packed with position sensors." },
+          { t: 1.3, text: "They help the brain judge where the head is and coordinate it with the eyes." },
+          { t: 2.6, text: "After injury or strain, the muscles guard, the joints stiffen and the signals change." },
+          { t: 3.6, text: "The brainstem may then receive neck signals that do not match balance and vision." },
+          { t: 5.6, text: "This is a hypothesis. Vessels and other causes must be excluded first." },
+          { t: 7.6, text: "The diagnosis is by exclusion, because no test proves the neck is the cause." }
+        ]
+      },
+      {
+        type: "micro", label: "Joint capsule", duration: 9, tissue: "capsule",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 2.0, stage: "inflammation" }, { t: 4.0, stage: "contracture" }, { t: 6.4, stage: "remodelling" }
+        ],
+        timeLabels: [{ t: 2.0, text: "Days to weeks" }, { t: 4.0, text: "Weeks" }, { t: 6.4, text: "With movement and treatment" }],
+        captions: [
+          { t: 0, text: "A schematic facet joint capsule: healthy tissue with normal sensors." },
+          { t: 2.0, text: "After strain or trauma, the capsule becomes irritated and sensitive." },
+          { t: 4.0, text: "Persistent irritation can stiffen the joint, changing the signals it sends." },
+          { t: 6.4, text: "Movement, exercise and manual therapy may help the tissue and signals recover." },
+          { t: 7.8, text: "This is a general model. A specific capsule change has not been shown in cervicogenic dizziness." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "SP5" }
+};

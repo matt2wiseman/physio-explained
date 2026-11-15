@@ -49,7 +49,7 @@ export default {
       "Time away from school, work or sport increases stress and reinforces the cycle, until the drivers are identified and treated [r16]."
     ],
     variants: [
-      { name: "Cervical-driven pattern", description: "Neck pain, headache and dizziness related to neck posture or movement, with abnormal cervical findings. A cervical and vestibular programme shortened time to medical clearance in one trial [r4]." },
+      { name: "Cervical-driven pattern", description: "Neck pain, headache and dizziness related to neck posture or movement, with abnormal cervical findings. A cervical and vestibular program shortened time to medical clearance in one trial [r4]." },
       { name: "Vestibular and oculomotor pattern", description: "Dizziness, imbalance, motion sensitivity and visual strain with abnormal vestibular or eye-movement screening. Vestibular rehabilitation reduced dizziness handicap in a systematic review of seven RCTs [r17]." },
       { name: "Exertional (physiological) pattern", description: "Symptoms increase at a low heart rate on a graded treadmill test. People with PCS reached a shorter test duration than controls (8.5 versus 17.9 minutes) and a lower heart rate [r13]." },
       { name: "Psychological and mood pattern", description: "Anxiety, depression, fear of symptoms and sleep disturbance dominate. PPCS is associated with a higher risk of depressive symptoms (OR 4.56), and collaborative care with CBT improved symptoms in adolescents [r5,r8]." },
@@ -295,7 +295,7 @@ export default {
       },
       {
         name: "Cervicovestibular rehabilitation",
-        description: "Combined cervical spine physiotherapy and vestibular rehabilitation for dizziness, neck pain or headaches. In 31 people, 73% were medically cleared within 8 weeks versus 7% of controls (HR 3.91, 95% CI 1.34–11.34) [r4]. A systematic review recommended it for adolescents and adults with these symptoms beyond 10 days [r12]. In adults, a later review found no further reduction in physical symptoms when it was added to a symptom-limited exercise programme compared with exercise alone [r21].",
+        description: "Combined cervical spine physiotherapy and vestibular rehabilitation for dizziness, neck pain or headaches. In 31 people, 73% were medically cleared within 8 weeks versus 7% of controls (HR 3.91, 95% CI 1.34–11.34) [r4]. A systematic review recommended it for adolescents and adults with these symptoms beyond 10 days [r12]. In adults, a later review found no further reduction in physical symptoms when it was added to a symptom-limited exercise program compared with exercise alone [r21].",
         evidence: "limited",
         recommendation: "recommended",
         refs: ["r4", "r12", "r21"]
@@ -347,7 +347,7 @@ export default {
   },
 
   rehab: {
-    overview: "The programme is built around the drivers found at assessment, not a fixed sequence, and it progresses on criteria. Stage 1 assesses, educates and sets the exercise threshold. Stage 2 builds aerobic tolerance below the symptom threshold. Stage 3 adds targeted cervical, vestibular and oculomotor work where indicated. Stage 4 restores full activity, learn, work and sport. The aerobic dose is typically 20 minutes at 80% of the symptom-provoking heart rate, 5–6 days a week, retested every few weeks [r7,r14]. Other dosages are typical clinical ranges, not trial protocols. Evidence for each component is low to moderate [r9].",
+    overview: "The program is built around the drivers found at assessment, not a fixed sequence, and it progresses on criteria. Stage 1 assesses, educates and sets the exercise threshold. Stage 2 builds aerobic tolerance below the symptom threshold. Stage 3 adds targeted cervical, vestibular and oculomotor work where indicated. Stage 4 restores full activity, learn, work and sport. The aerobic dose is typically 20 minutes at 80% of the symptom-provoking heart rate, 5–6 days a week, retested every few weeks [r7,r14]. Other dosages are typical clinical ranges, not trial protocols. Evidence for each component is low to moderate [r9].",
     stages: [
       {
         name: "Assess, educate and set the threshold",

@@ -436,7 +436,7 @@ export default {
   prevention: [
     "Wear a properly fitted mouthguard in collision sports: protective effect IRR 0.74 (95% CI 0.64–0.89) [r12].",
     "Support rule changes that reduce high-contact play: disallowing body checking in youth ice hockey was associated with a 58% lower concussion rate, and limiting contact in American football practice with a 64% lower practice rate [r12].",
-    "Use neuromuscular training warm-up programmes in rugby, where some evidence supports up to 60% lower concussion rates [r12].",
+    "Use neuromuscular training warm-up programs in rugby, where some evidence supports up to 60% lower concussion rates [r12].",
     "Teach and enforce safe tackle technique and good neck control. Neck strength and technique are plausible but unproven modifiable factors, and the review called for more research [r12].",
     "Recognise and remove from play any athlete with suspected concussion. Continued play and delayed care are associated with longer recovery [r7].",
     "Teach athletes, coaches and parents the recognition tools and red flags (CRT6) so that injuries are reported [r5]."

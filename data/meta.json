@@ -1,8 +1,8 @@
 {
- "builtAt": "2026-11-15T08:37:46.810Z",
- "injuries": 90,
+ "builtAt": "2026-11-15T08:45:59.898Z",
+ "injuries": 97,
  "planned": 169,
- "references": 1409,
+ "references": 1548,
  "regions": {
   "hip-groin": 12,
   "lower-leg": 8,
@@ -11,12 +11,12 @@
   "lumbar": 7,
   "cervical": 4,
   "ankle": 8,
-  "knee": 19,
+  "knee": 21,
+  "head-face": 4,
   "general": 2,
-  "foot": 5,
+  "foot": 6,
   "wrist-hand": 6,
-  "elbow": 4,
-  "head-face": 2,
+  "elbow": 6,
   "pelvis": 1
  }
 }
