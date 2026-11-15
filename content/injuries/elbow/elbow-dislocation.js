@@ -409,8 +409,8 @@ export default {
           { t: 2.4, do: "tear", target: "lucl", grade: 3, at: 0.5 },
           { t: 2.4, do: "impact", at: "radiocapitellarJoint" },
           { t: 2.8, do: "tear", target: "radialCollateralLigament", grade: 2, at: 0.5 },
-          { t: 3.2, do: "move", target: "ulna", dir: "posterior", amount: 0.3, dur: 1.2 },
-          { t: 3.2, do: "move", target: "radius", dir: "posterior", amount: 0.3, dur: 1.2 },
+          { t: 3.2, do: "move", target: "ulna", dir: "posterior", amount: 0.5, dur: 1.2 },
+          { t: 3.2, do: "move", target: "radius", dir: "posterior", amount: 0.5, dur: 1.2 },
           { t: 4.4, do: "label", target: "lucl", text: "Lateral ligament fails first" },
           { t: 5.0, do: "bleed", target: "jointSpace" },
           { t: 5.6, do: "camera", at: "radiocapitellarJoint", zoom: 1.5, dur: 1.0 }
@@ -433,13 +433,14 @@ export default {
           { t: 2.2, do: "tear", target: "uclAnterior", grade: 2, at: 0.5 },
           { t: 2.6, do: "move", target: "ulna", to: "posteriorDislocationPosition", dur: 1.6 },
           { t: 2.6, do: "move", target: "radius", dir: "posterior", amount: 0.5, dur: 1.6 },
-          { t: 4.2, do: "label", target: "ulna", text: "Dislocated: ulna behind the humerus" },
+          { t: 4.2, do: "label", target: "humerus", text: "Forearm bones displaced behind the humerus" },
           { t: 4.6, do: "stretch", target: "ulnarNerve", amount: 0.25, dur: 0.8 },
           { t: 4.8, do: "irritate", target: "ulnarNerve" },
           { t: 5.2, do: "label", target: "ulnarNerve", text: "Nerves and artery at risk" },
           { t: 6.2, do: "reset", target: "ulna", dur: 1.0 },
           { t: 6.2, do: "reset", target: "radius", dur: 1.0 },
-          { t: 6.2, do: "reset", target: "ulnarNerve", dur: 1.0 }
+          { t: 6.2, do: "reset", target: "ulnarNerve", dur: 1.0 },
+          { t: 6.4, do: "label", target: "humerus", text: "Reduced: ligaments still torn" }
         ],
         captions: [
           { t: 0, text: "On the inner side, the anterior band of the medial collateral ligament resists valgus." },

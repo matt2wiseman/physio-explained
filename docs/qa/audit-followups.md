@@ -42,3 +42,11 @@ Items that writers flagged as written from knowledge, cited from metadata only, 
 ## Standing numeric audit
 
 389 flagged numeric statistics across the first 56 pages have had a heuristic spot review only. A full-text audit of them has not been done.
+
+## Added from the finger and thumb batch (trigger-finger, mallet-finger, skiers-thumb, jersey-finger)
+
+- Print years were inferred from volume for Kuper 2026 (JPRAS vol 113) and Legerstee 2026 (Hand vol 21). Check both against the journal issue.
+- Quinnell and Leddy–Packer original papers were not read; the Quinnell grades come from Watanabe 2025 and the Leddy–Packer types from Narang 2019. No timing windows by type were found.
+- Doyle types I–III and 4A are marked "standard classification"; jersey finger Type IV is defined differently across sources, and the page says so.
+- Ring finger in 80% of jersey finger cases is from a single report; Tempelaere's 29-patient series had 10 poor results.
+- Skier's thumb: operative versus nonoperative evidence is cohorts, reviews and surveys only (no RCTs). Valgus stress test accuracy and the nonoperative immobilisation period are labelled clinical convention.
