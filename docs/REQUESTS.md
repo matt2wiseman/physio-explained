@@ -70,3 +70,6 @@ Append one line per request: `- [from <agent> → owner <agent/QC>] <what you ne
 - [from SP3 → A6/QC] lumbar-sagittal: `move` on `vertebraL5` (spondylolisthesis slip) translates only the bone; `discL5S1`, the facet capsules and `nerveRootL5` stay put, so the slip reads as the vertebra sliding off the disc. A `move` that carries the attached disc/capsule/root (or a documented "slip" action with a `grade`) would draw a Meyerding slip more faithfully. Used amount 0.22 as the nearest schematic.
 - [from SP4 → A6/QC] pelvis-anterior: no interosseous or posterior sacroiliac ligament structure (the usual proposed extra-articular SIJ pain source) and no sacrotuberous/sacrospinous ligaments; the SIJ close-up uses `anteriorSIJLigaments` and `sijRight` with captions saying the pain source is unproven.
 - [from SP3 → A2/QC] Poses/props: no stationary-cycling pose and no shopping-trolley/walking-frame prop; both are the classic flexed-posture relievers for neurogenic claudication (lumbar-spinal-stenosis uses `sit`, `walk-*` and a forward-lean joint override instead).
+
+## SP6 (general-page writer)
+- `long-bone` scene draws a child long bone with open physes. For adult bone stress injury (bone-stress-injury) it is used as the closest available scene (diaphysis `stress`/`fracture` at `corticalStressSite`); an adult long-bone variant without physes would be more accurate.

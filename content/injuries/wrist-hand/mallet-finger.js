@@ -1,0 +1,414 @@
+export default {
+  id: "mallet-finger",
+  name: "Mallet finger",
+  shortName: "Mallet finger",
+  aka: ["baseball finger", "drop finger", "terminal extensor tendon rupture", "mallet fracture", "DIP extension lag", "distal extensor tendon avulsion", "tendinous mallet", "bony mallet"],
+  region: "wrist-hand",
+  tissues: ["tendon", "bone"],
+  onset: "acute",
+  mechanismType: ["contact"],
+  populations: ["ball-sport athletes", "adults of working age", "people with finger-jamming injuries at home or work"],
+  sports: ["basketball", "netball", "volleyball", "cricket", "australian football", "rugby", "baseball", "soccer"],
+  urgency: "urgent",
+  summary: "Loss of active DIP extension after the terminal extensor tendon ruptures or avulses a dorsal bone fragment, typically when a ball forces an extended fingertip into flexion. Continuous splinting is the main treatment.",
+  keyFacts: [
+    { label: "Typical recovery", value: "Continuous DIP extension splinting for 6–8 weeks (6 for acute, 8 for chronic injuries in the trials), then graded motion" },
+    { label: "Key test", value: "The fingertip droops and the patient cannot actively extend the DIP joint, although it can be passively straightened" },
+    { label: "Imaging", value: "A lateral finger radiograph shows any bone fragment and volar subluxation of the distal phalanx" },
+    { label: "Outcome", value: "Mean DIP extensor lag was 5.7° after surgery and 7.6° after nonsurgical care in a review of 44 studies" },
+    { label: "Surgery", value: "Generally indicated for volar subluxation or fragments over one-third of the joint surface, but the advantage is not clearly proven" },
+    { label: "Splint choice", value: "Prefabricated orthoses carried about three times the risk of skin complications of other orthoses (RR 3.17)" }
+  ],
+  overview: "Mallet finger, also called drop or baseball finger, is a finger whose tip cannot be actively straightened because the extensor tendon mechanism has been injured at its insertion [r1]. It manifests either as a tendinous lesion or as a bony lesion, in which the tendon pulls off a dorsal fragment of the distal phalanx. The bony form can be complicated by acute pain, extension lag and, in some cases, volar subluxation of the distal phalanx [r2]. Untreated or poorly managed injuries risk chronic deformity [r3]. The usual sequel is a swan-neck deformity, and stiffness, dorsal prominence and secondary osteoarthritis can also follow [r2].\n\nContinuous splinting of the DIP joint for six or more weeks is the usual treatment, with surgical fixation used less often [r1]. A systematic review of four RCTs supports continuous immobilisation for 6 weeks in acute injuries and 8 weeks in chronic injuries [r4]. A meta-analysis found no high-level evidence that surgery is superior to a splint [r5], and a systematic review of 44 studies judged the two approaches equivalent and best individualised to the patient [r6]. The Cochrane review could not identify a superior splint type or the indications for surgery, because all four of its trials were methodologically flawed [r1].",
+
+  epidemiology: {
+    text: "Mallet finger is a common injury of the extensor tendon insertion [r7] and is among the common extensor tendon injuries seen in athletes [r3]. Population incidence figures were not retrieved from the sources used for this page, so none are quoted. The Cochrane review's four trials enrolled 278 mainly adult participants with 283 mallet injuries [r1]. A retrospective comparison of Doyle type 4c fractures had a mean patient age of 33 years [r2].",
+    riskFactors: {
+      intrinsic: [
+        "Older age: associated with smaller gains in DIP extension after splinting (a prognostic rather than injury risk factor) [r4]",
+        "Finger laxity or an existing swan-neck tendency may raise the chance of a persistent deformity (clinical reasoning)",
+        "Previous distal interphalangeal osteoarthritis or an extensor lag (clinical)"
+      ],
+      extrinsic: [
+        "Ball sports in which a ball strikes the tip of an extended finger, such as basketball, volleyball, cricket and the football codes [r3]",
+        "Everyday jamming injuries, for example tucking in bedclothes or catching the fingertip on a hard surface (clinical)",
+        "Poor splint adherence or prefabricated splints that cause skin problems, which worsen the outcome after injury [r4,r8]"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "The classic injury is a sudden forced flexion of an actively extended DIP joint, for example a ball hitting the tip of an outstretched finger (clinical). The terminal extensor tendon is stretched beyond its capacity at its insertion on the dorsal base of the distal phalanx. It either ruptures or avulses a fragment of bone [r2]. The flexor digitorum profundus (FDP) is then unopposed, so the fingertip droops into flexion (clinical anatomy). If the finger is not held in extension, the tendon heals long, and the lag persists [r2].",
+    sequence: [
+      "The finger is extended, for example reaching to catch or block a ball, with the DIP joint actively held straight (clinical).",
+      "The ball strikes the fingertip along its axis and drives the DIP joint into sudden flexion (clinical).",
+      "The terminal extensor tendon is stretched across the DIP joint at its insertion on the dorsal base of the distal phalanx (clinical).",
+      "The tendon fails at or near the insertion (tendinous mallet), or it pulls off a dorsal fragment of the distal phalanx (bony mallet) [r2].",
+      "The FDP is unopposed, so the tip drops into flexion and the patient cannot actively straighten it (clinical anatomy).",
+      "Prolonged flexion in the acute phase can elongate the terminal tendon and increase the risk of a persistent extension lag [r2].",
+      "If left, extensor force can shift to the central slip, and a swan-neck deformity can follow in some people [r2,r3]."
+    ],
+    variants: [
+      { name: "Tendinous (soft tissue) mallet", description: "The tendon ruptures or stretches without a bone fragment. It is the form tested in the splint-versus-K-wire RCT in tendinous mallet finger [r9]." },
+      { name: "Bony mallet (mallet fracture)", description: "A dorsal fragment of the distal phalanx base is avulsed. The fragment size and any volar subluxation of the distal phalanx steer management [r7,r2]." },
+      { name: "Mallet fracture with volar subluxation", description: "The distal phalanx slips volarly. It is generally treated surgically, although splinting has been reported to work in some cases [r7,r10]." },
+      { name: "Open mallet injury", description: "A laceration or deep abrasion over the DIP joint exposes the tendon or joint. It needs same-day assessment because of the infection risk (clinical)." },
+      { name: "Combined tendon and bone (double-level) injury", description: "A tendon rupture coexists with a bony avulsion. A previously unclassified type of combined injury has been described that supplements the Doyle classification [r11]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The terminal extensor tendon is the thin, flat conjoined continuation of the two lateral bands. It crosses the dorsum of the DIP joint and inserts on the dorsal base of the distal phalanx. It is the only structure that actively extends the DIP joint, and there is little soft tissue between it and the skin, which is why dorsal skin can break down under a splint (clinical anatomy). The FDP inserts on the volar base of the distal phalanx and flexes the DIP joint. The central slip inserts on the dorsal base of the middle phalanx and extends the PIP joint. When the terminal tendon fails, extensor force is concentrated on the central slip, and this contributes to PIP hyperextension in a swan-neck deformity (clinical reasoning).",
+    structures: [
+      { name: "Terminal extensor tendon", role: "Extends the DIP joint. It is the structure that fails in mallet finger, either in its substance or by avulsing a dorsal fragment of bone [r2]." },
+      { name: "Lateral bands", role: "Pass dorsal to the PIP axis and join to form the terminal tendon, so they transmit extensor force to the distal phalanx (clinical anatomy)" },
+      { name: "Dorsal base of the distal phalanx", role: "The insertion site and the origin of the avulsion fragment in a bony mallet. Fragment size is described with the Doyle classification [r2]." },
+      { name: "FDP tendon", role: "Flexes the DIP joint and is unopposed after the terminal tendon fails, which produces the droop (clinical anatomy)" },
+      { name: "Central slip", role: "Extends the PIP joint. Overpull on the central slip contributes to swan-neck deformity (clinical reasoning)." },
+      { name: "DIP joint", role: "A hinge joint with thin dorsal skin cover. Volar subluxation of the distal phalanx is the main bony complication [r7]." }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "Mallet finger is a failure of the terminal extensor tendon at its insertion. In the tendinous form the tendon ruptures or is overstretched without bone injury. In the bony form a dorsal fragment of the distal phalanx base is avulsed, and the fragment can involve a small or large part of the joint surface [r2]. Once the tendon is lost, the unopposed FDP holds the tip flexed.\n\nHealing requires the tendon ends, or the bone fragment and tendon, to stay together and slack-free while they heal. Continuous extension splinting does this, and prolonged flexion in the acute phase can elongate the terminal extensor tendon and increase the risk of extension loss [r2]. The bone fragment heals by fracture union, and a step in the joint surface can remain after splinting [r2]. Poor adherence to the splint regimen is associated with a worse extension gain [r4,r1].",
+    structures: [
+      { name: "Terminal extensor tendon", effect: "Rupture or overstretch at the insertion; elongation with healing in flexion causes a persistent lag [r2]" },
+      { name: "Dorsal base of the distal phalanx", effect: "Avulsion fragment in a bony mallet; large fragments raise the risk of volar subluxation [r7,r2]" },
+      { name: "DIP joint surface", effect: "A step-off or dorsal prominence can remain after splinting a displaced fragment [r2]" },
+      { name: "Skin and nail bed", effect: "Thin dorsal skin can blister or break down under a splint. Prefabricated orthoses had about 3 times the risk of skin complications [r8]." },
+      { name: "PIP joint and central slip", effect: "Swan-neck deformity is a recognised sequel when the injury is untreated or poorly managed [r2,r3]" }
+    ],
+    muscles: [
+      { name: "FDP", effect: "Unopposed pull holds the tip in flexion, and the muscle may shorten if the lag persists (clinical)." },
+      { name: "Intrinsic muscles and extensor digitorum", effect: "They supply the extensor force that reaches the terminal tendon through the lateral bands. When the terminal tendon is lost, force shifts to the central slip (clinical reasoning)." },
+      { name: "Adjacent finger and grip muscles", effect: "Disuse and guarding during a 6–8 week splint period can reduce grip and pinch strength (clinical)." }
+    ],
+    cellular: [
+      { phase: "Haemorrhage and inflammation", timing: "0–7 days", description: "Torn vessels and cells clear debris at the tendon end or fracture site (typical tendon-healing timeline; clinical)." },
+      { phase: "Proliferation", timing: "1–6 weeks", description: "Fibroblasts lay down collagen across the gap if the ends are held together. This is why continuous splinting lasts 6 weeks in acute injuries [r4]." },
+      { phase: "Remodelling", timing: "6 weeks to months", description: "Collagen realigns along the line of load. Slight extension loss can appear after the splint is removed and can partly improve with active exercise [r9]." },
+      { phase: "Chronic injury", timing: "After a delay", description: "In chronic injuries the trials used 8 weeks of continuous immobilisation [r4]." }
+    ],
+    systems: [
+      { system: "Nervous system and pain", effect: "Acute fingertip pain settles quickly. In a retrospective series of Doyle type 4c injuries, pain scores were low at follow-up in both surgical and splint groups [r2]." },
+      { system: "Vascular and soft tissue", effect: "Thin dorsal skin and swelling raise the risk of splint-related skin damage. Moderate-quality evidence found prefabricated orthoses carried 3 times the risk (RR 3.17) [r8]." },
+      { system: "Musculoskeletal chain", effect: "A persistent lag can progress to swan-neck deformity of the finger, with PIP hyperextension (clinical reasoning) [r2]." },
+      { system: "Psychosocial and occupational", effect: "A splinted finger for 6–8 weeks affects work, sport and hygiene. Adherence is central to success [r1,r4]." }
+    ]
+  },
+
+  grading: {
+    system: "Doyle classification (the most widely adopted system, with fracture subtypes by joint surface involved)",
+    grades: [
+      { grade: "Type I", description: "Closed injury with or without a small dorsal avulsion fracture (standard classification; not restated in the abstracts retrieved).", prognosis: "Usually treated with continuous splinting [r1,r4]" },
+      { grade: "Type II", description: "Open injury: a laceration at or proximal to the DIP joint with tendon loss (standard classification).", prognosis: "Needs surgical wound care and tendon repair (clinical)" },
+      { grade: "Type III", description: "Open injury: deep abrasion with loss of skin, subcutaneous cover and tendon substance (standard classification).", prognosis: "Surgical reconstruction is usually needed (clinical)" },
+      { grade: "Type IV (mallet fracture)", description: "Bony avulsion. Subtype B involves 20–50% of the DIP articular surface and subtype C more than 50% [r12,r2]. Subtype A is a physeal (growth plate) injury in children (standard classification).", prognosis: "Volar subluxation of the distal phalanx is generally an indication for surgery. Splinting for Doyle 4c fractures without subluxation gave similar function to surgery in one small retrospective study [r2]." }
+    ]
+  },
+
+  timeframes: {
+    summary: "The terminal tendon heals slowly and continuous immobilisation is the key variable. The phases below are an illustrative clinical model. The 6-week and 8-week splint durations come from the systematic review of RCTs, and the follow-up points come from the trials cited [r4,r9].",
+    healing: [
+      { phase: "Haemorrhage and inflammation", startDay: 0, endDay: 7, description: "Pain, swelling and droop. Splint in extension the same day (clinical)" },
+      { phase: "Continuous splinting (acute injury)", startDay: 0, endDay: 42, description: "DIP held in extension 24 hours a day for 6 weeks while tendon or fragment heals [r4]" },
+      { phase: "Extended splinting (chronic injury or persistent lag)", startDay: 42, endDay: 56, description: "Chronic injuries used 8 weeks, with extra weeks for persistent lag [r4]" },
+      { phase: "Graded motion and remodelling", startDay: 42, endDay: 112, description: "Active exercise reduces the early extension loss that follows splint removal [r9]" }
+    ],
+    milestones: [
+      { label: "Splint applied, radiographs reviewed", day: 0, note: "Splint immediately, and check the lateral radiograph for fragment size and volar subluxation [r7]" },
+      { label: "Radiographic check during splinting (bony injuries)", day: 14, note: "Radiographic follow-up during splinting appears necessary because secondary subluxation occurred in 3 patients [r13]" },
+      { label: "End of continuous splinting (acute injury)", day: 42, note: "Immobilised continuously for 6 weeks in acute injuries in the trials [r4]" },
+      { label: "End of continuous splinting (chronic injury)", day: 56, note: "8 weeks in chronic injuries [r4]" },
+      { label: "Outcome review", day: 112, note: "Extension and lag were assessed 16 weeks after treatment in an RCT [r9]" }
+    ],
+    returnToSport: "Return to ball sport is criteria-based. Contact is usually allowed in a protective splint after the continuous phase (clinical convention), and unprotected return follows once extension is stable and there is no loss on exercise. The trials reviewed did not define return-to-sport criteria."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "A fingertip that drops into flexion immediately after a jamming or ball-strike injury",
+      "Pain and swelling at the DIP joint, often mild once the first hours pass",
+      "Inability to actively straighten the tip of the finger",
+      "Bruising or tenderness over the dorsum of the DIP joint and nail fold",
+      "Late presentation: a painless droop noticed days or weeks later"
+    ],
+    signs: [
+      "Fingertip held in flexion with a passively correctable lag (extensor lag)",
+      "Tenderness and swelling over the dorsal DIP joint",
+      "Inability to actively extend the DIP joint, while the PIP extends normally",
+      "Retained active DIP flexion with a full fist (distinguishing it from jersey finger)",
+      "Swan-neck posture (PIP hyperextension with DIP flexion) in longstanding cases (clinical)"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Mechanism: ball strike to the extended fingertip, forced flexion or crush, and whether the wound was open",
+      "Time since injury, because chronic injuries need longer splinting [r4]",
+      "Hand dominance, occupation and sport, and the need for a functional splint design",
+      "Previous finger injuries, osteoarthritis or Heberden's nodes (clinical)",
+      "Skin problems, allergy or circulation issues that affect splint choice [r8]"
+    ],
+    observation: ["Resting posture of the tip, and any PIP hyperextension", "Dorsal swelling, bruising, skin or nail bed injury", "Open wound over the DIP joint (open mallet)"],
+    palpation: ["Dorsal DIP tenderness at the tendon insertion", "Tenderness over the distal phalanx base for a bony fragment", "Other joints and the nail bed for associated injury"],
+    rangeOfMotion: ["Active and passive DIP extension, with the lag measured by goniometer [r5]", "Active DIP flexion, with full flexion expected in a mallet injury", "PIP motion, and passive correctability of the lag"],
+    strength: ["FDP function: active DIP flexion with the middle phalanx held, to exclude jersey finger", "Grip and pinch in the later stages (clinical)"],
+    neuro: ["Digital sensation and capillary refill at the fingertip"],
+    functional: ["Ability to use the hand in the splint for work and self-care", "Splint adherence and skin checks during the continuous phase [r1,r4]"],
+    specialTests: [
+      { name: "Active DIP extension test", purpose: "Confirm loss of terminal extensor function", procedure: "With the PIP and MCP joints supported, the patient is asked to straighten the tip of the finger actively. Compare with the other fingers.", positive: "The DIP joint cannot be actively extended, but can be passively straightened (a supple lag). No accuracy figures were found.", refs: [] },
+      { name: "Passive DIP extension and swan-neck screen", purpose: "Distinguish a supple lag from a fixed deformity, and spot early swan-neck change", procedure: "Gently extend the DIP joint passively, then check PIP extension while the tip droops.", positive: "A fixed DIP flexion suggests joint contracture or an old injury. PIP hyperextension with DIP flexion is an early swan-neck pattern (clinical).", refs: [] },
+      { name: "Lateral radiograph review", purpose: "Identify a bony avulsion, fragment size, and any volar subluxation", procedure: "Obtain a true lateral and an anteroposterior radiograph of the finger, and review the DIP joint congruity.", positive: "A dorsal fragment of the distal phalanx base, or volar subluxation of the distal phalanx. Surgery is generally indicated for volar subluxation and for fragments over one-third of the joint surface, although a clear advantage of surgery has not been proven [r7].", refs: ["r7"] }
+    ],
+    clinicalRules: [
+      { name: "Radiograph every suspected mallet injury", description: "Fragment size and volar subluxation drive the choice between splinting and surgical referral [r7,r2]. Doyle type and subluxation should be documented before splinting begins." }
+    ],
+    outcomeMeasures: [
+      { name: "DIP extension lag (goniometer)", use: "The primary outcome in meta-analysis of surgery versus orthosis [r5]" },
+      { name: "DIP flexion and total range of motion", use: "Secondary outcomes in trials, and the flexion lost in some surgical groups [r5,r13]" },
+      { name: "Crawford criteria", use: "Functional grading used in RCTs and retrospective studies [r9,r12,r2]" },
+      { name: "Abouna and Brown criteria", use: "Treatment success criteria for soft tissue mallet injury [r8,r9]" },
+      { name: "Visual analogue pain score", use: "Pain at follow-up in splint and surgical groups [r2,r13]" }
+    ],
+    imaging: [
+      { modality: "Plain radiograph (AP and true lateral)", indication: "All suspected mallet injuries, ideally before splinting", findings: "Dorsal avulsion fragment, fragment size as a proportion of the joint surface, and volar subluxation of the distal phalanx [r7,r2]" },
+      { modality: "Repeat radiograph during splinting", indication: "Bony mallet injuries at about 2-week intervals (clinical)", findings: "Secondary subluxation occurred in 3 patients treated with splinting in one RCT, so radiographic follow-up is needed [r13]" },
+      { modality: "Ultrasound or MRI", indication: "Rarely, for an unclear tendinous injury or complex presentation (clinical)", findings: "Tendon discontinuity or thickening (clinical)" }
+    ]
+  },
+
+  differentials: [
+    { name: "Jersey finger (FDP avulsion)", id: "jersey-finger", distinguishing: "The opposite problem: forced extension of a flexed DIP joint, with loss of active DIP flexion and a tender palmar swelling. In mallet finger the patient can flex the tip but cannot extend it." },
+    { name: "Boutonnière deformity", id: "boutonniere-deformity", distinguishing: "Central slip injury at the dorsal middle phalanx, with PIP flexion and DIP hyperextension, usually with tenderness over the PIP joint." },
+    { name: "PIP volar plate injury", id: "pip-volar-plate-injury", distinguishing: "A hyperextension injury with PIP volar tenderness and swelling. It can later produce a swan-neck deformity but does not drop the tip." },
+    { name: "Distal phalanx fracture (tuft or shaft)", distinguishing: "Crush injury with fingertip pain and possible nail bed damage. DIP active extension is intact and the radiograph shows a non-dorsal-base fracture (clinical)." },
+    { name: "DIP dislocation", distinguishing: "Obvious joint deformity after a hyperextension or axial injury, and loss of joint congruity on radiographs (clinical)." },
+    { name: "DIP osteoarthritis with extensor lag", distinguishing: "Heberden's nodes, long history and bony enlargement, without a recent traumatic event (clinical)." }
+  ],
+  redFlags: [
+    "Volar subluxation of the distal phalanx on the lateral radiograph: refer for urgent hand surgical review, because surgery is generally indicated [r7,r2].",
+    "Open wound or laceration over the DIP joint, or a deep abrasion: suspect an open mallet injury with risk of joint infection. Refer the same day (clinical).",
+    "Skin blanching, blistering or breakdown under the splint: remove, adjust or change the splint design and check urgently. Prefabricated orthoses carried a higher skin-complication risk [r8].",
+    "Inability to flex the fingertip after a forced-extension injury: suspect jersey finger (FDP avulsion), not mallet finger. Arrange urgent hand surgical review.",
+    "A hot, red, swollen DIP joint or fingertip with fever, or a draining wound: suspect septic arthritis or a felon. Refer to emergency (clinical).",
+    "Progressive extension lag or new PIP hyperextension despite splinting: refer to a hand therapist or surgeon for review [r2,r3]."
+  ],
+
+  management: {
+    principles: "Radiograph the finger to check for a bone fragment and volar subluxation, then splint the DIP joint in extension continuously for 6 weeks in acute injuries and 8 weeks in chronic injuries [r4]. Nonoperative management has been advocated for almost all mallet finger injuries. Surgery is generally indicated for fragments over one-third of the joint surface and for volar subluxation, although a clear advantage of surgery has not been proven even then [r7]. Systematic reviews found surgical and nonsurgical care gave similar results [r5,r6]. The main risks are non-adherence and skin breakdown, so the main physio tasks are education, splint design, skin checks and graded rehabilitation. The Cochrane review concluded that adherence is central to success and that there was insufficient evidence on splint type or surgical indications [r1].",
+    medical: [
+      { name: "Surgical referral for volar subluxation or a large fragment", description: "Surgery is generally indicated for volar subluxation of the distal phalanx and for fragments over one-third of the joint surface. The advantage of surgery even in these complex cases has not been clearly proven [r7]. Splinting does not always prevent secondary subluxation [r13].", evidence: "limited", recommendation: "consider", refs: ["r7", "r13"] },
+      { name: "Extension-block pinning or other surgical fixation for bony mallet", description: "In an RCT of Doyle type 4B fractures, pin-orthosis extension-block pinning gave a smaller extension lag than splinting (4.5° versus 12.2°) and better Crawford scores [r12]. In an RCT of bony mallet with more than one-third of the joint involved, 6-month extension lag and patient-reported function did not differ, and flexion was better with splinting [r13]. Results are mixed.", evidence: "conflicting", recommendation: "consider", refs: ["r12", "r13"] },
+      { name: "Routine K-wire fixation for tendinous mallet finger", description: "An RCT of 48 patients found no significant difference in final extension or extension lag at 16 weeks between thermoplastic splinting and K-wire fixation [r9]. A meta-analysis found no high-level evidence that surgery beats splinting [r5].", evidence: "limited", recommendation: "not-recommended", refs: ["r9", "r5"] },
+      { name: "Surgical versus splint for Doyle type 4c without subluxation", description: "In a retrospective study of 39 patients, Stack splinting gave flexion, extension lag and pain similar to extension-block surgery, with more dorsal prominence in the splint group [r2].", evidence: "limited", recommendation: "consider", refs: ["r2"] },
+      { name: "Analgesia", description: "Simple analgesia for the first days. No trial data were found for this injury.", evidence: "expert-opinion", recommendation: "consider", refs: [] }
+    ],
+    physio: [
+      { name: "Continuous DIP extension splinting for 6–8 weeks", description: "All four RCTs in a systematic review immobilised mallet fingers continuously for 6 weeks in acute injuries and 8 weeks in chronic ones. The review recommended 6 to 8 weeks, with extra weeks for a persistent lag [r4]. A systematic review of 44 studies found excellent outcomes with nonsurgical care (mean lag 7.6°) [r6].", evidence: "moderate", recommendation: "recommended", refs: ["r4", "r6"] },
+      { name: "Choice of splint: custom-made versus prefabricated", description: "A meta-analysis of 7 controlled trials (491 participants) found moderate-quality evidence that prefabricated orthoses had about 3 times the risk of skin complications (RR 3.17), and nearly 7 times that of custom-made thermoplastic orthoses (RR 6.72). Treatment success and extensor lag were similar [r8]. The Cochrane review could not name a superior splint [r1].", evidence: "moderate", recommendation: "consider", refs: ["r8", "r1"] },
+      { name: "Quickcast (cast-style) immobilisation", description: "In an assessor-blinded RCT of 58 people, Quickcast gave fewer skin complications (33% versus 64%) and less pain than a thermoplastic custom splint, with no difference in final extensor droop or secondary surgery [r14].", evidence: "limited", recommendation: "consider", refs: ["r14"] },
+      { name: "Splint adherence education and skin checks", description: "Reduced adherence negatively influences DIP extension gains [r4], and the Cochrane review stressed the central importance of adherence and of robust splints for everyday use [r1]. Teach splint changes with the tip supported in extension (clinical).", evidence: "limited", recommendation: "recommended", refs: ["r4", "r1"] },
+      { name: "Active exercise after immobilisation", description: "In an RCT of 48 people, slight extension loss appeared early after the splint or wires were removed and was partly improved by routine active exercise, which supports sustained exercise [r9].", evidence: "limited", recommendation: "recommended", refs: ["r9"] },
+      { name: "Intermittent splinting or letting the DIP flex during splint changes", description: "Reduced adherence and poor splint use predict worse extension, and low compliance is a recognised risk factor for extension loss [r4,r2]. The Cochrane review stressed that splints used for prolonged immobilisation should be robust enough for everyday use [r1].", evidence: "limited", recommendation: "not-recommended", refs: ["r4", "r2", "r1"] },
+      { name: "Night splinting after the continuous phase", description: "The systematic review asked whether a night orthosis is needed after the continuous phase, but the abstract did not give a clear answer [r4]. Often used for a residual lag, by convention.", evidence: "expert-opinion", recommendation: "consider", refs: ["r4"] }
+    ],
+    education: [
+      "The tendon heals only if the tip stays straight. Even one episode of letting it bend during splint changes can set the process back (clinical).",
+      "Wear the splint continuously for 6 to 8 weeks, as advised. Adherence is the most important factor you control [r4,r1].",
+      "Support the fingertip flat on a table when you take the splint off to wash or check the skin, and keep it straight (clinical).",
+      "A small extension lag of a few degrees is common after treatment, and function is usually good [r6].",
+      "Seek help for skin breakdown under the splint, for a tip that will not stay straight, or for any new swelling, redness or fever."
+    ]
+  },
+
+  rehab: {
+    overview: "Rehabilitation protects the healing tendon with continuous extension splinting first, then restores active DIP motion gradually, then restores grip and function and returns the person to sport and work. The splint durations (6 weeks acute and 8 weeks chronic) come from the systematic review of RCTs [r4], and the value of routine active exercise after splint removal comes from an RCT [r9]. The staged exercise dosages are common clinical conventions, because no trial has compared exercise protocols. After surgery, the surgeon's protocol for wires and splint removal overrides these stages.",
+    stages: [
+      {
+        name: "Protect the tendon (continuous splinting)",
+        timeframe: "Weeks 0–6 (8 for chronic injuries)",
+        goals: ["Keep the DIP joint continuously in extension", "Keep the skin intact and oedema controlled", "Maintain MCP and PIP motion of the splinted finger", "Teach safe splint changes"],
+        precautions: ["Never let the DIP joint flex during splint changes or skin care (clinical)", "Check the skin daily for blanching, blistering or breakdown [r8]", "Radiographic review of bony injuries during splinting [r13]", "Follow the surgeon's protocol for K-wires or after repair"],
+        exercises: [
+          { name: "Splint wear with safe changes", dosage: "Continuous for 6 weeks (acute) or 8 weeks (chronic), per the trials [r4]", cues: "Rest the fingertip on a flat surface and keep it straight when changing the splint" },
+          { name: "Active PIP and MCP flexion and extension of the splinted finger", dosage: "10 repetitions, 4–5 times daily (clinical convention)", cues: "Keep the DIP splint on and bend only the knuckle and middle joint" },
+          { name: "Hand and wrist range of motion", dosage: "10 repetitions each, 3 times daily", cues: "Keep the other fingers and wrist moving", figure: { pose: "ex-grip", view: "lateral" } },
+          { name: "Elevation and oedema control", dosage: "Keep the hand raised when resting; light compression if advised (clinical)", cues: "Raise the hand above the elbow" },
+          { name: "Daily skin check and hygiene routine", dosage: "Once or twice daily", cues: "Check the dorsal skin and nail fold, then replace the splint straight away" }
+        ],
+        progressionCriteria: ["Continuous immobilisation completed (6 weeks acute, 8 weeks chronic) [r4]", "No extension lag when the DIP joint is supported, with the surgeon or therapist's agreement", "Skin intact and swelling settled", "Radiographic union and maintained reduction for bony injuries (clinical)"]
+      },
+      {
+        name: "Gentle active motion",
+        timeframe: "Weeks 6–10",
+        goals: ["Begin active DIP flexion and extension without losing extension", "Wean the splint through the day", "Maintain extension alignment", "Reduce stiffness at the DIP joint"],
+        precautions: ["Wear the splint between exercise sessions and at night, initially (clinical convention)", "Pause flexion progression if the lag increases by more than 5° (clinical)", "Avoid passive DIP flexion stretching early (clinical)"],
+        exercises: [
+          { name: "Active DIP flexion to a limited range", dosage: "10 repetitions to 20–30° of flexion, 4 times daily, increasing by about 10° per week if there is no lag (clinical convention)", cues: "Bend the tip slowly, then straighten it fully" },
+          { name: "Active DIP extension with the middle phalanx supported", dosage: "10 repetitions, 4 times daily", cues: "Try to lift the tip fully; stop if it starts to droop" },
+          { name: "Tendon glide sequence", dosage: "5–10 repetitions, 3 times daily", cues: "Move smoothly through straight, hook and full fist positions", figure: { pose: "ex-grip", view: "lateral" } },
+          { name: "Extension check with the splint removed", dosage: "Daily, 3 attempts", cues: "Record any lag and report an increase" }
+        ],
+        progressionCriteria: ["No increase in extension lag during exercise [r9]", "Active DIP flexion of at least 40–50° (a common clinical convention)", "No pain above 3/10 with exercise", "Daytime splint weaning tolerated"]
+      },
+      {
+        name: "Restore range & function",
+        timeframe: "Weeks 10–14",
+        goals: ["Full or near-full DIP flexion with maintained extension", "Restore grip and pinch strength", "Use the hand freely for daily tasks", "Reduce or stop night splinting"],
+        precautions: ["Keep a night splint if a lag persists (clinical)", "Increase resistance gradually"],
+        exercises: [
+          { name: "Composite fist and full extension", dosage: "10 repetitions, 4 times daily", cues: "Aim for a full fist and a straight tip", figure: { pose: "ex-grip", view: "lateral" } },
+          { name: "Therapy putty grip (soft)", dosage: "3 × 10 with 3–5 s holds, daily", cues: "Squeeze smoothly and open fully", figure: { pose: "ex-grip", view: "lateral" } },
+          { name: "Key and tip pinch with putty", dosage: "3 × 10, 3 times weekly", cues: "Keep the tip straight on release" },
+          { name: "Fine-motor tasks (coins, buttons, keyboard)", dosage: "10–15 minutes daily", cues: "Use the whole hand and avoid jamming the tip" }
+        ],
+        progressionCriteria: ["Extension lag stable or reducing over 2 weeks", "Grip and pinch near the other side", "Pain-free daily tasks", "No splint needed during the day"]
+      },
+      {
+        name: "Return to sport & work",
+        timeframe: "Weeks 12–16+",
+        goals: ["Return to ball sport and work without re-injury", "Protect the finger during early return", "Keep a stable extension", "Teach catching and blocking technique"],
+        precautions: ["Protect the finger with a splint or taping for early return to contact sport (clinical convention)", "Review again if a lag recurs after impact"],
+        exercises: [
+          { name: "Soft-ball catching drills with the fingers relaxed", dosage: "3 × 10 catches, 3 times weekly", cues: "Catch with the pads, not the tips", figure: { pose: "reach-catch", view: "lateral" } },
+          { name: "Graded ball handling (progressing size, speed and weight)", dosage: "Start at 50% of usual volume and increase 10–20% a week (common convention)", cues: "Keep the fingers slightly flexed and the tip relaxed" },
+          { name: "Grip strength and forearm conditioning", dosage: "2–3 times weekly, 3 × 8–10", cues: "Smooth open and close", figure: { pose: "ex-grip", view: "lateral" } },
+          { name: "Sport-specific blocking and handling", dosage: "Within team training", cues: "Protective splint or tape during early return" }
+        ],
+        progressionCriteria: ["Stable extension without lag progression after impact", "Full flexion and near-full grip", "Confidence with catching and blocking", "Skin and joint comfortable after training"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "Continuous immobilisation completed (6 weeks acute, 8 weeks chronic) [r4]",
+      "No increase in extension lag with active exercise or after impact [r9]",
+      "Active DIP flexion near the other fingers (a common clinical convention)",
+      "Grip and pinch near the other side, with pain 2/10 or less",
+      "Radiographic union for bony mallet injuries, with no secondary subluxation [r13]",
+      "Protective splint or tape used for early contact or ball sport (clinical convention)"
+    ],
+    tests: ["Goniometric DIP extension lag and flexion [r5]", "Crawford criteria [r9,r12]", "Abouna and Brown criteria [r8,r9]", "Grip and pinch dynamometry compared with the other hand"]
+  },
+  prognosis: "Both surgical and nonsurgical treatment gave excellent clinical outcomes in a review of 44 studies. The mean DIP extensor lag was 5.7° after surgery and 7.6° after nonsurgical treatment, with complication rates of 14.5% and 12.8% [r6]. A meta-analysis found similar outcomes with surgery and splinting [r5]. After splinting of fractures involving more than one-third of the joint, pain was negligible at an average of 24.5 months, but dorsal prominence, an extensor lag, swan-neck deformity and degenerative changes can develop, especially with volar subluxation [r10]. Older age, oedema and poor adherence reduce extension gains [r4]. In an RCT, 3 of 28 patients treated with splinting developed secondary subluxation [r13]. Long-term recurrence figures were not retrieved from the sources used.",
+  prevention: [
+    "No trial has tested prevention. Teach ball-catching with relaxed, slightly flexed fingers rather than rigid, extended tips (clinical).",
+    "Treat any new fingertip droop as a mallet injury until proven otherwise: early splinting reduces the risk of chronic deformity [r3].",
+    "Use finger taping or a protective splint in the early return to ball sport (clinical).",
+    "Protect the finger from jamming injuries during bed-making, manual work and sport where possible (clinical)."
+  ],
+  clinicalPearls: [
+    "Radiograph every droopy fingertip. A large fragment or volar subluxation changes the plan [r7,r2].",
+    "Continuous means continuous. Teach the patient to keep the tip straight on a table during every splint change, and review adherence at each visit [r4,r1].",
+    "Check the dorsal skin at every visit: prefabricated splints had about 3 times the risk of skin complications in the meta-analysis [r8].",
+    "A few degrees of residual lag is common and usually functionally acceptable after either splinting or surgery [r6].",
+    "Do not rush flexion after the splint comes off. Slight extension loss appears early after removal, and routine active exercise helps recover it [r9].",
+    "If the patient cannot flex the fingertip after a hyperextension injury, think jersey finger, not mallet finger."
+  ],
+  related: ["jersey-finger", "boutonniere-deformity", "pip-volar-plate-injury", "trigger-finger", "boxers-fracture", "a2-pulley-rupture"],
+
+  references: [
+    { id: "r1", citation: "Handoll HHG, Vaghela MV. Interventions for treating mallet finger injuries. Cochrane Database Syst Rev. 2004;(3):CD004574.", pmid: "15266538", doi: "10.1002/14651858.CD004574.pub2", type: "systematic-review", year: 2004 },
+    { id: "r2", citation: "Ertem H, Gündüz E, Şencan A, et al. Surgical versus conservative management of Doyle type 4c mallet finger: a comparative study. BMC Musculoskelet Disord. 2026;27(1).", pmid: "41975371", doi: "10.1186/s12891-026-09787-w", type: "cohort", year: 2026 },
+    { id: "r3", citation: "Chauhan A, Jacobs B, Andoga A, et al. Extensor tendon injuries in athletes. Sports Med Arthrosc Rev. 2014;22(1):45-55.", pmid: "24651290", doi: "10.1097/JSA.0000000000000011", type: "narrative-review", year: 2014 },
+    { id: "r4", citation: "Valdes K, Naughton N, Algar L. Conservative treatment of mallet finger: a systematic review. J Hand Ther. 2015;28(3):237-45.", pmid: "26003015", doi: "10.1016/j.jht.2015.03.001", type: "systematic-review", year: 2015 },
+    { id: "r5", citation: "Peng C, Huang RW, Chen SH, et al. Comparative outcomes between surgical treatment and orthosis splint for mallet finger: a systematic review and meta-analysis. J Plast Surg Hand Surg. 2023;57(1-6):54-63.", pmid: "36625383", doi: "10.1080/2000656X.2022.2164291", type: "meta-analysis", year: 2023 },
+    { id: "r6", citation: "Lin JS, Samora JB. Surgical and nonsurgical management of mallet finger: a systematic review. J Hand Surg Am. 2018;43(2):146-63.e2.", pmid: "29174096", doi: "10.1016/j.jhsa.2017.10.004", type: "systematic-review", year: 2018 },
+    { id: "r7", citation: "Lamaris GA, Matthew MK. The diagnosis and management of mallet finger injuries. Hand (N Y). 2017;12(3):223-8.", pmid: "28453357", doi: "10.1177/1558944716642763", type: "narrative-review", year: 2017 },
+    { id: "r8", citation: "Witherow EJ, Peiris CL. Custom-made finger orthoses have fewer skin complications than prefabricated finger orthoses in the management of mallet injury: a systematic review and meta-analysis. Arch Phys Med Rehabil. 2015;96(10):1913-23.e1.", pmid: "26163944", doi: "10.1016/j.apmr.2015.04.026", type: "meta-analysis", year: 2015 },
+    { id: "r9", citation: "Zhu X, Chen X, Lv Y, et al. The importance of active exercise in treatment of tendinous mallet finger: insights from a randomized controlled clinical trial. J Hand Surg Am. 2025;50(11):1404.e1-e10.", pmid: "39918530", doi: "10.1016/j.jhsa.2024.12.011", type: "rct", year: 2025 },
+    { id: "r10", citation: "Kalainov DM, Hoepfner PE, Hartigan BJ, et al. Nonsurgical treatment of closed mallet finger fractures. J Hand Surg Am. 2005;30(3):580-6.", pmid: "15925171", doi: "10.1016/j.jhsa.2005.02.010", type: "cohort", year: 2005 },
+    { id: "r11", citation: "Zhang X, Shao X, Huang Y. Pullout wire fixation together with distal interphalangeal joint Kirschner wire stabilization for acute combined tendon and bone (double level) mallet finger injury. J Hand Surg Am. 2015;40(2):363-7.", pmid: "25543162", doi: "10.1016/j.jhsa.2014.11.011", type: "other", year: 2015 },
+    { id: "r12", citation: "Col KA, Demirsu O, Aydın M, et al. Pin orthosis extension block pinning versus conservative treatment for Doyle type 4B mallet fractures. Arch Orthop Trauma Surg. 2026;146(1).", pmid: "42337168", doi: "10.1007/s00402-026-06342-z", type: "rct", year: 2026 },
+    { id: "r13", citation: "Thillemann JK, Thillemann TM, Kristensen PK, et al. Splinting versus extension-block pinning of bony mallet finger: a randomized clinical trial. J Hand Surg Eur Vol. 2020;45(6):574-81.", pmid: "32338190", doi: "10.1177/1753193420917567", type: "rct", year: 2020 },
+    { id: "r14", citation: "Cavanaugh PK, Watkins C, Jones C, et al. Effectiveness of Quickcast versus custom-fabricated thermoplastic orthosis immobilization for the treatment of mallet fingers: a randomized clinical trial. Hand (N Y). 2022;17(6):1090-7.", pmid: "33511868", doi: "10.1177/1558944720988136", type: "rct", year: 2022 }
+  ],
+
+  animation: {
+    title: "How a mallet finger happens",
+    phases: [
+      {
+        type: "moi", label: "Ball strike", duration: 6, view: "lateral", environment: "court",
+        actors: [{ id: "athlete", kit: "athlete" }],
+        keyframes: [
+          { t: 0, pose: "stand", root: { x: 0 } },
+          { t: 1.2, pose: "reach-catch", root: { x: 0 } },
+          { t: 2.4, pose: "reach-catch", root: { x: 0 } },
+          { t: 3.4, pose: "reach-catch", joints: { wristR: -10 }, root: { x: 0 } },
+          { t: 5.4, pose: "reach-catch", joints: { wristR: -10 }, root: { x: 0 } }
+        ],
+        props: [
+          { id: "ball", type: "ball-volleyball", keyframes: [{ t: 0, x: 140, y: 120 }, { t: 1.6, x: 90, y: 120 }, { t: 2.5, at: "handR" }, { t: 3.4, x: 20, y: 90 }, { t: 5, x: -20, y: 20 }] }
+        ],
+        forces: [
+          { t: [2.3, 3.6], at: "handR", dir: "backward", label: "Ball strikes the extended fingertip", size: "m" }
+        ],
+        highlights: [{ t: [2.4, 6], at: "handR" }],
+        impacts: [{ t: 2.5, at: "handR" }],
+        slowmo: [{ t: [2.0, 3.2], rate: 0.3 }],
+        captions: [
+          { t: 0, text: "An athlete reaches to catch a ball with the fingers extended." },
+          { t: 1.4, text: "The ball arrives straight onto the tip of an extended finger." },
+          { t: 2.4, text: "It forces the fingertip into sudden flexion at the DIP joint." },
+          { t: 3.6, text: "The tendon that straightens the tip fails, and the tip drops." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "handR",
+        captions: [{ t: 0, text: "Zooming into the fingertip, seen from the side." }]
+      },
+      {
+        type: "closeup", label: "Inside the finger", duration: 10, scene: "finger-lateral",
+        actions: [
+          { t: 0, do: "highlight", target: "terminalExtensorTendon" },
+          { t: 0.2, do: "fade", target: "fdsTendon", to: 0.3 },
+          { t: 0.2, do: "fade", target: "a1Pulley", to: 0.25 },
+          { t: 0.2, do: "fade", target: "a2Pulley", to: 0.25 },
+          { t: 0.2, do: "fade", target: "a4Pulley", to: 0.25 },
+          { t: 0.2, do: "fade", target: "flexorSheath", to: 0.25 },
+          { t: 0.2, do: "fade", target: "digitalNerve", to: 0.3 },
+          { t: 1.2, do: "arrow", at: "dipJoint", dir: "anterior", label: "Forced flexion of the DIP joint", size: "m" },
+          { t: 1.6, do: "stretch", target: "terminalExtensorTendon", amount: 0.5, dur: 1.2 },
+          { t: 3.0, do: "avulse", target: "terminalExtensorTendon", end: "to" },
+          { t: 3.0, do: "impact", at: "distalPhalanxBaseDorsal" },
+          { t: 3.4, do: "label", target: "terminalExtensorTendon", text: "Tendon avulses a dorsal fragment (or ruptures)" },
+          { t: 3.8, do: "pain", at: "distalPhalanxBaseDorsal" },
+          { t: 4.4, do: "pulse", target: "fdpTendon" },
+          { t: 4.6, do: "arrow", at: "distalPhalanxBaseVolar", dir: "anterior", label: "FDP pulls the tip into flexion, unopposed", size: "m" },
+          { t: 6.0, do: "arrow", at: "pipJoint", dir: "posterior", label: "If untreated: PIP hyperextension (swan-neck)", size: "s" },
+          { t: 7.0, do: "camera", at: "distalPhalanxBaseDorsal", zoom: 1.8, dur: 1 },
+          { t: 9.2, do: "camera", zoom: 1, dur: 0.8 }
+        ],
+        captions: [
+          { t: 0, text: "The terminal extensor tendon straightens the tip. It inserts on the dorsal base of the distal phalanx." },
+          { t: 1.2, text: "A ball strike forces the extended DIP joint into flexion and overstretches the tendon." },
+          { t: 3.0, text: "The tendon avulses a small bone fragment, or ruptures at its insertion." },
+          { t: 4.4, text: "The flexor digitorum profundus is now unopposed, so the tip drops." },
+          { t: 6.0, text: "Continuous extension splinting for 6–8 weeks holds the healing tendon. Untreated, a swan-neck can follow." }
+        ]
+      },
+      {
+        type: "micro", label: "Tendon healing", duration: 10, tissue: "tendon",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.0, stage: "loaded" }, { t: 2.0, stage: "overload" }, { t: 3.0, stage: "failure" },
+          { t: 4.0, stage: "haemorrhage" }, { t: 5.3, stage: "inflammation" }, { t: 6.8, stage: "proliferation" }, { t: 8.4, stage: "remodelling" }
+        ],
+        timeLabels: [{ t: 5.3, text: "0–7 days" }, { t: 6.8, text: "1–6 weeks" }, { t: 8.4, text: "6 weeks – months" }],
+        captions: [
+          { t: 0, text: "Healthy tendon: parallel, crimped type I collagen fibres." },
+          { t: 1.0, text: "A sudden flexion force straightens the crimp and loads the fibres." },
+          { t: 2.0, text: "Beyond the elastic limit, fibres begin to fail near the insertion." },
+          { t: 3.0, text: "The tendon fails, or pulls its bone fragment off the distal phalanx." },
+          { t: 4.0, text: "Torn vessels bleed into the gap." },
+          { t: 5.3, text: "Inflammatory cells clear debris over the first week." },
+          { t: 6.8, text: "Fibroblasts bridge the gap if the ends stay together, which is why the tip is splinted straight." },
+          { t: 8.4, text: "Collagen remodels along the line of load. Slack in healing can leave an extension lag." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "UL8" }
+};
