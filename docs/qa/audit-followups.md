@@ -50,3 +50,11 @@ Items that writers flagged as written from knowledge, cited from metadata only, 
 - Doyle types I–III and 4A are marked "standard classification"; jersey finger Type IV is defined differently across sources, and the page says so.
 - Ring finger in 80% of jersey finger cases is from a single report; Tempelaere's 29-patient series had 10 poor results.
 - Skier's thumb: operative versus nonoperative evidence is cohorts, reviews and surveys only (no RCTs). Valgus stress test accuracy and the nonoperative immobilisation period are labelled clinical convention.
+
+## Added from the forefoot and midfoot batch (lisfranc-injury, turf-toe, mortons-neuroma, sesamoid-injury)
+
+- turf-toe: the PRP/ACP statement rests on one sentence in Najefi 2018; the 50–60° dorsiflexion criterion is also Najefi's and the page states it for grade III only. Grade III recovery ranges from 4–6 weeks to 6 months across sources.
+- lisfranc-injury: primary arthrodesis versus ORIF rests on one small RCT plus pooled low-quality data. The athlete consensus abstract is ambiguous about which group the "96.8% returned" applies to. Check the wording against the full text.
+- mortons-neuroma: injection, radiofrequency and surgery evidence is low certainty; Mulder's click sensitivity 29–94%.
+- sesamoid-injury: evidence is case series.
+- All four: test procedures (piano-key, pronation-abduction, vertical drawer, Mulder), rehab dosages, return-to-sport thresholds, web-space, Lisfranc ligament and sesamoid blood-supply anatomy and bipartite-sesamoid radiograph features are labelled convention or standard anatomy.
