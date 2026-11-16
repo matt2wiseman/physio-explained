@@ -100,7 +100,7 @@ export default {
     system: "Clinical grading (valgus stress at 30° flexion, opening compared with the other side)",
     grades: [
       { grade: "Grade I", description: "Localised tenderness; pain on valgus stress but no increased opening (roughly 0–5 mm) and a firm end-feel.", prognosis: "Return to sport in about 2 weeks [r3]" },
-      { grade: "Grade II", description: "Partial tear. Increased opening (roughly 5–10 mm) with a firm end point at 30°; stable in full extension.", prognosis: "Return to sport typically 3–4 weeks [r3]" },
+      { grade: "Grade II", description: "Partial tear. Increased opening (roughly 5–10 mm) with a firm end point at 30°; stable in full extension.", prognosis: "Return to sport typically about 3–4 weeks (clinical convention, not taken from a cited study)" },
       { grade: "Grade III", description: "Complete tear. Opening greater than about 10 mm with a soft or absent end point; on stress radiographs >3.2 mm side-to-side gapping at 20° suggests a complete superficial MCL tear [r9]. Laxity in full extension indicates posteromedial or cruciate involvement.", prognosis: "Isolated grade III: non-operative, about 6–8 weeks; combined injuries need surgical review [r1,r13]" }
     ]
   },

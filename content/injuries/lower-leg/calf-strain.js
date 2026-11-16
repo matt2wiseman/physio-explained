@@ -102,7 +102,7 @@ export default {
     grades: [
       { grade: "Grade I", description: "Minor fibre disruption: local pain, minimal swelling, near-normal strength and walking. A traditional clinical grade [r1].", prognosis: "Return to play in days to a few weeks with progressive loading" },
       { grade: "Grade II", description: "Partial tear with more pain, swelling and bruising, a limp and clear strength loss on a single-leg heel raise [r1].", prognosis: "Several weeks; severe aponeurotic disruption on MRI predicted longer return to play (31.3 vs 19.4 days) [r4]" },
-      { grade: "Grade III", description: "Complete or near-complete disruption (50–100% of the muscle, per the review), often with a palpable defect and a large haematoma [r1].", prognosis: "Longest recovery; consider specialist or surgical review for large haematoma or prolonged symptoms [r1]" },
+      { grade: "Grade III", description: "Complete or near-complete disruption (grading by the proportion of fibres torn varies between systems), often with a palpable defect and a large haematoma [r1].", prognosis: "Longest recovery; consider specialist or surgical review for large haematoma or prolonged symptoms [r1]" },
       { grade: "BAMIC 0–4 (MRI)", description: "Grades 0–4 by MRI features, with suffix a, b or c for myofascial, musculotendinous or intratendinous injuries. It was proposed for hamstring injuries and its use in the calf is extrapolated [r8]." },
       { grade: "Munich classification", description: "Four types: functional disorders (type 1 overexertion, type 2 neuromuscular) and structural injuries (type 3 partial tears, type 4 subtotal or total tears or avulsions) [r9]." }
     ]
@@ -202,7 +202,7 @@ export default {
       { name: "Analgesia, with NSAIDs restricted early", description: "Simple analgesia (paracetamol). The review advises restricting NSAIDs in the first 24–72 hours because of bleeding risk, with COX-2 inhibitors as an option; this is expert advice, not trial evidence [r1].", evidence: "expert-opinion", recommendation: "consider", refs: ["r1"] },
       { name: "Ultrasound or MRI", description: "For doubtful diagnosis, large haematoma, suspected plantaris injury, or elite-sport staging. Ultrasound can also exclude DVT [r6]. Elite-sport experts waited 1–2 days before imaging [r3].", evidence: "limited", recommendation: "consider", refs: ["r6","r3"] },
       { name: "DVT assessment and treatment", description: "Apply a validated pre-test probability tool and arrange compression ultrasound according to local pathways when swelling is unexplained or out of proportion [r6].", evidence: "limited", recommendation: "recommended", refs: ["r6"] },
-      { name: "Surgical or specialist review", description: "Consider for a grade III injury, a large intramuscular haematoma that impairs progress, or contracture with prolonged symptoms (4–6 months) [r1].", evidence: "expert-opinion", recommendation: "consider", refs: ["r1"] },
+      { name: "Surgical or specialist review", description: "Consider for a grade III injury, a large intramuscular haematoma that impairs progress, or contracture with prolonged symptoms [r1].", evidence: "expert-opinion", recommendation: "consider", refs: ["r1"] },
       { name: "Early local heat and deep massage", description: "Thought to increase bleeding and generally regarded as contraindicated in the early phase [r1].", evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r1"] }
     ],
     physio: [
