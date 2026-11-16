@@ -114,3 +114,18 @@ Fixed by QC:
 - degenerative-rotator-cuff-tear: "older than 55 years" replaced by "older adults" (the abstract says "older patients").
 
 Left in place, needs a full-text check: turf-toe "painless passive dorsiflexion about 50–60°" (items 72 and 85, cited to the Najefi review; the writer reports reading Najefi in full, the abstract does not give the figure).
+
+## Number-audit sample, items 1–50 and the full-text check (16 Nov 2026)
+
+Items 1–50 gave: 24 OK-format, 5 OK-derived, 2 OK-convention, 14 full-text-only, 3 unsupported, 2 wrong. Combined sample of 100: 74 OK, 18 full-text-only, 6 unsupported, 2 wrong (40 of the 100 came from the eight highest-flag pages, so the sample over-represents the worst pages).
+
+Full-text check (PMC) of the abstract-unconfirmed claims: the large majority were correct in the paper.
+- proximal-hamstring-tendinopathy (r2, PMC12129629): all four claims found (Stage 3 criteria, maintenance dose, the 3 × 8–20 / 1–2 drills / 2–3 days dose is Stage 5 only, 3–6 months or more for strength equal to the other side in long-standing cases). Check the page attributes the Stage 5 dose to the right stage.
+- mortons-neuroma (r4, PMC11574893): Mulder's sensitivity 29–94% and specificity 17–100% found (the paper says "Mulder's sign"); 5.1–57% is the second web space range (page labels it correctly); the "25–50% sensory deficit" is test sensitivity, not prevalence (QC reworded); tight shoes 0.86 and fashionable shoes 0.73 found.
+- trigger-finger (r3, PMC11963023): per-digit counts, 2–3% lifetime incidence, complications only at 10 mg or more, and 9.5% surgery for grade 2 (6.4, 9.5, 16.7, 12% for grades 1–4) all found. The paper has internal inconsistencies (overall 9.8% versus 9.7% in the Discussion; diabetic subgroup 15.3% versus 8.8%; "9.8% of patients" is really 70 of 715 fingers).
+- calf-strain (r3, PMC8761182): the 1–2 day imaging wait was "preferred" by some experts, others considered imaging contraindicated unless it changed management (QC reworded).
+- slap-lesion (r11, PMC5754846): sling 3 weeks and biceps loading at 12 weeks found; the same standardised protocol applied to all three arms including sham.
+
+Fixed by QC from items 1–50: medial-elbow-tendinopathy ("26 patients (30 elbows)"; recurrence at 1 year), mcl-sprain (3–4 weeks relabelled convention), calf-strain (grading band and 4–6 months removed; imaging wording softened), mortons-neuroma (sensory deficit wording).
+
+Still open: turf-toe 50–60° dorsiflexion (r1 Najefi), calf-strain item 36 (3–5 days limit, r1 has a three-sentence abstract), and the roughly 800 flagged statements outside the 100-item sample.
