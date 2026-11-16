@@ -10,7 +10,7 @@ export default {
   populations: ["men aged 20 to 40 years", "weightlifters and strength athletes", "people using anabolic steroids", "contact and grappling athletes", "military personnel"],
   sports: ["weightlifting", "powerlifting", "australian football", "rugby union", "wrestling", "judo", "mixed martial arts"],
   urgency: "urgent",
-  summary: "A rupture of the pectoralis major, usually the tendon avulsing from the humerus in a strong man during a heavy bench press or a forced tackle. It causes chest and axillary bruising, a lost axillary fold and weak adduction.",
+  summary: "A rupture of the pectoralis major, usually the tendon avulsing from the humerus in a strong man during a heavy bench press or forced tackle. It causes chest and axillary bruising, a lost axillary fold and weak adduction.",
   keyFacts: [
     { label: "Typical recovery", value: "After repair, return to resisted training about 9 weeks and to full sport commonly 3 to 6 months (case reports and a case series; clinical convention)" },
     { label: "Return to sport", value: "Mean 11.1 weeks to competition after repair in 20 Australian Football League players; one footballer returned to full contact at 87 days and a wrestler to competition at 24 weeks" },
