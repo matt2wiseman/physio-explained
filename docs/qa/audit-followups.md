@@ -102,3 +102,15 @@ Items that writers flagged as written from knowledge, cited from metadata only, 
 - multidirectional-instability: the 2026 Cochrane review found no randomised trial of exercise versus no treatment.
 - internal-impingement: no controlled treatment trials in symptomatic throwers; the GIRD debate is presented as unsettled.
 - Shin 2022 and Mine 2017 use print years, not PubMed online years.
+
+## Number-audit sample, items 51–100 (Opus, 11 Nov... 16 Nov 2026)
+
+Method: 100 flagged statistics were sampled (8 highest-flag pages × 5, rest random) and judged against the cited abstracts. Items 51–100 gave: 33 OK-format, 1 OK-derived, 9 OK-convention, 4 full-text-only, 3 unsupported, 0 wrong.
+
+Fixed by QC:
+- peroneal-tendinopathy: removed "60% of 40 … up to 40%" (not in the cited review's abstract); "magic angle 80%/75%" replaced by an uncited standard-teaching statement.
+- pcl-injury: "60–90° of flexion" replaced by "flexed to 90° (quadriceps active test)", which is what the cited abstract tests.
+- medial-tibial-stress-syndrome: "5–10% increase in step rate" removed (the trial cued 7.5%); the finding is now stated as a modest increase and impact loading.
+- degenerative-rotator-cuff-tear: "older than 55 years" replaced by "older adults" (the abstract says "older patients").
+
+Left in place, needs a full-text check: turf-toe "painless passive dorsiflexion about 50–60°" (items 72 and 85, cited to the Najefi review; the writer reports reading Najefi in full, the abstract does not give the figure).

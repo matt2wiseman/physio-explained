@@ -63,7 +63,7 @@ export default {
       { name: "Meniscofemoral ligaments (Humphrey and Wrisberg)", role: "Secondary posterior restraints that may stay intact and limit laxity in partial tears [r1]" },
       { name: "Posterolateral corner (LCL, popliteus tendon, popliteofibular ligament)", role: "Resists varus and external rotation; with the PCL it controls posterior translation near extension" },
       { name: "Posteromedial corner and MCL", role: "Resist valgus and internal rotation; secondary posterior restraint in extension" },
-      { name: "Quadriceps", role: "Pulls the tibia anteriorly at about 60–90° of flexion, the dynamic antagonist of posterior sag [r12]" },
+      { name: "Quadriceps", role: "Pulls the tibia anteriorly with the knee flexed to 90° (the quadriceps active test), the dynamic antagonist of posterior sag [r12]" },
       { name: "Hamstrings and gastrocnemius", role: "Flex the knee; their contraction at high flexion angles pulls the tibia posteriorly and increases PCL load" }
     ]
   },
