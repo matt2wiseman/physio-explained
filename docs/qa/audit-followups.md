@@ -78,3 +78,11 @@ Items that writers flagged as written from knowledge, cited from metadata only, 
 - quadriceps-contusion: Jackson and Feagin 1973 has no PubMed abstract; the grade thresholds come from the Ryan 1991 abstract. The flexed-knee protocol rests on uncontrolled military cohorts; early massage and heat avoidance is expert opinion.
 - quadriceps-tendon-rupture: the fluoroquinolone risk figure comes from Achilles data. Patella baja and retinacular integrity preserving partial extension are clinical teaching. Gómez-Macías 2026 has no volume or pages in PubMed.
 - pes-anserine-pain: "bursitis" is contested (MRI bursitis 2.5%; clinical diagnosis sensitivity 41.2%, specificity 59.5%); no exercise or stretching trial; injection trials 8 weeks or less with no placebo.
+
+## Added from the pain, nerve and muscle batch (complex-regional-pain-syndrome, exertional-rhabdomyolysis, meralgia-paraesthetica, common-peroneal-nerve-injury)
+
+- complex-regional-pain-syndrome: "tremor or dystonia" is clinical convention, not from a source. Only the Harden 2022 guideline abstract was read; the Valencia consensus paper (PMID 33729210) has no abstract and is not cited. Vitamin C prevention meta-analyses disagree. Graded motor imagery and mirror therapy rest on very low quality evidence.
+- exertional-rhabdomyolysis: CK time course and symptom timing are clinical convention. The CK sensitivity and specificity for acute kidney injury come from a traumatic rhabdomyolysis meta-analysis and are labelled indirect. The return-to-exercise stages rest on consensus only.
+- meralgia-paraesthetica: tight-belt, pregnancy and hip-extension risk factors and the pelvic compression test procedure are clinical convention. The Tinel figure of 85.1% is from a 30-patient sample.
+- common-peroneal-nerve-injury: six references (Campbell, Yi, Mikesh, Sunderland, Sittel, Menorca) were verified earlier for the peripheral-nerve-injury page and not re-fetched. The 8–12 week neurapraxia figure is from a facial nerve series and the 1 mm a day regrowth rate is from rat studies (both caveated on the page). Nerve exploration with tendon transfer rests on a 12-patient series. Cast, squatting and leg-crossing compression is clinical convention.
+- This batch was partly drafted while Bash was unavailable; QC re-ran the full build and render scan afterwards (120 valid, no console errors).
