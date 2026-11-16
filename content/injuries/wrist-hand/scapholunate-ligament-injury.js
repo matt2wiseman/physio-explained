@@ -1,0 +1,424 @@
+export default {
+  id: "scapholunate-ligament-injury",
+  name: "Scapholunate ligament injury",
+  shortName: "Scapholunate injury",
+  aka: ["scapholunate dissociation", "SL ligament tear", "scapholunate instability", "SLIL injury", "scapholunate interosseous ligament injury", "perilunate instability (Mayfield stage I)", "carpal instability, dissociative", "SLAC wrist (late sequel)"],
+  region: "wrist-hand",
+  tissues: ["ligament"],
+  onset: "acute-or-gradual",
+  mechanismType: ["fall", "non-contact", "degenerative"],
+  populations: ["adults after a fall on the outstretched hand", "athletes in falls and contact sports", "people with persisting dorsal wrist pain after a wrist sprain", "adults with an associated distal radius or scaphoid injury"],
+  sports: ["gymnastics", "snowboarding", "skiing", "football", "basketball", "cycling", "martial arts"],
+  urgency: "urgent",
+  summary: "Tear of the scapholunate interosseous ligament after a fall on the extended wrist, causing dorsal wrist pain and carpal instability. Missed injuries can progress to scapholunate advanced collapse (SLAC) arthritis.",
+  keyFacts: [
+    { label: "Key test", value: "Scaphoid shift (Watson) test: described as helpful for scaphoid stability, but accuracy figures were not retrieved. A newer SL C-sign had sensitivity 86% and specificity 83% in 28 patients" },
+    { label: "Imaging", value: "Clenched-fist stress view: sensitivity 40% and specificity 82% against arthroscopy (124 patients); a normal stress view does not exclude a Geissler grade 3 or higher tear" },
+    { label: "Reference standard", value: "Wrist arthroscopy. A negative MRI cannot rule out an SL ligament injury (negative predictive value 72–94% across studies)" },
+    { label: "Treatment evidence", value: "No trial compares repair, reconstruction and conservative care. Reviews of chronic tears found no technique clearly superior; pain fell from 6.0 to 2.8 at 2 years across techniques" },
+    { label: "Timing", value: "Chronic after about 6 weeks, when ligament healing is no longer considered possible, so a persisting wrist sprain should be reassessed early" },
+    { label: "Natural history", value: "An untreated SL injury can progress to SLAC wrist, but the rate of progression was not quantified in the sources retrieved" }
+  ],
+  overview: "Injuries to the scapholunate (SL) joint are the most frequent cause of carpal instability and account for a considerable degree of wrist dysfunction, lost time from work and interference with activities [r1]. An isolated injury to the SL interosseous ligament is not enough on its own to cause abnormal carpal posture or collapse on static radiographs, but it may be the harbinger of progression to abnormal joint mechanics, cartilage wear and degenerative change [r1]. Untreated SL injury leads to progressive post-traumatic periscaphoid osteoarthritis and carpal collapse, called scapholunate advanced collapse (SLAC) wrist when symptomatic [r2]. In cadaver loading studies, the mechanism was wrist extension, ulnar deviation and intercarpal supination, which produced sequential, specific ligament failures that were classified as progressive perilunar instability (Mayfield stages I–IV), with stage I being scapholunate diastasis [r3].\n\nDiagnosis is difficult because the tests are imperfect. Wrist arthroscopy remains the preferred diagnostic technique, a negative MRI cannot rule out a clinically relevant SL injury, and clinical provocation tests are of limited value [r4]. Static radiographs may be normal: the clenched-fist view had a sensitivity of only 40% against arthroscopy [r5].\n\nThe treatment evidence is weak. Ligament healing is considered no longer possible after about 6 weeks, after which an injury is called chronic [r6]. Systematic reviews of chronic non-arthritic tears could not show that capsulodesis, tenodesis or reconstruction is superior to another, and they called for longer comparative and natural-history studies [r7,r8]. For conservative care, one small randomised trial of a neuromuscular stabilisation program exists, but no trial compares it with surgery [r9].",
+
+  epidemiology: {
+    text: "Population incidence figures were not retrieved from the sources used for this page, so none are quoted. SL instability is described as the most common dissociative carpal instability and as the most frequent cause of wrist osteoarthritis, called SLAC wrist [r6]. Acute high-energy perilunate injuries are a related group: a systematic review of 43 articles with 880 patients found complications of arthritis (30%), carpal instability (15%), lunate avascular necrosis (12%), complex regional pain syndrome (11%) and scaphoid nonunion or avascular necrosis (9%) after operative treatment [r10].\n\nReliable data on risk factors were not retrieved, so the factors below are largely clinical. Because many SL injuries follow a fall that looks like a sprain, the diagnosis is commonly delayed, and timing matters because ligament healing is considered impossible after about 6 weeks [r6].",
+    riskFactors: {
+      intrinsic: [
+        "Ligamentous laxity or a lax contralateral wrist, which makes tests harder to interpret (clinical)",
+        "Pre-existing partial attenuation or degenerative change of the ligament (clinical)",
+        "Associated fracture, such as distal radius or scaphoid fracture, which can accompany ligament injury (clinical)",
+        "Delayed diagnosis and treatment beyond the early window (about 6 weeks) [r6]"
+      ],
+      extrinsic: [
+        "A fall on the extended wrist: extension, ulnar deviation and intercarpal supination reproduced perilunar instability in cadavers [r3]",
+        "High-energy trauma or repeated weight-bearing sports such as gymnastics, snowboarding, football and martial arts (clinical)",
+        "Heavy loaded wrist extension at work or in training (clinical)"
+      ]
+    }
+  },
+
+  mechanism: {
+    summary: "The classic mechanism is a fall on the outstretched hand with the wrist extended, ulnar deviated and the carpus in intercarpal supination. In cadaver loading studies this combination produced sequential ligament failure, starting with the scapholunate ligament (stage I perilunar instability) and progressing to lunate dislocation (stage IV) [r3]. Smaller loads may tear only part of the SL ligament and leave a wrist that is stable at rest but unstable under load (dynamic instability) [r1,r6].",
+    sequence: [
+      "The hand lands with the wrist extended and ulnar deviated, and the carpus rotates into intercarpal supination (Mayfield mechanism [r3]).",
+      "Load passes through the radial column and the scaphoid, which is pushed to flex while the lunate is pulled into extension with the triquetrum (clinical biomechanics).",
+      "The scapholunate interosseous ligament fails first, giving scapholunate diastasis (Mayfield stage I [r3]).",
+      "With more force the injury progresses around the lunate: stage II capitolunate and stage III lunotriquetral disruption (classic scheme), then stage IV lunate dislocation [r3].",
+      "The scaphoid flexes and the lunate extends, so the SL gap widens and the carpus can show abnormal alignment if the secondary stabilisers also fail [r1].",
+      "A wrist that looks normal on static films can still be unstable under load, because a partial injury may not change static carpal posture [r1,r5].",
+      "After about 6 weeks the ligament is considered unable to heal, and abnormal mechanics can lead to cartilage wear and SLAC arthritis [r6,r2]."
+    ],
+    variants: [
+      { name: "Acute traumatic SL tear", description: "Partial or complete tear after a fall; arthroscopy is the reference standard and grades the tear (Geissler grade), and grade 3 or higher tears are the high-grade group in diagnostic studies [r4,r5]." },
+      { name: "Perilunate instability (Mayfield stages II–IV)", description: "Progression of the injury around the lunate to lunate dislocation, with the highest carpal instability at stage IV; complications of operative treatment include arthritis and avascular necrosis [r3,r10]." },
+      { name: "Dynamic or pre-dynamic instability", description: "A partial tear that is stable on static radiographs but unstable under load; managed in reviews with capsulodesis, with conservative stabilisation also described [r11,r9]." },
+      { name: "Chronic SL dissociation and SLAC wrist", description: "Injury present for more than about 6 weeks, with or without arthritis; reconstruction applies if the instability is reducible and there is no arthritis, and salvage procedures apply once arthritis is established [r6,r12]." }
+    ]
+  },
+
+  anatomy: {
+    text: "The scapholunate joint links the scaphoid, which tends to flex, and the lunate, which tends to extend with the triquetrum, so the ligament between them controls how the proximal carpal row moves as a unit. The SL interosseous ligament is the main prerequisite for SL stability, but the extrinsic palmar and dorsal ligaments of the carpus also come into play [r6]. Dynamic stabilisers matter too: the flexor carpi radialis, flexor carpi ulnaris, extensor carpi ulnaris and radial wrist extensors all contribute to dynamic wrist stabilisation, and electromyography showed lower radial extensor and higher ulnar extensor activation during wrist extension in patients with SL injury [r13]. The SL interosseous ligament has dorsal, proximal and palmar parts, and the dorsal part is thickest (textbook anatomy).",
+    structures: [
+      { name: "Scapholunate interosseous ligament", role: "Binds the scaphoid and lunate; its failure causes SL diastasis and the start of perilunar instability [r3,r6]" },
+      { name: "Extrinsic palmar and dorsal carpal ligaments", role: "Secondary stabilisers; damage to them lets the carpus show abnormal posture [r6,r1]" },
+      { name: "Scaphoid", role: "Links the proximal and distal carpal rows and tends to flex when the SL ligament fails (clinical biomechanics)" },
+      { name: "Lunate and lunotriquetral ligament", role: "The lunate extends with the triquetrum; the lunotriquetral ligament fails at Mayfield stage III [r3]" },
+      { name: "Flexor carpi radialis and radial wrist extensors", role: "Dynamic stabilisers of the radial column and targets of conservative stabilisation programs [r13,r9]" },
+      { name: "Radioscaphoid joint and radial styloid", role: "Where SLAC arthritis typically begins (Watson stage 1, textbook description)" }
+    ]
+  },
+
+  pathophysiology: {
+    tissueDamage: "The ligament fails in tension and shear when the loaded, extended and ulnar-deviated wrist drives the scaphoid and lunate in different directions. In Mayfield's cadaver work, failure progressed in a sequential, specific pattern from scapholunate diastasis (stage I) to lunate dislocation (stage IV) as the force increased [r3]. A complete tear removes the main restraint between the scaphoid and lunate, and the secondary palmar and dorsal ligaments determine whether the carpus shows abnormal posture [r6,r1].\n\nBecause the ligament is considered unable to heal after about 6 weeks, a missed or untreated tear leaves abnormal kinematics that wear the radioscaphoid and then midcarpal cartilage, producing the SLAC pattern of osteoarthritis [r6,r2]. The rate and likelihood of progression in a given patient were not quantified in the sources retrieved, and radiographic decay after surgery did not correlate with clinical outcome in one review [r14].",
+    structures: [
+      { name: "Scapholunate interosseous ligament", effect: "Partial or complete tear, scapholunate diastasis and loss of the main SL restraint [r3,r1]" },
+      { name: "Palmar and dorsal extrinsic ligaments", effect: "Secondary stabilisers that may be stretched or torn, deciding static versus dynamic instability [r6,r1]" },
+      { name: "Scaphoid and lunate alignment", effect: "Scaphoid flexion and lunate extension with a widened SL gap in static instability (clinical biomechanics)" },
+      { name: "Radioscaphoid and midcarpal cartilage", effect: "Progressive wear leading to SLAC wrist if abnormal mechanics persist [r2]" },
+      { name: "Lunotriquetral ligament and lunate", effect: "Involved in progression to higher Mayfield stages [r3]" }
+    ],
+    muscles: [
+      { name: "Radial wrist extensors (ECRL and ECRB)", effect: "Lower activation during wrist extension in patients with SL injury than in controls [r13]." },
+      { name: "Extensor carpi ulnaris", effect: "Higher activation during wrist extension; the authors proposed this may increase the SL gap and that neuromuscular exercise might help [r13]." },
+      { name: "Flexor carpi radialis and flexor carpi ulnaris", effect: "Dynamic stabilisers of the wrist; FCR is the donor in tenodesis reconstructions and a target of rehabilitation [r13,r14]." },
+      { name: "Grip and forearm musculature", effect: "Weakness from pain and altered proprioception; grip, weight-bearing tolerance and proprioception were outcome measures in a stabilisation trial [r9]." }
+    ],
+    cellular: [
+      { phase: "Acute injury and haemorrhage", timing: "Days 0–7 (clinical range)", description: "Fibre failure, local bleeding and synovitis in the radiocarpal and midcarpal joints (clinical)." },
+      { phase: "Window for repair", timing: "To about 6 weeks", description: "After about 6 weeks the ligament is considered unable to heal, which is the basis for the acute versus chronic distinction [r6]." },
+      { phase: "Chronic attenuation", timing: "Weeks to months", description: "Ligament remnants attenuate, and abnormal kinematics persist with a dynamic or static instability pattern [r1,r6]." },
+      { phase: "Secondary degeneration", timing: "Months to years", description: "Cartilage wear and osteoarthritis follow the SLAC pattern; secondary degeneration was seen in 15% of cases in a review of FCR tenodesis [r2,r14]." }
+    ],
+    systems: [
+      { system: "Nervous system and proprioception", effect: "Pain and ligament injury alter wrist proprioception; proprioceptive sense was measured in a stabilisation trial [r9]." },
+      { system: "Musculoskeletal chain", effect: "Altered forearm muscle activation patterns change the loading of the wrist (lower ECR, higher ECU activation) [r13]." },
+      { system: "Joint and cartilage system", effect: "Abnormal carpal mechanics wear cartilage, leading to SLAC arthritis [r1,r2]." },
+      { system: "Psychosocial and occupational", effect: "Instability affects work and sport; wrist dysfunction and lost time from work are recognised consequences [r1]." }
+    ]
+  },
+
+  grading: {
+    system: "Mayfield stages of perilunar instability, with the arthroscopic Geissler grade and the Watson SLAC stages used for SL tears and their sequel. Stage details beyond those quoted follow the classic schemes",
+    grades: [
+      { grade: "Mayfield stage I", description: "Scapholunate ligament disruption with scapholunate diastasis; the least carpal instability [r3].", prognosis: "The injury most relevant to SL ligament tears; early diagnosis allows repair within about 6 weeks [r6]" },
+      { grade: "Mayfield stage II", description: "Progression to capitolunate disruption (classic scheme).", prognosis: "A perilunate injury needing urgent surgical management; complications include arthritis and carpal instability [r10]" },
+      { grade: "Mayfield stage III", description: "Progression to lunotriquetral disruption (classic scheme).", prognosis: "Perilunate injury; operative treatment carries risks of arthritis and avascular necrosis [r10]" },
+      { grade: "Mayfield stage IV", description: "Lunate dislocation, with the highest degree of carpal instability [r3].", prognosis: "Emergency reduction; median nerve compression is a risk (clinical)" },
+      { grade: "Geissler grade I–IV (arthroscopic)", description: "Arthroscopic grading of the SL interval from attenuation (I) to gross instability (IV). The choice of surgical technique depends on the Geissler grade and European Wrist Arthroscopy Society staging (classic scheme).", prognosis: "Grade 3 or higher injuries were found in 42% of patients with a negative clenched-fist view [r5]" },
+      { grade: "SLAC wrist (Watson stages 1–4)", description: "Progressive post-traumatic arthritis from the radial styloid to pancarpal collapse; a modified four-stage Watson classification is in use [r2].", prognosis: "Salvage options such as proximal row carpectomy or four-corner fusion give similar pain relief and grip, with different range and arthritis risk [r12]" }
+    ]
+  },
+
+  timeframes: {
+    summary: "There is no validated healing timeline: a complete SL tear is not expected to heal, and the key time point is about 6 weeks, after which the injury is considered chronic and ligament healing no longer possible [r6]. The remaining ranges are common clinical conventions, and criteria override time.",
+    healing: [
+      { phase: "Acute phase: early diagnosis and a repair window", startDay: 0, endDay: 42, description: "Early diagnosis matters because ligament healing is considered possible only until about 6 weeks [r6]" },
+      { phase: "Protection and early rehabilitation (conservative or after surgery)", startDay: 0, endDay: 84, description: "Splint or surgical protocol, then progressive stabilisation; the 8-week stabilisation program in a randomised trial is one example [r9]" },
+      { phase: "Chronic instability", startDay: 42, endDay: 730, description: "Injury older than 6 weeks: reconstruction or capsulodesis is considered if the instability is reducible and there is no arthritis [r6]. Pain fell from 6.0 to 2.8 by 2 years across techniques in a review [r7]" },
+      { phase: "Secondary degeneration risk", startDay: 180, endDay: 3650, description: "Cartilage wear and SLAC arthritis in unstable or untreated wrists; loss of reduction occurred in the long term even after reconstruction [r14,r2]" }
+    ],
+    milestones: [
+      { label: "Acute window closes (chronic after about 6 weeks)", day: 42, note: "Ligament healing is considered no longer possible after this point [r6]" },
+      { label: "End of the 8-week stabilisation program in the NMES trial", day: 56, note: "Both groups improved on all measures; the NMES group improved more on QuickDASH, activity pain and weight-bearing tolerance [r9]" },
+      { label: "Typical review of function after reconstruction (conventional)", day: 180, note: "Surgeon's protocol governs; timing is a common clinical convention" },
+      { label: "Pain outcome reported across techniques", day: 730, note: "Pain scores averaged 2.8 at about 2 years in a systematic review of chronic tears [r7]" }
+    ],
+    returnToSport: "Criteria-based. After surgical repair or reconstruction, return to contact or weight-bearing sport commonly takes about 4–6 months or longer, following the surgeon's protocol (a common clinical range; no consensus was found). Non-operative return depends on pain, strength and loaded-extension tolerance."
+  },
+
+  clinicalPresentation: {
+    symptoms: [
+      "Dorsal-radial wrist pain after a fall, often labelled a sprain, that persists beyond 2–6 weeks",
+      "Pain with loaded wrist extension, push-ups, weight-bearing and gripping",
+      "Clicking or a clunk with grip and ulnar-to-radial motion, or a sense of the wrist giving way",
+      "Reduced grip strength and confidence with loading",
+      "Swelling over the dorsal wrist soon after injury"
+    ],
+    signs: [
+      "Tenderness over the dorsal SL interval, just distal to Lister's tubercle (clinical)",
+      "A positive scaphoid shift test: pain, with or without a clunk as the scaphoid subluxes and reduces [r15]",
+      "A positive SL C-sign in high-grade tears (symptom plus matching examination finding [r16])",
+      "Reduced and painful wrist extension and grip compared with the other side",
+      "Dorsal swelling or a prominence over the scaphoid in a static injury (clinical)"
+    ]
+  },
+
+  assessment: {
+    subjective: [
+      "Mechanism: fall on the extended wrist, with the wrist extended, ulnar deviated and supinated; a mechanism of this type was reproduced in cadavers [r3]",
+      "Time since injury: before or after about 6 weeks, which changes the options [r6]",
+      "Pain with loaded extension, push-ups, grip and weight-bearing; clicking or giving way",
+      "Previous wrist injury, fracture or treatment, and the response to splinting",
+      "Sport and work demands, including weight-bearing and racquet or bat use",
+      "Numbness or progressive symptoms in the median nerve distribution (acute perilunate injury, lunate dislocation)"
+    ],
+    observation: ["Dorsal swelling or fullness at the SL interval", "A prominent scaphoid in static instability (clinical)", "Posture and guarding in grip and weight-bearing", "Scars from previous wrist surgery"],
+    palpation: ["Dorsal SL interval just distal to Lister's tubercle", "Scaphoid tubercle, anatomical snuffbox and the scaphoid waist to exclude fracture", "Lunate and lunotriquetral interval", "Distal radius, ulnar-side structures and the ECU groove for differentials"],
+    rangeOfMotion: ["Wrist flexion and extension, radial and ulnar deviation, compared with the other side", "Painful end-range extension or ulnar deviation", "Forearm rotation to screen the ulnar side"],
+    strength: ["Grip dynamometry compared with the other hand [r9]", "Resisted wrist extension and flexion", "Pain with loaded extension and weight-bearing (push-up position)"],
+    neuro: ["Median nerve sensation and thenar function, especially after high-energy injury", "Superficial radial nerve sensation to separate dorsoradial causes"],
+    functional: ["Weight-bearing tolerance test and push-up or quadruped loading [r9]", "Grip and lift of loaded objects with the wrist extended", "Sport-specific weight-bearing or bat and racquet tasks"],
+    specialTests: [
+      { name: "Scaphoid shift (Watson) test", purpose: "Assess scaphoid stability and identify SL or periscaphoid pathology", procedure: "The examiner places a thumb on the palmar tubercle of the scaphoid while moving the wrist from ulnar deviation to radial deviation, which pushes the scaphoid toward subluxing over the dorsal radial rim; release of pressure allows it to reduce.", positive: "Pain over the dorsal wrist, with or without a palpable clunk as the scaphoid subluxes and reduces, compared with the other side because lax wrists can also click. The test is described as a helpful stability maneuver [r15], but a systematic review found clinical provocation tests of limited diagnostic value, with a negative predictive value of 74% for the SL ligament (from a single study of clinical tests) [r4].", refs: ["r15", "r4"] },
+      { name: "Scapholunate C-sign", purpose: "Detect high-grade, through-and-through SL interosseous ligament injury", procedure: "Combines a characteristic patient-reported symptom with a corresponding examination finding; the manoeuvre is described in the original paper and was not detailed in the abstract.", positive: "Both components present together. In 28 patients with suspected high-grade tears, with arthroscopy as the reference standard, accuracy fell when only one component was used. Small, single-centre sample [r16].", sensitivity: "86% (both components present)", specificity: "83%", lrPositive: "5.18", lrNegative: "0.16", refs: ["r16"] },
+      { name: "Dorsal SL palpation and loaded-extension pain", purpose: "Localise pain to the scapholunate interval and reproduce load-related symptoms", procedure: "Palpate the SL interval distal to Lister's tubercle with the wrist flexed, then load the wrist in extension or weight-bearing.", positive: "Focal tenderness at the dorsal SL interval and reproduction of the usual pain. Accuracy figures were not retrieved; combine with the mechanism and imaging.", refs: [] }
+    ],
+    clinicalRules: [
+      { name: "Provocative tests cannot exclude an SL injury", description: "A systematic review of 7 studies found that clinical provocation tests were of limited diagnostic value and that a negative MRI could not rule out a clinically relevant SL ligament injury; arthroscopy remains the preferred diagnostic technique [r4]." },
+      { name: "Persisting wrist pain after a sprain needs reassessment, not more rest", description: "Because the repair window closes at about 6 weeks, persisting dorsal wrist pain after a fall warrants imaging and early hand-surgery review rather than prolonged rest [r6]." },
+      { name: "Normal stress radiographs do not exclude a significant tear", description: "42% of symptomatic patients with a negative clenched-fist view had a Geissler grade 3 or higher SL tear at arthroscopy [r5]." }
+    ],
+    outcomeMeasures: [
+      { name: "QuickDASH or DASH", use: "Upper-limb disability; the primary outcome in a randomised stabilisation trial [r9]" },
+      { name: "Pain VAS (rest and activity)", use: "Pain scores averaged 2.8 at about 2 years after surgery across techniques in a review [r7]" },
+      { name: "Grip dynamometry and wrist range", use: "Objective strength and range compared with the other side [r9,r7]" },
+      { name: "Weight-bearing tolerance and proprioception tests", use: "Used as secondary outcomes in a stabilisation trial [r9]" },
+      { name: "Radiographic SL gap and angle", use: "Pooled SL gap 3.44 mm and angle 60.3° after capsulodesis versus 2.72 mm and 56.5° after reconstruction; radiographic decay did not correlate with clinical outcome in one review [r8,r14]" }
+    ],
+    imaging: [
+      { modality: "Plain radiographs (PA, lateral, clenched-fist or loaded views)", indication: "All wrist injury and persisting pain, to look for fracture, SL widening, abnormal alignment and arthritis", findings: "A gap over 3 mm was used to define instability in one diagnostic trial [r17]. The clenched-fist view had a sensitivity of 40% and specificity of 82%, and a negative view does not rule out a tear [r5]." },
+      { modality: "MRI or MR arthrography", indication: "Persisting pain with a normal or equivocal radiograph and a decision pending", findings: "A negative MRI cannot rule out an SL injury (negative predictive value 72–94%) [r4]. In one retrospective series MRI sensitivity for ligament injuries was 21.4–60.7% with 100% specificity, in a selected group in which arthroscopy found a lesion in nearly all cases [r18]. MR arthrography had a sensitivity of 77% and specificity of 100% for 13 SL tears in a 33-patient study [r19]." },
+      { modality: "Dynamic imaging (4D CT or cineradiography)", indication: "Suspected dynamic instability with normal static films, where available", findings: "4D CT had a sensitivity of 74.3% and specificity of 80% for instability over 3 mm in an exploratory study of 40 patients, compared with 82.5% and 80% for historical cineradiography [r17]." },
+      { modality: "Wrist arthroscopy", indication: "Persisting pain or a planned repair or reconstruction", findings: "The preferred and reference diagnostic technique; it grades the tear (Geissler) and guides the choice of surgery [r4,r17]." }
+    ]
+  },
+
+  differentials: [
+    { name: "Scaphoid fracture", id: "scaphoid-fracture", distinguishing: "Snuffbox and scaphoid tubercle tenderness with pain on axial thumb loading; image with CT or MRI if the first X-ray is normal." },
+    { name: "TFCC injury", id: "tfcc-injury", distinguishing: "Ulnar-sided pain with fovea tenderness and pain on loaded rotation, rather than dorsal-radial pain at the SL interval." },
+    { name: "Distal radius fracture", id: "distal-radius-fracture", distinguishing: "Focal bony tenderness and swelling after trauma; associated SL injury can coexist and should be considered once the fracture is addressed." },
+    { name: "Hook of hamate fracture", id: "hook-of-hamate-fracture", distinguishing: "Ulnar-sided palmar tenderness over the hook, pain with gripping a club or bat." },
+    { name: "Lunotriquetral ligament injury", distinguishing: "Ulnar-sided dorsal pain with tenderness at the lunotriquetral interval and a positive shear or ballottement test." },
+    { name: "Perilunate dislocation or lunate dislocation (Mayfield stages II–IV)", distinguishing: "High-energy mechanism with marked deformity and swelling; may present with median nerve symptoms. Emergency, not a sprain." },
+    { name: "Dorsal wrist ganglion, extensor tendinopathy or Kienböck's disease", distinguishing: "Dorsal wrist swelling or pain without instability signs; Kienböck's disease causes central wrist pain with lunate sclerosis or collapse on imaging." }
+  ],
+  redFlags: [
+    "High-energy fall with marked wrist swelling or deformity: suspect a perilunate or lunate dislocation (Mayfield stages II–IV). Arrange emergency imaging and orthopaedic review; these injuries have high complication rates [r3,r10].",
+    "New or worsening median nerve symptoms (numbness in the thumb to ring finger, thenar weakness) after a wrist injury: suspect acute carpal tunnel compression from a lunate dislocation; refer to emergency.",
+    "Snuffbox tenderness or pain on axial thumb loading after a fall: image for a scaphoid fracture before concluding ligament injury.",
+    "Wrist pain still present about 2–6 weeks after a fall, or clicking and giving way with loading: image and refer to hand surgery, because the repair window closes at about 6 weeks [r6].",
+    "A normal MRI or stress view with ongoing mechanical symptoms: do not reassure fully; refer for arthroscopic assessment if suspicion persists [r4,r5].",
+    "Progressive stiffness, grating and loss of grip in a previously injured wrist: suspect SLAC arthritis and refer for imaging and surgical opinion [r2]."
+  ],
+
+  management: {
+    principles: "Management depends on the time since injury, whether the instability is dynamic or static, and whether arthritis is present. In chronic non-arthritic tears, systematic reviews could not show that one surgical technique was superior (capsulodesis, tenodesis or reconstruction), and they called for longer comparative and natural-history studies [r7,r8]. Reconstruction is considered when the instability is reducible, there is no repairable ligament stump and there are no chondral lesions [r6]. Salvage procedures apply once arthritis is established [r12]. For conservative care, the best available evidence is a small randomised trial of a stabilisation exercise program [r9], so the program is offered with honest labelling and with early surgical review for high-grade injury. Complication rates after surgery are not trivial, with 20% overall and 3.8% complex regional pain syndrome in one review of chronic tears [r7].",
+    medical: [
+      { name: "Early immobilisation and imaging of a suspected SL injury", description: "Splint the wrist, image, and refer early for arthroscopic assessment if pain persists, because ligament healing is considered impossible after about 6 weeks [r6]. No comparative trial of immobilisation was retrieved.", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
+      { name: "Arthroscopic debridement with percutaneous K-wire fixation or arthroscopic capsulodesis for partial or higher-grade tears", description: "A systematic review and meta-analysis of 16 studies (434 patients) found that arthroscopic capsulodesis (6 studies, 250 patients in the meta-analysis) gave significant improvement in patient-reported outcome with a low complication rate in higher-grade tears; the evidence was level IV and heterogeneous [r20].", evidence: "limited", recommendation: "consider", refs: ["r20"] },
+      { name: "Dorsal capsulodesis (open or arthroscopic) for chronic dynamic or pre-dynamic tears", description: "In a systematic review of 14 studies, older techniques (Lavernia, Blatt) caused significant ROM loss and failed to prevent SLAC wrist, newer open techniques (Berger, modified Viegas) gave better results, and the all-arthroscopic Mathoulin procedure showed the most promising results; thermal shrinkage gave the worst outcomes, and larger trials with longer follow-up are needed [r11]. Grip was better after capsulodesis (+31%) than after tenodesis (+11%) in another review [r7].", evidence: "limited", recommendation: "consider", refs: ["r11", "r7"] },
+      { name: "Tendon reconstruction (FCR tenodesis such as modified Brunelli or three-ligament tenodesis)", description: "Indicated for chronic, reducible instability without arthritis and without a repairable stump [r6]. A review of 15 studies (600 patients) found an average pain reduction of 3 points on a visual analogue score, loss of reduction in the long term, secondary degeneration in 15% and an overall complication rate of 9% [r14].", evidence: "limited", recommendation: "consider", refs: ["r6", "r14"] },
+      { name: "Salvage surgery for SLAC wrist (proximal row carpectomy or four-corner fusion)", description: "Both gave pain and subjective improvement; proximal row carpectomy may preserve more range and avoid four-corner-specific complications but carries a higher risk of later arthritis, and grip and pain relief were similar; there are no unbiased trials [r12].", evidence: "limited", recommendation: "consider", refs: ["r12"] },
+      { name: "Choice between capsulodesis and ligament reconstruction or tenodesis", description: "A systematic review of 11 studies (308 patients) found no significant difference in outcome between capsulodesis and reconstruction for chronic SL instability, though the studies were retrospective, heterogeneous and had high variance [r8]. Another review could not name a superior technique because of heterogeneous data, a lack of comparative studies and short follow-up [r7].", evidence: "limited", recommendation: "consider", refs: ["r8", "r7"] }
+    ],
+    physio: [
+      { name: "Education, protection and load modification", description: "Explain that the ligament may not heal and that early review is advised if pain persists; modify weight-bearing and loaded extension; splint as directed (clinical).", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
+      { name: "Neuromuscular stabilisation program (FCR and radial extensor focus), with or without NMES", description: "In a randomised single-blind trial of 30 patients (18–50 years) with SL instability, both an exercise program alone and the same program with NMES to APL, FCR, ECRL and ECRB for 8 weeks improved all measures; the NMES group improved more on QuickDASH, activity pain, weight-bearing tolerance and flexion endurance. Small sample, one centre, and no surgical comparison [r9]. An EMG study supports the rationale, showing lower radial extensor and higher ECU activation [r13].", evidence: "limited", recommendation: "consider", refs: ["r9", "r13"] },
+      { name: "Wrist splint or support for activity", description: "A supportive splint is a common option for dynamic instability while stabilisers are trained; no trial evidence was retrieved.", evidence: "expert-opinion", recommendation: "consider", refs: [] },
+      { name: "Prolonged rest or repeated 'sprain' management without imaging or specialist review", description: "Persisting wrist pain after a fall should be investigated, because ligament healing is considered unlikely after about 6 weeks and missed injuries can progress [r6,r1].", evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r6", "r1"] },
+      { name: "Early loaded wrist extension and weight-bearing before pain and stability allow", description: "Loaded extension and ulnar deviation are the injury mechanism [r3]; introducing them early risks provoking instability (clinical reasoning).", evidence: "expert-opinion", recommendation: "not-recommended", refs: ["r3"] }
+    ],
+    education: [
+      "The scapholunate ligament holds two carpal bones together. A tear may not show on an X-ray or MRI, and a normal scan does not always mean a normal ligament [r4,r5].",
+      "Wrist pain after a fall that does not settle in a few weeks should be reviewed, because the ligament can only heal during the first weeks and a missed tear can lead to arthritis later [r6,r1].",
+      "Treatment ranges from structured exercise to surgery, and no single operation has been shown to be best, so decisions are shared and based on your symptoms, your demands and the arthroscopic findings [r7,r8].",
+      "Muscle training around the wrist may reduce symptoms, but the trial evidence is small and you may still need surgery [r9].",
+      "Return to weight-bearing sport is criteria-based: expect a staged program over months."
+    ]
+  },
+
+  rehab: {
+    overview: "This program applies to non-operative care of dynamic SL instability and to the later phases after repair or reconstruction. After surgery, the surgeon's protocol (immobilisation, K-wire removal, motion limits) overrides it. The evidence base is a single small randomised trial of an 8-week stabilisation program [r9], so the stages are criteria-based and the dosages are common clinical conventions. The aims are to settle pain, restore safe range, train the dynamic stabilisers (FCR, radial extensors and other wrist muscles) and proprioception, then progressively reload the wrist in extension and weight-bearing before returning to sport.",
+    stages: [
+      {
+        name: "Protect & settle",
+        timeframe: "Weeks 0–6",
+        goals: ["Settle pain and swelling", "Protect the injured ligament from loaded extension and ulnar deviation", "Keep the elbow, shoulder and fingers moving", "Arrange imaging and early hand-surgery review where indicated"],
+        precautions: ["No weight-bearing through the extended wrist or forceful grip", "Follow the splint and any surgical restrictions", "Refer promptly if pain persists after about 6 weeks, since the repair window closes [r6]", "Screen for median nerve symptoms"],
+        exercises: [
+          { name: "Splint wear schedule", dosage: "Wear as prescribed, removing for hygiene and gentle range (conventionally about 4–6 weeks)", cues: "Wrist supported in neutral; check skin and swelling" },
+          { name: "Active finger, thumb, elbow and shoulder range", dosage: "10 repetitions each, 3–4 times daily", cues: "Keep the wrist still and relaxed" },
+          { name: "Elevation and finger pumping for swelling", dosage: "10 minutes, 3 times daily", cues: "Hand above heart level" },
+          { name: "Pain-free gentle wrist flexion and extension within the safe arc (when cleared)", dosage: "2 × 10, no load, 2–3 times daily", cues: "Stop before pain; avoid loaded extension", figure: { pose: "ex-wrist-extension", view: "lateral", props: ["chair"] } },
+          { name: "Submaximal pain-free grip with the wrist neutral", dosage: "10 × 5 s holds at low effort, daily", cues: "No pain, no wrist movement", figure: { pose: "ex-grip", view: "lateral" } }
+        ],
+        progressionCriteria: ["Resting pain 2/10 or less", "Swelling settling", "No locking or giving way", "Cleared by the treating clinician to begin active loading"]
+      },
+      {
+        name: "Restore range & proprioception",
+        timeframe: "Weeks 4–10",
+        goals: ["Restore pain-free wrist range within the safe arc", "Retrain proprioception and joint position sense", "Begin isometric stabiliser activation (FCR, ECRL, ECRB)", "Wean the splint"],
+        precautions: ["Keep loading pain at 3/10 or less and settled within 24 hours", "Avoid end-range loaded extension and ulnar deviation", "Stop and review if clicking, giving way or swelling increase"],
+        exercises: [
+          { name: "Active wrist flexion, extension and radial and ulnar deviation", dosage: "3 × 10–15, 2–3 times daily", cues: "Slow, controlled, within the pain-free arc", figure: { pose: "ex-wrist-flexion", view: "lateral", props: ["chair"] } },
+          { name: "Isometric FCR and radial extensor holds in neutral", dosage: "5 × 30–45 s, 1–2 times daily (a common convention)", cues: "Moderate effort; pain 3/10 or less" },
+          { name: "Joint position sense drills (eyes closed, reproduce a target angle)", dosage: "10 repetitions per direction, daily", cues: "Compare with the other wrist; small errors are normal" },
+          { name: "Light putty or soft ball grip", dosage: "3 × 10 with 3–5 s holds, daily", cues: "Wrist neutral", figure: { pose: "ex-grip", view: "lateral" } },
+          { name: "Forearm pronation and supination, elbow at 90°", dosage: "3 × 10, 2–3 times daily", cues: "Keep the wrist steady" }
+        ],
+        progressionCriteria: ["Pain-free range within the safe arc", "Pain 3/10 or less with isometrics", "Grip at least 60–70% of the other side (a common convention)", "No clunk or giving way"]
+      },
+      {
+        name: "Dynamic stabiliser strength",
+        timeframe: "Weeks 8–16",
+        goals: ["Build FCR, ECRL, ECRB and forearm strength", "Retrain co-contraction and wrist control", "Introduce graded weight-bearing", "Restore grip strength"],
+        precautions: ["Progress load gradually; stop if SL-region pain or clunking increases", "Introduce weight-bearing on a neutral wrist first, then into extension", "Review if giving way continues"],
+        exercises: [
+          { name: "Wrist flexion and extension with a dumbbell", dosage: "3 × 10–15, progressing load, 3 times weekly", cues: "Forearm supported; slow lowering", figure: { pose: "ex-wrist-extension", view: "lateral", props: ["dumbbell", "chair"] } },
+          { name: "Band-resisted wrist stabilisation in multiple directions", dosage: "3 × 10–15, 3 times weekly", cues: "Hold the wrist steady against the band" },
+          { name: "Grip and pinch strengthening", dosage: "3 × 8–10 with 5 s holds, 3 times weekly", cues: "Progress resistance as pain stays settled", figure: { pose: "ex-grip", view: "lateral" } },
+          { name: "Quadruped weight-bearing shifts", dosage: "3 × 10 shifts, 3 times weekly", cues: "Hands under shoulders; keep the wrist pain-free", figure: { pose: "ex-bird-dog", view: "lateral", props: ["mat"] } },
+          { name: "Incline push-up", dosage: "3 × 8–12", cues: "Even load through both hands", figure: { pose: "ex-press-up", view: "lateral", props: ["bench"] } },
+          { name: "Farmer carry", dosage: "3 × 20–30 m, building load", cues: "Neutral wrists, tall posture", figure: { pose: "ex-farmer-carry", view: "lateral", props: ["dumbbell"] } }
+        ],
+        progressionCriteria: ["Grip at least 85–90% of the other side (a common convention)", "Pain 2/10 or less after loading", "Painless push-up and carry tasks", "No clunk, giving way or swelling after sessions"]
+      },
+      {
+        name: "Return to sport & prevention",
+        timeframe: "Weeks 12+",
+        goals: ["Return to full weight-bearing sport and work", "Restore power and loaded-extension tolerance", "Maintain stabiliser strength", "Recognise early recurrence or instability"],
+        precautions: ["Build sport volume gradually", "Re-refer if clicking, giving way or night pain recur", "Use protective equipment where relevant (clinical)"],
+        exercises: [
+          { name: "Sport-specific loading (weight-bearing, grip and impact tasks)", dosage: "Start at about 50% of usual volume and add 10–20% per week (common convention)", cues: "Begin with controlled tasks before power", figure: { pose: "grip-tool", view: "lateral", props: ["hammer"] } },
+          { name: "Plyometric hand loading (wall or bench push-aways)", dosage: "3 × 6–8 low amplitude, twice weekly", cues: "Progress only if pain-free" },
+          { name: "Heavy grip and wrist stabiliser maintenance", dosage: "2 times weekly, 3 × 6–10", cues: "Symptom-guided progression" },
+          { name: "Planned return of falling and landing drills (gymnastics, snow sports, martial arts)", dosage: "Low-height first, progressing by 10–20% per week", cues: "Teach falling technique; avoid landing on a rigid extended wrist" }
+        ],
+        progressionCriteria: ["Full training load without a flare", "Grip at least 90% of the other side", "Weight-bearing and loaded extension tolerated", "Patient has a plan for load management and early recurrence"]
+      }
+    ]
+  },
+
+  returnToSport: {
+    criteria: [
+      "Pain-free daily tasks with full or near-full wrist range",
+      "Grip strength at about 90% of the other side (a common clinical convention)",
+      "No clunk, giving way or swelling with weight-bearing and loaded extension",
+      "Weight-bearing tolerance restored (push-up, plank or quadruped loading)",
+      "Sport-specific grip, impact and landing tasks tolerated without a flare",
+      "Surgical protocol completed and clearance given by the surgeon if repair or reconstruction was done"
+    ],
+    tests: ["Grip dynamometry compared with the other side", "Weight-bearing tolerance test (push-up or quadruped loading)", "QuickDASH or Patient-Rated Wrist Evaluation", "Pain VAS during sport-specific tasks", "Scaphoid shift test and SL-interval tenderness (negative or minimal)"]
+  },
+  prognosis: "Prognosis depends on the grade, timing and treatment. The natural history of untreated SL injury is progression, in a proportion of patients, to abnormal mechanics and SLAC arthritis [r1,r2], but the proportion was not quantified in the sources retrieved. In a systematic review of chronic non-arthritic tears, pain fell from 6.0 to 2.8 at 2 years across techniques, there was an 18% loss of flexion arc, complication rates were high (20%, with complex regional pain syndrome 3.8%), and no technique was superior [r7]. After FCR tenodesis, pain fell by about 3 points, reduction was lost in the long term, and secondary degeneration occurred in 15% [r14]. Radiographic outcome did not clearly correlate with clinical outcome [r7,r14]. The conservative evidence is limited to an 8-week randomised trial in which both groups improved [r9]. Once SLAC arthritis is established, proximal row carpectomy and four-corner fusion give similar pain relief and grip, with different risks [r12].",
+  prevention: [
+    "Build forearm and wrist stabiliser strength and weight-bearing tolerance before returning to gymnastics, snow sports or contact sport (clinical).",
+    "Teach safe falling and landing technique, and use wrist guards in snow sports where appropriate (clinical; no trial evidence retrieved).",
+    "Do not leave a persisting wrist sprain untreated: assess early, because the window for ligament repair closes at about 6 weeks [r6].",
+    "After SL injury, keep loaded extension and ulnar-deviated weight-bearing graduated and monitor for symptoms of arthritis [r1]."
+  ],
+  clinicalPearls: [
+    "A normal X-ray or MRI does not exclude an SL tear: negative predictive value of MRI was 72–94%, and 42% of symptomatic patients with a negative clenched-fist view had a Geissler grade 3 or higher tear [r4,r5].",
+    "Treat the 6-week mark as a clinical deadline: a wrist 'sprain' still painful at 2–6 weeks needs imaging and review while the ligament can still be repaired [r6].",
+    "The scaphoid shift test is a stability maneuver, not a diagnostic test: use it with the mechanism, imaging and the other wrist, because accuracy figures for it were not retrieved and clinical provocation tests overall had limited value [r15,r4].",
+    "Rehabilitation targets muscles that stabilise the radial column, because radial extensor activation was lower and ECU activation higher in SL injury, and the one randomised trial found improvement with exercise, more so with NMES [r13,r9].",
+    "Compare ROM, laxity and tests with the other wrist before labelling a clunk abnormal; lax wrists often click (clinical).",
+    "Do not promise a particular operation: reviews of chronic tears found no technique superior, and long-term arthritis risk remains [r7,r8]."
+  ],
+  related: ["tfcc-injury", "scaphoid-fracture", "distal-radius-fracture", "ecu-tendinopathy", "hook-of-hamate-fracture", "carpal-tunnel-syndrome"],
+
+  references: [
+    { id: "r1", citation: "Kitay A, Wolfe SW. Scapholunate instability: current concepts in diagnosis and management. J Hand Surg Am. 2012;37(10):2175-96.", pmid: "23021178", doi: "10.1016/j.jhsa.2012.07.035", type: "narrative-review", year: 2012 },
+    { id: "r2", citation: "Bouredoucen H. Surgical management and imaging evaluation of post-traumatic periscaphoid osteoarthritis (SLAC and SNAC wrists). Skeletal Radiol. 2026;55(5):947-71.", pmid: "41620585", doi: "10.1007/s00256-026-05128-z", type: "narrative-review", year: 2026 },
+    { id: "r3", citation: "Mayfield JK, Johnson RP, Kilcoyne RK. Carpal dislocations: pathomechanics and progressive perilunar instability. J Hand Surg Am. 1980;5(3):226-41.", pmid: "7400560", doi: "10.1016/s0363-5023(80)80007-4", type: "biomechanical", year: 1980 },
+    { id: "r4", citation: "Andersson JK, Andernord D, Karlsson J, et al. Efficacy of magnetic resonance imaging and clinical tests in diagnostics of wrist ligament injuries: a systematic review. Arthroscopy. 2015;31(10):2014-20.e2.", pmid: "26095820", doi: "10.1016/j.arthro.2015.04.090", type: "systematic-review", year: 2015 },
+    { id: "r5", citation: "Oh C, Fort MW, Kakar S. Validation of the clenched fist view in detecting scapholunate ligamentous injury. Hand (N Y). 2025;20(4):607-11.", pmid: "38235696", doi: "10.1177/15589447231223774", type: "diagnostic-accuracy", year: 2025 },
+    { id: "r6", citation: "Athlani L, Pauchard N, Detammaecker R, et al. Treatment of chronic scapholunate dissociation with tenodesis: a systematic review. Hand Surg Rehabil. 2018;37(2):65-76.", pmid: "29292109", doi: "10.1016/j.hansur.2017.12.001", type: "systematic-review", year: 2018 },
+    { id: "r7", citation: "Naqui Z, Khor WS, Mishra A, et al. The management of chronic non-arthritic scapholunate dissociation: a systematic review. J Hand Surg Eur Vol. 2018;43(4):394-401.", pmid: "29022774", doi: "10.1177/1753193417734990", type: "systematic-review", year: 2018 },
+    { id: "r8", citation: "Wang P, Stepan JG, An T, et al. Equivalent clinical outcomes following favored treatments of chronic scapholunate ligament tear. HSS J. 2017;13(2):186-93.", pmid: "28690470", doi: "10.1007/s11420-016-9525-5", type: "systematic-review", year: 2017 },
+    { id: "r9", citation: "Dag A, Ayik O, Firat T, et al. The effectiveness of NMES-integrated therapy in scapholunate ligament injuries - a randomized controlled trial. BMC Sports Sci Med Rehabil. 2026;18(1):12.", pmid: "41331647", doi: "10.1186/s13102-025-01452-4", type: "rct", year: 2026 },
+    { id: "r10", citation: "Lee CH, Lee BG, Kim JH, et al. Complications and outcomes of operative treatment for acute perilunate injuries: a systematic review. J Hand Surg Eur Vol. 2023;48(7):625-9.", pmid: "36708152", doi: "10.1177/17531934221150331", type: "systematic-review", year: 2023 },
+    { id: "r11", citation: "Terras C, Brouwers J, Degreef I. Comparing outcomes of dorsal capsulodesis techniques for chronic (pre-)dynamic scapholunate interosseus ligament tear repair: a systematic review. Acta Orthop Belg. 2025;91(2):195-204.", pmid: "40878732", doi: "10.52628/91.2.14437", type: "systematic-review", year: 2025 },
+    { id: "r12", citation: "Mulford JS, Ceulemans LJ, Nam D, et al. Proximal row carpectomy vs four corner fusion for scapholunate (SLAC) or scaphoid nonunion advanced collapse (SNAC) wrists: a systematic review of outcomes. J Hand Surg Eur Vol. 2009;34(2):256-63.", pmid: "19369301", doi: "10.1177/1753193408100954", type: "systematic-review", year: 2009 },
+    { id: "r13", citation: "Eraktas I, Ayhan C, Hayran M, et al. Alterations in forearm muscle activation patterns after scapholunate interosseous ligament injury: a dynamic electromyography study. J Hand Ther. 2021;34(3):384-95.", pmid: "32620427", doi: "10.1016/j.jht.2020.03.018", type: "case-control", year: 2021 },
+    { id: "r14", citation: "Goeminne S, Stroobants E, van Beek N. Treatment of chronic scapholunate dissociation with FCR tenodesis: a systematic review of the results of MBT and 3LT technique. J Wrist Surg. 2025;14(3):202-13.", pmid: "40395821", doi: "10.1055/s-0044-1793840", type: "systematic-review", year: 2025 },
+    { id: "r15", citation: "Watson HK, Ashmead D, Makhlouf MV. Examination of the scaphoid. J Hand Surg Am. 1988;13(5):657-60.", pmid: "3241033", doi: "10.1016/s0363-5023(88)80118-7", type: "narrative-review", year: 1988 },
+    { id: "r16", citation: "Vilai P, Kakar S. The diagnostic value of the scapholunate C-sign: a new tool for detecting through-and-through scapholunate interosseous ligament injuries. J Hand Surg Am. 2026;51(3):268.e1-8.", pmid: "40815250", doi: "10.1016/j.jhsa.2025.06.011", type: "diagnostic-accuracy", year: 2026 },
+    { id: "r17", citation: "Goelz L, Pinther M, Guthoff C, et al. Assessing diagnostic accuracy of four-dimensional CT for instable scapholunate dissociation: the prospective ACTION trial. Radiology. 2023;308(3):e230292.", pmid: "37698479", doi: "10.1148/radiol.230292", type: "diagnostic-accuracy", year: 2023 },
+    { id: "r18", citation: "Loyola-Luna O, Gargollo-Orvananos C, Martinez-Dunker D. [Triangular fibrocartilage complex and ligamentary injuries: correlation between MRI and wrist arthroscopy findings]. Acta Ortop Mex. 2024;38(6):390-6.", pmid: "39762041", type: "diagnostic-accuracy", year: 2024 },
+    { id: "r19", citation: "Mehta NH, Garg B, Ansari T, et al. Comparison of magnetic resonance arthrography and wrist arthroscopy in the evaluation of chronic wrist pain in Indian population. Indian J Orthop. 2019;53(6):769-75.", pmid: "31673180", doi: "10.4103/ortho.IJOrtho_92_19", type: "diagnostic-accuracy", year: 2019 },
+    { id: "r20", citation: "Rojer LA, Juttmann JY, Schep NW. Arthroscopic treatment of scapholunate interosseous ligament injuries: a systematic review and meta-analysis. J Hand Surg Eur Vol. 2026 (online ahead of print).", pmid: "42613954", doi: "10.1177/17531934261472361", type: "meta-analysis", year: 2026 }
+  ],
+
+  animation: {
+    title: "How a scapholunate ligament injury happens",
+    phases: [
+      {
+        type: "moi", label: "Mechanism", duration: 6, view: "lateral", environment: "snow",
+        actors: [{ id: "skier", kit: "athlete" }],
+        keyframes: [
+          { t: 0, pose: "walk-heel-strike", root: { x: -40 } },
+          { t: 1.3, pose: "slip", root: { x: -30 } },
+          { t: 2.5, pose: "foosh", joints: { wristR: 70 }, root: { x: -14 }, ease: "in" },
+          { t: 3.3, pose: "foosh", joints: { wristR: 80 }, root: { x: -10 } },
+          { t: 5.2, pose: "foosh", joints: { wristR: 80 }, root: { x: -10 } }
+        ],
+        forces: [
+          { t: [2.6, 4.4], at: "wristR", dir: "up", label: "Load through the extended, ulnar-deviated wrist", size: "l" }
+        ],
+        highlights: [{ t: [2.8, 6], at: "wristR" }],
+        impacts: [{ t: 3.0, at: "wristR" }],
+        slowmo: [{ t: [2.3, 3.5], rate: 0.3 }],
+        captions: [
+          { t: 0, text: "A skier steps onto a hard, icy patch." },
+          { t: 1.3, text: "His foot slips and he reaches out to break the fall." },
+          { t: 2.5, text: "The hand lands with the wrist extended and ulnar deviated." },
+          { t: 3.1, text: "Load drives the scaphoid and lunate apart while the carpus twists into supination." },
+          { t: 4.5, text: "The wrist is sore, and the first X-ray may look normal." }
+        ]
+      },
+      {
+        type: "zoom", label: "Zoom in", duration: 1.5, to: "wristR",
+        captions: [{ t: 0, text: "Zooming into the right wrist, viewed from the palm side." }]
+      },
+      {
+        type: "closeup", label: "Inside the wrist", duration: 10, scene: "wrist-hand",
+        actions: [
+          { t: 0, do: "highlight", target: "scapholunateLigament" },
+          { t: 0.1, do: "fade", target: "flexorTendons", to: 0.3 },
+          { t: 0.1, do: "fade", target: "thenarMuscles", to: 0.3 },
+          { t: 0.1, do: "fade", target: "hypothenarMuscles", to: 0.3 },
+          { t: 0.4, do: "label", target: "scapholunateLigament", text: "Scapholunate interosseous ligament" },
+          { t: 1.2, do: "arrow", at: "scaphoidDistalPole", dir: "proximal", label: "Extension, ulnar deviation, supination", size: "l" },
+          { t: 2.0, do: "stretch", target: "scapholunateLigament", amount: 0.4, dur: 1.2 },
+          { t: 3.2, do: "impact", at: "scapholunateInterval" },
+          { t: 3.4, do: "tear", target: "scapholunateLigament", grade: 3, at: 0.5 },
+          { t: 3.8, do: "move", target: "scaphoid", dir: "radial", amount: 0.25, dur: 1.2 },
+          { t: 4.4, do: "label", target: "scapholunateLigament", text: "Scapholunate gap widens (Mayfield stage I)" },
+          { t: 5.4, do: "pain", at: "scapholunateInterval" },
+          { t: 6.4, do: "stress", target: "radius", at: "radialStyloid" },
+          { t: 7.0, do: "label", target: "radius", text: "Untreated: SLAC arthritis starts at the radial styloid" },
+          { t: 8.0, do: "camera", at: "scapholunateInterval", zoom: 1.6, dur: 1 },
+          { t: 9.4, do: "camera", zoom: 1, dur: 0.6 }
+        ],
+        captions: [
+          { t: 0, text: "The scapholunate ligament binds the scaphoid to the lunate in the proximal carpal row." },
+          { t: 1.2, text: "A fall on the extended wrist loads the joint in extension, ulnar deviation and supination." },
+          { t: 3.4, text: "The ligament fails first, and the scaphoid separates from the lunate." },
+          { t: 4.4, text: "Further force can progress around the lunate; stage I is scapholunate diastasis." },
+          { t: 5.6, text: "Pain sits at the dorsal scapholunate interval, and the wrist may click or give way." },
+          { t: 7.0, text: "Left untreated, abnormal mechanics wear the cartilage: scapholunate advanced collapse." }
+        ]
+      },
+      {
+        type: "micro", label: "Ligament response", duration: 9, tissue: "ligament", variant: "intra-articular",
+        stages: [
+          { t: 0, stage: "healthy" }, { t: 1.0, stage: "loaded" }, { t: 2.0, stage: "overload" }, { t: 3.0, stage: "failure" },
+          { t: 4.2, stage: "haemorrhage" }, { t: 5.4, stage: "inflammation" }, { t: 6.6, stage: "proliferation" }, { t: 7.8, stage: "remodelling" }
+        ],
+        timeLabels: [{ t: 4.2, text: "Hours" }, { t: 5.4, text: "Days 0–7" }, { t: 6.6, text: "To about 6 weeks" }, { t: 7.8, text: "After 6 weeks" }],
+        captions: [
+          { t: 0, text: "Healthy ligament: collagen bundles aligned between the scaphoid and lunate." },
+          { t: 2.0, text: "Extension and supination overload the fibres beyond their capacity." },
+          { t: 3.0, text: "The fibres fail and the ends separate." },
+          { t: 5.4, text: "Inflammatory cells arrive, but the ends are bathed in joint fluid (schematic model)." },
+          { t: 6.6, text: "Healing is limited and mostly possible only in the first weeks after injury." },
+          { t: 7.8, text: "After about 6 weeks the ligament is considered unable to heal, so instability may persist." }
+        ]
+      }
+    ]
+  },
+
+  meta: { lastReviewed: "2026-10", team: "UL6" }
+};

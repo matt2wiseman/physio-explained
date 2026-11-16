@@ -443,7 +443,7 @@ export default {
         ]
       },
       {
-        type: "micro", label: "Healing and response", duration: 9, tissue: "bone-fracture",
+        type: "micro", label: "Healing response", duration: 9, tissue: "bone-fracture",
         stages: [
           { t: 0, stage: "healthy" }, { t: 1.2, stage: "fracture" }, { t: 2.4, stage: "haematoma" },
           { t: 3.8, stage: "inflammation" }, { t: 5.4, stage: "soft-callus" }, { t: 7.0, stage: "remodelling" }

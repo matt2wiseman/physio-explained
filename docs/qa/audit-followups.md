@@ -64,3 +64,17 @@ Items that writers flagged as written from knowledge, cited from metadata only, 
 - peripheral-nerve-injury: the "about 1 mm a day" regrowth rate rests on a rat study and a single paediatric case report, not a human review; the "8–12 weeks" neurapraxia figure comes from a facial nerve series (QC added that caveat to the key fact and the timeline summary). Cepela 2016 and Sunderland 1951 have no abstract in PubMed (Cepela full text empty) and are cited only for the existence of the classification; Seddon 1943 is not cited. Exercise and electrical-stimulation evidence is mostly preclinical. Referral at about 3 months is convention.
 - physeal-fracture: Salter–Harris I–III and V definitions and "type V diagnosed late" are classical descriptions; only type IV (Cass) and case counts (Deng) are sourced. Physiotherapy after short casting rests on one RCT in supracondylar fractures, extrapolated cautiously. Growth-arrest series are retrospective.
 - bone-stress-injury: RED-S causal evidence is associational and debated; the calcium and vitamin D evidence is in military recruits only.
+
+## Added from the elbow batch (cubital-tunnel-syndrome, elbow-dislocation, radial-head-fracture, pulled-elbow)
+
+- radial-head-fracture: Mason 1954 has no abstract; the original three types come from the Cochrane aspiration review's description. The modified type IV is flagged as clinical convention. Fixation versus arthroplasty for Mason III rests on a network meta-analysis with a very wide interval.
+- elbow-dislocation: the original Horii description was not retrieved; the lateral-to-medial sequence is cited to O'Driscoll 1992 and "reversed Horii circle" to Schnetzke 2021. The definition of an unstable simple dislocation and the best rehabilitation protocol are unsettled.
+- cubital-tunnel-syndrome: Dellon staging definitions and Salter–Zaltz anatomy were not retrieved. Cochrane finds no difference between operations while pooled observational analyses conflict.
+- pulled-elbow: hyperpronation evidence is low quality; pain, adverse effects and recurrence are not reported. Safeguarding and septic-arthritis flags are clinical convention.
+- All four: micro phases are schematic (nerve phase carries the engine's own "~1 mm/day" label; diaphyseal bone-fracture module stands in for the radial head; ligament module for the annular ligament).
+
+## Added from the knee extensor batch (quadriceps-tendon-rupture, patellar-tendon-rupture, pes-anserine-pain, quadriceps-contusion)
+
+- quadriceps-contusion: Jackson and Feagin 1973 has no PubMed abstract; the grade thresholds come from the Ryan 1991 abstract. The flexed-knee protocol rests on uncontrolled military cohorts; early massage and heat avoidance is expert opinion.
+- quadriceps-tendon-rupture: the fluoroquinolone risk figure comes from Achilles data. Patella baja and retinacular integrity preserving partial extension are clinical teaching. Gómez-Macías 2026 has no volume or pages in PubMed.
+- pes-anserine-pain: "bursitis" is contested (MRI bursitis 2.5%; clinical diagnosis sensitivity 41.2%, specificity 59.5%); no exercise or stretching trial; injection trials 8 weeks or less with no placebo.

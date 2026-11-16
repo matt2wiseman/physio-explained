@@ -349,13 +349,13 @@ export default {
           { t: 0, pose: "stand", root: { x: 0 } },
           { t: 1.0, pose: "stand", joints: { shoulderR: 30, elbowR: 0 } },
           { t: 2.2, pose: "stand", joints: { shoulderR: 40, elbowR: 0, trunk: -8 } },
-          { t: 3.0, pose: "stand", joints: { shoulderR: 90, elbowR: 0, trunk: -14 }, ease: "in" },
-          { t: 3.8, pose: "stand", joints: { shoulderR: 110, elbowR: 0, trunk: -16 } },
+          { t: 3.0, pose: "stand", joints: { shoulderR: 65, elbowR: 0, trunk: -14 }, ease: "in" },
+          { t: 3.8, pose: "stand", joints: { shoulderR: 80, elbowR: 0, trunk: -16 } },
           { t: 5.2, pose: "stand", joints: { shoulderR: 20, elbowR: 25, trunk: 0 }, ease: "out" }
         ],
         forces: [
           { t: [2.8, 4.0], at: "handR", dir: "up", label: "Sudden pull on the extended, pronated arm" },
-          { t: [2.8, 4.0], at: "elbowR", dir: "down", label: "Body weight hangs on the arm" }
+          { t: [2.8, 4.0], at: "shoulderR", dir: "down", label: "Body weight hangs on the arm" }
         ],
         highlights: [{ t: [3.0, 6], at: "elbowR" }],
         impacts: [{ t: 3.1, at: "elbowR" }],
