@@ -93,3 +93,12 @@ Items that writers flagged as written from knowledge, cited from metadata only, 
 - scapholunate-ligament-injury: Mayfield stages II–III, Geissler grades, Watson SLAC stages and scaphoid shift test accuracy are uncited. The abstract does not describe the C-sign manoeuvre. The Dag 2026 trial is dated from its volume though it appeared online in December 2025. The micro phase uses `variant: "intra-articular"` as a schematic choice (captions say "schematic model"); the "about 6 weeks" healing window is convention, so confirm the wording.
 - ecu-tendinopathy: synergy test hand positions are not in the abstracts (the page says to follow the original paper). "Acute cases respond to immobilisation" comes only from a technique paper's introduction. No randomised trial of splinting, injection or surgery.
 - intersection-syndrome: evidence is case reports and small series; pathology is debated; Finkelstein accuracy not retrieved; the scene has no second-compartment tendons, so captions say they are described, not drawn.
+
+## Added from the shoulder labrum and instability batch (slap-lesion, posterior-shoulder-instability, multidirectional-instability, internal-impingement)
+
+- All four: test procedures (O'Brien, Speed's, Yergason, Biceps Load II, compression-rotation, crank, Kim, jerk, Gagey, Beighton, posterior stress), Snyder type I–IV descriptions and type V+ patterns (only the type counts are from abstracts), rehab dosages and return-to-sport thresholds are labelled clinical convention. No accuracy figures are quoted for O'Brien, crank, posterior stress, sulcus, throwing-position provocation or relocation.
+- slap-lesion: repair and tenodesis are rated "consider/conflicting/limited" because the only sham trial was negative and all of its arms had rehabilitation, so it cannot test rehabilitation alone. Sham-trial full text (PMC) was read by the writer.
+- posterior-shoulder-instability: Munro likelihood ratios for Kim and jerk come from single high-bias studies. The posterior-dislocation head shift in the close-up is subtle (30 px).
+- multidirectional-instability: the 2026 Cochrane review found no randomised trial of exercise versus no treatment.
+- internal-impingement: no controlled treatment trials in symptomatic throwers; the GIRD debate is presented as unsettled.
+- Shin 2022 and Mine 2017 use print years, not PubMed online years.
