@@ -46,7 +46,8 @@ Every phase may have `captions: [{ t, text }]` — each caption shows from its `
   ],
   props: [                          // optional
     { id: "ball", type: "ball-basketball", attach: "handR" },                  // follows a body target
-    { id: "ball2", type: "ball-soccer", keyframes: [{ t: 0, x: 60, y: 10 }, { t: 1, x: 20, y: 0 }] }   // world cm, y = height above ground
+    { id: "ball2", type: "ball-soccer", keyframes: [{ t: 0, x: 60, y: 10 }, { t: 1, x: 20, y: 0 }] },  // world cm, y = height above ground
+    { id: "kerb", type: "kerb" }                                               // support props (chair, bench, box, plyo-box, step, kerb, car-seat, stairs) are placed relative to the body: NO x/y keyframes (validator error); use `attach` or the pose's support hint
   ],
   forces: [                         // arrows drawn on the body
     { t: [1.4, 2.6], at: "kneeR", dir: "medial", label: "Valgus load" },        // dir ∈ FORCE_DIRS, or angle: degrees (0 = screen right, 90 = up)

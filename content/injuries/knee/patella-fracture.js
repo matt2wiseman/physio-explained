@@ -320,7 +320,7 @@ export default {
           { t: 3.6, pose: "kneel", joints: { kneeR: 105, trunk: 15 }, root: { x: -8 } },
           { t: 5.2, pose: "kneel", joints: { kneeR: 110, trunk: 5 }, root: { x: -8 } }
         ],
-        props: [{ id: "kerb", type: "kerb", keyframes: [{ t: 0, x: -20, y: 0 }] }],
+        props: [{ id: "kerb", type: "kerb" }],
         forces: [
           { t: [1.8, 2.8], at: "thighR", dir: "up", label: "Quadriceps contracts hard to stop the fall" },
           { t: [2.4, 3.8], at: "kneeR", dir: "backward", label: "Kneecap strikes the ground", size: "l" }

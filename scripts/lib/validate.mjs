@@ -270,6 +270,8 @@ export function validateAnimation(an, E, W) {
       (ph.props || []).forEach((p, i) => {
         if (!A.PROPS.includes(p.type)) E(`${P}.props[${i}].type`, `"${p.type}" not in PROPS`);
         if (p.attach && !A.BODY_TARGETS.includes(p.attach)) E(`${P}.props[${i}].attach`, `"${p.attach}" not in BODY_TARGETS`);
+        // support props are placed relative to the body by the renderer; x/y keyframes make it draw NaN geometry
+        if (["chair", "bench", "box", "plyo-box", "step", "kerb", "car-seat", "stairs"].includes(p.type) && (p.keyframes || []).some((k) => k.x !== undefined || k.y !== undefined)) E(`${P}.props[${i}].keyframes`, `"${p.type}" is a support prop placed relative to the body: remove x/y keyframes (use attach or the pose's support hint)`);
         (p.keyframes || []).forEach((k, j) => { inT(k.t, `${P}.props[${i}].keyframes[${j}].t`); if (k.at !== undefined && !A.BODY_TARGETS.includes(k.at)) E(`${P}.props[${i}].keyframes[${j}].at`, `"${k.at}" not in BODY_TARGETS`); });
       });
       (ph.forces || []).forEach((f, i) => {
