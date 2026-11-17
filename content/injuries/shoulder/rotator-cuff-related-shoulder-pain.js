@@ -7,7 +7,7 @@ export default {
   tissues: ["tendon", "bursa"],
   onset: "gradual",
   mechanismType: ["overuse", "insidious"],
-  populations: ["adults aged 40–60 years", "overhead manual workers", "overhead athletes", "people returning to activity after a lay-off"],
+  populations: ["adults (incidence peaks at about 50 years)", "overhead manual workers", "overhead athletes", "people returning to activity after a lay-off"],
   sports: ["swimming", "tennis", "baseball", "cricket", "volleyball", "badminton", "weightlifting", "rock climbing"],
   urgency: "routine",
   summary: "Activity-related shoulder pain with a painful arc, from load exceeding the capacity of the rotator cuff tendons. 'Impingement' as a purely mechanical explanation is contested.",

@@ -115,7 +115,7 @@ export default {
     summary: "Grade I injuries settle within days, grade II within a few weeks and grade III injuries take at least several weeks to months; published estimates for grade III differ widely, so set expectations by the grade and treatment [r3,r2,r1].",
     healing: [
       { phase: "Haemorrhage and inflammation", startDay: 0, endDay: 5, description: "Swelling and pain. Protect, offload and tape (typical ligament healing)." },
-      { phase: "Proliferation", startDay: 5, endDay: 42, description: "Early gentle motion in grades II and III once the soft tissue allows; protected weightbearing in a boot for grade II; casting or immobilisation in plantarflexion for 4–6 weeks in selected injuries [r1]." },
+      { phase: "Proliferation", startDay: 5, endDay: 42, description: "Early gentle motion in grade II once the soft tissue allows (grade III is managed more cautiously); protected weightbearing in a boot for grade II; casting or immobilisation in plantarflexion for 4–6 weeks in selected injuries [r1]." },
       { phase: "Early remodelling and strengthening", startDay: 42, endDay: 112, description: "Progressive motion, strength and footwear; non-operative rehabilitation lasts up to 10 weeks in published protocols [r3]." },
       { phase: "Late remodelling and return to loading", startDay: 112, endDay: 365, description: "Impact and push-off loading, sport-specific work; operative protocols run to about 20 weeks, and full symptom resolution can take up to 6 months in grade III [r3,r1]." }
     ],

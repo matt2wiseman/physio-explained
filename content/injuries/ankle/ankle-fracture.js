@@ -7,7 +7,7 @@ export default {
   tissues: ["bone", "ligament"],
   onset: "acute",
   mechanismType: ["non-contact", "fall", "contact"],
-  populations: ["adolescents and young men in sport", "women after about 50 years", "older adults after a low-energy fall", "recreational athletes"],
+  populations: ["adolescents and young men in sport", "older women (female incidence rises with age)", "older adults after a low-energy fall", "recreational athletes"],
   sports: ["soccer", "rugby", "basketball", "skiing", "netball", "trail running", "dance"],
   urgency: "urgent",
   summary: "A fracture of the lateral, medial or posterior malleolus, usually from a twisting injury. Stability depends on the medial structures and the syndesmosis, which decide between casting and surgery.",
@@ -25,7 +25,7 @@ export default {
     text: "In a Danish population-based study of 9767 ankle fractures (2005–2014), the mean incidence was 168.7 per 100,000 per year (157.1 in males and 179.5 in females) and the mean age was 41.4 years. Incidence peaked in adolescents of both sexes with a male predominance. After 19 years male incidence declined with age, whereas female incidence increased. Lateral malleolus fractures were the most common type at 55%, and the predominant causes were falls (61%) followed by sports (22%). Years with cold winters had higher incidence [r1]. A Cochrane review gives an incidence of 122 per 100,000 and notes that fractures usually affect young men and older women [r3]. Another study notes that ankle fractures are about 10% of all traumatic fractures, and that tibiotalar dislocation accompanies 21–36% of them [r4].",
     riskFactors: {
       intrinsic: [
-        "Female sex after about 50 years: female incidence rises with age [r1]",
+        "Female sex: after age 19, male incidence declines with age while female incidence rises [r1]",
         "Adolescence in boys and girls: peak incidence in adolescents [r1]",
         "Low bone density and falls in older people (clinical reasoning; the study shows rising incidence with age in women) [r1]",
         "Previous ankle injury or instability (clinical reasoning)"

@@ -208,7 +208,7 @@ export default {
     physio: [
       { name: "Structured, criteria-based progressive exercise therapy", description: "Combined strength and neuromuscular training progressed by objective criteria rather than time, continued for 9–12 months after reconstruction or as first-line treatment [r11,r12].", evidence: "strong", recommendation: "recommended", refs: ["r11", "r12"] },
       { name: "Pre-operative rehabilitation (prehabilitation)", description: "Restore full extension, resolve effusion and build quadriceps strength and normal gait before surgery. Pre-operative function predicts post-operative outcome [r12].", evidence: "moderate", recommendation: "recommended", refs: ["r12"] },
-      { name: "Open and closed kinetic chain quadriceps strengthening", description: "Closed-chain from day 1. Open-chain knee extension from about 4 weeks after reconstruction in a restricted range (90–45°), progressing to full range and heavy loading later [r12].", evidence: "moderate", recommendation: "recommended", refs: ["r12"] },
+      { name: "Open and closed kinetic chain quadriceps strengthening", description: "Closed-chain from day 1. Open-chain knee extension is introduced within a restricted range and progressed to full range and heavy loading later, guided by criteria rather than the calendar alone [r12].", evidence: "moderate", recommendation: "recommended", refs: ["r12"] },
       { name: "Neuromuscular electrical stimulation (NMES) and strategies for AMI", description: "Use NMES alongside exercise. Cryotherapy and effusion control may help disinhibit the quadriceps early [r7,r12].", evidence: "moderate", recommendation: "consider", refs: ["r7", "r12"] },
       { name: "Cryotherapy", description: "Short-term relief of post-operative pain. It has limited effect on long-term outcomes [r12].", evidence: "limited", recommendation: "consider", refs: ["r12"] },
       { name: "Neuromuscular injury-prevention training (secondary prevention)", description: "Landing, cutting, balance and strength programs integrated into training before and after RTS. They roughly halve ACL injury risk [r20].", evidence: "strong", recommendation: "recommended", refs: ["r20"] },
@@ -245,10 +245,10 @@ export default {
         name: "Strength & neuromuscular control",
         timeframe: "Weeks 2–12",
         goals: ["Restore quadriceps and hamstring strength", "Single-leg control without dynamic valgus", "Full knee range of motion", "Normal stair and squat mechanics"],
-        precautions: ["Open-chain knee extension from week 4 in 90–45° only after a hamstring graft; progress range by week 12 per protocol [r12]", "Increase load no faster than effusion allows (soreness rules)"],
+        precautions: ["Open-chain knee extension only within a protected range agreed with the surgeon, with the range progressed per protocol [r12]", "Increase load no faster than effusion allows (soreness rules)"],
         exercises: [
           { name: "Squat (to box, progressing depth and load)", dosage: "3–4 × 8–12, 3×/week", cues: "Knees over toes, weight through the whole foot", figure: { pose: "ex-squat", view: "lateral" } },
-          { name: "Seated knee extension (restricted range)", dosage: "3 × 10–15, slow tempo", cues: "Move from 90° to 45° and stop; progress range over time", figure: { pose: "ex-knee-extension", view: "lateral", props: ["chair"] } },
+          { name: "Seated knee extension (restricted range)", dosage: "3 × 10–15, slow tempo", cues: "Move within the range the surgeon's protocol allows (for example 90° to 45°, a common protocol range; clinical convention) and stop; progress range over time", figure: { pose: "ex-knee-extension", view: "lateral", props: ["chair"] } },
           { name: "Step-ups and step-downs", dosage: "3 × 10 each side", cues: "Keep the pelvis level and the knee tracking over the second toe", figure: { pose: "ex-step-down", view: "anterior", props: ["step"] } },
           { name: "Romanian deadlift / hamstring bridge", dosage: "3 × 8–10", cues: "Hinge at the hips with a long spine", figure: { pose: "ex-rdl", view: "lateral", props: ["dumbbell"] } },
           { name: "Single-leg balance with perturbations", dosage: "3 × 30–45 s", cues: "Soft knee, quiet trunk", figure: { pose: "ex-single-leg-balance", view: "anterior" } }

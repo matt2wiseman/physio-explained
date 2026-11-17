@@ -276,7 +276,7 @@ export default {
           { name: "Single-leg calf raise", dosage: "3 × 8–12, 3 s up and 3 s down, every second day", cues: "Full range with a pause at the top", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
           { name: "Resisted eversion with a band (isotonic)", dosage: "3 × 12–15, 3 times per week", cues: "Slow return and no pain over the base" },
           { name: "Step-up and controlled step-down", dosage: "3 × 8–10 each leg", cues: "Keep the pelvis level, with the knee over the second toe", figure: { pose: "ex-step-up", view: "lateral", props: ["step"] } },
-          { name: "Pool or treadmill walking, then jogging", dosage: "20–30 min, 3 times per week, as allowed from about weeks 8–12 [r5]", cues: "Push off evenly through the whole foot" },
+          { name: "Pool or treadmill walking, then jogging", dosage: "20–30 min, 3 times per week (clinical convention); pool or treadmill activity starts from about weeks 8–12 in one institutional protocol [r5]", cues: "Push off evenly through the whole foot" },
           { name: "Single-leg balance with perturbation", dosage: "3 × 30–45 s", cues: "Keep the arch active and the lateral border loaded evenly", figure: { pose: "ex-single-leg-balance", view: "anterior" } }
         ],
         progressionCriteria: ["Clinical and radiographic union confirmed by the surgeon or physician", "Single-leg calf raise × 15 with pain at or below 2/10 and equal height", "Walks 30 min and jogs 10 min with no pain at the fracture site", "Resisted eversion strength within about 90% of the other side (clinical convention)"]
