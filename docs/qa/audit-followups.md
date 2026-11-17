@@ -129,3 +129,23 @@ Full-text check (PMC) of the abstract-unconfirmed claims: the large majority wer
 Fixed by QC from items 1–50: medial-elbow-tendinopathy ("26 patients (30 elbows)"; recurrence at 1 year), mcl-sprain (3–4 weeks relabelled convention), calf-strain (grading band and 4–6 months removed; imaging wording softened), mortons-neuroma (sensory deficit wording).
 
 Still open: turf-toe 50–60° dorsiflexion (r1 Najefi), calf-strain item 36 (3–5 days limit, r1 has a three-sentence abstract), and the roughly 800 flagged statements outside the 100-item sample.
+
+## Evidence audit summary (QC, 17 Nov 2026), 123 pages
+
+**References.** All 1,977 references on 123 pages were compared with PubMed records (author, title words, year, volume, first page, DOI): 1,958 match exactly. 19 were flagged by the checker: 18 are benign (accented or compound author names, article-number page fields, print year versus online year) and 1 was a real error (Irving 2006, J Sci Med Sport 9(1–2), cited as 2007 vol 10), fixed.
+
+**Statements with numbers.** An automatic screen found 900 cited-number sentences whose numbers were not in the cited abstracts. All were judged against the abstracts: a stratified sample of 100 by two Opus auditors and the remaining 805 by 13 Sonnet auditors. Outcome: about 705 fine (the number is in the abstract in another format, correctly derived, or a clinical convention not claimed as a finding); 173 plausibly in the full text; 23 unsupported; 4 wrong. The abstract-only judgement is stricter than the truth: where a PMC full text existed, most full-text items were found to be correct.
+
+**Repairs.** Every unsupported or wrong statement was rewritten (number removed or softened, or re-cited to what the source supports). Every full-text item was checked against the PMC full text where one exists (about 40 papers read); the number was kept where found and otherwise softened or relabelled "clinical convention". About 70 statements across about 50 pages were edited.
+
+**What this does not prove.** The check is against abstracts and the open full texts only. Papers without a PMC full text (many closed-access journals) could not be read, so where a writer relied on one the number was softened or relabelled rather than confirmed. The number screen still flags about 850 sentences because it cannot see full texts; they were judged by the auditors and the fixers, not re-screened. Claims that appear in no source (rehab dosages, test procedures, classification definitions) are labelled convention or textbook on the pages and listed in the sections above.
+
+**Open decisions and loose ends**
+- lumbar-facet-joint-pain: the "0–10 scale" descriptor for a Cochrane mean difference was removed because it could not be confirmed (probably correct).
+- patella-fracture: the brace-off at day 56 and remodelling to day 540 in the timeline have no source; they are labelled typical. A fracture-rehabilitation citation would be better.
+- mcl-sprain: the cited cohorts give a median of about 29 days for higher grades, so the quick-fact "grade III 6–8+ weeks" is labelled a typical clinical range; the "20–30° of flexion" restraint position cites Grood 1981, which has no abstract.
+- inguinal-related-groin-pain: "6–12 weeks" of rehabilitation appears uncited in key facts, the timeframes summary, a patient line and an animation label (consistent with a mean of 9.9 weeks in r9). Could take "(clinical convention)".
+- tibial-plateau-fracture: "≥ 90° flexion by about 4 weeks" is a labelled convention.
+- cervicogenic-headache rehab principles: "Review response at 4–6 weeks" is an uncited review interval.
+- calf-strain: 30 repetitions and 10% asymmetry kept as a prevention benchmark from one expert; replace with "close to the other side" if a number-free criterion is preferred.
+- hip-fracture: two uncited statements softened.
