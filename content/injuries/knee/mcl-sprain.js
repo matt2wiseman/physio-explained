@@ -12,7 +12,7 @@ export default {
   urgency: "routine",
   summary: "A sprain or tear of the medial collateral ligament from a valgus force, usually a blow to the outside of the knee. Most isolated tears, even complete ones, heal well with early functional rehabilitation.",
   keyFacts: [
-    { label: "Typical recovery", value: "Grade I ~2 weeks; grade II 3–4 weeks; grade III 6–8+ weeks" },
+    { label: "Typical recovery", value: "Grade I ~2 weeks; grade II 3–4 weeks; grade III 6–8+ weeks (typical clinical ranges; the cited athlete cohorts report shorter times, about 29 days median for higher grades)" },
     { label: "Return to sport", value: "Mean lay-off 23 days in professional football" },
     { label: "Key test", value: "Valgus stress at 30° (pain and laxity together: LR+ 6.4 with history)" },
     { label: "Imaging", value: "Usually clinical; MRI if laxity in extension or suspected ACL, meniscal or posteromedial injury" },
