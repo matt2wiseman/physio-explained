@@ -25,7 +25,7 @@ export default {
     text: "In Rochester, Minnesota (1976–1990), 561 patients were identified (332 men, 229 women), with a mean age of 47.6 years in men and 48.2 years in women. The average annual age-adjusted incidence was 83.2 per 100,000 (107.3 in men, 63.5 in women), peaking at 202.9 per 100,000 at 50–54 years. Physical exertion or trauma preceded onset in only 14.8% of cases, and 41% had a past history of lumbar radiculopathy. The median duration of symptoms before diagnosis was 15 days [r1]. Imaging findings are poor markers of symptoms: in 1211 asymptomatic volunteers, disc bulging was found in 87.6%, including 73.3% of men and 78.0% of women in their 20s [r7].",
     riskFactors: {
       intrinsic: [
-        "Age 40–60 years: incidence peaks at 50–54 years [r1]",
+        "Middle age (mean age at diagnosis about 48 years): incidence peaks at 50–54 years [r1]",
         "Male sex: higher incidence than females (107.3 versus 63.5 per 100,000) [r1]",
         "Degenerative disc and spondylotic change: spondylosis, disc or both accounted for 68.4% of cases [r1]",
         "A past history of lumbar radiculopathy was present in 41% of cases (association only) [r1]"

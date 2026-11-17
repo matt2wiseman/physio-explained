@@ -284,8 +284,8 @@ export default {
         goals: ["Change to a midfoot or forefoot strike", "Raise step rate and shorten stride", "Reduce provoking load per stride", "Build calf and foot capacity to cope with the new pattern"],
         precautions: ["Increase forefoot loading gradually to protect the calf and Achilles", "Stop if calf pain or new symptoms appear"],
         exercises: [
-          { name: "Forefoot strike drills (walking and short jogs)", dosage: "10–15 min, 3–4 days a week, with video or mirror feedback [r1]", cues: "Land under the hips on the ball of the foot, heel kissing the ground", figure: { pose: "run-midstance", view: "lateral" } },
-          { name: "Step-rate cueing", dosage: "Raise cadence by about 5–10% with a metronome during drills [r8]", cues: "Shorter, quicker, quieter steps" },
+          { name: "Forefoot strike drills (walking and short jogs)", dosage: "10–15 min, 3–4 days a week (clinical convention), with video [r8] or mirror feedback", cues: "Land under the hips on the ball of the foot, heel kissing the ground", figure: { pose: "run-midstance", view: "lateral" } },
+          { name: "Step-rate cueing", dosage: "Raise cadence with a metronome during drills [r8]; about 5–10% is a typical increase (clinical convention)", cues: "Shorter, quicker, quieter steps" },
           { name: "Single-leg calf raise", dosage: "3 × 8–15, 3 s up and 3 s down, 3 days a week", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
           { name: "Step-down", dosage: "3 × 10 each leg", figure: { pose: "ex-step-down", view: "lateral", props: ["step"] } },
           { name: "Split squat", dosage: "3 × 8–10 each leg", figure: { pose: "ex-split-squat", view: "lateral" } }
