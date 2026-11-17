@@ -267,7 +267,7 @@ export default {
         name: "Settle pain & isometric loading",
         timeframe: "Weeks 0–2 (continued as needed)",
         goals: ["Reduce pain if it is high and allow a warm-up for later exercise", "Show the person that controlled hamstring loading is safe", "Improve voluntary hamstring activation", "Minimise compression and teach pain monitoring"],
-        precautions: ["Avoid hamstring stretching, deep hip flexion and prolonged hard-surface sitting at first [r2]", "Allow pain of up to 4/10 on the first two repetitions of a hold if it eases, and modify the load if it stays above 4/10 [r2]", "Do not rest completely: keep other training going [r2]"],
+        precautions: ["Avoid hamstring stretching, deep hip flexion and prolonged hard-surface sitting at first [r2]", "Higher pain is tolerated on the first two repetitions of a hold, to allow time for the expected analgesic effect. If pain above 4/10 persists beyond that, modify the exercise, usually by reducing the load [r2]", "Do not rest completely: keep other training going [r2]"],
         exercises: [
           { name: "Isometric hamstring bridge (double-leg, progressing to single-leg)", dosage: "5 × 30–45 s holds with 90 s rest, up to 4 times a day for pain relief, or about 3 times a week as the first exercise of a session [r2]", cues: "Keep the pelvis level, the leg still and the lumbar spine from over-arching. Progress by reducing leg support.", figure: { pose: "ex-hamstring-bridge", view: "lateral", props: ["box"] } },
           { name: "Isometric prone or standing hamstring curl (alternative)", dosage: "5 × 30–45 s holds with 90 s rest, as for the bridge [r2]", cues: "Use this if the bridge is limited, for example by back pain" },
@@ -280,7 +280,7 @@ export default {
         name: "Strength & kinetic chain",
         timeframe: "Weeks 2–12 and beyond",
         goals: ["Increase hamstring strength and endurance", "Reach hamstring strength at least equal to the other side", "Correct calf and hip-extensor deficits", "Improve lumbopelvic control"],
-        precautions: ["Increase load only when the previous session settles within 24 hours [r2]", "Start at lower load and higher repetitions if deconditioned or if pain is high [r2]", "Use a slow tempo and avoid deep hip flexion in this stage [r2]"],
+        precautions: ["Progress load as strength improves or pain settles, and reduce the intensity if pain rises by more than 2/10 and persists beyond 24 hours [r2]", "Start at lower load and higher repetitions if deconditioned or if pain is high [r2]", "Use a slow tempo and avoid deep hip flexion in this stage [r2]"],
         exercises: [
           { name: "Isotonic hamstring bridge (double-leg to single-leg, progress by reducing leg support)", dosage: "Start at 2–3 × 10–15, progressing to 4–5 × 6–8 (2 s up, 3 s down, 1 s rest, 1 min between sets), 3 times a week or every second day [r2]", cues: "Choose a load where you could not complete another set with good technique", figure: { pose: "ex-hamstring-bridge", view: "lateral", props: ["box"] } },
           { name: "Prone or standing hamstring curl (isotonic)", dosage: "As for the isotonic bridge [r2]", cues: "Slow and controlled; exercise both legs, varying the load between them" },
@@ -313,9 +313,9 @@ export default {
           { name: "Split squat (progressing load and speed)", dosage: "3 × 8–20, 2–3 days a week [r2]", cues: "Torso upright and a quiet landing; add speed only if the tendon tolerates it", figure: { pose: "ex-split-squat", view: "lateral", props: ["dumbbell"] } },
           { name: "Sport-specific drills (for example a modified lunge for a racquet sport, or a 'hamstring scoop' to simulate picking up a ball)", dosage: "3 × 8–20 repetitions of 1–2 drills, 2–3 days a week [r2]", cues: "Add the storage phase first and the release phase later" },
           { name: "Graded return to running", dosage: "First run: 2 minutes of running in 1-minute intervals within a longer walk. Add 1–3 minutes per run, then distance or speed once 20 minutes is reached, then hills; intense runs about twice a week (3 times for elite or high-volume runners) [r2]", cues: "Watch the latent response; run on easy terrain first" },
-          { name: "Maintenance strength", dosage: "2–3 exercises from stages 1–3, twice a week indefinitely [r2]", cues: "Keep the loads heavy and the tempo slow", figure: { pose: "ex-hamstring-bridge", view: "lateral", props: ["box"] } }
+          { name: "Maintenance strength", dosage: "2–3 exercises from stages 1–3, twice a week, continued as maintenance once goals are reached [r2]", cues: "Keep the loads heavy and the tempo slow", figure: { pose: "ex-hamstring-bridge", view: "lateral", props: ["box"] } }
         ],
-        progressionCriteria: ["Pain at or below 2/10 during stage exercises and no latent increase beyond 24 hours [r2]", "Training drills that simulate sport demands tolerated with no significant symptom increase [r2]", "Full training, including intensity and hills, tolerated for at least 2 weeks (clinical convention)", "Participant confidence and a maintenance plan agreed with the coach and clinician"]
+        progressionCriteria: ["Pain at or below 2/10 during stage exercises and no latent pain increase of 3/10 or more beyond 24 hours [r2]", "Training drills that simulate sport demands tolerated with no significant symptom increase [r2]", "Full training, including intensity and hills, tolerated for at least 2 weeks (clinical convention)", "Participant confidence and a maintenance plan agreed with the coach and clinician"]
       }
     ]
   },

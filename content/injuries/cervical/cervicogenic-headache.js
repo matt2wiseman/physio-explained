@@ -12,7 +12,7 @@ export default {
   urgency: "routine",
   summary: "Headache referred from upper cervical structures (C1–C3) through trigeminocervical convergence. The clinical criteria are contested, and a definite diagnosis needs controlled nerve blocks.",
   keyFacts: [
-    { label: "Typical recovery", value: "In trials of 4–6 weeks of manual therapy, exercise or a C1–2 self-mobilisation, benefit was maintained at 12 months; effect sizes vary and the overall evidence is low-grade" },
+    { label: "Typical recovery", value: "In trials of manual therapy, exercise or a C1–2 self-mobilisation (a 6-week treatment period in the larger trial), benefit was maintained at 12 months; effect sizes vary and the overall evidence is low-grade" },
     { label: "Return to sport", value: "Criteria-based; no validated criteria. Needs a controlled headache frequency, normal upper cervical rotation and no neurological signs" },
     { label: "Key test", value: "Cervical flexion–rotation test: sensitivity 91%, specificity 90% for C1/2-related headache in one small study. A definite diagnosis needs controlled diagnostic blocks" },
     { label: "Imaging", value: "Not routine; used for red flags or atypical features. Controlled diagnostic nerve blocks, not imaging, establish a cervical source" },
@@ -85,7 +85,7 @@ export default {
       { phase: "Nociceptor activation", timing: "Minutes to days", description: "Irritation of an upper cervical joint, muscle or nerve activates nociceptors that project to the C1–C3 dorsal horn [r1,r13]." },
       { phase: "Convergence and referral", timing: "Immediately", description: "Upper cervical and trigeminal afferents converge on the same second-order neurones, so pain is felt in the head [r13]." },
       { phase: "Central facilitation", timing: "Days to months", description: "Greater occipital nerve and suboccipital muscle input enhanced dural afferent responses in animal work, which may sustain and amplify headache [r13]." },
-      { phase: "Response to treatment", timing: "Weeks", description: "Manual therapy, exercise and C1–2 self-mobilisation reduced headache over 4–6 weeks of treatment, with effects maintained to 12 months in trials [r7,r8]." }
+      { phase: "Response to treatment", timing: "Weeks", description: "Manual therapy, exercise and C1–2 self-mobilisation reduced headache, with effects maintained to 12 months in trials (one with a 6-week treatment period) [r7,r8]." }
     ],
     systems: [
       { system: "Nervous system", effect: "Trigeminocervical convergence explains referral, and greater occipital nerve and muscle input can enhance dural afferent excitability [r13]." },
@@ -229,7 +229,7 @@ export default {
   },
 
   rehab: {
-    overview: "Progression is criteria-based and guided by headache frequency, intensity and the flexion–rotation range. Education and early self-mobilisation come first, then restoration of upper cervical mobility and deep neck flexor control, then strength and endurance of the neck and shoulder girdle, and finally self-management for the long term. Dosages are typical clinical ranges, not prescriptions from a single trial; the trials used 4–6 weeks of treatment with maintenance to 12 months [r7,r8]. Re-screen for red flags if the headache pattern changes.",
+    overview: "Progression is criteria-based and guided by headache frequency, intensity and the flexion–rotation range. Education and early self-mobilisation come first, then restoration of upper cervical mobility and deep neck flexor control, then strength and endurance of the neck and shoulder girdle, and finally self-management for the long term. Dosages are typical clinical ranges, not prescriptions from a single trial; the larger trial used a 6-week treatment period, and benefit was maintained to 12 months in both trials [r7,r8]. Re-screen for red flags if the headache pattern changes.",
     stages: [
       {
         name: "Educate and start self-mobilisation",
@@ -237,7 +237,7 @@ export default {
         goals: ["Confirm probable CGH and exclude red flags", "Reduce headache and neck pain", "Begin C1–2 self-mobilisation if the flexion–rotation test is limited", "Start a headache diary"],
         precautions: ["Screen for secondary headache and cervical arterial dysfunction first [r10,r11]", "Avoid end-range extension and rotation holds that provoke dizziness or neurological symptoms", "Stop and reassess if headache worsens or new neurological symptoms appear"],
         exercises: [
-          { name: "C1–2 self-SNAG (seated, with a strap or towel)", dosage: "Two sets of 10 repetitions twice daily, as in the trial [r8]", cues: "Apply a gentle sustained glide while rotating the head to the restricted side, and keep it pain-free" },
+          { name: "C1–2 self-SNAG (seated, with a strap or towel)", dosage: "Repeat twice daily at home, as in the trial [r8]; sets and repetitions are set by the treating clinician", cues: "Apply a gentle sustained glide while rotating the head to the restricted side, and keep it pain-free" },
           { name: "Craniocervical flexion (chin nod), supine", dosage: "10 repetitions with 5–10 s holds, 1–2 times daily", cues: "A small nod with the large neck muscles relaxed", figure: { pose: "ex-chin-tuck", view: "lateral", props: ["mat"] } },
           { name: "Gentle active neck range (rotation, side-flexion, flexion)", dosage: "10 slow repetitions each way, every 2 hours while awake", cues: "Stay below the point that provokes headache" },
           { name: "Posture breaks and shoulder rolls", dosage: "1–2 min every 30–60 min at a desk", cues: "Lengthen the neck, relax the shoulders" }

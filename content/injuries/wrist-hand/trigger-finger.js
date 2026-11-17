@@ -242,7 +242,7 @@ export default {
         exercises: [
           { name: "MCP blocking orthosis wear", dosage: "Full time for 6 weeks in the RCT [r7]; in practice, adjust to the patient's tasks", cues: "MCP joint held in a blocked position, with the IP joints free to move" },
           { name: "Active finger flexion and extension in pain-free range", dosage: "10 repetitions, 4 times daily", cues: "Move slowly through the catch without forcing", figure: { pose: "ex-grip", view: "lateral" } },
-          { name: "Gentle passive finger extension (A1 pulley stretch)", dosage: "5 × 10 s, 3 times daily (clinical convention, used in one protocol [r3])", cues: "Support the MCP joint and extend the fingers to a comfortable stretch" },
+          { name: "Gentle passive finger extension (A1 pulley stretch)", dosage: "5 × 10 s, 3 times daily (clinical convention)", cues: "Support the MCP joint and extend the fingers to a comfortable stretch" },
           { name: "Handle and tool modification", dosage: "Practise at once, use daily", cues: "Use a thicker, padded handle and avoid a tight, sustained pinch" },
           { name: "Micro-breaks from gripping work", dosage: "Open and shake the hand every 20–30 minutes (clinical convention)", cues: "Alternate tasks and hands where possible" }
         ],

@@ -19,7 +19,7 @@ export default {
     { label: "Mechanism", value: "~70% contact: a blow to the lateral knee" },
     { label: "Incidence", value: "Most common knee ligament injury in professional football" }
   ],
-  overview: "The medial collateral ligament (MCL) complex is the primary restraint to valgus stress at the knee and the most commonly injured knee ligament [r1,r2]. Most sprains are caused by a direct blow to the outer side of the knee that forces it into valgus, often with some external rotation of the tibia.\n\nUnlike the cruciate ligaments, the MCL is extra-articular and well vascularised, so it heals with a bridging scar. Isolated injuries of all grades, including complete grade III tears, are managed non-operatively with bracing as needed and early functional rehabilitation, with good long-term results [r1,r11,r12]. The physiotherapist's key tasks are to grade the injury, screen for combined ACL, meniscal and posteromedial corner injury (laxity in full extension is a warning sign), and guide a progressive return to sport (RTS) that typically takes 2–8 weeks [r2,r3].",
+  overview: "The medial collateral ligament (MCL) complex is the primary restraint to valgus stress at the knee and the most commonly injured knee ligament [r1,r2]. Most sprains are caused by a direct blow to the outer side of the knee that forces it into valgus, often with some external rotation of the tibia.\n\nUnlike the cruciate ligaments, the MCL is extra-articular and well vascularised, so it heals with a bridging scar. Isolated injuries of all grades, including complete grade III tears, are managed non-operatively with bracing as needed and early functional rehabilitation, with good long-term results [r1,r11,r12]. The physiotherapist's key tasks are to grade the injury, screen for combined ACL, meniscal and posteromedial corner injury (laxity in full extension is a warning sign), and guide a progressive return to sport (RTS) that typically takes about 2–4 weeks in athlete cohorts (mean lay-off about 23 days), and longer for higher grades [r2,r3].",
 
   epidemiology: {
     text: "In 27 professional European football teams followed for 11 seasons, MCL injury occurred at 0.33 per 1000 player-hours, nine times more often in matches than in training, and was the most common knee ligament injury; about 70% were contact-related and the average lay-off was 23 days [r2]. In a US military academy cohort, the incidence of isolated MCL sprain was about 7.3 per 1000 person-years, with the highest rates in wrestling, judo, ice hockey and rugby. Male intercollegiate athletes had about 2.6 times the rate of females per athlete-exposure, and grade 1 injuries lost a median of 13.5 days versus 29 days for higher grades [r3].",
@@ -39,9 +39,9 @@ export default {
   },
 
   mechanism: {
-    summary: "The typical mechanism is a valgus force: a blow to the lateral side of the knee, or a fall or tackle onto it, with the foot planted and the knee slightly flexed (about 20–30°), where the superficial MCL is the dominant restraint [r1,r4]. External rotation of the tibia often accompanies the valgus load and adds stress to the deep MCL and posteromedial structures. Non-contact valgus-rotation injuries (cutting, skiing) also occur, and higher-energy or more extended-knee injuries may involve the ACL [r1].",
+    summary: "The typical mechanism is a valgus force: a blow to the lateral side of the knee, or a fall or tackle onto it, with the foot planted and the knee slightly flexed, where the superficial MCL is the dominant restraint [r1,r4]. External rotation of the tibia often accompanies the valgus load and adds stress to the deep MCL and posteromedial structures. Non-contact valgus-rotation injuries (cutting, skiing) also occur, and higher-energy or more extended-knee injuries may involve the ACL [r1].",
     sequence: [
-      "The athlete's right foot is planted with the knee slightly flexed (about 20–30°) and weight on the leg.",
+      "The athlete's right foot is planted with the knee slightly flexed and weight on the leg.",
       "An opponent or the ground strikes the lateral side of the knee, or the lower leg is forced outward.",
       "The knee is driven into valgus in the frontal plane, opening the medial joint line; the tibia often rotates externally.",
       "The superficial MCL, the main restraint to valgus at 20–30° of flexion, tightens and takes the load [r4].",
@@ -191,7 +191,7 @@ export default {
   management: {
     principles: "Isolated MCL injuries of every grade are managed non-operatively first, with a consensus that this includes acute isolated grade III tears and grade III tears combined with an ACL tear (where the MCL is usually allowed to heal before any ACL reconstruction) [r1]. Early functional rehabilitation with a hinged brace for higher grades gives outcomes comparable with surgery or immobilisation while allowing a faster return to sport [r11,r12]. Surgery is reserved for specific situations: a distal MCL displaced superficial to the pes anserinus (Stener-like lesion), intra-articular entrapment or bony avulsion, severe valgus alignment, persistent valgus instability after rehabilitation, and complex multiligament injuries [r13]. Load is progressed by symptoms, laxity and function rather than fixed timeframes.",
     medical: [
-      { name: "Hinged knee brace (grade II–III)", description: "A hinged brace that resists valgus but allows flexion and extension, worn for about 3–6 weeks depending on grade and sometimes during early return to contact [r12].", evidence: "limited", recommendation: "recommended", refs: ["r12"] },
+      { name: "Hinged knee brace (grade II–III)", description: "A hinged brace that resists valgus but allows flexion and extension [r12]. Wear time of about 3–6 weeks depending on grade, and sometimes during early return to contact, is a clinical convention.", evidence: "limited", recommendation: "recommended", refs: ["r12"] },
       { name: "Analgesia and short-term NSAIDs", description: "Simple analgesia and short NSAID courses for pain in the first days. Some concern exists that NSAIDs may impair early ligament healing; use the lowest effective dose for the shortest time.", evidence: "expert-opinion", recommendation: "consider", refs: [] },
       { name: "Surgical repair or reconstruction", description: "Indicated for distal MCL displaced over the pes anserinus, intra-articular entrapment or bony avulsion, severe valgus malalignment, chronic valgus instability and complex combined injuries. Primary repair is usually done within 7–10 days [r13].", evidence: "limited", recommendation: "consider", refs: ["r13"] },
       { name: "Rigid immobilisation in a cast", description: "Prolonged immobilisation produces outcomes no better than functional bracing and causes stiffness and atrophy; it is no longer routinely recommended [r11,r12].", evidence: "limited", recommendation: "not-recommended", refs: ["r11", "r12"] }
@@ -205,7 +205,7 @@ export default {
     ],
     education: [
       "The MCL is outside the joint and has a good blood supply, so it heals with scar tissue, even when completely torn.",
-      "Most people return to sport in 2–8 weeks depending on the grade. Moving and loading the knee early helps the ligament heal stronger.",
+      "Most athletes return to sport in about 2–4 weeks, and higher-grade sprains take longer. Moving and loading the knee early helps the ligament heal stronger.",
       "Wear the brace as advised for higher-grade tears and avoid sideways stress on the knee until your physio clears it.",
       "Rapid swelling, locking or the knee giving way suggest another injury, so report these.",
       "Strength and control around the hip and knee help protect against reinjury."

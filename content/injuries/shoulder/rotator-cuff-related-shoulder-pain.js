@@ -25,7 +25,7 @@ export default {
     text: "In UK primary care, the annual incidence of adults consulting for any shoulder condition was 1.47% and the annual prevalence was 2.36%; incidence peaked at about 50 years and then stayed at about 2% [r2]. These figures cover all shoulder diagnoses, not RCRSP alone, because general practitioners used a small number of generalised diagnostic codes [r2]. About half of new consulters attended only once, but 13.6% were still consulting for a shoulder problem in the third year of follow-up [r2]. Structural cuff abnormality on imaging rises with age, from 9.7% in people aged 20 years or younger to 62% in those aged 80 or older, and the rise is similar whether or not people have symptoms [r9]. An abnormal scan therefore does not by itself explain a person's pain [r9].",
     riskFactors: {
       intrinsic: [
-        "Age around 40–60 years, when consultation incidence for shoulder conditions peaks [r2]",
+        "Age: consultation incidence for shoulder conditions peaks at about 50 years and then plateaus at about 2% [r2]",
         "Age-related tendon change: structural cuff abnormality is common in people without symptoms, so it indicates susceptibility rather than a cause on its own [r9]",
         "Low cuff and scapular-muscle capacity relative to task demands (proposed contributor; prospective evidence is limited)",
         "Poor sleep, high stress, low mood and unhelpful beliefs about the shoulder (proposed modifiers of pain and recovery; modifiable)",

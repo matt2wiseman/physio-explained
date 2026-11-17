@@ -156,7 +156,7 @@ export default {
       "Posture and trunk or shoulder mechanics that increase elbow valgus load (clinical observation)"
     ],
     palpation: [
-      "Tenderness at the medial epicondyle and just distal and anterior to it over the flexor–pronator origin; all 30 patients in a surgical series had medial epicondylar tenderness [r4]",
+      "Tenderness at the medial epicondyle and just distal and anterior to it over the flexor–pronator origin; all 30 elbows (26 patients) in a surgical series had medial epicondylar tenderness [r4]",
       "UCL: tenderness just distal to the epicondyle over the sublime tubercle and along the ligament (see differentials)",
       "Ulnar nerve in the groove and cubital tunnel: tenderness, Tinel's sign, thickening or subluxation on flexion"
     ],

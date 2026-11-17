@@ -59,7 +59,7 @@ export default {
   anatomy: {
     text: "The fibular collateral ligament (FCL, often called the LCL) runs from just proximal and posterior to the lateral femoral epicondyle to the lateral aspect of the fibular head. The popliteus tendon arises anterior and distal to the FCL on the lateral femoral condyle, passes deep to the FCL and becomes the popliteus muscle behind the tibia; the popliteofibular ligament connects the popliteus musculotendinous junction to the fibular styloid. Secondary stabilisers include the lateral capsule, the biceps femoris, the iliotibial band and the lateral gastrocnemius [r2,r3]. The common peroneal nerve runs behind the biceps femoris tendon and winds around the fibular neck, where it is vulnerable to stretch. In cadaver sectioning studies, posterolateral injury increases varus and external rotation most at 30° of flexion; adding a PCL injury increases them at 90° as well, which is the basis of the dial test [r5].",
     structures: [
-      { name: "Fibular (lateral) collateral ligament", role: "Primary restraint to varus at 0–30° of flexion [r2]" },
+      { name: "Fibular (lateral) collateral ligament", role: "Primary static restraint to varus opening of the knee [r4]" },
       { name: "Popliteus tendon", role: "Primary restraint to external tibial rotation; dynamic internal rotator and posterolateral stabiliser [r3]" },
       { name: "Popliteofibular ligament", role: "Static restraint to external rotation and posterior translation, linking popliteus to the fibular styloid [r3]" },
       { name: "PCL", role: "Works with the PLC to resist posterior translation and external rotation, especially at 90° [r5]" },

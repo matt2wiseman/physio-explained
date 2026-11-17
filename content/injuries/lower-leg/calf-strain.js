@@ -294,7 +294,7 @@ export default {
           { name: "Full team or sport training, then competition", dosage: "Stepwise increase over 1–2 weeks", cues: "Track calf response each session" },
           { name: "Heavy calf and ballistic maintenance", dosage: "2 times per week, ongoing", cues: "Keep loading in the weekly program", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } }
         ],
-        progressionCriteria: ["Pain-free full-speed running and change of direction", "Single-leg calf raise endurance and strength symmetrical (clinical convention; one expert expected at least 30 repetitions and under 10% asymmetry for foundation capacity [r3])", "Completed full training without pain or next-day swelling", "Agreement between athlete, coach and medical team [r3]"]
+        progressionCriteria: ["Pain-free full-speed running and change of direction", "Single-leg calf raise endurance and strength symmetrical (clinical convention; in prevention work one expert expected at least 30 repetitions to fatigue with asymmetry of 10% or less as foundation capacity [r3])", "Completed full training without pain or next-day swelling", "Agreement between athlete, coach and medical team [r3]"]
       }
     ]
   },
@@ -303,7 +303,7 @@ export default {
     criteria: [
       "Pain-free walking and stairs, with no tenderness at the injury site [r3]",
       "Full, symmetrical dorsiflexion and stretch tolerance (knee straight and bent) [r3]",
-      "Single-leg calf raise strength and endurance symmetrical (clinical convention; one expert expected at least 30 repetitions and under 10% asymmetry) [r3]",
+      "Single-leg calf raise strength and endurance symmetrical (clinical convention; in prevention work one expert expected at least 30 repetitions to fatigue with asymmetry of 10% or less) [r3]",
       "Pain-free hopping and plyometric function, and a graded return to maximal running speed and change of direction [r3]",
       "Completed full, unrestricted training with no pain or swelling afterwards",
       "A shared decision by the athlete, coach and medical team [r3]. Clinical findings rather than MRI best indicate the risk of recurrence [r4]"

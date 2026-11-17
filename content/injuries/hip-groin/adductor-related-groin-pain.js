@@ -306,7 +306,7 @@ export default {
         precautions: ["Monitor groin symptoms weekly during congested periods (OSTRC)"],
         exercises: [
           { name: "Full team training", dosage: "≥1–2 weeks before match selection" },
-          { name: "Copenhagen Adductor Strengthening Programme", dosage: "1 session/week in season, 2–3/week preseason [r19]", figure: { pose: "ex-copenhagen", view: "anterior", props: ["bench"] } },
+          { name: "Copenhagen Adductor Strengthening Programme", dosage: "3 sessions/week in the 6–8 week preseason, then 1 session/week in season (trial protocol) [r19]", figure: { pose: "ex-copenhagen", view: "anterior", props: ["bench"] } },
           { name: "Hip and trunk strength maintenance", dosage: "1–2×/week" }
         ],
         progressionCriteria: ["Completion of full training without symptom flare", "Squeeze-test force maintained or improving", "Athlete confidence in kicking and duels"]

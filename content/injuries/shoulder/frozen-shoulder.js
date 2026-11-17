@@ -7,7 +7,7 @@ export default {
   tissues: ["joint-capsule"],
   onset: "gradual",
   mechanismType: ["insidious"],
-  populations: ["adults aged 40–60 years", "women", "people with diabetes", "people after shoulder surgery or trauma"],
+  populations: ["middle-aged adults (mean age at onset about 53 years)","women", "people with diabetes", "people after shoulder surgery or trauma"],
   sports: [],
   urgency: "routine",
   summary: "A painful, then stiff shoulder from capsular inflammation, fibrosis and contracture, with marked loss of passive external rotation. The natural history is long and variable.",
@@ -16,7 +16,7 @@ export default {
     { label: "Return to sport", value: "Mainly an activity problem: return as pain settles and range and strength recover" },
     { label: "Key test", value: "Passive external rotation restricted by about 50% or more compared with the other side, with a normal radiograph" },
     { label: "Imaging", value: "Radiographs to exclude other pathology; ultrasound or MRI only if a cuff tear or other cause is suspected" },
-    { label: "Peak age", value: "About 40–60 years (mean onset about 53)" },
+    { label: "Peak age", value: "Typically mid-life (mean age at onset about 53 years in one long-term cohort)" },
     { label: "Incidence", value: "Around 10% of people in their fifties; people with diabetes have about 5 times the risk" }
   ],
   overview: "Frozen shoulder (adhesive capsulitis) is a common condition characterised by spontaneous onset of pain, progressive restriction of shoulder movement and disability that limits daily activities, work and leisure [r1]. It affects around 10% of people in their fifties and is slightly more common in women [r2]. Biopsies from the rotator interval show a chronic inflammatory response with fibroblastic proliferation [r3], consistent with a thickened, contracted capsule.\n\nThe condition has traditionally been taught as three self-limiting phases (freezing, frozen, thawing) ending in full recovery. A systematic review found no evidence that people progress through phases to full resolution without treatment, and moderate-quality trial data showed that most improvement occurs early, not late [r4]. In a long-term survey (mean 4.4 years from onset), 59% had normal or near-normal shoulders and 41% had some ongoing symptoms, mostly mild [r5].\n\nNo single treatment is clearly best. In the UK FROST trial, manipulation under anaesthesia, arthroscopic capsular release and early structured physiotherapy with a steroid injection were not clinically superior to each other at 12 months [r6]. A systematic review and meta-analysis found that only intra-articular corticosteroid was clinically superior in the short term, particularly in frozen shoulder of under 1 year, and that it should be accompanied by a home exercise program [r7]. An older comparative study found that gentle, pain-limited exercise did better than intensive stretching [r8]. Explaining the long, variable course and matching treatment to irritability are central to physiotherapy care.",
@@ -26,7 +26,7 @@ export default {
     riskFactors: {
       intrinsic: [
         "Diabetes mellitus (about 5 times the risk) [r9]",
-        "Age 40–60 years [r5]",
+        "Typically mid-life; mean age at symptom onset 53 years in one long-term cohort [r5]",
         "Female sex [r5,r2]",
         "Previous frozen shoulder in the other shoulder (20% reported bilateral symptoms) [r5]",
         "Other endocrine conditions such as thyroid disease are often reported as associated; evidence was not reviewed here"

@@ -111,7 +111,7 @@ export default {
   },
 
   timeframes: {
-    summary: "CAI is defined in the chronic phase, more than 12 months after the first sprain [r1]. Because the ligament has already healed (with laxity), the timeline here runs from the start of a rehabilitation program for established CAI. Gains in strength, balance and self-reported function appear over 4–8 weeks in small trials, but longer-term data are limited [r2,r17,r16]. Mechanical laxity does not change with exercise.",
+    summary: "CAI is defined in the chronic phase, more than 12 months after the first sprain [r1]. Because the ligament has already healed (with laxity), the timeline here runs from the start of a rehabilitation program for established CAI. Gains in strength, balance and self-reported function appear over about 4–6 weeks in small trials, but longer-term data are limited [r2,r17,r16]. Mechanical laxity does not change with exercise.",
     healing: [
       { phase: "Assessment and early neuromuscular adaptation", startDay: 0, endDay: 28, description: "Baseline testing, flare settling and early balance and strength training. Early gains are mostly neural (clinical reasoning). Neuromuscular training improved function scores at 4 weeks in two small trials [r2]." },
       { phase: "Strength and balance consolidation", startDay: 14, endDay: 84, description: "Progressive strength, balance and landing training. Six-week trials improved strength, perceived instability, CAIT and reach distances [r17,r16]." },

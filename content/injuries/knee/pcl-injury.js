@@ -12,7 +12,7 @@ export default {
   urgency: "urgent",
   summary: "A partial or complete tear of the PCL from a posteriorly directed force on the proximal tibia with the knee flexed, such as a dashboard impact or a fall onto a bent knee with the foot pointed.",
   keyFacts: [
-    { label: "Typical recovery", value: "Isolated grade I–II: usually back to sport within 2–3 months; reconstruction 9–12 months" },
+    { label: "Typical recovery", value: "Isolated grade I–II: timing varies and is criteria-based (often weeks to a few months); reconstruction 9–12 months" },
     { label: "Mechanism", value: "Dashboard impact (~35%) or fall on the flexed knee with foot plantarflexed (~24%)" },
     { label: "Key test", value: "Posterior drawer with tibial step-off (Sn 90%, Sp 99% in chronic isolated tears)" },
     { label: "Imaging", value: "MRI for acute injury; posterior stress radiographs quantify laxity (>8 mm suggests complete tear, >12 mm combined injury)" },
@@ -118,7 +118,7 @@ export default {
       { label: "Return to sport (isolated grade I–II, typical)", day: 84 },
       { label: "Return to sport after reconstruction (earliest)", day: 270 }
     ],
-    returnToSport: "Isolated grade I–II injuries typically return within about 4–12 weeks once criteria are met; in a natural history cohort half of athletes returned to the same sport at the same or higher level regardless of laxity [r13]. Reconstruction for combined or symptomatic grade III injuries usually requires 9–12 months. These are typical clinical ranges; progression is criteria-based."
+    returnToSport: "Return to sport after isolated grade I–II injuries varies between people and is criteria-based rather than fixed to a date; in a natural history cohort half of athletes returned to the same sport at the same or higher level regardless of laxity [r13]. Reconstruction for combined or symptomatic grade III injuries usually requires 9–12 months (a typical clinical range)."
   },
 
   clinicalPresentation: {
@@ -201,7 +201,7 @@ export default {
       { name: "Quadriceps-focused progressive exercise therapy", description: "Quadriceps strengthening is the core of non-operative and post-operative care because the quadriceps actively reduces posterior tibial translation [r12,r17]. Progress from isometrics and straight-leg raises to closed-chain work and, later, heavy strength and power training.", evidence: "limited", recommendation: "recommended", refs: ["r12", "r17"] },
       { name: "Protecting against posterior sag in early healing", description: "Prone passive flexion, a pillow or brace supporting the proximal tibia, and avoiding prolonged gravity-dependent knee flexion during the first 6 weeks, particularly in grade III injuries [r17].", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
       { name: "Closed-chain exercise in limited flexion early", description: "Squats and leg press produce posterior shear restrained by the PCL that increases with knee flexion, so keep early closed-chain work to about 0–60° and progress depth as the ligament heals [r19].", evidence: "limited", recommendation: "recommended", refs: ["r19"] },
-      { name: "Early isolated open-chain hamstring curls", description: "Hamstring contraction pulls the tibia posteriorly and loads the healing PCL. Avoid resisted open-chain hamstring exercise for roughly the first 12 weeks of a significant tear or after reconstruction [r17].", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] },
+      { name: "Early isolated open-chain hamstring curls", description: "Hamstring contraction pulls the tibia posteriorly and loads the healing PCL. Avoid resisted open-chain hamstring exercise early in rehabilitation after a significant tear or reconstruction [r17]. Roughly the first 12 weeks is a clinical convention; the actual duration is set by the surgeon or team protocol.", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] },
       { name: "NMES and effusion control for quadriceps inhibition", description: "Neuromuscular electrical stimulation, cryotherapy and compression alongside exercise to reduce arthrogenic muscle inhibition early [r7].", evidence: "limited", recommendation: "consider", refs: ["r7"] },
       { name: "Education and graded return to sport", description: "Explain the healing potential of the PCL, the role of the quadriceps and why posterior sag is avoided. Use objective criteria to guide return to sport [r17].", evidence: "expert-opinion", recommendation: "recommended", refs: [] }
     ],

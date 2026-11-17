@@ -91,7 +91,7 @@ export default {
     systems: [
       { system: "Nervous system (pain and guarding)", effect: "Acute pain causes the child to guard the arm (a pseudoparalytic appearance) until reduction; the arm is neurologically intact (clinical observation)." },
       { system: "Musculoskeletal (ligament laxity and recurrence)", effect: "Recurrence is common enough to counsel on: 14% in 2331 cases and 6% at one year in an ultrasound series [r4, r1]." },
-      { system: "Developmental", effect: "The risk falls with age: the trials enrolled children younger than 7 years, and the typical age is 1 to 4 years [r2]." },
+      { system: "Developmental", effect: "Pulled elbow is an injury of young children: the trials enrolled children all younger than 7 years [r2], and the usual teaching is that the typical age is about 1 to 4 years (clinical convention)." },
       { system: "Psychological and social", effect: "A frightened child and an anxious carer make examination difficult; about half of cases present without a witnessed pull, and an inconsistent history needs a safeguarding review (clinical convention) [r5]." }
     ]
   },
@@ -308,7 +308,7 @@ export default {
     ],
     tests: ["Observation of spontaneous reaching and play [r6]", "Passive elbow and forearm movement without distress", "Palpation of the elbow and forearm without tenderness", "Faces Pain Scale in older children [r9]"]
   },
-  prognosis: "Pulled elbow resolves completely in nearly all children with reduction, and trials report few ultimate failures: none in two studies and 4.1% of 148 episodes in one [r2]. Function typically returns within minutes [r6]. Recurrence is the main long-term issue: 14% in 2331 cases and 6% (3 of 50) at one year in an ultrasound series [r4, r1]. A minority with a torn annular ligament (22%) were splinted for 7 days [r1]. Almost all children splinted after reduction recovered within 2 weeks, although 2 were later found to have a fracture [r4]. The risk falls as children get older (clinical observation; the trials enrolled children younger than 7 years) [r2].",
+  prognosis: "Pulled elbow resolves completely in nearly all children with reduction, and trials report few ultimate failures: none in two studies and 4.1% of 148 episodes in one [r2]. Function typically returns within minutes [r6]. Recurrence is the main long-term issue: 14% in 2331 cases and 6% (3 of 50) at one year in an ultrasound series [r4, r1]. A minority with a torn annular ligament (22%) were splinted for 7 days [r1]. Almost all children splinted after reduction recovered within 2 weeks, although 2 were later found to have a fracture [r4]. The risk falls as children get older (clinical observation); the trials enrolled children all younger than 7 years [r2].",
   prevention: [
     "Avoid pulling a child by the hand or wrist, and avoid lifting or swinging a child by the arms; lift under the armpits or around the chest. About half of cases followed forcible traction of the forearm [r4]. The effect of such advice on recurrence was not tested.",
     "Hold hands loosely and avoid a sudden jerk when a child stumbles or resists (clinical observation).",

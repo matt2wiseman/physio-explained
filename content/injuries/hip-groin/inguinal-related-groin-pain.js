@@ -14,7 +14,7 @@ export default {
   summary: "Longstanding pain in the inguinal canal region with canal tenderness and no palpable hernia, typically worse with coughing, sneezing, sit-ups, sprinting and kicking. It is the Doha term for 'sports hernia'.",
   keyFacts: [
     { label: "Typical recovery", value: "Rehabilitation-first for 6–12 weeks; ~73% return pain-free at about 10 weeks in rehab cohorts" },
-    { label: "Return to sport", value: "After surgery for failed rehab, most return within 6–12 weeks" },
+    { label: "Return to sport", value: "After surgery for failed rehab, about 6 weeks on average in one case series; 90% back by about 3 months in one RCT" },
     { label: "Key test", value: "Recognisable pain on inguinal canal palpation (scrotal invagination + Valsalva) and on resisted sit-up" },
     { label: "Imaging", value: "Ultrasound (dynamic) to exclude true hernia; MRI for other entities" },
     { label: "Peak age", value: "Mid-20s to early 30s (mean ~28 years in surgical series)" },
@@ -232,7 +232,7 @@ export default {
       { name: "Corticosteroid injection or nerve blocks", description: "Diagnostic or short-term pain relief, for example an ilioinguinal block when nerve pain dominates. Injections were part of the conservative arm that did worse than surgery in the RCT [r13].", evidence: "very-limited", recommendation: "consider", refs: ["r13"] }
     ],
     physio: [
-      { name: "Tailored, multidisciplinary rehabilitation (first-line)", description: "Progressive trunk, abdominal-wall, hip and adductor strengthening with load management for 6–12 weeks, as recommended by the British Hernia Society consensus [r3].", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
+      { name: "Tailored, multidisciplinary rehabilitation (first-line)", description: "Progressive trunk, abdominal-wall, hip and adductor strengthening with load management as initial treatment, as recommended by the British Hernia Society consensus [r3]. Duration is guided by response.", evidence: "expert-opinion", recommendation: "recommended", refs: ["r3"] },
       { name: "Intersegmental control and change-of-direction mechanics rehabilitation", description: "Rehabilitation focused on trunk–pelvis–hip control during running and cutting, progressing linear running to multidirectional drills. In 205 athletes with athletic groin pain (mixed entities), 73% returned to play pain-free at a mean of 9.9 weeks, with improved HAGOS and cutting biomechanics [r9].", evidence: "limited", recommendation: "recommended", refs: ["r9"] },
       { name: "Adductor strengthening for coexisting adductor-related pain", description: "Copenhagen adduction and squeeze progressions when adductor findings coexist, as they often do [r2,r17].", evidence: "moderate", recommendation: "recommended", refs: ["r17", "r2"] },
       { name: "Post-operative rehabilitation", description: "Early walking, then progressive trunk and hip loading from about week 1–2 and running from about week 2–4, depending on the surgical technique and the surgeon's protocol. After surgery, athletes returned to sport at an average of about 6 weeks (range 3.5–9 weeks) in one case series [r10], and 90% had returned by about 3 months in one randomised trial [r13].", evidence: "limited", recommendation: "recommended", refs: ["r10", "r13"] },
