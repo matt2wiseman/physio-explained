@@ -391,7 +391,7 @@ export default {
   ],
   clinicalPearls: [
     "Do not diagnose from one test or from the MRI: tests are individually weak and clustering did not help [r8], and superior labral tears are read on MRI in a large share of pain-free people [r4,r5].",
-    "The sham-controlled trial is the key result to quote: repair, tenodesis and sham surgery improved similarly, and 73% of the sham group believed they had been repaired [r11]. Expectation, rehabilitation and natural history are powerful.",
+    "The sham-controlled trial is the key result to quote: repair, tenodesis and sham surgery improved similarly, and 73% of the sham patients who were asked believed they had been repaired [r11]. Expectation, rehabilitation and natural history are powerful.",
     "Adherence predicts success: athletes who stopped rehabilitation for surgery attended about 8 sessions versus 20 in those who succeeded [r10]. Dose the program properly before judging failure.",
     "In a thrower with posterior shoulder pain in late cocking, think internal impingement, rotation deficit and cuff before calling it a SLAP lesion; they often coexist (see internal impingement).",
     "Check for company: Bankart lesions in younger people and cuff tears and osteoarthritis in older people coexist with type II lesions [r6], and the posterior component can drive the cuff changes [r13].",

@@ -113,7 +113,7 @@ export default {
   },
 
   timeframes: {
-    summary: "Most radicular pain improves substantially over 6 to 12 weeks, and resorption occurs mainly within 6 months [r4]. In a trial of patients with 6 to 12 weeks of severe sciatica, the probability of perceived recovery at 1 year was 95% in both the early-surgery and conservative arms [r5].",
+    summary: "Resorption of the herniated disc occurs mainly within 6 months of conservative treatment [r4]. In a trial of patients with 6 to 12 weeks of severe sciatica, the probability of perceived recovery at 1 year was 95% in both the early-surgery and conservative arms [r5].",
     healing: [
       { phase: "Acute inflammatory radiculopathy", startDay: 0, endDay: 42, description: "Mechanical and chemical nerve root irritation; pain is highest and sleep and sitting are often disturbed" },
       { phase: "Resorption and neural recovery", startDay: 14, endDay: 180, description: "Macrophage-mediated resorption of herniated tissue, mostly within 6 months [r4]; leg pain and neurological signs improve" },

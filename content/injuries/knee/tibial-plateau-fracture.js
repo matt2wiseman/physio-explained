@@ -117,7 +117,7 @@ export default {
       { phase: "Remodelling", startDay: 84, endDay: 540, description: "Bone remodels; strength and function recover; cartilage changes persist" }
     ],
     milestones: [
-      { label: "Knee flexion ≥ 90°", day: 28, note: "Early range of motion is encouraged after fixation [r8]" },
+      { label: "Knee flexion ≥ 90°", day: 28, note: "Early range of motion is encouraged after fixation [r8]; the 90° by about 4 weeks target is clinical convention" },
       { label: "Progressive weight-bearing begins (typical)", day: 42, note: "Earlier in selected cases per surgeon [r7]" },
       { label: "Full weight-bearing (typical)", day: 84 },
       { label: "Return to sport (median, ORIF)", day: 210, note: "Median 6.9 months in one study [r9]" },
@@ -152,7 +152,7 @@ export default {
     ],
     observation: ["Swelling, bruising, fracture blisters and skin integrity", "Alignment (valgus/varus)", "After fixation: wound healing and gait with aids"],
     palpation: ["Proximal tibia, joint lines and fibular head", "Compartment tension in the leg", "Distal pulses and capillary refill"],
-    rangeOfMotion: ["Not tested acutely before imaging", "After fixation: measure flexion and extension at each session; aim for ≥ 90° flexion by about 4 weeks"],
+    rangeOfMotion: ["Not tested acutely before imaging", "After fixation: measure flexion and extension at each session; aim for ≥ 90° flexion by about 4 weeks (clinical convention)"],
     strength: ["Quadriceps activation and lag", "Hip and ankle strength during protected weight-bearing", "Later: quadriceps and hamstring limb symmetry"],
     neuro: ["Common peroneal nerve function (dorsiflexion, eversion, dorsal foot sensation) in high-energy fractures"],
     functional: ["Gait with aids within weight-bearing limits", "Sit-to-stand, stairs, balance", "Later: single-leg squat, hop tests if returning to sport"],
@@ -203,7 +203,7 @@ export default {
       { name: "Osteoporosis assessment and VTE prophylaxis", description: "Bone-health investigation and treatment in older adults with low-energy fractures [r1], and thromboprophylaxis per protocol during reduced mobility.", evidence: "expert-opinion", recommendation: "recommended", refs: [] }
     ],
     physio: [
-      { name: "Early range-of-motion exercise", description: "Active and active-assisted knee flexion and extension from the first days after fixation (or as allowed in a brace), aiming for ≥ 90° flexion by about 4 weeks [r8].", evidence: "limited", recommendation: "recommended", refs: ["r8"] },
+      { name: "Early range-of-motion exercise", description: "Active and active-assisted knee flexion and extension started early after fixation (or as allowed in a brace), progressing range as the surgeon's protocol allows [r8].", evidence: "limited", recommendation: "recommended", refs: ["r8"] },
       { name: "Protected, progressive weight-bearing", description: "Traditionally touch- or partial weight-bearing for 6–12 weeks; early weight-bearing appears safe in selected fixation constructs. Follow the surgeon's instructions [r7,r8].", evidence: "limited", recommendation: "recommended", refs: ["r7", "r8"] },
       { name: "Quadriceps strengthening and proprioceptive training", description: "Isometric then progressive quadriceps strengthening and balance training throughout rehabilitation [r8]. NMES may help overcome inhibition early [r11].", evidence: "limited", recommendation: "recommended", refs: ["r8", "r11"] },
       { name: "Prolonged post-operative immobilisation", description: "Immobilisation after plate fixation does not appear to benefit patients and increases stiffness risk [r8].", evidence: "limited", recommendation: "not-recommended", refs: ["r8"] },
@@ -224,7 +224,7 @@ export default {
       {
         name: "Protect & move",
         timeframe: "Weeks 0–6",
-        goals: ["Control swelling and pain", "Full extension and flexion ≥ 90° by about 4 weeks", "Quadriceps activation", "Safe gait within weight-bearing limits"],
+        goals: ["Control swelling and pain", "Full extension and flexion ≥ 90° by about 4 weeks (clinical convention)", "Quadriceps activation", "Safe gait within weight-bearing limits"],
         precautions: ["Weight-bearing as prescribed (often touch or partial)", "No resisted varus/valgus loading", "Monitor compartments early, wound, calf (DVT) and nerve function"],
         exercises: [
           { name: "Quadriceps sets", dosage: "10 × 10 s, 3–4 times daily", figure: { pose: "ex-quad-set", view: "lateral", props: ["mat"] } },

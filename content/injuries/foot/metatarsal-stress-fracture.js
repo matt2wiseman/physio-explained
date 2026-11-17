@@ -305,7 +305,7 @@ export default {
           { name: "Step-up with heel drive", dosage: "3 × 8–10 each leg, 3 times a week", cues: "Control the pelvis and push through the whole foot", figure: { pose: "ex-step-up", view: "lateral", props: ["step"] } },
           { name: "Heavy calf and foot strength maintenance", dosage: "2–3 times a week, 3–4 × 6–10", cues: "Slow tempo and full range", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } }
         ],
-        progressionCriteria: ["Runs 30 min continuously with pain at or below 1–2/10 and no next-morning increase [r4]", "Hopping pain-free and symmetrical", "No focal tenderness at the fracture site", "Stable weekly volume for 2 weeks without a flare"]
+        progressionCriteria: ["Runs 30 min continuously with pain at or below 1–2/10 (clinical convention thresholds) and no symptoms the day following loading [r4]", "Hopping pain-free and symmetrical", "No focal tenderness at the fracture site", "Stable weekly volume for 2 weeks without a flare"]
       },
       {
         name: "Return to sport & prevention",

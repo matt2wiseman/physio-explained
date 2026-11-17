@@ -15,7 +15,7 @@ export default {
     { label: "Incidence", value: "About 13 per 100,000 per year; highest in women aged 60–80" },
     { label: "Key test", value: "Active straight-leg raise: inability suggests extensor mechanism disruption" },
     { label: "Imaging", value: "AP, lateral and skyline radiographs; Ottawa rules include isolated patellar tenderness" },
-    { label: "Typical recovery", value: "Bone union takes weeks to a few months and varies with age and fixation; strength and function 6–12 months" },
+    { label: "Typical recovery", value: "Bone union takes weeks to a few months and varies with age and fixation; strength and function often 6–12 months (clinical convention)" },
     { label: "Surgery threshold", value: "Extensor mechanism disrupted, or >2–3 mm step-off / >1–4 mm displacement" },
     { label: "Common complication", value: "Symptomatic implant removal in about 30% after fixation" }
   ],
@@ -105,7 +105,7 @@ export default {
   },
 
   timeframes: {
-    summary: "Bone union takes weeks to a few months and varies with age and fixation (a paediatric series gave medians of 1.7 months non-operatively and 2.8 months after surgery [r10]), but recovery of range, quadriceps strength and function takes 6–12 months, and some deficits persist long term [r7].",
+    summary: "Bone union takes weeks to a few months and varies with age and fixation (a paediatric series gave medians of 1.7 months non-operatively and 2.8 months after surgery [r10]), but recovery of range, quadriceps strength and function is slow (often quoted as 6–12 months; clinical convention), and some deficits persist long term: at a mean of 6.5 years after operative fixation, patients still had significant symptoms and a mean 26% isometric extension deficit [r7].",
     healing: [
       { phase: "Haematoma & inflammation", startDay: 0, endDay: 7, description: "Haemarthrosis, pain and quadriceps inhibition" },
       { phase: "Repair (callus)", startDay: 7, endDay: 56, description: "Protected loading in an extension brace; progressive range of motion" },
@@ -190,7 +190,7 @@ export default {
     principles: "Non-operative management is indicated for undisplaced fractures with an intact extensor mechanism; surgical fixation is recommended when the extensor mechanism is disrupted or displacement exceeds about 2–3 mm of articular step-off or 1–4 mm of separation [r2]. Anatomical reduction with tension-band fixation is associated with the best outcomes, but symptomatic implants are frequent [r2,r6]. Partial patellectomy is reserved for unreconstructable pole fragments. Rehabilitation in both pathways protects the healing patella from high tensile loads (usually an extension brace with progressive range-of-motion limits), restores range and builds quadriceps strength, which is the main long-term deficit [r7].",
     medical: [
       { name: "Open reduction and internal fixation (tension band, screws, plates)", description: "For displaced fractures or a disrupted extensor mechanism; restores the articular surface and extensor continuity [r2].", evidence: "limited", recommendation: "recommended", refs: ["r2"] },
-      { name: "Non-operative management in an extension brace or cylinder cast", description: "For undisplaced fractures with intact straight-leg raise; weight-bearing as tolerated in extension for about 4–6 weeks with progressive range [r2].", evidence: "limited", recommendation: "recommended", refs: ["r2"] },
+      { name: "Non-operative management in an extension brace or cylinder cast", description: "For undisplaced fractures with an intact extensor mechanism (intact straight-leg raise) [r2]; weight-bearing as tolerated in extension for about 4–6 weeks with progressive range (clinical convention).", evidence: "limited", recommendation: "recommended", refs: ["r2"] },
       { name: "Implant removal", description: "Symptomatic implants are the most common complication after fixation, leading to removal in about 30% [r6].", evidence: "moderate", recommendation: "consider", refs: ["r6"] },
       { name: "Partial patellectomy", description: "Excision of a small unreconstructable pole fragment with tendon reattachment; also an option in some nonunions [r9].", evidence: "very-limited", recommendation: "consider", refs: ["r9"] },
       { name: "Non-operative treatment of displaced fractures in active patients", description: "Displaced fractures with extensor disruption managed non-operatively risk nonunion and extensor weakness; reserved for frail, low-demand patients [r9].", evidence: "very-limited", recommendation: "not-recommended", refs: ["r9"] }
