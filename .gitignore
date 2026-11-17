@@ -4,3 +4,4 @@ tests/output/
 tools/output/
 *.log
 data/.injuries-tmp-*
+dist/
