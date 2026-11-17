@@ -105,10 +105,10 @@ export default {
   },
 
   timeframes: {
-    summary: "No natural-history data for untreated CGH were identified in the sources reviewed. In trials, treatment lasted 4–6 weeks and the benefit was maintained at 12 months [r7,r8]. The phases below follow trial timelines and typical clinical practice.",
+    summary: "No natural-history data for untreated CGH were identified in the sources reviewed. In trials, the exercise and manipulative therapy programme lasted 6 weeks [r7] and the benefit was maintained at 12 months [r7,r8]. The phases below follow trial timelines and typical clinical practice.",
     healing: [
       { phase: "Assessment and early response", startDay: 0, endDay: 14, description: "Confirm the picture, screen for red flags and start education and gentle mobility. A C1–2 self-SNAG increased flexion–rotation range by 15° immediately after the first visit in a trial [r8]." },
-      { phase: "Active treatment", startDay: 14, endDay: 42, description: "Manual therapy, craniocervical flexion and scapular exercise, and self-mobilisation. Trial treatment periods were 4–6 weeks [r7,r8]." },
+      { phase: "Active treatment", startDay: 14, endDay: 42, description: "Manual therapy, craniocervical flexion and scapular exercise, and self-mobilisation. The exercise and manipulative therapy trial used a 6-week treatment period [r7]; the self-SNAG trial reassessed headache at 4 weeks and 12 months [r8]." },
       { phase: "Consolidation", startDay: 42, endDay: 120, description: "Strength and endurance work, posture and workstation changes, and self-management." },
       { phase: "Maintenance and follow-up", startDay: 120, endDay: 365, description: "Benefits of exercise and manual therapy were maintained at 12 months in a 200-person trial [r7]." }
     ],

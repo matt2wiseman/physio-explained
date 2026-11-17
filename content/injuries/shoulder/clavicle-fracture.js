@@ -108,7 +108,7 @@ export default {
       { grade: "Group II: lateral (distal) third", description: "Includes fractures that involve the coracoclavicular ligaments and can destabilise the lateral fragment (Neer subtypes; conventional description).", prognosis: "Management principles for athletes: non-operative for undisplaced fractures and operative treatment for displaced lateral fractures; suture fixation and non-AC-joint-spanning plate fixation showed promising results [r11]." },
       { grade: "Group III: medial third", description: "The least common (2% of clavicle fractures) [r1]; posterior displacement can affect the mediastinum.", prognosis: "Usually non-operative; refer urgently for posterior displacement with airway, vascular or swallowing symptoms (clinical convention)." },
       { grade: "Modifier: displacement and shortening", description: "Completely displaced (100%) fractures or more than 2 cm of shortening define the group in which surgery has been studied most [r7].", prognosis: "Displacement is the most likely predictor of nonunion in non-operatively treated midshaft fractures [r10]." },
-      { grade: "Modifier: comminution", description: "Butterfly fragment or comminution of the middle third; 19% of middle-third fractures in one series [r1].", prognosis: "In 31 conservatively treated fractures with a butterfly fragment, displacement was the only significant radiographic predictor of impaired healing [r10]." }
+      { grade: "Modifier: comminution", description: "Butterfly fragment or comminution of the middle third; 19% of middle-third fractures in one series [r1].", prognosis: "In a systematic review of non-operatively treated displaced midshaft fractures, comminution was one of six factors reported as predictors of nonunion (with displacement, shortening, age, gender and smoking), but the evidence for most predictors was limited [r10]." }
     ]
   },
 
@@ -116,7 +116,7 @@ export default {
     summary: "Clavicle fractures usually unite within weeks to months, and the time depends on displacement and treatment. In the Canadian trial, mean radiographic union in displaced fractures was 16.4 weeks with plate fixation and 28.4 weeks without [r3]. Pain and the need for a sling settle faster than bone union. The ranges below are typical clinical ranges, not all trial-derived.",
     healing: [
       { phase: "Haematoma, inflammation and protection", startDay: 0, endDay: 14, description: "Sling for comfort, analgesia, early elbow, wrist and hand movement and pendulum exercises (clinical convention)." },
-      { phase: "Soft and hard callus formation", startDay: 7, endDay: 84, description: "Callus bridges the fracture; early pain-free shoulder movement progresses to active movement. Radiographic union is usually seen between about 12 and 28 weeks in displaced fractures, depending on treatment [r3]." },
+      { phase: "Soft and hard callus formation", startDay: 7, endDay: 84, description: "Callus bridges the fracture; early pain-free shoulder movement progresses to active movement. In one randomised trial of displaced fractures, mean time to radiographic union was about 16 weeks with plate fixation and about 28 weeks with nonoperative treatment [r3]." },
       { phase: "Remodelling and strengthening", startDay: 42, endDay: 365, description: "Progressive strengthening once the fracture is clinically and radiographically united; the callus continues to remodel for months and a bump can persist." }
     ],
     milestones: [

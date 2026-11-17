@@ -60,7 +60,7 @@ export default {
   anatomy: {
     text: "The medial side of the knee has three main stabilisers. The superficial MCL runs from just proximal and posterior to the medial femoral epicondyle to a broad tibial insertion about 6 cm below the joint line, deep to the pes anserinus. The deep MCL is a thickening of the medial capsule with meniscofemoral and meniscotibial parts attached to the medial meniscus. The posterior oblique ligament reinforces the posteromedial capsule and is tight in extension [r1]. The superficial MCL is the primary restraint to valgus, particularly at 20–30° of flexion; in full extension the posteromedial capsule and cruciates contribute more, so laxity in extension implies a more extensive injury [r1,r4]. The MCL is extra-articular and well vascularised, which explains its good healing capacity.",
     structures: [
-      { name: "Superficial MCL", role: "Primary restraint to valgus (most at 20–30° flexion) and a restraint to external rotation [r1,r4]" },
+      { name: "Superficial MCL", role: "Primary restraint to valgus (assessed with valgus stress at full extension and at 20–30° of flexion) and a restraint to external rotation [r1,r13]" },
       { name: "Deep MCL (meniscofemoral and meniscotibial ligaments)", role: "Secondary valgus restraint; anchors the medial meniscus" },
       { name: "Posterior oblique ligament / posteromedial capsule", role: "Restrains valgus and internal rotation near extension [r1]" },
       { name: "ACL", role: "Secondary valgus restraint, particularly near extension; often injured in higher-energy valgus injuries" },
@@ -101,7 +101,7 @@ export default {
     grades: [
       { grade: "Grade I", description: "Localised tenderness; pain on valgus stress but no increased opening (roughly 0–5 mm) and a firm end-feel.", prognosis: "Return to sport in about 2 weeks [r3]" },
       { grade: "Grade II", description: "Partial tear. Increased opening (roughly 5–10 mm) with a firm end point at 30°; stable in full extension.", prognosis: "Return to sport typically about 3–4 weeks (clinical convention, not taken from a cited study)" },
-      { grade: "Grade III", description: "Complete tear. Opening greater than about 10 mm with a soft or absent end point; on stress radiographs >3.2 mm side-to-side gapping at 20° suggests a complete superficial MCL tear [r9]. Laxity in full extension indicates posteromedial or cruciate involvement.", prognosis: "Isolated grade III: non-operative, about 6–8 weeks; combined injuries need surgical review [r1,r13]" }
+      { grade: "Grade III", description: "Complete tear. Opening greater than about 10 mm with a soft or absent end point; on stress radiographs >3.2 mm side-to-side gapping at 20° suggests a complete superficial MCL tear [r9]. Laxity in full extension indicates posteromedial or cruciate involvement.", prognosis: "Isolated grade III: non-operative with early functional rehabilitation; combined injuries need surgical review [r1,r13]" }
     ]
   },
 

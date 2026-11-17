@@ -25,7 +25,7 @@ export default {
     text: "In a systematic review of nine studies of traumatic cuff tears, the mean age was 54.7 years (range 34–61) and patients were largely male; the most common mechanism was a fall onto an outstretched arm, with the mean time to surgery 66 days [r1]. Rotator cuff abnormalities become much more common with age, from 9.7% in people aged 20 or younger to 62% in those aged 80 or older, and they are similarly common whether or not people have symptoms or have had a dislocation, so it is often difficult to tell when an abnormality is new [r2]. Rotator cuff tears are an important cause of persistent pain and weakness after shoulder dislocation, particularly in contact or overhead athletes, people older than 40 years and those with nerve injury [r5]. In a series of young patients under 24 years with first-time anterior dislocation, there were no rotator cuff tears at arthroscopy [r9].",
     riskFactors: {
       intrinsic: [
-        "Age over about 40–50 years, when underlying tendon degeneration is common [r2]",
+        "Older age, when underlying tendon degeneration is common: rotator cuff abnormalities become more prevalent with each decade of age [r2]",
         "Male sex: traumatic tears were largely in men [r1]",
         "Pre-existing tendinopathy or an asymptomatic tear that is then extended by injury [r2]",
         "Shoulder dislocation after the age of 40 years [r5]",

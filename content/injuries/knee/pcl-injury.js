@@ -59,7 +59,7 @@ export default {
   anatomy: {
     text: "The PCL arises from the lateral surface of the medial femoral condyle in the roof of the intercondylar notch and inserts into a depression on the posterior tibia about 1 cm below the joint line, between the posterior horns of the menisci. It is intra-articular but extrasynovial, covered by synovium posteriorly. It has two functional bundles: the larger anterolateral bundle is tight in flexion and the posteromedial bundle is tighter near extension. The anterior (Humphrey) and posterior (Wrisberg) meniscofemoral ligaments run alongside it and act as secondary restraints [r1]. Because the PCL is the dominant posterior restraint at 90° of flexion, sectioning it in cadavers increases posterior translation at that angle by about 11 mm [r5].",
     structures: [
-      { name: "Posterior cruciate ligament (anterolateral and posteromedial bundles)", role: "Primary restraint to posterior tibial translation, especially at 70–90° of flexion; secondary restraint to external and internal rotation [r1]" },
+      { name: "Posterior cruciate ligament (anterolateral and posteromedial bundles)", role: "Primary restraint to posterior tibial translation; secondary restraint to external and internal rotation [r1]" },
       { name: "Meniscofemoral ligaments (Humphrey and Wrisberg)", role: "Secondary posterior restraints that may stay intact and limit laxity in partial tears [r1]" },
       { name: "Posterolateral corner (LCL, popliteus tendon, popliteofibular ligament)", role: "Resists varus and external rotation; with the PCL it controls posterior translation near extension" },
       { name: "Posteromedial corner and MCL", role: "Resist valgus and internal rotation; secondary posterior restraint in extension" },

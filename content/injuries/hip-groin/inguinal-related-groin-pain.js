@@ -101,7 +101,7 @@ export default {
   grading: null,
 
   timeframes: {
-    summary: "Rehabilitation-first management usually takes 6–12 weeks. In a cohort of 205 athletes with athletic groin pain, 73% returned to play pain-free at a mean of 9.9 weeks [r9]. After surgery for failed rehabilitation, return to sport is typically 4–12 weeks depending on technique [r10,r13].",
+    summary: "Rehabilitation-first management usually takes 6–12 weeks. In a cohort of 205 athletes with athletic groin pain, 73% returned to play pain-free at a mean of 9.9 weeks [r9]. After surgery for failed rehabilitation, return to sport averaged about 6 weeks in one case series of limited surgery, and 90% had returned by about 3 months in an RCT of laparoscopic mesh repair [r10,r13].",
     healing: [
       { phase: "Settle symptoms", startDay: 0, endDay: 14, description: "Load modification and pain-free trunk and hip activation" },
       { phase: "Capacity & intersegmental control", startDay: 10, endDay: 70, description: "Progressive trunk, hip and adductor strength and running mechanics [r9]" },
@@ -112,7 +112,7 @@ export default {
       { label: "Pain-free cough/sneeze and daily activities", day: 14, note: "Typical" },
       { label: "Pain-free running", day: 28 },
       { label: "Pain-free return to play (rehab cohort mean)", day: 69, note: "Mean 9.9 weeks [r9]" },
-      { label: "Review surgical option if rehab fails", day: 84, note: "After ~2–3 months of well-conducted rehabilitation [r3,r13]" },
+      { label: "Review surgical option if rehab fails", day: 84, note: "After at least about 2 months of well-conducted rehabilitation [r13]" },
       { label: "Return to sport after surgery (typical)", day: 42, note: "Mean 5.9 weeks after minimal repair and neurolysis [r10]" }
     ],
     returnToSport: "About 6–12 weeks with rehabilitation (73% pain-free at a mean of 9.9 weeks) [r9]. After surgery, 90% returned to sport within 3 months in an RCT [r13] and 92% returned to their pre-injury level across surgical series [r11]."
@@ -235,7 +235,7 @@ export default {
       { name: "Tailored, multidisciplinary rehabilitation (first-line)", description: "Progressive trunk, abdominal-wall, hip and adductor strengthening with load management for 6–12 weeks, as recommended by the British Hernia Society consensus [r3].", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
       { name: "Intersegmental control and change-of-direction mechanics rehabilitation", description: "Rehabilitation focused on trunk–pelvis–hip control during running and cutting, progressing linear running to multidirectional drills. In 205 athletes with athletic groin pain (mixed entities), 73% returned to play pain-free at a mean of 9.9 weeks, with improved HAGOS and cutting biomechanics [r9].", evidence: "limited", recommendation: "recommended", refs: ["r9"] },
       { name: "Adductor strengthening for coexisting adductor-related pain", description: "Copenhagen adduction and squeeze progressions when adductor findings coexist, as they often do [r2,r17].", evidence: "moderate", recommendation: "recommended", refs: ["r17", "r2"] },
-      { name: "Post-operative rehabilitation", description: "Early walking, then progressive trunk and hip loading from about week 1–2 and running from about week 2–4, depending on the surgical technique and the surgeon's protocol. Most athletes return within 4–12 weeks [r10,r13].", evidence: "limited", recommendation: "recommended", refs: ["r10", "r13"] },
+      { name: "Post-operative rehabilitation", description: "Early walking, then progressive trunk and hip loading from about week 1–2 and running from about week 2–4, depending on the surgical technique and the surgeon's protocol. After surgery, athletes returned to sport at an average of about 6 weeks (range 3.5–9 weeks) in one case series [r10], and 90% had returned by about 3 months in one randomised trial [r13].", evidence: "limited", recommendation: "recommended", refs: ["r10", "r13"] },
       { name: "Prolonged rest or passive treatment alone", description: "Rest and passive modalities may ease symptoms temporarily but do not restore capacity. Symptoms usually return when sprinting and kicking resume.", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] }
     ],
     education: [

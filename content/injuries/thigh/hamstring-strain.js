@@ -298,9 +298,9 @@ export default {
         precautions: ["Plan the first matches with limited minutes", "Monitor high-speed running load and avoid sudden spikes"],
         exercises: [
           { name: "Repeated maximal sprints and sport-specific drills", dosage: "2–3 sessions/week within team training", cues: "Include fatigued sprinting and kicking where relevant" },
-          { name: "Nordic hamstring maintenance", dosage: "1–2 × 3–5 reps, once or twice a week indefinitely [r8]", figure: { pose: "ex-nordic", view: "lateral", props: ["mat"] } },
+          { name: "Nordic hamstring maintenance", dosage: "Maintenance dose, for example 1–2 sets of 3–5 reps once or twice a week through the season (clinical convention)", figure: { pose: "ex-nordic", view: "lateral", props: ["mat"] } },
           { name: "Heavy hip-extension strength (RDL, hip thrust)", dosage: "1–2×/week, 3 × 5–6", figure: { pose: "ex-hip-thrust", view: "lateral", props: ["bench"] } },
-          { name: "Agility and trunk stabilisation circuit", dosage: "2–3×/week in warm-up [r14]", cues: "Fast feet, stable pelvis" }
+          { name: "Agility and trunk stabilisation circuit", dosage: "2–3×/week, for example as part of the warm-up (clinical convention)", cues: "Fast feet, stable pelvis" }
         ],
         progressionCriteria: ["All RTS criteria met [r7]", "Completion of full team training without symptoms", "Athlete reports confidence at maximal speed"]
       }

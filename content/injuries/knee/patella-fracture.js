@@ -82,7 +82,7 @@ export default {
     ],
     cellular: [
       { phase: "Haematoma & inflammation", timing: "0–7 days", description: "Fracture haematoma forms; inflammatory cells and growth factors recruit mesenchymal cells; haemarthrosis inhibits the quadriceps [r5]." },
-      { phase: "Repair (callus)", timing: "1–8 weeks", description: "Soft then hard callus bridges the fragments; with stable fixation healing is largely direct. Most fractures unite within about 6–8 weeks; nonunion is uncommon after fixation [r6]." },
+      { phase: "Repair (callus)", timing: "1–8 weeks", description: "Soft then hard callus bridges the fragments; with stable fixation healing is largely direct. Nonunion is uncommon after surgical fixation (pooled incidence 1.7% in adult studies) [r6]. In a paediatric series, median time to bony healing was 1.7 months with non-operative treatment and 2.8 months after surgery [r10]." },
       { phase: "Remodelling", timing: "2 months – 2 years", description: "Woven bone remodels to lamellar bone; damaged cartilage does not regenerate, leaving a long-term risk of patellofemoral degeneration [r8]." }
     ],
     systems: [
