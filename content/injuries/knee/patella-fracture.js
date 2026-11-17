@@ -383,7 +383,7 @@ export default {
           { t: 2.6, text: "Bleeding fills the fracture gap with haematoma." },
           { t: 4.0, text: "Inflammatory cells release signals that recruit bone-forming stem cells." },
           { t: 5.5, text: "Soft callus bridges the gap; fixation keeps the fragments compressed together." },
-          { t: 7.0, text: "Callus mineralises; most patellar fractures unite within about 6–8 weeks." },
+          { t: 7.0, text: "Callus mineralises as the fragments consolidate; union times vary with age and treatment." },
           { t: 8.5, text: "Bone remodels over months, but quadriceps strength takes far longer to return." }
         ]
       }

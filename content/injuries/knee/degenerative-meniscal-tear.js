@@ -290,7 +290,7 @@ export default {
     "Catching and occasional locking do not predict benefit from APM; they were equally common after sham surgery [r5].",
     "Order weight-bearing radiographs rather than MRI when imaging is needed for a middle-aged knee [r1].",
     "Sudden, severe medial pain without trauma in an older adult is an insufficiency fracture until proven otherwise; do not simply label it a meniscal tear.",
-    "Use the trial protocols as your template: 12 weeks, 2–3 supervised sessions per week, progressive load [r6,r7]."
+    "Use the trial protocols as your template: supervised, progressive exercise over 8 to 12 weeks (12 weeks with 2–3 sessions per week in [r6]; 16 sessions over 8 weeks in [r7])."
   ],
   related: ["meniscal-tear", "articular-cartilage-defect-knee", "pes-anserine-pain", "patellofemoral-pain"],
 

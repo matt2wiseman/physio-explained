@@ -237,7 +237,7 @@ export default {
     "Focal tenderness on the anterior mid-shaft or a transverse lucent line on imaging: a high-risk lesion. Stop impact loading and refer urgently to a sports physician or orthopaedic surgeon [r5].",
     "Sudden severe pain, inability to weight-bear or deformity: possible complete fracture. Send to the emergency department.",
     "Constant pain at rest or night, fever, unexplained weight loss or a mass: consider tumour or infection and arrange urgent imaging and medical review.",
-    "No improvement or worsening after 6–12 weeks of correct offloading: repeat imaging for delayed union or non-union and refer [r5].",
+    "No improvement or worsening after about 6–12 weeks of correct offloading (clinical convention): repeat imaging and refer, because delayed union and non-union are recognised risks [r5].",
     "Severe, escalating pain with a tense swollen leg after a fracture or direct injury: possible acute compartment syndrome. This is an emergency; refer to the emergency department immediately.",
     "Amenorrhoea or oligomenorrhoea, disordered eating, multiple or recurrent bone stress injuries: screen for REDs and refer to a sports physician and dietitian [r6]."
   ],

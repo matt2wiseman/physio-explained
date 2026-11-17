@@ -45,7 +45,7 @@ export default {
       "The person trips or slips and falls forward, reaching out to protect the head and trunk.",
       "The arm is extended and the palm strikes the ground with the wrist in marked extension (about 60–90 degrees; clinical estimate).",
       "The ground reaction force passes through the carpus, mainly the scaphoid and lunate, into the articular surface of the distal radius.",
-      "The volar cortex fails in tension and the fracture line crosses the metaphysis within about 2–3 cm of the radiocarpal joint [r5].",
+      "The volar cortex fails in tension and the fracture line crosses the distal radial metaphysis close to the radiocarpal joint (clinical biomechanics).",
       "Dorsal compression crushes cancellous bone, especially in osteoporotic metaphysis, so the distal fragment tilts dorsally and shortens (clinical biomechanics).",
       "The distal fragment, with the hand, displaces dorsally and radially, and the ulnar styloid may avulse or the TFCC may be strained.",
       "Swelling and haematoma fill the volar and dorsal soft tissues. The median nerve and carpal tunnel are close to the fracture and are at risk (see red flags)."

@@ -106,7 +106,7 @@ export default {
       { phase: "Settle symptoms", startDay: 0, endDay: 14, description: "Load modification and pain-free trunk and hip activation" },
       { phase: "Capacity & intersegmental control", startDay: 10, endDay: 70, description: "Progressive trunk, hip and adductor strength and running mechanics [r9]" },
       { phase: "Return to sport", startDay: 49, endDay: 98, description: "Graded sprinting, change of direction and kicking" },
-      { phase: "Post-operative recovery (if needed)", startDay: 0, endDay: 84, description: "Wound and fascial healing, then graded return over 4–12 weeks [r10,r13]" }
+      { phase: "Post-operative recovery (if needed)", startDay: 0, endDay: 84, description: "Wound and fascial healing, then graded return; mean return to sport about 6 weeks in one case series [r10], 90% by about 3 months in one RCT [r13]" }
     ],
     milestones: [
       { label: "Pain-free cough/sneeze and daily activities", day: 14, note: "Typical" },

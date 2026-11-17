@@ -135,7 +135,7 @@ export default {
       "Pain at the fingertip and sometimes in the palm over the retracted tendon",
       "Inability to bend the tip of the finger, often noticed only when making a fist",
       "Weaker pinch and grasp",
-      "Pain that settles over 4–6 weeks while the deficit remains [r1]"
+      "Pain that usually settles after 4–6 weeks while the deficit remains [r1]"
     ],
     signs: [
       "The DIP joint stays extended when the patient makes a fist [r1]",

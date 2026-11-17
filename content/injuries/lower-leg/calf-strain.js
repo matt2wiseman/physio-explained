@@ -249,7 +249,7 @@ export default {
         exercises: [
           { name: "Double-leg calf raise (slow)", dosage: "3 × 15, 3 s up and 3 s down, 2 times daily", cues: "Full range as tolerated", figure: { pose: "ex-calf-raise", view: "lateral" } },
           { name: "Seated bent-knee calf raise", dosage: "3 × 15, 2 times daily", cues: "Targets the soleus; slow tempo", figure: { pose: "ex-seated-calf-raise", view: "lateral", props: ["chair"] } },
-          { name: "Single-leg calf raise (assisted, then unassisted)", dosage: "3 × 8–12, daily, as soon as tolerated [r3]", cues: "Hold a rail for balance", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
+          { name: "Single-leg calf raise (assisted, then unassisted)", dosage: "3 × 8–12, daily (clinical convention); experts started single-leg calf raises as soon as tolerated [r3]", cues: "Hold a rail for balance", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
           { name: "Gentle calf stretch (knee straight and bent)", dosage: "3 × 30 s, 1–2 times daily, stopping before pain", cues: "Gentle tension only [r1]" },
           { name: "Stationary cycling or pool walking", dosage: "15–20 min, daily", cues: "Easy effort and low resistance" }
         ],

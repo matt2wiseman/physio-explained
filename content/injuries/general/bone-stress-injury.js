@@ -303,7 +303,7 @@ export default {
           { name: "Single-leg calf raise (heavy)", dosage: "3–4 × 6–10, 2–3 times a week", cues: "Slow tempo, full range", figure: { pose: "ex-single-leg-calf-raise", view: "lateral" } },
           { name: "Romanian deadlift", dosage: "3 × 8, 2 times a week, progressing load", cues: "Hinge from the hips with a neutral spine", figure: { pose: "ex-rdl", view: "lateral" } }
         ],
-        progressionCriteria: ["Runs 30 min continuously with pain at or below 1–2/10 and no next-morning increase [r16]", "Hopping pain-free and symmetrical", "No focal tenderness at the injury site", "Stable weekly volume for 2 weeks without a flare"]
+        progressionCriteria: ["Runs continuously for the target duration with no symptom provocation during, after or the day after running [r16]", "Hopping pain-free and symmetrical", "No focal tenderness at the injury site", "Stable weekly volume for 2 weeks without a flare"]
       },
       {
         name: "Return to sport & prevention",
