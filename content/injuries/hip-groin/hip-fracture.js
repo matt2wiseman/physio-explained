@@ -95,7 +95,7 @@ export default {
       { system: "Cardiovascular / haematological", effect: "Blood loss, anaemia and immobility increase risks of myocardial injury and venous thromboembolism; prophylaxis is standard [r4]." },
       { system: "Respiratory", effect: "Immobility and reduced lung volumes increase the risk of hospital-acquired pneumonia; early mobilisation helps." },
       { system: "Musculoskeletal", effect: "Sarcopenia accelerates with bed rest; each day of immobility costs strength and function." },
-      { system: "Psychological / social", effect: "Fear of falling, low mood and loss of confidence restrict activity; many patients do not return to their previous residence or mobility [r8]." },
+      { system: "Psychological / social", effect: "Fear of falling, low mood and loss of confidence restrict activity; some patients do not regain their previous mobility or living situation (clinical teaching)." },
       { system: "Mortality", effect: "Relative hazard of death in the first 3 months is 5.75 in women and 7.95 in men; excess mortality persists for years [r2]." }
     ]
   },
@@ -116,7 +116,7 @@ export default {
       { phase: "Haematoma and inflammation", startDay: 0, endDay: 7, description: "Post-operative pain, swelling and systemic stress response; delirium risk highest" },
       { phase: "Soft callus", startDay: 7, endDay: 28, description: "Early repair; walking with a frame, increasing independence" },
       { phase: "Hard callus", startDay: 28, endDay: 90, description: "Bony bridging; progressive resistance and balance training" },
-      { phase: "Remodelling", startDay: 90, endDay: 365, description: "Bone remodels; functional recovery plateaus over 6–12 months" }
+      { phase: "Remodelling", startDay: 90, endDay: 365, description: "Bone remodels; functional recovery continues over 6–12 months (the follow-up window used in rehabilitation trials)" }
     ],
     milestones: [
       { label: "Surgery", day: 1, note: "Within 24–48 h of admission [r4]" },

@@ -46,7 +46,7 @@ export default {
       "The FDP is loaded eccentrically beyond its capacity. In the ring finger the tethering effect of the lumbricals adds to the load [r1].",
       "The tendon avulses from the volar base of the distal phalanx, either alone or with a bony fragment [r1].",
       "The tendon retracts, and the level depends on the vincula and on whether a bony fragment catches on the A4 pulley (palm, PIP level or A4 level) [r1].",
-      "The athlete feels a pop and pain at the fingertip or palm, and cannot flex the DIP joint. Pain often subsides in 4–6 weeks, which leaves only an inability to make a full fist [r1].",
+      "The athlete feels a pop and pain at the fingertip or palm, and cannot flex the DIP joint. Pain often settles over a few weeks, which leaves only an inability to make a full fist (a general statement in a case report [r1]).",
       "An undiagnosed injury can be missed as a sprain, and good results are time-dependent [r3,r4]."
     ],
     variants: [
@@ -93,7 +93,7 @@ export default {
       { phase: "Unrepaired tendon", timing: "Weeks to months", description: "The stump remains retracted and pain settles, leaving a lost DIP flexion that can be accepted, grafted or arthrodesed depending on need [r1]." }
     ],
     systems: [
-      { system: "Nervous system and pain", effect: "Acute pain at the fingertip or palm usually subsides over 4–6 weeks, leaving a painless deficit that patients may ignore [r1]." },
+      { system: "Nervous system and pain", effect: "Acute pain at the fingertip or palm often settles over a few weeks, leaving the loss of DIP flexion as the main problem (a general statement in a case report [r1])." },
       { system: "Vascular", effect: "Vincula rupture in a type I injury compromises tendon blood supply, which affects healing after repair [r1]." },
       { system: "Musculoskeletal chain", effect: "Loss of DIP flexion weakens pinch and grasp [r1]. Nearby fractures can mask the injury, as in a rugby player whose FDP avulsion was found 4 weeks after a middle phalanx fracture [r12]." },
       { system: "Psychosocial and occupational", effect: "Athletes may under-report or delay care because of in-season play, so diagnosis can be late [r3,r13]." }
@@ -135,7 +135,7 @@ export default {
       "Pain at the fingertip and sometimes in the palm over the retracted tendon",
       "Inability to bend the tip of the finger, often noticed only when making a fist",
       "Weaker pinch and grasp",
-      "Pain that usually settles after 4–6 weeks while the deficit remains [r1]"
+      "Pain that often settles over a few weeks while the deficit remains [r1]"
     ],
     signs: [
       "The DIP joint stays extended when the patient makes a fist [r1]",
@@ -305,7 +305,7 @@ export default {
   ],
   clinicalPearls: [
     "A finger that stays extended at the DIP joint in a fist after a tackle is a jersey finger until proven otherwise [r1].",
-    "Do not be reassured when the pain settles. It usually settles in 4–6 weeks, and the lost DIP flexion can be the only sign left [r1].",
+    "Do not be reassured when the pain settles. It often settles over a few weeks, and the lost DIP flexion can be the only sign left [r1].",
     "Think of the ring finger first (about 80% in one report), but the little finger was also common in an operated series (13 of 32) [r7,r2].",
     "A nearby fracture can hide the avulsion. Re-test FDP function when a finger fracture is slow to recover [r12].",
     "Palpate for point tenderness along the volar finger and palm, which may show the level of retraction [r1].",

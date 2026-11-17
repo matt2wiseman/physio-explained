@@ -15,7 +15,7 @@ export default {
     { label: "Incidence", value: "About 13 per 100,000 per year; highest in women aged 60–80" },
     { label: "Key test", value: "Active straight-leg raise: inability suggests extensor mechanism disruption" },
     { label: "Imaging", value: "AP, lateral and skyline radiographs; Ottawa rules include isolated patellar tenderness" },
-    { label: "Typical recovery", value: "Bone union ~6–8 weeks; strength and function 6–12 months" },
+    { label: "Typical recovery", value: "Bone union takes weeks to a few months and varies with age and fixation; strength and function 6–12 months" },
     { label: "Surgery threshold", value: "Extensor mechanism disrupted, or >2–3 mm step-off / >1–4 mm displacement" },
     { label: "Common complication", value: "Symptomatic implant removal in about 30% after fixation" }
   ],
@@ -105,7 +105,7 @@ export default {
   },
 
   timeframes: {
-    summary: "Bone typically unites in 6–8 weeks, but recovery of range, quadriceps strength and function takes 6–12 months, and some deficits persist long term [r7].",
+    summary: "Bone union takes weeks to a few months and varies with age and fixation (a paediatric series gave medians of 1.7 months non-operatively and 2.8 months after surgery [r10]), but recovery of range, quadriceps strength and function takes 6–12 months, and some deficits persist long term [r7].",
     healing: [
       { phase: "Haematoma & inflammation", startDay: 0, endDay: 7, description: "Haemarthrosis, pain and quadriceps inhibition" },
       { phase: "Repair (callus)", startDay: 7, endDay: 56, description: "Protected loading in an extension brace; progressive range of motion" },
@@ -204,7 +204,7 @@ export default {
     ],
     education: [
       "The kneecap is a lever for your thigh muscle. Protecting it while it heals means keeping the knee mostly straight in a brace for the first weeks.",
-      "Bone usually heals in about 6–8 weeks, but strengthening the thigh muscle takes months and is the key to a good result.",
+      "Bone usually heals over weeks to a few months, but strengthening the thigh muscle takes months and is the key to a good result.",
       "Metal used to fix the kneecap sometimes becomes irritating and may be removed later.",
       "Kneeling may be uncomfortable for a long time; tell us if pain is limiting you.",
       "Report a red, hot or leaking wound, fever, or new inability to straighten the knee."
