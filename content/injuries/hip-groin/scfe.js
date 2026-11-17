@@ -52,7 +52,7 @@ export default {
     variants: [
       { name: "Stable (chronic) slip", description: "Gradual onset over weeks or months; the child can walk with or without crutches. Low AVN risk [r4]." },
       { name: "Unstable (acute or acute-on-chronic) slip", description: "Sudden severe pain, unable to bear weight even with crutches. High AVN risk [r4]." },
-      { name: "Atypical SCFE", description: "Younger than 10 or older than 16 years, or low weight: screen for endocrine or renal disease [r1]." },
+      { name: "Atypical SCFE", description: "Presentation outside the usual age range of about 8 to 15 years should prompt consideration of an underlying endocrine cause [r1]." },
       { name: "Contralateral slip", description: "Develops later in a substantial proportion, more often in younger children with endocrine disorders or a high posterior sloping angle [r9,r10]." }
     ]
   },
@@ -192,7 +192,7 @@ export default {
     "A child or adolescent with hip, thigh or knee pain and a limp, reduced internal rotation or obligatory external rotation: suspect SCFE. Stop weight-bearing (crutches or wheelchair) and arrange same-day radiographs and orthopaedic referral.",
     "Sudden inability to bear weight even with crutches: unstable SCFE. Treat as an emergency; do not ask the child to walk or hop [r4].",
     "Fever, raised inflammatory markers or severe pain on any hip movement: suspect septic arthritis and refer to emergency.",
-    "SCFE before age 10 or after 16, or in a child with normal or low weight: screen for endocrine or renal disease [r1].",
+    "SCFE outside the usual 8 to 15 year age range, or in a child who is not overweight: consider screening for endocrine disease, as endocrine abnormalities are an occasional association [r1].",
     "New pain in the other hip after a unilateral slip: suspect a contralateral slip and arrange urgent radiographs [r9]."
   ],
 

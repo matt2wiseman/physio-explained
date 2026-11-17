@@ -110,7 +110,7 @@ export default {
   },
 
   timeframes: {
-    summary: "Bony union usually takes 3–4 months, but protected loading, cartilage injury and soft tissue damage mean full recovery often takes 6–12 months, and many people do not return to their previous level of sport [r9].",
+    summary: "Bony union usually takes several months, and protected loading, cartilage injury and soft tissue damage can slow full recovery. In a systematic review, about 70% of people returned to sport after tibial plateau fracture, and the only study to report a return time gave a median of 6.9 months after ORIF; return times are poorly reported [r9].",
     healing: [
       { phase: "Haematoma & inflammation", startDay: 0, endDay: 7, description: "Fracture haematoma, swelling, compartment risk highest" },
       { phase: "Repair (callus / direct healing)", startDay: 7, endDay: 84, description: "Protected weight-bearing while bone unites; early range of motion" },

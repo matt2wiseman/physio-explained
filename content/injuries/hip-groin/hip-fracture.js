@@ -111,7 +111,7 @@ export default {
   },
 
   timeframes: {
-    summary: "Bone union in fixed fractures follows normal phases but is slower in osteoporotic bone. Functional recovery is the main concern: most mobility gains occur in the first 3–6 months, and many people do not regain their pre-fracture level [r8,r9].",
+    summary: "Bone union in fixed fractures follows normal phases but is slower in osteoporotic bone. Functional recovery is the main concern, and rehabilitation trials follow mobility and independence at around 4 months and again at 6 to 12 months [r8,r9].",
     healing: [
       { phase: "Haematoma and inflammation", startDay: 0, endDay: 7, description: "Post-operative pain, swelling and systemic stress response; delirium risk highest" },
       { phase: "Soft callus", startDay: 7, endDay: 28, description: "Early repair; walking with a frame, increasing independence" },

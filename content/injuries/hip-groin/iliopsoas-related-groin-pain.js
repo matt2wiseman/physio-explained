@@ -101,7 +101,7 @@ export default {
   grading: null,
 
   timeframes: {
-    summary: "Most acute iliacus and psoas MTJ strains are low grade and recover within 1–4 weeks, following muscle healing biology [r3,r9]. Longstanding iliopsoas tendon or bursal pain usually needs 6–12 weeks of load modification and progressive strengthening, and longer if hip pathology coexists [r8].",
+    summary: "Most acute iliacus and psoas injuries occur at the musculotendinous junction [r3], and muscle strains generally recover over weeks, depending on severity [r9]. Longstanding iliopsoas tendon or bursal pain is usually managed conservatively first, and surgery is considered if conservative care fails [r8]. In clinical practice this means load modification and progressive strengthening over weeks to months, and longer if hip pathology coexists (clinical convention).",
     healing: [
       { phase: "Inflammation", startDay: 0, endDay: 3, description: "Fibre rupture, haematoma and inflammatory cell influx" },
       { phase: "Repair", startDay: 3, endDay: 21, description: "Satellite-cell regeneration and scar formation" },
@@ -224,7 +224,7 @@ export default {
     ],
     physio: [
       { name: "Progressive hip flexor loading", description: "Isometric hip flexion (supine or sitting), then standing cable or band hip flexion and supine marching, then loaded end-range hip flexion and lunge-position eccentric control, then high-velocity hip flexion in sprinting and kicking. Progress by pain (≤3/10, settling within 24 hours).", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
-      { name: "Early pain-guided loading after acute strain", description: "Short relative rest (1–3 days) followed by early loading promotes aligned muscle regeneration and limits dense scar formation [r9].", evidence: "limited", recommendation: "recommended", refs: ["r9"] },
+      { name: "Early pain-guided loading after acute strain", description: "A short period of relative rest followed by early, progressive loading promotes aligned muscle regeneration and limits dense scar formation [r9].", evidence: "limited", recommendation: "recommended", refs: ["r9"] },
       { name: "Intersegmental control, running and change-of-direction rehabilitation", description: "Trunk–pelvis–hip control during linear running and cutting. Associated with improved HAGOS and pain-free return in 73% of athletes with groin pain (mixed entities) [r13].", evidence: "limited", recommendation: "recommended", refs: ["r13"] },
       { name: "Address coexisting entities", description: "Assess and treat adductor-, inguinal- and hip-related contributors, which commonly coexist with iliopsoas-related pain [r4,r8].", evidence: "expert-opinion", recommendation: "recommended", refs: [] },
       { name: "Aggressive hip flexor stretching in the acute phase", description: "Forceful end-range stretching (deep lunge stretches) can aggravate a fresh MTJ strain or an irritable tendon and bursa. Restore range gradually through loaded movement.", evidence: "expert-opinion", recommendation: "not-recommended", refs: [] },
@@ -240,7 +240,7 @@ export default {
   },
 
   rehab: {
-    overview: "Progression is criteria-based using pain on resisted hip flexion and the modified Thomas test, hip flexor strength (standardised dynamometry) and functional tolerance. Pain during exercise should stay ≤3/10 and settle within 24 hours. Acute strains usually move through stages 1–3 within 2–4 weeks [r9]. Longstanding tendon or bursal pain spends longer in stages 1–2 and needs attention to coexisting entities [r8]. Change-of-direction and sprint mechanics are integrated in the later stages [r13].",
+    overview: "Progression is criteria-based using pain on resisted hip flexion and the modified Thomas test, hip flexor strength (standardised dynamometry) and functional tolerance. Pain during exercise should stay ≤3/10 and settle within 24 hours. Acute strains usually progress through stages 1–3 over a few weeks, depending on severity [r9]. Longstanding tendon or bursal pain spends longer in stages 1–2 and needs attention to coexisting entities [r8]. Change-of-direction and sprint mechanics are integrated in the later stages [r13].",
     stages: [
       {
         name: "Settle & isometric loading",
