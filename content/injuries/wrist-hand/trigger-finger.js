@@ -106,7 +106,7 @@ export default {
     grades: [
       { grade: "Grade 1", description: "Tenderness at the A1 pulley only, with no triggering yet [r3].", prognosis: "In a series of 715 fingers, 6.4% of grade 1 fingers went on to surgery [r3]" },
       { grade: "Grade 2", description: "Snapping without locking [r3].", prognosis: "9.5% went on to surgery in the same series [r3]. In another RCT, conservative care succeeded in about 75% of Green grade 1–2 fingers [r6]." },
-      { grade: "Grade 3", description: "Snapping with locking [r3].", prognosis: "16.7% went on to surgery in that series, but the decision was mainly patient preference [r3]. Conservative success was about 60% for Green grade 3 [r6]." },
+      { grade: "Grade 3", description: "Snapping with locking [r3].", prognosis: "16.7% of grade 3 fingers went on to surgery in that series, but the decision was mainly patient preference [r3]. Conservative success was about 60% for Green grade 3 [r6]." },
       { grade: "Grade 4", description: "Joint contracture [r3].", prognosis: "12% went on to surgery in the same series [r3]; a fixed contracture usually means a surgical referral (clinical)." }
     ]
   },
