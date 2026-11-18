@@ -437,7 +437,10 @@ export async function render(main, params, ctx) {
   const tries = [];
   const top = pickFeatured(entries);
   for (const e of top.slice(0, 3)) tries.push(e.shortName || e.name);
-  const tests = (top[0] && top[0].keywords && top[0].keywords.tests) || [];
+  // one or two short test names (drop bracketed explanations so the chips stay short)
+  const tests = ((top[0] && top[0].keywords && top[0].keywords.tests) || [])
+    .map((t) => String(t).replace(/\s*\([^)]*\)\s*/g, " ").trim())
+    .filter((t) => t && t.length <= 30);
   for (const t of tests.slice(0, 2)) tries.push(t);
   if (tries.length) {
     lede.tryRow.replaceChildren(h("span", { class: "hm-try__l" }, "Try"), ...tries.map((t) => h("a", { class: "chip", href: `#search.${slug(t)}` }, t)));

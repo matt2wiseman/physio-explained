@@ -218,7 +218,8 @@ a:hover { text-decoration-color: currentColor; text-decoration-thickness: 2px; }
   align-items: center;
   gap: var(--sp-2);
   min-height: 32px;
-  padding: 0 var(--sp-3);
+  max-width: 100%;               /* a long label wraps instead of pushing the page wider than the screen */
+  padding: 4px var(--sp-3);
   border: 1px solid var(--line-strong);
   border-radius: 999px;
   background: var(--surface);
@@ -227,7 +228,7 @@ a:hover { text-decoration-color: currentColor; text-decoration-thickness: 2px; }
   font-weight: 500;
   line-height: 1.2;
   text-decoration: none;
-  white-space: nowrap;
+  white-space: normal;
   cursor: pointer;
   transition: background var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
 }

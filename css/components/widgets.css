@@ -243,3 +243,7 @@
 @media print {
   .st__row { break-inside: avoid; }
 }
+
+/* long "Next: …" stage labels wrap instead of widening the page on small screens */
+.xp__next { max-width: 100%; height: auto; padding-block: var(--sp-2); white-space: normal; text-align: left; }
+.xp__next > span { min-width: 0; overflow-wrap: anywhere; }

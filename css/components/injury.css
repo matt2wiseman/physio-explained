@@ -526,7 +526,8 @@ a.inj-chip:hover { border-color: var(--accent); color: var(--accent); }
 /* ================================================================== evidence badge (shared component) */
 .ev-badge {
   --ev: var(--line-strong);
-  display: inline-flex; align-items: stretch; flex: none;
+  display: inline-flex; align-items: stretch; flex: none; flex-wrap: wrap;
+  max-width: 100%;                /* two-part badges wrap on very narrow phones instead of widening the page */
   font: 600 var(--fs-xs)/1 var(--font-body);
   white-space: nowrap; vertical-align: middle;
   border: 1px solid var(--ev); border-radius: var(--radius-sm);
