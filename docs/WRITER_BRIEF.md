@@ -22,6 +22,18 @@ CLAUDE.md; docs/CONTENT_SCHEMA.md (schema, evidence rules, checklist); content/i
 (g) If a scene lacks a structure you need, use the closest available id and note it in docs/REQUESTS.md.
 (h) `reference ids` are "r1", "r2", ... numbered in order of first use.
 
+## Lessons from the evidence audit of the first 123 pages (read before writing; these were the errors found)
+The audit judged 900 numbers against their cited abstracts and full texts. Most were correct, but the defects were avoidable and followed a few patterns:
+1. **A cited number must be in THAT paper.** If a review quotes another study's figure (for example "only 60% were diagnosed correctly"), cite the primary study or write "reported in a review"; do not cite the review as if it measured it. Never carry a figure from one paper's text to another paper's marker.
+2. **Dosages, progression criteria, return-to-sport times, classification definitions and test procedures are conventions unless the paper states them.** Word them "(clinical convention)" and leave the marker off. A rehabilitation commentary may state doses; a trial abstract usually does not. If you read the full text and it states the dose, say which stage or arm it belongs to.
+3. **Do not turn a general statement in a case report or a review's introduction into a finding.** "Pain settles in 4–6 weeks" in a case report's discussion is weak support; write "often settles over a few weeks".
+4. **Repeated claims must stay identical and equally supported.** The same number often appeared in keyFacts, the timeframes summary, the overview, a patient-education line and an animation caption; the audit found the weakest copy again and again. Write the sourced wording once and reuse it, or leave the number out of the weaker places.
+5. **Check denominators and direction.** Patients versus elbows, 12 versus 17 per arm, "of those asked" versus "of all": copy the counts from the abstract and re-read them against your sentence.
+6. **Age bands, angles and durations are easy to invent.** "Aged 40–60", "at 20–30° of flexion", "within 6–12 weeks": include one only if a source you read gives it; otherwise say "middle age", "slightly flexed", "over weeks to months".
+7. **Use the paper's own scale and words** ("pain ≤4/10", "older patients"), not a stricter or rounder version.
+8. **Say when you could not read the full text.** If the number matters and only a closed-access paper holds it, soften it or label it.
+9. Run the render preview and treat any console error as a bug (see workflow step 5).
+
 ## Rules
 Australian/British spelling, plain clinical English, flag weak or contested evidence honestly. Only create or edit your assigned files. Never run git. Do not re-read files unnecessarily, because usage limits are tight.
 
